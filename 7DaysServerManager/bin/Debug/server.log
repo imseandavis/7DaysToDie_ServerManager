@@ -1,0 +1,2173 @@
+﻿7DaysServerManager 8.3 (Compiled 21.09.2017 06:37:54)Type "local help" for commands.You have latest version of 7DSM :)We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfERAlso we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.proError
+7DaysToDie.exe not found!
+
+Server running from path: d:\program files (x86)\steam\steamapps\common\7 Days To Die
+
+Server refused connection... Trying again in 5s.
+
+Server is running now...
+
+Server refused connection... Trying again in 5s.
+
+Killing proccess...
+OK
+
+Proccess killed
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 06:46:58)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 06:51:30)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 06:56:34)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+> local help
+
+Each command should be preceded with "local" eg. local cls
+
+cls- Clears console
+
+cls path- Remove game files path. It may cause errors!
+
+help- This list
+
+ver- Displays version of manager
+
+for- Displays version of game
+
+transerr- Shows errors in translation file
+
+kill workers- Sets server_online variable to false without killing server. It may cause errors!
+
+whats new- Shows changelog of this release
+
+glass- Useless magic;)
+
+exe- show executions of custom commands (only these with delay)
+
+> local help
+
+Each command should be preceded with "local" eg. local cls
+
+cls- Clears console
+
+cls path- Remove game files path. It may cause errors!
+
+help- This list
+
+ver- Displays version of manager
+
+for- Displays version of game
+
+transerr- Shows errors in translation file
+
+kill workers- Sets server_online variable to false without killing server. It may cause errors!
+
+whats new- Shows changelog of this release
+
+glass- Useless magic;)
+
+exe- show executions of custom commands (only these with delay)
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 07:01:28)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 07:01:54)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 07:03:16)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 07:03:34)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+Server running from path: d:\program files (x86)\steam\steamapps\common\7 Days To Die
+
+Server refused connection... Trying again in 5s.
+
+Server is running now...
+
+*** Connected with 7DTD server.
+*** Server version: Alpha 16.3 (b12) Compatibility Version: Alpha 16.3
+
+Server IP:   Any
+Server port: 26900
+Max players: 18
+Game mode:   GameModeSurvivalMP
+World:       Random Gen
+Game name:   siurkogra
+Difficulty:  1
+
+Press 'help' to get a list of all commands. Press 'exit' to end session.
+
+2017-09-22T19:29:38 44.402 INF [Steamworks.NET] GameServer.Init successful
+
+
+2017-09-22T19:29:40 46.130 INF [Steamworks.NET] GameServer.LogOn successful, SteamID=90111193537600516
+
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 07:06:38)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+
+
+████████╗██╗  ██╗ █████╗ ███╗   ██╗██╗  ██╗    ██╗   ██╗ ██████╗ ██╗   ██╗   ██╗ 
+╚══██╔══╝██║  ██║██╔══██╗████╗  ██║██║ ██╔╝    ╚██╗ ██╔╝██╔═══██╗██║   ██║██╗╚██╗
+   ██║   ███████║███████║██╔██╗ ██║█████╔╝      ╚████╔╝ ██║   ██║██║   ██║╚═╝ ██║
+   ██║   ██╔══██║██╔══██║██║╚██╗██║██╔═██╗       ╚██╔╝  ██║   ██║██║   ██║██╗ ██║
+   ██║   ██║  ██║██║  ██║██║ ╚████║██║  ██╗       ██║   ╚██████╔╝╚██████╔╝╚═╝██╔╝
+   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝       ╚═╝    ╚═════╝  ╚═════╝    ╚═╝ 
+
+
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 07:08:18)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 07:09:30)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 07:11:50)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 07:12:32)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 07:19:06)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 07:20:32)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 07:21:08)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 07:21:08)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 07:21:08)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 10:41:00)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 10:44:26)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 10:45:18)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 10:45:32)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 10:47:16)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 10:48:34)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 10:50:54)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 10:54:46)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 10:56:40)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 10:58:32)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 10:59:16)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 11:02:50)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 11:04:46)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 11:06:04)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 11:07:20)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 21.09.2017 11:11:02)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 23.09.2017 00:21:04)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 23.09.2017 00:21:46)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 23.09.2017 00:21:46)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+> local ver
+
+Version: 8.3
+
+7DaysServerManager 8.3 (Compiled 23.09.2017 00:21:46)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 09:31:36)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 09:33:52)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 09:35:10)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 09:35:32)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 09:35:32)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 09:40:44)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 09:40:44)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 09:42:42)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 09:43:58)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 09:46:38)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 09:47:18)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 09:47:58)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 09:48:42)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 09:50:22)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 09:55:08)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Also we are working for some time now on RobotRage 2: Rearmed remake. If you want to know more, again, check out Discord, or project website: https://robotrage.pro
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 09:55:08)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTATNT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 09:55:08)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 09:55:08)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 10:20:12)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 10:23:34)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 10:24:38)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 10:25:16)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 10:26:08)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 10:27:02)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 10:27:02)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 10:30:46)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 10:31:30)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 10:31:46)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 10:33:34)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 10:34:18)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 10:35:16)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 10:35:42)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 10:36:20)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 10:37:18)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 10:40:34)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 10:42:28)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 10:43:50)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 10:44:22)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 10:44:46)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 10:47:24)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 10:48:12)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Server running from path: d:\program files (x86)\steam\steamapps\common\7 Days To Die
+
+Server refused connection... Trying again in 30s.
+(If this is the first start, it might take few minutes to render the level, keep calm.)
+
+Server is running now...
+
+Closing server...
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 10:49:42)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 10:49:42)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 10:49:42)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Server running from path: d:\program files (x86)\steam\steamapps\common\7 Days To Die
+
+Server refused connection... Trying again in 30s.
+(If this is the first start, it might take few minutes to render the level, keep calm.)
+
+Server is running now...
+
+Server refused connection... Trying again in 30s.
+(If this is the first start, it might take few minutes to render the level, keep calm.)
+
+Server refused connection... Trying again in 30s.
+(If this is the first start, it might take few minutes to render the level, keep calm.)
+
+Reestablishing connection to 7DTD server...
+
+Server is running now...
+
+Server refused connection... Trying again in 30s.
+(If this is the first start, it might take few minutes to render the level, keep calm.)
+
+Killing proccess...
+OK
+
+Proccess killed
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 10:49:42)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Server running from path: d:\program files (x86)\steam\steamapps\common\7 Days To Die
+
+Server refused connection... Trying again in 30s.
+(If this is the first start, it might take few minutes to render the level, keep calm.)
+
+Server is running now...
+
+Server refused connection... Trying again in 30s.
+(If this is the first start, it might take few minutes to render the level, keep calm.)
+
+Server refused connection... Trying again in 30s.
+(If this is the first start, it might take few minutes to render the level, keep calm.)
+
+Server refused connection... Trying again in 30s.
+(If this is the first start, it might take few minutes to render the level, keep calm.)
+
+Server refused connection... Trying again in 30s.
+(If this is the first start, it might take few minutes to render the level, keep calm.)
+
+Server refused connection... Trying again in 30s.
+(If this is the first start, it might take few minutes to render the level, keep calm.)
+
+Server refused connection... Trying again in 30s.
+(If this is the first start, it might take few minutes to render the level, keep calm.)
+
+Closing server...
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 11:06:48)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+Reestablishing connection to 7DTD server...
+
+Server is running now...
+
+Server refused connection... Trying again in 30s.
+(If this is the first start, it might take few minutes to render the level, keep calm.)
+
+Killing proccess...
+OK
+
+Proccess killed
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 11:12:48)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 11:14:00)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 11:14:00)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 11:15:54)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 11:16:14)Type "local help" for commands.
+You have latest version of 7DSM :)
+
+----------------------------------------
+IMPORTANT!
+----------------------------------------
+I am upgrading 7DSM from .NET Framework 3.5 to 4.0.
+If you are using Windows XP, Vista or 7 (or their Windows Server equivalents) you HAVE TO install this package before next update: https://www.microsoft.com/en-US/download/details.aspx?id=17851
+If you are using Windows 8, 8.1 or 10, you don't have to do anything.
+----------------------------------------
+
+We now have Discord. Check it out if you have any questions about 7DSM: https://discord.gg/rHuzfER
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 11:21:22)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 11:22:54)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 11:23:16)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 11:32:04)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 11:32:04)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+Server running from path: d:\program files (x86)\steam\steamapps\common\7 Days To Die
+
+Server refused connection... Trying again in 30s.
+(If this is the first start, it might take few minutes to render the level, keep calm.)
+
+Server is running now...
+
+*** Connected with 7DTD server.
+*** Server version: Alpha 16.3 (b12) Compatibility Version: Alpha 16.3
+
+Server IP:   Any
+Server port: 26900
+Max players: 8
+Game mode:   GameModeSurvivalMP
+World:       Navezgane
+Game name:   My Game
+Difficulty:  2
+
+Press 'help' to get a list of all commands. Press 'exit' to end session.
+
+
+
+2017-09-29T00:10:21 122.900 INF Reloading serveradmin.xml
+2017-09-29T00:10:21 122.901 INF Loading permissions file at 'C:\Users\pionner\AppData\Roaming/7DaysToDie/Saves/serveradmin.xml'
+2017-09-29T00:10:21 122.901 INF Loading permissions file done.
+
+
+2017-09-29T00:11:53 214.967 INF [NET] PlayerConnected EntityID=-1, PlayerID='', OwnerID='', PlayerName=''
+
+
+Player joined: pionner121
+
+2017-09-29T00:11:53 215.176 INF PlayerLogin: pionner121/Alpha 16.3
+2017-09-29T00:11:53 215.176 INF Client IP: 127.0.0.1
+2017-09-29T00:11:53 215.178 INF [Steamworks.NET] Auth.AuthenticateUser()
+2017-09-29T00:11:53 215.199 INF [Steamworks.NET] Authenticating player: pionner121 SteamId: 76561198035573640 TicketLen: 1024 Result: k_EBeginAuthSessionResultOK
+
+
+2017-09-29T00:11:53 215.624 INF [Steamworks.NET] Authentication callback. ID: 76561198035573640, owner: 76561198035573640, result: k_EAuthSessionResponseOK
+2017-09-29T00:11:53 215.625 INF Steam authentication successful, registering with EAC: EntityID=-1, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+2017-09-29T00:11:53 215.625 INF [EAC] Registering user: EntityID=-1, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+2017-09-29T00:11:53 215.653 INF [EAC] Log: [RegisterClient] Client: 0000000000000001 PlayerGUID: 76561198035573640 PlayerIP: 127.0.0.1 OwnerGUID: 76561198035573640 PlayerName: pionner121
+
+
+2017-09-29T00:11:54 216.615 INF [EAC] Log: [Register Client] Success (1/2). Client: 0000000000000001
+2017-09-29T00:11:54 216.616 INF [EAC] Log: [QueueClientUpdate] Client: 0000000000000001 Session: 1 Status: Client Authenticated Message: Client authenticated
+2017-09-29T00:11:54 216.623 INF [EAC] UserStatusHandler callback. Status: ClientAuthenticatedLocal ReqKick: False Message: Client authenticated
+
+
+2017-09-29T00:11:55 217.189 INF [EAC] Log: [Register Client] Success (2/2). Client: 0000000000000001
+2017-09-29T00:11:55 217.189 INF [EAC] Log: [QueueClientUpdate] Client: 0000000000000001 Session: 1 Status: Client Authenticated Remotely Message: Client authenticated remotely
+2017-09-29T00:11:55 217.222 INF [EAC] UserStatusHandler callback. Status: ClientAuthenticatedRemote ReqKick: False Message: Client authenticated remotely
+2017-09-29T00:11:55 217.222 INF EAC authentication successful, allowing user: EntityID=-1, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+2017-09-29T00:11:55 217.223 INF Allowing player with id 76561198035573640
+
+
+2017-09-29T00:11:57 218.775 INF RequestToEnterGame: 76561198035573640/pionner121
+
+
+2017-09-29T00:12:13 235.296 INF RequestToSpawnPlayer: 171, pionner121, 12
+2017-09-29T00:12:13 235.435 INF Created player with id=171
+
+
+2017-09-29T00:12:18 240.219 INF Time: 3.04m FPS: 19.94 Heap: 634.0MB Max: 633.6MB Chunks: 226 CGO: 0 Ply: 1 Zom: 0 Ent: 1 (1) Items: 0 CO: 1 RSS: 450.9MB
+
+
+2017-09-29T00:12:31 253.048 INF GMSG: Player 'pionner121' joined the game
+2017-09-29T00:12:31 253.051 INF PlayerSpawnedInWorld (reason: EnterMultiplayer, position: 1020, 61, 1000): EntityID=171, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+
+
+Player disconnected: pionner121
+
+2017-09-29T00:12:39 261.190 INF Player pionner121 disconnected after 0.4 minutes
+2017-09-29T00:12:39 261.271 INF Player disconnected: EntityID=171, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+2017-09-29T00:12:39 261.271 INF [EAC] FreeUser: EntityID=171, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+2017-09-29T00:12:39 261.272 INF [EAC] Log: [UnregisterClient] Client: 0000000000000001 PlayerGUID: 76561198035573640
+
+
+2017-09-29T00:12:48 269.710 INF Clearing all pools
+
+
+2017-09-29T00:12:49 270.849 INF Time: 3.54m FPS: 20.14 Heap: 911.1MB Max: 911.1MB Chunks: 730 CGO: 0 Ply: 0 Zom: 0 Ent: 0 (4) Items: 0 CO: 0 RSS: 650.7MB
+
+
+2017-09-29T00:12:54 276.186 INF [NET] PlayerConnected EntityID=-1, PlayerID='', OwnerID='', PlayerName=''
+
+
+Player joined: pionner121
+
+2017-09-29T00:12:54 276.407 INF PlayerLogin: pionner121/Alpha 16.3
+2017-09-29T00:12:54 276.408 INF Client IP: 127.0.0.1
+2017-09-29T00:12:54 276.408 INF [Steamworks.NET] Auth.AuthenticateUser()
+2017-09-29T00:12:54 276.408 INF [Steamworks.NET] Authenticating player: pionner121 SteamId: 76561198035573640 TicketLen: 1024 Result: k_EBeginAuthSessionResultOK
+
+
+2017-09-29T00:12:55 276.756 INF [Steamworks.NET] Authentication callback. ID: 76561198035573640, owner: 76561198035573640, result: k_EAuthSessionResponseOK
+2017-09-29T00:12:55 276.757 INF Steam authentication successful, registering with EAC: EntityID=-1, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+2017-09-29T00:12:55 276.757 INF [EAC] Registering user: EntityID=-1, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+2017-09-29T00:12:55 276.758 INF [EAC] Log: [RegisterClient] Client: 0000000000000002 PlayerGUID: 76561198035573640 PlayerIP: 127.0.0.1 OwnerGUID: 76561198035573640 PlayerName: pionner121
+
+
+2017-09-29T00:12:56 277.734 INF [EAC] Log: [Register Client] Success (1/2). Client: 0000000000000002
+2017-09-29T00:12:56 277.735 INF [EAC] Log: [QueueClientUpdate] Client: 0000000000000002 Session: 2 Status: Client Authenticated Message: Client authenticated
+2017-09-29T00:12:56 277.757 INF [EAC] UserStatusHandler callback. Status: ClientAuthenticatedLocal ReqKick: False Message: Client authenticated
+
+
+2017-09-29T00:12:56 278.339 INF [EAC] Log: [Register Client] Success (2/2). Client: 0000000000000002
+2017-09-29T00:12:56 278.339 INF [EAC] Log: [QueueClientUpdate] Client: 0000000000000002 Session: 2 Status: Client Authenticated Remotely Message: Client authenticated remotely
+2017-09-29T00:12:56 278.357 INF [EAC] UserStatusHandler callback. Status: ClientAuthenticatedRemote ReqKick: False Message: Client authenticated remotely
+2017-09-29T00:12:56 278.357 INF EAC authentication successful, allowing user: EntityID=-1, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+2017-09-29T00:12:56 278.358 INF Allowing player with id 76561198035573640
+
+
+2017-09-29T00:12:58 279.906 INF RequestToEnterGame: 76561198035573640/pionner121
+
+
+2017-09-29T00:13:07 289.006 INF RequestToSpawnPlayer: 171, pionner121, 12
+2017-09-29T00:13:07 289.014 INF Created player with id=171
+
+
+2017-09-29T00:13:17 299.314 INF GMSG: Player 'pionner121' joined the game
+2017-09-29T00:13:17 299.315 INF PlayerSpawnedInWorld (reason: JoinMultiplayer, position: 1020, 61, 1000): EntityID=171, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+
+
+2017-09-29T00:13:20 301.878 INF Time: 4.04m FPS: 21.02 Heap: 721.4MB Max: 911.1MB Chunks: 730 CGO: 34 Ply: 1 Zom: 0 Ent: 4 (4) Items: 0 CO: 1 RSS: 674.0MB
+
+
+2017-09-29T00:13:27 308.795 INF Triggered empty sleeper volume.
+
+
+2017-09-29T00:13:50 331.908 INF Time: 4.54m FPS: 22.82 Heap: 856.6MB Max: 911.1MB Chunks: 757 CGO: 36 Ply: 1 Zom: 0 Ent: 4 (4) Items: 0 CO: 1 RSS: 609.4MB
+
+
+Player disconnected: pionner121
+
+2017-09-29T00:13:50 332.588 INF Player pionner121 disconnected after 0.7 minutes
+2017-09-29T00:13:51 332.666 INF Player disconnected: EntityID=171, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+2017-09-29T00:13:51 332.667 INF [EAC] FreeUser: EntityID=171, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+2017-09-29T00:13:51 332.667 INF [EAC] Log: [UnregisterClient] Client: 0000000000000002 PlayerGUID: 76561198035573640
+2017-09-29T00:13:51 332.668 INF GMSG: Player 'pionner121' left the game
+
+
+2017-09-29T00:13:58 340.577 INF Clearing all pools
+
+
+2017-09-29T00:14:20 361.945 INF Time: 5.04m FPS: 20.00 Heap: 826.8MB Max: 911.1MB Chunks: 757 CGO: 0 Ply: 0 Zom: 0 Ent: 0 (4) Items: 0 CO: 0 RSS: 594.1MB
+
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 11:32:04)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 11:32:04)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 27.09.2017 11:32:04)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 29.09.2017 03:03:36)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 29.09.2017 03:05:50)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 29.09.2017 03:07:12)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 29.09.2017 03:07:12)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 29.09.2017 03:11:30)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 29.09.2017 03:13:54)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+Server running from path: d:\program files (x86)\steam\steamapps\common\7 Days To Die
+
+Server refused connection... Trying again in 30s.
+(If this is the first start, it might take few minutes to render the level, keep calm.)
+
+Server is running now...
+
+*** Connected with 7DTD server.
+*** Server version: Alpha 16.3 (b12) Compatibility Version: Alpha 16.3
+
+Server IP:   Any
+Server port: 26900
+Max players: 8
+Game mode:   GameModeSurvivalMP
+World:       Navezgane
+Game name:   My Game
+Difficulty:  2
+
+Press 'help' to get a list of all commands. Press 'exit' to end session.
+
+
+
+> help
+
+2017-09-29T03:15:15 74.422 INF Executing command 'help' by Telnet from 127.0.0.1:14572
+*** Generic Console Help ***
+To get further help on a specific topic or command type (without the brackets)
+    help <topic / command>
+
+Generic notation of command parameters:
+   <param name>              Required parameter
+   <entityId / player name>  Possible types of parameter values
+   [param name]              Optional parameter
+
+*** List of Help Topics ***
+None yet
+
+*** List of Commands ***
+ admin => Manage user permission levels
+ aiddebug => Toggles AIDirector debug output.
+ audio => Watch audio stats
+ ban => Manage ban entries
+ BiomeParticles => Debug
+ buff => Applies a buff to the local player
+ buffplayer => Apply a buff to a player
+ chunkcache cc => shows all loaded chunks in cache
+ commandpermission cp => Manage command permission levels
+ creativemenu cm => enables/disables the creativemenu
+ DeathScreen => Display DeathScreen
+ debuff => Removes a buff from the local player
+ debuffplayer => Remove a buff from a player
+ debugmenu dm => enables/disables the debugmenu 
+ debugweather => Dumps internal weather state to the console.
+ dof => Control DOF
+ enablescope es => toggle debug scope
+ exhausted => Makes the player exhausted.
+ exportitemicons => Exports all ItemIcons
+ gamestage => usage: gamestage - displays the gamestage of the local player.
+ getgamepref gg => Gets game preferences
+ getgamestat ggs => Gets game stats
+ gettime gt => Get the current game time
+ givequest => usage: givequest questname
+ giveself => usage: giveself itemName qualityLevel (default quality is 600)
+ giveselfskillxp => usage: giveselfskillxp Mining Tools 10000
+ giveselfxp => usage: giveselfxp 10000
+ help => Help on console and specific commands
+ kick => Kicks user with optional reason. "kick playername reason"
+ kickall => Kicks all users with optional reason. "kickall reason"
+ kill => Kill a given entity
+ killall => Kill all players
+ lgo listgameobjects => List all active game objects
+ lights => Debug views to optimize lights
+ listents le => lists all entities
+ listplayerids lpi => Lists all players with their IDs for ingame commands
+ listplayers lp => lists all players
+ listthreads lt => lists all threads
+ loggamestate lgs => Log the current state of the game
+ loglevel => Telnet/Web only: Select which types of log messages are shown
+ mem => Prints memory information and calls garbage collector
+ memcl => Prints memory information on client and calls garbage collector
+ pplist => Lists all PersistentPlayer data
+ prefab => 
+ profilenetwork => Writes network profiling information
+ profiling => Enable Unity profiling for 5 seconds
+ removequest => usage: removequest questname
+ repairchunkdensity rcd => check and optionally fix densities of a chunk
+ saveworld sa => Saves the world manually.
+ say => Sends a message to all connected clients
+ setgamepref sg => sets a game pref
+ setgamestat sgs => sets a game stat
+ settargetfps => Set the target FPS the game should run at (upper limit)
+ settempunit stu => Set the current temperature units.
+ settime st => Set the current game time
+ showalbedo albedo => enables/disables display of albedo in gBuffer
+ showchunkdata sc => shows some date of the current chunk
+ showClouds => Artist command to show one layer of clouds.
+ showhits => Show hit entity locations
+ shownexthordetime => Displays the wandering horde time
+ shownorma7DaysServerManager 8.3 (Compiled 29.09.2017 03:19:20)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+Killing proccess...
+OK
+
+Proccess killed
+
+7DaysServerManager 8.3 (Compiled 29.09.2017 03:21:16)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 29.09.2017 03:22:10)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 29.09.2017 03:22:38)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 29.09.2017 03:23:50)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 29.09.2017 03:24:36)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 29.09.2017 03:25:28)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 29.09.2017 03:25:46)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 29.09.2017 03:25:46)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 29.09.2017 03:30:54)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 29.09.2017 03:30:54)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 28.09.2017 10:17:26)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 28.09.2017 10:17:26)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 28.09.2017 10:17:26)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 28.09.2017 10:17:26)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 28.09.2017 10:17:26)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 00:16:44)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 00:16:58)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 00:17:16)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 00:26:46)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+Server running from path: d:\program files (x86)\steam\steamapps\common\7 Days To Die
+
+Server refused connection... Trying again in 30s.
+(If this is the first start, it might take few minutes to render the level, keep calm.)
+
+Server is running now...
+
+*** Connected with 7DTD server.
+*** Server version: Alpha 16.3 (b12) Compatibility Version: Alpha 16.3
+
+Server IP:   Any
+Server port: 26900
+Max players: 8
+Game mode:   GameModeSurvivalMP
+World:       Navezgane
+Game name:   My Game
+Difficulty:  2
+
+Press 'help' to get a list of all commands. Press 'exit' to end session.
+
+
+
+2017-09-30T00:28:04 69.765 INF [Steamworks.NET] GameServer.LogOn successful, SteamID=90111294659389444
+
+
+2017-09-30T00:29:16 141.738 INF Reloading serveradmin.xml
+2017-09-30T00:29:16 141.738 INF Loading permissions file at 'C:\Users\pionner\AppData\Roaming/7DaysToDie/Saves/serveradmin.xml'
+2017-09-30T00:29:16 141.739 INF Loading permissions file done.
+
+
+Server broke telnet connection!
+
+Server broke telnet connection!
+
+Server broke telnet connection!
+
+Server broke telnet connection!
+
+Server broke telnet connection!
+
+Server broke telnet connection!
+
+Server broke telnet connection!
+
+Server broke telnet connection!
+
+Server broke telnet connection!
+
+Server broke telnet connection!
+
+Server broke telnet connection!
+
+Server broke telnet connection!
+
+Reestablishing connection to 7DTD server...
+
+Server broke telnet connection!
+
+Server is running now...
+
+*** Connected with 7DTD server.
+*** Server version: Alpha 16.3 (b12) Compatibility Version: Alpha 16.3
+
+Server IP:   Any
+Server port: 26900
+Max players: 8
+Game mode:   GameModeSurvivalMP
+World:       Navezgane
+Game name:   My Game
+Difficulty:  2
+
+Press 'help' to get a list of all commands. Press 'exit' to end session.
+
+2017-09-30T00:30:22 208.000 INF Started thread TelnetClientReceive_127.0.0.1:6904
+2017-09-30T00:30:22 208.001 INF Started thread TelnetClientSend_127.0.0.1:6904
+
+
+2017-09-30T00:31:56 302.365 INF [NET] PlayerConnected EntityID=-1, PlayerID='', OwnerID='', PlayerName=''
+
+
+Player joined: pionner121
+
+2017-09-30T00:31:57 302.576 INF PlayerLogin: pionner121/Alpha 16.3
+2017-09-30T00:31:57 302.577 INF Client IP: 127.0.0.1
+2017-09-30T00:31:57 302.579 INF [Steamworks.NET] Auth.AuthenticateUser()
+2017-09-30T00:31:57 302.641 INF [Steamworks.NET] Authenticating player: pionner121 SteamId: 76561198035573640 TicketLen: 1024 Result: k_EBeginAuthSessionResultOK
+
+
+2017-09-30T00:31:57 302.997 INF [Steamworks.NET] Authentication callback. ID: 76561198035573640, owner: 76561198035573640, result: k_EAuthSessionResponseOK
+2017-09-30T00:31:57 302.998 INF Steam authentication successful, registering with EAC: EntityID=-1, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+2017-09-30T00:31:57 302.999 INF [EAC] Registering user: EntityID=-1, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+2017-09-30T00:31:57 303.018 INF [EAC] Log: [RegisterClient] Client: 0000000000000001 PlayerGUID: 76561198035573640 PlayerIP: 127.0.0.1 OwnerGUID: 76561198035573640 PlayerName: pionner121
+
+
+2017-09-30T00:31:58 304.047 INF [EAC] Log: [Register Client] Success (1/2). Client: 0000000000000001
+2017-09-30T00:31:58 304.047 INF [EAC] Log: [QueueClientUpdate] Client: 0000000000000001 Session: 1 Status: Client Authenticated Message: Client authenticated
+2017-09-30T00:31:58 304.096 INF [EAC] UserStatusHandler callback. Status: ClientAuthenticatedLocal ReqKick: False Message: Client authenticated
+
+
+2017-09-30T00:31:59 304.658 INF [EAC] Log: [Register Client] Success (2/2). Client: 0000000000000001
+2017-09-30T00:31:59 304.658 INF [EAC] Log: [QueueClientUpdate] Client: 0000000000000001 Session: 1 Status: Client Authenticated Remotely Message: Client authenticated remotely
+2017-09-30T00:31:59 304.695 INF [EAC] UserStatusHandler callback. Status: ClientAuthenticatedRemote ReqKick: False Message: Client authenticated remotely
+2017-09-30T00:31:59 304.695 INF EAC authentication successful, allowing user: EntityID=-1, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+2017-09-30T00:31:59 304.696 INF Allowing player with id 76561198035573640
+
+
+2017-09-30T00:32:00 306.147 INF RequestToEnterGame: 76561198035573640/pionner121
+
+
+2017-09-30T00:32:03 308.517 INF Time: 4.05m FPS: 18.07 Heap: 598.8MB Max: 598.8MB Chunks: 0 CGO: 0 Ply: 0 Zom: 0 Ent: 0 (0) Items: 0 CO: 0 RSS: 280.7MB
+
+
+2017-09-30T00:32:13 318.927 INF RequestToSpawnPlayer: 171, pionner121, 12
+2017-09-30T00:32:13 319.022 INF Created player with id=171
+
+
+2017-09-30T00:32:28 333.837 INF GMSG: Player 'pionner121' joined the game
+2017-09-30T00:32:28 333.860 INF PlayerSpawnedInWorld (reason: JoinMultiplayer, position: 1028, 62, 1022): EntityID=171, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+
+
+2017-09-30T00:32:33 339.194 INF Time: 4.55m FPS: 20.82 Heap: 718.8MB Max: 718.8MB Chunks: 730 CGO: 34 Ply: 1 Zom: 0 Ent: 4 (4) Items: 0 CO: 1 RSS: 485.0MB
+
+
+2017-09-30T00:32:38 344.210 INF Chat: 'pionner121': /whoami
+
+
+
+WyjĄtek nieobsuľony: System.IndexOutOfRangeException: Indeks wykracza poza granice tablicy.
+   w test.Program.Main(String[] args) w C:\Users\pionner\Desktop\test\test\Program.cs:wiersz 31
+
+
+2017-09-30T00:32:53 359.451 INF Chat: 'pionner121': /whoami
+
+
+
+WyjĄtek nieobsuľony: System.IndexOutOfRangeException: Indeks wykracza poza granice tablicy.
+   w test.Program.Main(String[] args) w C:\Users\pionner\Desktop\test\test\Program.cs:wiersz 31
+
+
+Player disconnected: pionner121
+
+2017-09-30T00:32:59 365.406 INF Player pionner121 disconnected after 0.8 minutes
+2017-09-30T00:32:59 365.482 INF Player disconnected: EntityID=171, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+2017-09-30T00:32:59 365.482 INF [EAC] FreeUser: EntityID=171, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+2017-09-30T00:32:59 365.484 INF [EAC] Log: [UnregisterClient] Client: 0000000000000001 PlayerGUID: 76561198035573640
+
+
+2017-09-30T00:33:00 365.701 INF GMSG: Player 'pionner121' left the game
+
+
+2017-09-30T00:33:03 369.224 INF Time: 5.05m FPS: 19.78 Heap: 774.9MB Max: 774.9MB Chunks: 730 CGO: 0 Ply: 0 Zom: 0 Ent: 0 (4) Items: 0 CO: 0 RSS: 512.3MB
+
+
+2017-09-30T00:33:07 373.380 INF Clearing all pools
+
+
+2017-09-30T00:35:47 532.864 INF Reloading serveradmin.xml
+2017-09-30T00:35:47 532.865 INF Loading permissions file at 'C:\Users\pionner\AppData\Roaming/7DaysToDie/Saves/serveradmin.xml'
+2017-09-30T00:35:47 532.867 INF Loading permissions file done.
+
+
+2017-09-30T00:36:50 595.990 INF [NET] PlayerConnected EntityID=-1, PlayerID='', OwnerID='', PlayerName=''
+
+
+Player joined: pionner121
+
+2017-09-30T00:36:50 596.195 INF PlayerLogin: pionner121/Alpha 16.3
+2017-09-30T00:36:50 596.195 INF Client IP: 127.0.0.1
+2017-09-30T00:36:50 596.195 INF [Steamworks.NET] Auth.AuthenticateUser()
+2017-09-30T00:36:50 596.281 INF [Steamworks.NET] Authenticating player: pionner121 SteamId: 76561198035573640 TicketLen: 1024 Result: k_EBeginAuthSessionResultOK
+
+
+2017-09-30T00:36:51 596.634 INF [Steamworks.NET] Authentication callback. ID: 76561198035573640, owner: 76561198035573640, result: k_EAuthSessionResponseOK
+2017-09-30T00:36:51 596.635 INF Steam authentication successful, registering with EAC: EntityID=-1, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+2017-09-30T00:36:51 596.636 INF [EAC] Registering user: EntityID=-1, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+2017-09-30T00:36:51 596.682 INF [EAC] Log: [RegisterClient] Client: 0000000000000002 PlayerGUID: 76561198035573640 PlayerIP: 127.0.0.1 OwnerGUID: 76561198035573640 PlayerName: pionner121
+
+
+2017-09-30T00:36:52 597.722 INF [EAC] Log: [Register Client] Success (1/2). Client: 0000000000000002
+2017-09-30T00:36:52 597.723 INF [EAC] Log: [QueueClientUpdate] Client: 0000000000000002 Session: 2 Status: Client Authenticated Message: Client authenticated
+2017-09-30T00:36:52 597.734 7DaysServerManager 8.3 (Compiled 30.09.2017 00:41:26)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 00:41:26)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+Killing proccess...
+OK
+
+Proccess killed
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 01:50:52)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 01:53:38)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 01:53:38)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 01:55:54)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 01:55:54)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 02:00:46)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 02:04:06)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 02:04:56)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 02:06:46)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+> local help
+
+Each command should be preceded with "local" eg. local cls
+
+cls- Clears console
+
+cls path- Remove game files path. It may cause errors!
+
+help- This list
+
+ver- Displays version of manager
+
+for- Displays version of game
+
+transerr- Shows errors in translation file
+
+kill workers- Sets server_online variable to false without killing server. It may cause errors!
+
+whats new- Shows changelog of this release
+
+glass- Useless magic;)
+
+exe- show executions of custom commands (only these with delay)
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 02:08:36)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+> local exe
+
+command-unix timestamp-username
+
+init-0-Server
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 02:08:36)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+> local exe
+
+command-unix timestamp-username
+
+init-0-Server
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 02:10:44)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+Server running from path: d:\program files (x86)\steam\steamapps\common\7 Days To Die
+
+Server is not ready yet... Trying again in 30s.
+(If this is the first start, it might take few minutes to render the level, keep calm.)
+
+Server is running now...
+
+Killing proccess...
+OK
+
+Proccess killed
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 02:15:16)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 02:16:18)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 02:19:14)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 02:19:14)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 02:19:14)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 02:19:14)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 02:19:14)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 02:19:14)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 02:19:14)Type "local help" for commands.
+Error during connecting to update server: the server is down, your connection to the internet is down or you're using unregistered build (server doesn't know your version of 7DSM, so it can't tell you if there are updates for it).
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 02:19:14)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 02:19:14)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 02:19:14)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 02:19:14)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 02:19:14)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 02:19:14)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 02:19:14)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.3 (Compiled 30.09.2017 02:19:14)Type "local help" for commands.
+You have the latest version of 7DSM.
+
+7DaysServerManager 8.4 (Compiled 29.01.2018 01:13:00)Type "local help" for commands.
+Error during connecting to update server: the server is down, your connection to the internet is down or you're using unregistered build (server doesn't know your version of 7DSM, so it can't tell you if there are updates for it).
+
+Server running from path: d:\program files (x86)\steam\steamapps\common\7 Days To Die
+
+Server is not ready yet... Trying again in 30s.
+(If this is the first start, it might take few minutes to render the level, keep calm.)
+
+Server is running now...
+
+*** Connected with 7DTD server.
+*** Server version: Alpha 16.4 (b8) Compatibility Version: Alpha 16.4
+
+Server IP:   Any
+Server port: 26900
+Max players: 8
+Game mode:   GameModeSurvivalMP
+World:       Navezgane
+Game name:   My Game
+Difficulty:  2
+
+Press 'help' to get a list of all commands. Press 'exit' to end session.
+
+
+
+> lp
+
+2018-01-29T01:14:57 81.941 INF Executing command 'lp' by Telnet from 127.0.0.1:46211
+Total of 0 in the game
+
+
+2018-01-29T01:15:53 137.306 INF Reloading serveradmin.xml
+2018-01-29T01:15:53 137.306 INF Loading permissions file at 'C:\Users\pionner\AppData\Roaming/7DaysToDie/Saves/serveradmin.xml'
+2018-01-29T01:15:53 137.307 INF Loading permissions file done.
+
+
+Server broke telnet connection!
+
+Server broke telnet connection!
+
+Reestablishing connection to 7DTD server...
+
+Server broke telnet connection!
+
+Server is running now...
+
+*** Connected with 7DTD server.
+*** Server version: Alpha 16.4 (b8) Compatibility Version: Alpha 16.4
+
+Server IP:   Any
+Server port: 26900
+Max players: 8
+Game mode:   GameModeSurvivalMP
+World:       Navezgane
+Game name:   My Game
+Difficulty:  2
+
+Press 'help' to get a list of all commands. Press 'exit' to end session.
+
+2018-01-29T01:16:45 190.142 INF Started thread TelnetClientReceive_127.0.0.1:46263
+2018-01-29T01:16:45 190.143 INF Started thread TelnetClientSend_127.0.0.1:46263
+
+
+2018-01-29T01:17:48 252.361 INF [NET] PlayerConnected EntityID=-1, PlayerID='', OwnerID='', PlayerName=''
+
+
+Player joined: pionner121
+
+2018-01-29T01:17:48 252.628 INF PlayerLogin: pionner121/Alpha 16.4
+2018-01-29T01:17:48 252.630 INF Client IP: 127.0.0.1
+2018-01-29T01:17:48 252.635 INF [Steamworks.NET] Auth.AuthenticateUser()
+2018-01-29T01:17:48 252.667 INF [Steamworks.NET] Authenticating player: pionner121 SteamId: 76561198035573640 TicketLen: 1024 Result: k_EBeginAuthSessionResultOK
+
+
+2018-01-29T01:17:48 253.128 INF [Steamworks.NET] Authentication callback. ID: 76561198035573640, owner: 76561198035573640, result: k_EAuthSessionResponseOK
+2018-01-29T01:17:48 253.129 INF Steam authentication successful, registering with EAC: EntityID=-1, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+2018-01-29T01:17:48 253.130 INF [EAC] Registering user: EntityID=-1, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+2018-01-29T01:17:48 253.169 INF [EAC] Log: [RegisterClient] Client: 0000000000000001 PlayerGUID: 76561198035573640 PlayerIP: 127.0.0.1 OwnerGUID: 76561198035573640 PlayerName: pionner121
+
+
+2018-01-29T01:17:50 254.232 INF [EAC] Log: [Register Client] Success (1/2). Client: 0000000000000001
+2018-01-29T01:17:50 254.232 INF [EAC] Log: [QueueClientUpdate] Client: 0000000000000001 Session: 1 Status: Client Authenticated Message: Client authenticated
+2018-01-29T01:17:50 254.260 INF [EAC] UserStatusHandler callback. Status: ClientAuthenticatedLocal ReqKick: False Message: Client authenticated
+
+
+2018-01-29T01:17:50 254.828 INF [EAC] Log: [Register Client] Success (2/2). Client: 0000000000000001
+2018-01-29T01:17:50 254.828 INF [EAC] Log: [QueueClientUpdate] Client: 0000000000000001 Session: 1 Status: Client Authenticated Remotely Message: Client authenticated remotely
+2018-01-29T01:17:50 254.850 INF [EAC] UserStatusHandler callback. Status: ClientAuthenticatedRemote ReqKick: False Message: Client authenticated remotely
+2018-01-29T01:17:50 254.852 INF EAC authentication successful, allowing user: EntityID=-1, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerN7DaysServerManager 8.4 (Compiled 29.01.2018 01:13:00)Type "local help" for commands.
+Error during connecting to update server: the server is down, your connection to the internet is down or you're using unregistered build (server doesn't know your version of 7DSM, so it can't tell you if there are updates for it).
+
+Server running from path: d:\program files (x86)\steam\steamapps\common\7 Days To Die
+
+Server is not ready yet... Trying again in 30s.
+(If this is the first start, it might take few minutes to render the level, keep calm.)
+
+Server is running now...
+
+SQL data updated.
+
+*** Connected with 7DTD server.
+*** Server version: Alpha 16.4 (b8) Compatibility Version: Alpha 16.4
+
+Server IP:   Any
+Server port: 26900
+Max players: 8
+Game mode:   GameModeSurvivalMP
+World:       Navezgane
+Game name:   My Game
+Difficulty:  2
+
+Press 'help' to get a list of all commands. Press 'exit' to end session.
+
+
+
+Killing proccess...
+OK
+
+Proccess killed
+
+7DaysServerManager 8.4 (Compiled 29.01.2018 01:13:00)Type "local help" for commands.
+Error during connecting to update server: the server is down, your connection to the internet is down or you're using unregistered build (server doesn't know your version of 7DSM, so it can't tell you if there are updates for it).
+
+Killing proccess...
+OK
+
+Proccess killed
+
+7DaysServerManager 8.4 (Compiled 29.01.2018 01:13:00)Type "local help" for commands.
+Error during connecting to update server: the server is down, your connection to the internet is down or you're using unregistered build (server doesn't know your version of 7DSM, so it can't tell you if there are updates for it).
+
+Server running from path: d:\program files (x86)\steam\steamapps\common\7 Days To Die
+
+*** Connected with 7DTD server.
+*** Server version: Alpha 16.4 (b8) Compatibility Version: Alpha 16.4
+
+Server IP:   Any
+Server port: 26900
+Max players: 8
+Game mode:   GameModeSurvivalMP
+World:       Navezgane
+Game name:   My Game
+Difficulty:  2
+
+Press 'help' to get a list of all commands. Press 'exit' to end session.
+
+
+
+SQL data updated.
+
+2018-01-29T01:34:54 42.520 INF Executing command 'lp' by Telnet from 127.0.0.1:47064
+Total of 0 in the game
+
+
+Server is running now...
+
+Closing server...
+
+2018-01-29T01:35:50 98.287 INF Executing command 'shutdown' by Telnet from 127.0.0.1:47064
+Shutting server down...
+2018-01-29T01:35:50 98.364 INF Disconnect
+2018-01-29T01:35:50 98.366 INF NET: Stopping server protocols
+2018-01-29T01:35:50 98.420 INF NET: Untiy NW server stopped
+2018-01-29T01:35:50 98.421 INF [Steamworks.NET] NET: Server stopped
+2018-01-29T01:35:50 98.422 INF [NET] ServerShutdown
+2018-01-29T01:35:50 98.424 INF SaveAndCleanupWorld
+2018-01-29T01:35:50 98.452 INF Saving 0 of chunks took 20ms
+2018-01-29T01:35:50 98.458 INF [EAC] Stopping EAC server
+2018-01-29T01:35:50 98.459 INF [EAC] Log: [Destroy] Called
+2018-01-29T01:35:50 98.477 INF [Steamworks.NET] Stopping server
+
+
+2018-01-29T01:35:51 98.824 INF [Steamworks.NET] Exiting Lobby
+2018-01-29T01:35:51 98.834 INF World.Unload
+2018-01-29T01:35:51 98.844 INF Exited thread thread_GenerateChunks
+
+
+Killing proccess...
+OK
+
+Proccess killed
+
+7DaysServerManager 8.4 (Compiled 29.01.2018 01:49:26)Type "local help" for commands.
+Error during connecting to update server: the server is down, your connection to the internet is down or you're using unregistered build (server doesn't know your version of 7DSM, so it can't tell you if there are updates for it).
+
+Killing proccess...
+OK
+
+Proccess killed
+
+Server running from path: d:\program files (x86)\steam\steamapps\common\7 Days To Die
+
+*** Connected with 7DTD server.
+*** Server version: Alpha 16.4 (b8) Compatibility Version: Alpha 16.4
+
+Server IP:   Any
+Server port: 26900
+Max players: 8
+Game mode:   GameModeSurvivalMP
+World:       Navezgane
+Game name:   My Game
+Difficulty:  2
+
+Press 'help' to get a list of all commands. Press 'exit' to end session.
+
+2018-01-29T01:50:14 38.424 INF SelectionBoxManager.Instance: SelectionBoxes (SelectionBoxManager)
+2018-01-29T01:50:14 38.436 INF Started thread thread_GenerateChunks
+2018-01-29T01:50:15 38.853 INF POI image size w= 4096, h = 4096
+2018-01-29T01:50:15 39.045 INF Biomes image size w= 2048, h = 2048
+2018-01-29T01:50:15 39.084 INF Biomes image size w= 2048, h = 2048
+
+
+2018-01-29T01:50:16 39.982 INF Biomes image size w= 2048, h = 2048
+
+
+SQL data updated.
+
+2018-01-29T01:50:16 40.344 INF Executing command 'lp' by Telnet from 127.0.0.1:47625
+Total of 0 in the game
+
+
+Server is running now...
+
+2018-01-29T01:50:16 40.730 INF ************************Weather Packages Created FROM BIOMES  :D ************************
+
+
+SQL data updated.
+
+2018-01-29T01:50:17 41.083 INF createWorld() done
+2018-01-29T01:50:17 41.085 INF Loading players.xml
+2018-01-29T01:50:17 41.184 INF Loaded player
+2018-01-29T01:50:17 41.232 INF Loading vehicles
+2018-01-29T01:50:17 41.333 INF Steam in online mode: Opening steam lobby
+2018-01-29T01:50:17 41.409 INF [EAC] Starting EAC server
+2018-01-29T01:50:17 41.470 INF Starting game
+2018-01-29T01:50:17 41.470 INF [EAC] Log: [SetLogCallback] Procedure: 0000000033EC2110 LogLevel: Debug
+2018-01-29T01:50:17 41.488 INF StartGame done
+
+
+2018-01-29T01:50:20 44.689 INF [Steamworks.NET] GameServer.Init successful
+
+
+2018-01-29T01:50:23 46.920 INF [Steamworks.NET] GameServer.LogOn successful, SteamID=90113122981268490
+
+
+2018-01-29T01:51:08 92.047 INF Reloading serveradmin.xml
+2018-01-29T01:51:08 92.047 INF Loading permissions file at 'C:\Users\pionner\AppData\Roaming/7DaysToDie/Saves/serveradmin.xml'
+2018-01-29T01:51:08 92.048 INF Loading permissions file done.
+
+
+2018-01-29T01:51:18 102.619 INF Executing command 'lp' by Telnet from 127.0.0.1:47625
+Total of 0 in the game
+
+
+SQL data updated.
+
+2018-01-29T01:52:21 165.024 INF Executing command 'lp' by Telnet from 127.0.0.1:47625
+Total of 0 in the game
+
+
+SQL data updated.
+
+2018-01-29T01:52:29 173.698 INF [NET] PlayerConnected EntityID=-1, PlayerID='', OwnerID='', PlayerName=''
+
+
+Player joined: pionner121
+
+2018-01-29T01:52:30 173.961 INF PlayerLogin: pionner121/Alpha 16.4
+2018-01-29T01:52:30 173.963 INF Client IP: 127.0.0.1
+2018-01-29T01:52:30 173.969 INF [Steamworks.NET] Auth.AuthenticateUser()
+2018-01-29T01:52:30 174.002 INF [Steamworks.NET] Authenticating player: pionner121 SteamId: 76561198035573640 TicketLen: 1024 Result: k_EBeginAuthSessionResultOK
+
+
+2018-01-29T01:52:30 174.409 INF [Steamworks.NET] Authentication callback. ID: 76561198035573640, owner: 76561198035573640, result: k_EAuthSessionResponseOK
+2018-01-29T01:52:30 174.410 INF Steam authentication successful, registering with EAC: EntityID=-1, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+2018-01-29T01:52:30 174.410 INF [EAC] Registering user: EntityID=-1, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+2018-01-29T01:52:30 174.454 INF [EAC] Log: [RegisterClient] Client: 0000000000000001 PlayerGUID: 76561198035573640 PlayerIP: 127.0.0.1 OwnerGUID: 76561198035573640 PlayerName: pionner121
+
+
+2018-01-29T01:52:31 175.390 INF [EAC] Log: [Register Client] Success (1/2). Client: 0000000000000001
+2018-01-29T01:52:31 175.391 INF [EAC] Log: [QueueClientUpdate] Client: 0000000000000001 Ses7DaysServerManager 8.4 (Compiled 29.01.2018 01:56:34)Type "local help" for commands.
+Error during connecting to update server: the server is down, your connection to the internet is down or you're using unregistered build (server doesn't know your version of 7DSM, so it can't tell you if there are updates for it).
+
+Killing proccess...
+OK
+
+Proccess killed
+
+Server running from path: d:\program files (x86)\steam\steamapps\common\7 Days To Die
+
+Server is not ready yet... Trying again in 30s.
+(If this is the first start, it might take few minutes to render the level, keep calm.)
+
+SQL data updated.
+
+Server is running now...
+
+*** Connected with 7DTD server.
+*** Server version: Alpha 16.4 (b8) Compatibility Version: Alpha 16.4
+
+Server IP:   Any
+Server port: 26900
+Max players: 8
+Game mode:   GameModeSurvivalMP
+World:       Navezgane
+Game name:   My Game
+Difficulty:  2
+
+Press 'help' to get a list of all commands. Press 'exit' to end session.
+
+
+
+2018-01-29T01:58:27 101.758 INF Executing command 'lp' by Telnet from 127.0.0.1:47940
+Total of 0 in the game
+
+
+SQL data updated.
+
+2018-01-29T01:58:33 107.893 INF Reloading serveradmin.xml
+2018-01-29T01:58:33 107.893 INF Loading permissions file at 'C:\Users\pionner\AppData\Roaming/7DaysToDie/Saves/serveradmin.xml'
+2018-01-29T01:58:33 107.894 INF Loading permissions file done.
+
+
+2018-01-29T01:59:29 163.890 INF Executing command 'lp' by Telnet from 127.0.0.1:47940
+Total of 0 in the game
+
+
+SQL data updated.
+
+2018-01-29T01:59:57 191.966 INF [NET] PlayerConnected EntityID=-1, PlayerID='', OwnerID='', PlayerName=''
+
+
+Player joined: pionner121
+
+2018-01-29T01:59:57 192.290 INF PlayerLogin: pionner121/Alpha 16.4
+2018-01-29T01:59:57 192.292 INF Client IP: 127.0.0.1
+2018-01-29T01:59:57 192.300 INF [Steamworks.NET] Auth.AuthenticateUser()
+2018-01-29T01:59:57 192.336 INF [Steamworks.NET] Authenticating player: pionner121 SteamId: 76561198035573640 TicketLen: 1024 Result: k_EBeginAuthSessionResultOK
+
+
+2018-01-29T01:59:58 192.744 INF [Steamworks.NET] Authentication callback. ID: 76561198035573640, owner: 76561198035573640, result: k_EAuthSessionResponseOK
+2018-01-29T01:59:58 192.745 INF Steam authentication successful, registering with EAC: EntityID=-1, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+2018-01-29T01:59:58 192.746 INF [EAC] Registering user: EntityID=-1, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+2018-01-29T01:59:58 192.774 INF [EAC] Log: [RegisterClient] Client: 0000000000000001 PlayerGUID: 76561198035573640 PlayerIP: 127.0.0.1 OwnerGUID: 76561198035573640 PlayerName: pionner121
+
+
+2018-01-29T01:59:59 193.735 INF [EAC] Log: [Register Client] Success (1/2). Client: 0000000000000001
+2018-01-29T01:59:59 193.736 INF [EAC] Log: [QueueClientUpdate] Client: 0000000000000001 Session: 1 Status: Client Authenticated Message: Client authenticated
+2018-01-29T01:59:59 193.745 INF [EAC] UserStatusHandler callback. Status: ClientAuthenticatedLocal ReqKick: False Message: Client authenticated
+
+
+2018-01-29T01:59:59 194.317 INF [EAC] Log: [Register Client] Success (2/2). Client: 0000000000000001
+2018-01-29T01:59:59 194.317 INF [EAC] Log: [QueueClientUpdate] Client: 0000000000000001 Session: 1 Status: Client Authenticated Remotely Message: Client authenticated remotely
+2018-01-29T01:59:59 194.342 INF [EAC] UserStatusHandler callback. Status: ClientAuthenticatedRemote ReqKick: False Message: Client authenticated remotely
+2018-01-29T01:59:59 194.343 INF EAC authentication successful, allowing user: EntityID=-1, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+2018-01-29T01:59:59 194.344 INF Allowing player with id 76561198035573640
+
+
+2018-01-29T02:00:01 195.907 INF RequestToEnterGame: 76561198035573640/pionner121
+
+
+2018-01-29T02:00:14 209.283 INF RequestToSpawnPlayer: 171, pionner121, 12
+2018-01-29T02:00:14 209.360 INF Created player with id=171
+
+
+2018-01-29T02:00:22 216.850 INF Time: 2.55m FPS: 14.32 Heap: 694.8MB Max: 694.8MB Chunks: 730 CGO: 0 Ply: 1 Zom: 0 Ent: 1 (1) Items: 0 CO7DaysServerManager 8.4 (Compiled 29.01.2018 02:04:06)Type "local help" for commands.
+Error during connecting to update server: the server is down, your connection to the internet is down or you're using unregistered build (server doesn't know your version of 7DSM, so it can't tell you if there are updates for it).
+
+Server running from path: d:\program files (x86)\steam\steamapps\common\7 Days To Die
+
+Server is not ready yet... Trying again in 30s.
+(If this is the first start, it might take few minutes to render the level, keep calm.)
+
+SQL data updated.
+
+Server is running now...
+
+*** Connected with 7DTD server.
+*** Server version: Alpha 16.4 (b8) Compatibility Version: Alpha 16.4
+
+Server IP:   Any
+Server port: 26900
+Max players: 8
+Game mode:   GameModeSurvivalMP
+World:       Navezgane
+Game name:   My Game
+Difficulty:  2
+
+Press 'help' to get a list of all commands. Press 'exit' to end session.
+
+
+
+2018-01-29T02:05:56 98.071 INF Reloading serveradmin.xml
+2018-01-29T02:05:56 98.072 INF Loading permissions file at 'C:\Users\pionner\AppData\Roaming/7DaysToDie/Saves/serveradmin.xml'
+2018-01-29T02:05:56 98.073 INF Loading permissions file done.
+
+
+2018-01-29T02:05:59 101.869 INF Executing command 'lp' by Telnet from 127.0.0.1:48199
+Total of 0 in the game
+
+
+SQL data updated.
+
+2018-01-29T02:07:02 164.042 INF Executing command 'lp' by Telnet from 127.0.0.1:48199
+Total of 0 in the game
+
+
+SQL data updated.
+
+2018-01-29T02:08:04 226.648 INF [NET] PlayerConnected EntityID=-1, PlayerID='', OwnerID='', PlayerName=''
+2018-01-29T02:08:04 226.658 INF Executing command 'lp' by Telnet from 127.0.0.1:48199
+Total of 0 in the game
+
+
+Player joined: pionner121
+
+2018-01-29T02:08:04 226.864 INF PlayerLogin: pionner121/Alpha 16.4
+2018-01-29T02:08:04 226.864 INF Client IP: 127.0.0.1
+2018-01-29T02:08:04 226.867 INF [Steamworks.NET] Auth.AuthenticateUser()
+2018-01-29T02:08:04 226.905 INF [Steamworks.NET] Authenticating player: pionner121 SteamId: 76561198035573640 TicketLen: 1024 Result: k_EBeginAuthSessionResultOK
+
+
+SQL data updated.
+
+2018-01-29T02:08:05 227.316 INF [Steamworks.NET] Authentication callback. ID: 76561198035573640, owner: 76561198035573640, result: k_EAuthSessionResponseOK
+2018-01-29T02:08:05 227.318 INF Steam authentication successful, registering with EAC: EntityID=-1, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+2018-01-29T02:08:05 227.320 INF [EAC] Registering user: EntityID=-1, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+2018-01-29T02:08:05 227.380 INF [EAC] Log: [RegisterClient] Client: 0000000000000001 PlayerGUID: 76561198035573640 PlayerIP: 127.0.0.1 OwnerGUID: 76561198035573640 PlayerName: pionner121
+
+
+2018-01-29T02:08:06 228.319 INF [EAC] Log: [Register Client] Success (1/2). Client: 0000000000000001
+2018-01-29T02:08:06 228.320 INF [EAC] Log: [QueueClientUpdate] Client: 0000000000000001 Session: 1 Status: Client Authenticated Message: Client authenticated
+2018-01-29T02:08:06 228.340 INF [EAC] UserStatusHandler callback. Status: ClientAuthenticatedLocal ReqKick: False Message: Client authenticated
+
+
+2018-01-29T02:08:06 228.912 INF [EAC] Log: [Register Client] Success (2/2). Client: 0000000000000001
+2018-01-29T02:08:06 228.913 INF [EAC] Log: [QueueClientUpdate] Client: 0000000000000001 Session: 1 Status: Client Authenticated Remotely Message: Client authenticated remotely
+2018-01-29T02:08:06 228.935 INF [EAC] UserStatusHandler callback. Status: ClientAuthenticatedRemote ReqKick: False Message: Client authenticated remotely
+2018-01-29T02:08:06 228.935 INF EAC authentication successful, allowing user: EntityID=-1, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+2018-01-29T02:08:06 228.938 INF Allowing player with id 76561198035573640
+
+
+2018-01-29T02:08:08 230.596 INF RequestToEnterGame: 76561198035573640/pionner121
+
+
+2018-01-29T02:08:20 242.807 INF RequestToSpawnPlayer: 171, pionner121, 12
+2018-01-29T02:08:20 242.916 INF Created player with id=171
+
+
+2018-01-29T02:08:25 247.975 INF Time: 3.05m FPS: 17.44 Heap: 673.9MB Max: 673.9MB Chunks: 730 CGO: 0 Ply: 1 Zom: 0 Ent: 1 (1) Items: 0 CO: 1 RSS: 554.1MB
+
+
+2018-01-29T02:08:33 255.639 INF GMSG: Player 'pionner121' joined the game
+2018-01-29T02:08:33 255.660 INF PlayerSpawnedInWorld (reason: JoinMultiplayer, position: 1028, 62, 1023): EntityID=171, PlayerID='76561198035573640', OwnerID='76561198035573640', PlayerName='pionner121'
+
+
+2018-01-29T02:08:55 277.731 INF Time: 3.55m FPS: 20.37 Heap: 715.4MB Max: 715.4MB Chunks: 730 CGO: 9 Ply: 1 Zom: 0 Ent: 1 (1) Items: 0 CO: 1 RSS: 445.9MB
+
+
+2018-01-29T02:09:06 288.550 INF Executing command 'lp' by Telnet from 127.0.0.1:48199
+0. id=171, pionner121, pos=(1028.5, 62.6, 1023.3), rot=(0.0, 334.7, 0.0), remote=True, health=100, deaths=0, zombies=0, players=0, score=0, level=1, steamid=76561198035573640, ip=127.0.0.1, ping=20
+Total of 1 in the game
+
+
+SQL data updated.
+
+SQL data updated.
+
+2018-01-29T02:09:25 307.767 INF Time: 4.05m FPS: 20.00 Heap: 662.5MB Max: 715.4MB Chunks: 730 CGO: 9 Ply: 1 Zom: 0 Ent: 1 (1) Items: 0 CO: 1 RSS: 449.1MB
+
+
+Killing proccess...
+OK
+
+Proccess killed
+
+Telnet connection closed.
+
+7DaysServerManager 8.4 (Compiled 29.01.2018 02:04:06)Type "local help" for commands.
+Error during connecting to update server: the server is down, your connection to the internet is down or you're using unregistered build (server doesn't know your version of 7DSM, so it can't tell you if there are updates for it).
+
+7DaysServerManager 8.4 (Compiled 29.01.2018 02:12:38)Type "local help" for commands.
+Error during connecting to update server: the server is down, your connection to the internet is down or you're using unregistered build (server doesn't know your version of 7DSM, so it can't tell you if there are updates for it).
+
+7DaysServerManager 8.4 (Compiled 29.01.2018 02:12:38)Type "local help" for commands.
+Error during connecting to update server: the server is down, your connection to the internet is down or you're using unregistered build (server doesn't know your version of 7DSM, so it can't tell you if there are updates for it).
+

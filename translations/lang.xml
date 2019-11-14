@@ -1,0 +1,220 @@
+<?xml version="1.0"?>
+<Lang>
+  <property name="_language_name"       text="English"/>
+  <property name="_translation_author"       text="pionner"/>
+  <property name="about"       text="About"/>
+  <property name="always_on_top"       text="Always on top"/>
+  <property name="ankieta"       text="Survey"/>
+  <property name="ankieta_ask"       text="Hi! Could you fill in the questionnaire? It it will not take more than a minute:)"/>
+  <property name="ankieta_nie"       text="I'm very very bad person. Don't ask me again."/>
+  <property name="ankieta_potem"       text="I'll do it later"/>
+  <property name="ankieta_tak"       text="Sure! Let's do this!:)"/>
+  <property name="anon_data"       text="Allow colecting anonymous data (Don't disable it, please:))"/>
+  <property name="anon_data_2"       text="(What is collected?)"/>
+  <property name="anon_data_info"       text="-OS Version,
+-Selected language,
+-If server is avaialbe on public server list, server IP (for me only- so I can enter and play with you;))
+
+All data is collected for statistics purpose only."/>"
+  <property name="anul"       text="CANCELED"/>
+  <property name="anuluj"       text="Cancel"/>
+  <property name="auto"       text="Detect automatically"/>
+  <property name="auto_backup_check"       text="Auto backup"/>
+  <property name="auto_messages_label"       text="Auto message in:"/>
+  <property name="autobots"       text="Spawn"/>
+  <property name="backup_chat"       text="Send chat message after creating backup"/>
+  <property name="backup_time"       text="Backup every"/>
+  <property name="backup_timer_label"       text="Next backup in:"/>
+  <property name="ban"       text="BAN"/>
+  <property name="ban_sure"       text="Are you sure you want to ban "/>
+  <property name="banned"       text=" is banned now."/>
+  <property name="bantime_slider"       text="BAN"/>
+  <property name="blad"       text="Report error"/>
+  <property name="box_spawn_label"       text="Random box in:"/>
+  <property name="box_spawn_time"       text="Box spawn delay"/>
+  <property name="canceled"       text="Canceled"/>
+  <property name="chat_backup_1"       text="[Backup system]Creating backup..."/>
+  <property name="chat_backup_2"       text="[Backup system]Backup created."/>
+  <property name="cheatmode"       text="Cheat Mode"/>
+  <property name="chpath"       text="Change"/>
+  <property name="cleanexit"       text="Clean Exit (if unchecked SM will NOT kill server on exit! Uncheck only if you know what you're doing!)"/>
+  <property name="close"       text="Close server"/>
+  <property name="closing"       text="Closing server..."/>
+  <property name="cpl_pass"       text="Password:"/>
+  <property name="cpl_port"       text="Panel port:"/>
+  <property name="crash"       text="Server crashed... Restarting..."/>
+  <property name="ctime_0"       text="Instant"/>
+  <property name="ctime_1"       text="Normal"/>
+  <property name="ctime_2"       text="Fast"/>
+  <property name="ctime_g"       text="Craft timer / Loot timer"/>
+  <property name="ctrlp"       text="WWW Control panel"/>
+  <property name="ctrlpanel"       text="WWW Control panel"/>
+  <property name="czasinfo"       text="Time is random: 5min-2h"/>
+  <property name="dir_ok"       text="Dir seens to be all right. Saved"/>
+  <property name="dlugoscdnia"       text="Day length"/>
+  <property name="dod_0"       text="Nothing"/>
+  <property name="dod_1"       text="Everything"/>
+  <property name="dod_2"       text="Toolbelt"/>
+  <property name="dod_3"       text="Backpack"/>
+  <property name="dod_g"       text="Drop on death / Drop on quit"/>
+  <property name="doq_0"       text="Nothing"/>
+  <property name="doq_1"       text="Everything"/>
+  <property name="doq_2"       text="Toolbelt"/>
+  <property name="doq_3"       text="Backpack"/>
+  <property name="doq_g"       text="Drop on quit"/>
+  <property name="dostep"       text="Server list and server password"/>
+  <property name="dzien"       text="Day"/>
+  <property name="err_su_rem"       text="Can not remove server_updater.exe. Remove it manually."/>
+  <property name="error"       text="Error"/>
+  <property name="esm_g"       text="Enemy sense memory"/>
+  <property name="espawnmode_g"       text="Basic spawning mode"/>
+  <property name="fb_label"       text="Like us on facebook!"/>
+  <property name="fr_detect"       text="You have to show path of game dir. If you're using Steam version use Detect automatically, otherwise select I'll show path manually."/>
+  <property name="fr_end"       text="That's all. Click Finish to start manager."/>
+  <property name="fr_fin"       text="Finish"/>
+  <property name="fr_hi"       text="Hi! This window will not be shown again. Configuration will not take more than a minute:)"/>
+  <property name="fraglimit"       text="Frag limit"/>
+  <property name="friendlyfire"       text="Friendly fire"/>
+  <property name="game_not_found"       text="Game files not found."/>
+  <property name="game_not_found_2"       text="Game files not found."/>
+  <property name="game_not_found_cons"       text="7DaysToDie.exe not found!"/>
+  <property name="gamemode_coop"       text="Survival"/>
+  <property name="gamemode_horda"       text="Zombie horde"/>
+  <property name="gamemode_pvp"       text="Deathmatch"/>
+  <property name="godzina"       text="Hour"/>
+  <property name="graczegroup"       text="Players"/>
+  <property name="grout_server_telnet"       text="Other"/>
+  <property name="iloscdni"       text="Days"/>
+  <property name="imhere"       text="I'm here!"/>
+  <property name="kick"       text="KICK"/>
+  <property name="kick_ok"       text=" has been kicked."/>
+  <property name="kickgroup"       text="KICK"/>
+  <property name="kill_click"       text="Are you sure?
+This may corrupt your save file!"/>"
+  <property name="kill_proccess"       text="Kill proccess"/>
+  <property name="kill_workers_err"       text="Workers closing error. It shouldn't be a problem, but if something in not ok try restarting SM.
+
+"/>
+  <property name="killing_proc"       text="Killing proccess..."/>
+  <property name="kons_group"       text="Console"/>
+  <property name="kontrola"       text="Server"/>
+  <property name="lang_g"       text="Language"/>
+  <property name="ltime_0"       text="Instant"/>
+  <property name="ltime_1"       text="Normal"/>
+  <property name="ltime_2"       text="Fast"/>
+  <property name="ltime_g"       text="Loot timer"/>
+  <property name="manual"       text="I'll show path manually"/>
+  <property name="matchlength"       text="Match length"/>
+  <property name="maxplgroup"       text="Max players"/>
+  <property name="nat"       text="Turn off NAT (try it if nobody can enter the server)"/>
+  <property name="nazwamapa"       text="Game name, server name and map"/>
+  <property name="near_label"       text="Near player:"/>
+  <property name="next"       text="Next"/>
+  <property name="no_con"       text="I'm not connected to server. I cannot do that."/>
+  <property name="no_pl"       text="There are no players on the server."/>
+  <property name="odery"       text="Other"/>
+  <property name="p_dmg_g_g"       text="Player damage given"/>
+  <property name="p_dmg_r_g"       text="Player damage recieved"/>
+  <property name="path"       text="Game files path: "/>
+  <property name="port_g"       text="Server port"/>
+  <property name="potw"       text="CONFIRMED"/>
+  <property name="powod"       text="Reason"/>
+  <property name="proc_killed"       text="Proccess killed"/>
+  <property name="random"       text="random"/>
+  <property name="rebuildmap"       text="Rebuild map after match"/>
+  <property name="ref_err"       text="Cannot download playerlist."/>
+  <property name="refresh_players"       text="Refresh player list"/>
+  <property name="restore"       text="Click here to restore manager."/>
+  <property name="run_from"       text="server running from path: "/>
+  <property name="save_logfiles"       text="Save logs to file"/>
+  <property name="save_logfiles_2"       text="Save logs to file"/>
+  <property name="saved"       text="Saved"/>
+  <property name="sel_ban_time"       text="Select ban time"/>
+  <property name="server_closed"       text="Server closed"/>
+  <property name="ServerIsPublic"       text="Show server on server list"/>
+  <property name="show_ip"       text="Show IP"/>
+  <property name="show_stats"       text="(Show these stats)"/>
+  <property name="showonmap"       text="Show players on map"/>
+  <property name="spam_time"       text="Delay between messages"/>
+  <property name="spaminfo"       text="Messages written here will show up on server chat. Each message should be written in new line."/>
+  <property name="spawn_box"       text="Spawn random boxes near players"/>
+  <property name="spawn_box_2"       text="Random boxes"/>
+  <property name="spawn_group"       text="Items spawning"/>
+  <property name="spawn_now"       text="Spawn"/>
+  <property name="spawn_zombie"       text="Spawn random zombies near players"/>
+  <property name="spawn_zombie_2"       text="Addonal random zombies"/>
+  <property name="sql_db_name_g"       text="SQL Database"/>
+  <property name="sql_enabled"       text="Export data to MySQL database"/>
+  <property name="sql_export_label"       text="SQL export in:"/>
+  <property name="sql_host_g"       text="SQL Server"/>
+  <property name="sql_password_g"       text="SQL Password"/>
+  <property name="sql_updates_time_g"       text="Update every"/>
+  <property name="sql_username_g"       text="SQL Username"/>
+  <property name="sql_warn"       text="Stored password is NOT encrypted!"/>
+  <property name="start"       text="Start server"/>
+  <property name="status_info"       text="Status always shows that server is online when game is running."/>
+  <property name="status_not"       text="Server: OFFLINE"/>
+  <property name="status_working"       text="Server: ONLINE"/>
+  <property name="steam_no_game"       text="Didn't found game on Steam. You have to download the game via Steam."/>
+  <property name="steam_no_steam"       text="Steam not found. Set path manually"/>
+  <property name="steam_ok"       text="Found game files. Should work:)"/>
+  <property name="steamsearch"       text="Detect automatically"/>
+  <property name="sth_went_terribly_wrong"       text="Something went terribly wrong. Restart server."/>
+  <property name="stop"       text="Shutdown server"/>
+  <property name="sure_close"       text="Are you sure you want to turn the server off?"/>
+  <property name="telnet_connect"       text="Set"/>
+  <property name="telnet_group"       text="Game time"/>
+  <property name="telnet_refuse"       text="Server refused connection."/>
+  <property name="timers_g"       text="Timers"/>
+  <property name="title_ver"       text="for game"/>
+  <property name="to_tray"       text="Minimalize to tray"/>
+  <property name="translate"       text="Search for translation to your language"/>
+  <property name="translate_2"       text="or create your own translation"/>
+  <property name="trudnoscgroup"       text="Difficulty"/>
+  <property name="trybgry"       text="Gamemode"/>
+  <property name="typ"       text="Item/mob"/>
+  <property name="upd_ava"       text="Update available!"/>
+  <property name="upd_ava_2"       text="Update available! Download now?"/>
+  <property name="upd_err"       text="Error during connecting to update server!"/>
+  <property name="upd_time"       text="secs. Don't update too often."/>
+  <property name="update"       text="Update"/>
+  <property name="update_ok"       text="Update successful"/>
+  <property name="ustawienia_grupa_ustawienia"       text="Settings"/>
+  <property name="wait"       text="Wait..."/>
+  <property name="warning"       text="Warning"/>
+  <property name="wn_cl"       text="Close window request"/>
+  <property name="workerynapis"       text="Running workers:"/>
+  <property name="zomb_pie"       text="Zombies"/>
+  <property name="zombie_never_run"       text="Zombies never run"/>
+  <property name="zombie_normal"       text="Zombies run at night"/>
+  <property name="zombie_run"       text="Zombies always run"/>
+  <property name="zombie_spawn_label"       text="Random zombie in:"/>
+  <property name="zombie_spawn_time"       text="Zombie spawn delay"/>
+  <property name="zombiespawn"       text="Basic zombies spawn"/>
+  
+  <!--Added in 5.21-->
+  <property name="nightpercentage_g"       text="Night percentage"/>
+  <property name="bdm_g"       text="Block durability modifier"/>
+  <property name="realtime"       text="Realtime- synchronize game clock with real one (resets days counter!)"/>
+  
+  <!--Added in 5.24-->
+  <property name="remote_g"     text="Remote Management"/>
+  <property name="remote_enable"     text="Remote control enabled"/>
+  <property name="remote_login_l"     text="Remote Control Login:"/>
+  <property name="remote_password_l"     text="Remote Control Password:"/>
+  <property name="remote_get"     text="Get an account!"/>
+  <property name="remote_login_error"     text="Wrong login or password... Disabled remote control."/>
+  <property name="remote_waiting"     text="Waiting..."/>
+  <property name="remote_ok"     text="Connected..."/>
+  <property name="remote_cpl"     text="Remote Control Panel"/>
+  
+  <!--Added in 5.27-->
+  <property name="LootAbundance_g"     text="Loot abundance"/>
+  <property name="LootRespawnDays_g"     text="Loot respawn days"/>
+  <property name="filename_g"     text="Server admin config file"/>
+  <property name="telnet_g"     text="Telnet connection"/>
+  <property name="sa_edit"     text="Edit"/>
+  <property name="browse"     text="Browse"/>
+
+
+</Lang>

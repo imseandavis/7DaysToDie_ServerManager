@@ -1,0 +1,61 @@
+C:\Documents and Settings\Administrator\Pulpit\7daysservermanager\7DaysServerManager\bin\Debug\7DaysServerManager.exe.config
+C:\Documents and Settings\Administrator\Pulpit\7daysservermanager\7DaysServerManager\bin\Debug\7DaysServerManager.exe
+C:\Documents and Settings\Administrator\Pulpit\7daysservermanager\7DaysServerManager\bin\Debug\7DaysServerManager.pdb
+C:\Documents and Settings\Administrator\Pulpit\7daysservermanager\7DaysServerManager\bin\Debug\MySql.Data.dll
+C:\Documents and Settings\Administrator\Pulpit\7daysservermanager\7DaysServerManager\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\Pulpit\7daysservermanager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.about.resources
+C:\Documents and Settings\Administrator\Pulpit\7daysservermanager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.ankieta.resources
+C:\Documents and Settings\Administrator\Pulpit\7daysservermanager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.contact.resources
+C:\Documents and Settings\Administrator\Pulpit\7daysservermanager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.license.resources
+C:\Documents and Settings\Administrator\Pulpit\7daysservermanager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.new_profile.resources
+C:\Documents and Settings\Administrator\Pulpit\7daysservermanager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.hello.resources
+C:\Documents and Settings\Administrator\Pulpit\7daysservermanager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.lang.lang_en.resources
+C:\Documents and Settings\Administrator\Pulpit\7daysservermanager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.profile_selector.resources
+C:\Documents and Settings\Administrator\Pulpit\7daysservermanager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.error_reporter.resources
+C:\Documents and Settings\Administrator\Pulpit\7daysservermanager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.Properties.Resources.resources
+C:\Documents and Settings\Administrator\Pulpit\7daysservermanager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.server_panel.resources
+C:\Documents and Settings\Administrator\Pulpit\7daysservermanager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.update.resources
+C:\Documents and Settings\Administrator\Pulpit\7daysservermanager\7DaysServerManager\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\Administrator\Pulpit\7daysservermanager\7DaysServerManager\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+C:\Documents and Settings\Administrator\Pulpit\7daysservermanager\7DaysServerManager\obj\x86\Debug\7DaysServerManager.exe
+C:\Documents and Settings\Administrator\Pulpit\7daysservermanager\7DaysServerManager\obj\x86\Debug\7DaysServerManager.pdb
+D:\GIT\7daysservermanager\7DaysServerManager\bin\Debug\7DaysServerManager.exe.config
+D:\GIT\7daysservermanager\7DaysServerManager\bin\Debug\7DaysServerManager.exe
+D:\GIT\7daysservermanager\7DaysServerManager\bin\Debug\7DaysServerManager.pdb
+D:\GIT\7daysservermanager\7DaysServerManager\bin\Debug\MySql.Data.dll
+D:\GIT\7daysservermanager\7DaysServerManager\obj\x86\Debug\7DaysServerManager.csprojResolveAssemblyReference.cache
+D:\GIT\7daysservermanager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.about.resources
+D:\GIT\7daysservermanager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.ankieta.resources
+D:\GIT\7daysservermanager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.contact.resources
+D:\GIT\7daysservermanager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.license.resources
+D:\GIT\7daysservermanager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.new_profile.resources
+D:\GIT\7daysservermanager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.hello.resources
+D:\GIT\7daysservermanager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.lang.lang_en.resources
+D:\GIT\7daysservermanager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.profile_selector.resources
+D:\GIT\7daysservermanager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.error_reporter.resources
+D:\GIT\7daysservermanager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.Properties.Resources.resources
+D:\GIT\7daysservermanager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.server_panel.resources
+D:\GIT\7daysservermanager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.update.resources
+D:\GIT\7daysservermanager\7DaysServerManager\obj\x86\Debug\7DaysServerManager.csproj.GenerateResource.Cache
+D:\GIT\7daysservermanager\7DaysServerManager\obj\x86\Debug\7DaysServerManager.exe
+D:\GIT\7daysservermanager\7DaysServerManager\obj\x86\Debug\7DaysServerManager.pdb
+D:\GIT\7DSM\7DaysServerManager\bin\Debug\7DaysServerManager.exe.config
+D:\GIT\7DSM\7DaysServerManager\bin\Debug\7DaysServerManager.exe
+D:\GIT\7DSM\7DaysServerManager\bin\Debug\7DaysServerManager.pdb
+D:\GIT\7DSM\7DaysServerManager\bin\Debug\MySql.Data.dll
+D:\GIT\7DSM\7DaysServerManager\obj\x86\Debug\7DaysServerManager.csprojResolveAssemblyReference.cache
+D:\GIT\7DSM\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.about.resources
+D:\GIT\7DSM\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.ankieta.resources
+D:\GIT\7DSM\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.contact.resources
+D:\GIT\7DSM\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.license.resources
+D:\GIT\7DSM\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.new_profile.resources
+D:\GIT\7DSM\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.hello.resources
+D:\GIT\7DSM\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.lang.lang_en.resources
+D:\GIT\7DSM\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.profile_selector.resources
+D:\GIT\7DSM\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.error_reporter.resources
+D:\GIT\7DSM\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.Properties.Resources.resources
+D:\GIT\7DSM\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.server_panel.resources
+D:\GIT\7DSM\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.update.resources
+D:\GIT\7DSM\7DaysServerManager\obj\x86\Debug\7DaysServerManager.csproj.GenerateResource.Cache
+D:\GIT\7DSM\7DaysServerManager\obj\x86\Debug\7DaysServerManager.exe
+D:\GIT\7DSM\7DaysServerManager\obj\x86\Debug\7DaysServerManager.pdb

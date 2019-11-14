@@ -1,0 +1,896 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="about" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="always_on_top" xml:space="preserve">
+    <value>Always on top</value>
+  </data>
+  <data name="anul" xml:space="preserve">
+    <value>CANCELED</value>
+  </data>
+  <data name="autobots" xml:space="preserve">
+    <value>Spawn</value>
+  </data>
+  <data name="ban" xml:space="preserve">
+    <value>BAN</value>
+  </data>
+  <data name="banned" xml:space="preserve">
+    <value> is banned now.</value>
+  </data>
+  <data name="bantime_slider" xml:space="preserve">
+    <value>BAN</value>
+  </data>
+  <data name="ban_sure" xml:space="preserve">
+    <value>Are you sure you want to ban </value>
+  </data>
+  <data name="blad" xml:space="preserve">
+    <value>Report bug</value>
+  </data>
+  <data name="canceled" xml:space="preserve">
+    <value>Canceled</value>
+  </data>
+  <data name="cheatmode" xml:space="preserve">
+    <value>Cheat Mode</value>
+  </data>
+  <data name="chpath" xml:space="preserve">
+    <value>Change</value>
+  </data>
+  <data name="close" xml:space="preserve">
+    <value>Close server</value>
+  </data>
+  <data name="closing" xml:space="preserve">
+    <value>Closing server...</value>
+  </data>
+  <data name="cpl_pass" xml:space="preserve">
+    <value>Password:</value>
+  </data>
+  <data name="cpl_port" xml:space="preserve">
+    <value>Port:</value>
+  </data>
+  <data name="crash" xml:space="preserve">
+    <value>Server crashed... Restarting...</value>
+  </data>
+  <data name="ctrlp" xml:space="preserve">
+    <value>WWW Control panel</value>
+  </data>
+  <data name="ctrlpanel" xml:space="preserve">
+    <value>WWW Control panel</value>
+  </data>
+  <data name="czasinfo" xml:space="preserve">
+    <value>Time is random: 5min-2h</value>
+  </data>
+  <data name="dir_ok" xml:space="preserve">
+    <value>Dir seems to be all right. Saved</value>
+  </data>
+  <data name="dlugoscdnia" xml:space="preserve">
+    <value>Day length</value>
+  </data>
+  <data name="dostep" xml:space="preserve">
+    <value>Servers list and server password</value>
+  </data>
+  <data name="dzien" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="err_su_rem" xml:space="preserve">
+    <value>Can not remove server_updater.exe. Remove it manually.</value>
+  </data>
+  <data name="fb_label" xml:space="preserve">
+    <value>&lt; Like us on facebook!</value>
+  </data>
+  <data name="fraglimit" xml:space="preserve">
+    <value>Frag limit</value>
+  </data>
+  <data name="friendlyfire" xml:space="preserve">
+    <value>Friendly fire</value>
+  </data>
+  <data name="gamemode_coop" xml:space="preserve">
+    <value>Survival SP</value>
+  </data>
+  <data name="gamemode_horda" xml:space="preserve">
+    <value>Zombie horde</value>
+  </data>
+  <data name="gamemode_pvp" xml:space="preserve">
+    <value>Deathmatch</value>
+  </data>
+  <data name="game_not_found" xml:space="preserve">
+    <value>Game files not found.</value>
+  </data>
+  <data name="game_not_found_2" xml:space="preserve">
+    <value>Game files not found.</value>
+  </data>
+  <data name="game_not_found_cons" xml:space="preserve">
+    <value>7DaysToDie.exe not found!</value>
+  </data>
+  <data name="godzina" xml:space="preserve">
+    <value>Hour</value>
+  </data>
+  <data name="graczegroup" xml:space="preserve">
+    <value>Players</value>
+  </data>
+  <data name="grout_server_telnet" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="imhere" xml:space="preserve">
+    <value>I'm here!</value>
+  </data>
+  <data name="kick" xml:space="preserve">
+    <value>KICK</value>
+  </data>
+  <data name="kickgroup" xml:space="preserve">
+    <value>KICK</value>
+  </data>
+  <data name="kick_ok" xml:space="preserve">
+    <value> has been kicked.</value>
+  </data>
+  <data name="killing_proc" xml:space="preserve">
+    <value>Killing proccess...</value>
+  </data>
+  <data name="kill_click" xml:space="preserve">
+    <value>Are you sure?
+This may corrupt your save file!</value>
+  </data>
+  <data name="kill_proccess" xml:space="preserve">
+    <value>Kill proccess</value>
+  </data>
+  <data name="kill_workers_err" xml:space="preserve">
+    <value>Workers closing error. It shouldn't be a problem, but if something in not ok try restarting SM.
+
+</value>
+  </data>
+  <data name="kons_group" xml:space="preserve">
+    <value>Console</value>
+  </data>
+  <data name="kontrola" xml:space="preserve">
+    <value>Server</value>
+  </data>
+  <data name="matchlength" xml:space="preserve">
+    <value>Match length</value>
+  </data>
+  <data name="maxplgroup" xml:space="preserve">
+    <value>Max players</value>
+  </data>
+  <data name="nat" xml:space="preserve">
+    <value>Turn off NAT (try it if nobody can enter the server)</value>
+  </data>
+  <data name="nazwamapa" xml:space="preserve">
+    <value>Game name, server name and map</value>
+  </data>
+  <data name="near_label" xml:space="preserve">
+    <value>Near player:</value>
+  </data>
+  <data name="no_con" xml:space="preserve">
+    <value>I'm not connected to server. I cannot do that.</value>
+  </data>
+  <data name="no_pl" xml:space="preserve">
+    <value>There are no players on the server.</value>
+  </data>
+  <data name="odery" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="path" xml:space="preserve">
+    <value>Game files path: </value>
+  </data>
+  <data name="port_g" xml:space="preserve">
+    <value>Server port</value>
+  </data>
+  <data name="potw" xml:space="preserve">
+    <value>CONFIRMED</value>
+  </data>
+  <data name="proc_killed" xml:space="preserve">
+    <value>Proccess killed</value>
+  </data>
+  <data name="rebuildmap" xml:space="preserve">
+    <value>Rebuild map after match</value>
+  </data>
+  <data name="refresh_players" xml:space="preserve">
+    <value>Refresh player list</value>
+  </data>
+  <data name="ref_err" xml:space="preserve">
+    <value>Cannot download playerlist.</value>
+  </data>
+  <data name="restore" xml:space="preserve">
+    <value>Click here to restore manager.</value>
+  </data>
+  <data name="run_from" xml:space="preserve">
+    <value>Server running from path: </value>
+  </data>
+  <data name="saved" xml:space="preserve">
+    <value>Saved</value>
+  </data>
+  <data name="save_logfiles" xml:space="preserve">
+    <value>Save logs to files</value>
+  </data>
+  <data name="save_logfiles_2" xml:space="preserve">
+    <value>Save logs to file</value>
+  </data>
+  <data name="sel_ban_time" xml:space="preserve">
+    <value>Select ban time</value>
+  </data>
+  <data name="ServerIsPublic" xml:space="preserve">
+    <value>Show server on servers list</value>
+  </data>
+  <data name="server_closed" xml:space="preserve">
+    <value>Server closed</value>
+  </data>
+  <data name="showonmap" xml:space="preserve">
+    <value>Show players on map</value>
+  </data>
+  <data name="spawn_box" xml:space="preserve">
+    <value>Spawn random boxes near players</value>
+  </data>
+  <data name="spawn_box_2" xml:space="preserve">
+    <value>Random boxes</value>
+  </data>
+  <data name="spawn_group" xml:space="preserve">
+    <value>Items spawning</value>
+  </data>
+  <data name="spawn_now" xml:space="preserve">
+    <value>Spawn</value>
+  </data>
+  <data name="spawn_zombie" xml:space="preserve">
+    <value>Spawn random zombies near players</value>
+  </data>
+  <data name="spawn_zombie_2" xml:space="preserve">
+    <value>Addonal random zombies</value>
+  </data>
+  <data name="start" xml:space="preserve">
+    <value>Start server</value>
+  </data>
+  <data name="status_info" xml:space="preserve">
+    <value>Status always shows that server is online when game is running.</value>
+  </data>
+  <data name="status_not" xml:space="preserve">
+    <value>Server: OFFLINE</value>
+  </data>
+  <data name="status_working" xml:space="preserve">
+    <value>Server: ONLINE</value>
+  </data>
+  <data name="steamsearch" xml:space="preserve">
+    <value>Detect automatically</value>
+  </data>
+  <data name="steam_no_game" xml:space="preserve">
+    <value>Didn't found game on Steam. You have to download the game via Steam.</value>
+  </data>
+  <data name="steam_no_steam" xml:space="preserve">
+    <value>Steam not found. Set path manually</value>
+  </data>
+  <data name="steam_ok" xml:space="preserve">
+    <value>Found game files. Should work:)</value>
+  </data>
+  <data name="sth_went_terribly_wrong" xml:space="preserve">
+    <value>Something went terribly wrong. Restart server.</value>
+  </data>
+  <data name="stop" xml:space="preserve">
+    <value>Shutdown server</value>
+  </data>
+  <data name="sure_close" xml:space="preserve">
+    <value>Are you sure you want to turn the server off?</value>
+  </data>
+  <data name="telnet_group" xml:space="preserve">
+    <value>Game time</value>
+  </data>
+  <data name="telnet_refuse" xml:space="preserve">
+    <value>Server refused connection.
+
+
+
+</value>
+  </data>
+  <data name="title_ver" xml:space="preserve">
+    <value>for game</value>
+  </data>
+  <data name="to_tray" xml:space="preserve">
+    <value>Minimalize to tray</value>
+  </data>
+  <data name="trudnoscgroup" xml:space="preserve">
+    <value>Difficulty</value>
+  </data>
+  <data name="trybgry" xml:space="preserve">
+    <value>Gamemode</value>
+  </data>
+  <data name="typ" xml:space="preserve">
+    <value>Item/mob</value>
+  </data>
+  <data name="update" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="update_ok" xml:space="preserve">
+    <value>Update successful</value>
+  </data>
+  <data name="upd_ava" xml:space="preserve">
+    <value>Update available!</value>
+  </data>
+  <data name="upd_ava_2" xml:space="preserve">
+    <value>Update available! Download now?</value>
+  </data>
+  <data name="upd_err" xml:space="preserve">
+    <value>Error during connecting to update server: the server is down, your connection to the internet is down or you're using unregistered build (server doesn't know your version of 7DSM, so it can't tell you if there are updates for it).</value>
+  </data>
+  <data name="ustawienia_grupa_ustawienia" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="wait" xml:space="preserve">
+    <value>Wait...</value>
+  </data>
+  <data name="warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="wn_cl" xml:space="preserve">
+    <value>Close window request</value>
+  </data>
+  <data name="workerynapis" xml:space="preserve">
+    <value>Running workers:</value>
+  </data>
+  <data name="zombiespawn" xml:space="preserve">
+    <value>Basic zombies spawn</value>
+  </data>
+  <data name="zombie_never_run" xml:space="preserve">
+    <value>Zombies never run</value>
+  </data>
+  <data name="zombie_normal" xml:space="preserve">
+    <value>Zombies run at night</value>
+  </data>
+  <data name="zombie_run" xml:space="preserve">
+    <value>Zombies always run</value>
+  </data>
+  <data name="zomb_pie" xml:space="preserve">
+    <value>Zombies</value>
+  </data>
+  <data name="telnet_connect" xml:space="preserve">
+    <value>Set</value>
+  </data>
+  <data name="lang_g" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="show_ip" xml:space="preserve">
+    <value>Show IP</value>
+  </data>
+  <data name="spaminfo" xml:space="preserve">
+    <value>Commands written here will be send to server. Each command should be written in new line.</value>
+  </data>
+  <data name="spam_time" xml:space="preserve">
+    <value>Delay between commands</value>
+  </data>
+  <data name="anuluj" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="auto" xml:space="preserve">
+    <value>Detect automatically</value>
+  </data>
+  <data name="fr_detect" xml:space="preserve">
+    <value>You have to show path of game dir. If you're using Steam version use "Detect automatically", otherwise select "I'll show path manually".</value>
+  </data>
+  <data name="fr_end" xml:space="preserve">
+    <value>That's all. Click "Finish" to return to profiles menu.</value>
+  </data>
+  <data name="fr_fin" xml:space="preserve">
+    <value>Finish</value>
+  </data>
+  <data name="fr_hi" xml:space="preserve">
+    <value>To create new profile, enter its name in the field below.</value>
+  </data>
+  <data name="manual" xml:space="preserve">
+    <value>I'll show path manually</value>
+  </data>
+  <data name="next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="iloscdni" xml:space="preserve">
+    <value>Days</value>
+  </data>
+  <data name="ankieta" xml:space="preserve">
+    <value>Survey</value>
+  </data>
+  <data name="ankieta_ask" xml:space="preserve">
+    <value>Hi! Could you fill in the questionnaire? It it will not take more than a minute:)</value>
+  </data>
+  <data name="ankieta_nie" xml:space="preserve">
+    <value>I'm very very bad person. Don't ask me again.</value>
+  </data>
+  <data name="ankieta_potem" xml:space="preserve">
+    <value>I'll do it later</value>
+  </data>
+  <data name="ankieta_tak" xml:space="preserve">
+    <value>Sure! Let's do this!:)</value>
+  </data>
+  <data name="translate" xml:space="preserve">
+    <value>Search for translation to your language</value>
+  </data>
+  <data name="cleanexit" xml:space="preserve">
+    <value>Clean Exit (if unchecked SM will NOT kill server on exit!)</value>
+  </data>
+  <data name="powod" xml:space="preserve">
+    <value>Reason</value>
+  </data>
+  <data name="box_spawn_time" xml:space="preserve">
+    <value>Box spawn delay</value>
+  </data>
+  <data name="random" xml:space="preserve">
+    <value>random</value>
+  </data>
+  <data name="zombie_spawn_time" xml:space="preserve">
+    <value>Zombie spawn delay</value>
+  </data>
+  <data name="anon_data" xml:space="preserve">
+    <value>Send anonymous usage statistics</value>
+  </data>
+  <data name="anon_data_2" xml:space="preserve">
+    <value>What are these?</value>
+  </data>
+  <data name="anon_data_info" xml:space="preserve">
+    <value>-OS Version,
+-If server is available on public servers list, server IP (for me only- so I can enter and play with you;))
+-If you are using built in website
+-If you are using Android widget
+
+All data is collected for statistics purpose only.
+
+If you don't allow to collect data, You're only added to total 7DSM runs counter.</value>
+  </data>
+  <data name="sql_db_name_g" xml:space="preserve">
+    <value>SQL Database</value>
+  </data>
+  <data name="sql_enabled" xml:space="preserve">
+    <value>Export data to MySQL database</value>
+  </data>
+  <data name="sql_host_g" xml:space="preserve">
+    <value>SQL Server</value>
+  </data>
+  <data name="sql_password_g" xml:space="preserve">
+    <value>SQL Password</value>
+  </data>
+  <data name="sql_updates_time_g" xml:space="preserve">
+    <value>Update every</value>
+  </data>
+  <data name="sql_username_g" xml:space="preserve">
+    <value>SQL Username</value>
+  </data>
+  <data name="sql_warn" xml:space="preserve">
+    <value>Stored password is NOT encrypted!</value>
+  </data>
+  <data name="upd_time" xml:space="preserve">
+    <value>secs. Don't update too often.</value>
+  </data>
+  <data name="auto_messages_label" xml:space="preserve">
+    <value>Auto command in:</value>
+  </data>
+  <data name="box_spawn_label" xml:space="preserve">
+    <value>Random box in:</value>
+  </data>
+  <data name="sql_export_label" xml:space="preserve">
+    <value>SQL export in:</value>
+  </data>
+  <data name="timers_g" xml:space="preserve">
+    <value>Timers</value>
+  </data>
+  <data name="zombie_spawn_label" xml:space="preserve">
+    <value>Random zombie in:</value>
+  </data>
+  <data name="backup_time" xml:space="preserve">
+    <value>Backup every</value>
+  </data>
+  <data name="backup_timer_label" xml:space="preserve">
+    <value>Next backup in:</value>
+  </data>
+  <data name="show_stats" xml:space="preserve">
+    <value>(Show these stats)</value>
+  </data>
+  <data name="auto_backup_check" xml:space="preserve">
+    <value>Auto backup</value>
+  </data>
+  <data name="backup_chat" xml:space="preserve">
+    <value>Send chat message after creating backup</value>
+  </data>
+  <data name="chat_backup_1" xml:space="preserve">
+    <value>[Backup system]Creating backup...</value>
+  </data>
+  <data name="chat_backup_2" xml:space="preserve">
+    <value>[Backup system]Backup created.</value>
+  </data>
+  <data name="ctime_0" xml:space="preserve">
+    <value>Instant</value>
+  </data>
+  <data name="ctime_1" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="ctime_2" xml:space="preserve">
+    <value>Fast</value>
+  </data>
+  <data name="ctime_g" xml:space="preserve">
+    <value>Craft timer / Loot timer</value>
+  </data>
+  <data name="dod_0" xml:space="preserve">
+    <value>Everything</value>
+  </data>
+  <data name="dod_1" xml:space="preserve">
+    <value>Toolbelt</value>
+  </data>
+  <data name="dod_2" xml:space="preserve">
+    <value>Backpack</value>
+  </data>
+  <data name="dod_3" xml:space="preserve">
+    <value>Nothing</value>
+  </data>
+  <data name="dod_g" xml:space="preserve">
+    <value>Drop on death / Drop on quit</value>
+  </data>
+  <data name="doq_0" xml:space="preserve">
+    <value>Nothing</value>
+  </data>
+  <data name="doq_1" xml:space="preserve">
+    <value>Everything</value>
+  </data>
+  <data name="doq_2" xml:space="preserve">
+    <value>Toolbelt</value>
+  </data>
+  <data name="doq_3" xml:space="preserve">
+    <value>Backpack</value>
+  </data>
+  <data name="doq_g" xml:space="preserve">
+    <value>Drop on quit</value>
+  </data>
+  <data name="esm_g" xml:space="preserve">
+    <value>Enemy sense memory</value>
+  </data>
+  <data name="espawnmode_g" xml:space="preserve">
+    <value>Basic spawning mode</value>
+  </data>
+  <data name="ltime_0" xml:space="preserve">
+    <value>Instant</value>
+  </data>
+  <data name="ltime_1" xml:space="preserve">
+    <value>Normal</value>
+  </data>
+  <data name="ltime_2" xml:space="preserve">
+    <value>Fast</value>
+  </data>
+  <data name="ltime_g" xml:space="preserve">
+    <value>Loot timer</value>
+  </data>
+  <data name="p_dmg_g_g" xml:space="preserve">
+    <value>Player damage given</value>
+  </data>
+  <data name="p_dmg_r_g" xml:space="preserve">
+    <value>Player damage recieved</value>
+  </data>
+  <data name="translate_2" xml:space="preserve">
+    <value>or create your own translation</value>
+  </data>
+  <data name="_language_name" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="_translation_author" xml:space="preserve">
+    <value>pionner</value>
+  </data>
+  <data name="bdm_g" xml:space="preserve">
+    <value>Block durability modifier</value>
+  </data>
+  <data name="nightpercentage_g" xml:space="preserve">
+    <value>Day Light Length</value>
+  </data>
+  <data name="realtime" xml:space="preserve">
+    <value>Synchronize game clock with real one (resets days counter!)</value>
+  </data>
+  <data name="remote_cpl" xml:space="preserve">
+    <value>Remote Control Panel</value>
+  </data>
+  <data name="remote_enable" xml:space="preserve">
+    <value>Remote control enabled</value>
+  </data>
+  <data name="remote_g" xml:space="preserve">
+    <value>Remote Management</value>
+  </data>
+  <data name="remote_get" xml:space="preserve">
+    <value>Get an account!</value>
+  </data>
+  <data name="remote_login_error" xml:space="preserve">
+    <value>Wrong login or password... Disabled remote control.</value>
+  </data>
+  <data name="remote_login_l" xml:space="preserve">
+    <value>Remote Control Login:</value>
+  </data>
+  <data name="remote_ok" xml:space="preserve">
+    <value>Connected...</value>
+  </data>
+  <data name="remote_password_l" xml:space="preserve">
+    <value>Remote Control Password:</value>
+  </data>
+  <data name="remote_waiting" xml:space="preserve">
+    <value>Waiting...</value>
+  </data>
+  <data name="browse" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="filename_g" xml:space="preserve">
+    <value>Server admin config file</value>
+  </data>
+  <data name="LootAbundance_g" xml:space="preserve">
+    <value>Loot abundance</value>
+  </data>
+  <data name="LootRespawnDays_g" xml:space="preserve">
+    <value>Loot respawn days</value>
+  </data>
+  <data name="sa_edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="telnet_g" xml:space="preserve">
+    <value>Telnet connection</value>
+  </data>
+  <data name="disabled" xml:space="preserve">
+    <value>disabled</value>
+  </data>
+  <data name="Exponential" xml:space="preserve">
+    <value>Exponential</value>
+  </data>
+  <data name="Full_prot" xml:space="preserve">
+    <value>Full protection until claim is expired</value>
+  </data>
+  <data name="LandClaim" xml:space="preserve">
+    <value>Claiming land</value>
+  </data>
+  <data name="LandClaimDeadZone_g" xml:space="preserve">
+    <value>Land claim dead zone</value>
+  </data>
+  <data name="LandClaimDecayMode_g" xml:space="preserve">
+    <value>Land claim decay node</value>
+  </data>
+  <data name="LandClaimExpiryTime_g" xml:space="preserve">
+    <value>Land claim expiry time</value>
+  </data>
+  <data name="LandClaimSize_g" xml:space="preserve">
+    <value>Land claim size</value>
+  </data>
+  <data name="LandClaim_g" xml:space="preserve">
+    <value>Land claim durability modifier</value>
+  </data>
+  <data name="Linear" xml:space="preserve">
+    <value>Linear</value>
+  </data>
+  <data name="offline" xml:space="preserve">
+    <value>Offline</value>
+  </data>
+  <data name="online" xml:space="preserve">
+    <value>Online</value>
+  </data>
+  <data name="select_player" xml:space="preserve">
+    <value>Select player from list.</value>
+  </data>
+  <data name="spam_g" xml:space="preserve">
+    <value>Random commands</value>
+  </data>
+  <data name="rebooting" xml:space="preserve">
+    <value>Server is restarting NOW.</value>
+  </data>
+  <data name="reset_chat" xml:space="preserve">
+    <value>Warn players before restart</value>
+  </data>
+  <data name="reset_enabled" xml:space="preserve">
+    <value>Enable auto restarts</value>
+  </data>
+  <data name="reset_g" xml:space="preserve">
+    <value>Auto restarts</value>
+  </data>
+  <data name="reset_timer_label" xml:space="preserve">
+    <value>Next auto restart in:</value>
+  </data>
+  <data name="reset_time_left" xml:space="preserve">
+    <value>Server will restart in %d minutes.</value>
+  </data>
+  <data name="save_g" xml:space="preserve">
+    <value>Game saves dir. (leave empty to use default)</value>
+  </data>
+  <data name="spam_is_spam" xml:space="preserve">
+    <value>Add "say" to every command.</value>
+  </data>
+  <data name="start_in" xml:space="preserve">
+    <value>Start in: </value>
+  </data>
+  <data name="wrong_map_dir" xml:space="preserve">
+    <value>Game saves directory is incorrect.</value>
+  </data>
+  <data name="AirDropFrequency" xml:space="preserve">
+    <value>Air drop frequency</value>
+  </data>
+  <data name="feral" xml:space="preserve">
+    <value>Feral difficulty</value>
+  </data>
+  <data name="MaxSpawnedZombies_g" xml:space="preserve">
+    <value>Max spawned zombies</value>
+  </data>
+  <data name="reboot_con" xml:space="preserve">
+    <value>Connect to running server</value>
+  </data>
+  <data name="rees" xml:space="preserve">
+    <value>Reestablishing connection to 7DTD server...</value>
+  </data>
+  <data name="telnet_broken" xml:space="preserve">
+    <value>Server broke telnet connection!</value>
+  </data>
+  <data name="VACEnabled" xml:space="preserve">
+    <value>Enable Easy Anti Cheat</value>
+  </data>
+  <data name="remote_server_l" xml:space="preserve">
+    <value>Remote server:</value>
+  </data>
+  <data name="chat_g" xml:space="preserve">
+    <value>Chat</value>
+  </data>
+  <data name="backup_msg_1_l" xml:space="preserve">
+    <value>Starting backup:</value>
+  </data>
+  <data name="backup_msg_2_l" xml:space="preserve">
+    <value>Backup complete:</value>
+  </data>
+  <data name="customcommands_g" xml:space="preserve">
+    <value>Custom commands</value>
+  </data>
+  <data name="enable_cc" xml:space="preserve">
+    <value>Enable custom commands</value>
+  </data>
+  <data name="how_to_commands" xml:space="preserve">
+    <value>How to create commands?</value>
+  </data>
+  <data name="messages_g" xml:space="preserve">
+    <value>Server chat messages</value>
+  </data>
+  <data name="reboot_l" xml:space="preserve">
+    <value>Reboot now:</value>
+  </data>
+  <data name="reboot_time_l" xml:space="preserve">
+    <value>Time left to reboot (%d = time left):</value>
+  </data>
+  <data name="cmd_not_yet" xml:space="preserve">
+    <value>You must wait %d minutes before using this command again.</value>
+  </data>
+  <data name="cmd_not_yet_l" xml:space="preserve">
+    <value>Can't use command yet (%d = time left):</value>
+  </data>
+  <data name="configfile_g" xml:space="preserve">
+    <value>Server main config file</value>
+  </data>
+  <data name="ServerDescription_g" xml:space="preserve">
+    <value>Server Description</value>
+  </data>
+  <data name="ServerWebsiteURL_g" xml:space="preserve">
+    <value>Server Website URL</value>
+  </data>
+  <data name="PersistentPlayerProfiles" xml:space="preserve">
+    <value>Persistent player profiles</value>
+  </data>
+  <data name="no_prof_name" xml:space="preserve">
+    <value>You have to enter profile name.</value>
+  </data>
+  <data name="are_you_sure" xml:space="preserve">
+    <value>Are you sure?</value>
+  </data>
+  <data name="no" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="MaxSpawnedAnimals_g" xml:space="preserve">
+    <value>Max spawned animals</value>
+  </data>
+</root>
