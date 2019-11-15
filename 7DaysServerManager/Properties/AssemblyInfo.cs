@@ -9,9 +9,9 @@ using System.Resources;
 [assembly: AssemblyTitle("7DaysServerManager")]
 [assembly: AssemblyDescription("7 Days to Die Server Manager")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("pionner")]
+[assembly: AssemblyCompany("Sean As A Service")]
 [assembly: AssemblyProduct("7DaysServerManager")]
-[assembly: AssemblyCopyright("Copyright © SmartMoose 2017")]
+[assembly: AssemblyCopyright("Copyright © Sean Davis 2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -33,6 +33,6 @@ using System.Resources;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("8.0.*")]
-[assembly: AssemblyFileVersion("8.0.*")]
+[assembly: AssemblyVersion("1.1.0.0")]
+[assembly: AssemblyFileVersion("1.1.0.0")]
 [assembly: NeutralResourcesLanguageAttribute("")]

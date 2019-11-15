@@ -58,5 +58,10 @@ namespace _7DaysServerManager
             license l = new license();
             l.Show();
         }
+
+        private void by_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

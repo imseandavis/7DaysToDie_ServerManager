@@ -101,6 +101,7 @@
             this.by.Size = new System.Drawing.Size(56, 13);
             this.by.TabIndex = 15;
             this.by.Text = "by pionner";
+            this.by.Click += new System.EventHandler(this.by_Click);
             // 
             // about
             // 
