@@ -43,20 +43,24 @@ namespace _7DaysServerManager
         List<string> players_ids = new List<string>();
         Queue<string> telnet_queue = new Queue<string>();
 
+        // Version Variables
         public const string ver = "9.0";
         public const bool dev = false;
         public const string game_ver = "Alpha 18.1";
         public const string whatsnew = "Whats new since last STABLE build:\n-Fixed MySql Exporter\n-Added Drop nothing on death option\n-Few minor fixes";
 
+        // Debug Settings
+        bool debug_mode = false;
         bool enable_autoreboot = true; //!! DEBUG ONLY, This Will Corrupt The Server Pointer, So Keep It Set To True!
 
+        // Text Formatting Variables
         string konsola_pre = "\n";
         string chat_pre = "\n";
+
+
         public bool server_online = false;
         bool break_telnet = false;
-
         bool premium = false;
-
         bool webserver_running = false;
 
         string sciezka_plikow, telnet_NOW = "null", odpowiedz_telnet, odpowiedz_lp="";
@@ -68,7 +72,6 @@ namespace _7DaysServerManager
         string profile_name = "Default";
         bool just_killin = false;
 
-        bool debug_mode = false;
         bool file_log = false;
 
         bool ikony_przesuniete = false;
@@ -204,13 +207,13 @@ namespace _7DaysServerManager
 
         public void echo_news(string tekst, int color)
         {
-            newsbox.Invoke((MethodInvoker)delegate
+            News_Feed_RichTextBox.Invoke((MethodInvoker)delegate
             {
-                newsbox.Text = tekst;
+                News_Feed_RichTextBox.Text = tekst;
 
                 if(color!=0)
                 {
-                    newsbox.BackColor = Color.FromArgb(255, 224, 192);
+                    News_Feed_RichTextBox.BackColor = Color.FromArgb(255, 224, 192);
                 }
             });
         }
@@ -259,7 +262,7 @@ namespace _7DaysServerManager
 
         public bool gracz_jest_na_liscie(ListViewItem lvi)
         {
-            foreach (ListViewItem item in players_list.Items)
+            foreach (ListViewItem item in Online_Player_List.Items)
             {
                 bool subItemEqualFlag = true;
                 for (int i = 0; i < item.SubItems.Count; i++)
@@ -287,7 +290,7 @@ namespace _7DaysServerManager
 
         public bool gracz_jest_na_duzej_liscie(ListViewItem lvi)
         {
-            foreach (ListViewItem item in all_players_list.Items)
+            foreach (ListViewItem item in All_Players_List.Items)
             {
                 bool subItemEqualFlag = true;
                 for (int i = 0; i < item.SubItems.Count; i++)
@@ -377,9 +380,9 @@ namespace _7DaysServerManager
                         img_status.Image = Properties.Resources.status_not_connected;
                     }
                     if (server_online == false)
-                        reboot_con.Enabled = true;
+                        Connect_Running_Server_Button.Enabled = true;
                     else
-                        reboot_con.Enabled = false;
+                        Connect_Running_Server_Button.Enabled = false;
 
                 });
             }
@@ -389,7 +392,7 @@ namespace _7DaysServerManager
                 {
                     status.Invoke((MethodInvoker)delegate
                     {
-                        reboot_con.Enabled = false;
+                        Connect_Running_Server_Button.Enabled = false;
                         status.Text = lang("status_not");
                         unlock_ctrl();
                         img_status.Image = Properties.Resources.status_stopped;
@@ -657,7 +660,7 @@ namespace _7DaysServerManager
             {
                 using (var tw = new StreamWriter("7dsm_players_history.txt"))
                 {
-                    foreach (ListViewItem item in all_players_list.Items)
+                    foreach (ListViewItem item in All_Players_List.Items)
                     {
                         tw.WriteLine(item.Text);
                         tw.WriteLine(item.SubItems[1].Text);
@@ -900,7 +903,7 @@ namespace _7DaysServerManager
             //telnet_NOW = "spawnentity" + players_ids[spawn_player.SelectedIndex] + "" + Convert.ToString(spawn_item.SelectedIndex + 1);
             try
             {
-                telnet_queue.Enqueue("spawnentity \"" + players_list.SelectedItems[0].SubItems[0].Text + "\" " + Convert.ToString(spawn_item.SelectedIndex + 1));
+                telnet_queue.Enqueue("spawnentity \"" + Online_Player_List.SelectedItems[0].SubItems[0].Text + "\" " + Convert.ToString(spawn_item.SelectedIndex + 1));
             }
             catch
             {
@@ -977,7 +980,7 @@ namespace _7DaysServerManager
                 startbar.Visible = true;
             });
 
-            stop.Invoke((MethodInvoker)delegate
+            Shutdown_Server_Button.Invoke((MethodInvoker)delegate
             {
                 //!!!stop.Enabled = false;
             });
@@ -1088,7 +1091,7 @@ namespace _7DaysServerManager
 
             bool rr_enabled = false;
 
-            stop.Invoke((MethodInvoker)delegate
+            Shutdown_Server_Button.Invoke((MethodInvoker)delegate
             {
                 rr_enabled = reset_enabled.Checked;
             });
@@ -1110,7 +1113,7 @@ namespace _7DaysServerManager
 
 
 
-            stop.Invoke((MethodInvoker)delegate
+            Shutdown_Server_Button.Invoke((MethodInvoker)delegate
             {
                 echo("Server is running now...", 1, true);
             });
@@ -1151,9 +1154,9 @@ namespace _7DaysServerManager
             });
 
 
-            stop.Invoke((MethodInvoker)delegate
+            Shutdown_Server_Button.Invoke((MethodInvoker)delegate
             {
-                stop.Enabled = true;
+                Shutdown_Server_Button.Enabled = true;
             });
 
             e.Cancel = true;
@@ -1169,24 +1172,24 @@ namespace _7DaysServerManager
             echo_debug("---kick---");
             try
             {
-                telnet_queue.Enqueue("kick " + Convert.ToString(players_list.SelectedItems[0].Text) + " " + powod.Text);
-                MessageBox.Show(Convert.ToString(players_list.SelectedItems[0].Text) + lang("kick_ok"), lang("kick"));
+                telnet_queue.Enqueue("kick " + Convert.ToString(Online_Player_List.SelectedItems[0].Text) + " " + powod.Text);
+                MessageBox.Show(Convert.ToString(Online_Player_List.SelectedItems[0].Text) + lang("kick_ok"), lang("kick"));
 
 
 
                 int liczba = 0; string cur_pl = "";
                 startbar.Invoke((MethodInvoker)delegate
                 {
-                    liczba = players_list.Items.Count;
+                    liczba = Online_Player_List.Items.Count;
                 });
                 for (int x = 0; x < liczba; x++)
                 {
                     startbar.Invoke((MethodInvoker)delegate
                     {
-                        cur_pl = players_list.Items[x].SubItems[0].Text.Trim();
+                        cur_pl = Online_Player_List.Items[x].SubItems[0].Text.Trim();
                     });
 
-                    string wwl = Regex.Replace(Convert.ToString(players_list.SelectedItems[0].Text), @"\t|\n|\r", "");
+                    string wwl = Regex.Replace(Convert.ToString(Online_Player_List.SelectedItems[0].Text), @"\t|\n|\r", "");
                     string cur_pl2 = Regex.Replace(cur_pl, @"\t|\n|\r", "");
 
                     echo_debug("KICK remove from pl_list: " + wwl + ":" + cur_pl2 + ";");
@@ -1195,7 +1198,7 @@ namespace _7DaysServerManager
                         echo_debug("GTFO: " + cur_pl2);
                         startbar.Invoke((MethodInvoker)delegate
                         {
-                            players_list.Items[x].Remove();
+                            Online_Player_List.Items[x].Remove();
                         });
                     }
                 }
@@ -1216,9 +1219,9 @@ namespace _7DaysServerManager
                 string user = "";
 
                 if (wybrana_lista_graczy_offline)
-                    user = Convert.ToString(all_players_list.SelectedItems[0].Text);
+                    user = Convert.ToString(All_Players_List.SelectedItems[0].Text);
                 else
-                    user = Convert.ToString(players_list.SelectedItems[0].Text);
+                    user = Convert.ToString(Online_Player_List.SelectedItems[0].Text);
 
 
                 DialogResult dialogResult = MessageBox.Show(lang("ban_sure") + user + "?\n", lang("warning"), MessageBoxButtons.YesNo);
@@ -1578,7 +1581,7 @@ namespace _7DaysServerManager
                             int liczba = 0;
                             startbar.Invoke((MethodInvoker)delegate
                             {
-                                liczba = players_list.Items.Count;
+                                liczba = Online_Player_List.Items.Count;
                             });
 
 
@@ -1589,7 +1592,7 @@ namespace _7DaysServerManager
                             {
                                 startbar.Invoke((MethodInvoker)delegate
                                 {
-                                    cur_pl = players_list.Items[x].SubItems[0].Text.Trim();
+                                    cur_pl = Online_Player_List.Items[x].SubItems[0].Text.Trim();
                                 });
 
 
@@ -1599,7 +1602,7 @@ namespace _7DaysServerManager
                                     echo("Player disconnected: " + cur_pl, 1, true);
                                     startbar.Invoke((MethodInvoker)delegate
                                     {
-                                        players_list.Items[x].Remove();
+                                        Online_Player_List.Items[x].Remove();
                                     });
                                 }
                             }
@@ -1633,7 +1636,7 @@ namespace _7DaysServerManager
                             int liczba = 0;
                             startbar.Invoke((MethodInvoker)delegate
                             {
-                                liczba = players_list.Items.Count;
+                                liczba = Online_Player_List.Items.Count;
                             });
 
 
@@ -1644,7 +1647,7 @@ namespace _7DaysServerManager
                             {
                                 startbar.Invoke((MethodInvoker)delegate
                                 {
-                                    cur_pl = players_list.Items[x].SubItems[0].Text.Trim();
+                                    cur_pl = Online_Player_List.Items[x].SubItems[0].Text.Trim();
                                 });
 
 
@@ -1654,7 +1657,7 @@ namespace _7DaysServerManager
                                     echo("Player disconnected: " + cur_pl, 1, true);
                                     startbar.Invoke((MethodInvoker)delegate
                                     {
-                                        players_list.Items[x].Remove();
+                                        Online_Player_List.Items[x].Remove();
                                     });
                                 }
                             }
@@ -1698,7 +1701,7 @@ namespace _7DaysServerManager
                                         lvi.Text = podzielony[3];
                                         lvi.SubItems.Add(podzielony[4]);
 
-                                        ListViewItem item = players_list.FindItemWithText(podzielony[3]);
+                                        ListViewItem item = Online_Player_List.FindItemWithText(podzielony[3]);
 
 
 
@@ -1707,13 +1710,13 @@ namespace _7DaysServerManager
 
                                         if (!gracz_jest_na_liscie(lvi))
                                         {
-                                            players_list.Items.Add(lvi);
+                                            Online_Player_List.Items.Add(lvi);
                                         }
 
 
                                         if (!gracz_jest_na_duzej_liscie(lvi))
                                         {
-                                            all_players_list.Items.Add((ListViewItem)lvi.Clone());
+                                            All_Players_List.Items.Add((ListViewItem)lvi.Clone());
                                         }
 
 
@@ -1810,13 +1813,13 @@ namespace _7DaysServerManager
 
                                     if (!gracz_jest_na_liscie(lvi))
                                     {
-                                        players_list.Items.Add(lvi);
+                                        Online_Player_List.Items.Add(lvi);
                                     }
 
 
                                     if (!gracz_jest_na_duzej_liscie(lvi))
                                     {
-                                        all_players_list.Items.Add((ListViewItem)lvi.Clone());
+                                        All_Players_List.Items.Add((ListViewItem)lvi.Clone());
                                     }
 
 
@@ -1887,11 +1890,11 @@ namespace _7DaysServerManager
                                 }
                             }
                         }
-                        catch { /*przechwycił info o logowaniu i wylogowywaniu, olać*/ }
+                        catch { /*Put The Intercepted Logging Info Here*/ }
 
 
 
-                        //koniec obróbki
+                        //End of Treatment
 
 
 
@@ -1915,13 +1918,13 @@ namespace _7DaysServerManager
             if (save_logfiles.Checked)
             {
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "save_logfiles", "1");
-                save_logfiles_2.Checked = true;
+                Save_Logs_CheckBox.Checked = true;
             }
 
             else
             {
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "save_logfiles", "0");
-                save_logfiles_2.Checked = false;
+                Save_Logs_CheckBox.Checked = false;
             }
         }
 
@@ -1953,7 +1956,7 @@ namespace _7DaysServerManager
 
         private void save_logfiles_2_CheckedChanged(object sender, EventArgs e)
         {
-            if (save_logfiles_2.Checked)
+            if (Save_Logs_CheckBox.Checked)
             {
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "save_logfiles", "1");
                 save_logfiles.Checked = true;
@@ -2194,14 +2197,14 @@ namespace _7DaysServerManager
 
                     startbar.Invoke((MethodInvoker)delegate
                     {
-                        auto_messages_timer.Text = min_str + ":" + sec_str;
+                        Auto_Command_Timer.Text = min_str + ":" + sec_str;
                     });
 
                     if (!server_online)
                     {
                         startbar.Invoke((MethodInvoker)delegate
                         {
-                            auto_messages_timer.Text = "00:00";
+                            Auto_Command_Timer.Text = "00:00";
                         });
                         break;
                     }
@@ -2622,14 +2625,14 @@ namespace _7DaysServerManager
 
                     startbar.Invoke((MethodInvoker)delegate
                     {
-                        sql_exporter_timer.Text = min_str + ":" + sec_str;
+                        SQL_Export_Timer.Text = min_str + ":" + sec_str;
                     });
 
                     if (!server_online)
                     {
                         startbar.Invoke((MethodInvoker)delegate
                         {
-                            sql_exporter_timer.Text = "00:00";
+                            SQL_Export_Timer.Text = "00:00";
                         });
                         break;
                     }
@@ -2930,14 +2933,14 @@ namespace _7DaysServerManager
 
                     startbar.Invoke((MethodInvoker)delegate
                     {
-                        backup_timer.Text = hrs_str + ":" + min_str + ":" + sec_str;
+                        Backup_Timer.Text = hrs_str + ":" + min_str + ":" + sec_str;
                     });
 
                     if (!server_online)
                     {
                         startbar.Invoke((MethodInvoker)delegate
                         {
-                            backup_timer.Text = "00:00:00";
+                            Backup_Timer.Text = "00:00:00";
                         });
                         break;
                     }
@@ -3261,14 +3264,14 @@ namespace _7DaysServerManager
 
                     startbar.Invoke((MethodInvoker)delegate
                     {
-                        reset_timer.Text = hrs_str + ":" + min_str + ":" + sec_str;
+                        Auto_Restart_Timer.Text = hrs_str + ":" + min_str + ":" + sec_str;
                     });
 
                     if (!en)
                     {
                         startbar.Invoke((MethodInvoker)delegate
                         {
-                            reset_timer.Text = "00:00:00";
+                            Auto_Restart_Timer.Text = "00:00:00";
                         });
                         break;
                     }
@@ -3283,7 +3286,7 @@ namespace _7DaysServerManager
                     telnet_queue.Enqueue("say \"" + (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "reboot", null) + "\"");
 
                     Stop_Click(null, null);
-                    start.Enabled = false;
+                    Start_Server_Button.Enabled = false;
                 });
 
                 echo(lang("start_in"), 1, false);
@@ -3470,8 +3473,8 @@ namespace _7DaysServerManager
         private void Reboot_con_Click(object sender, EventArgs e)
         {
             reboot_telnet.RunWorkerAsync();
-            start.Enabled = false;
-            stop.Enabled = true;
+            Start_Server_Button.Enabled = false;
+            Shutdown_Server_Button.Enabled = true;
         }
 
         private void Reboot_telnet_DoWork(object sender, DoWorkEventArgs e)
@@ -3492,9 +3495,9 @@ namespace _7DaysServerManager
             }
             catch { }
 
-            stop.Invoke((MethodInvoker)delegate
+            Shutdown_Server_Button.Invoke((MethodInvoker)delegate
             {
-                stop.Enabled = true;
+                Shutdown_Server_Button.Enabled = true;
             });
         }
 
@@ -3656,7 +3659,7 @@ namespace _7DaysServerManager
 
                         startbar.Invoke((MethodInvoker)delegate
                         {
-                            foreach(ListViewItem ti in players_list.Items)
+                            foreach(ListViewItem ti in Online_Player_List.Items)
                             {
                                 if(ti.SubItems[0].Text==login)
                                 {
@@ -3901,8 +3904,8 @@ namespace _7DaysServerManager
 
             konsola.Invoke((MethodInvoker)delegate
             {
-                stop.Text = lang("wait");
-                stop.Enabled = false;
+                Shutdown_Server_Button.Text = lang("wait");
+                Shutdown_Server_Button.Enabled = false;
             });
 
             echo(lang("closing"), 2, true);
@@ -3911,7 +3914,7 @@ namespace _7DaysServerManager
 
             konsola.Invoke((MethodInvoker)delegate
             {
-                players_list.Items.Clear();
+                Online_Player_List.Items.Clear();
             });
 
             for (int i = 0; i < 15; i++)
@@ -3952,8 +3955,8 @@ namespace _7DaysServerManager
             {
                 unlock_ctrl();
                 this.ControlBox = true;
-                start.Enabled = true;
-                stop.Text = lang("close");
+                Start_Server_Button.Enabled = true;
+                Shutdown_Server_Button.Text = lang("close");
             });
 
 
@@ -3990,7 +3993,7 @@ namespace _7DaysServerManager
         {
             try
             {
-                telnet_queue.Enqueue("kill " + players_list.SelectedItems[0].SubItems[0].Text);
+                telnet_queue.Enqueue("kill " + Online_Player_List.SelectedItems[0].SubItems[0].Text);
             }
             catch
             {
@@ -4002,7 +4005,7 @@ namespace _7DaysServerManager
         {
             try
             {
-                telnet_queue.Enqueue("starve " + players_list.SelectedItems[0].SubItems[0].Text);
+                telnet_queue.Enqueue("starve " + Online_Player_List.SelectedItems[0].SubItems[0].Text);
             }
             catch
             {
@@ -4014,7 +4017,7 @@ namespace _7DaysServerManager
         {
             try
             {
-                telnet_queue.Enqueue("thirsty " + players_list.SelectedItems[0].SubItems[0].Text);
+                telnet_queue.Enqueue("thirsty " + Online_Player_List.SelectedItems[0].SubItems[0].Text);
             }
             catch
             {
@@ -4134,7 +4137,7 @@ namespace _7DaysServerManager
 
                     startbar.Invoke((MethodInvoker)delegate
                     {
-                        wl_u_t_t.Text = min_str + ":" + sec_str;
+                        Whitelist_Update_Timer.Text = min_str + ":" + sec_str;
                     });
                 }
 
@@ -4155,7 +4158,7 @@ namespace _7DaysServerManager
 
         private void start_with_7dsm_CheckedChanged(object sender, EventArgs e)
         {
-            if (start_with_7dsm.Checked)
+            if (Start_With_7DSM_CheckBox.Checked)
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "start_with_7dsm", "1");
             else
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "start_with_7dsm", "0");
@@ -4163,7 +4166,7 @@ namespace _7DaysServerManager
 
         private void start_with_win_CheckedChanged(object sender, EventArgs e)
         {
-            if (start_with_win.Checked)
+            if (Start_7DSM_With_Windows_CheckBox.Checked)
             {
                 Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
                 key.SetValue("7DaysServerManager", @System.Reflection.Assembly.GetExecutingAssembly().Location);

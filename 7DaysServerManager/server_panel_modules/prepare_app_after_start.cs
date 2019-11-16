@@ -72,7 +72,7 @@ namespace _7DaysServerManager
 
 
 
-
+            /*
             if (dev)
             {
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM", "dev", "1");
@@ -83,7 +83,7 @@ namespace _7DaysServerManager
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM", "dev", "0");
                 updates_channel.SelectedIndex = 0;
             }
-
+            */
 
 
 
@@ -247,11 +247,12 @@ namespace _7DaysServerManager
             catch { }
 
 
-            if (!dev)
+            /*
+             * if (!dev)
                 this.Text = this.Text + " " + ver + " (" + lang("title_ver") + " " + game_ver + ", profile: " + profile_name + ")";
             else
                 this.Text = this.Text + " " + ver + "DEV (" + lang("title_ver") + " " + game_ver + ", profile: " + profile_name + ") [DEV BUILD- MAY CONTAIN BUGS]";
-
+            */
 
             status_updater.RunWorkerAsync();
 
@@ -272,7 +273,7 @@ namespace _7DaysServerManager
             if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "save_logfiles", null) == "1")
             {
                 save_logfiles.Checked = true;
-                save_logfiles_2.Checked = true;
+                Save_Logs_CheckBox.Checked = true;
             }
 
             if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "realtime", null) == "1")
@@ -413,13 +414,13 @@ namespace _7DaysServerManager
 
             if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "start_with_7dsm", null) == "1")
             {
-                start_with_7dsm.Checked = true;
+                Start_With_7DSM_CheckBox.Checked = true;
             }
 
 
             if (Registry.GetValue(@"HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run", "7DaysServerManager", null) != null)
             {
-                start_with_win.Checked = true;
+                Start_7DSM_With_Windows_CheckBox.Checked = true;
             }
 
 
@@ -834,7 +835,7 @@ namespace _7DaysServerManager
 
 
 
-            if (start_with_7dsm.Checked)
+            if (Start_With_7DSM_CheckBox.Checked)
                 run_server();
 
 
@@ -858,7 +859,7 @@ namespace _7DaysServerManager
                             string steamid = sr.ReadLine();
                             var lvi = new ListViewItem(name);
                             lvi.SubItems.Add(steamid);
-                            all_players_list.Items.Add(lvi);
+                            All_Players_List.Items.Add(lvi);
                         }
                         catch (Exception) { }
                     }

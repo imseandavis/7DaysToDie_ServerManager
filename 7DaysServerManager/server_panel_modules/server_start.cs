@@ -87,8 +87,8 @@ namespace _7DaysServerManager
                 {
                     echo_debug(@sciezka_plikow + "\\" + exec_name + parametry);
                     System.Diagnostics.Process.Start(@sciezka_plikow + "\\" + exec_name, parametry);
-                    stop.Enabled = true;
-                    start.Enabled = false;
+                    Shutdown_Server_Button.Enabled = true;
+                    Start_Server_Button.Enabled = false;
 
                     //this.ControlBox = false;
 

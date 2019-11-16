@@ -32,24 +32,24 @@ namespace _7DaysServerManager
             godzina.Text = lang("godzina") + " [8:00]";
             kick.Text = lang("kick");
             kickgroup.Text = lang("kickgroup");
-            kill_proccess.Text = lang("kill_proccess");
-            ConsoleGroup.Text = lang("kons_group");
-            ServerControlsGroup.Text = lang("kontrola");
+            Kill_Server_Process.Text = lang("kill_proccess");
+            Console_Group.Text = lang("kons_group");
+            Server_Controls_Group.Text = lang("kontrola");
 
             maxplgroup.Text = lang("maxplgroup");
             nazwamapa.Text = lang("nazwamapa");
             odery.Text = lang("odery");
             port_g.Text = lang("port_g");
             save_logfiles.Text = lang("save_logfiles");
-            save_logfiles_2.Text = lang("save_logfiles_2");
+            Save_Logs_CheckBox.Text = lang("save_logfiles_2");
             ServerIsPublic.Text = lang("ServerIsPublic");
 
             spawn_group.Text = lang("spawn_group");
             spawn_now.Text = lang("spawn_now");
 
-            start.Text = lang("start");
+            Start_Server_Button.Text = lang("start");
             steamsearch.Text = lang("steamsearch");
-            stop.Text = lang("stop");
+            Shutdown_Server_Button.Text = lang("stop");
             telnet_group.Text = lang("telnet_group");
             to_tray.Text = lang("to_tray");
             trudnoscgroup.Text = lang("trudnoscgroup");
@@ -79,11 +79,11 @@ namespace _7DaysServerManager
             sql_warn.Text = lang("sql_warn");
             upd_time.Text = lang("upd_time");
             sql_updates_time_g.Text = lang("sql_updates_time_g");
-            TimersGroup.Text = lang("timers_g");
-            auto_messages_label.Text = lang("auto_messages_label");
-            sql_exporter_label.Text = lang("sql_export_label");
+            Timers_Group.Text = lang("timers_g");
+            Auto_Command_Timer_Label.Text = lang("auto_messages_label");
+            SQL_Export_Timer_Label.Text = lang("sql_export_label");
 
-            backup_timer_label.Text = lang("backup_timer_label");
+            Backup_Timer_Label.Text = lang("backup_timer_label");
             auto_backup_check.Text = lang("auto_backup_check");
             backup_chat.Text = lang("backup_chat");
             feral.Text = lang("feral");
@@ -124,12 +124,12 @@ namespace _7DaysServerManager
             realtime.Text = lang("realtime");
 
 
-            reboot_con.Text = lang("reboot_con");
+            Connect_Running_Server_Button.Text = lang("reboot_con");
 
 
             VACEnabled.Text = lang("VACEnabled");
 
-            chat_g.Text = lang("chat_g");
+            Chat_Group.Text = lang("chat_g");
             
             telnet_g.Text = lang("telnet_g");
             filename_g.Text = lang("filename_g");
@@ -143,7 +143,7 @@ namespace _7DaysServerManager
 
             spam_g.Text = lang("spam_g");
 
-            reset_timer_label.Text = lang("reset_timer_label");
+            Auto_Restart_Timer_Label.Text = lang("reset_timer_label");
             reset_g.Text = lang("reset_g") + " [" + Convert.ToString(reset_time.Value) + ":00]";
             reset_chat.Text = lang("reset_chat");
             reset_enabled.Text = lang("reset_enabled");

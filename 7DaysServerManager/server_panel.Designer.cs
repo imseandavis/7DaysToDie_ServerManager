@@ -113,40 +113,40 @@
             this.commandslist = new System.Windows.Forms.ListBox();
             this.zoomup = new System.Windows.Forms.Button();
             this.overviewSplitter = new System.Windows.Forms.SplitContainer();
-            this.NewsGroup = new System.Windows.Forms.GroupBox();
-            this.newsbox = new System.Windows.Forms.RichTextBox();
-            this.ServerStatusGroup = new System.Windows.Forms.GroupBox();
+            this.News_Group = new System.Windows.Forms.GroupBox();
+            this.News_Feed_RichTextBox = new System.Windows.Forms.RichTextBox();
+            this.Server_Status_Group = new System.Windows.Forms.GroupBox();
             this.osarch = new System.Windows.Forms.Label();
             this.telnetstatus = new System.Windows.Forms.Label();
             this.osver = new System.Windows.Forms.Label();
             this.status = new System.Windows.Forms.Label();
-            this.ConsoleGroup = new System.Windows.Forms.GroupBox();
-            this.TimersGroup = new System.Windows.Forms.GroupBox();
-            this.auto_messages_timer = new System.Windows.Forms.Label();
-            this.wl_u_t_t = new System.Windows.Forms.Label();
-            this.wl_u_t = new System.Windows.Forms.Label();
-            this.reset_timer = new System.Windows.Forms.Label();
-            this.reset_timer_label = new System.Windows.Forms.Label();
-            this.backup_timer = new System.Windows.Forms.Label();
-            this.backup_timer_label = new System.Windows.Forms.Label();
-            this.sql_exporter_label = new System.Windows.Forms.Label();
-            this.sql_exporter_timer = new System.Windows.Forms.Label();
-            this.auto_messages_label = new System.Windows.Forms.Label();
-            this.ServerControlsGroup = new System.Windows.Forms.GroupBox();
-            this.start_with_win = new System.Windows.Forms.CheckBox();
-            this.start_with_7dsm = new System.Windows.Forms.CheckBox();
-            this.start = new System.Windows.Forms.Button();
-            this.stop = new System.Windows.Forms.Button();
-            this.reboot_con = new System.Windows.Forms.Button();
-            this.save_logfiles_2 = new System.Windows.Forms.CheckBox();
-            this.kill_proccess = new System.Windows.Forms.Button();
+            this.Console_Group = new System.Windows.Forms.GroupBox();
+            this.Timers_Group = new System.Windows.Forms.GroupBox();
+            this.Auto_Command_Timer = new System.Windows.Forms.Label();
+            this.Whitelist_Update_Timer = new System.Windows.Forms.Label();
+            this.Whitelist_Update_Label = new System.Windows.Forms.Label();
+            this.Auto_Restart_Timer = new System.Windows.Forms.Label();
+            this.Auto_Restart_Timer_Label = new System.Windows.Forms.Label();
+            this.Backup_Timer = new System.Windows.Forms.Label();
+            this.Backup_Timer_Label = new System.Windows.Forms.Label();
+            this.SQL_Export_Timer_Label = new System.Windows.Forms.Label();
+            this.SQL_Export_Timer = new System.Windows.Forms.Label();
+            this.Auto_Command_Timer_Label = new System.Windows.Forms.Label();
+            this.Server_Controls_Group = new System.Windows.Forms.GroupBox();
+            this.Start_7DSM_With_Windows_CheckBox = new System.Windows.Forms.CheckBox();
+            this.Start_With_7DSM_CheckBox = new System.Windows.Forms.CheckBox();
+            this.Start_Server_Button = new System.Windows.Forms.Button();
+            this.Shutdown_Server_Button = new System.Windows.Forms.Button();
+            this.Connect_Running_Server_Button = new System.Windows.Forms.Button();
+            this.Save_Logs_CheckBox = new System.Windows.Forms.CheckBox();
+            this.Kill_Server_Process = new System.Windows.Forms.Button();
             this.ban_kick = new System.Windows.Forms.TabPage();
-            this.chat_g = new System.Windows.Forms.GroupBox();
+            this.Chat_Group = new System.Windows.Forms.GroupBox();
             this.chat = new System.Windows.Forms.RichTextBox();
             this.chat_text = new System.Windows.Forms.TextBox();
             this.all_players_l = new System.Windows.Forms.Label();
             this.online_l = new System.Windows.Forms.Label();
-            this.all_players_list = new System.Windows.Forms.ListView();
+            this.All_Players_List = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.player_g = new System.Windows.Forms.GroupBox();
@@ -160,7 +160,7 @@
             this.bantime = new System.Windows.Forms.ComboBox();
             this.ban = new System.Windows.Forms.Button();
             this.ban_slide = new System.Windows.Forms.TrackBar();
-            this.players_list = new System.Windows.Forms.ListView();
+            this.Online_Player_List = new System.Windows.Forms.ListView();
             this.login_header = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.steamid_header = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.main_page = new System.Windows.Forms.TabPage();
@@ -453,13 +453,13 @@
             this.overviewSplitter.Panel1.SuspendLayout();
             this.overviewSplitter.Panel2.SuspendLayout();
             this.overviewSplitter.SuspendLayout();
-            this.NewsGroup.SuspendLayout();
-            this.ServerStatusGroup.SuspendLayout();
-            this.ConsoleGroup.SuspendLayout();
-            this.TimersGroup.SuspendLayout();
-            this.ServerControlsGroup.SuspendLayout();
+            this.News_Group.SuspendLayout();
+            this.Server_Status_Group.SuspendLayout();
+            this.Console_Group.SuspendLayout();
+            this.Timers_Group.SuspendLayout();
+            this.Server_Controls_Group.SuspendLayout();
             this.ban_kick.SuspendLayout();
-            this.chat_g.SuspendLayout();
+            this.Chat_Group.SuspendLayout();
             this.player_g.SuspendLayout();
             this.kickgroup.SuspendLayout();
             this.bantime_slider.SuspendLayout();
@@ -1555,8 +1555,8 @@
             this.server_manage.Controls.Add(this.CommandsGroup);
             this.server_manage.Controls.Add(this.zoomup);
             this.server_manage.Controls.Add(this.overviewSplitter);
-            this.server_manage.Controls.Add(this.TimersGroup);
-            this.server_manage.Controls.Add(this.ServerControlsGroup);
+            this.server_manage.Controls.Add(this.Timers_Group);
+            this.server_manage.Controls.Add(this.Server_Controls_Group);
             this.server_manage.Controls.Add(this.startbar);
             this.server_manage.ImageIndex = 0;
             this.server_manage.Location = new System.Drawing.Point(47, 4);
@@ -1711,59 +1711,59 @@
             // 
             // overviewSplitter.Panel1
             // 
-            this.overviewSplitter.Panel1.Controls.Add(this.NewsGroup);
-            this.overviewSplitter.Panel1.Controls.Add(this.ServerStatusGroup);
+            this.overviewSplitter.Panel1.Controls.Add(this.News_Group);
+            this.overviewSplitter.Panel1.Controls.Add(this.Server_Status_Group);
             this.overviewSplitter.Panel1MinSize = 0;
             // 
             // overviewSplitter.Panel2
             // 
-            this.overviewSplitter.Panel2.Controls.Add(this.ConsoleGroup);
+            this.overviewSplitter.Panel2.Controls.Add(this.Console_Group);
             this.overviewSplitter.Panel2MinSize = 0;
             this.overviewSplitter.Size = new System.Drawing.Size(707, 657);
             this.overviewSplitter.SplitterDistance = 171;
             this.overviewSplitter.SplitterWidth = 1;
             this.overviewSplitter.TabIndex = 21;
             // 
-            // NewsGroup
+            // News_Group
             // 
-            this.NewsGroup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.News_Group.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.NewsGroup.Controls.Add(this.newsbox);
-            this.NewsGroup.Location = new System.Drawing.Point(349, 8);
-            this.NewsGroup.Name = "NewsGroup";
-            this.NewsGroup.Size = new System.Drawing.Size(352, 160);
-            this.NewsGroup.TabIndex = 19;
-            this.NewsGroup.TabStop = false;
-            this.NewsGroup.Text = "News";
+            this.News_Group.Controls.Add(this.News_Feed_RichTextBox);
+            this.News_Group.Location = new System.Drawing.Point(349, 8);
+            this.News_Group.Name = "News_Group";
+            this.News_Group.Size = new System.Drawing.Size(352, 160);
+            this.News_Group.TabIndex = 19;
+            this.News_Group.TabStop = false;
+            this.News_Group.Text = "News";
             // 
-            // newsbox
+            // News_Feed_RichTextBox
             // 
-            this.newsbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.newsbox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.newsbox.Location = new System.Drawing.Point(3, 16);
-            this.newsbox.Name = "newsbox";
-            this.newsbox.ReadOnly = true;
-            this.newsbox.Size = new System.Drawing.Size(346, 141);
-            this.newsbox.TabIndex = 0;
-            this.newsbox.Text = "Downloading news...";
-            this.newsbox.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.newsbox_LinkClicked);
+            this.News_Feed_RichTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.News_Feed_RichTextBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.News_Feed_RichTextBox.Location = new System.Drawing.Point(3, 16);
+            this.News_Feed_RichTextBox.Name = "News_Feed_RichTextBox";
+            this.News_Feed_RichTextBox.ReadOnly = true;
+            this.News_Feed_RichTextBox.Size = new System.Drawing.Size(346, 141);
+            this.News_Feed_RichTextBox.TabIndex = 0;
+            this.News_Feed_RichTextBox.Text = "Downloading news...";
+            this.News_Feed_RichTextBox.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.newsbox_LinkClicked);
             // 
-            // ServerStatusGroup
+            // Server_Status_Group
             // 
-            this.ServerStatusGroup.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Server_Status_Group.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ServerStatusGroup.Controls.Add(this.osarch);
-            this.ServerStatusGroup.Controls.Add(this.telnetstatus);
-            this.ServerStatusGroup.Controls.Add(this.osver);
-            this.ServerStatusGroup.Controls.Add(this.status);
-            this.ServerStatusGroup.Controls.Add(this.twoje_ip);
-            this.ServerStatusGroup.Location = new System.Drawing.Point(3, 8);
-            this.ServerStatusGroup.Name = "ServerStatusGroup";
-            this.ServerStatusGroup.Size = new System.Drawing.Size(340, 160);
-            this.ServerStatusGroup.TabIndex = 20;
-            this.ServerStatusGroup.TabStop = false;
-            this.ServerStatusGroup.Text = "Server status";
+            this.Server_Status_Group.Controls.Add(this.osarch);
+            this.Server_Status_Group.Controls.Add(this.telnetstatus);
+            this.Server_Status_Group.Controls.Add(this.osver);
+            this.Server_Status_Group.Controls.Add(this.status);
+            this.Server_Status_Group.Controls.Add(this.twoje_ip);
+            this.Server_Status_Group.Location = new System.Drawing.Point(3, 8);
+            this.Server_Status_Group.Name = "Server_Status_Group";
+            this.Server_Status_Group.Size = new System.Drawing.Size(340, 160);
+            this.Server_Status_Group.TabIndex = 20;
+            this.Server_Status_Group.TabStop = false;
+            this.Server_Status_Group.Text = "Server status";
             // 
             // osarch
             // 
@@ -1815,259 +1815,259 @@
             this.status.TabIndex = 2;
             this.status.Text = "status";
             // 
-            // ConsoleGroup
+            // Console_Group
             // 
-            this.ConsoleGroup.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Console_Group.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ConsoleGroup.BackColor = System.Drawing.SystemColors.Control;
-            this.ConsoleGroup.Controls.Add(this.konsola);
-            this.ConsoleGroup.Controls.Add(this.cmd);
-            this.ConsoleGroup.Location = new System.Drawing.Point(3, 8);
-            this.ConsoleGroup.Name = "ConsoleGroup";
-            this.ConsoleGroup.Size = new System.Drawing.Size(698, 478);
-            this.ConsoleGroup.TabIndex = 18;
-            this.ConsoleGroup.TabStop = false;
-            this.ConsoleGroup.Text = "Console";
+            this.Console_Group.BackColor = System.Drawing.SystemColors.Control;
+            this.Console_Group.Controls.Add(this.konsola);
+            this.Console_Group.Controls.Add(this.cmd);
+            this.Console_Group.Location = new System.Drawing.Point(3, 8);
+            this.Console_Group.Name = "Console_Group";
+            this.Console_Group.Size = new System.Drawing.Size(698, 478);
+            this.Console_Group.TabIndex = 18;
+            this.Console_Group.TabStop = false;
+            this.Console_Group.Text = "Console";
             // 
-            // TimersGroup
+            // Timers_Group
             // 
-            this.TimersGroup.Controls.Add(this.auto_messages_timer);
-            this.TimersGroup.Controls.Add(this.wl_u_t_t);
-            this.TimersGroup.Controls.Add(this.wl_u_t);
-            this.TimersGroup.Controls.Add(this.reset_timer);
-            this.TimersGroup.Controls.Add(this.reset_timer_label);
-            this.TimersGroup.Controls.Add(this.backup_timer);
-            this.TimersGroup.Controls.Add(this.backup_timer_label);
-            this.TimersGroup.Controls.Add(this.sql_exporter_label);
-            this.TimersGroup.Controls.Add(this.sql_exporter_timer);
-            this.TimersGroup.Controls.Add(this.auto_messages_label);
-            this.TimersGroup.Location = new System.Drawing.Point(5, 266);
-            this.TimersGroup.Name = "TimersGroup";
-            this.TimersGroup.Size = new System.Drawing.Size(166, 195);
-            this.TimersGroup.TabIndex = 11;
-            this.TimersGroup.TabStop = false;
-            this.TimersGroup.Text = "timers_g";
+            this.Timers_Group.Controls.Add(this.Auto_Command_Timer);
+            this.Timers_Group.Controls.Add(this.Whitelist_Update_Timer);
+            this.Timers_Group.Controls.Add(this.Whitelist_Update_Label);
+            this.Timers_Group.Controls.Add(this.Auto_Restart_Timer);
+            this.Timers_Group.Controls.Add(this.Auto_Restart_Timer_Label);
+            this.Timers_Group.Controls.Add(this.Backup_Timer);
+            this.Timers_Group.Controls.Add(this.Backup_Timer_Label);
+            this.Timers_Group.Controls.Add(this.SQL_Export_Timer_Label);
+            this.Timers_Group.Controls.Add(this.SQL_Export_Timer);
+            this.Timers_Group.Controls.Add(this.Auto_Command_Timer_Label);
+            this.Timers_Group.Location = new System.Drawing.Point(5, 266);
+            this.Timers_Group.Name = "Timers_Group";
+            this.Timers_Group.Size = new System.Drawing.Size(166, 195);
+            this.Timers_Group.TabIndex = 11;
+            this.Timers_Group.TabStop = false;
+            this.Timers_Group.Text = "timers_g";
             // 
-            // auto_messages_timer
+            // Auto_Command_Timer
             // 
-            this.auto_messages_timer.AutoSize = true;
-            this.auto_messages_timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.auto_messages_timer.Location = new System.Drawing.Point(5, 29);
-            this.auto_messages_timer.Name = "auto_messages_timer";
-            this.auto_messages_timer.Size = new System.Drawing.Size(49, 20);
-            this.auto_messages_timer.TabIndex = 14;
-            this.auto_messages_timer.Text = "00:00";
+            this.Auto_Command_Timer.AutoSize = true;
+            this.Auto_Command_Timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Auto_Command_Timer.Location = new System.Drawing.Point(5, 29);
+            this.Auto_Command_Timer.Name = "Auto_Command_Timer";
+            this.Auto_Command_Timer.Size = new System.Drawing.Size(49, 20);
+            this.Auto_Command_Timer.TabIndex = 14;
+            this.Auto_Command_Timer.Text = "00:00";
             // 
-            // wl_u_t_t
+            // Whitelist_Update_Timer
             // 
-            this.wl_u_t_t.AutoSize = true;
-            this.wl_u_t_t.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.wl_u_t_t.Location = new System.Drawing.Point(5, 163);
-            this.wl_u_t_t.Name = "wl_u_t_t";
-            this.wl_u_t_t.Size = new System.Drawing.Size(49, 20);
-            this.wl_u_t_t.TabIndex = 13;
-            this.wl_u_t_t.Text = "00:00";
+            this.Whitelist_Update_Timer.AutoSize = true;
+            this.Whitelist_Update_Timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Whitelist_Update_Timer.Location = new System.Drawing.Point(5, 163);
+            this.Whitelist_Update_Timer.Name = "Whitelist_Update_Timer";
+            this.Whitelist_Update_Timer.Size = new System.Drawing.Size(49, 20);
+            this.Whitelist_Update_Timer.TabIndex = 13;
+            this.Whitelist_Update_Timer.Text = "00:00";
             // 
-            // wl_u_t
+            // Whitelist_Update_Label
             // 
-            this.wl_u_t.AutoSize = true;
-            this.wl_u_t.Location = new System.Drawing.Point(6, 150);
-            this.wl_u_t.Name = "wl_u_t";
-            this.wl_u_t.Size = new System.Drawing.Size(97, 13);
-            this.wl_u_t.TabIndex = 12;
-            this.wl_u_t.Text = "Whitelist update in:";
+            this.Whitelist_Update_Label.AutoSize = true;
+            this.Whitelist_Update_Label.Location = new System.Drawing.Point(6, 150);
+            this.Whitelist_Update_Label.Name = "Whitelist_Update_Label";
+            this.Whitelist_Update_Label.Size = new System.Drawing.Size(125, 13);
+            this.Whitelist_Update_Label.TabIndex = 12;
+            this.Whitelist_Update_Label.Text = "Next Whitelist Update In:";
             // 
-            // reset_timer
+            // Auto_Restart_Timer
             // 
-            this.reset_timer.AutoSize = true;
-            this.reset_timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.reset_timer.Location = new System.Drawing.Point(5, 130);
-            this.reset_timer.Name = "reset_timer";
-            this.reset_timer.Size = new System.Drawing.Size(71, 20);
-            this.reset_timer.TabIndex = 11;
-            this.reset_timer.Text = "00:00:00";
+            this.Auto_Restart_Timer.AutoSize = true;
+            this.Auto_Restart_Timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Auto_Restart_Timer.Location = new System.Drawing.Point(5, 130);
+            this.Auto_Restart_Timer.Name = "Auto_Restart_Timer";
+            this.Auto_Restart_Timer.Size = new System.Drawing.Size(71, 20);
+            this.Auto_Restart_Timer.TabIndex = 11;
+            this.Auto_Restart_Timer.Text = "00:00:00";
             // 
-            // reset_timer_label
+            // Auto_Restart_Timer_Label
             // 
-            this.reset_timer_label.AutoSize = true;
-            this.reset_timer_label.Location = new System.Drawing.Point(6, 117);
-            this.reset_timer_label.Name = "reset_timer_label";
-            this.reset_timer_label.Size = new System.Drawing.Size(86, 13);
-            this.reset_timer_label.TabIndex = 10;
-            this.reset_timer_label.Text = "reset_timer_label";
+            this.Auto_Restart_Timer_Label.AutoSize = true;
+            this.Auto_Restart_Timer_Label.Location = new System.Drawing.Point(6, 117);
+            this.Auto_Restart_Timer_Label.Name = "Auto_Restart_Timer_Label";
+            this.Auto_Restart_Timer_Label.Size = new System.Drawing.Size(106, 13);
+            this.Auto_Restart_Timer_Label.TabIndex = 10;
+            this.Auto_Restart_Timer_Label.Text = "Next Auto Restart In:";
             // 
-            // backup_timer
+            // Backup_Timer
             // 
-            this.backup_timer.AutoSize = true;
-            this.backup_timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.backup_timer.Location = new System.Drawing.Point(5, 97);
-            this.backup_timer.Name = "backup_timer";
-            this.backup_timer.Size = new System.Drawing.Size(71, 20);
-            this.backup_timer.TabIndex = 9;
-            this.backup_timer.Text = "00:00:00";
+            this.Backup_Timer.AutoSize = true;
+            this.Backup_Timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Backup_Timer.Location = new System.Drawing.Point(5, 97);
+            this.Backup_Timer.Name = "Backup_Timer";
+            this.Backup_Timer.Size = new System.Drawing.Size(71, 20);
+            this.Backup_Timer.TabIndex = 9;
+            this.Backup_Timer.Text = "00:00:00";
             // 
-            // backup_timer_label
+            // Backup_Timer_Label
             // 
-            this.backup_timer_label.AutoSize = true;
-            this.backup_timer_label.Location = new System.Drawing.Point(6, 84);
-            this.backup_timer_label.Name = "backup_timer_label";
-            this.backup_timer_label.Size = new System.Drawing.Size(99, 13);
-            this.backup_timer_label.TabIndex = 8;
-            this.backup_timer_label.Text = "backup_timer_label";
+            this.Backup_Timer_Label.AutoSize = true;
+            this.Backup_Timer_Label.Location = new System.Drawing.Point(6, 84);
+            this.Backup_Timer_Label.Name = "Backup_Timer_Label";
+            this.Backup_Timer_Label.Size = new System.Drawing.Size(84, 13);
+            this.Backup_Timer_Label.TabIndex = 8;
+            this.Backup_Timer_Label.Text = "Next Backup In:";
             // 
-            // sql_exporter_label
+            // SQL_Export_Timer_Label
             // 
-            this.sql_exporter_label.AutoSize = true;
-            this.sql_exporter_label.Location = new System.Drawing.Point(6, 49);
-            this.sql_exporter_label.Name = "sql_exporter_label";
-            this.sql_exporter_label.Size = new System.Drawing.Size(92, 13);
-            this.sql_exporter_label.TabIndex = 1;
-            this.sql_exporter_label.Text = "sql_exporter_label";
+            this.SQL_Export_Timer_Label.AutoSize = true;
+            this.SQL_Export_Timer_Label.Location = new System.Drawing.Point(6, 49);
+            this.SQL_Export_Timer_Label.Name = "SQL_Export_Timer_Label";
+            this.SQL_Export_Timer_Label.Size = new System.Drawing.Size(101, 13);
+            this.SQL_Export_Timer_Label.TabIndex = 1;
+            this.SQL_Export_Timer_Label.Text = "Next SQL Export In:";
             // 
-            // sql_exporter_timer
+            // SQL_Export_Timer
             // 
-            this.sql_exporter_timer.AutoSize = true;
-            this.sql_exporter_timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.sql_exporter_timer.Location = new System.Drawing.Point(5, 64);
-            this.sql_exporter_timer.Name = "sql_exporter_timer";
-            this.sql_exporter_timer.Size = new System.Drawing.Size(49, 20);
-            this.sql_exporter_timer.TabIndex = 4;
-            this.sql_exporter_timer.Text = "00:00";
+            this.SQL_Export_Timer.AutoSize = true;
+            this.SQL_Export_Timer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.SQL_Export_Timer.Location = new System.Drawing.Point(5, 64);
+            this.SQL_Export_Timer.Name = "SQL_Export_Timer";
+            this.SQL_Export_Timer.Size = new System.Drawing.Size(49, 20);
+            this.SQL_Export_Timer.TabIndex = 4;
+            this.SQL_Export_Timer.Text = "00:00";
             // 
-            // auto_messages_label
+            // Auto_Command_Timer_Label
             // 
-            this.auto_messages_label.AutoSize = true;
-            this.auto_messages_label.Location = new System.Drawing.Point(6, 16);
-            this.auto_messages_label.Name = "auto_messages_label";
-            this.auto_messages_label.Size = new System.Drawing.Size(109, 13);
-            this.auto_messages_label.TabIndex = 0;
-            this.auto_messages_label.Text = "auto_messages_label";
+            this.Auto_Command_Timer_Label.AutoSize = true;
+            this.Auto_Command_Timer_Label.Location = new System.Drawing.Point(6, 16);
+            this.Auto_Command_Timer_Label.Name = "Auto_Command_Timer_Label";
+            this.Auto_Command_Timer_Label.Size = new System.Drawing.Size(94, 13);
+            this.Auto_Command_Timer_Label.TabIndex = 0;
+            this.Auto_Command_Timer_Label.Text = "Auto Command In:";
             // 
-            // ServerControlsGroup
+            // Server_Controls_Group
             // 
-            this.ServerControlsGroup.Controls.Add(this.start_with_win);
-            this.ServerControlsGroup.Controls.Add(this.start_with_7dsm);
-            this.ServerControlsGroup.Controls.Add(this.start);
-            this.ServerControlsGroup.Controls.Add(this.stop);
-            this.ServerControlsGroup.Controls.Add(this.reboot_con);
-            this.ServerControlsGroup.Controls.Add(this.save_logfiles_2);
-            this.ServerControlsGroup.Controls.Add(this.kill_proccess);
-            this.ServerControlsGroup.Location = new System.Drawing.Point(5, 8);
-            this.ServerControlsGroup.Name = "ServerControlsGroup";
-            this.ServerControlsGroup.Size = new System.Drawing.Size(166, 252);
-            this.ServerControlsGroup.TabIndex = 12;
-            this.ServerControlsGroup.TabStop = false;
-            this.ServerControlsGroup.Text = "Server";
+            this.Server_Controls_Group.Controls.Add(this.Start_7DSM_With_Windows_CheckBox);
+            this.Server_Controls_Group.Controls.Add(this.Start_With_7DSM_CheckBox);
+            this.Server_Controls_Group.Controls.Add(this.Start_Server_Button);
+            this.Server_Controls_Group.Controls.Add(this.Shutdown_Server_Button);
+            this.Server_Controls_Group.Controls.Add(this.Connect_Running_Server_Button);
+            this.Server_Controls_Group.Controls.Add(this.Save_Logs_CheckBox);
+            this.Server_Controls_Group.Controls.Add(this.Kill_Server_Process);
+            this.Server_Controls_Group.Location = new System.Drawing.Point(5, 8);
+            this.Server_Controls_Group.Name = "Server_Controls_Group";
+            this.Server_Controls_Group.Size = new System.Drawing.Size(166, 252);
+            this.Server_Controls_Group.TabIndex = 12;
+            this.Server_Controls_Group.TabStop = false;
+            this.Server_Controls_Group.Text = "Server";
             // 
-            // start_with_win
+            // Start_7DSM_With_Windows_CheckBox
             // 
-            this.start_with_win.AutoSize = true;
-            this.start_with_win.Location = new System.Drawing.Point(6, 157);
-            this.start_with_win.Name = "start_with_win";
-            this.start_with_win.Size = new System.Drawing.Size(150, 17);
-            this.start_with_win.TabIndex = 20;
-            this.start_with_win.Text = "Start 7DSM with Windows";
-            this.start_with_win.UseVisualStyleBackColor = true;
-            this.start_with_win.CheckedChanged += new System.EventHandler(this.start_with_win_CheckedChanged);
+            this.Start_7DSM_With_Windows_CheckBox.AutoSize = true;
+            this.Start_7DSM_With_Windows_CheckBox.Location = new System.Drawing.Point(6, 157);
+            this.Start_7DSM_With_Windows_CheckBox.Name = "Start_7DSM_With_Windows_CheckBox";
+            this.Start_7DSM_With_Windows_CheckBox.Size = new System.Drawing.Size(153, 17);
+            this.Start_7DSM_With_Windows_CheckBox.TabIndex = 20;
+            this.Start_7DSM_With_Windows_CheckBox.Text = "Start 7DSM With Windows";
+            this.Start_7DSM_With_Windows_CheckBox.UseVisualStyleBackColor = true;
+            this.Start_7DSM_With_Windows_CheckBox.CheckedChanged += new System.EventHandler(this.start_with_win_CheckedChanged);
             // 
-            // start_with_7dsm
+            // Start_With_7DSM_CheckBox
             // 
-            this.start_with_7dsm.AutoSize = true;
-            this.start_with_7dsm.Location = new System.Drawing.Point(6, 134);
-            this.start_with_7dsm.Name = "start_with_7dsm";
-            this.start_with_7dsm.Size = new System.Drawing.Size(135, 17);
-            this.start_with_7dsm.TabIndex = 19;
-            this.start_with_7dsm.Text = "Start server with 7DSM";
-            this.start_with_7dsm.UseVisualStyleBackColor = true;
-            this.start_with_7dsm.CheckedChanged += new System.EventHandler(this.start_with_7dsm_CheckedChanged);
+            this.Start_With_7DSM_CheckBox.AutoSize = true;
+            this.Start_With_7DSM_CheckBox.Location = new System.Drawing.Point(6, 134);
+            this.Start_With_7DSM_CheckBox.Name = "Start_With_7DSM_CheckBox";
+            this.Start_With_7DSM_CheckBox.Size = new System.Drawing.Size(140, 17);
+            this.Start_With_7DSM_CheckBox.TabIndex = 19;
+            this.Start_With_7DSM_CheckBox.Text = "Start Server With 7DSM";
+            this.Start_With_7DSM_CheckBox.UseVisualStyleBackColor = true;
+            this.Start_With_7DSM_CheckBox.CheckedChanged += new System.EventHandler(this.start_with_7dsm_CheckedChanged);
             // 
-            // start
+            // Start_Server_Button
             // 
-            this.start.Location = new System.Drawing.Point(6, 17);
-            this.start.Name = "start";
-            this.start.Size = new System.Drawing.Size(152, 23);
-            this.start.TabIndex = 4;
-            this.start.Text = "start";
-            this.start.UseVisualStyleBackColor = true;
-            this.start.Click += new System.EventHandler(this.button1_Click);
+            this.Start_Server_Button.Location = new System.Drawing.Point(6, 17);
+            this.Start_Server_Button.Name = "Start_Server_Button";
+            this.Start_Server_Button.Size = new System.Drawing.Size(152, 23);
+            this.Start_Server_Button.TabIndex = 4;
+            this.Start_Server_Button.Text = "Start Server";
+            this.Start_Server_Button.UseVisualStyleBackColor = true;
+            this.Start_Server_Button.Click += new System.EventHandler(this.button1_Click);
             // 
-            // stop
+            // Shutdown_Server_Button
             // 
-            this.stop.Enabled = false;
-            this.stop.Location = new System.Drawing.Point(6, 46);
-            this.stop.Name = "stop";
-            this.stop.Size = new System.Drawing.Size(152, 23);
-            this.stop.TabIndex = 5;
-            this.stop.Text = "stop";
-            this.stop.UseVisualStyleBackColor = true;
-            this.stop.Click += new System.EventHandler(this.Stop_Click);
+            this.Shutdown_Server_Button.Enabled = false;
+            this.Shutdown_Server_Button.Location = new System.Drawing.Point(6, 46);
+            this.Shutdown_Server_Button.Name = "Shutdown_Server_Button";
+            this.Shutdown_Server_Button.Size = new System.Drawing.Size(152, 23);
+            this.Shutdown_Server_Button.TabIndex = 5;
+            this.Shutdown_Server_Button.Text = "Shutdown Server";
+            this.Shutdown_Server_Button.UseVisualStyleBackColor = true;
+            this.Shutdown_Server_Button.Click += new System.EventHandler(this.Stop_Click);
             // 
-            // reboot_con
+            // Connect_Running_Server_Button
             // 
-            this.reboot_con.Location = new System.Drawing.Point(6, 75);
-            this.reboot_con.Name = "reboot_con";
-            this.reboot_con.Size = new System.Drawing.Size(152, 23);
-            this.reboot_con.TabIndex = 18;
-            this.reboot_con.Text = "reboot_con";
-            this.reboot_con.UseVisualStyleBackColor = true;
-            this.reboot_con.Click += new System.EventHandler(this.Reboot_con_Click);
+            this.Connect_Running_Server_Button.Location = new System.Drawing.Point(6, 75);
+            this.Connect_Running_Server_Button.Name = "Connect_Running_Server_Button";
+            this.Connect_Running_Server_Button.Size = new System.Drawing.Size(152, 23);
+            this.Connect_Running_Server_Button.TabIndex = 18;
+            this.Connect_Running_Server_Button.Text = "Connect To Running Server";
+            this.Connect_Running_Server_Button.UseVisualStyleBackColor = true;
+            this.Connect_Running_Server_Button.Click += new System.EventHandler(this.Reboot_con_Click);
             // 
-            // save_logfiles_2
+            // Save_Logs_CheckBox
             // 
-            this.save_logfiles_2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.save_logfiles_2.AutoSize = true;
-            this.save_logfiles_2.Location = new System.Drawing.Point(6, 229);
-            this.save_logfiles_2.Name = "save_logfiles_2";
-            this.save_logfiles_2.Size = new System.Drawing.Size(99, 17);
-            this.save_logfiles_2.TabIndex = 8;
-            this.save_logfiles_2.Text = "save_logfiles_2";
-            this.save_logfiles_2.UseVisualStyleBackColor = true;
-            this.save_logfiles_2.CheckedChanged += new System.EventHandler(this.save_logfiles_2_CheckedChanged);
+            this.Save_Logs_CheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Save_Logs_CheckBox.AutoSize = true;
+            this.Save_Logs_CheckBox.Location = new System.Drawing.Point(6, 229);
+            this.Save_Logs_CheckBox.Name = "Save_Logs_CheckBox";
+            this.Save_Logs_CheckBox.Size = new System.Drawing.Size(112, 17);
+            this.Save_Logs_CheckBox.TabIndex = 8;
+            this.Save_Logs_CheckBox.Text = "Save Logs To File";
+            this.Save_Logs_CheckBox.UseVisualStyleBackColor = true;
+            this.Save_Logs_CheckBox.CheckedChanged += new System.EventHandler(this.save_logfiles_2_CheckedChanged);
             // 
-            // kill_proccess
+            // Kill_Server_Process
             // 
-            this.kill_proccess.Location = new System.Drawing.Point(76, 104);
-            this.kill_proccess.Name = "kill_proccess";
-            this.kill_proccess.Size = new System.Drawing.Size(82, 24);
-            this.kill_proccess.TabIndex = 6;
-            this.kill_proccess.Text = "kill_proccess";
-            this.kill_proccess.UseVisualStyleBackColor = true;
-            this.kill_proccess.Click += new System.EventHandler(this.kill_proccess_Click);
+            this.Kill_Server_Process.Location = new System.Drawing.Point(76, 104);
+            this.Kill_Server_Process.Name = "Kill_Server_Process";
+            this.Kill_Server_Process.Size = new System.Drawing.Size(82, 24);
+            this.Kill_Server_Process.TabIndex = 6;
+            this.Kill_Server_Process.Text = "Kill Process";
+            this.Kill_Server_Process.UseVisualStyleBackColor = true;
+            this.Kill_Server_Process.Click += new System.EventHandler(this.kill_proccess_Click);
             // 
             // ban_kick
             // 
             this.ban_kick.BackColor = System.Drawing.SystemColors.Control;
-            this.ban_kick.Controls.Add(this.chat_g);
+            this.ban_kick.Controls.Add(this.Chat_Group);
             this.ban_kick.Controls.Add(this.all_players_l);
             this.ban_kick.Controls.Add(this.online_l);
-            this.ban_kick.Controls.Add(this.all_players_list);
+            this.ban_kick.Controls.Add(this.All_Players_List);
             this.ban_kick.Controls.Add(this.player_g);
             this.ban_kick.Controls.Add(this.telnet_group);
             this.ban_kick.Controls.Add(this.kickgroup);
             this.ban_kick.Controls.Add(this.spawn_group);
             this.ban_kick.Controls.Add(this.bantime_slider);
-            this.ban_kick.Controls.Add(this.players_list);
+            this.ban_kick.Controls.Add(this.Online_Player_List);
             this.ban_kick.ImageIndex = 2;
             this.ban_kick.Location = new System.Drawing.Point(47, 4);
             this.ban_kick.Name = "ban_kick";
             this.ban_kick.Size = new System.Drawing.Size(908, 684);
             this.ban_kick.TabIndex = 5;
             // 
-            // chat_g
+            // Chat_Group
             // 
-            this.chat_g.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Chat_Group.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.chat_g.BackColor = System.Drawing.SystemColors.Control;
-            this.chat_g.Controls.Add(this.chat);
-            this.chat_g.Controls.Add(this.chat_text);
-            this.chat_g.Location = new System.Drawing.Point(309, 8);
-            this.chat_g.Name = "chat_g";
-            this.chat_g.Size = new System.Drawing.Size(592, 253);
-            this.chat_g.TabIndex = 26;
-            this.chat_g.TabStop = false;
-            this.chat_g.Text = "chat_g";
+            this.Chat_Group.BackColor = System.Drawing.SystemColors.Control;
+            this.Chat_Group.Controls.Add(this.chat);
+            this.Chat_Group.Controls.Add(this.chat_text);
+            this.Chat_Group.Location = new System.Drawing.Point(309, 8);
+            this.Chat_Group.Name = "Chat_Group";
+            this.Chat_Group.Size = new System.Drawing.Size(592, 253);
+            this.Chat_Group.TabIndex = 26;
+            this.Chat_Group.TabStop = false;
+            this.Chat_Group.Text = "chat_g";
             // 
             // chat
             // 
@@ -2117,25 +2117,25 @@
             this.online_l.TabIndex = 24;
             this.online_l.Text = "Online players:";
             // 
-            // all_players_list
+            // All_Players_List
             // 
-            this.all_players_list.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.all_players_list.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.All_Players_List.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.All_Players_List.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1,
             this.columnHeader2});
-            this.all_players_list.FullRowSelect = true;
-            this.all_players_list.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.all_players_list.HideSelection = false;
-            this.all_players_list.Location = new System.Drawing.Point(8, 359);
-            this.all_players_list.MultiSelect = false;
-            this.all_players_list.Name = "all_players_list";
-            this.all_players_list.Size = new System.Drawing.Size(295, 298);
-            this.all_players_list.Sorting = System.Windows.Forms.SortOrder.Ascending;
-            this.all_players_list.TabIndex = 23;
-            this.all_players_list.UseCompatibleStateImageBehavior = false;
-            this.all_players_list.View = System.Windows.Forms.View.Details;
-            this.all_players_list.SelectedIndexChanged += new System.EventHandler(this.all_players_list_SelectedIndexChanged);
-            this.all_players_list.Click += new System.EventHandler(this.all_players_list_Click);
+            this.All_Players_List.FullRowSelect = true;
+            this.All_Players_List.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.All_Players_List.HideSelection = false;
+            this.All_Players_List.Location = new System.Drawing.Point(8, 359);
+            this.All_Players_List.MultiSelect = false;
+            this.All_Players_List.Name = "All_Players_List";
+            this.All_Players_List.Size = new System.Drawing.Size(295, 298);
+            this.All_Players_List.Sorting = System.Windows.Forms.SortOrder.Ascending;
+            this.All_Players_List.TabIndex = 23;
+            this.All_Players_List.UseCompatibleStateImageBehavior = false;
+            this.All_Players_List.View = System.Windows.Forms.View.Details;
+            this.All_Players_List.SelectedIndexChanged += new System.EventHandler(this.all_players_list_SelectedIndexChanged);
+            this.All_Players_List.Click += new System.EventHandler(this.all_players_list_Click);
             // 
             // columnHeader1
             // 
@@ -2287,26 +2287,26 @@
             this.ban_slide.Value = 1;
             this.ban_slide.Scroll += new System.EventHandler(this.trackBar1_Scroll_1);
             // 
-            // players_list
+            // Online_Player_List
             // 
-            this.players_list.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Online_Player_List.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.players_list.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.Online_Player_List.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.login_header,
             this.steamid_header});
-            this.players_list.FullRowSelect = true;
-            this.players_list.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-            this.players_list.HideSelection = false;
-            this.players_list.Location = new System.Drawing.Point(8, 27);
-            this.players_list.MultiSelect = false;
-            this.players_list.Name = "players_list";
-            this.players_list.Size = new System.Drawing.Size(295, 296);
-            this.players_list.Sorting = System.Windows.Forms.SortOrder.Ascending;
-            this.players_list.TabIndex = 0;
-            this.players_list.UseCompatibleStateImageBehavior = false;
-            this.players_list.View = System.Windows.Forms.View.Details;
-            this.players_list.SelectedIndexChanged += new System.EventHandler(this.players_list_SelectedIndexChanged);
-            this.players_list.Click += new System.EventHandler(this.players_list_Click);
+            this.Online_Player_List.FullRowSelect = true;
+            this.Online_Player_List.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
+            this.Online_Player_List.HideSelection = false;
+            this.Online_Player_List.Location = new System.Drawing.Point(8, 27);
+            this.Online_Player_List.MultiSelect = false;
+            this.Online_Player_List.Name = "Online_Player_List";
+            this.Online_Player_List.Size = new System.Drawing.Size(295, 296);
+            this.Online_Player_List.Sorting = System.Windows.Forms.SortOrder.Ascending;
+            this.Online_Player_List.TabIndex = 0;
+            this.Online_Player_List.UseCompatibleStateImageBehavior = false;
+            this.Online_Player_List.View = System.Windows.Forms.View.Details;
+            this.Online_Player_List.SelectedIndexChanged += new System.EventHandler(this.players_list_SelectedIndexChanged);
+            this.Online_Player_List.Click += new System.EventHandler(this.players_list_Click);
             // 
             // login_header
             // 
@@ -5362,19 +5362,19 @@
             this.overviewSplitter.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.overviewSplitter)).EndInit();
             this.overviewSplitter.ResumeLayout(false);
-            this.NewsGroup.ResumeLayout(false);
-            this.ServerStatusGroup.ResumeLayout(false);
-            this.ServerStatusGroup.PerformLayout();
-            this.ConsoleGroup.ResumeLayout(false);
-            this.ConsoleGroup.PerformLayout();
-            this.TimersGroup.ResumeLayout(false);
-            this.TimersGroup.PerformLayout();
-            this.ServerControlsGroup.ResumeLayout(false);
-            this.ServerControlsGroup.PerformLayout();
+            this.News_Group.ResumeLayout(false);
+            this.Server_Status_Group.ResumeLayout(false);
+            this.Server_Status_Group.PerformLayout();
+            this.Console_Group.ResumeLayout(false);
+            this.Console_Group.PerformLayout();
+            this.Timers_Group.ResumeLayout(false);
+            this.Timers_Group.PerformLayout();
+            this.Server_Controls_Group.ResumeLayout(false);
+            this.Server_Controls_Group.PerformLayout();
             this.ban_kick.ResumeLayout(false);
             this.ban_kick.PerformLayout();
-            this.chat_g.ResumeLayout(false);
-            this.chat_g.PerformLayout();
+            this.Chat_Group.ResumeLayout(false);
+            this.Chat_Group.PerformLayout();
             this.player_g.ResumeLayout(false);
             this.kickgroup.ResumeLayout(false);
             this.bantime_slider.ResumeLayout(false);
@@ -5566,7 +5566,7 @@
         private System.Windows.Forms.GroupBox kickgroup;
         private System.Windows.Forms.GroupBox bantime_slider;
         private System.Windows.Forms.TrackBar ban_slide;
-        private System.Windows.Forms.GroupBox ConsoleGroup;
+        private System.Windows.Forms.GroupBox Console_Group;
         private System.Windows.Forms.CheckBox always_on_top;
         private System.Windows.Forms.Button blad;
         private System.Windows.Forms.Button steamsearch;
@@ -5577,11 +5577,11 @@
         private System.Windows.Forms.GroupBox spam_time_g;
         private System.Windows.Forms.CheckBox show_ip;
         private System.Windows.Forms.CheckBox cleanexit;
-        private System.Windows.Forms.GroupBox ServerControlsGroup;
-        private System.Windows.Forms.CheckBox save_logfiles_2;
-        private System.Windows.Forms.Button stop;
-        private System.Windows.Forms.Button start;
-        private System.Windows.Forms.Button kill_proccess;
+        private System.Windows.Forms.GroupBox Server_Controls_Group;
+        private System.Windows.Forms.CheckBox Save_Logs_CheckBox;
+        private System.Windows.Forms.Button Shutdown_Server_Button;
+        private System.Windows.Forms.Button Start_Server_Button;
+        private System.Windows.Forms.Button Kill_Server_Process;
         private System.Windows.Forms.Label status;
         private System.Windows.Forms.CheckBox anon_data;
         private System.Windows.Forms.LinkLabel anon_data_2;
@@ -5600,12 +5600,12 @@
         private System.Windows.Forms.Button how_to_sql;
         private System.Windows.Forms.GroupBox sql_updates_time_g;
         private System.Windows.Forms.TextBox sql_updates_time;
-        private System.Windows.Forms.GroupBox TimersGroup;
-        private System.Windows.Forms.Label sql_exporter_label;
-        private System.Windows.Forms.Label sql_exporter_timer;
-        private System.Windows.Forms.Label auto_messages_label;
-        private System.Windows.Forms.Label backup_timer;
-        private System.Windows.Forms.Label backup_timer_label;
+        private System.Windows.Forms.GroupBox Timers_Group;
+        private System.Windows.Forms.Label SQL_Export_Timer_Label;
+        private System.Windows.Forms.Label SQL_Export_Timer;
+        private System.Windows.Forms.Label Auto_Command_Timer_Label;
+        private System.Windows.Forms.Label Backup_Timer;
+        private System.Windows.Forms.Label Backup_Timer_Label;
         private System.ComponentModel.BackgroundWorker auto_backup;
         private System.Windows.Forms.GroupBox auto_backup_group;
         private System.Windows.Forms.CheckBox auto_backup_check;
@@ -5700,8 +5700,8 @@
         private System.Windows.Forms.CheckBox reset_chat;
         private System.Windows.Forms.CheckBox reset_enabled;
         private System.Windows.Forms.TrackBar reset_time;
-        private System.Windows.Forms.Label reset_timer;
-        private System.Windows.Forms.Label reset_timer_label;
+        private System.Windows.Forms.Label Auto_Restart_Timer;
+        private System.Windows.Forms.Label Auto_Restart_Timer_Label;
         private System.Windows.Forms.GroupBox save_g;
         private System.Windows.Forms.TextBox save;
         private System.Windows.Forms.CheckBox spam_is_spam;
@@ -5709,12 +5709,12 @@
         private System.Windows.Forms.GroupBox AirDropFrequency_g;
         private System.Windows.Forms.TrackBar AirDropFrequency;
         private System.Windows.Forms.CheckBox feral;
-        private System.Windows.Forms.Button reboot_con;
+        private System.Windows.Forms.Button Connect_Running_Server_Button;
         private System.ComponentModel.BackgroundWorker reboot_telnet;
         private System.Windows.Forms.CheckBox VACEnabled;
         private System.Windows.Forms.GroupBox MaxSpawnedZombies_g;
         private System.Windows.Forms.TrackBar MaxSpawnedZombies;
-        private System.Windows.Forms.GroupBox chat_g;
+        private System.Windows.Forms.GroupBox Chat_Group;
         private System.Windows.Forms.RichTextBox chat;
         private System.Windows.Forms.TextBox chat_text;
         private System.Windows.Forms.GroupBox sql;
@@ -5768,10 +5768,10 @@
         private System.Windows.Forms.TextBox wl_add;
         private System.ComponentModel.BackgroundWorker autoupdate_whitelist;
         private System.Windows.Forms.CheckBox use_wl;
-        private System.Windows.Forms.Label wl_u_t_t;
-        private System.Windows.Forms.Label wl_u_t;
-        private System.Windows.Forms.CheckBox start_with_win;
-        private System.Windows.Forms.CheckBox start_with_7dsm;
+        private System.Windows.Forms.Label Whitelist_Update_Timer;
+        private System.Windows.Forms.Label Whitelist_Update_Label;
+        private System.Windows.Forms.CheckBox Start_7DSM_With_Windows_CheckBox;
+        private System.Windows.Forms.CheckBox Start_With_7DSM_CheckBox;
         private System.Windows.Forms.Label don_l;
         private System.Windows.Forms.Label backup_location_l;
         private System.Windows.Forms.TextBox backup_location;
@@ -5826,7 +5826,7 @@
         private System.Windows.Forms.GroupBox PlayerKillingMode_g;
         private System.Windows.Forms.CheckBox AirDropMarker;
         private System.Windows.Forms.Button help_b;
-        private System.Windows.Forms.ListView all_players_list;
+        private System.Windows.Forms.ListView All_Players_List;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.Label all_players_l;
@@ -5850,7 +5850,7 @@
         private System.Windows.Forms.PictureBox banlist_logo;
         private System.Windows.Forms.Button check_bans;
         private System.Windows.Forms.Button dbg_btn_2;
-        public System.Windows.Forms.ListView players_list;
+        public System.Windows.Forms.ListView Online_Player_List;
         public System.Windows.Forms.TrackBar maxpl;
         private System.Windows.Forms.TabPage WebServer;
         private System.Windows.Forms.GroupBox android_g;
@@ -5911,10 +5911,10 @@
         private System.Windows.Forms.Button excall_file;
         private System.Windows.Forms.OpenFileDialog externalCallFile;
         private System.Windows.Forms.Button how_to_commands2;
-        private System.Windows.Forms.Label auto_messages_timer;
-        private System.Windows.Forms.GroupBox NewsGroup;
-        private System.Windows.Forms.GroupBox ServerStatusGroup;
-        private System.Windows.Forms.RichTextBox newsbox;
+        private System.Windows.Forms.Label Auto_Command_Timer;
+        private System.Windows.Forms.GroupBox News_Group;
+        private System.Windows.Forms.GroupBox Server_Status_Group;
+        private System.Windows.Forms.RichTextBox News_Feed_RichTextBox;
         private System.Windows.Forms.SplitContainer overviewSplitter;
         private System.Windows.Forms.Button zoomup;
         private System.Windows.Forms.Label osver;

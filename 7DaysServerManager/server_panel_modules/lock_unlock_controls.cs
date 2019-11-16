@@ -15,8 +15,8 @@ namespace _7DaysServerManager
         {
             echo_debug("---locking ctrl---");
 
-            start.Enabled = false;
-            stop.Enabled = true;
+            Start_Server_Button.Enabled = false;
+            Shutdown_Server_Button.Enabled = true;
 
 
             PlayerKillingMode_g.Enabled = false;
@@ -111,8 +111,8 @@ namespace _7DaysServerManager
         public void unlock_ctrl()
         {
 
-            start.Enabled = true;
-            stop.Enabled = false;
+            Start_Server_Button.Enabled = true;
+            Shutdown_Server_Button.Enabled = false;
 
 
             PlayerKillingMode_g.Enabled = true;

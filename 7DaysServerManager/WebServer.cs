@@ -93,9 +93,9 @@ namespace _7DaysServerManager
                     else
                         rstr += "Server: OFFLINE;";
 
-                    players_list.Invoke((MethodInvoker)delegate
+                    Online_Player_List.Invoke((MethodInvoker)delegate
                     {
-                        rstr += "Players: " + players_list.Items.Count + "/" + maxpl.Value;
+                        rstr += "Players: " + Online_Player_List.Items.Count + "/" + maxpl.Value;
                     });
 
                 }
@@ -109,7 +109,7 @@ namespace _7DaysServerManager
             else if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "enable_website", null) == "1")
             {
                 string content="", sname = "", ip = "", port_="", serv_onl = "", pl_cnt="", max_pl_cnt="", for_url="";
-                players_list.Invoke((MethodInvoker)delegate
+                Online_Player_List.Invoke((MethodInvoker)delegate
                 {
                     if (page.Contains("rules"))
                         content = rules_content.Text;
@@ -124,7 +124,7 @@ namespace _7DaysServerManager
                         serv_onl = "OFFLINE";
 
                     port_ = port.Text;
-                    pl_cnt = Convert.ToString(players_list.Items.Count);
+                    pl_cnt = Convert.ToString(Online_Player_List.Items.Count);
                     max_pl_cnt = Convert.ToString(maxpl.Value);
                     for_url = forum_url.Text;
                 });
