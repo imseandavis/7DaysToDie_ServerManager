@@ -64,8 +64,8 @@ namespace _7DaysServerManager
             
 
             Set_Game_Time_Button.Text = lang("telnet_connect");
-            spaminfo.Text = lang("spaminfo");
-            spam_time_g.Text = lang("spam_time");
+            Server_Commands_Note_Label.Text = lang("spaminfo");
+            Server_Commands_Delay_GroupBox.Text = lang("spam_time");
             show_ip.Text = lang("show_ip");
             Kick_Reason_ComboBox.Text = lang("powod");
             cleanexit.Text = lang("cleanexit");
@@ -141,15 +141,15 @@ namespace _7DaysServerManager
 
             Ban_GroupBox.Text = lang("bantime_slider") + " [" + Convert.ToString(Ban_Slider_TrackBar.Value) + "]";
 
-            spam_g.Text = lang("spam_g");
+            Server_Commands_GroupBox.Text = lang("spam_g");
 
             Auto_Restart_Timer_Label.Text = lang("reset_timer_label");
-            reset_g.Text = lang("reset_g") + " [" + Convert.ToString(reset_time.Value) + ":00]";
-            reset_chat.Text = lang("reset_chat");
-            reset_enabled.Text = lang("reset_enabled");
+            Auto_Restarts_GroupBox.Text = lang("reset_g") + " [" + Convert.ToString(Auto_Restart_Time_TrackBar.Value) + ":00]";
+            Warn_Before_Restart_CheckBox.Text = lang("reset_chat");
+            Enable_Auto_Restarts_CheckBox.Text = lang("reset_enabled");
 
             save_g.Text = lang("save_g");
-            spam_is_spam.Text = lang("spam_is_spam");
+            Server_Commands_Say_Switch_CheckBox.Text = lang("spam_is_spam");
 
             if (Air_Drop_Frequency_TrackBar.Value != 0)
                 Air_Drop_Frequency_GroupBox.Text = lang("AirDropFrequency") + " [" + Convert.ToString(Air_Drop_Frequency_TrackBar.Value) + " h.]";
@@ -164,15 +164,15 @@ namespace _7DaysServerManager
 
 
 
-            backup_msg_1_l.Text = lang("backup_msg_1_l");
-            backup_msg_2_l.Text = lang("backup_msg_2_l");
-            reboot_l.Text = lang("reboot_l");
-            reboot_time_l.Text = lang("reboot_time_l");
-            messages_g.Text = lang("messages_g");
-            customcommands_g.Text = lang("customcommands_g");
-            how_to_commands.Text = lang("how_to_commands");
-            enable_cc.Text = lang("enable_cc");
-            cmd_not_yet_l.Text = lang("cmd_not_yet_l");
+            Starting_Backup_Message_Label.Text = lang("backup_msg_1_l");
+            Backup_Completed_Message_Label.Text = lang("backup_msg_2_l");
+            Reboot_Now_Message_Label.Text = lang("reboot_l");
+            Time_Until_Reboot_Message_Label.Text = lang("reboot_time_l");
+            Server_Chat_Messages_GroupBox.Text = lang("messages_g");
+            Custom_Commands_GroupBox.Text = lang("customcommands_g");
+            How_To_Commands_Button.Text = lang("how_to_commands");
+            Enable_Custom_Commands_CheckBox.Text = lang("enable_cc");
+            Command_Wait_Message_Label.Text = lang("cmd_not_yet_l");
             configfile_g.Text = lang("configfile_g");
             configfile_e.Text = lang("sa_edit");
 

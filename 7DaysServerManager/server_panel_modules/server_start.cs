@@ -55,10 +55,10 @@ namespace _7DaysServerManager
 
 
 
-                    if (select_dir.ShowDialog() == DialogResult.OK)
+                    if (Select_Game_Directory.ShowDialog() == DialogResult.OK)
                     {
-                        sciezka_plikow = select_dir.SelectedPath + "\\" + exe_name.Text;
-                        string sciezka_plikow_server = select_dir.SelectedPath + "\\7DaysToDieServer.exe";
+                        sciezka_plikow = Select_Game_Directory.SelectedPath + "\\" + exe_name.Text;
+                        string sciezka_plikow_server = Select_Game_Directory.SelectedPath + "\\7DaysToDieServer.exe";
 
 
 

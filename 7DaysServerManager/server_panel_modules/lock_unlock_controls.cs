@@ -100,8 +100,8 @@ namespace _7DaysServerManager
             ServerDescription.Enabled = false;
             ServerWebsiteURL.Enabled = false;
 
-            reset_g.Enabled = false;
-            whitelist_dl_g.Enabled = false;
+            Auto_Restarts_GroupBox.Enabled = false;
+            Whitelist_GroupBox.Enabled = false;
             Player_Safe_Zone_Level_TextBox.Enabled = false;
             Player_Safe_Zone_Hours_TextBox.Enabled = false;
             MaxSpawnedAnimals.Enabled = false;
@@ -196,8 +196,8 @@ namespace _7DaysServerManager
             ServerDescription.Enabled = true;
             ServerWebsiteURL.Enabled = true;
 
-            reset_g.Enabled = true;
-            whitelist_dl_g.Enabled = true;
+            Auto_Restarts_GroupBox.Enabled = true;
+            Whitelist_GroupBox.Enabled = true;
             Player_Safe_Zone_Level_TextBox.Enabled = true;
             Player_Safe_Zone_Hours_TextBox.Enabled = true;
             MaxSpawnedAnimals.Enabled = true;

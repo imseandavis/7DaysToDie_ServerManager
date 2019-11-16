@@ -49,12 +49,15 @@ namespace _7DaysServerManager
         public const string game_ver = "Alpha 18.1";
         public const string whatsnew = "Whats new since last STABLE build:\n-Fixed MySql Exporter\n-Added Drop nothing on death option\n-Few minor fixes";
 
+        // Registry Variables
+        string base_registry_key = "HKEY_CURRENT_USER\\Software\\pionner\\7DSM\\";
+
         // Debug Settings
         bool debug_mode = false;
         bool enable_autoreboot = true; //!! DEBUG ONLY, This Will Corrupt The Server Pointer, So Keep It Set To True!
 
         // Text Formatting Variables
-        string konsola_pre = "\n";
+        string console_pre = "\n";
         string chat_pre = "\n";
 
 
@@ -78,7 +81,7 @@ namespace _7DaysServerManager
 
         bool updater_invoked_manually = false;
 
-        int konsola_offset = 100000;
+        int console_offset = 100000;
 
         bool wybrana_lista_graczy_offline = false;
 
@@ -234,7 +237,7 @@ namespace _7DaysServerManager
             }
         }
 
-        public void realtime_prepare()
+        public void Realtime_prepare()
         {
             if (realtime.Checked)
             {
@@ -547,34 +550,27 @@ namespace _7DaysServerManager
 
         private void server_panel_Load(object sender, EventArgs e)
         {
-
-
             //tabControl.TabPages.Remove(WebServer); //!!
 
             //srv_list.Dispose();
 
-
-            ikony_naglowka.Images.Add(Properties.Resources.globe);
-            ikony_naglowka.Images.Add(Properties.Resources.math);
-            ikony_naglowka.Images.Add(Properties.Resources.database);
-            ikony_naglowka.Images.Add(Properties.Resources.edit);
-            ikony_naglowka.Images.Add(Properties.Resources.tools);
-            ikony_naglowka.Images.Add(Properties.Resources.dbi);
-            ikony_naglowka.Images.Add(Properties.Resources.dice);
-            ikony_naglowka.Images.Add(Properties.Resources.sch_tasks);
-            ikony_naglowka.Images.Add(Properties.Resources.backup);
-            ikony_naglowka.Images.Add(Properties.Resources.rate);
-            ikony_naglowka.Images.Add(Properties.Resources.shield);
-            ikony_naglowka.Images.Add(Properties.Resources.firefox);
-            ikony_naglowka.Images.Add(Properties.Resources.net);
-
-
+            Header_Icons.Images.Add(Properties.Resources.globe);
+            Header_Icons.Images.Add(Properties.Resources.math);
+            Header_Icons.Images.Add(Properties.Resources.database);
+            Header_Icons.Images.Add(Properties.Resources.edit);
+            Header_Icons.Images.Add(Properties.Resources.tools);
+            Header_Icons.Images.Add(Properties.Resources.dbi);
+            Header_Icons.Images.Add(Properties.Resources.dice);
+            Header_Icons.Images.Add(Properties.Resources.sch_tasks);
+            Header_Icons.Images.Add(Properties.Resources.backup);
+            Header_Icons.Images.Add(Properties.Resources.rate);
+            Header_Icons.Images.Add(Properties.Resources.shield);
+            Header_Icons.Images.Add(Properties.Resources.firefox);
+            Header_Icons.Images.Add(Properties.Resources.net);
 
             profile_name = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM", "last_profile", null);
 
-
-            //ws = new WebServer(SendResponse, "http://192.168.0.25:8080/");
-
+            //ws = new WebServer(SendResponse, "http://192.168.10.50:8080/");
 
             prepare_app_after_start();
         }
@@ -838,9 +834,9 @@ namespace _7DaysServerManager
         {
             if (FormWindowState.Minimized == this.WindowState & to_tray.Checked)
             {
-                ikona.Visible = true;
+                App_Icon.Visible = true;
                 this.Visible = false;
-                ikona.ShowBalloonTip(15000, lang("imhere"), lang("restore"), ToolTipIcon.Info);
+                App_Icon.ShowBalloonTip(15000, lang("imhere"), lang("restore"), ToolTipIcon.Info);
             }
 
         }
@@ -848,7 +844,7 @@ namespace _7DaysServerManager
         private void ikona_MouseClick(object sender, MouseEventArgs e)
         {
             this.Visible = true;
-            ikona.Visible = false;
+            App_Icon.Visible = false;
             this.WindowState = FormWindowState.Normal;
         }
 
@@ -857,22 +853,22 @@ namespace _7DaysServerManager
         private void chpath_Click(object sender, EventArgs e)
         {
             echo_debug("---changing dir---");
-            if (select_dir.ShowDialog() == DialogResult.OK)
+            if (Select_Game_Directory.ShowDialog() == DialogResult.OK)
             {
-                string sciezka_plikow = select_dir.SelectedPath + "\\" + exe_name.Text;
-                string sciezka_plikow_server = select_dir.SelectedPath + "\\7DaysToDieServer.exe";
+                string sciezka_plikow = Select_Game_Directory.SelectedPath + "\\" + exe_name.Text;
+                string sciezka_plikow_server = Select_Game_Directory.SelectedPath + "\\7DaysToDieServer.exe";
 
                 if (File.Exists(@sciezka_plikow))
                 {
                     MessageBox.Show(lang("dir_ok"), lang("saved"));
-                    Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", select_dir.SelectedPath);
+                    Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", Select_Game_Directory.SelectedPath);
                     Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "server_type", "client");
 
                 }
                 else if (File.Exists(@sciezka_plikow_server))
                 {
                     MessageBox.Show(lang("dir_ok"), lang("saved"));
-                    Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", select_dir.SelectedPath);
+                    Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", Select_Game_Directory.SelectedPath);
                     Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "server_type", "server");
 
                 }
@@ -1093,7 +1089,7 @@ namespace _7DaysServerManager
 
             Shutdown_Server_Button.Invoke((MethodInvoker)delegate
             {
-                rr_enabled = reset_enabled.Checked;
+                rr_enabled = Enable_Auto_Restarts_CheckBox.Checked;
             });
 
             if (!auto_reset.IsBusy && rr_enabled)
@@ -1167,7 +1163,7 @@ namespace _7DaysServerManager
 
 
 
-        private void kick_Click(object sender, EventArgs e)
+        private void Kick_Click(object sender, EventArgs e)
         {
             echo_debug("---kick---");
             try
@@ -1210,7 +1206,7 @@ namespace _7DaysServerManager
             }
         }
 
-        private void ban_Click(object sender, EventArgs e)
+        private void Ban_Click(object sender, EventArgs e)
         {
             echo_debug("---ban---");
             try
@@ -1666,7 +1662,7 @@ namespace _7DaysServerManager
 
 
                         ////////////////////////////////////////////////////////////////////////////
-                        // dodawanie graczy
+                        // Adding Players
                         if (odpowiedz_telnet.Contains("Authenticating"))
                         {
 
@@ -1695,17 +1691,13 @@ namespace _7DaysServerManager
                                 startbar.Invoke((MethodInvoker)delegate
                                 {
 
-                                    if (allowed_players.Contains(podzielony[3]) || !use_wl.Checked)
+                                    if (allowed_players.Contains(podzielony[3]) || !Use_Whitelist_CheckBox.Checked)
                                     {
                                         ListViewItem lvi = new ListViewItem();
                                         lvi.Text = podzielony[3];
                                         lvi.SubItems.Add(podzielony[4]);
 
                                         ListViewItem item = Online_Player_List.FindItemWithText(podzielony[3]);
-
-
-
-
 
 
                                         if (!gracz_jest_na_liscie(lvi))
@@ -1718,10 +1710,6 @@ namespace _7DaysServerManager
                                         {
                                             All_Players_List.Items.Add((ListViewItem)lvi.Clone());
                                         }
-
-
-
-
 
 
                                         echo("Player joined: " + podzielony[3], 1, true);
@@ -1739,17 +1727,7 @@ namespace _7DaysServerManager
                                 echo_debug("ADDED TO PL_LIST: " + podzielony[3] + ", " + podzielony[4] + "\nFULL: " + odpowiedz_telnet);
 
 
-
-
-
-
-
-
-
-
                                 int banmode = Convert.ToInt32((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "glob", null));
-
-
 
                                 if (banmode != 0)
                                 {
@@ -1779,8 +1757,6 @@ namespace _7DaysServerManager
                                 }
 
 
-
-
                             }
                             catch (Exception ex)
                             {
@@ -1788,14 +1764,6 @@ namespace _7DaysServerManager
                                 err_rep.Show();
                             }
                         }
-
-
-
-
-
-
-
-
 
 
                         if (odpowiedz_telnet.Contains("already allowed!"))
@@ -1834,12 +1802,13 @@ namespace _7DaysServerManager
 
 
                         /////////////////////////////////////////////////////////////////////////////////////////////////////
-                        // END: NOWA LISTA GRACZY
+                        // END: NEW PLAYER LIST
                         /////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
                         /////////////////////////////////////////////////////////////////////////////////////////////////////
                         // CHAT
+                        /////////////////////////////////////////////////////////////////////////////////////////////////////
                         try
                         {
                             if (odpowiedz_telnet.Contains("INF Chat") && !odpowiedz_telnet.Contains("joined the game") && !odpowiedz_telnet.Contains("left the game") && !odpowiedz_telnet.Contains("INF Executing command"))
@@ -1928,7 +1897,7 @@ namespace _7DaysServerManager
             }
         }
 
-        private void konsola_TextChanged(object sender, EventArgs e)
+        private void Console_TextChanged(object sender, EventArgs e)
         {
             if (save_logfiles.Checked)
             {
@@ -1936,13 +1905,13 @@ namespace _7DaysServerManager
                 try
                 {
 
-                    main_log.WriteLine(Console_RichTextBox.Text.Replace(konsola_pre, ""));
+                    main_log.WriteLine(Console_RichTextBox.Text.Replace(console_pre, ""));
 
-                    if (Console_RichTextBox.Text.Length > konsola_offset)
-                        Console_RichTextBox.Text = Console_RichTextBox.Text.Substring(Console_RichTextBox.Text.Length - konsola_offset);
+                    if (Console_RichTextBox.Text.Length > console_offset)
+                        Console_RichTextBox.Text = Console_RichTextBox.Text.Substring(Console_RichTextBox.Text.Length - console_offset);
 
 
-                    konsola_pre = Console_RichTextBox.Text;
+                    console_pre = Console_RichTextBox.Text;
 
                 }
                 catch { }
@@ -2242,7 +2211,7 @@ namespace _7DaysServerManager
                     bool spamy_spam = false;
                     startbar.Invoke((MethodInvoker)delegate
                     {
-                        spamy_spam = spam_is_spam.Checked;
+                        spamy_spam = Server_Commands_Say_Switch_CheckBox.Checked;
                     });
 
                     if (spamy_spam)
@@ -2263,13 +2232,13 @@ namespace _7DaysServerManager
 
         private void spam_list_TextChanged(object sender, EventArgs e)
         {
-            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "spam_list", spam_list.Text);
+            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "spam_list", Server_Commands_List_RichTextBox.Text);
         }
 
         private void spam_time_Scroll(object sender, EventArgs e)
         {
-            spam_time_g.Text = lang("spam_time") + " [" + spam_time.Value * 0.5 + " min.]";
-            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "spam_time", spam_time.Value);
+            Server_Commands_Delay_GroupBox.Text = lang("spam_time") + " [" + Server_Commands_Time_TrackBar.Value * 0.5 + " min.]";
+            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "spam_time", Server_Commands_Time_TrackBar.Value);
         }
 
         private void show_ip_CheckedChanged(object sender, EventArgs e)
@@ -2698,12 +2667,12 @@ namespace _7DaysServerManager
             }
         }
 
-        private void server_nazwa_TextChanged(object sender, EventArgs e)
+        private void Server_nazwa_TextChanged(object sender, EventArgs e)
         {
             generuj_config();
         }
 
-        private void auto_backup_check_CheckedChanged(object sender, EventArgs e)
+        private void Auto_backup_check_CheckedChanged(object sender, EventArgs e)
         {
             if (auto_backup_check.Checked)
             {
@@ -2757,7 +2726,7 @@ namespace _7DaysServerManager
 
 
 
-        public void create_backup_now()
+        public void Create_backup_now()
         {
             bool pokazuj_chat = false, usun_stare = false;
             string lokacja = "", wybrana_mapa = "", nazwa_gry = "", lokalizacja = "";
@@ -2850,24 +2819,14 @@ namespace _7DaysServerManager
             if (pokazuj_chat)
                 telnet_queue.Enqueue("say \"" + (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "backup_msg_2", null) + "\"");
 
-
-
-
             startbar.Invoke((MethodInvoker)delegate
             {
-                refresh_backups_list();
+                Refresh_backups_list();
             });
-
-
-
 
         }
 
-
-
-
-
-        private void auto_backup_DoWork(object sender, DoWorkEventArgs e)
+        private void Auto_backup_DoWork(object sender, DoWorkEventArgs e)
         {
             int n = 0;
 
@@ -2876,14 +2835,6 @@ namespace _7DaysServerManager
             {
                 n = backup_time.Value;
             });
-
-
-
-
-
-
-
-
 
 
             while (server_online)
@@ -2925,9 +2876,6 @@ namespace _7DaysServerManager
                         sec_str = "0" + Convert.ToString(sec);
 
 
-
-
-
                     startbar.Invoke((MethodInvoker)delegate
                     {
                         Backup_Timer.Text = hrs_str + ":" + min_str + ":" + sec_str;
@@ -2944,17 +2892,17 @@ namespace _7DaysServerManager
 
                 }
 
-                create_backup_now();
+                Create_backup_now();
 
             }
         }
 
-        private void show_stats_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void Show_stats_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start("https://7dsm.smartmoose.org/index.php?id=stats");
         }
 
-        private void backup_chat_CheckedChanged(object sender, EventArgs e)
+        private void Backup_chat_CheckedChanged(object sender, EventArgs e)
         {
             if (backup_chat.Checked)
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "backup_chat", "1");
@@ -2973,7 +2921,7 @@ namespace _7DaysServerManager
             generuj_config();
         }
 
-        private void dod_1_CheckedChanged(object sender, EventArgs e)
+        private void Dod_1_CheckedChanged(object sender, EventArgs e)
         {
             generuj_config();
         }
@@ -3062,7 +3010,7 @@ namespace _7DaysServerManager
             else
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "realtime", "0");
 
-            realtime_prepare();
+            Realtime_prepare();
         }
 
         private void Telnet_psw_TextChanged(object sender, EventArgs e)
@@ -3188,8 +3136,8 @@ namespace _7DaysServerManager
 
             Console_RichTextBox.Invoke((MethodInvoker)delegate
             {
-                n = reset_time.Value;
-                chat = reset_chat.Checked;
+                n = Auto_Restart_Time_TrackBar.Value;
+                chat = Warn_Before_Restart_CheckBox.Checked;
             });
 
             while (en)
@@ -3303,16 +3251,16 @@ namespace _7DaysServerManager
 
                 Console_RichTextBox.Invoke((MethodInvoker)delegate
                 {
-                    en = reset_enabled.Checked;
-                    n = reset_time.Value;
-                    chat = reset_chat.Checked;
+                    en = Enable_Auto_Restarts_CheckBox.Checked;
+                    n = Auto_Restart_Time_TrackBar.Value;
+                    chat = Warn_Before_Restart_CheckBox.Checked;
                 });
             }
         }
 
         private void reset_time_Scroll(object sender, EventArgs e)
         {
-            int hrs = reset_time.Value;
+            int hrs = Auto_Restart_Time_TrackBar.Value;
             int min = 0;
 
             string hrs_s, min_s;
@@ -3335,29 +3283,29 @@ namespace _7DaysServerManager
                 min_s = Convert.ToString(min);
             }
 
-            reset_g.Text = lang("reset_g") + " [" + hrs_s + ":" + min_s + " h.]";
-            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "reset_time", reset_time.Value);
+            Auto_Restarts_GroupBox.Text = lang("reset_g") + " [" + hrs_s + ":" + min_s + " h.]";
+            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "reset_time", Auto_Restart_Time_TrackBar.Value);
         }
 
         private void Reset_enabled_CheckedChanged(object sender, EventArgs e)
         {
-            if (reset_enabled.Checked)
+            if (Enable_Auto_Restarts_CheckBox.Checked)
             {
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "auto_reset", "1");
-                reset_chat.Enabled = true;
-                reset_time.Enabled = true;
+                Warn_Before_Restart_CheckBox.Enabled = true;
+                Auto_Restart_Time_TrackBar.Enabled = true;
             }
             else
             {
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "auto_reset", "0");
-                reset_chat.Enabled = false;
-                reset_time.Enabled = false;
+                Warn_Before_Restart_CheckBox.Enabled = false;
+                Auto_Restart_Time_TrackBar.Enabled = false;
             }
         }
 
         private void Reset_chat_CheckedChanged(object sender, EventArgs e)
         {
-            if (reset_chat.Checked)
+            if (Warn_Before_Restart_CheckBox.Checked)
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "reset_chat", "1");
             else
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "reset_chat", "0");
@@ -3375,7 +3323,7 @@ namespace _7DaysServerManager
 
         private void Spam_is_spam_CheckedChanged(object sender, EventArgs e)
         {
-            if (spam_is_spam.Checked)
+            if (Server_Commands_Say_Switch_CheckBox.Checked)
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "spam_is_spam", "1");
             else
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "spam_is_spam", "0");
@@ -3527,12 +3475,12 @@ namespace _7DaysServerManager
 
         private void Backup_msg_1_TextChanged(object sender, EventArgs e)
         {
-            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "backup_msg_1", backup_msg_1.Text);
+            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "backup_msg_1", Starting_Backup_Message_TextBox.Text);
         }
 
         private void Backup_msg_2_TextChanged(object sender, EventArgs e)
         {
-            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "backup_msg_2", backup_msg_2.Text);
+            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "backup_msg_2", Backup_Completed_Message_TextBox.Text);
         }
 
         private void Reboot_time_TextChanged(object sender, EventArgs e)
@@ -3556,9 +3504,9 @@ namespace _7DaysServerManager
 
             startbar.Invoke((MethodInvoker)delegate
             {
-                cc = enable_cc.Checked;
-                externalCall = excall.Checked;
-                excallFile = excall_file_l.Text;
+                cc = Enable_Custom_Commands_CheckBox.Checked;
+                externalCall = Use_External_Call_CheckBox.Checked;
+                excallFile = External_Call_File_Name_Label.Text;
             });
 
 
@@ -3579,7 +3527,7 @@ namespace _7DaysServerManager
                 int cmds_num = 0;
                 startbar.Invoke((MethodInvoker)delegate
                 {
-                    cmds_num = customcommands.Lines.Length;
+                    cmds_num = Custom_Commands_RichTextBox.Lines.Length;
                     dtds = dtds_enable.Checked;
                 });
 
@@ -3718,7 +3666,7 @@ namespace _7DaysServerManager
 
                         startbar.Invoke((MethodInvoker)delegate
                         {
-                            cala_linia = customcommands.Lines[i];
+                            cala_linia = Custom_Commands_RichTextBox.Lines[i];
                         });
 
 
@@ -3842,7 +3790,7 @@ namespace _7DaysServerManager
 
         private void Enable_cc_CheckedChanged(object sender, EventArgs e)
         {
-            if (enable_cc.Checked)
+            if (Enable_Custom_Commands_CheckBox.Checked)
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "enable_cc", "1");
             else
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "enable_cc", "0");
@@ -3871,7 +3819,7 @@ namespace _7DaysServerManager
 
         private void Customcommands_TextChanged(object sender, EventArgs e)
         {
-            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "cc", customcommands.Text);
+            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "cc", Custom_Commands_RichTextBox.Text);
         }
 
         private void PersistentPlayerProfiles_CheckedChanged(object sender, EventArgs e)
@@ -3915,7 +3863,7 @@ namespace _7DaysServerManager
             });
 
             for (int i = 0; i < 15; i++)
-                System.Threading.Thread.Sleep(100);
+                Thread.Sleep(100);
 
             if (odpowiedz_telnet == "error")
             {
@@ -3933,9 +3881,9 @@ namespace _7DaysServerManager
 
             telnet_connection.CancelAsync();
 
-            System.Threading.Thread.Sleep(5000);
+            Thread.Sleep(5000);
 
-            System.Diagnostics.Process[] proc = System.Diagnostics.Process.GetProcessesByName("7DaysToDie");
+            Process[] proc = System.Diagnostics.Process.GetProcessesByName("7DaysToDie");
             if (proc.Length > 0)
             {
                 foreach (System.Diagnostics.Process myProc in System.Diagnostics.Process.GetProcesses())
@@ -3967,7 +3915,7 @@ namespace _7DaysServerManager
 
         private void Like_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://www.facebook.com/official7dsm");
+            Process.Start("https://www.facebook.com/official7dsm");
         }
 
         private void PlayerSafeZoneLevel_TextChanged(object sender, EventArgs e)
@@ -3986,7 +3934,7 @@ namespace _7DaysServerManager
             generuj_config();
         }
 
-        private void kill_player_Click(object sender, EventArgs e)
+        private void Kill_Player_Click(object sender, EventArgs e)
         {
             try
             {
@@ -3998,7 +3946,7 @@ namespace _7DaysServerManager
             }
         }
 
-        private void starve_player_Click(object sender, EventArgs e)
+        private void Starve_Player_Click(object sender, EventArgs e)
         {
             try
             {
@@ -4010,7 +3958,7 @@ namespace _7DaysServerManager
             }
         }
 
-        private void thirsty_player_Click(object sender, EventArgs e)
+        private void Thirsty_Player_Click(object sender, EventArgs e)
         {
             try
             {
@@ -4022,7 +3970,7 @@ namespace _7DaysServerManager
             }
         }
 
-        private void debug_log_CheckedChanged(object sender, EventArgs e)
+        private void Debug_Log_CheckedChanged(object sender, EventArgs e)
         {
             if (debug_log.Checked)
             {
@@ -4040,12 +3988,12 @@ namespace _7DaysServerManager
 
         private void button1_Click_3(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://7dsm.smartmoose.org");
+            Process.Start("https://7dsm.smartmoose.org");
         }
 
         private void wl_chk_CheckedChanged(object sender, EventArgs e)
         {
-            if (wl_chk.Checked)
+            if (Auto_Update_Whitelist_CheckBox.Checked)
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "autoupdate_whitelist", "1");
             else
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "autoupdate_whitelist", "0");
@@ -4053,27 +4001,27 @@ namespace _7DaysServerManager
 
         private void wl_interval_TextChanged(object sender, EventArgs e)
         {
-            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "wl_interval", wl_interval.Text);
+            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "wl_interval", Update_Whitelist_Interval_TextBox.Text);
         }
 
         private void wl_add_TextChanged(object sender, EventArgs e)
         {
-            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "wl_add", wl_add.Text);
+            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "wl_add", Auto_Update_External_Whitelist_URL_TextBox.Text);
         }
 
-        private void autoupdate_whitelist_DoWork(object sender, DoWorkEventArgs e)
+        private void Autoupdate_whitelist_DoWork(object sender, DoWorkEventArgs e)
         {
             bool cont = false;
             string plik_in = "", plik_out = "";
             int i = 0;
 
-            wl_chk.Invoke((MethodInvoker)delegate
+            Auto_Update_Whitelist_CheckBox.Invoke((MethodInvoker)delegate
             {
-                cont = wl_chk.Checked;
+                cont = Auto_Update_Whitelist_CheckBox.Checked;
                 try
                 {
-                    i = Convert.ToInt32(wl_interval.Text);
-                    plik_in = wl_add.Text;
+                    i = Convert.ToInt32(Update_Whitelist_Interval_TextBox.Text);
+                    plik_in = Auto_Update_External_Whitelist_URL_TextBox.Text;
                     plik_out = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", null) + "\\whitelist.txt";
                 }
                 catch { }
@@ -4106,7 +4054,7 @@ namespace _7DaysServerManager
 
                 for (int k = i * 60; k >= 0; k--)
                 {
-                    System.Threading.Thread.Sleep(1000);
+                    Thread.Sleep(1000);
 
                     int k_m = k;
                     //int hrs = 0;
@@ -4147,7 +4095,7 @@ namespace _7DaysServerManager
 
         private void use_wl_CheckedChanged(object sender, EventArgs e)
         {
-            if (use_wl.Checked)
+            if (Use_Whitelist_CheckBox.Checked)
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "use_wl", "1");
             else
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "use_wl", "0");
@@ -4165,12 +4113,12 @@ namespace _7DaysServerManager
         {
             if (Start_7DSM_With_Windows_CheckBox.Checked)
             {
-                Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+                RegistryKey key = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
                 key.SetValue("7DaysServerManager", @System.Reflection.Assembly.GetExecutingAssembly().Location);
             }
             else
             {
-                Microsoft.Win32.RegistryKey key = Microsoft.Win32.Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
+                RegistryKey key = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
                 key.DeleteValue("7DaysServerManager", false);
             }
         }
@@ -4186,7 +4134,7 @@ namespace _7DaysServerManager
         private void check_updates_DoWork(object sender, DoWorkEventArgs e)
         {
             string update_avaible = "0";
-            System.Net.WebClient client;
+            WebClient client;
 
             bool dl_dev = false;
 
@@ -4194,7 +4142,7 @@ namespace _7DaysServerManager
                 dl_dev = true;
 
 
-            client = new System.Net.WebClient();
+            client = new WebClient();
 
             try
             {
@@ -4255,22 +4203,17 @@ namespace _7DaysServerManager
         {
             echo("Type \"local help\" for commands.", 0, true);
 
-
-
-            isPremium();
-
-
-
+            IsPremium();
 
             check_updates.RunWorkerAsync();
         }
 
-        private void server_panel_Shown(object sender, EventArgs e)
+        private void Server_panel_Shown(object sender, EventArgs e)
         {
             prepare_app_after_draw.RunWorkerAsync();
         }
 
-        private void prem_act_Click(object sender, EventArgs e)
+        private void Prem_act_Click(object sender, EventArgs e)
         {
             if (Supporter_Activate_Button.Text == "Activate")
             {
@@ -4280,11 +4223,11 @@ namespace _7DaysServerManager
 
                     Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\", "prem_code", Support_Code_TextBox.Text);
 
-                    isPremium();
+                    IsPremium();
 
                     if (premium)
                     {
-                        unlock_premium();
+                        Unlock_Premium();
                         MessageBox.Show("Thanks for supporting me :)", "Thanks");
                     }
                     else
@@ -4317,9 +4260,9 @@ namespace _7DaysServerManager
 
 
 
-        public void isPremium()
+        public void IsPremium()
         {
-            echo_debug("checking premium with server");
+            echo_debug("Checking Premium Status With Server");
             try
             {
                 WebClient client = new WebClient(); ;
@@ -4328,12 +4271,12 @@ namespace _7DaysServerManager
 
                 if (resp == 0)
                 {
-                    unlock_premium();
+                    Unlock_Premium();
                     premium = true;
                 }
                 else
                 {
-                    lock_premium();
+                    Lock_Premium();
                     premium = false;
                 }
 
@@ -4341,18 +4284,14 @@ namespace _7DaysServerManager
             catch
             {
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\", "tmp_prem", "0");
-                lock_premium();
+                Lock_Premium();
                 premium = false;
             }
         }
 
-
-
-
-
-        public void unlock_premium()
+        public void Unlock_Premium()
         {
-            echo_debug("premium unlocked");
+            echo_debug("Premium Unlocked");
             Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\", "tmp_prem", "1");
 
             Hide_Donation_Buttons_CheckBox.Enabled = true;
@@ -4378,7 +4317,6 @@ namespace _7DaysServerManager
                     }
                 }
 
-
                 Supporter_Activate_Button.Text = "Change";
                 Support_Code_TextBox.ReadOnly = true;
 
@@ -4394,14 +4332,11 @@ namespace _7DaysServerManager
 
             });
 
-
-
-
         }
 
-        public void lock_premium()
+        public void Lock_Premium()
         {
-            echo_debug("premium locked");
+            echo_debug("Premium Locked");
             Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\", "tmp_prem", "0");
 
             Hide_Donation_Buttons_CheckBox.Enabled = false;
@@ -4427,7 +4362,6 @@ namespace _7DaysServerManager
                     }
                 }
 
-
                 Supporter_Activate_Button.Text = "Activate";
                 Support_Code_TextBox.ReadOnly = false;
 
@@ -4444,10 +4378,9 @@ namespace _7DaysServerManager
                 rem_old_backups.Checked = false;
             });
 
-
         }
 
-        private void hide_don_btn_CheckedChanged(object sender, EventArgs e)
+        private void Hide_Donate_Button_CheckedChanged(object sender, EventArgs e)
         {
             if (premium)
                 if (Hide_Donation_Buttons_CheckBox.Checked)
@@ -4500,12 +4433,6 @@ namespace _7DaysServerManager
         }
 
 
-
-
-
-
-
-
         private void dtds_visit_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("http://7daystodie-servers.com/");
@@ -4524,7 +4451,7 @@ namespace _7DaysServerManager
             Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "dtds_auth", dtds_auth.Text);
         }
 
-        public void save_dtds()
+        public void Save_dtds()
         {
             try
             {
@@ -4541,10 +4468,10 @@ namespace _7DaysServerManager
             catch { }
         }
 
-        private void dtds_add_Click(object sender, EventArgs e)
+        private void Dtds_add_Click(object sender, EventArgs e)
         {
             dtds_lista.Items.Add(dtds_possible.SelectedItem.ToString().Trim());
-            save_dtds();
+            Save_dtds();
         }
 
         private void dtds_rem_Click(object sender, EventArgs e)
@@ -4554,31 +4481,31 @@ namespace _7DaysServerManager
                 dtds_lista.Items.RemoveAt(dtds_lista.SelectedIndex);
             }
             catch { }
-            save_dtds();
+            Save_dtds();
         }
 
-        private void error_reporter_worker_DoWork(object sender, DoWorkEventArgs e)
+        private void Error_reporter_worker_DoWork(object sender, DoWorkEventArgs e)
         {
             string rep = (string)e.Argument;
             error_reporter rr = new error_reporter(rep);
             rr.Show();
         }
 
-        private void dbg_btn_Click(object sender, EventArgs e)
+        private void Dbg_btn_Click(object sender, EventArgs e)
         {
             //ws.Run();
             RunWebServer();
 
         }
 
-        private void contact_b_Click(object sender, EventArgs e)
+        private void Contact_b_Click(object sender, EventArgs e)
         {
             contact c = new contact();
             c.Show();
         }
 
 
-        public void refresh_backups_list()
+        public void Refresh_backups_list()
         {
             backups_list.Items.Clear();
 
@@ -4603,12 +4530,12 @@ namespace _7DaysServerManager
             }
         }
 
-        private void backup_refresh_Click(object sender, EventArgs e)
+        private void Backup_refresh_Click(object sender, EventArgs e)
         {
-            refresh_backups_list();
+            Refresh_backups_list();
         }
 
-        private void backup_del_Click(object sender, EventArgs e)
+        private void Backup_del_Click(object sender, EventArgs e)
         {
             if (backups_list.SelectedIndex != -1)
             {
@@ -4616,7 +4543,7 @@ namespace _7DaysServerManager
                 if (dialogResult == DialogResult.Yes)
                 {
                     File.Delete(backup_location.Text + "\\" + backups_list.GetItemText(backups_list.SelectedItem) + ".zip");
-                    refresh_backups_list();
+                    Refresh_backups_list();
                 }
             }
             else
@@ -4686,7 +4613,7 @@ namespace _7DaysServerManager
 
         private void create_bp_now_Click(object sender, EventArgs e)
         {
-            create_backup_now();
+            Create_backup_now();
         }
 
         private void opeb_bp_dir_Click(object sender, EventArgs e)
@@ -4720,20 +4647,14 @@ namespace _7DaysServerManager
                     chat_log.WriteLine(Chat_RichTextBox.Text.Replace(chat_pre, ""));
 
 
-                    if (Chat_RichTextBox.Text.Length > konsola_offset)
-                        Chat_RichTextBox.Text = Chat_RichTextBox.Text.Substring(Chat_RichTextBox.Text.Length - konsola_offset);
-
+                    if (Chat_RichTextBox.Text.Length > console_offset)
+                        Chat_RichTextBox.Text = Chat_RichTextBox.Text.Substring(Chat_RichTextBox.Text.Length - console_offset);
 
                     chat_pre = Chat_RichTextBox.Text;
 
                 }
                 catch { }
             }
-        }
-
-        private void sch_add_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void help_b_Click(object sender, EventArgs e)
@@ -4970,7 +4891,7 @@ namespace _7DaysServerManager
 
         private void fix_firewall_and_other_windows_shit_Click(object sender, EventArgs e)
         {
-            fix_WebServer();
+            Fix_WebServer();
         }
 
         private void enable_website_CheckedChanged(object sender, EventArgs e)
@@ -5000,7 +4921,7 @@ namespace _7DaysServerManager
 
         private void reverse_reservation_Click(object sender, EventArgs e)
         {
-            cancel_WebServer();
+            Cancel_WebServer();
         }
 
         private void android_apk_Click(object sender, EventArgs e)
@@ -5098,16 +5019,16 @@ namespace _7DaysServerManager
 
         private void excall_CheckedChanged(object sender, EventArgs e)
         {
-            if (excall.Checked)
+            if (Use_External_Call_CheckBox.Checked)
             {
-                customcommands.Enabled = false;
-                excall_file.Enabled = true;
+                Custom_Commands_RichTextBox.Enabled = false;
+                External_Call_File_Select_Button.Enabled = true;
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "excall", "1");
             }
             else
             {
-                customcommands.Enabled = true;
-                excall_file.Enabled = false;
+                Custom_Commands_RichTextBox.Enabled = true;
+                External_Call_File_Select_Button.Enabled = false;
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "excall", "0");
             }
         }
@@ -5122,7 +5043,7 @@ namespace _7DaysServerManager
             echo_debug("---changing dir---");
             if (externalCallFile.ShowDialog() == DialogResult.OK)
             {
-                excall_file_l.Text = externalCallFile.FileName;
+                External_Call_File_Name_Label.Text = externalCallFile.FileName;
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "excall_file", externalCallFile.FileName);
 
 
@@ -5163,12 +5084,17 @@ namespace _7DaysServerManager
             System.Diagnostics.Process.Start("https://discordapp.com/invite/rHuzfER");
         }
 
-        private void newsbox_LinkClicked(object sender, LinkClickedEventArgs e)
+        private void Newsbox_LinkClicked(object sender, LinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start(e.LinkText);
         }
 
         private void News_Feed_RichTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Backup_Completed_Message_Label_Click(object sender, EventArgs e)
         {
 
         }

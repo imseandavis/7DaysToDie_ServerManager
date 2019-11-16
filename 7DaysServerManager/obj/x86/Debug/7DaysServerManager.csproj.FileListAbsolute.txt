@@ -80,3 +80,4 @@ C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerMana
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Debug\7DaysServerManager.exe
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Debug\7DaysServerManager.pdb
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.Server_Panel_Form.resources
+C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Debug\7DaysServerManager.csprojAssemblyReference.cache

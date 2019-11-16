@@ -31,8 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Server_Panel_Form));
             this.status_updater = new System.ComponentModel.BackgroundWorker();
-            this.select_dir = new System.Windows.Forms.FolderBrowserDialog();
-            this.ikona = new System.Windows.Forms.NotifyIcon(this.components);
+            this.Select_Game_Directory = new System.Windows.Forms.FolderBrowserDialog();
+            this.App_Icon = new System.Windows.Forms.NotifyIcon(this.components);
             this.IP_Label = new System.Windows.Forms.Label();
             this.settings = new System.Windows.Forms.TabPage();
             this.Updates_GroupBox = new System.Windows.Forms.GroupBox();
@@ -60,16 +60,21 @@
             this.SQL_GroupBox = new System.Windows.Forms.GroupBox();
             this.SQL_Enabled_CheckBox = new System.Windows.Forms.CheckBox();
             this.SQL_Update_Time_GroupBox = new System.Windows.Forms.GroupBox();
+            this.SQL_Update_Time_Info_PictureBox = new System.Windows.Forms.PictureBox();
             this.SQL_Update_Time_TextBox = new System.Windows.Forms.TextBox();
             this.SQL_Update_Time_Label = new System.Windows.Forms.Label();
             this.SQL_Host_GroupBox = new System.Windows.Forms.GroupBox();
+            this.SQL_Host_Info_PictureBox = new System.Windows.Forms.PictureBox();
             this.SQL_Host_TextBox = new System.Windows.Forms.TextBox();
             this.SQL_How_To_Integrate_Button = new System.Windows.Forms.Button();
             this.SQL_Username_GroupBox = new System.Windows.Forms.GroupBox();
+            this.SQL_Username_Info_PictureBox = new System.Windows.Forms.PictureBox();
             this.SQL_Username_TextBox = new System.Windows.Forms.TextBox();
             this.SQL_DB_Name_GroupBox = new System.Windows.Forms.GroupBox();
+            this.SQL_Database_Name_Info_PictureBox = new System.Windows.Forms.PictureBox();
             this.SQL_Database_Name_TextBox = new System.Windows.Forms.TextBox();
             this.SQL_Password_GroupBox = new System.Windows.Forms.GroupBox();
+            this.SQL_Password_Info_PictureBox = new System.Windows.Forms.PictureBox();
             this.SQL_Encrption_Warning_Label = new System.Windows.Forms.Label();
             this.SQL_Password_TextBox = new System.Windows.Forms.TextBox();
             this.blad = new System.Windows.Forms.Button();
@@ -299,27 +304,27 @@
             this.telnet_port_p = new System.Windows.Forms.TextBox();
             this.telnet_psw_l = new System.Windows.Forms.Label();
             this.telnet_psw = new System.Windows.Forms.TextBox();
-            this.ikony_naglowka = new System.Windows.Forms.ImageList(this.components);
+            this.Header_Icons = new System.Windows.Forms.ImageList(this.components);
             this.strings_page = new System.Windows.Forms.TabPage();
-            this.messages_g = new System.Windows.Forms.GroupBox();
+            this.Server_Chat_Messages_GroupBox = new System.Windows.Forms.GroupBox();
             this.cmd_not_yet = new System.Windows.Forms.TextBox();
-            this.cmd_not_yet_l = new System.Windows.Forms.Label();
-            this.backup_msg_1 = new System.Windows.Forms.TextBox();
-            this.backup_msg_2_l = new System.Windows.Forms.Label();
+            this.Command_Wait_Message_Label = new System.Windows.Forms.Label();
+            this.Starting_Backup_Message_TextBox = new System.Windows.Forms.TextBox();
+            this.Backup_Completed_Message_Label = new System.Windows.Forms.Label();
             this.reboot = new System.Windows.Forms.TextBox();
-            this.backup_msg_2 = new System.Windows.Forms.TextBox();
-            this.backup_msg_1_l = new System.Windows.Forms.Label();
-            this.reboot_time_l = new System.Windows.Forms.Label();
-            this.reboot_l = new System.Windows.Forms.Label();
+            this.Backup_Completed_Message_TextBox = new System.Windows.Forms.TextBox();
+            this.Starting_Backup_Message_Label = new System.Windows.Forms.Label();
+            this.Time_Until_Reboot_Message_Label = new System.Windows.Forms.Label();
+            this.Reboot_Now_Message_Label = new System.Windows.Forms.Label();
             this.reboot_time = new System.Windows.Forms.TextBox();
-            this.customcommands_g = new System.Windows.Forms.GroupBox();
-            this.how_to_commands2 = new System.Windows.Forms.Button();
-            this.excall_file_l = new System.Windows.Forms.Label();
-            this.excall_file = new System.Windows.Forms.Button();
-            this.excall = new System.Windows.Forms.CheckBox();
-            this.enable_cc = new System.Windows.Forms.CheckBox();
-            this.how_to_commands = new System.Windows.Forms.Button();
-            this.customcommands = new System.Windows.Forms.RichTextBox();
+            this.Custom_Commands_GroupBox = new System.Windows.Forms.GroupBox();
+            this.How_To_Use_External_Calls_Button = new System.Windows.Forms.Button();
+            this.External_Call_File_Name_Label = new System.Windows.Forms.Label();
+            this.External_Call_File_Select_Button = new System.Windows.Forms.Button();
+            this.Use_External_Call_CheckBox = new System.Windows.Forms.CheckBox();
+            this.Enable_Custom_Commands_CheckBox = new System.Windows.Forms.CheckBox();
+            this.How_To_Commands_Button = new System.Windows.Forms.Button();
+            this.Custom_Commands_RichTextBox = new System.Windows.Forms.RichTextBox();
             this.globalBanList = new System.Windows.Forms.TabPage();
             this.check_bans = new System.Windows.Forms.Button();
             this.global_ban_g = new System.Windows.Forms.GroupBox();
@@ -358,23 +363,23 @@
             this.android_allow = new System.Windows.Forms.CheckBox();
             this.android_access_key = new System.Windows.Forms.Label();
             this.tasks = new System.Windows.Forms.TabPage();
-            this.reset_g = new System.Windows.Forms.GroupBox();
-            this.reset_chat = new System.Windows.Forms.CheckBox();
-            this.reset_enabled = new System.Windows.Forms.CheckBox();
-            this.reset_time = new System.Windows.Forms.TrackBar();
-            this.spam_g = new System.Windows.Forms.GroupBox();
-            this.spam_is_spam = new System.Windows.Forms.CheckBox();
-            this.spaminfo = new System.Windows.Forms.Label();
-            this.spam_list = new System.Windows.Forms.RichTextBox();
-            this.spam_time_g = new System.Windows.Forms.GroupBox();
-            this.spam_time = new System.Windows.Forms.TrackBar();
-            this.whitelist_dl_g = new System.Windows.Forms.GroupBox();
-            this.use_wl = new System.Windows.Forms.CheckBox();
-            this.min_l = new System.Windows.Forms.Label();
-            this.wl_interval = new System.Windows.Forms.TextBox();
-            this.wl_chk = new System.Windows.Forms.CheckBox();
-            this.wl_add_l = new System.Windows.Forms.Label();
-            this.wl_add = new System.Windows.Forms.TextBox();
+            this.Auto_Restarts_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Warn_Before_Restart_CheckBox = new System.Windows.Forms.CheckBox();
+            this.Enable_Auto_Restarts_CheckBox = new System.Windows.Forms.CheckBox();
+            this.Auto_Restart_Time_TrackBar = new System.Windows.Forms.TrackBar();
+            this.Server_Commands_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Server_Commands_Say_Switch_CheckBox = new System.Windows.Forms.CheckBox();
+            this.Server_Commands_Note_Label = new System.Windows.Forms.Label();
+            this.Server_Commands_List_RichTextBox = new System.Windows.Forms.RichTextBox();
+            this.Server_Commands_Delay_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Server_Commands_Time_TrackBar = new System.Windows.Forms.TrackBar();
+            this.Whitelist_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Use_Whitelist_CheckBox = new System.Windows.Forms.CheckBox();
+            this.Auto_Update_Whitelist_Text_Label = new System.Windows.Forms.Label();
+            this.Update_Whitelist_Interval_TextBox = new System.Windows.Forms.TextBox();
+            this.Auto_Update_Whitelist_CheckBox = new System.Windows.Forms.CheckBox();
+            this.Auto_Update_External_Whitelist_Note_Label = new System.Windows.Forms.Label();
+            this.Auto_Update_External_Whitelist_URL_TextBox = new System.Windows.Forms.TextBox();
             this.backup_tab = new System.Windows.Forms.TabPage();
             this.restore_backup_g = new System.Windows.Forms.GroupBox();
             this.opeb_bp_dir = new System.Windows.Forms.Button();
@@ -427,11 +432,6 @@
             this.like = new System.Windows.Forms.Button();
             this.externalCallFile = new System.Windows.Forms.OpenFileDialog();
             this.discord_b = new System.Windows.Forms.Button();
-            this.SQL_Host_Info_PictureBox = new System.Windows.Forms.PictureBox();
-            this.SQL_Username_Info_PictureBox = new System.Windows.Forms.PictureBox();
-            this.SQL_Password_Info_PictureBox = new System.Windows.Forms.PictureBox();
-            this.SQL_Database_Name_Info_PictureBox = new System.Windows.Forms.PictureBox();
-            this.SQL_Update_Time_Info_PictureBox = new System.Windows.Forms.PictureBox();
             this.settings.SuspendLayout();
             this.Updates_GroupBox.SuspendLayout();
             this.exe_settings_g.SuspendLayout();
@@ -440,10 +440,15 @@
             this.Supporter_GroupBox.SuspendLayout();
             this.SQL_GroupBox.SuspendLayout();
             this.SQL_Update_Time_GroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SQL_Update_Time_Info_PictureBox)).BeginInit();
             this.SQL_Host_GroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SQL_Host_Info_PictureBox)).BeginInit();
             this.SQL_Username_GroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SQL_Username_Info_PictureBox)).BeginInit();
             this.SQL_DB_Name_GroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SQL_Database_Name_Info_PictureBox)).BeginInit();
             this.SQL_Password_GroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SQL_Password_Info_PictureBox)).BeginInit();
             this.Settings_GroupBox.SuspendLayout();
             this.auto_backup_group.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.backup_time)).BeginInit();
@@ -529,8 +534,8 @@
             this.ctrlpanel.SuspendLayout();
             this.telnet_g.SuspendLayout();
             this.strings_page.SuspendLayout();
-            this.messages_g.SuspendLayout();
-            this.customcommands_g.SuspendLayout();
+            this.Server_Chat_Messages_GroupBox.SuspendLayout();
+            this.Custom_Commands_GroupBox.SuspendLayout();
             this.globalBanList.SuspendLayout();
             this.global_ban_g.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.banlist_logo)).BeginInit();
@@ -544,12 +549,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.prem_help3)).BeginInit();
             this.android_g.SuspendLayout();
             this.tasks.SuspendLayout();
-            this.reset_g.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.reset_time)).BeginInit();
-            this.spam_g.SuspendLayout();
-            this.spam_time_g.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.spam_time)).BeginInit();
-            this.whitelist_dl_g.SuspendLayout();
+            this.Auto_Restarts_GroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Auto_Restart_Time_TrackBar)).BeginInit();
+            this.Server_Commands_GroupBox.SuspendLayout();
+            this.Server_Commands_Delay_GroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Server_Commands_Time_TrackBar)).BeginInit();
+            this.Whitelist_GroupBox.SuspendLayout();
             this.backup_tab.SuspendLayout();
             this.restore_backup_g.SuspendLayout();
             this.ex_backup.SuspendLayout();
@@ -557,11 +562,6 @@
             this.srv_list.SuspendLayout();
             this.deds_g.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_status)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SQL_Host_Info_PictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SQL_Username_Info_PictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SQL_Password_Info_PictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SQL_Database_Name_Info_PictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SQL_Update_Time_Info_PictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // status_updater
@@ -569,18 +569,18 @@
             this.status_updater.WorkerSupportsCancellation = true;
             this.status_updater.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
             // 
-            // select_dir
+            // Select_Game_Directory
             // 
-            this.select_dir.Description = "Game dir";
-            this.select_dir.ShowNewFolderButton = false;
-            this.select_dir.HelpRequest += new System.EventHandler(this.select_dir_HelpRequest);
+            this.Select_Game_Directory.Description = "Game dir";
+            this.Select_Game_Directory.ShowNewFolderButton = false;
+            this.Select_Game_Directory.HelpRequest += new System.EventHandler(this.select_dir_HelpRequest);
             // 
-            // ikona
+            // App_Icon
             // 
-            this.ikona.Icon = ((System.Drawing.Icon)(resources.GetObject("ikona.Icon")));
-            this.ikona.Text = "7 Days Server Manager";
-            this.ikona.Visible = true;
-            this.ikona.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ikona_MouseClick);
+            this.App_Icon.Icon = ((System.Drawing.Icon)(resources.GetObject("App_Icon.Icon")));
+            this.App_Icon.Text = "7 Days Server Manager";
+            this.App_Icon.Visible = true;
+            this.App_Icon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ikona_MouseClick);
             // 
             // IP_Label
             // 
@@ -758,7 +758,7 @@
             this.Hide_Donation_Buttons_CheckBox.TabIndex = 41;
             this.Hide_Donation_Buttons_CheckBox.Text = "Hide Donation Buttons";
             this.Hide_Donation_Buttons_CheckBox.UseVisualStyleBackColor = true;
-            this.Hide_Donation_Buttons_CheckBox.CheckedChanged += new System.EventHandler(this.hide_don_btn_CheckedChanged);
+            this.Hide_Donation_Buttons_CheckBox.CheckedChanged += new System.EventHandler(this.Hide_Donate_Button_CheckedChanged);
             // 
             // Supporter_GroupBox
             // 
@@ -831,7 +831,7 @@
             this.Supporter_Activate_Button.TabIndex = 4;
             this.Supporter_Activate_Button.Text = "Activate";
             this.Supporter_Activate_Button.UseVisualStyleBackColor = true;
-            this.Supporter_Activate_Button.Click += new System.EventHandler(this.prem_act_Click);
+            this.Supporter_Activate_Button.Click += new System.EventHandler(this.Prem_act_Click);
             // 
             // Supporter_Code_Label
             // 
@@ -861,7 +861,7 @@
             this.debug_log.TabIndex = 37;
             this.debug_log.Text = "Create DEBUG log files (check only if asked by dev)";
             this.debug_log.UseVisualStyleBackColor = true;
-            this.debug_log.CheckedChanged += new System.EventHandler(this.debug_log_CheckedChanged);
+            this.debug_log.CheckedChanged += new System.EventHandler(this.Debug_Log_CheckedChanged);
             // 
             // SQL_GroupBox
             // 
@@ -904,6 +904,17 @@
             this.SQL_Update_Time_GroupBox.TabStop = false;
             this.SQL_Update_Time_GroupBox.Text = "SQL Update Time";
             // 
+            // SQL_Update_Time_Info_PictureBox
+            // 
+            this.SQL_Update_Time_Info_PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("SQL_Update_Time_Info_PictureBox.Image")));
+            this.SQL_Update_Time_Info_PictureBox.Location = new System.Drawing.Point(502, 23);
+            this.SQL_Update_Time_Info_PictureBox.Name = "SQL_Update_Time_Info_PictureBox";
+            this.SQL_Update_Time_Info_PictureBox.Size = new System.Drawing.Size(16, 16);
+            this.SQL_Update_Time_Info_PictureBox.TabIndex = 45;
+            this.SQL_Update_Time_Info_PictureBox.TabStop = false;
+            this.toolTip.SetToolTip(this.SQL_Update_Time_Info_PictureBox, "You need 7DSM Supporter to change these options.\r\nIt\'s almost free, please check " +
+        "it out in \"Settings\" tab.");
+            // 
             // SQL_Update_Time_TextBox
             // 
             this.SQL_Update_Time_TextBox.Location = new System.Drawing.Point(6, 19);
@@ -934,6 +945,17 @@
             this.SQL_Host_GroupBox.TabIndex = 2;
             this.SQL_Host_GroupBox.TabStop = false;
             this.SQL_Host_GroupBox.Text = "SQL Host";
+            // 
+            // SQL_Host_Info_PictureBox
+            // 
+            this.SQL_Host_Info_PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("SQL_Host_Info_PictureBox.Image")));
+            this.SQL_Host_Info_PictureBox.Location = new System.Drawing.Point(502, 21);
+            this.SQL_Host_Info_PictureBox.Name = "SQL_Host_Info_PictureBox";
+            this.SQL_Host_Info_PictureBox.Size = new System.Drawing.Size(16, 16);
+            this.SQL_Host_Info_PictureBox.TabIndex = 41;
+            this.SQL_Host_Info_PictureBox.TabStop = false;
+            this.toolTip.SetToolTip(this.SQL_Host_Info_PictureBox, "You need 7DSM Supporter to change these options.\r\nIt\'s almost free, please check " +
+        "it out in \"Settings\" tab.");
             // 
             // SQL_Host_TextBox
             // 
@@ -971,6 +993,17 @@
             this.SQL_Username_GroupBox.TabStop = false;
             this.SQL_Username_GroupBox.Text = "SQL Username";
             // 
+            // SQL_Username_Info_PictureBox
+            // 
+            this.SQL_Username_Info_PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("SQL_Username_Info_PictureBox.Image")));
+            this.SQL_Username_Info_PictureBox.Location = new System.Drawing.Point(502, 23);
+            this.SQL_Username_Info_PictureBox.Name = "SQL_Username_Info_PictureBox";
+            this.SQL_Username_Info_PictureBox.Size = new System.Drawing.Size(16, 16);
+            this.SQL_Username_Info_PictureBox.TabIndex = 42;
+            this.SQL_Username_Info_PictureBox.TabStop = false;
+            this.toolTip.SetToolTip(this.SQL_Username_Info_PictureBox, "You need 7DSM Supporter to change these options.\r\nIt\'s almost free, please check " +
+        "it out in \"Settings\" tab.");
+            // 
             // SQL_Username_TextBox
             // 
             this.SQL_Username_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
@@ -994,6 +1027,17 @@
             this.SQL_DB_Name_GroupBox.TabIndex = 5;
             this.SQL_DB_Name_GroupBox.TabStop = false;
             this.SQL_DB_Name_GroupBox.Text = "SQL Database Name";
+            // 
+            // SQL_Database_Name_Info_PictureBox
+            // 
+            this.SQL_Database_Name_Info_PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("SQL_Database_Name_Info_PictureBox.Image")));
+            this.SQL_Database_Name_Info_PictureBox.Location = new System.Drawing.Point(502, 20);
+            this.SQL_Database_Name_Info_PictureBox.Name = "SQL_Database_Name_Info_PictureBox";
+            this.SQL_Database_Name_Info_PictureBox.Size = new System.Drawing.Size(16, 16);
+            this.SQL_Database_Name_Info_PictureBox.TabIndex = 44;
+            this.SQL_Database_Name_Info_PictureBox.TabStop = false;
+            this.toolTip.SetToolTip(this.SQL_Database_Name_Info_PictureBox, "You need 7DSM Supporter to change these options.\r\nIt\'s almost free, please check " +
+        "it out in \"Settings\" tab.");
             // 
             // SQL_Database_Name_TextBox
             // 
@@ -1019,6 +1063,17 @@
             this.SQL_Password_GroupBox.TabIndex = 4;
             this.SQL_Password_GroupBox.TabStop = false;
             this.SQL_Password_GroupBox.Text = "SQL Password";
+            // 
+            // SQL_Password_Info_PictureBox
+            // 
+            this.SQL_Password_Info_PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("SQL_Password_Info_PictureBox.Image")));
+            this.SQL_Password_Info_PictureBox.Location = new System.Drawing.Point(502, 19);
+            this.SQL_Password_Info_PictureBox.Name = "SQL_Password_Info_PictureBox";
+            this.SQL_Password_Info_PictureBox.Size = new System.Drawing.Size(16, 16);
+            this.SQL_Password_Info_PictureBox.TabIndex = 43;
+            this.SQL_Password_Info_PictureBox.TabStop = false;
+            this.toolTip.SetToolTip(this.SQL_Password_Info_PictureBox, "You need 7DSM Supporter to change these options.\r\nIt\'s almost free, please check " +
+        "it out in \"Settings\" tab.");
             // 
             // SQL_Encrption_Warning_Label
             // 
@@ -1273,7 +1328,7 @@
             this.backup_chat.TabIndex = 10;
             this.backup_chat.Text = "backup_chat";
             this.backup_chat.UseVisualStyleBackColor = true;
-            this.backup_chat.CheckedChanged += new System.EventHandler(this.backup_chat_CheckedChanged);
+            this.backup_chat.CheckedChanged += new System.EventHandler(this.Backup_chat_CheckedChanged);
             // 
             // auto_backup_check
             // 
@@ -1284,7 +1339,7 @@
             this.auto_backup_check.TabIndex = 9;
             this.auto_backup_check.Text = "auto_backup_check";
             this.auto_backup_check.UseVisualStyleBackColor = true;
-            this.auto_backup_check.CheckedChanged += new System.EventHandler(this.auto_backup_check_CheckedChanged);
+            this.auto_backup_check.CheckedChanged += new System.EventHandler(this.Auto_backup_check_CheckedChanged);
             // 
             // backup_time
             // 
@@ -1498,7 +1553,7 @@
             this.cmd.AcceptsReturn = true;
             this.cmd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmd.Location = new System.Drawing.Point(6, 453);
+            this.cmd.Location = new System.Drawing.Point(6, 456);
             this.cmd.Name = "cmd";
             this.cmd.Size = new System.Drawing.Size(689, 20);
             this.cmd.TabIndex = 17;
@@ -1517,11 +1572,11 @@
             this.Console_RichTextBox.Name = "Console_RichTextBox";
             this.Console_RichTextBox.ReadOnly = true;
             this.Console_RichTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.Console_RichTextBox.Size = new System.Drawing.Size(686, 433);
+            this.Console_RichTextBox.Size = new System.Drawing.Size(686, 436);
             this.Console_RichTextBox.TabIndex = 15;
             this.Console_RichTextBox.Text = "";
             this.Console_RichTextBox.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.Konsola_LinkClicked);
-            this.Console_RichTextBox.TextChanged += new System.EventHandler(this.konsola_TextChanged);
+            this.Console_RichTextBox.TextChanged += new System.EventHandler(this.Console_TextChanged);
             // 
             // startbar
             // 
@@ -1551,7 +1606,7 @@
             this.tabControl.Controls.Add(this.backup_tab);
             this.tabControl.Controls.Add(this.srv_list);
             this.tabControl.Controls.Add(this.settings);
-            this.tabControl.ImageList = this.ikony_naglowka;
+            this.tabControl.ImageList = this.Header_Icons;
             this.tabControl.ItemSize = new System.Drawing.Size(43, 43);
             this.tabControl.Location = new System.Drawing.Point(1, 0);
             this.tabControl.Margin = new System.Windows.Forms.Padding(0);
@@ -1761,7 +1816,7 @@
             this.News_Feed_RichTextBox.Size = new System.Drawing.Size(346, 141);
             this.News_Feed_RichTextBox.TabIndex = 0;
             this.News_Feed_RichTextBox.Text = "Downloading news...";
-            this.News_Feed_RichTextBox.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.newsbox_LinkClicked);
+            this.News_Feed_RichTextBox.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.Newsbox_LinkClicked);
             this.News_Feed_RichTextBox.TextChanged += new System.EventHandler(this.News_Feed_RichTextBox_TextChanged);
             // 
             // Server_Status_Group
@@ -1841,7 +1896,7 @@
             this.Console_Group.Controls.Add(this.cmd);
             this.Console_Group.Location = new System.Drawing.Point(3, 8);
             this.Console_Group.Name = "Console_Group";
-            this.Console_Group.Size = new System.Drawing.Size(698, 484);
+            this.Console_Group.Size = new System.Drawing.Size(698, 487);
             this.Console_Group.TabIndex = 18;
             this.Console_Group.TabStop = false;
             this.Console_Group.Text = "Console";
@@ -2186,7 +2241,7 @@
             this.Thirsty_Player_Button.TabIndex = 5;
             this.Thirsty_Player_Button.Text = "Thirsty";
             this.Thirsty_Player_Button.UseVisualStyleBackColor = true;
-            this.Thirsty_Player_Button.Click += new System.EventHandler(this.thirsty_player_Click);
+            this.Thirsty_Player_Button.Click += new System.EventHandler(this.Thirsty_Player_Click);
             // 
             // Starve_Player_Button
             // 
@@ -2197,7 +2252,7 @@
             this.Starve_Player_Button.TabIndex = 4;
             this.Starve_Player_Button.Text = "Starve";
             this.Starve_Player_Button.UseVisualStyleBackColor = true;
-            this.Starve_Player_Button.Click += new System.EventHandler(this.starve_player_Click);
+            this.Starve_Player_Button.Click += new System.EventHandler(this.Starve_Player_Click);
             // 
             // Kill_Player_Button
             // 
@@ -2207,7 +2262,7 @@
             this.Kill_Player_Button.TabIndex = 3;
             this.Kill_Player_Button.Text = "Kill";
             this.Kill_Player_Button.UseVisualStyleBackColor = true;
-            this.Kill_Player_Button.Click += new System.EventHandler(this.kill_player_Click);
+            this.Kill_Player_Button.Click += new System.EventHandler(this.Kill_Player_Click);
             // 
             // Kick_GroupBox
             // 
@@ -2232,7 +2287,7 @@
             this.Kick_Player_Button.TabIndex = 5;
             this.Kick_Player_Button.Text = "KICK";
             this.Kick_Player_Button.UseVisualStyleBackColor = false;
-            this.Kick_Player_Button.Click += new System.EventHandler(this.kick_Click);
+            this.Kick_Player_Button.Click += new System.EventHandler(this.Kick_Click);
             // 
             // Kick_Reason_ComboBox
             // 
@@ -2288,7 +2343,7 @@
             this.Ban_Hammer_Button.TabIndex = 4;
             this.Ban_Hammer_Button.Text = "BAN";
             this.Ban_Hammer_Button.UseVisualStyleBackColor = false;
-            this.Ban_Hammer_Button.Click += new System.EventHandler(this.ban_Click);
+            this.Ban_Hammer_Button.Click += new System.EventHandler(this.Ban_Click);
             // 
             // Ban_Slider_TrackBar
             // 
@@ -2353,7 +2408,7 @@
             this.main_page_opts.Controls.Add(this.game_opts);
             this.main_page_opts.Controls.Add(this.server_opts);
             this.main_page_opts.Controls.Add(this.net_opts);
-            this.main_page_opts.ImageList = this.ikony_naglowka;
+            this.main_page_opts.ImageList = this.Header_Icons;
             this.main_page_opts.ItemSize = new System.Drawing.Size(46, 46);
             this.main_page_opts.Location = new System.Drawing.Point(3, 0);
             this.main_page_opts.Name = "main_page_opts";
@@ -3153,7 +3208,7 @@
             this.Drop_On_Death_Mode_0.TabIndex = 24;
             this.Drop_On_Death_Mode_0.Text = "Nothing";
             this.Drop_On_Death_Mode_0.UseVisualStyleBackColor = true;
-            this.Drop_On_Death_Mode_0.CheckedChanged += new System.EventHandler(this.dod_0_CheckedChanged);
+            this.Drop_On_Death_Mode_0.CheckedChanged += new System.EventHandler(this.dtds_show_CheckedChanged);
             // 
             // Drop_On_Death_Mode_1
             // 
@@ -3164,7 +3219,7 @@
             this.Drop_On_Death_Mode_1.TabIndex = 25;
             this.Drop_On_Death_Mode_1.Text = "Everything";
             this.Drop_On_Death_Mode_1.UseVisualStyleBackColor = true;
-            this.Drop_On_Death_Mode_1.CheckedChanged += new System.EventHandler(this.dod_1_CheckedChanged);
+            this.Drop_On_Death_Mode_1.CheckedChanged += new System.EventHandler(this.Dod_1_CheckedChanged);
             // 
             // Drop_On_Death_Mode_3
             // 
@@ -3386,7 +3441,7 @@
             this.server_nazwa.Size = new System.Drawing.Size(190, 20);
             this.server_nazwa.TabIndex = 3;
             this.server_nazwa.Text = "7DaysServerManager";
-            this.server_nazwa.TextChanged += new System.EventHandler(this.server_nazwa_TextChanged);
+            this.server_nazwa.TextChanged += new System.EventHandler(this.Server_nazwa_TextChanged);
             // 
             // mapa
             // 
@@ -3890,17 +3945,17 @@
             this.telnet_psw.TabIndex = 13;
             this.telnet_psw.TextChanged += new System.EventHandler(this.Telnet_psw_TextChanged);
             // 
-            // ikony_naglowka
+            // Header_Icons
             // 
-            this.ikony_naglowka.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
-            this.ikony_naglowka.ImageSize = new System.Drawing.Size(40, 40);
-            this.ikony_naglowka.TransparentColor = System.Drawing.Color.Transparent;
+            this.Header_Icons.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
+            this.Header_Icons.ImageSize = new System.Drawing.Size(40, 40);
+            this.Header_Icons.TransparentColor = System.Drawing.Color.Transparent;
             // 
             // strings_page
             // 
             this.strings_page.BackColor = System.Drawing.SystemColors.Control;
-            this.strings_page.Controls.Add(this.messages_g);
-            this.strings_page.Controls.Add(this.customcommands_g);
+            this.strings_page.Controls.Add(this.Server_Chat_Messages_GroupBox);
+            this.strings_page.Controls.Add(this.Custom_Commands_GroupBox);
             this.strings_page.ImageIndex = 3;
             this.strings_page.Location = new System.Drawing.Point(47, 4);
             this.strings_page.Name = "strings_page";
@@ -3908,26 +3963,26 @@
             this.strings_page.Size = new System.Drawing.Size(908, 684);
             this.strings_page.TabIndex = 13;
             // 
-            // messages_g
+            // Server_Chat_Messages_GroupBox
             // 
-            this.messages_g.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.Server_Chat_Messages_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.messages_g.Controls.Add(this.cmd_not_yet);
-            this.messages_g.Controls.Add(this.cmd_not_yet_l);
-            this.messages_g.Controls.Add(this.backup_msg_1);
-            this.messages_g.Controls.Add(this.backup_msg_2_l);
-            this.messages_g.Controls.Add(this.reboot);
-            this.messages_g.Controls.Add(this.backup_msg_2);
-            this.messages_g.Controls.Add(this.backup_msg_1_l);
-            this.messages_g.Controls.Add(this.reboot_time_l);
-            this.messages_g.Controls.Add(this.reboot_l);
-            this.messages_g.Controls.Add(this.reboot_time);
-            this.messages_g.Location = new System.Drawing.Point(9, 508);
-            this.messages_g.Name = "messages_g";
-            this.messages_g.Size = new System.Drawing.Size(892, 170);
-            this.messages_g.TabIndex = 12;
-            this.messages_g.TabStop = false;
-            this.messages_g.Text = "messages_g";
+            this.Server_Chat_Messages_GroupBox.Controls.Add(this.cmd_not_yet);
+            this.Server_Chat_Messages_GroupBox.Controls.Add(this.Command_Wait_Message_Label);
+            this.Server_Chat_Messages_GroupBox.Controls.Add(this.Starting_Backup_Message_TextBox);
+            this.Server_Chat_Messages_GroupBox.Controls.Add(this.Backup_Completed_Message_Label);
+            this.Server_Chat_Messages_GroupBox.Controls.Add(this.reboot);
+            this.Server_Chat_Messages_GroupBox.Controls.Add(this.Backup_Completed_Message_TextBox);
+            this.Server_Chat_Messages_GroupBox.Controls.Add(this.Starting_Backup_Message_Label);
+            this.Server_Chat_Messages_GroupBox.Controls.Add(this.Time_Until_Reboot_Message_Label);
+            this.Server_Chat_Messages_GroupBox.Controls.Add(this.Reboot_Now_Message_Label);
+            this.Server_Chat_Messages_GroupBox.Controls.Add(this.reboot_time);
+            this.Server_Chat_Messages_GroupBox.Location = new System.Drawing.Point(9, 508);
+            this.Server_Chat_Messages_GroupBox.Name = "Server_Chat_Messages_GroupBox";
+            this.Server_Chat_Messages_GroupBox.Size = new System.Drawing.Size(892, 170);
+            this.Server_Chat_Messages_GroupBox.TabIndex = 12;
+            this.Server_Chat_Messages_GroupBox.TabStop = false;
+            this.Server_Chat_Messages_GroupBox.Text = "Server Chat Message Defaults";
             // 
             // cmd_not_yet
             // 
@@ -3939,33 +3994,34 @@
             this.cmd_not_yet.TabIndex = 12;
             this.cmd_not_yet.TextChanged += new System.EventHandler(this.Cmd_not_yet_TextChanged);
             // 
-            // cmd_not_yet_l
+            // Command_Wait_Message_Label
             // 
-            this.cmd_not_yet_l.AutoSize = true;
-            this.cmd_not_yet_l.Location = new System.Drawing.Point(15, 126);
-            this.cmd_not_yet_l.Name = "cmd_not_yet_l";
-            this.cmd_not_yet_l.Size = new System.Drawing.Size(76, 13);
-            this.cmd_not_yet_l.TabIndex = 13;
-            this.cmd_not_yet_l.Text = "cmd_not_yet_l";
+            this.Command_Wait_Message_Label.AutoSize = true;
+            this.Command_Wait_Message_Label.Location = new System.Drawing.Point(15, 126);
+            this.Command_Wait_Message_Label.Name = "Command_Wait_Message_Label";
+            this.Command_Wait_Message_Label.Size = new System.Drawing.Size(199, 13);
+            this.Command_Wait_Message_Label.TabIndex = 13;
+            this.Command_Wait_Message_Label.Text = "Can\'t Use Command Yet! (%d = time left):";
             // 
-            // backup_msg_1
+            // Starting_Backup_Message_TextBox
             // 
-            this.backup_msg_1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Starting_Backup_Message_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.backup_msg_1.Location = new System.Drawing.Point(226, 19);
-            this.backup_msg_1.Name = "backup_msg_1";
-            this.backup_msg_1.Size = new System.Drawing.Size(646, 20);
-            this.backup_msg_1.TabIndex = 4;
-            this.backup_msg_1.TextChanged += new System.EventHandler(this.Backup_msg_1_TextChanged);
+            this.Starting_Backup_Message_TextBox.Location = new System.Drawing.Point(226, 19);
+            this.Starting_Backup_Message_TextBox.Name = "Starting_Backup_Message_TextBox";
+            this.Starting_Backup_Message_TextBox.Size = new System.Drawing.Size(646, 20);
+            this.Starting_Backup_Message_TextBox.TabIndex = 4;
+            this.Starting_Backup_Message_TextBox.TextChanged += new System.EventHandler(this.Backup_msg_1_TextChanged);
             // 
-            // backup_msg_2_l
+            // Backup_Completed_Message_Label
             // 
-            this.backup_msg_2_l.AutoSize = true;
-            this.backup_msg_2_l.Location = new System.Drawing.Point(15, 48);
-            this.backup_msg_2_l.Name = "backup_msg_2_l";
-            this.backup_msg_2_l.Size = new System.Drawing.Size(88, 13);
-            this.backup_msg_2_l.TabIndex = 11;
-            this.backup_msg_2_l.Text = "backup_msg_2_l";
+            this.Backup_Completed_Message_Label.AutoSize = true;
+            this.Backup_Completed_Message_Label.Location = new System.Drawing.Point(15, 48);
+            this.Backup_Completed_Message_Label.Name = "Backup_Completed_Message_Label";
+            this.Backup_Completed_Message_Label.Size = new System.Drawing.Size(100, 13);
+            this.Backup_Completed_Message_Label.TabIndex = 11;
+            this.Backup_Completed_Message_Label.Text = "Backup Completed:";
+            this.Backup_Completed_Message_Label.Click += new System.EventHandler(this.Backup_Completed_Message_Label_Click);
             // 
             // reboot
             // 
@@ -3977,42 +4033,42 @@
             this.reboot.TabIndex = 5;
             this.reboot.TextChanged += new System.EventHandler(this.Reboot_TextChanged);
             // 
-            // backup_msg_2
+            // Backup_Completed_Message_TextBox
             // 
-            this.backup_msg_2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Backup_Completed_Message_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.backup_msg_2.Location = new System.Drawing.Point(226, 45);
-            this.backup_msg_2.Name = "backup_msg_2";
-            this.backup_msg_2.Size = new System.Drawing.Size(646, 20);
-            this.backup_msg_2.TabIndex = 10;
-            this.backup_msg_2.TextChanged += new System.EventHandler(this.Backup_msg_2_TextChanged);
+            this.Backup_Completed_Message_TextBox.Location = new System.Drawing.Point(226, 45);
+            this.Backup_Completed_Message_TextBox.Name = "Backup_Completed_Message_TextBox";
+            this.Backup_Completed_Message_TextBox.Size = new System.Drawing.Size(646, 20);
+            this.Backup_Completed_Message_TextBox.TabIndex = 10;
+            this.Backup_Completed_Message_TextBox.TextChanged += new System.EventHandler(this.Backup_msg_2_TextChanged);
             // 
-            // backup_msg_1_l
+            // Starting_Backup_Message_Label
             // 
-            this.backup_msg_1_l.AutoSize = true;
-            this.backup_msg_1_l.Location = new System.Drawing.Point(15, 22);
-            this.backup_msg_1_l.Name = "backup_msg_1_l";
-            this.backup_msg_1_l.Size = new System.Drawing.Size(88, 13);
-            this.backup_msg_1_l.TabIndex = 6;
-            this.backup_msg_1_l.Text = "backup_msg_1_l";
+            this.Starting_Backup_Message_Label.AutoSize = true;
+            this.Starting_Backup_Message_Label.Location = new System.Drawing.Point(15, 22);
+            this.Starting_Backup_Message_Label.Name = "Starting_Backup_Message_Label";
+            this.Starting_Backup_Message_Label.Size = new System.Drawing.Size(86, 13);
+            this.Starting_Backup_Message_Label.TabIndex = 6;
+            this.Starting_Backup_Message_Label.Text = "Starting Backup:";
             // 
-            // reboot_time_l
+            // Time_Until_Reboot_Message_Label
             // 
-            this.reboot_time_l.AutoSize = true;
-            this.reboot_time_l.Location = new System.Drawing.Point(15, 74);
-            this.reboot_time_l.Name = "reboot_time_l";
-            this.reboot_time_l.Size = new System.Drawing.Size(70, 13);
-            this.reboot_time_l.TabIndex = 9;
-            this.reboot_time_l.Text = "reboot_time_l";
+            this.Time_Until_Reboot_Message_Label.AutoSize = true;
+            this.Time_Until_Reboot_Message_Label.Location = new System.Drawing.Point(15, 74);
+            this.Time_Until_Reboot_Message_Label.Name = "Time_Until_Reboot_Message_Label";
+            this.Time_Until_Reboot_Message_Label.Size = new System.Drawing.Size(179, 13);
+            this.Time_Until_Reboot_Message_Label.TabIndex = 9;
+            this.Time_Until_Reboot_Message_Label.Text = "Time Left To Reboot (%d = time left):";
             // 
-            // reboot_l
+            // Reboot_Now_Message_Label
             // 
-            this.reboot_l.AutoSize = true;
-            this.reboot_l.Location = new System.Drawing.Point(15, 100);
-            this.reboot_l.Name = "reboot_l";
-            this.reboot_l.Size = new System.Drawing.Size(45, 13);
-            this.reboot_l.TabIndex = 7;
-            this.reboot_l.Text = "reboot_l";
+            this.Reboot_Now_Message_Label.AutoSize = true;
+            this.Reboot_Now_Message_Label.Location = new System.Drawing.Point(15, 100);
+            this.Reboot_Now_Message_Label.Name = "Reboot_Now_Message_Label";
+            this.Reboot_Now_Message_Label.Size = new System.Drawing.Size(70, 13);
+            this.Reboot_Now_Message_Label.TabIndex = 7;
+            this.Reboot_Now_Message_Label.Text = "Reboot Now:";
             // 
             // reboot_time
             // 
@@ -4024,103 +4080,103 @@
             this.reboot_time.TabIndex = 8;
             this.reboot_time.TextChanged += new System.EventHandler(this.Reboot_time_TextChanged);
             // 
-            // customcommands_g
+            // Custom_Commands_GroupBox
             // 
-            this.customcommands_g.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Custom_Commands_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.customcommands_g.Controls.Add(this.how_to_commands2);
-            this.customcommands_g.Controls.Add(this.excall_file_l);
-            this.customcommands_g.Controls.Add(this.excall_file);
-            this.customcommands_g.Controls.Add(this.excall);
-            this.customcommands_g.Controls.Add(this.enable_cc);
-            this.customcommands_g.Controls.Add(this.how_to_commands);
-            this.customcommands_g.Controls.Add(this.customcommands);
-            this.customcommands_g.Location = new System.Drawing.Point(9, 8);
-            this.customcommands_g.Name = "customcommands_g";
-            this.customcommands_g.Size = new System.Drawing.Size(892, 494);
-            this.customcommands_g.TabIndex = 14;
-            this.customcommands_g.TabStop = false;
-            this.customcommands_g.Text = "customcommands_g";
+            this.Custom_Commands_GroupBox.Controls.Add(this.How_To_Use_External_Calls_Button);
+            this.Custom_Commands_GroupBox.Controls.Add(this.External_Call_File_Name_Label);
+            this.Custom_Commands_GroupBox.Controls.Add(this.External_Call_File_Select_Button);
+            this.Custom_Commands_GroupBox.Controls.Add(this.Use_External_Call_CheckBox);
+            this.Custom_Commands_GroupBox.Controls.Add(this.Enable_Custom_Commands_CheckBox);
+            this.Custom_Commands_GroupBox.Controls.Add(this.How_To_Commands_Button);
+            this.Custom_Commands_GroupBox.Controls.Add(this.Custom_Commands_RichTextBox);
+            this.Custom_Commands_GroupBox.Location = new System.Drawing.Point(9, 8);
+            this.Custom_Commands_GroupBox.Name = "Custom_Commands_GroupBox";
+            this.Custom_Commands_GroupBox.Size = new System.Drawing.Size(892, 494);
+            this.Custom_Commands_GroupBox.TabIndex = 14;
+            this.Custom_Commands_GroupBox.TabStop = false;
+            this.Custom_Commands_GroupBox.Text = "Custom Commands";
             // 
-            // how_to_commands2
+            // How_To_Use_External_Calls_Button
             // 
-            this.how_to_commands2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.how_to_commands2.Location = new System.Drawing.Point(700, 465);
-            this.how_to_commands2.Name = "how_to_commands2";
-            this.how_to_commands2.Size = new System.Drawing.Size(178, 23);
-            this.how_to_commands2.TabIndex = 19;
-            this.how_to_commands2.Text = "How to use external calling?";
-            this.how_to_commands2.UseVisualStyleBackColor = true;
-            this.how_to_commands2.Click += new System.EventHandler(this.how_to_commands2_Click);
+            this.How_To_Use_External_Calls_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.How_To_Use_External_Calls_Button.Location = new System.Drawing.Point(700, 465);
+            this.How_To_Use_External_Calls_Button.Name = "How_To_Use_External_Calls_Button";
+            this.How_To_Use_External_Calls_Button.Size = new System.Drawing.Size(178, 23);
+            this.How_To_Use_External_Calls_Button.TabIndex = 19;
+            this.How_To_Use_External_Calls_Button.Text = "How to use external calling?";
+            this.How_To_Use_External_Calls_Button.UseVisualStyleBackColor = true;
+            this.How_To_Use_External_Calls_Button.Click += new System.EventHandler(this.how_to_commands2_Click);
             // 
-            // excall_file_l
+            // External_Call_File_Name_Label
             // 
-            this.excall_file_l.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.excall_file_l.AutoSize = true;
-            this.excall_file_l.Location = new System.Drawing.Point(140, 432);
-            this.excall_file_l.Name = "excall_file_l";
-            this.excall_file_l.Size = new System.Drawing.Size(37, 13);
-            this.excall_file_l.TabIndex = 18;
-            this.excall_file_l.Text = "(none)";
+            this.External_Call_File_Name_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.External_Call_File_Name_Label.AutoSize = true;
+            this.External_Call_File_Name_Label.Location = new System.Drawing.Point(140, 432);
+            this.External_Call_File_Name_Label.Name = "External_Call_File_Name_Label";
+            this.External_Call_File_Name_Label.Size = new System.Drawing.Size(37, 13);
+            this.External_Call_File_Name_Label.TabIndex = 18;
+            this.External_Call_File_Name_Label.Text = "(none)";
             // 
-            // excall_file
+            // External_Call_File_Select_Button
             // 
-            this.excall_file.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.excall_file.Enabled = false;
-            this.excall_file.Location = new System.Drawing.Point(18, 427);
-            this.excall_file.Name = "excall_file";
-            this.excall_file.Size = new System.Drawing.Size(116, 23);
-            this.excall_file.TabIndex = 17;
-            this.excall_file.Text = "Select file to call";
-            this.excall_file.UseVisualStyleBackColor = true;
-            this.excall_file.Click += new System.EventHandler(this.excall_file_Click);
+            this.External_Call_File_Select_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.External_Call_File_Select_Button.Enabled = false;
+            this.External_Call_File_Select_Button.Location = new System.Drawing.Point(18, 427);
+            this.External_Call_File_Select_Button.Name = "External_Call_File_Select_Button";
+            this.External_Call_File_Select_Button.Size = new System.Drawing.Size(116, 23);
+            this.External_Call_File_Select_Button.TabIndex = 17;
+            this.External_Call_File_Select_Button.Text = "Select File To Call...";
+            this.External_Call_File_Select_Button.UseVisualStyleBackColor = true;
+            this.External_Call_File_Select_Button.Click += new System.EventHandler(this.excall_file_Click);
             // 
-            // excall
+            // Use_External_Call_CheckBox
             // 
-            this.excall.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.excall.AutoSize = true;
-            this.excall.Location = new System.Drawing.Point(18, 404);
-            this.excall.Name = "excall";
-            this.excall.Size = new System.Drawing.Size(370, 17);
-            this.excall.TabIndex = 16;
-            this.excall.Text = "Instead use external call (harder to use, but gives much more possibilities)";
-            this.excall.UseVisualStyleBackColor = true;
-            this.excall.CheckedChanged += new System.EventHandler(this.excall_CheckedChanged);
+            this.Use_External_Call_CheckBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Use_External_Call_CheckBox.AutoSize = true;
+            this.Use_External_Call_CheckBox.Location = new System.Drawing.Point(18, 404);
+            this.Use_External_Call_CheckBox.Name = "Use_External_Call_CheckBox";
+            this.Use_External_Call_CheckBox.Size = new System.Drawing.Size(370, 17);
+            this.Use_External_Call_CheckBox.TabIndex = 16;
+            this.Use_External_Call_CheckBox.Text = "Instead use external call (harder to use, but gives much more possibilities)";
+            this.Use_External_Call_CheckBox.UseVisualStyleBackColor = true;
+            this.Use_External_Call_CheckBox.CheckedChanged += new System.EventHandler(this.excall_CheckedChanged);
             // 
-            // enable_cc
+            // Enable_Custom_Commands_CheckBox
             // 
-            this.enable_cc.AutoSize = true;
-            this.enable_cc.Location = new System.Drawing.Point(18, 19);
-            this.enable_cc.Name = "enable_cc";
-            this.enable_cc.Size = new System.Drawing.Size(76, 17);
-            this.enable_cc.TabIndex = 15;
-            this.enable_cc.Text = "enable_cc";
-            this.enable_cc.UseVisualStyleBackColor = true;
-            this.enable_cc.CheckedChanged += new System.EventHandler(this.Enable_cc_CheckedChanged);
+            this.Enable_Custom_Commands_CheckBox.AutoSize = true;
+            this.Enable_Custom_Commands_CheckBox.Location = new System.Drawing.Point(18, 19);
+            this.Enable_Custom_Commands_CheckBox.Name = "Enable_Custom_Commands_CheckBox";
+            this.Enable_Custom_Commands_CheckBox.Size = new System.Drawing.Size(152, 17);
+            this.Enable_Custom_Commands_CheckBox.TabIndex = 15;
+            this.Enable_Custom_Commands_CheckBox.Text = "Enable Custom Commands";
+            this.Enable_Custom_Commands_CheckBox.UseVisualStyleBackColor = true;
+            this.Enable_Custom_Commands_CheckBox.CheckedChanged += new System.EventHandler(this.Enable_cc_CheckedChanged);
             // 
-            // how_to_commands
+            // How_To_Commands_Button
             // 
-            this.how_to_commands.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.how_to_commands.Location = new System.Drawing.Point(700, 384);
-            this.how_to_commands.Name = "how_to_commands";
-            this.how_to_commands.Size = new System.Drawing.Size(178, 23);
-            this.how_to_commands.TabIndex = 14;
-            this.how_to_commands.Text = "how_to_commands";
-            this.how_to_commands.UseVisualStyleBackColor = true;
-            this.how_to_commands.Click += new System.EventHandler(this.How_to_commands_Click);
+            this.How_To_Commands_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.How_To_Commands_Button.Location = new System.Drawing.Point(700, 384);
+            this.How_To_Commands_Button.Name = "How_To_Commands_Button";
+            this.How_To_Commands_Button.Size = new System.Drawing.Size(178, 23);
+            this.How_To_Commands_Button.TabIndex = 14;
+            this.How_To_Commands_Button.Text = "How to Create Commands?";
+            this.How_To_Commands_Button.UseVisualStyleBackColor = true;
+            this.How_To_Commands_Button.Click += new System.EventHandler(this.How_to_commands_Click);
             // 
-            // customcommands
+            // Custom_Commands_RichTextBox
             // 
-            this.customcommands.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Custom_Commands_RichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.customcommands.Location = new System.Drawing.Point(18, 42);
-            this.customcommands.Name = "customcommands";
-            this.customcommands.Size = new System.Drawing.Size(860, 336);
-            this.customcommands.TabIndex = 13;
-            this.customcommands.Text = "";
-            this.customcommands.TextChanged += new System.EventHandler(this.Customcommands_TextChanged);
+            this.Custom_Commands_RichTextBox.Location = new System.Drawing.Point(18, 42);
+            this.Custom_Commands_RichTextBox.Name = "Custom_Commands_RichTextBox";
+            this.Custom_Commands_RichTextBox.Size = new System.Drawing.Size(860, 336);
+            this.Custom_Commands_RichTextBox.TabIndex = 13;
+            this.Custom_Commands_RichTextBox.Text = "";
+            this.Custom_Commands_RichTextBox.TextChanged += new System.EventHandler(this.Customcommands_TextChanged);
             // 
             // globalBanList
             // 
@@ -4571,9 +4627,9 @@
             // tasks
             // 
             this.tasks.BackColor = System.Drawing.SystemColors.Control;
-            this.tasks.Controls.Add(this.reset_g);
-            this.tasks.Controls.Add(this.spam_g);
-            this.tasks.Controls.Add(this.whitelist_dl_g);
+            this.tasks.Controls.Add(this.Auto_Restarts_GroupBox);
+            this.tasks.Controls.Add(this.Server_Commands_GroupBox);
+            this.tasks.Controls.Add(this.Whitelist_GroupBox);
             this.tasks.ImageIndex = 7;
             this.tasks.Location = new System.Drawing.Point(47, 4);
             this.tasks.Name = "tasks";
@@ -4582,210 +4638,211 @@
             this.tasks.TabIndex = 12;
             this.tasks.Text = " ";
             // 
-            // reset_g
+            // Auto_Restarts_GroupBox
             // 
-            this.reset_g.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Auto_Restarts_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.reset_g.Controls.Add(this.reset_chat);
-            this.reset_g.Controls.Add(this.reset_enabled);
-            this.reset_g.Controls.Add(this.reset_time);
-            this.reset_g.Location = new System.Drawing.Point(8, 8);
-            this.reset_g.Name = "reset_g";
-            this.reset_g.Size = new System.Drawing.Size(893, 65);
-            this.reset_g.TabIndex = 34;
-            this.reset_g.TabStop = false;
-            this.reset_g.Text = "reset_g";
+            this.Auto_Restarts_GroupBox.Controls.Add(this.Warn_Before_Restart_CheckBox);
+            this.Auto_Restarts_GroupBox.Controls.Add(this.Enable_Auto_Restarts_CheckBox);
+            this.Auto_Restarts_GroupBox.Controls.Add(this.Auto_Restart_Time_TrackBar);
+            this.Auto_Restarts_GroupBox.Location = new System.Drawing.Point(8, 8);
+            this.Auto_Restarts_GroupBox.Name = "Auto_Restarts_GroupBox";
+            this.Auto_Restarts_GroupBox.Size = new System.Drawing.Size(893, 65);
+            this.Auto_Restarts_GroupBox.TabIndex = 34;
+            this.Auto_Restarts_GroupBox.TabStop = false;
+            this.Auto_Restarts_GroupBox.Text = "Auto Restarts";
             // 
-            // reset_chat
+            // Warn_Before_Restart_CheckBox
             // 
-            this.reset_chat.AutoSize = true;
-            this.reset_chat.Checked = true;
-            this.reset_chat.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.reset_chat.Enabled = false;
-            this.reset_chat.Location = new System.Drawing.Point(9, 42);
-            this.reset_chat.Name = "reset_chat";
-            this.reset_chat.Size = new System.Drawing.Size(76, 17);
-            this.reset_chat.TabIndex = 10;
-            this.reset_chat.Text = "reset_chat";
-            this.reset_chat.UseVisualStyleBackColor = true;
-            this.reset_chat.CheckedChanged += new System.EventHandler(this.Reset_chat_CheckedChanged);
+            this.Warn_Before_Restart_CheckBox.AutoSize = true;
+            this.Warn_Before_Restart_CheckBox.Checked = true;
+            this.Warn_Before_Restart_CheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.Warn_Before_Restart_CheckBox.Enabled = false;
+            this.Warn_Before_Restart_CheckBox.Location = new System.Drawing.Point(9, 42);
+            this.Warn_Before_Restart_CheckBox.Name = "Warn_Before_Restart_CheckBox";
+            this.Warn_Before_Restart_CheckBox.Size = new System.Drawing.Size(166, 17);
+            this.Warn_Before_Restart_CheckBox.TabIndex = 10;
+            this.Warn_Before_Restart_CheckBox.Text = "Warn Players Before Restart?";
+            this.Warn_Before_Restart_CheckBox.UseVisualStyleBackColor = true;
+            this.Warn_Before_Restart_CheckBox.CheckedChanged += new System.EventHandler(this.Reset_chat_CheckedChanged);
             // 
-            // reset_enabled
+            // Enable_Auto_Restarts_CheckBox
             // 
-            this.reset_enabled.AutoSize = true;
-            this.reset_enabled.Location = new System.Drawing.Point(9, 19);
-            this.reset_enabled.Name = "reset_enabled";
-            this.reset_enabled.Size = new System.Drawing.Size(93, 17);
-            this.reset_enabled.TabIndex = 9;
-            this.reset_enabled.Text = "reset_enabled";
-            this.reset_enabled.UseVisualStyleBackColor = true;
-            this.reset_enabled.CheckedChanged += new System.EventHandler(this.Reset_enabled_CheckedChanged);
+            this.Enable_Auto_Restarts_CheckBox.AutoSize = true;
+            this.Enable_Auto_Restarts_CheckBox.Location = new System.Drawing.Point(9, 19);
+            this.Enable_Auto_Restarts_CheckBox.Name = "Enable_Auto_Restarts_CheckBox";
+            this.Enable_Auto_Restarts_CheckBox.Size = new System.Drawing.Size(126, 17);
+            this.Enable_Auto_Restarts_CheckBox.TabIndex = 9;
+            this.Enable_Auto_Restarts_CheckBox.Text = "Enable Auto Restarts";
+            this.Enable_Auto_Restarts_CheckBox.UseVisualStyleBackColor = true;
+            this.Enable_Auto_Restarts_CheckBox.CheckedChanged += new System.EventHandler(this.Reset_enabled_CheckedChanged);
             // 
-            // reset_time
+            // Auto_Restart_Time_TrackBar
             // 
-            this.reset_time.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Auto_Restart_Time_TrackBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.reset_time.Enabled = false;
-            this.reset_time.Location = new System.Drawing.Point(220, 14);
-            this.reset_time.Maximum = 48;
-            this.reset_time.Minimum = 1;
-            this.reset_time.Name = "reset_time";
-            this.reset_time.Size = new System.Drawing.Size(667, 45);
-            this.reset_time.TabIndex = 8;
-            this.reset_time.Value = 16;
-            this.reset_time.Scroll += new System.EventHandler(this.reset_time_Scroll);
+            this.Auto_Restart_Time_TrackBar.Enabled = false;
+            this.Auto_Restart_Time_TrackBar.Location = new System.Drawing.Point(220, 14);
+            this.Auto_Restart_Time_TrackBar.Maximum = 48;
+            this.Auto_Restart_Time_TrackBar.Minimum = 1;
+            this.Auto_Restart_Time_TrackBar.Name = "Auto_Restart_Time_TrackBar";
+            this.Auto_Restart_Time_TrackBar.Size = new System.Drawing.Size(667, 45);
+            this.Auto_Restart_Time_TrackBar.TabIndex = 8;
+            this.Auto_Restart_Time_TrackBar.Value = 16;
+            this.Auto_Restart_Time_TrackBar.Scroll += new System.EventHandler(this.reset_time_Scroll);
             // 
-            // spam_g
+            // Server_Commands_GroupBox
             // 
-            this.spam_g.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Server_Commands_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.spam_g.Controls.Add(this.spam_is_spam);
-            this.spam_g.Controls.Add(this.spaminfo);
-            this.spam_g.Controls.Add(this.spam_list);
-            this.spam_g.Controls.Add(this.spam_time_g);
-            this.spam_g.Location = new System.Drawing.Point(8, 173);
-            this.spam_g.Name = "spam_g";
-            this.spam_g.Size = new System.Drawing.Size(893, 505);
-            this.spam_g.TabIndex = 33;
-            this.spam_g.TabStop = false;
-            this.spam_g.Text = "spam_g";
+            this.Server_Commands_GroupBox.Controls.Add(this.Server_Commands_Say_Switch_CheckBox);
+            this.Server_Commands_GroupBox.Controls.Add(this.Server_Commands_Note_Label);
+            this.Server_Commands_GroupBox.Controls.Add(this.Server_Commands_List_RichTextBox);
+            this.Server_Commands_GroupBox.Controls.Add(this.Server_Commands_Delay_GroupBox);
+            this.Server_Commands_GroupBox.Location = new System.Drawing.Point(8, 173);
+            this.Server_Commands_GroupBox.Name = "Server_Commands_GroupBox";
+            this.Server_Commands_GroupBox.Size = new System.Drawing.Size(893, 505);
+            this.Server_Commands_GroupBox.TabIndex = 33;
+            this.Server_Commands_GroupBox.TabStop = false;
+            this.Server_Commands_GroupBox.Text = "Send Commands To Server";
             // 
-            // spam_is_spam
+            // Server_Commands_Say_Switch_CheckBox
             // 
-            this.spam_is_spam.AutoSize = true;
-            this.spam_is_spam.Location = new System.Drawing.Point(9, 32);
-            this.spam_is_spam.Name = "spam_is_spam";
-            this.spam_is_spam.Size = new System.Drawing.Size(95, 17);
-            this.spam_is_spam.TabIndex = 4;
-            this.spam_is_spam.Text = "spam_is_spam";
-            this.spam_is_spam.UseVisualStyleBackColor = true;
-            this.spam_is_spam.CheckedChanged += new System.EventHandler(this.Spam_is_spam_CheckedChanged);
+            this.Server_Commands_Say_Switch_CheckBox.AutoSize = true;
+            this.Server_Commands_Say_Switch_CheckBox.Location = new System.Drawing.Point(9, 32);
+            this.Server_Commands_Say_Switch_CheckBox.Name = "Server_Commands_Say_Switch_CheckBox";
+            this.Server_Commands_Say_Switch_CheckBox.Size = new System.Drawing.Size(170, 17);
+            this.Server_Commands_Say_Switch_CheckBox.TabIndex = 4;
+            this.Server_Commands_Say_Switch_CheckBox.Text = "Add \"say\" To Every Command";
+            this.Server_Commands_Say_Switch_CheckBox.UseVisualStyleBackColor = true;
+            this.Server_Commands_Say_Switch_CheckBox.CheckedChanged += new System.EventHandler(this.Spam_is_spam_CheckedChanged);
             // 
-            // spaminfo
+            // Server_Commands_Note_Label
             // 
-            this.spaminfo.AutoSize = true;
-            this.spaminfo.Location = new System.Drawing.Point(6, 16);
-            this.spaminfo.Name = "spaminfo";
-            this.spaminfo.Size = new System.Drawing.Size(49, 13);
-            this.spaminfo.TabIndex = 1;
-            this.spaminfo.Text = "spaminfo";
+            this.Server_Commands_Note_Label.AutoSize = true;
+            this.Server_Commands_Note_Label.Location = new System.Drawing.Point(6, 16);
+            this.Server_Commands_Note_Label.Name = "Server_Commands_Note_Label";
+            this.Server_Commands_Note_Label.Size = new System.Drawing.Size(499, 13);
+            this.Server_Commands_Note_Label.TabIndex = 1;
+            this.Server_Commands_Note_Label.Text = "Commands Written Here Will Be Sent to The Server. Each Command Should Be Written " +
+    "On A New Line.";
             // 
-            // spam_list
+            // Server_Commands_List_RichTextBox
             // 
-            this.spam_list.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Server_Commands_List_RichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.spam_list.Location = new System.Drawing.Point(9, 54);
-            this.spam_list.Name = "spam_list";
-            this.spam_list.Size = new System.Drawing.Size(878, 372);
-            this.spam_list.TabIndex = 0;
-            this.spam_list.Text = "";
-            this.spam_list.TextChanged += new System.EventHandler(this.spam_list_TextChanged);
+            this.Server_Commands_List_RichTextBox.Location = new System.Drawing.Point(9, 54);
+            this.Server_Commands_List_RichTextBox.Name = "Server_Commands_List_RichTextBox";
+            this.Server_Commands_List_RichTextBox.Size = new System.Drawing.Size(878, 372);
+            this.Server_Commands_List_RichTextBox.TabIndex = 0;
+            this.Server_Commands_List_RichTextBox.Text = "";
+            this.Server_Commands_List_RichTextBox.TextChanged += new System.EventHandler(this.spam_list_TextChanged);
             // 
-            // spam_time_g
+            // Server_Commands_Delay_GroupBox
             // 
-            this.spam_time_g.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.Server_Commands_Delay_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.spam_time_g.Controls.Add(this.spam_time);
-            this.spam_time_g.Location = new System.Drawing.Point(9, 432);
-            this.spam_time_g.Name = "spam_time_g";
-            this.spam_time_g.Size = new System.Drawing.Size(878, 67);
-            this.spam_time_g.TabIndex = 3;
-            this.spam_time_g.TabStop = false;
-            this.spam_time_g.Text = "spam_time_g";
+            this.Server_Commands_Delay_GroupBox.Controls.Add(this.Server_Commands_Time_TrackBar);
+            this.Server_Commands_Delay_GroupBox.Location = new System.Drawing.Point(9, 432);
+            this.Server_Commands_Delay_GroupBox.Name = "Server_Commands_Delay_GroupBox";
+            this.Server_Commands_Delay_GroupBox.Size = new System.Drawing.Size(878, 67);
+            this.Server_Commands_Delay_GroupBox.TabIndex = 3;
+            this.Server_Commands_Delay_GroupBox.TabStop = false;
+            this.Server_Commands_Delay_GroupBox.Text = "Delay Between Commands";
             // 
-            // spam_time
+            // Server_Commands_Time_TrackBar
             // 
-            this.spam_time.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Server_Commands_Time_TrackBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.spam_time.Location = new System.Drawing.Point(6, 19);
-            this.spam_time.Maximum = 240;
-            this.spam_time.Minimum = 1;
-            this.spam_time.Name = "spam_time";
-            this.spam_time.Size = new System.Drawing.Size(866, 45);
-            this.spam_time.TabIndex = 2;
-            this.spam_time.Value = 1;
-            this.spam_time.Scroll += new System.EventHandler(this.spam_time_Scroll);
+            this.Server_Commands_Time_TrackBar.Location = new System.Drawing.Point(6, 19);
+            this.Server_Commands_Time_TrackBar.Maximum = 240;
+            this.Server_Commands_Time_TrackBar.Minimum = 1;
+            this.Server_Commands_Time_TrackBar.Name = "Server_Commands_Time_TrackBar";
+            this.Server_Commands_Time_TrackBar.Size = new System.Drawing.Size(866, 45);
+            this.Server_Commands_Time_TrackBar.TabIndex = 2;
+            this.Server_Commands_Time_TrackBar.Value = 1;
+            this.Server_Commands_Time_TrackBar.Scroll += new System.EventHandler(this.spam_time_Scroll);
             // 
-            // whitelist_dl_g
+            // Whitelist_GroupBox
             // 
-            this.whitelist_dl_g.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Whitelist_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.whitelist_dl_g.Controls.Add(this.use_wl);
-            this.whitelist_dl_g.Controls.Add(this.min_l);
-            this.whitelist_dl_g.Controls.Add(this.wl_interval);
-            this.whitelist_dl_g.Controls.Add(this.wl_chk);
-            this.whitelist_dl_g.Controls.Add(this.wl_add_l);
-            this.whitelist_dl_g.Controls.Add(this.wl_add);
-            this.whitelist_dl_g.Location = new System.Drawing.Point(8, 79);
-            this.whitelist_dl_g.Name = "whitelist_dl_g";
-            this.whitelist_dl_g.Size = new System.Drawing.Size(893, 88);
-            this.whitelist_dl_g.TabIndex = 35;
-            this.whitelist_dl_g.TabStop = false;
-            this.whitelist_dl_g.Text = "Whitelist";
+            this.Whitelist_GroupBox.Controls.Add(this.Use_Whitelist_CheckBox);
+            this.Whitelist_GroupBox.Controls.Add(this.Auto_Update_Whitelist_Text_Label);
+            this.Whitelist_GroupBox.Controls.Add(this.Update_Whitelist_Interval_TextBox);
+            this.Whitelist_GroupBox.Controls.Add(this.Auto_Update_Whitelist_CheckBox);
+            this.Whitelist_GroupBox.Controls.Add(this.Auto_Update_External_Whitelist_Note_Label);
+            this.Whitelist_GroupBox.Controls.Add(this.Auto_Update_External_Whitelist_URL_TextBox);
+            this.Whitelist_GroupBox.Location = new System.Drawing.Point(8, 79);
+            this.Whitelist_GroupBox.Name = "Whitelist_GroupBox";
+            this.Whitelist_GroupBox.Size = new System.Drawing.Size(893, 88);
+            this.Whitelist_GroupBox.TabIndex = 35;
+            this.Whitelist_GroupBox.TabStop = false;
+            this.Whitelist_GroupBox.Text = "Whitelist";
             // 
-            // use_wl
+            // Use_Whitelist_CheckBox
             // 
-            this.use_wl.AutoSize = true;
-            this.use_wl.Location = new System.Drawing.Point(9, 19);
-            this.use_wl.Name = "use_wl";
-            this.use_wl.Size = new System.Drawing.Size(532, 17);
-            this.use_wl.TabIndex = 5;
-            this.use_wl.Text = "Use whitelist (File must be put in main game folder, named whitelist.txt. Every n" +
+            this.Use_Whitelist_CheckBox.AutoSize = true;
+            this.Use_Whitelist_CheckBox.Location = new System.Drawing.Point(9, 19);
+            this.Use_Whitelist_CheckBox.Name = "Use_Whitelist_CheckBox";
+            this.Use_Whitelist_CheckBox.Size = new System.Drawing.Size(532, 17);
+            this.Use_Whitelist_CheckBox.TabIndex = 5;
+            this.Use_Whitelist_CheckBox.Text = "Use whitelist (File must be put in main game folder, named whitelist.txt. Every n" +
     "ickname must be in new line.)";
-            this.use_wl.UseVisualStyleBackColor = true;
-            this.use_wl.CheckedChanged += new System.EventHandler(this.use_wl_CheckedChanged);
+            this.Use_Whitelist_CheckBox.UseVisualStyleBackColor = true;
+            this.Use_Whitelist_CheckBox.CheckedChanged += new System.EventHandler(this.use_wl_CheckedChanged);
             // 
-            // min_l
+            // Auto_Update_Whitelist_Text_Label
             // 
-            this.min_l.AutoSize = true;
-            this.min_l.Location = new System.Drawing.Point(198, 44);
-            this.min_l.Name = "min_l";
-            this.min_l.Size = new System.Drawing.Size(141, 13);
-            this.min_l.TabIndex = 4;
-            this.min_l.Text = "minutes from external server:";
+            this.Auto_Update_Whitelist_Text_Label.AutoSize = true;
+            this.Auto_Update_Whitelist_Text_Label.Location = new System.Drawing.Point(198, 44);
+            this.Auto_Update_Whitelist_Text_Label.Name = "Auto_Update_Whitelist_Text_Label";
+            this.Auto_Update_Whitelist_Text_Label.Size = new System.Drawing.Size(148, 13);
+            this.Auto_Update_Whitelist_Text_Label.TabIndex = 4;
+            this.Auto_Update_Whitelist_Text_Label.Text = "Minutes From External Server:";
             // 
-            // wl_interval
+            // Update_Whitelist_Interval_TextBox
             // 
-            this.wl_interval.Location = new System.Drawing.Point(165, 41);
-            this.wl_interval.Name = "wl_interval";
-            this.wl_interval.Size = new System.Drawing.Size(27, 20);
-            this.wl_interval.TabIndex = 3;
-            this.wl_interval.Text = "60";
-            this.wl_interval.TextChanged += new System.EventHandler(this.wl_interval_TextChanged);
+            this.Update_Whitelist_Interval_TextBox.Location = new System.Drawing.Point(165, 41);
+            this.Update_Whitelist_Interval_TextBox.Name = "Update_Whitelist_Interval_TextBox";
+            this.Update_Whitelist_Interval_TextBox.Size = new System.Drawing.Size(27, 20);
+            this.Update_Whitelist_Interval_TextBox.TabIndex = 3;
+            this.Update_Whitelist_Interval_TextBox.Text = "60";
+            this.Update_Whitelist_Interval_TextBox.TextChanged += new System.EventHandler(this.wl_interval_TextChanged);
             // 
-            // wl_chk
+            // Auto_Update_Whitelist_CheckBox
             // 
-            this.wl_chk.AutoSize = true;
-            this.wl_chk.Location = new System.Drawing.Point(9, 43);
-            this.wl_chk.Name = "wl_chk";
-            this.wl_chk.Size = new System.Drawing.Size(150, 17);
-            this.wl_chk.TabIndex = 2;
-            this.wl_chk.Text = "Autoupdate whitelist every";
-            this.wl_chk.UseVisualStyleBackColor = true;
-            this.wl_chk.CheckedChanged += new System.EventHandler(this.wl_chk_CheckedChanged);
+            this.Auto_Update_Whitelist_CheckBox.AutoSize = true;
+            this.Auto_Update_Whitelist_CheckBox.Location = new System.Drawing.Point(9, 43);
+            this.Auto_Update_Whitelist_CheckBox.Name = "Auto_Update_Whitelist_CheckBox";
+            this.Auto_Update_Whitelist_CheckBox.Size = new System.Drawing.Size(159, 17);
+            this.Auto_Update_Whitelist_CheckBox.TabIndex = 2;
+            this.Auto_Update_Whitelist_CheckBox.Text = "Auto Update Whitelist Every";
+            this.Auto_Update_Whitelist_CheckBox.UseVisualStyleBackColor = true;
+            this.Auto_Update_Whitelist_CheckBox.CheckedChanged += new System.EventHandler(this.wl_chk_CheckedChanged);
             // 
-            // wl_add_l
+            // Auto_Update_External_Whitelist_Note_Label
             // 
-            this.wl_add_l.AutoSize = true;
-            this.wl_add_l.Location = new System.Drawing.Point(342, 63);
-            this.wl_add_l.Name = "wl_add_l";
-            this.wl_add_l.Size = new System.Drawing.Size(398, 13);
-            this.wl_add_l.TabIndex = 1;
-            this.wl_add_l.Text = "(Put direct address to whitelist.txt file. Don\'t forget to put http(s):// on the " +
-    "beggining)";
+            this.Auto_Update_External_Whitelist_Note_Label.AutoSize = true;
+            this.Auto_Update_External_Whitelist_Note_Label.Location = new System.Drawing.Point(342, 63);
+            this.Auto_Update_External_Whitelist_Note_Label.Name = "Auto_Update_External_Whitelist_Note_Label";
+            this.Auto_Update_External_Whitelist_Note_Label.Size = new System.Drawing.Size(398, 13);
+            this.Auto_Update_External_Whitelist_Note_Label.TabIndex = 1;
+            this.Auto_Update_External_Whitelist_Note_Label.Text = "(Put direct address to whitelist.txt file. Don\'t forget to put http(s):// on the " +
+    "beginning)";
             // 
-            // wl_add
+            // Auto_Update_External_Whitelist_URL_TextBox
             // 
-            this.wl_add.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Auto_Update_External_Whitelist_URL_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.wl_add.Location = new System.Drawing.Point(345, 41);
-            this.wl_add.Name = "wl_add";
-            this.wl_add.Size = new System.Drawing.Size(542, 20);
-            this.wl_add.TabIndex = 0;
-            this.wl_add.Text = "http://";
-            this.wl_add.TextChanged += new System.EventHandler(this.wl_add_TextChanged);
+            this.Auto_Update_External_Whitelist_URL_TextBox.Location = new System.Drawing.Point(347, 41);
+            this.Auto_Update_External_Whitelist_URL_TextBox.Name = "Auto_Update_External_Whitelist_URL_TextBox";
+            this.Auto_Update_External_Whitelist_URL_TextBox.Size = new System.Drawing.Size(542, 20);
+            this.Auto_Update_External_Whitelist_URL_TextBox.TabIndex = 0;
+            this.Auto_Update_External_Whitelist_URL_TextBox.Text = "http://";
+            this.Auto_Update_External_Whitelist_URL_TextBox.TextChanged += new System.EventHandler(this.wl_add_TextChanged);
             // 
             // backup_tab
             // 
@@ -4848,7 +4905,7 @@
             this.backup_del.TabIndex = 3;
             this.backup_del.Text = "Delete selected backup";
             this.backup_del.UseVisualStyleBackColor = true;
-            this.backup_del.Click += new System.EventHandler(this.backup_del_Click);
+            this.backup_del.Click += new System.EventHandler(this.Backup_del_Click);
             // 
             // backup_refresh
             // 
@@ -4859,7 +4916,7 @@
             this.backup_refresh.TabIndex = 2;
             this.backup_refresh.Text = "Refresh list";
             this.backup_refresh.UseVisualStyleBackColor = true;
-            this.backup_refresh.Click += new System.EventHandler(this.backup_refresh_Click);
+            this.backup_refresh.Click += new System.EventHandler(this.Backup_refresh_Click);
             // 
             // restore_now
             // 
@@ -5038,7 +5095,7 @@
             this.dtds_add.TabIndex = 4;
             this.dtds_add.Text = "Add";
             this.dtds_add.UseVisualStyleBackColor = true;
-            this.dtds_add.Click += new System.EventHandler(this.dtds_add_Click);
+            this.dtds_add.Click += new System.EventHandler(this.Dtds_add_Click);
             // 
             // dtds_possible
             // 
@@ -5110,7 +5167,7 @@
             // auto_backup
             // 
             this.auto_backup.WorkerSupportsCancellation = true;
-            this.auto_backup.DoWork += new System.ComponentModel.DoWorkEventHandler(this.auto_backup_DoWork);
+            this.auto_backup.DoWork += new System.ComponentModel.DoWorkEventHandler(this.Auto_backup_DoWork);
             // 
             // auto_reset
             // 
@@ -5169,7 +5226,7 @@
             // 
             this.autoupdate_whitelist.WorkerReportsProgress = true;
             this.autoupdate_whitelist.WorkerSupportsCancellation = true;
-            this.autoupdate_whitelist.DoWork += new System.ComponentModel.DoWorkEventHandler(this.autoupdate_whitelist_DoWork);
+            this.autoupdate_whitelist.DoWork += new System.ComponentModel.DoWorkEventHandler(this.Autoupdate_whitelist_DoWork);
             // 
             // don_l
             // 
@@ -5200,7 +5257,7 @@
             this.dbg_btn.Text = "webserver 1";
             this.dbg_btn.UseVisualStyleBackColor = true;
             this.dbg_btn.Visible = false;
-            this.dbg_btn.Click += new System.EventHandler(this.dbg_btn_Click);
+            this.dbg_btn.Click += new System.EventHandler(this.Dbg_btn_Click);
             // 
             // dbg_btn_2
             // 
@@ -5244,7 +5301,7 @@
             this.contact_b.Size = new System.Drawing.Size(43, 43);
             this.contact_b.TabIndex = 39;
             this.contact_b.UseVisualStyleBackColor = true;
-            this.contact_b.Click += new System.EventHandler(this.contact_b_Click);
+            this.contact_b.Click += new System.EventHandler(this.Contact_b_Click);
             // 
             // forumklik
             // 
@@ -5314,61 +5371,6 @@
             this.discord_b.UseVisualStyleBackColor = true;
             this.discord_b.Click += new System.EventHandler(this.discord_b_Click);
             // 
-            // SQL_Host_Info_PictureBox
-            // 
-            this.SQL_Host_Info_PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("SQL_Host_Info_PictureBox.Image")));
-            this.SQL_Host_Info_PictureBox.Location = new System.Drawing.Point(502, 21);
-            this.SQL_Host_Info_PictureBox.Name = "SQL_Host_Info_PictureBox";
-            this.SQL_Host_Info_PictureBox.Size = new System.Drawing.Size(16, 16);
-            this.SQL_Host_Info_PictureBox.TabIndex = 41;
-            this.SQL_Host_Info_PictureBox.TabStop = false;
-            this.toolTip.SetToolTip(this.SQL_Host_Info_PictureBox, "You need 7DSM Supporter to change these options.\r\nIt\'s almost free, please check " +
-        "it out in \"Settings\" tab.");
-            // 
-            // SQL_Username_Info_PictureBox
-            // 
-            this.SQL_Username_Info_PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("SQL_Username_Info_PictureBox.Image")));
-            this.SQL_Username_Info_PictureBox.Location = new System.Drawing.Point(502, 23);
-            this.SQL_Username_Info_PictureBox.Name = "SQL_Username_Info_PictureBox";
-            this.SQL_Username_Info_PictureBox.Size = new System.Drawing.Size(16, 16);
-            this.SQL_Username_Info_PictureBox.TabIndex = 42;
-            this.SQL_Username_Info_PictureBox.TabStop = false;
-            this.toolTip.SetToolTip(this.SQL_Username_Info_PictureBox, "You need 7DSM Supporter to change these options.\r\nIt\'s almost free, please check " +
-        "it out in \"Settings\" tab.");
-            // 
-            // SQL_Password_Info_PictureBox
-            // 
-            this.SQL_Password_Info_PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("SQL_Password_Info_PictureBox.Image")));
-            this.SQL_Password_Info_PictureBox.Location = new System.Drawing.Point(502, 19);
-            this.SQL_Password_Info_PictureBox.Name = "SQL_Password_Info_PictureBox";
-            this.SQL_Password_Info_PictureBox.Size = new System.Drawing.Size(16, 16);
-            this.SQL_Password_Info_PictureBox.TabIndex = 43;
-            this.SQL_Password_Info_PictureBox.TabStop = false;
-            this.toolTip.SetToolTip(this.SQL_Password_Info_PictureBox, "You need 7DSM Supporter to change these options.\r\nIt\'s almost free, please check " +
-        "it out in \"Settings\" tab.");
-            // 
-            // SQL_Database_Name_Info_PictureBox
-            // 
-            this.SQL_Database_Name_Info_PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("SQL_Database_Name_Info_PictureBox.Image")));
-            this.SQL_Database_Name_Info_PictureBox.Location = new System.Drawing.Point(502, 20);
-            this.SQL_Database_Name_Info_PictureBox.Name = "SQL_Database_Name_Info_PictureBox";
-            this.SQL_Database_Name_Info_PictureBox.Size = new System.Drawing.Size(16, 16);
-            this.SQL_Database_Name_Info_PictureBox.TabIndex = 44;
-            this.SQL_Database_Name_Info_PictureBox.TabStop = false;
-            this.toolTip.SetToolTip(this.SQL_Database_Name_Info_PictureBox, "You need 7DSM Supporter to change these options.\r\nIt\'s almost free, please check " +
-        "it out in \"Settings\" tab.");
-            // 
-            // SQL_Update_Time_Info_PictureBox
-            // 
-            this.SQL_Update_Time_Info_PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("SQL_Update_Time_Info_PictureBox.Image")));
-            this.SQL_Update_Time_Info_PictureBox.Location = new System.Drawing.Point(502, 23);
-            this.SQL_Update_Time_Info_PictureBox.Name = "SQL_Update_Time_Info_PictureBox";
-            this.SQL_Update_Time_Info_PictureBox.Size = new System.Drawing.Size(16, 16);
-            this.SQL_Update_Time_Info_PictureBox.TabIndex = 45;
-            this.SQL_Update_Time_Info_PictureBox.TabStop = false;
-            this.toolTip.SetToolTip(this.SQL_Update_Time_Info_PictureBox, "You need 7DSM Supporter to change these options.\r\nIt\'s almost free, please check " +
-        "it out in \"Settings\" tab.");
-            // 
             // Server_Panel_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -5393,7 +5395,7 @@
             this.Text = "7 Days Server Manager";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.server_panel_FormClosing);
             this.Load += new System.EventHandler(this.server_panel_Load);
-            this.Shown += new System.EventHandler(this.server_panel_Shown);
+            this.Shown += new System.EventHandler(this.Server_panel_Shown);
             this.Resize += new System.EventHandler(this.server_panel_Resize);
             this.settings.ResumeLayout(false);
             this.settings.PerformLayout();
@@ -5410,14 +5412,19 @@
             this.SQL_GroupBox.PerformLayout();
             this.SQL_Update_Time_GroupBox.ResumeLayout(false);
             this.SQL_Update_Time_GroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SQL_Update_Time_Info_PictureBox)).EndInit();
             this.SQL_Host_GroupBox.ResumeLayout(false);
             this.SQL_Host_GroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SQL_Host_Info_PictureBox)).EndInit();
             this.SQL_Username_GroupBox.ResumeLayout(false);
             this.SQL_Username_GroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SQL_Username_Info_PictureBox)).EndInit();
             this.SQL_DB_Name_GroupBox.ResumeLayout(false);
             this.SQL_DB_Name_GroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SQL_Database_Name_Info_PictureBox)).EndInit();
             this.SQL_Password_GroupBox.ResumeLayout(false);
             this.SQL_Password_GroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SQL_Password_Info_PictureBox)).EndInit();
             this.Settings_GroupBox.ResumeLayout(false);
             this.Settings_GroupBox.PerformLayout();
             this.auto_backup_group.ResumeLayout(false);
@@ -5552,10 +5559,10 @@
             this.telnet_g.ResumeLayout(false);
             this.telnet_g.PerformLayout();
             this.strings_page.ResumeLayout(false);
-            this.messages_g.ResumeLayout(false);
-            this.messages_g.PerformLayout();
-            this.customcommands_g.ResumeLayout(false);
-            this.customcommands_g.PerformLayout();
+            this.Server_Chat_Messages_GroupBox.ResumeLayout(false);
+            this.Server_Chat_Messages_GroupBox.PerformLayout();
+            this.Custom_Commands_GroupBox.ResumeLayout(false);
+            this.Custom_Commands_GroupBox.PerformLayout();
             this.globalBanList.ResumeLayout(false);
             this.global_ban_g.ResumeLayout(false);
             this.global_ban_g.PerformLayout();
@@ -5574,16 +5581,16 @@
             this.android_g.ResumeLayout(false);
             this.android_g.PerformLayout();
             this.tasks.ResumeLayout(false);
-            this.reset_g.ResumeLayout(false);
-            this.reset_g.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.reset_time)).EndInit();
-            this.spam_g.ResumeLayout(false);
-            this.spam_g.PerformLayout();
-            this.spam_time_g.ResumeLayout(false);
-            this.spam_time_g.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.spam_time)).EndInit();
-            this.whitelist_dl_g.ResumeLayout(false);
-            this.whitelist_dl_g.PerformLayout();
+            this.Auto_Restarts_GroupBox.ResumeLayout(false);
+            this.Auto_Restarts_GroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Auto_Restart_Time_TrackBar)).EndInit();
+            this.Server_Commands_GroupBox.ResumeLayout(false);
+            this.Server_Commands_GroupBox.PerformLayout();
+            this.Server_Commands_Delay_GroupBox.ResumeLayout(false);
+            this.Server_Commands_Delay_GroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Server_Commands_Time_TrackBar)).EndInit();
+            this.Whitelist_GroupBox.ResumeLayout(false);
+            this.Whitelist_GroupBox.PerformLayout();
             this.backup_tab.ResumeLayout(false);
             this.restore_backup_g.ResumeLayout(false);
             this.ex_backup.ResumeLayout(false);
@@ -5593,11 +5600,6 @@
             this.deds_g.ResumeLayout(false);
             this.deds_g.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_status)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SQL_Host_Info_PictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SQL_Username_Info_PictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SQL_Password_Info_PictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SQL_Database_Name_Info_PictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SQL_Update_Time_Info_PictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -5606,8 +5608,8 @@
         #endregion
 
         private System.ComponentModel.BackgroundWorker status_updater;
-        private System.Windows.Forms.FolderBrowserDialog select_dir;
-        private System.Windows.Forms.NotifyIcon ikona;
+        private System.Windows.Forms.FolderBrowserDialog Select_Game_Directory;
+        private System.Windows.Forms.NotifyIcon App_Icon;
         private System.Windows.Forms.PictureBox img_status;
         private System.Windows.Forms.Label IP_Label;
         private System.Windows.Forms.TabPage settings;
@@ -5629,7 +5631,7 @@
         private System.Windows.Forms.RichTextBox Console_RichTextBox;
         private System.Windows.Forms.TabControl tabControl;
         private System.ComponentModel.BackgroundWorker server_startup_tasks;
-        private System.Windows.Forms.ImageList ikony_naglowka;
+        private System.Windows.Forms.ImageList Header_Icons;
         private System.Windows.Forms.TabPage ban_kick;
         private System.Windows.Forms.Button Kick_Player_Button;
         private System.Windows.Forms.Button Ban_Hammer_Button;
@@ -5649,10 +5651,10 @@
         private System.Windows.Forms.Button blad;
         private System.Windows.Forms.Button Auto_Detect_Game_File_Path_Button;
         private System.ComponentModel.BackgroundWorker auto_messages;
-        private System.Windows.Forms.RichTextBox spam_list;
-        private System.Windows.Forms.Label spaminfo;
-        private System.Windows.Forms.TrackBar spam_time;
-        private System.Windows.Forms.GroupBox spam_time_g;
+        private System.Windows.Forms.RichTextBox Server_Commands_List_RichTextBox;
+        private System.Windows.Forms.Label Server_Commands_Note_Label;
+        private System.Windows.Forms.TrackBar Server_Commands_Time_TrackBar;
+        private System.Windows.Forms.GroupBox Server_Commands_Delay_GroupBox;
         private System.Windows.Forms.CheckBox show_ip;
         private System.Windows.Forms.CheckBox cleanexit;
         private System.Windows.Forms.GroupBox Server_Controls_Group;
@@ -5771,17 +5773,17 @@
         private System.Windows.Forms.ColumnHeader login_header;
         private System.Windows.Forms.ColumnHeader steamid_header;
         private System.Windows.Forms.TabPage tasks;
-        private System.Windows.Forms.GroupBox spam_g;
+        private System.Windows.Forms.GroupBox Server_Commands_GroupBox;
         private System.ComponentModel.BackgroundWorker auto_reset;
-        private System.Windows.Forms.GroupBox reset_g;
-        private System.Windows.Forms.CheckBox reset_chat;
-        private System.Windows.Forms.CheckBox reset_enabled;
-        private System.Windows.Forms.TrackBar reset_time;
+        private System.Windows.Forms.GroupBox Auto_Restarts_GroupBox;
+        private System.Windows.Forms.CheckBox Warn_Before_Restart_CheckBox;
+        private System.Windows.Forms.CheckBox Enable_Auto_Restarts_CheckBox;
+        private System.Windows.Forms.TrackBar Auto_Restart_Time_TrackBar;
         private System.Windows.Forms.Label Auto_Restart_Timer;
         private System.Windows.Forms.Label Auto_Restart_Timer_Label;
         private System.Windows.Forms.GroupBox save_g;
         private System.Windows.Forms.TextBox save;
-        private System.Windows.Forms.CheckBox spam_is_spam;
+        private System.Windows.Forms.CheckBox Server_Commands_Say_Switch_CheckBox;
         private System.ComponentModel.BackgroundWorker stats;
         private System.Windows.Forms.GroupBox Air_Drop_Frequency_GroupBox;
         private System.Windows.Forms.TrackBar Air_Drop_Frequency_TrackBar;
@@ -5795,22 +5797,22 @@
         private System.Windows.Forms.RichTextBox Chat_RichTextBox;
         private System.Windows.Forms.TextBox Chat_Input_TextBox;
         private System.Windows.Forms.GroupBox SQL_GroupBox;
-        private System.Windows.Forms.Label reboot_l;
-        private System.Windows.Forms.Label backup_msg_1_l;
+        private System.Windows.Forms.Label Reboot_Now_Message_Label;
+        private System.Windows.Forms.Label Starting_Backup_Message_Label;
         private System.Windows.Forms.TextBox reboot;
-        private System.Windows.Forms.TextBox backup_msg_1;
-        private System.Windows.Forms.Label reboot_time_l;
+        private System.Windows.Forms.TextBox Starting_Backup_Message_TextBox;
+        private System.Windows.Forms.Label Time_Until_Reboot_Message_Label;
         private System.Windows.Forms.TextBox reboot_time;
-        private System.Windows.Forms.Label backup_msg_2_l;
-        private System.Windows.Forms.TextBox backup_msg_2;
-        private System.Windows.Forms.GroupBox messages_g;
-        private System.Windows.Forms.GroupBox customcommands_g;
-        private System.Windows.Forms.RichTextBox customcommands;
-        private System.Windows.Forms.Button how_to_commands;
-        private System.Windows.Forms.CheckBox enable_cc;
+        private System.Windows.Forms.Label Backup_Completed_Message_Label;
+        private System.Windows.Forms.TextBox Backup_Completed_Message_TextBox;
+        private System.Windows.Forms.GroupBox Server_Chat_Messages_GroupBox;
+        private System.Windows.Forms.GroupBox Custom_Commands_GroupBox;
+        private System.Windows.Forms.RichTextBox Custom_Commands_RichTextBox;
+        private System.Windows.Forms.Button How_To_Commands_Button;
+        private System.Windows.Forms.CheckBox Enable_Custom_Commands_CheckBox;
         private System.ComponentModel.BackgroundWorker custom_cmd_executor;
         private System.Windows.Forms.TextBox cmd_not_yet;
-        private System.Windows.Forms.Label cmd_not_yet_l;
+        private System.Windows.Forms.Label Command_Wait_Message_Label;
         private System.Windows.Forms.TabPage strings_page;
         private System.Windows.Forms.GroupBox configfile_g;
         private System.Windows.Forms.Button configfile_e;
@@ -5837,14 +5839,14 @@
         private System.Windows.Forms.Button Kill_Player_Button;
         private System.Windows.Forms.CheckBox debug_log;
         private System.Windows.Forms.Button www7dsm;
-        private System.Windows.Forms.GroupBox whitelist_dl_g;
-        private System.Windows.Forms.Label min_l;
-        private System.Windows.Forms.TextBox wl_interval;
-        private System.Windows.Forms.CheckBox wl_chk;
-        private System.Windows.Forms.Label wl_add_l;
-        private System.Windows.Forms.TextBox wl_add;
+        private System.Windows.Forms.GroupBox Whitelist_GroupBox;
+        private System.Windows.Forms.Label Auto_Update_Whitelist_Text_Label;
+        private System.Windows.Forms.TextBox Update_Whitelist_Interval_TextBox;
+        private System.Windows.Forms.CheckBox Auto_Update_Whitelist_CheckBox;
+        private System.Windows.Forms.Label Auto_Update_External_Whitelist_Note_Label;
+        private System.Windows.Forms.TextBox Auto_Update_External_Whitelist_URL_TextBox;
         private System.ComponentModel.BackgroundWorker autoupdate_whitelist;
-        private System.Windows.Forms.CheckBox use_wl;
+        private System.Windows.Forms.CheckBox Use_Whitelist_CheckBox;
         private System.Windows.Forms.Label Whitelist_Update_Timer;
         private System.Windows.Forms.Label Whitelist_Update_Label;
         private System.Windows.Forms.CheckBox Start_7DSM_With_Windows_CheckBox;
@@ -5983,11 +5985,11 @@
         private System.Windows.Forms.GroupBox MaxUncoveredMapChunksPerPlayer_g;
         private System.Windows.Forms.TextBox MaxUncoveredMapChunksPerPlayer;
         private System.Windows.Forms.CheckBox EnemySpawnMode;
-        private System.Windows.Forms.CheckBox excall;
-        private System.Windows.Forms.Label excall_file_l;
-        private System.Windows.Forms.Button excall_file;
+        private System.Windows.Forms.CheckBox Use_External_Call_CheckBox;
+        private System.Windows.Forms.Label External_Call_File_Name_Label;
+        private System.Windows.Forms.Button External_Call_File_Select_Button;
         private System.Windows.Forms.OpenFileDialog externalCallFile;
-        private System.Windows.Forms.Button how_to_commands2;
+        private System.Windows.Forms.Button How_To_Use_External_Calls_Button;
         private System.Windows.Forms.Label Auto_Command_Timer;
         private System.Windows.Forms.GroupBox News_Group;
         private System.Windows.Forms.GroupBox Server_Status_Group;
