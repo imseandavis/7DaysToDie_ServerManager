@@ -11,8 +11,6 @@ namespace _7DaysServerManager
     public partial class server_panel : Form
     {
 
-
-
         public string base64_img(int id)
         {
             switch (id)
@@ -27,8 +25,6 @@ namespace _7DaysServerManager
                     return null;
             }
         }
-
-
 
     }
 

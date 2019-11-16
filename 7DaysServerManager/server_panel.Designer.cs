@@ -108,20 +108,20 @@
             this.startbar = new System.Windows.Forms.ProgressBar();
             this.tabControl = new System.Windows.Forms.TabControl();
             this.server_manage = new System.Windows.Forms.TabPage();
-            this.commands_g = new System.Windows.Forms.GroupBox();
+            this.CommandsGroup = new System.Windows.Forms.GroupBox();
             this.usecmd = new System.Windows.Forms.Button();
             this.commandslist = new System.Windows.Forms.ListBox();
             this.zoomup = new System.Windows.Forms.Button();
             this.overviewSplitter = new System.Windows.Forms.SplitContainer();
-            this.news_g = new System.Windows.Forms.GroupBox();
+            this.NewsGroup = new System.Windows.Forms.GroupBox();
             this.newsbox = new System.Windows.Forms.RichTextBox();
-            this.serverhealth_g = new System.Windows.Forms.GroupBox();
+            this.ServerStatusGroup = new System.Windows.Forms.GroupBox();
             this.osarch = new System.Windows.Forms.Label();
             this.telnetstatus = new System.Windows.Forms.Label();
             this.osver = new System.Windows.Forms.Label();
             this.status = new System.Windows.Forms.Label();
-            this.kons_group = new System.Windows.Forms.GroupBox();
-            this.timers_g = new System.Windows.Forms.GroupBox();
+            this.ConsoleGroup = new System.Windows.Forms.GroupBox();
+            this.TimersGroup = new System.Windows.Forms.GroupBox();
             this.auto_messages_timer = new System.Windows.Forms.Label();
             this.wl_u_t_t = new System.Windows.Forms.Label();
             this.wl_u_t = new System.Windows.Forms.Label();
@@ -132,7 +132,7 @@
             this.sql_exporter_label = new System.Windows.Forms.Label();
             this.sql_exporter_timer = new System.Windows.Forms.Label();
             this.auto_messages_label = new System.Windows.Forms.Label();
-            this.kontrola = new System.Windows.Forms.GroupBox();
+            this.ServerControlsGroup = new System.Windows.Forms.GroupBox();
             this.start_with_win = new System.Windows.Forms.CheckBox();
             this.start_with_7dsm = new System.Windows.Forms.CheckBox();
             this.start = new System.Windows.Forms.Button();
@@ -448,16 +448,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.godzina_bar)).BeginInit();
             this.tabControl.SuspendLayout();
             this.server_manage.SuspendLayout();
-            this.commands_g.SuspendLayout();
+            this.CommandsGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.overviewSplitter)).BeginInit();
             this.overviewSplitter.Panel1.SuspendLayout();
             this.overviewSplitter.Panel2.SuspendLayout();
             this.overviewSplitter.SuspendLayout();
-            this.news_g.SuspendLayout();
-            this.serverhealth_g.SuspendLayout();
-            this.kons_group.SuspendLayout();
-            this.timers_g.SuspendLayout();
-            this.kontrola.SuspendLayout();
+            this.NewsGroup.SuspendLayout();
+            this.ServerStatusGroup.SuspendLayout();
+            this.ConsoleGroup.SuspendLayout();
+            this.TimersGroup.SuspendLayout();
+            this.ServerControlsGroup.SuspendLayout();
             this.ban_kick.SuspendLayout();
             this.chat_g.SuspendLayout();
             this.player_g.SuspendLayout();
@@ -793,7 +793,7 @@
             this.dondon2.Size = new System.Drawing.Size(75, 23);
             this.dondon2.TabIndex = 26;
             this.dondon2.UseVisualStyleBackColor = true;
-            this.dondon2.Click += new System.EventHandler(this.forumklik_Click);
+            this.dondon2.Click += new System.EventHandler(this.Forumklik_Click);
             // 
             // prem_info_2
             // 
@@ -1088,7 +1088,7 @@
             this.skip_profiles.TabIndex = 36;
             this.skip_profiles.Text = "Skip profile selection";
             this.skip_profiles.UseVisualStyleBackColor = true;
-            this.skip_profiles.CheckedChanged += new System.EventHandler(this.skip_profiles_CheckedChanged);
+            this.skip_profiles.CheckedChanged += new System.EventHandler(this.Skip_profiles_CheckedChanged);
             // 
             // browse
             // 
@@ -1098,7 +1098,7 @@
             this.browse.TabIndex = 35;
             this.browse.Text = "browse";
             this.browse.UseVisualStyleBackColor = true;
-            this.browse.Click += new System.EventHandler(this.browse_Click);
+            this.browse.Click += new System.EventHandler(this.Browse_Click);
             // 
             // anon_data_2
             // 
@@ -1483,7 +1483,7 @@
             this.cmd.AcceptsReturn = true;
             this.cmd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmd.Location = new System.Drawing.Point(6, 444);
+            this.cmd.Location = new System.Drawing.Point(6, 447);
             this.cmd.Name = "cmd";
             this.cmd.Size = new System.Drawing.Size(689, 20);
             this.cmd.TabIndex = 17;
@@ -1502,10 +1502,10 @@
             this.konsola.Name = "konsola";
             this.konsola.ReadOnly = true;
             this.konsola.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.konsola.Size = new System.Drawing.Size(686, 424);
+            this.konsola.Size = new System.Drawing.Size(686, 427);
             this.konsola.TabIndex = 15;
             this.konsola.Text = "";
-            this.konsola.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.konsola_LinkClicked);
+            this.konsola.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.Konsola_LinkClicked);
             this.konsola.TextChanged += new System.EventHandler(this.konsola_TextChanged);
             // 
             // startbar
@@ -1552,11 +1552,11 @@
             // server_manage
             // 
             this.server_manage.BackColor = System.Drawing.SystemColors.Control;
-            this.server_manage.Controls.Add(this.commands_g);
+            this.server_manage.Controls.Add(this.CommandsGroup);
             this.server_manage.Controls.Add(this.zoomup);
             this.server_manage.Controls.Add(this.overviewSplitter);
-            this.server_manage.Controls.Add(this.timers_g);
-            this.server_manage.Controls.Add(this.kontrola);
+            this.server_manage.Controls.Add(this.TimersGroup);
+            this.server_manage.Controls.Add(this.ServerControlsGroup);
             this.server_manage.Controls.Add(this.startbar);
             this.server_manage.ImageIndex = 0;
             this.server_manage.Location = new System.Drawing.Point(47, 4);
@@ -1564,18 +1564,18 @@
             this.server_manage.Size = new System.Drawing.Size(908, 684);
             this.server_manage.TabIndex = 7;
             // 
-            // commands_g
+            // CommandsGroup
             // 
-            this.commands_g.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.CommandsGroup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.commands_g.Controls.Add(this.usecmd);
-            this.commands_g.Controls.Add(this.commandslist);
-            this.commands_g.Location = new System.Drawing.Point(5, 467);
-            this.commands_g.Name = "commands_g";
-            this.commands_g.Size = new System.Drawing.Size(166, 188);
-            this.commands_g.TabIndex = 23;
-            this.commands_g.TabStop = false;
-            this.commands_g.Text = "Commands";
+            this.CommandsGroup.Controls.Add(this.usecmd);
+            this.CommandsGroup.Controls.Add(this.commandslist);
+            this.CommandsGroup.Location = new System.Drawing.Point(5, 467);
+            this.CommandsGroup.Name = "CommandsGroup";
+            this.CommandsGroup.Size = new System.Drawing.Size(166, 188);
+            this.CommandsGroup.TabIndex = 23;
+            this.CommandsGroup.TabStop = false;
+            this.CommandsGroup.Text = "Commands";
             // 
             // usecmd
             // 
@@ -1711,30 +1711,30 @@
             // 
             // overviewSplitter.Panel1
             // 
-            this.overviewSplitter.Panel1.Controls.Add(this.news_g);
-            this.overviewSplitter.Panel1.Controls.Add(this.serverhealth_g);
+            this.overviewSplitter.Panel1.Controls.Add(this.NewsGroup);
+            this.overviewSplitter.Panel1.Controls.Add(this.ServerStatusGroup);
             this.overviewSplitter.Panel1MinSize = 0;
             // 
             // overviewSplitter.Panel2
             // 
-            this.overviewSplitter.Panel2.Controls.Add(this.kons_group);
+            this.overviewSplitter.Panel2.Controls.Add(this.ConsoleGroup);
             this.overviewSplitter.Panel2MinSize = 0;
             this.overviewSplitter.Size = new System.Drawing.Size(707, 657);
             this.overviewSplitter.SplitterDistance = 171;
             this.overviewSplitter.SplitterWidth = 1;
             this.overviewSplitter.TabIndex = 21;
             // 
-            // news_g
+            // NewsGroup
             // 
-            this.news_g.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.NewsGroup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.news_g.Controls.Add(this.newsbox);
-            this.news_g.Location = new System.Drawing.Point(349, 8);
-            this.news_g.Name = "news_g";
-            this.news_g.Size = new System.Drawing.Size(352, 160);
-            this.news_g.TabIndex = 19;
-            this.news_g.TabStop = false;
-            this.news_g.Text = "News";
+            this.NewsGroup.Controls.Add(this.newsbox);
+            this.NewsGroup.Location = new System.Drawing.Point(349, 8);
+            this.NewsGroup.Name = "NewsGroup";
+            this.NewsGroup.Size = new System.Drawing.Size(352, 160);
+            this.NewsGroup.TabIndex = 19;
+            this.NewsGroup.TabStop = false;
+            this.NewsGroup.Text = "News";
             // 
             // newsbox
             // 
@@ -1748,22 +1748,22 @@
             this.newsbox.Text = "Downloading news...";
             this.newsbox.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.newsbox_LinkClicked);
             // 
-            // serverhealth_g
+            // ServerStatusGroup
             // 
-            this.serverhealth_g.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.ServerStatusGroup.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.serverhealth_g.Controls.Add(this.osarch);
-            this.serverhealth_g.Controls.Add(this.telnetstatus);
-            this.serverhealth_g.Controls.Add(this.osver);
-            this.serverhealth_g.Controls.Add(this.status);
-            this.serverhealth_g.Controls.Add(this.twoje_ip);
-            this.serverhealth_g.Location = new System.Drawing.Point(3, 8);
-            this.serverhealth_g.Name = "serverhealth_g";
-            this.serverhealth_g.Size = new System.Drawing.Size(340, 160);
-            this.serverhealth_g.TabIndex = 20;
-            this.serverhealth_g.TabStop = false;
-            this.serverhealth_g.Text = "Server status";
+            this.ServerStatusGroup.Controls.Add(this.osarch);
+            this.ServerStatusGroup.Controls.Add(this.telnetstatus);
+            this.ServerStatusGroup.Controls.Add(this.osver);
+            this.ServerStatusGroup.Controls.Add(this.status);
+            this.ServerStatusGroup.Controls.Add(this.twoje_ip);
+            this.ServerStatusGroup.Location = new System.Drawing.Point(3, 8);
+            this.ServerStatusGroup.Name = "ServerStatusGroup";
+            this.ServerStatusGroup.Size = new System.Drawing.Size(340, 160);
+            this.ServerStatusGroup.TabIndex = 20;
+            this.ServerStatusGroup.TabStop = false;
+            this.ServerStatusGroup.Text = "Server status";
             // 
             // osarch
             // 
@@ -1815,39 +1815,39 @@
             this.status.TabIndex = 2;
             this.status.Text = "status";
             // 
-            // kons_group
+            // ConsoleGroup
             // 
-            this.kons_group.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.ConsoleGroup.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kons_group.BackColor = System.Drawing.SystemColors.Control;
-            this.kons_group.Controls.Add(this.konsola);
-            this.kons_group.Controls.Add(this.cmd);
-            this.kons_group.Location = new System.Drawing.Point(3, 8);
-            this.kons_group.Name = "kons_group";
-            this.kons_group.Size = new System.Drawing.Size(698, 475);
-            this.kons_group.TabIndex = 18;
-            this.kons_group.TabStop = false;
-            this.kons_group.Text = "Console";
+            this.ConsoleGroup.BackColor = System.Drawing.SystemColors.Control;
+            this.ConsoleGroup.Controls.Add(this.konsola);
+            this.ConsoleGroup.Controls.Add(this.cmd);
+            this.ConsoleGroup.Location = new System.Drawing.Point(3, 8);
+            this.ConsoleGroup.Name = "ConsoleGroup";
+            this.ConsoleGroup.Size = new System.Drawing.Size(698, 478);
+            this.ConsoleGroup.TabIndex = 18;
+            this.ConsoleGroup.TabStop = false;
+            this.ConsoleGroup.Text = "Console";
             // 
-            // timers_g
+            // TimersGroup
             // 
-            this.timers_g.Controls.Add(this.auto_messages_timer);
-            this.timers_g.Controls.Add(this.wl_u_t_t);
-            this.timers_g.Controls.Add(this.wl_u_t);
-            this.timers_g.Controls.Add(this.reset_timer);
-            this.timers_g.Controls.Add(this.reset_timer_label);
-            this.timers_g.Controls.Add(this.backup_timer);
-            this.timers_g.Controls.Add(this.backup_timer_label);
-            this.timers_g.Controls.Add(this.sql_exporter_label);
-            this.timers_g.Controls.Add(this.sql_exporter_timer);
-            this.timers_g.Controls.Add(this.auto_messages_label);
-            this.timers_g.Location = new System.Drawing.Point(5, 266);
-            this.timers_g.Name = "timers_g";
-            this.timers_g.Size = new System.Drawing.Size(166, 195);
-            this.timers_g.TabIndex = 11;
-            this.timers_g.TabStop = false;
-            this.timers_g.Text = "timers_g";
+            this.TimersGroup.Controls.Add(this.auto_messages_timer);
+            this.TimersGroup.Controls.Add(this.wl_u_t_t);
+            this.TimersGroup.Controls.Add(this.wl_u_t);
+            this.TimersGroup.Controls.Add(this.reset_timer);
+            this.TimersGroup.Controls.Add(this.reset_timer_label);
+            this.TimersGroup.Controls.Add(this.backup_timer);
+            this.TimersGroup.Controls.Add(this.backup_timer_label);
+            this.TimersGroup.Controls.Add(this.sql_exporter_label);
+            this.TimersGroup.Controls.Add(this.sql_exporter_timer);
+            this.TimersGroup.Controls.Add(this.auto_messages_label);
+            this.TimersGroup.Location = new System.Drawing.Point(5, 266);
+            this.TimersGroup.Name = "TimersGroup";
+            this.TimersGroup.Size = new System.Drawing.Size(166, 195);
+            this.TimersGroup.TabIndex = 11;
+            this.TimersGroup.TabStop = false;
+            this.TimersGroup.Text = "timers_g";
             // 
             // auto_messages_timer
             // 
@@ -1944,21 +1944,21 @@
             this.auto_messages_label.TabIndex = 0;
             this.auto_messages_label.Text = "auto_messages_label";
             // 
-            // kontrola
+            // ServerControlsGroup
             // 
-            this.kontrola.Controls.Add(this.start_with_win);
-            this.kontrola.Controls.Add(this.start_with_7dsm);
-            this.kontrola.Controls.Add(this.start);
-            this.kontrola.Controls.Add(this.stop);
-            this.kontrola.Controls.Add(this.reboot_con);
-            this.kontrola.Controls.Add(this.save_logfiles_2);
-            this.kontrola.Controls.Add(this.kill_proccess);
-            this.kontrola.Location = new System.Drawing.Point(5, 8);
-            this.kontrola.Name = "kontrola";
-            this.kontrola.Size = new System.Drawing.Size(166, 252);
-            this.kontrola.TabIndex = 12;
-            this.kontrola.TabStop = false;
-            this.kontrola.Text = "Serwer";
+            this.ServerControlsGroup.Controls.Add(this.start_with_win);
+            this.ServerControlsGroup.Controls.Add(this.start_with_7dsm);
+            this.ServerControlsGroup.Controls.Add(this.start);
+            this.ServerControlsGroup.Controls.Add(this.stop);
+            this.ServerControlsGroup.Controls.Add(this.reboot_con);
+            this.ServerControlsGroup.Controls.Add(this.save_logfiles_2);
+            this.ServerControlsGroup.Controls.Add(this.kill_proccess);
+            this.ServerControlsGroup.Location = new System.Drawing.Point(5, 8);
+            this.ServerControlsGroup.Name = "ServerControlsGroup";
+            this.ServerControlsGroup.Size = new System.Drawing.Size(166, 252);
+            this.ServerControlsGroup.TabIndex = 12;
+            this.ServerControlsGroup.TabStop = false;
+            this.ServerControlsGroup.Text = "Server";
             // 
             // start_with_win
             // 
@@ -2001,7 +2001,7 @@
             this.stop.TabIndex = 5;
             this.stop.Text = "stop";
             this.stop.UseVisualStyleBackColor = true;
-            this.stop.Click += new System.EventHandler(this.stop_Click);
+            this.stop.Click += new System.EventHandler(this.Stop_Click);
             // 
             // reboot_con
             // 
@@ -2011,7 +2011,7 @@
             this.reboot_con.TabIndex = 18;
             this.reboot_con.Text = "reboot_con";
             this.reboot_con.UseVisualStyleBackColor = true;
-            this.reboot_con.Click += new System.EventHandler(this.reboot_con_Click);
+            this.reboot_con.Click += new System.EventHandler(this.Reboot_con_Click);
             // 
             // save_logfiles_2
             // 
@@ -2096,7 +2096,7 @@
             this.chat_text.Name = "chat_text";
             this.chat_text.Size = new System.Drawing.Size(580, 20);
             this.chat_text.TabIndex = 17;
-            this.chat_text.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.chat_text_KeyPress);
+            this.chat_text.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Chat_text_KeyPress);
             // 
             // all_players_l
             // 
@@ -2883,7 +2883,7 @@
             this.feral.TabIndex = 18;
             this.feral.Text = "feral";
             this.feral.UseVisualStyleBackColor = true;
-            this.feral.CheckedChanged += new System.EventHandler(this.feral_CheckedChanged);
+            this.feral.CheckedChanged += new System.EventHandler(this.Feral_CheckedChanged);
             // 
             // gamemode_surv_pvp
             // 
@@ -3274,7 +3274,7 @@
             this.configfile_e.TabIndex = 31;
             this.configfile_e.Text = "configfile_e";
             this.configfile_e.UseVisualStyleBackColor = true;
-            this.configfile_e.Click += new System.EventHandler(this.configfile_e_Click);
+            this.configfile_e.Click += new System.EventHandler(this.Configfile_e_Click);
             // 
             // configfile
             // 
@@ -3284,7 +3284,7 @@
             this.configfile.Name = "configfile";
             this.configfile.Size = new System.Drawing.Size(101, 20);
             this.configfile.TabIndex = 30;
-            this.configfile.TextChanged += new System.EventHandler(this.configfile_TextChanged);
+            this.configfile.TextChanged += new System.EventHandler(this.Configfile_TextChanged);
             // 
             // save_g
             // 
@@ -3304,7 +3304,7 @@
             this.save.Name = "save";
             this.save.Size = new System.Drawing.Size(354, 20);
             this.save.TabIndex = 30;
-            this.save.TextChanged += new System.EventHandler(this.save_TextChanged);
+            this.save.TextChanged += new System.EventHandler(this.Save_TextChanged);
             // 
             // filename_g
             // 
@@ -3326,7 +3326,7 @@
             this.sa_edit.TabIndex = 31;
             this.sa_edit.Text = "sa_edit";
             this.sa_edit.UseVisualStyleBackColor = true;
-            this.sa_edit.Click += new System.EventHandler(this.sa_edit_Click);
+            this.sa_edit.Click += new System.EventHandler(this.Sa_edit_Click);
             // 
             // AdminFileName
             // 
@@ -3852,7 +3852,7 @@
             this.telnet_port_p.Size = new System.Drawing.Size(49, 20);
             this.telnet_port_p.TabIndex = 15;
             this.telnet_port_p.Text = "8081";
-            this.telnet_port_p.TextChanged += new System.EventHandler(this.telnet_port_TextChanged);
+            this.telnet_port_p.TextChanged += new System.EventHandler(this.Telnet_port_TextChanged);
             // 
             // telnet_psw_l
             // 
@@ -3870,7 +3870,7 @@
             this.telnet_psw.PasswordChar = '*';
             this.telnet_psw.Size = new System.Drawing.Size(169, 20);
             this.telnet_psw.TabIndex = 13;
-            this.telnet_psw.TextChanged += new System.EventHandler(this.telnet_psw_TextChanged);
+            this.telnet_psw.TextChanged += new System.EventHandler(this.Telnet_psw_TextChanged);
             // 
             // ikony_naglowka
             // 
@@ -3919,7 +3919,7 @@
             this.cmd_not_yet.Name = "cmd_not_yet";
             this.cmd_not_yet.Size = new System.Drawing.Size(646, 20);
             this.cmd_not_yet.TabIndex = 12;
-            this.cmd_not_yet.TextChanged += new System.EventHandler(this.cmd_not_yet_TextChanged);
+            this.cmd_not_yet.TextChanged += new System.EventHandler(this.Cmd_not_yet_TextChanged);
             // 
             // cmd_not_yet_l
             // 
@@ -3938,7 +3938,7 @@
             this.backup_msg_1.Name = "backup_msg_1";
             this.backup_msg_1.Size = new System.Drawing.Size(646, 20);
             this.backup_msg_1.TabIndex = 4;
-            this.backup_msg_1.TextChanged += new System.EventHandler(this.backup_msg_1_TextChanged);
+            this.backup_msg_1.TextChanged += new System.EventHandler(this.Backup_msg_1_TextChanged);
             // 
             // backup_msg_2_l
             // 
@@ -3957,7 +3957,7 @@
             this.reboot.Name = "reboot";
             this.reboot.Size = new System.Drawing.Size(646, 20);
             this.reboot.TabIndex = 5;
-            this.reboot.TextChanged += new System.EventHandler(this.reboot_TextChanged);
+            this.reboot.TextChanged += new System.EventHandler(this.Reboot_TextChanged);
             // 
             // backup_msg_2
             // 
@@ -3967,7 +3967,7 @@
             this.backup_msg_2.Name = "backup_msg_2";
             this.backup_msg_2.Size = new System.Drawing.Size(646, 20);
             this.backup_msg_2.TabIndex = 10;
-            this.backup_msg_2.TextChanged += new System.EventHandler(this.backup_msg_2_TextChanged);
+            this.backup_msg_2.TextChanged += new System.EventHandler(this.Backup_msg_2_TextChanged);
             // 
             // backup_msg_1_l
             // 
@@ -4004,7 +4004,7 @@
             this.reboot_time.Name = "reboot_time";
             this.reboot_time.Size = new System.Drawing.Size(646, 20);
             this.reboot_time.TabIndex = 8;
-            this.reboot_time.TextChanged += new System.EventHandler(this.reboot_time_TextChanged);
+            this.reboot_time.TextChanged += new System.EventHandler(this.Reboot_time_TextChanged);
             // 
             // customcommands_g
             // 
@@ -4079,7 +4079,7 @@
             this.enable_cc.TabIndex = 15;
             this.enable_cc.Text = "enable_cc";
             this.enable_cc.UseVisualStyleBackColor = true;
-            this.enable_cc.CheckedChanged += new System.EventHandler(this.enable_cc_CheckedChanged);
+            this.enable_cc.CheckedChanged += new System.EventHandler(this.Enable_cc_CheckedChanged);
             // 
             // how_to_commands
             // 
@@ -4090,7 +4090,7 @@
             this.how_to_commands.TabIndex = 14;
             this.how_to_commands.Text = "how_to_commands";
             this.how_to_commands.UseVisualStyleBackColor = true;
-            this.how_to_commands.Click += new System.EventHandler(this.how_to_commands_Click);
+            this.how_to_commands.Click += new System.EventHandler(this.How_to_commands_Click);
             // 
             // customcommands
             // 
@@ -4102,7 +4102,7 @@
             this.customcommands.Size = new System.Drawing.Size(860, 336);
             this.customcommands.TabIndex = 13;
             this.customcommands.Text = "";
-            this.customcommands.TextChanged += new System.EventHandler(this.customcommands_TextChanged);
+            this.customcommands.TextChanged += new System.EventHandler(this.Customcommands_TextChanged);
             // 
             // globalBanList
             // 
@@ -4590,7 +4590,7 @@
             this.reset_chat.TabIndex = 10;
             this.reset_chat.Text = "reset_chat";
             this.reset_chat.UseVisualStyleBackColor = true;
-            this.reset_chat.CheckedChanged += new System.EventHandler(this.reset_chat_CheckedChanged);
+            this.reset_chat.CheckedChanged += new System.EventHandler(this.Reset_chat_CheckedChanged);
             // 
             // reset_enabled
             // 
@@ -4601,7 +4601,7 @@
             this.reset_enabled.TabIndex = 9;
             this.reset_enabled.Text = "reset_enabled";
             this.reset_enabled.UseVisualStyleBackColor = true;
-            this.reset_enabled.CheckedChanged += new System.EventHandler(this.reset_enabled_CheckedChanged);
+            this.reset_enabled.CheckedChanged += new System.EventHandler(this.Reset_enabled_CheckedChanged);
             // 
             // reset_time
             // 
@@ -4642,7 +4642,7 @@
             this.spam_is_spam.TabIndex = 4;
             this.spam_is_spam.Text = "spam_is_spam";
             this.spam_is_spam.UseVisualStyleBackColor = true;
-            this.spam_is_spam.CheckedChanged += new System.EventHandler(this.spam_is_spam_CheckedChanged);
+            this.spam_is_spam.CheckedChanged += new System.EventHandler(this.Spam_is_spam_CheckedChanged);
             // 
             // spaminfo
             // 
@@ -5102,12 +5102,12 @@
             // stats
             // 
             this.stats.WorkerSupportsCancellation = true;
-            this.stats.DoWork += new System.ComponentModel.DoWorkEventHandler(this.stats_DoWork);
+            this.stats.DoWork += new System.ComponentModel.DoWorkEventHandler(this.Stats_DoWork);
             // 
             // reboot_telnet
             // 
             this.reboot_telnet.WorkerSupportsCancellation = true;
-            this.reboot_telnet.DoWork += new System.ComponentModel.DoWorkEventHandler(this.reboot_telnet_DoWork);
+            this.reboot_telnet.DoWork += new System.ComponentModel.DoWorkEventHandler(this.Reboot_telnet_DoWork);
             // 
             // custom_cmd_executor
             // 
@@ -5117,7 +5117,7 @@
             // server_stop_tasks
             // 
             this.server_stop_tasks.WorkerSupportsCancellation = true;
-            this.server_stop_tasks.DoWork += new System.ComponentModel.DoWorkEventHandler(this.server_stop_tasks_DoWork);
+            this.server_stop_tasks.DoWork += new System.ComponentModel.DoWorkEventHandler(this.Server_stop_tasks_DoWork);
             // 
             // toolTip
             // 
@@ -5242,7 +5242,7 @@
             this.forumklik.Size = new System.Drawing.Size(102, 33);
             this.forumklik.TabIndex = 25;
             this.forumklik.UseVisualStyleBackColor = true;
-            this.forumklik.Click += new System.EventHandler(this.forumklik_Click);
+            this.forumklik.Click += new System.EventHandler(this.Forumklik_Click);
             // 
             // www7dsm
             // 
@@ -5274,7 +5274,7 @@
             this.like.Size = new System.Drawing.Size(43, 43);
             this.like.TabIndex = 35;
             this.like.UseVisualStyleBackColor = true;
-            this.like.Click += new System.EventHandler(this.like_Click);
+            this.like.Click += new System.EventHandler(this.Like_Click);
             // 
             // externalCallFile
             // 
@@ -5357,20 +5357,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.godzina_bar)).EndInit();
             this.tabControl.ResumeLayout(false);
             this.server_manage.ResumeLayout(false);
-            this.commands_g.ResumeLayout(false);
+            this.CommandsGroup.ResumeLayout(false);
             this.overviewSplitter.Panel1.ResumeLayout(false);
             this.overviewSplitter.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.overviewSplitter)).EndInit();
             this.overviewSplitter.ResumeLayout(false);
-            this.news_g.ResumeLayout(false);
-            this.serverhealth_g.ResumeLayout(false);
-            this.serverhealth_g.PerformLayout();
-            this.kons_group.ResumeLayout(false);
-            this.kons_group.PerformLayout();
-            this.timers_g.ResumeLayout(false);
-            this.timers_g.PerformLayout();
-            this.kontrola.ResumeLayout(false);
-            this.kontrola.PerformLayout();
+            this.NewsGroup.ResumeLayout(false);
+            this.ServerStatusGroup.ResumeLayout(false);
+            this.ServerStatusGroup.PerformLayout();
+            this.ConsoleGroup.ResumeLayout(false);
+            this.ConsoleGroup.PerformLayout();
+            this.TimersGroup.ResumeLayout(false);
+            this.TimersGroup.PerformLayout();
+            this.ServerControlsGroup.ResumeLayout(false);
+            this.ServerControlsGroup.PerformLayout();
             this.ban_kick.ResumeLayout(false);
             this.ban_kick.PerformLayout();
             this.chat_g.ResumeLayout(false);
@@ -5566,7 +5566,7 @@
         private System.Windows.Forms.GroupBox kickgroup;
         private System.Windows.Forms.GroupBox bantime_slider;
         private System.Windows.Forms.TrackBar ban_slide;
-        private System.Windows.Forms.GroupBox kons_group;
+        private System.Windows.Forms.GroupBox ConsoleGroup;
         private System.Windows.Forms.CheckBox always_on_top;
         private System.Windows.Forms.Button blad;
         private System.Windows.Forms.Button steamsearch;
@@ -5577,7 +5577,7 @@
         private System.Windows.Forms.GroupBox spam_time_g;
         private System.Windows.Forms.CheckBox show_ip;
         private System.Windows.Forms.CheckBox cleanexit;
-        private System.Windows.Forms.GroupBox kontrola;
+        private System.Windows.Forms.GroupBox ServerControlsGroup;
         private System.Windows.Forms.CheckBox save_logfiles_2;
         private System.Windows.Forms.Button stop;
         private System.Windows.Forms.Button start;
@@ -5600,7 +5600,7 @@
         private System.Windows.Forms.Button how_to_sql;
         private System.Windows.Forms.GroupBox sql_updates_time_g;
         private System.Windows.Forms.TextBox sql_updates_time;
-        private System.Windows.Forms.GroupBox timers_g;
+        private System.Windows.Forms.GroupBox TimersGroup;
         private System.Windows.Forms.Label sql_exporter_label;
         private System.Windows.Forms.Label sql_exporter_timer;
         private System.Windows.Forms.Label auto_messages_label;
@@ -5912,8 +5912,8 @@
         private System.Windows.Forms.OpenFileDialog externalCallFile;
         private System.Windows.Forms.Button how_to_commands2;
         private System.Windows.Forms.Label auto_messages_timer;
-        private System.Windows.Forms.GroupBox news_g;
-        private System.Windows.Forms.GroupBox serverhealth_g;
+        private System.Windows.Forms.GroupBox NewsGroup;
+        private System.Windows.Forms.GroupBox ServerStatusGroup;
         private System.Windows.Forms.RichTextBox newsbox;
         private System.Windows.Forms.SplitContainer overviewSplitter;
         private System.Windows.Forms.Button zoomup;
@@ -5922,7 +5922,7 @@
         private System.Windows.Forms.Label osarch;
         private System.Windows.Forms.Button discord_b;
         private System.Windows.Forms.ListBox commandslist;
-        private System.Windows.Forms.GroupBox commands_g;
+        private System.Windows.Forms.GroupBox CommandsGroup;
         private System.Windows.Forms.Button usecmd;
     }
 }

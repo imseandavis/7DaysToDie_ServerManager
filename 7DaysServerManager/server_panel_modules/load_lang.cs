@@ -33,8 +33,8 @@ namespace _7DaysServerManager
             kick.Text = lang("kick");
             kickgroup.Text = lang("kickgroup");
             kill_proccess.Text = lang("kill_proccess");
-            kons_group.Text = lang("kons_group");
-            kontrola.Text = lang("kontrola");
+            ConsoleGroup.Text = lang("kons_group");
+            ServerControlsGroup.Text = lang("kontrola");
 
             maxplgroup.Text = lang("maxplgroup");
             nazwamapa.Text = lang("nazwamapa");
@@ -79,7 +79,7 @@ namespace _7DaysServerManager
             sql_warn.Text = lang("sql_warn");
             upd_time.Text = lang("upd_time");
             sql_updates_time_g.Text = lang("sql_updates_time_g");
-            timers_g.Text = lang("timers_g");
+            TimersGroup.Text = lang("timers_g");
             auto_messages_label.Text = lang("auto_messages_label");
             sql_exporter_label.Text = lang("sql_export_label");
 
