@@ -155,7 +155,7 @@ namespace _7DaysServerManager
 
 
 
-                rstr = rstr.Replace("{img_1}", base64_img(1)).Replace("{img_2}", base64_img(2)).Replace("{img_3}", base64_img(3));
+                rstr = rstr.Replace("{img_1}", Base64_img(1)).Replace("{img_2}", Base64_img(2)).Replace("{img_3}", Base64_img(3));
             }
             else
             {

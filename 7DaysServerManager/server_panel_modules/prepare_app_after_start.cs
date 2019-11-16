@@ -90,7 +90,7 @@ namespace _7DaysServerManager
 
 
 
-            echo_debug("7DaysServerManager ver: " + ver + " game ver: " + game_ver + "\nDEBUG MODE");
+            Echo_debug("7DaysServerManager ver: " + ver + " game ver: " + game_ver + "\nDEBUG MODE");
 
             if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "anon_data", null) == "0")
             {
@@ -103,7 +103,7 @@ namespace _7DaysServerManager
 
 
 
-            echo("7DaysServerManager " + ver + " (Compiled " + Convert.ToString(AssemblyCreationDate.Value) + ")", 0, true);
+            Echo("7DaysServerManager " + ver + " (Compiled " + Convert.ToString(AssemblyCreationDate.Value) + ")", 0, true);
             //echo("Compilation date: " + Convert.ToString(AssemblyCreationDate.Value), 0, true);
 
 
@@ -148,7 +148,7 @@ namespace _7DaysServerManager
 
             Read_config();
 
-            load_lang();
+            Load_Languages();
 
             workers_list.RunWorkerAsync();
 
@@ -160,7 +160,7 @@ namespace _7DaysServerManager
 
 
 
-            echo_debug("---checking update---");
+            Echo_debug("---checking update---");
 
             if (File.Exists("server_updater.exe"))
             {
@@ -168,7 +168,7 @@ namespace _7DaysServerManager
                 {
                     File.Delete("server_updater.exe");
                     MessageBox.Show(lang("update_ok"), lang("update"));
-                    echo(lang("update_ok"), 0, true);
+                    Echo(lang("update_ok"), 0, true);
                     MessageBox.Show(whatsnew, "What's new in ServerManager " + ver);
                 }
                 catch
@@ -233,7 +233,7 @@ namespace _7DaysServerManager
 
 
 
-            echo_debug("---getting srv IP---");
+            Echo_debug("---getting srv IP---");
 
 
 
@@ -534,7 +534,7 @@ namespace _7DaysServerManager
 
                 if (aak == null)
                 {
-                    echo_debug("AAK");
+                    Echo_debug("AAK");
                     aak = CreatePassword(5);
                     Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "android_access_key", aak);
                 }
@@ -543,7 +543,7 @@ namespace _7DaysServerManager
             }
             catch (Exception e)
             {
-                echo_debug(e + "");
+                Echo_debug(e + "");
             }
 
 
@@ -689,7 +689,7 @@ namespace _7DaysServerManager
 
             if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\", "tmp_prem", null) == "1")
             {
-                echo_debug("local premium valid, unlocking");
+                Echo_debug("local premium valid, unlocking");
                 Unlock_Premium();
             }
 
@@ -701,7 +701,7 @@ namespace _7DaysServerManager
 
 
 
-            pobierz_mapy(mapa.Text);
+            Download_maps(mapa.Text);
 
 
 
@@ -827,8 +827,8 @@ namespace _7DaysServerManager
 
             if (translation_error)
             {
-                echo("There are problems with language file.", 3, true);
-                echo("If You're author of translation type \"local transerr\" otherwise look for updated lang.xml file.", 2, true);
+                Echo("There are problems with language file.", 3, true);
+                Echo("If You're author of translation type \"local transerr\" otherwise look for updated lang.xml file.", 2, true);
             }
 
 
@@ -875,7 +875,7 @@ namespace _7DaysServerManager
 
 
 
-            echo_debug("->prepare_app_after_start finished task!");
+            Echo_debug("->prepare_app_after_start finished task!");
 
         }
 
@@ -895,7 +895,7 @@ namespace _7DaysServerManager
 
 
 
-            echo_debug("*STARTWEBSERVER*");
+            Echo_debug("*STARTWEBSERVER*");
 
             string[] prefixes = GetPrefixes(false);
 
@@ -914,7 +914,7 @@ namespace _7DaysServerManager
             }
             catch (Exception e)
             {
-                echo_debug(e + "");
+                Echo_debug(e + "");
             }
 
 
@@ -924,7 +924,7 @@ namespace _7DaysServerManager
             {
                 _listener.Prefixes.Add(s.Replace("{aak}", aak));
 
-                echo_debug(s.Replace("{aak}", aak));
+                Echo_debug(s.Replace("{aak}", aak));
             }
 
 
@@ -938,7 +938,7 @@ namespace _7DaysServerManager
             {
                 //Not Authorized!
 
-                echo_debug(""+e);
+                Echo_debug(""+e);
 
                 Fix_WebServer();
 
@@ -966,7 +966,7 @@ namespace _7DaysServerManager
             }
             catch (Exception e)
             {
-                echo_debug(e + "");
+                Echo_debug(e + "");
             }
 
             String all_comds = "";
@@ -977,7 +977,7 @@ namespace _7DaysServerManager
             foreach (string s in prefixes)
             {
                 all_comds += comd.Replace("{prefix}", s).Replace("{aak}", aak) + "\n";
-                echo_debug(comd.Replace("{prefix}", s).Replace("{aak}", aak) + "\n");
+                Echo_debug(comd.Replace("{prefix}", s).Replace("{aak}", aak) + "\n");
             }
 
 
@@ -987,7 +987,7 @@ namespace _7DaysServerManager
             foreach (string s in prefixes)
             {
                 all_comds += comd.Replace("{prefix}", s).Replace("{aak}", aak) + "\n";
-                echo_debug(comd.Replace("{prefix}", s).Replace("{aak}", aak) + "\n");
+                Echo_debug(comd.Replace("{prefix}", s).Replace("{aak}", aak) + "\n");
             }
 
 
@@ -1011,7 +1011,7 @@ namespace _7DaysServerManager
 
 
 
-            echo_debug(obrobiony);
+            Echo_debug(obrobiony);
 
             ProcessStartInfo startInfo = new ProcessStartInfo("cmd.exe", "/c " + obrobiony);
             startInfo.Verb = "runas";
@@ -1049,7 +1049,7 @@ namespace _7DaysServerManager
             }
             catch (Exception e)
             {
-                echo_debug(e + "");
+                Echo_debug(e + "");
             }
 
 
@@ -1061,7 +1061,7 @@ namespace _7DaysServerManager
             foreach (string s in prefixes)
             {
                 all_comds += comd.Replace("{prefix}", s).Replace("{aak}", aak) + "\n";
-                echo_debug(comd.Replace("{prefix}", s).Replace("{aak}", aak) + "\n");
+                Echo_debug(comd.Replace("{prefix}", s).Replace("{aak}", aak) + "\n");
             }
 
 
@@ -1087,7 +1087,7 @@ namespace _7DaysServerManager
 
 
 
-            echo_debug(obrobiony);
+            Echo_debug(obrobiony);
 
             ProcessStartInfo startInfo = new ProcessStartInfo("cmd.exe", "/c " + obrobiony);
             startInfo.Verb = "runas";

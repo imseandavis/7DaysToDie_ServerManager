@@ -15,7 +15,7 @@ namespace _7DaysServerManager
     {
         public void run_server()
         {
-            echo_debug("---server start---");
+            Echo_debug("---server start---");
             server_online = false;
 
 
@@ -49,8 +49,8 @@ namespace _7DaysServerManager
 
                 if (file_path == "" | !File.Exists(file_path + "\\" + exec_name))
                 {
-                    echo(lang("error"), 3, true);
-                    echo(lang("game_not_found_cons"), 3, true);
+                    Echo(lang("error"), 3, true);
+                    Echo(lang("game_not_found_cons"), 3, true);
                     MessageBox.Show(lang("game_not_found"), lang("error"));
 
 
@@ -65,27 +65,27 @@ namespace _7DaysServerManager
                         if (File.Exists(file_path + "\\" + exe_name.Text))
                         {
                             MessageBox.Show(lang("dir_ok"), lang("saved"));
-                            echo(lang("dir_ok"), 0, true);
+                            Echo(lang("dir_ok"), 0, true);
                             Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", file_path);
                             Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "server_type", "client");
                         }
                         else if (File.Exists(file_path + "\\7daystodieserver.exe"))
                         {
                             MessageBox.Show(lang("dir_ok"), lang("saved"));
-                            echo(lang("dir_ok"), 0, true);
+                            Echo(lang("dir_ok"), 0, true);
                             Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", file_path);
                             Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "server_type", "server");
                         }
                         else
                         {
                             MessageBox.Show(lang("game_not_found_2"), lang("error"));
-                            echo(lang("game_not_found_2"), 3, true);
+                            Echo(lang("game_not_found_2"), 3, true);
                         }
                     }
                 }
                 else
                 {
-                    echo_debug(file_path + "\\" + exec_name + parametry);
+                    Echo_debug(file_path + "\\" + exec_name + parametry);
                     System.Diagnostics.Process.Start(file_path + "\\" + exec_name, parametry);
                     Shutdown_Server_Button.Enabled = true;
                     Start_Server_Button.Enabled = false;
@@ -97,7 +97,7 @@ namespace _7DaysServerManager
                     server_online = true;
 
                     //echo("OK", 1, true);
-                    echo(lang("run_from") + file_path, 0, true);
+                    Echo(lang("run_from") + file_path, 0, true);
 
                     try
                     {
@@ -110,7 +110,7 @@ namespace _7DaysServerManager
 
 
 
-            echo_debug("---DONE!---");
+            Echo_debug("---DONE!---");
         }
 
     }

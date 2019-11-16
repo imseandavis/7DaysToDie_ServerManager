@@ -16,15 +16,15 @@ namespace _7DaysServerManager
 
         public void Generate_config(object sender, EventArgs e)
         {
-            generate_config();
+            Generate_Config();
         }
 
 
-        public void generate_config()
+        public void Generate_Config()
         {
             if (IP_Label.Text != "Checking IP...")  // The Label Is Changed After The Configuraiton Is Loaded So That It Doesn't Get Accessed When Loading The Configuration From A File.
             {
-                echo_debug("---Saving Config---");
+                Echo_debug("---Saving Config---");
                 string gamemode = "GameModeSurvivalMP", serverispublic = "false", cheat = "false", cpl = "false", zombierun = "0", dropondeathmode = "0", droponquitmode = "0", feral_c = "0", vac = "false", PersistentPlayerProfiles_l = "false", PlayerKillingMode = "0", adm = "false", hce = "0", sdnp = "", EnemySpawnMode_Selected="false";
 
                 // Set Game Mode
@@ -332,7 +332,7 @@ namespace _7DaysServerManager
                 }
                 catch
                 {
-                    echo_debug("---ERR: File access error---");
+                    Echo_debug("---ERR: File access error---");
                     System.Threading.Thread.Sleep(100);
                 }
             }
@@ -342,7 +342,7 @@ namespace _7DaysServerManager
 
         public void Read_config()
         {
-            echo_debug("---Reading Game Config---");
+            Echo_debug("---Reading Game Config---");
 
             try
             {
@@ -616,11 +616,11 @@ namespace _7DaysServerManager
 
 
                 xmlReader.Close();
-                echo_debug("---EOF---");
+                Echo_debug("---EOF---");
             }
             catch (Exception e)
             {
-                echo_debug("ERR READING CFG FILE: " + e);
+                Echo_debug("ERR READING CFG FILE: " + e);
             }
         }
     }

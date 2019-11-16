@@ -639,7 +639,7 @@
             this.Apply_Update_Channel_Button.TabIndex = 44;
             this.Apply_Update_Channel_Button.Text = "Apply";
             this.Apply_Update_Channel_Button.UseVisualStyleBackColor = true;
-            this.Apply_Update_Channel_Button.Click += new System.EventHandler(this.apply_update_channel_Click);
+            this.Apply_Update_Channel_Button.Click += new System.EventHandler(this.Apply_update_channel_Click);
             // 
             // Force_Update_Button
             // 
@@ -1216,7 +1216,7 @@
             this.show_ip.TabIndex = 30;
             this.show_ip.Text = "show_ip";
             this.show_ip.UseVisualStyleBackColor = true;
-            this.show_ip.CheckedChanged += new System.EventHandler(this.show_ip_CheckedChanged);
+            this.show_ip.CheckedChanged += new System.EventHandler(this.Show_IP_CheckedChanged);
             // 
             // Auto_Detect_Game_File_Path_Button
             // 
@@ -1553,7 +1553,7 @@
             this.cmd.AcceptsReturn = true;
             this.cmd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmd.Location = new System.Drawing.Point(6, 456);
+            this.cmd.Location = new System.Drawing.Point(6, 459);
             this.cmd.Name = "cmd";
             this.cmd.Size = new System.Drawing.Size(689, 20);
             this.cmd.TabIndex = 17;
@@ -1572,7 +1572,7 @@
             this.Console_RichTextBox.Name = "Console_RichTextBox";
             this.Console_RichTextBox.ReadOnly = true;
             this.Console_RichTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.Console_RichTextBox.Size = new System.Drawing.Size(686, 436);
+            this.Console_RichTextBox.Size = new System.Drawing.Size(686, 439);
             this.Console_RichTextBox.TabIndex = 15;
             this.Console_RichTextBox.Text = "";
             this.Console_RichTextBox.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.Konsola_LinkClicked);
@@ -1896,7 +1896,7 @@
             this.Console_Group.Controls.Add(this.cmd);
             this.Console_Group.Location = new System.Drawing.Point(3, 8);
             this.Console_Group.Name = "Console_Group";
-            this.Console_Group.Size = new System.Drawing.Size(698, 487);
+            this.Console_Group.Size = new System.Drawing.Size(698, 490);
             this.Console_Group.TabIndex = 18;
             this.Console_Group.TabStop = false;
             this.Console_Group.Text = "Console";
@@ -2061,7 +2061,7 @@
             this.Start_Server_Button.TabIndex = 4;
             this.Start_Server_Button.Text = "Start Server";
             this.Start_Server_Button.UseVisualStyleBackColor = true;
-            this.Start_Server_Button.Click += new System.EventHandler(this.button1_Click);
+            this.Start_Server_Button.Click += new System.EventHandler(this.Start_Server_Button_Click);
             // 
             // Shutdown_Server_Button
             // 
@@ -2206,7 +2206,7 @@
             this.All_Players_List.UseCompatibleStateImageBehavior = false;
             this.All_Players_List.View = System.Windows.Forms.View.Details;
             this.All_Players_List.SelectedIndexChanged += new System.EventHandler(this.all_players_list_SelectedIndexChanged);
-            this.All_Players_List.Click += new System.EventHandler(this.all_players_list_Click);
+            this.All_Players_List.Click += new System.EventHandler(this.All_players_list_Click);
             // 
             // columnHeader1
             // 
@@ -2376,8 +2376,8 @@
             this.Online_Player_List.TabIndex = 0;
             this.Online_Player_List.UseCompatibleStateImageBehavior = false;
             this.Online_Player_List.View = System.Windows.Forms.View.Details;
-            this.Online_Player_List.SelectedIndexChanged += new System.EventHandler(this.players_list_SelectedIndexChanged);
-            this.Online_Player_List.Click += new System.EventHandler(this.players_list_Click);
+            this.Online_Player_List.SelectedIndexChanged += new System.EventHandler(this.Players_list_SelectedIndexChanged);
+            this.Online_Player_List.Click += new System.EventHandler(this.Players_list_Click);
             // 
             // login_header
             // 
@@ -3148,7 +3148,7 @@
             this.realtime.UseVisualStyleBackColor = true;
             this.realtime.CheckedChanged += new System.EventHandler(this.realtime_CheckedChanged);
             // 
-            // dlugoscdnia
+            // dayLength
             // 
             this.dayLength.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -3156,7 +3156,7 @@
             this.dayLength.Location = new System.Drawing.Point(6, 19);
             this.dayLength.Maximum = 240;
             this.dayLength.Minimum = 1;
-            this.dayLength.Name = "dlugoscdnia";
+            this.dayLength.Name = "dayLength";
             this.dayLength.Size = new System.Drawing.Size(496, 45);
             this.dayLength.TabIndex = 9;
             this.dayLength.Value = 20;
@@ -4200,7 +4200,7 @@
             this.check_bans.TabIndex = 29;
             this.check_bans.Text = "Check if player is banned";
             this.check_bans.UseVisualStyleBackColor = true;
-            this.check_bans.Click += new System.EventHandler(this.check_bans_Click);
+            this.check_bans.Click += new System.EventHandler(this.Check_bans_Click);
             // 
             // global_ban_g
             // 
@@ -4232,7 +4232,7 @@
             this.sendbans.Text = "Share my list of banned players to help other servers\r\n(please do not turn it off" +
     " if not necessary)\r\n";
             this.sendbans.UseVisualStyleBackColor = true;
-            this.sendbans.CheckedChanged += new System.EventHandler(this.sendbans_CheckedChanged);
+            this.sendbans.CheckedChanged += new System.EventHandler(this.Sendbans_CheckedChanged);
             // 
             // label1
             // 
@@ -4255,7 +4255,7 @@
             this.glob_3.TabStop = true;
             this.glob_3.Text = "Don\'t allow monitored players (banned on less than 3 servers)";
             this.glob_3.UseVisualStyleBackColor = true;
-            this.glob_3.CheckedChanged += new System.EventHandler(this.glob_0_CheckedChanged);
+            this.glob_3.CheckedChanged += new System.EventHandler(this.Glob_0_CheckedChanged);
             // 
             // glob_0
             // 
@@ -4267,7 +4267,7 @@
             this.glob_0.TabStop = true;
             this.glob_0.Text = "Allow everybody to join";
             this.glob_0.UseVisualStyleBackColor = true;
-            this.glob_0.CheckedChanged += new System.EventHandler(this.glob_0_CheckedChanged);
+            this.glob_0.CheckedChanged += new System.EventHandler(this.Glob_0_CheckedChanged);
             // 
             // glob_2
             // 
@@ -4279,7 +4279,7 @@
             this.glob_2.TabStop = true;
             this.glob_2.Text = "Don\'t allow globally banned players to join";
             this.glob_2.UseVisualStyleBackColor = true;
-            this.glob_2.CheckedChanged += new System.EventHandler(this.glob_0_CheckedChanged);
+            this.glob_2.CheckedChanged += new System.EventHandler(this.Glob_0_CheckedChanged);
             // 
             // glob_1
             // 
@@ -4292,7 +4292,7 @@
             this.glob_1.TabStop = true;
             this.glob_1.Text = "Warn me when globally banned player joins, but let him play\r\n";
             this.glob_1.UseVisualStyleBackColor = true;
-            this.glob_1.CheckedChanged += new System.EventHandler(this.glob_0_CheckedChanged);
+            this.glob_1.CheckedChanged += new System.EventHandler(this.Glob_0_CheckedChanged);
             // 
             // banlist_logo
             // 
@@ -4339,7 +4339,7 @@
             this.reverse_reservation.TabIndex = 2;
             this.reverse_reservation.Text = "Cancel reservations";
             this.reverse_reservation.UseVisualStyleBackColor = true;
-            this.reverse_reservation.Click += new System.EventHandler(this.reverse_reservation_Click);
+            this.reverse_reservation.Click += new System.EventHandler(this.Reverse_reservation_Click);
             // 
             // conflict_l
             // 
@@ -4361,7 +4361,7 @@
             this.fix_firewall_and_other_windows_shit.TabIndex = 28;
             this.fix_firewall_and_other_windows_shit.Text = "Run Autofix";
             this.fix_firewall_and_other_windows_shit.UseVisualStyleBackColor = true;
-            this.fix_firewall_and_other_windows_shit.Click += new System.EventHandler(this.fix_firewall_and_other_windows_shit_Click);
+            this.fix_firewall_and_other_windows_shit.Click += new System.EventHandler(this.Fix_firewall_and_other_windows_shit_Click);
             // 
             // fix_l
             // 
@@ -4421,7 +4421,7 @@
             this.www_main_content.Size = new System.Drawing.Size(852, 386);
             this.www_main_content.TabIndex = 4;
             this.www_main_content.Text = resources.GetString("www_main_content.Text");
-            this.www_main_content.TextChanged += new System.EventHandler(this.www_main_content_TextChanged);
+            this.www_main_content.TextChanged += new System.EventHandler(this.Www_main_content_TextChanged);
             // 
             // rules_tab
             // 
@@ -4442,7 +4442,7 @@
             this.rules_content.Size = new System.Drawing.Size(852, 386);
             this.rules_content.TabIndex = 5;
             this.rules_content.Text = resources.GetString("rules_content.Text");
-            this.rules_content.TextChanged += new System.EventHandler(this.rules_content_TextChanged);
+            this.rules_content.TextChanged += new System.EventHandler(this.Rules_content_TextChanged);
             // 
             // other_tab
             // 
@@ -4479,7 +4479,7 @@
             this.hide_footer.TabIndex = 6;
             this.hide_footer.Text = "Hide footer";
             this.hide_footer.UseVisualStyleBackColor = true;
-            this.hide_footer.CheckedChanged += new System.EventHandler(this.hide_footer_CheckedChanged);
+            this.hide_footer.CheckedChanged += new System.EventHandler(this.Hide_footer_CheckedChanged);
             // 
             // allowed_replacements_l
             // 
@@ -4517,7 +4517,7 @@
             this.forum_url.Size = new System.Drawing.Size(307, 20);
             this.forum_url.TabIndex = 2;
             this.forum_url.Text = "https://7daystodie.com/forums/";
-            this.forum_url.TextChanged += new System.EventHandler(this.forum_url_TextChanged);
+            this.forum_url.TextChanged += new System.EventHandler(this.Forum_url_TextChanged);
             // 
             // forum_url_l
             // 
@@ -4547,7 +4547,7 @@
             this.enable_website.TabIndex = 0;
             this.enable_website.Text = "Enable website";
             this.enable_website.UseVisualStyleBackColor = true;
-            this.enable_website.CheckedChanged += new System.EventHandler(this.enable_website_CheckedChanged);
+            this.enable_website.CheckedChanged += new System.EventHandler(this.Enable_website_CheckedChanged);
             // 
             // android_g
             // 
@@ -4585,7 +4585,7 @@
             this.android_apk.TabIndex = 27;
             this.android_apk.Text = "Download .APK file";
             this.android_apk.UseVisualStyleBackColor = true;
-            this.android_apk.Click += new System.EventHandler(this.android_apk_Click);
+            this.android_apk.Click += new System.EventHandler(this.Android_apk_Click);
             // 
             // android_play
             // 
@@ -4602,7 +4602,7 @@
             this.android_play.TabIndex = 26;
             this.android_play.UseVisualStyleBackColor = true;
             this.android_play.Visible = false;
-            this.android_play.Click += new System.EventHandler(this.android_play_Click);
+            this.android_play.Click += new System.EventHandler(this.Android_play_Click);
             // 
             // android_allow
             // 
@@ -4613,7 +4613,7 @@
             this.android_allow.TabIndex = 1;
             this.android_allow.Text = "Allow widget";
             this.android_allow.UseVisualStyleBackColor = true;
-            this.android_allow.CheckedChanged += new System.EventHandler(this.android_allow_CheckedChanged);
+            this.android_allow.CheckedChanged += new System.EventHandler(this.Android_allow_CheckedChanged);
             // 
             // android_access_key
             // 
@@ -5269,7 +5269,7 @@
             this.dbg_btn_2.Text = "webserver 0";
             this.dbg_btn_2.UseVisualStyleBackColor = true;
             this.dbg_btn_2.Visible = false;
-            this.dbg_btn_2.Click += new System.EventHandler(this.dbg_btn_2_Click);
+            this.dbg_btn_2.Click += new System.EventHandler(this.Dbg_btn_2_Click);
             // 
             // help_b
             // 
@@ -5393,7 +5393,7 @@
             this.Name = "Server_Panel_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "7 Days Server Manager";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.server_panel_FormClosing);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Server_Panel_FormClosing);
             this.Load += new System.EventHandler(this.server_panel_Load);
             this.Shown += new System.EventHandler(this.Server_panel_Shown);
             this.Resize += new System.EventHandler(this.server_panel_Resize);

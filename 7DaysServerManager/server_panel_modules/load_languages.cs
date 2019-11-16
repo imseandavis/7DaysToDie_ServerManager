@@ -11,7 +11,7 @@ namespace _7DaysServerManager
     {
 
 
-        public void load_lang()
+        public void Load_Languages()
         {
             About_Button.Text = lang("about");
             always_on_top.Text = lang("always_on_top");
@@ -112,20 +112,9 @@ namespace _7DaysServerManager
             Drop_On_Quit_Mode_2.Text = lang("doq_2");
             Drop_On_Quit_Mode_3.Text = lang("doq_3");
 
-
-
-
-
-
-
-
-
-
             realtime.Text = lang("realtime");
 
-
             Connect_Running_Server_Button.Text = lang("reboot_con");
-
 
             VACEnabled.Text = lang("VACEnabled");
 
@@ -156,13 +145,8 @@ namespace _7DaysServerManager
             else
                 Air_Drop_Frequency_GroupBox.Text = lang("AirDropFrequency") + " [" + lang("disabled") + "]";
 
-
             MaxSpawnedZombies_g.Text = lang("MaxSpawnedZombies_g") + " [" + Convert.ToString(MaxSpawnedZombies.Value) + "]";
             MaxSpawnedAnimals_g.Text = lang("MaxSpawnedAnimals_g") + " [" + Convert.ToString(MaxSpawnedAnimals.Value) + "]";
-
-
-
-
 
             Starting_Backup_Message_Label.Text = lang("backup_msg_1_l");
             Backup_Completed_Message_Label.Text = lang("backup_msg_2_l");
@@ -179,7 +163,6 @@ namespace _7DaysServerManager
             ServerWebsiteURL_g.Text = lang("ServerWebsiteURL_g");
             ServerDescription_g.Text = lang("ServerDescription_g");
         }
-
 
     }
 }

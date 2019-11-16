@@ -13,7 +13,7 @@ namespace _7DaysServerManager
 
         public void Lock_ctrl()
         {
-            echo_debug("---locking ctrl---");
+            Echo_debug("---locking ctrl---");
 
             Start_Server_Button.Enabled = false;
             Shutdown_Server_Button.Enabled = true;
