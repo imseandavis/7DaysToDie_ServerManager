@@ -38,7 +38,7 @@ namespace _7DaysServerManager
 
             
 
-            sciezka_plikow = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", null);
+            file_path = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", null);
             
 
             parametry = parametry + " -configfile=" + (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "configfile", null);
@@ -47,7 +47,7 @@ namespace _7DaysServerManager
             parametry = parametry + " -dedicated";
 
 
-                if (sciezka_plikow == "" | !File.Exists(@sciezka_plikow + "\\" + exec_name))
+                if (file_path == "" | !File.Exists(file_path + "\\" + exec_name))
                 {
                     echo(lang("error"), 3, true);
                     echo(lang("game_not_found_cons"), 3, true);
@@ -57,23 +57,23 @@ namespace _7DaysServerManager
 
                     if (Select_Game_Directory.ShowDialog() == DialogResult.OK)
                     {
-                        sciezka_plikow = Select_Game_Directory.SelectedPath + "\\" + exe_name.Text;
+                        file_path = Select_Game_Directory.SelectedPath + "\\" + exe_name.Text;
                         string sciezka_plikow_server = Select_Game_Directory.SelectedPath + "\\7DaysToDieServer.exe";
 
 
 
-                        if (File.Exists(@sciezka_plikow + "\\" + exe_name.Text))
+                        if (File.Exists(file_path + "\\" + exe_name.Text))
                         {
                             MessageBox.Show(lang("dir_ok"), lang("saved"));
                             echo(lang("dir_ok"), 0, true);
-                            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", sciezka_plikow);
+                            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", file_path);
                             Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "server_type", "client");
                         }
-                        else if (File.Exists(@sciezka_plikow + "\\7daystodieserver.exe"))
+                        else if (File.Exists(file_path + "\\7daystodieserver.exe"))
                         {
                             MessageBox.Show(lang("dir_ok"), lang("saved"));
                             echo(lang("dir_ok"), 0, true);
-                            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", sciezka_plikow);
+                            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", file_path);
                             Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "server_type", "server");
                         }
                         else
@@ -85,19 +85,19 @@ namespace _7DaysServerManager
                 }
                 else
                 {
-                    echo_debug(@sciezka_plikow + "\\" + exec_name + parametry);
-                    System.Diagnostics.Process.Start(@sciezka_plikow + "\\" + exec_name, parametry);
+                    echo_debug(file_path + "\\" + exec_name + parametry);
+                    System.Diagnostics.Process.Start(file_path + "\\" + exec_name, parametry);
                     Shutdown_Server_Button.Enabled = true;
                     Start_Server_Button.Enabled = false;
 
                     //this.ControlBox = false;
 
-                    lock_ctrl();
+                    Lock_ctrl();
 
                     server_online = true;
 
                     //echo("OK", 1, true);
-                    echo(lang("run_from") + sciezka_plikow, 0, true);
+                    echo(lang("run_from") + file_path, 0, true);
 
                     try
                     {

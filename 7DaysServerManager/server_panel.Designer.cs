@@ -234,7 +234,7 @@
             this.nightpercentage = new System.Windows.Forms.TrackBar();
             this.Day_Length_GroupBox = new System.Windows.Forms.GroupBox();
             this.realtime = new System.Windows.Forms.CheckBox();
-            this.dlugoscdnia = new System.Windows.Forms.TrackBar();
+            this.dayLength = new System.Windows.Forms.TrackBar();
             this.bdm_g = new System.Windows.Forms.GroupBox();
             this.bdm = new System.Windows.Forms.TrackBar();
             this.Drop_On_Death_Group_Box = new System.Windows.Forms.GroupBox();
@@ -501,7 +501,7 @@
             this.nightpercentage_g.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nightpercentage)).BeginInit();
             this.Day_Length_GroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dlugoscdnia)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dayLength)).BeginInit();
             this.bdm_g.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bdm)).BeginInit();
             this.Drop_On_Death_Group_Box.SuspendLayout();
@@ -3129,7 +3129,7 @@
             this.Day_Length_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Day_Length_GroupBox.Controls.Add(this.realtime);
-            this.Day_Length_GroupBox.Controls.Add(this.dlugoscdnia);
+            this.Day_Length_GroupBox.Controls.Add(this.dayLength);
             this.Day_Length_GroupBox.Location = new System.Drawing.Point(10, 145);
             this.Day_Length_GroupBox.Name = "Day_Length_GroupBox";
             this.Day_Length_GroupBox.Size = new System.Drawing.Size(508, 88);
@@ -3150,17 +3150,17 @@
             // 
             // dlugoscdnia
             // 
-            this.dlugoscdnia.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dayLength.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dlugoscdnia.Enabled = false;
-            this.dlugoscdnia.Location = new System.Drawing.Point(6, 19);
-            this.dlugoscdnia.Maximum = 240;
-            this.dlugoscdnia.Minimum = 1;
-            this.dlugoscdnia.Name = "dlugoscdnia";
-            this.dlugoscdnia.Size = new System.Drawing.Size(496, 45);
-            this.dlugoscdnia.TabIndex = 9;
-            this.dlugoscdnia.Value = 20;
-            this.dlugoscdnia.Scroll += new System.EventHandler(this.dlugoscdnia_Scroll);
+            this.dayLength.Enabled = false;
+            this.dayLength.Location = new System.Drawing.Point(6, 19);
+            this.dayLength.Maximum = 240;
+            this.dayLength.Minimum = 1;
+            this.dayLength.Name = "dlugoscdnia";
+            this.dayLength.Size = new System.Drawing.Size(496, 45);
+            this.dayLength.TabIndex = 9;
+            this.dayLength.Value = 20;
+            this.dayLength.Scroll += new System.EventHandler(this.dlugoscdnia_Scroll);
             // 
             // bdm_g
             // 
@@ -5504,7 +5504,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.nightpercentage)).EndInit();
             this.Day_Length_GroupBox.ResumeLayout(false);
             this.Day_Length_GroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dlugoscdnia)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dayLength)).EndInit();
             this.bdm_g.ResumeLayout(false);
             this.bdm_g.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bdm)).EndInit();
@@ -5730,7 +5730,7 @@
         private System.Windows.Forms.TrackBar nightpercentage;
         private System.Windows.Forms.GroupBox Day_Length_GroupBox;
         private System.Windows.Forms.CheckBox realtime;
-        private System.Windows.Forms.TrackBar dlugoscdnia;
+        private System.Windows.Forms.TrackBar dayLength;
         private System.Windows.Forms.GroupBox autobots;
         private System.Windows.Forms.GroupBox Game_Mode_Settings_GroupBox;
         private System.Windows.Forms.CheckBox cheatmode;

@@ -196,13 +196,13 @@
     <Compile Include="server_panel_modules\prepare_app_after_start.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="server_panel_modules\lock_unlock_controls.cs">
+    <Compile Include="server_panel_modules\control_security.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="server_panel_modules\load_lang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="server_panel_modules\generuj_czytaj_config.cs">
+    <Compile Include="server_panel_modules\manage_configuration.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="lang\lang_en.Designer.cs">

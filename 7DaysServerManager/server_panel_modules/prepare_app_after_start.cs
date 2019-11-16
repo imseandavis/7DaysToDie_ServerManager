@@ -146,7 +146,7 @@ namespace _7DaysServerManager
 
 
 
-            czytaj_config();
+            Read_config();
 
             load_lang();
 
@@ -657,7 +657,7 @@ namespace _7DaysServerManager
 
             Max_Players_GroupBox.Text = lang("maxplgroup") + " [" + Convert.ToString(maxpl.Value) + "]";
             Game_Difficulty_GroupBox.Text = lang("trudnoscgroup") + " [" + Convert.ToString(Game_Difficulty_TrackBar.Value) + "]";
-            Day_Length_GroupBox.Text = lang("dlugoscdnia") + " [" + Convert.ToString(dlugoscdnia.Value) + " min.]";
+            Day_Length_GroupBox.Text = lang("dlugoscdnia") + " [" + Convert.ToString(dayLength.Value) + " min.]";
 
 
 
