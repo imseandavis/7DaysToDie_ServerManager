@@ -18,7 +18,7 @@ namespace _7DaysServerManager
 
             profile_selector ps = new profile_selector();
             ps.ShowDialog();
-            Application.Run(new server_panel());
+            Application.Run(new Server_Panel_Form());
 
 
         }

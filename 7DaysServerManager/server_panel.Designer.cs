@@ -1,6 +1,6 @@
 ﻿namespace _7DaysServerManager
 {
-    partial class server_panel
+    partial class Server_Panel_Form
     {
         /// <summary>
         /// Required designer variable.
@@ -29,85 +29,85 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(server_panel));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Server_Panel_Form));
             this.status_updater = new System.ComponentModel.BackgroundWorker();
             this.select_dir = new System.Windows.Forms.FolderBrowserDialog();
             this.ikona = new System.Windows.Forms.NotifyIcon(this.components);
-            this.twoje_ip = new System.Windows.Forms.Label();
+            this.IP_Label = new System.Windows.Forms.Label();
             this.settings = new System.Windows.Forms.TabPage();
-            this.dsm_updates_g = new System.Windows.Forms.GroupBox();
-            this.apply_update_channel = new System.Windows.Forms.Button();
-            this.force_upd = new System.Windows.Forms.Button();
-            this.chk_upd = new System.Windows.Forms.Button();
+            this.Updates_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Apply_Update_Channel_Button = new System.Windows.Forms.Button();
+            this.Force_Update_Button = new System.Windows.Forms.Button();
+            this.Check_Updates_Button = new System.Windows.Forms.Button();
             this.updates_info = new System.Windows.Forms.Label();
-            this.updates_channel_l = new System.Windows.Forms.Label();
-            this.updates_channel = new System.Windows.Forms.ComboBox();
+            this.Update_Channel_Label = new System.Windows.Forms.Label();
+            this.Update_Channel_ComboBox = new System.Windows.Forms.ComboBox();
             this.exe_settings_g = new System.Windows.Forms.GroupBox();
             this.exe_name_l = new System.Windows.Forms.Label();
             this.exe_name = new System.Windows.Forms.TextBox();
-            this.prem_set = new System.Windows.Forms.GroupBox();
-            this.prem_help1 = new System.Windows.Forms.PictureBox();
-            this.hide_don_btn = new System.Windows.Forms.CheckBox();
-            this.prem_g = new System.Windows.Forms.GroupBox();
-            this.prem_show = new System.Windows.Forms.CheckBox();
-            this.dondon2 = new System.Windows.Forms.Button();
-            this.prem_info_2 = new System.Windows.Forms.Label();
-            this.prem_info = new System.Windows.Forms.Label();
-            this.prem_act = new System.Windows.Forms.Button();
-            this.prem_psw_l = new System.Windows.Forms.Label();
-            this.prem_psw = new System.Windows.Forms.TextBox();
+            this.Supporter_Settings_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Premium_Settings_Help_PictureBox = new System.Windows.Forms.PictureBox();
+            this.Hide_Donation_Buttons_CheckBox = new System.Windows.Forms.CheckBox();
+            this.Supporter_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Support_Code_Show_CheckBox = new System.Windows.Forms.CheckBox();
+            this.Supporter_Donate_Button = new System.Windows.Forms.Button();
+            this.Supporter_Instructions_Label = new System.Windows.Forms.Label();
+            this.Supporter_Status_Label = new System.Windows.Forms.Label();
+            this.Supporter_Activate_Button = new System.Windows.Forms.Button();
+            this.Supporter_Code_Label = new System.Windows.Forms.Label();
+            this.Support_Code_TextBox = new System.Windows.Forms.TextBox();
             this.debug_log = new System.Windows.Forms.CheckBox();
-            this.sql = new System.Windows.Forms.GroupBox();
-            this.sql_enabled = new System.Windows.Forms.CheckBox();
-            this.sql_updates_time_g = new System.Windows.Forms.GroupBox();
-            this.sql_updates_time = new System.Windows.Forms.TextBox();
-            this.upd_time = new System.Windows.Forms.Label();
-            this.sql_host_g = new System.Windows.Forms.GroupBox();
-            this.sql_host = new System.Windows.Forms.TextBox();
-            this.how_to_sql = new System.Windows.Forms.Button();
-            this.sql_username_g = new System.Windows.Forms.GroupBox();
-            this.sql_username = new System.Windows.Forms.TextBox();
-            this.sql_db_name_g = new System.Windows.Forms.GroupBox();
-            this.sql_db_name = new System.Windows.Forms.TextBox();
-            this.sql_password_g = new System.Windows.Forms.GroupBox();
-            this.sql_warn = new System.Windows.Forms.Label();
-            this.sql_password = new System.Windows.Forms.TextBox();
+            this.SQL_GroupBox = new System.Windows.Forms.GroupBox();
+            this.SQL_Enabled_CheckBox = new System.Windows.Forms.CheckBox();
+            this.SQL_Update_Time_GroupBox = new System.Windows.Forms.GroupBox();
+            this.SQL_Update_Time_TextBox = new System.Windows.Forms.TextBox();
+            this.SQL_Update_Time_Label = new System.Windows.Forms.Label();
+            this.SQL_Host_GroupBox = new System.Windows.Forms.GroupBox();
+            this.SQL_Host_TextBox = new System.Windows.Forms.TextBox();
+            this.SQL_How_To_Integrate_Button = new System.Windows.Forms.Button();
+            this.SQL_Username_GroupBox = new System.Windows.Forms.GroupBox();
+            this.SQL_Username_TextBox = new System.Windows.Forms.TextBox();
+            this.SQL_DB_Name_GroupBox = new System.Windows.Forms.GroupBox();
+            this.SQL_Database_Name_TextBox = new System.Windows.Forms.TextBox();
+            this.SQL_Password_GroupBox = new System.Windows.Forms.GroupBox();
+            this.SQL_Encrption_Warning_Label = new System.Windows.Forms.Label();
+            this.SQL_Password_TextBox = new System.Windows.Forms.TextBox();
             this.blad = new System.Windows.Forms.Button();
             this.workerynapis = new System.Windows.Forms.Label();
             this.taskman = new System.Windows.Forms.ListBox();
-            this.ustawienia_grupa_ustawienia = new System.Windows.Forms.GroupBox();
+            this.Settings_GroupBox = new System.Windows.Forms.GroupBox();
             this.skip_profiles = new System.Windows.Forms.CheckBox();
-            this.browse = new System.Windows.Forms.Button();
+            this.Browse_Game_File_Path_Button = new System.Windows.Forms.Button();
             this.anon_data_2 = new System.Windows.Forms.LinkLabel();
             this.anon_data = new System.Windows.Forms.CheckBox();
             this.cleanexit = new System.Windows.Forms.CheckBox();
             this.show_ip = new System.Windows.Forms.CheckBox();
-            this.steamsearch = new System.Windows.Forms.Button();
+            this.Auto_Detect_Game_File_Path_Button = new System.Windows.Forms.Button();
             this.always_on_top = new System.Windows.Forms.CheckBox();
-            this.chpath = new System.Windows.Forms.Button();
-            this.path = new System.Windows.Forms.Label();
+            this.Change_Game_File_Path_Button = new System.Windows.Forms.Button();
+            this.Game_File_Path_Label = new System.Windows.Forms.Label();
             this.to_tray = new System.Windows.Forms.CheckBox();
-            this.about = new System.Windows.Forms.Button();
+            this.About_Button = new System.Windows.Forms.Button();
             this.auto_backup_group = new System.Windows.Forms.GroupBox();
             this.backup_location_l = new System.Windows.Forms.Label();
             this.backup_location = new System.Windows.Forms.TextBox();
             this.backup_chat = new System.Windows.Forms.CheckBox();
             this.auto_backup_check = new System.Windows.Forms.CheckBox();
             this.backup_time = new System.Windows.Forms.TrackBar();
-            this.spawn_group = new System.Windows.Forms.GroupBox();
-            this.spawn_now = new System.Windows.Forms.Button();
-            this.spawn_item = new System.Windows.Forms.ComboBox();
-            this.telnet_group = new System.Windows.Forms.GroupBox();
+            this.Spawn_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Spawn_Item_Button = new System.Windows.Forms.Button();
+            this.Spawn_Item_ComboBox = new System.Windows.Forms.ComboBox();
+            this.Game_Time_Controls_GroupBox = new System.Windows.Forms.GroupBox();
             this.godzina = new System.Windows.Forms.Label();
             this.dzien = new System.Windows.Forms.Label();
-            this.telnet_connect = new System.Windows.Forms.Button();
-            this.dzien_bar = new System.Windows.Forms.TrackBar();
-            this.godzina_bar = new System.Windows.Forms.TrackBar();
+            this.Set_Game_Time_Button = new System.Windows.Forms.Button();
+            this.Game_Day_TrackBar = new System.Windows.Forms.TrackBar();
+            this.Game_Hour_TrackBar = new System.Windows.Forms.TrackBar();
             this.cmd = new System.Windows.Forms.TextBox();
-            this.konsola = new System.Windows.Forms.RichTextBox();
+            this.Console_RichTextBox = new System.Windows.Forms.RichTextBox();
             this.startbar = new System.Windows.Forms.ProgressBar();
             this.tabControl = new System.Windows.Forms.TabControl();
-            this.server_manage = new System.Windows.Forms.TabPage();
+            this.Manage_Server_TabPage = new System.Windows.Forms.TabPage();
             this.CommandsGroup = new System.Windows.Forms.GroupBox();
             this.usecmd = new System.Windows.Forms.Button();
             this.commandslist = new System.Windows.Forms.ListBox();
@@ -116,9 +116,9 @@
             this.News_Group = new System.Windows.Forms.GroupBox();
             this.News_Feed_RichTextBox = new System.Windows.Forms.RichTextBox();
             this.Server_Status_Group = new System.Windows.Forms.GroupBox();
-            this.osarch = new System.Windows.Forms.Label();
+            this.OS_Architecture_Label = new System.Windows.Forms.Label();
             this.telnetstatus = new System.Windows.Forms.Label();
-            this.osver = new System.Windows.Forms.Label();
+            this.OS_Version_Label = new System.Windows.Forms.Label();
             this.status = new System.Windows.Forms.Label();
             this.Console_Group = new System.Windows.Forms.GroupBox();
             this.Timers_Group = new System.Windows.Forms.GroupBox();
@@ -141,104 +141,104 @@
             this.Save_Logs_CheckBox = new System.Windows.Forms.CheckBox();
             this.Kill_Server_Process = new System.Windows.Forms.Button();
             this.ban_kick = new System.Windows.Forms.TabPage();
-            this.Chat_Group = new System.Windows.Forms.GroupBox();
-            this.chat = new System.Windows.Forms.RichTextBox();
-            this.chat_text = new System.Windows.Forms.TextBox();
-            this.all_players_l = new System.Windows.Forms.Label();
-            this.online_l = new System.Windows.Forms.Label();
+            this.Chat_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Chat_RichTextBox = new System.Windows.Forms.RichTextBox();
+            this.Chat_Input_TextBox = new System.Windows.Forms.TextBox();
+            this.All_Players_Label = new System.Windows.Forms.Label();
+            this.Online_Players_Label = new System.Windows.Forms.Label();
             this.All_Players_List = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.player_g = new System.Windows.Forms.GroupBox();
-            this.thirsty_player = new System.Windows.Forms.Button();
-            this.starve_player = new System.Windows.Forms.Button();
-            this.kill_player = new System.Windows.Forms.Button();
-            this.kickgroup = new System.Windows.Forms.GroupBox();
-            this.kick = new System.Windows.Forms.Button();
-            this.powod = new System.Windows.Forms.ComboBox();
-            this.bantime_slider = new System.Windows.Forms.GroupBox();
-            this.bantime = new System.Windows.Forms.ComboBox();
-            this.ban = new System.Windows.Forms.Button();
-            this.ban_slide = new System.Windows.Forms.TrackBar();
+            this.Player_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Thirsty_Player_Button = new System.Windows.Forms.Button();
+            this.Starve_Player_Button = new System.Windows.Forms.Button();
+            this.Kill_Player_Button = new System.Windows.Forms.Button();
+            this.Kick_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Kick_Player_Button = new System.Windows.Forms.Button();
+            this.Kick_Reason_ComboBox = new System.Windows.Forms.ComboBox();
+            this.Ban_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Ban_Time_ComboBox = new System.Windows.Forms.ComboBox();
+            this.Ban_Hammer_Button = new System.Windows.Forms.Button();
+            this.Ban_Slider_TrackBar = new System.Windows.Forms.TrackBar();
             this.Online_Player_List = new System.Windows.Forms.ListView();
             this.login_header = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.steamid_header = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.main_page = new System.Windows.Forms.TabPage();
             this.main_page_opts = new System.Windows.Forms.TabControl();
             this.game_opts = new System.Windows.Forms.TabPage();
-            this.reserved_g = new System.Windows.Forms.GroupBox();
-            this.ServerAdminSlotsPermission = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.ServerAdminSlots = new System.Windows.Forms.TextBox();
-            this.ServerReservedSlotsPermission = new System.Windows.Forms.TextBox();
-            this.res_l2 = new System.Windows.Forms.Label();
-            this.res_l1 = new System.Windows.Forms.Label();
-            this.ServerReservedSlots = new System.Windows.Forms.TextBox();
-            this.PlayerKillingMode_g = new System.Windows.Forms.GroupBox();
+            this.Drop_On_Quit_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Drop_On_Quit_Mode_0 = new System.Windows.Forms.RadioButton();
+            this.Drop_On_Quit_Mode_1 = new System.Windows.Forms.RadioButton();
+            this.Drop_On_Quit_Mode_3 = new System.Windows.Forms.RadioButton();
+            this.Drop_On_Quit_Mode_2 = new System.Windows.Forms.RadioButton();
+            this.Server_Reserved_Slots_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Server_Admin_Reserved_Slots_Permission = new System.Windows.Forms.TextBox();
+            this.Admin_Slot_Text_Label = new System.Windows.Forms.Label();
+            this.Admin_Reserve_Text_Label = new System.Windows.Forms.Label();
+            this.Server_Admin_Reserved_Slots = new System.Windows.Forms.TextBox();
+            this.Server_Player_Reserved_Slots_Permission = new System.Windows.Forms.TextBox();
+            this.Player_Slot_Text_Label = new System.Windows.Forms.Label();
+            this.Player_Reserve_Text_Label = new System.Windows.Forms.Label();
+            this.Server_Player_Reserved_Slots = new System.Windows.Forms.TextBox();
+            this.Player_Killing_Mode_GroupBox = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.PlayerKillingMode_0 = new System.Windows.Forms.RadioButton();
-            this.PlayerKillingMode_1 = new System.Windows.Forms.RadioButton();
-            this.PlayerKillingMode_2 = new System.Windows.Forms.RadioButton();
-            this.PlayerKillingMode_3 = new System.Windows.Forms.RadioButton();
-            this.spawn_p_l = new System.Windows.Forms.GroupBox();
-            this.PlayerSafeZoneHours_l = new System.Windows.Forms.Label();
-            this.PlayerSafeZoneLevel_l = new System.Windows.Forms.Label();
-            this.PlayerSafeZoneHours = new System.Windows.Forms.TextBox();
-            this.PlayerSafeZoneLevel = new System.Windows.Forms.TextBox();
-            this.AirDropFrequency_g = new System.Windows.Forms.GroupBox();
-            this.AirDropFrequency = new System.Windows.Forms.TrackBar();
-            this.LandClaim = new System.Windows.Forms.GroupBox();
-            this.LandClaimDecayMode_g = new System.Windows.Forms.GroupBox();
+            this.Player_Killing_Mode_0 = new System.Windows.Forms.RadioButton();
+            this.Player_Killing_Mode_1 = new System.Windows.Forms.RadioButton();
+            this.Player_Killing_Mode_2 = new System.Windows.Forms.RadioButton();
+            this.Player_Killing_Mode_3 = new System.Windows.Forms.RadioButton();
+            this.Spawn_Settings_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Player_Safe_Zone_Hours_Label = new System.Windows.Forms.Label();
+            this.Player_Safe_Zone_Level_Label = new System.Windows.Forms.Label();
+            this.Player_Safe_Zone_Hours_TextBox = new System.Windows.Forms.TextBox();
+            this.Player_Safe_Zone_Level_TextBox = new System.Windows.Forms.TextBox();
+            this.Air_Drop_Frequency_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Air_Drop_Frequency_TrackBar = new System.Windows.Forms.TrackBar();
+            this.Land_Claim_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Land_Claim_Decay_Mode_GroupBox = new System.Windows.Forms.GroupBox();
             this.Full_prot = new System.Windows.Forms.RadioButton();
             this.Exponential = new System.Windows.Forms.RadioButton();
             this.Linear = new System.Windows.Forms.RadioButton();
-            this.LandClaim_g = new System.Windows.Forms.GroupBox();
-            this.offline = new System.Windows.Forms.Label();
-            this.online = new System.Windows.Forms.Label();
+            this.Land_Claim_Durability_Modifier_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Land_Claim_Durability_Offline_Label = new System.Windows.Forms.Label();
+            this.Land_Claim_Durability_Online_Label = new System.Windows.Forms.Label();
             this.LandClaimOfflineDurabilityModifier = new System.Windows.Forms.TextBox();
             this.LandClaimOnlineDurabilityModifier = new System.Windows.Forms.TextBox();
-            this.LandClaimSize_g = new System.Windows.Forms.GroupBox();
-            this.LandClaimSize = new System.Windows.Forms.TextBox();
-            this.LandClaimDeadZone_g = new System.Windows.Forms.GroupBox();
-            this.LandClaimDeadZone = new System.Windows.Forms.TextBox();
-            this.LandClaimExpiryTime_g = new System.Windows.Forms.GroupBox();
-            this.LandClaimExpiryTime = new System.Windows.Forms.TextBox();
-            this.LootRespawnDays_g = new System.Windows.Forms.GroupBox();
+            this.Land_Claim_Size_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Land_Claim_Size_TextBox = new System.Windows.Forms.TextBox();
+            this.Land_Claim_Dead_Zone_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Land_Claim_Dead_Zone_TextBox = new System.Windows.Forms.TextBox();
+            this.Land_Claim_Expiry_Time_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Land_Claim_Expiry_Time_TextBox = new System.Windows.Forms.TextBox();
+            this.Loot_Respawn_Days_GroupBox = new System.Windows.Forms.GroupBox();
             this.LootRespawnDays = new System.Windows.Forms.TrackBar();
-            this.LootAbundance_g = new System.Windows.Forms.GroupBox();
+            this.Loot_Abundance_GroupBox = new System.Windows.Forms.GroupBox();
             this.LootAbundance = new System.Windows.Forms.TrackBar();
-            this.maxplgroup = new System.Windows.Forms.GroupBox();
+            this.Max_Players_GroupBox = new System.Windows.Forms.GroupBox();
             this.maxpl = new System.Windows.Forms.TrackBar();
-            this.trybgry = new System.Windows.Forms.GroupBox();
+            this.Game_Mode_Settings_GroupBox = new System.Windows.Forms.GroupBox();
             this.PersistentPlayerProfiles = new System.Windows.Forms.CheckBox();
             this.feral = new System.Windows.Forms.CheckBox();
             this.gamemode_surv_pvp = new System.Windows.Forms.RadioButton();
             this.cheatmode = new System.Windows.Forms.CheckBox();
             this.gamemode_coop = new System.Windows.Forms.RadioButton();
-            this.zomb_pie = new System.Windows.Forms.GroupBox();
+            this.Zombie_Settings_GroupBox = new System.Windows.Forms.GroupBox();
             this.zombie_never_run = new System.Windows.Forms.RadioButton();
             this.zombie_normal = new System.Windows.Forms.RadioButton();
             this.zombie_run = new System.Windows.Forms.RadioButton();
             this.nightpercentage_g = new System.Windows.Forms.GroupBox();
             this.nightpercentage = new System.Windows.Forms.TrackBar();
-            this.dlugoscdnia_g = new System.Windows.Forms.GroupBox();
+            this.Day_Length_GroupBox = new System.Windows.Forms.GroupBox();
             this.realtime = new System.Windows.Forms.CheckBox();
             this.dlugoscdnia = new System.Windows.Forms.TrackBar();
             this.bdm_g = new System.Windows.Forms.GroupBox();
             this.bdm = new System.Windows.Forms.TrackBar();
-            this.dod_g = new System.Windows.Forms.GroupBox();
-            this.dod_p = new System.Windows.Forms.Panel();
-            this.dod_0 = new System.Windows.Forms.RadioButton();
-            this.dod_1 = new System.Windows.Forms.RadioButton();
-            this.dod_2 = new System.Windows.Forms.RadioButton();
-            this.dod_3 = new System.Windows.Forms.RadioButton();
-            this.doq_3 = new System.Windows.Forms.RadioButton();
-            this.doq_2 = new System.Windows.Forms.RadioButton();
-            this.doq_1 = new System.Windows.Forms.RadioButton();
-            this.doq_0 = new System.Windows.Forms.RadioButton();
-            this.trudnoscgroup = new System.Windows.Forms.GroupBox();
-            this.trudnosc = new System.Windows.Forms.TrackBar();
+            this.Drop_On_Death_Group_Box = new System.Windows.Forms.GroupBox();
+            this.Drop_On_Death_Mode_0 = new System.Windows.Forms.RadioButton();
+            this.Drop_On_Death_Mode_1 = new System.Windows.Forms.RadioButton();
+            this.Drop_On_Death_Mode_3 = new System.Windows.Forms.RadioButton();
+            this.Drop_On_Death_Mode_2 = new System.Windows.Forms.RadioButton();
+            this.Game_Difficulty_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Game_Difficulty_TrackBar = new System.Windows.Forms.TrackBar();
             this.server_opts = new System.Windows.Forms.TabPage();
             this.ServerWebsiteURL_g = new System.Windows.Forms.GroupBox();
             this.ServerWebsiteURL = new System.Windows.Forms.TextBox();
@@ -427,27 +427,32 @@
             this.like = new System.Windows.Forms.Button();
             this.externalCallFile = new System.Windows.Forms.OpenFileDialog();
             this.discord_b = new System.Windows.Forms.Button();
+            this.SQL_Host_Info_PictureBox = new System.Windows.Forms.PictureBox();
+            this.SQL_Username_Info_PictureBox = new System.Windows.Forms.PictureBox();
+            this.SQL_Password_Info_PictureBox = new System.Windows.Forms.PictureBox();
+            this.SQL_Database_Name_Info_PictureBox = new System.Windows.Forms.PictureBox();
+            this.SQL_Update_Time_Info_PictureBox = new System.Windows.Forms.PictureBox();
             this.settings.SuspendLayout();
-            this.dsm_updates_g.SuspendLayout();
+            this.Updates_GroupBox.SuspendLayout();
             this.exe_settings_g.SuspendLayout();
-            this.prem_set.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.prem_help1)).BeginInit();
-            this.prem_g.SuspendLayout();
-            this.sql.SuspendLayout();
-            this.sql_updates_time_g.SuspendLayout();
-            this.sql_host_g.SuspendLayout();
-            this.sql_username_g.SuspendLayout();
-            this.sql_db_name_g.SuspendLayout();
-            this.sql_password_g.SuspendLayout();
-            this.ustawienia_grupa_ustawienia.SuspendLayout();
+            this.Supporter_Settings_GroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Premium_Settings_Help_PictureBox)).BeginInit();
+            this.Supporter_GroupBox.SuspendLayout();
+            this.SQL_GroupBox.SuspendLayout();
+            this.SQL_Update_Time_GroupBox.SuspendLayout();
+            this.SQL_Host_GroupBox.SuspendLayout();
+            this.SQL_Username_GroupBox.SuspendLayout();
+            this.SQL_DB_Name_GroupBox.SuspendLayout();
+            this.SQL_Password_GroupBox.SuspendLayout();
+            this.Settings_GroupBox.SuspendLayout();
             this.auto_backup_group.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.backup_time)).BeginInit();
-            this.spawn_group.SuspendLayout();
-            this.telnet_group.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dzien_bar)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.godzina_bar)).BeginInit();
+            this.Spawn_GroupBox.SuspendLayout();
+            this.Game_Time_Controls_GroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Game_Day_TrackBar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Game_Hour_TrackBar)).BeginInit();
             this.tabControl.SuspendLayout();
-            this.server_manage.SuspendLayout();
+            this.Manage_Server_TabPage.SuspendLayout();
             this.CommandsGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.overviewSplitter)).BeginInit();
             this.overviewSplitter.Panel1.SuspendLayout();
@@ -459,44 +464,44 @@
             this.Timers_Group.SuspendLayout();
             this.Server_Controls_Group.SuspendLayout();
             this.ban_kick.SuspendLayout();
-            this.Chat_Group.SuspendLayout();
-            this.player_g.SuspendLayout();
-            this.kickgroup.SuspendLayout();
-            this.bantime_slider.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ban_slide)).BeginInit();
+            this.Chat_GroupBox.SuspendLayout();
+            this.Player_GroupBox.SuspendLayout();
+            this.Kick_GroupBox.SuspendLayout();
+            this.Ban_GroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Ban_Slider_TrackBar)).BeginInit();
             this.main_page.SuspendLayout();
             this.main_page_opts.SuspendLayout();
             this.game_opts.SuspendLayout();
-            this.reserved_g.SuspendLayout();
-            this.PlayerKillingMode_g.SuspendLayout();
+            this.Drop_On_Quit_GroupBox.SuspendLayout();
+            this.Server_Reserved_Slots_GroupBox.SuspendLayout();
+            this.Player_Killing_Mode_GroupBox.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.spawn_p_l.SuspendLayout();
-            this.AirDropFrequency_g.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AirDropFrequency)).BeginInit();
-            this.LandClaim.SuspendLayout();
-            this.LandClaimDecayMode_g.SuspendLayout();
-            this.LandClaim_g.SuspendLayout();
-            this.LandClaimSize_g.SuspendLayout();
-            this.LandClaimDeadZone_g.SuspendLayout();
-            this.LandClaimExpiryTime_g.SuspendLayout();
-            this.LootRespawnDays_g.SuspendLayout();
+            this.Spawn_Settings_GroupBox.SuspendLayout();
+            this.Air_Drop_Frequency_GroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Air_Drop_Frequency_TrackBar)).BeginInit();
+            this.Land_Claim_GroupBox.SuspendLayout();
+            this.Land_Claim_Decay_Mode_GroupBox.SuspendLayout();
+            this.Land_Claim_Durability_Modifier_GroupBox.SuspendLayout();
+            this.Land_Claim_Size_GroupBox.SuspendLayout();
+            this.Land_Claim_Dead_Zone_GroupBox.SuspendLayout();
+            this.Land_Claim_Expiry_Time_GroupBox.SuspendLayout();
+            this.Loot_Respawn_Days_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LootRespawnDays)).BeginInit();
-            this.LootAbundance_g.SuspendLayout();
+            this.Loot_Abundance_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LootAbundance)).BeginInit();
-            this.maxplgroup.SuspendLayout();
+            this.Max_Players_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.maxpl)).BeginInit();
-            this.trybgry.SuspendLayout();
-            this.zomb_pie.SuspendLayout();
+            this.Game_Mode_Settings_GroupBox.SuspendLayout();
+            this.Zombie_Settings_GroupBox.SuspendLayout();
             this.nightpercentage_g.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nightpercentage)).BeginInit();
-            this.dlugoscdnia_g.SuspendLayout();
+            this.Day_Length_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dlugoscdnia)).BeginInit();
             this.bdm_g.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bdm)).BeginInit();
-            this.dod_g.SuspendLayout();
-            this.dod_p.SuspendLayout();
-            this.trudnoscgroup.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trudnosc)).BeginInit();
+            this.Drop_On_Death_Group_Box.SuspendLayout();
+            this.Game_Difficulty_GroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Game_Difficulty_TrackBar)).BeginInit();
             this.server_opts.SuspendLayout();
             this.ServerWebsiteURL_g.SuspendLayout();
             this.ServerDescription_g.SuspendLayout();
@@ -552,6 +557,11 @@
             this.srv_list.SuspendLayout();
             this.deds_g.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_status)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SQL_Host_Info_PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SQL_Username_Info_PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SQL_Password_Info_PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SQL_Database_Name_Info_PictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SQL_Update_Time_Info_PictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // status_updater
@@ -572,84 +582,84 @@
             this.ikona.Visible = true;
             this.ikona.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ikona_MouseClick);
             // 
-            // twoje_ip
+            // IP_Label
             // 
-            this.twoje_ip.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.twoje_ip.AutoSize = true;
-            this.twoje_ip.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.twoje_ip.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.twoje_ip.Location = new System.Drawing.Point(6, 100);
-            this.twoje_ip.Name = "twoje_ip";
-            this.twoje_ip.Size = new System.Drawing.Size(74, 13);
-            this.twoje_ip.TabIndex = 23;
-            this.twoje_ip.Text = "Checking IP...";
-            this.twoje_ip.Visible = false;
+            this.IP_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.IP_Label.AutoSize = true;
+            this.IP_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.IP_Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.IP_Label.Location = new System.Drawing.Point(6, 100);
+            this.IP_Label.Name = "IP_Label";
+            this.IP_Label.Size = new System.Drawing.Size(92, 13);
+            this.IP_Label.TabIndex = 23;
+            this.IP_Label.Text = "Getting Local IP...";
+            this.IP_Label.Visible = false;
             // 
             // settings
             // 
             this.settings.BackColor = System.Drawing.SystemColors.Control;
-            this.settings.Controls.Add(this.dsm_updates_g);
+            this.settings.Controls.Add(this.Updates_GroupBox);
             this.settings.Controls.Add(this.exe_settings_g);
-            this.settings.Controls.Add(this.prem_set);
-            this.settings.Controls.Add(this.prem_g);
+            this.settings.Controls.Add(this.Supporter_Settings_GroupBox);
+            this.settings.Controls.Add(this.Supporter_GroupBox);
             this.settings.Controls.Add(this.debug_log);
-            this.settings.Controls.Add(this.sql);
+            this.settings.Controls.Add(this.SQL_GroupBox);
             this.settings.Controls.Add(this.blad);
             this.settings.Controls.Add(this.workerynapis);
             this.settings.Controls.Add(this.taskman);
-            this.settings.Controls.Add(this.ustawienia_grupa_ustawienia);
-            this.settings.Controls.Add(this.about);
+            this.settings.Controls.Add(this.Settings_GroupBox);
+            this.settings.Controls.Add(this.About_Button);
             this.settings.ImageIndex = 4;
             this.settings.Location = new System.Drawing.Point(47, 4);
             this.settings.Name = "settings";
             this.settings.Size = new System.Drawing.Size(908, 684);
             this.settings.TabIndex = 4;
             // 
-            // dsm_updates_g
+            // Updates_GroupBox
             // 
-            this.dsm_updates_g.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.dsm_updates_g.Controls.Add(this.apply_update_channel);
-            this.dsm_updates_g.Controls.Add(this.force_upd);
-            this.dsm_updates_g.Controls.Add(this.chk_upd);
-            this.dsm_updates_g.Controls.Add(this.updates_info);
-            this.dsm_updates_g.Controls.Add(this.updates_channel_l);
-            this.dsm_updates_g.Controls.Add(this.updates_channel);
-            this.dsm_updates_g.Location = new System.Drawing.Point(551, 58);
-            this.dsm_updates_g.Name = "dsm_updates_g";
-            this.dsm_updates_g.Size = new System.Drawing.Size(350, 191);
-            this.dsm_updates_g.TabIndex = 41;
-            this.dsm_updates_g.TabStop = false;
-            this.dsm_updates_g.Text = "7DSM Updates";
+            this.Updates_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Updates_GroupBox.Controls.Add(this.Apply_Update_Channel_Button);
+            this.Updates_GroupBox.Controls.Add(this.Force_Update_Button);
+            this.Updates_GroupBox.Controls.Add(this.Check_Updates_Button);
+            this.Updates_GroupBox.Controls.Add(this.updates_info);
+            this.Updates_GroupBox.Controls.Add(this.Update_Channel_Label);
+            this.Updates_GroupBox.Controls.Add(this.Update_Channel_ComboBox);
+            this.Updates_GroupBox.Location = new System.Drawing.Point(551, 58);
+            this.Updates_GroupBox.Name = "Updates_GroupBox";
+            this.Updates_GroupBox.Size = new System.Drawing.Size(350, 191);
+            this.Updates_GroupBox.TabIndex = 41;
+            this.Updates_GroupBox.TabStop = false;
+            this.Updates_GroupBox.Text = "7DSM Updates";
             // 
-            // apply_update_channel
+            // Apply_Update_Channel_Button
             // 
-            this.apply_update_channel.Location = new System.Drawing.Point(270, 22);
-            this.apply_update_channel.Name = "apply_update_channel";
-            this.apply_update_channel.Size = new System.Drawing.Size(75, 23);
-            this.apply_update_channel.TabIndex = 44;
-            this.apply_update_channel.Text = "Apply";
-            this.apply_update_channel.UseVisualStyleBackColor = true;
-            this.apply_update_channel.Click += new System.EventHandler(this.apply_update_channel_Click);
+            this.Apply_Update_Channel_Button.Location = new System.Drawing.Point(270, 22);
+            this.Apply_Update_Channel_Button.Name = "Apply_Update_Channel_Button";
+            this.Apply_Update_Channel_Button.Size = new System.Drawing.Size(75, 23);
+            this.Apply_Update_Channel_Button.TabIndex = 44;
+            this.Apply_Update_Channel_Button.Text = "Apply";
+            this.Apply_Update_Channel_Button.UseVisualStyleBackColor = true;
+            this.Apply_Update_Channel_Button.Click += new System.EventHandler(this.apply_update_channel_Click);
             // 
-            // force_upd
+            // Force_Update_Button
             // 
-            this.force_upd.Location = new System.Drawing.Point(180, 151);
-            this.force_upd.Name = "force_upd";
-            this.force_upd.Size = new System.Drawing.Size(156, 23);
-            this.force_upd.TabIndex = 43;
-            this.force_upd.Text = "Force update now";
-            this.force_upd.UseVisualStyleBackColor = true;
-            this.force_upd.Click += new System.EventHandler(this.force_upd_Click);
+            this.Force_Update_Button.Location = new System.Drawing.Point(180, 151);
+            this.Force_Update_Button.Name = "Force_Update_Button";
+            this.Force_Update_Button.Size = new System.Drawing.Size(156, 23);
+            this.Force_Update_Button.TabIndex = 43;
+            this.Force_Update_Button.Text = "Force Update Now";
+            this.Force_Update_Button.UseVisualStyleBackColor = true;
+            this.Force_Update_Button.Click += new System.EventHandler(this.force_upd_Click);
             // 
-            // chk_upd
+            // Check_Updates_Button
             // 
-            this.chk_upd.Location = new System.Drawing.Point(18, 151);
-            this.chk_upd.Name = "chk_upd";
-            this.chk_upd.Size = new System.Drawing.Size(156, 23);
-            this.chk_upd.TabIndex = 42;
-            this.chk_upd.Text = "Check for updates now";
-            this.chk_upd.UseVisualStyleBackColor = true;
-            this.chk_upd.Click += new System.EventHandler(this.chk_upd_Click);
+            this.Check_Updates_Button.Location = new System.Drawing.Point(18, 151);
+            this.Check_Updates_Button.Name = "Check_Updates_Button";
+            this.Check_Updates_Button.Size = new System.Drawing.Size(156, 23);
+            this.Check_Updates_Button.TabIndex = 42;
+            this.Check_Updates_Button.Text = "Check For Updates Now";
+            this.Check_Updates_Button.UseVisualStyleBackColor = true;
+            this.Check_Updates_Button.Click += new System.EventHandler(this.chk_upd_Click);
             // 
             // updates_info
             // 
@@ -662,26 +672,26 @@
     " work properly\r\nor even not work at all!\r\n\r\nIf you don\'t know which to use, sele" +
     "ct STABLE.";
             // 
-            // updates_channel_l
+            // Update_Channel_Label
             // 
-            this.updates_channel_l.AutoSize = true;
-            this.updates_channel_l.Location = new System.Drawing.Point(15, 26);
-            this.updates_channel_l.Name = "updates_channel_l";
-            this.updates_channel_l.Size = new System.Drawing.Size(124, 13);
-            this.updates_channel_l.TabIndex = 40;
-            this.updates_channel_l.Text = "7DSM Updates channel:";
+            this.Update_Channel_Label.AutoSize = true;
+            this.Update_Channel_Label.Location = new System.Drawing.Point(15, 26);
+            this.Update_Channel_Label.Name = "Update_Channel_Label";
+            this.Update_Channel_Label.Size = new System.Drawing.Size(125, 13);
+            this.Update_Channel_Label.TabIndex = 40;
+            this.Update_Channel_Label.Text = "7DSM Updates Channel:";
             // 
-            // updates_channel
+            // Update_Channel_ComboBox
             // 
-            this.updates_channel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.updates_channel.FormattingEnabled = true;
-            this.updates_channel.Items.AddRange(new object[] {
+            this.Update_Channel_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Update_Channel_ComboBox.FormattingEnabled = true;
+            this.Update_Channel_ComboBox.Items.AddRange(new object[] {
             "STABLE",
             "DEV"});
-            this.updates_channel.Location = new System.Drawing.Point(145, 23);
-            this.updates_channel.Name = "updates_channel";
-            this.updates_channel.Size = new System.Drawing.Size(119, 21);
-            this.updates_channel.TabIndex = 39;
+            this.Update_Channel_ComboBox.Location = new System.Drawing.Point(145, 23);
+            this.Update_Channel_ComboBox.Name = "Update_Channel_ComboBox";
+            this.Update_Channel_ComboBox.Size = new System.Drawing.Size(119, 21);
+            this.Update_Channel_ComboBox.TabIndex = 39;
             // 
             // exe_settings_g
             // 
@@ -715,131 +725,131 @@
             this.exe_name.Text = "7DaysToDie.exe";
             this.exe_name.TextChanged += new System.EventHandler(this.exe_name_TextChanged);
             // 
-            // prem_set
+            // Supporter_Settings_GroupBox
             // 
-            this.prem_set.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.prem_set.Controls.Add(this.prem_help1);
-            this.prem_set.Controls.Add(this.hide_don_btn);
-            this.prem_set.Location = new System.Drawing.Point(551, 460);
-            this.prem_set.Name = "prem_set";
-            this.prem_set.Size = new System.Drawing.Size(351, 45);
-            this.prem_set.TabIndex = 39;
-            this.prem_set.TabStop = false;
-            this.prem_set.Text = "Supporter settings";
+            this.Supporter_Settings_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Supporter_Settings_GroupBox.Controls.Add(this.Premium_Settings_Help_PictureBox);
+            this.Supporter_Settings_GroupBox.Controls.Add(this.Hide_Donation_Buttons_CheckBox);
+            this.Supporter_Settings_GroupBox.Location = new System.Drawing.Point(551, 460);
+            this.Supporter_Settings_GroupBox.Name = "Supporter_Settings_GroupBox";
+            this.Supporter_Settings_GroupBox.Size = new System.Drawing.Size(351, 45);
+            this.Supporter_Settings_GroupBox.TabIndex = 39;
+            this.Supporter_Settings_GroupBox.TabStop = false;
+            this.Supporter_Settings_GroupBox.Text = "Supporter Settings";
             // 
-            // prem_help1
+            // Premium_Settings_Help_PictureBox
             // 
-            this.prem_help1.Image = ((System.Drawing.Image)(resources.GetObject("prem_help1.Image")));
-            this.prem_help1.Location = new System.Drawing.Point(329, 19);
-            this.prem_help1.Name = "prem_help1";
-            this.prem_help1.Size = new System.Drawing.Size(16, 16);
-            this.prem_help1.TabIndex = 40;
-            this.prem_help1.TabStop = false;
-            this.toolTip.SetToolTip(this.prem_help1, "You need 7DSM Supporter to change these options.\r\nIt\'s almost free, please check " +
+            this.Premium_Settings_Help_PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("Premium_Settings_Help_PictureBox.Image")));
+            this.Premium_Settings_Help_PictureBox.Location = new System.Drawing.Point(329, 19);
+            this.Premium_Settings_Help_PictureBox.Name = "Premium_Settings_Help_PictureBox";
+            this.Premium_Settings_Help_PictureBox.Size = new System.Drawing.Size(16, 16);
+            this.Premium_Settings_Help_PictureBox.TabIndex = 40;
+            this.Premium_Settings_Help_PictureBox.TabStop = false;
+            this.toolTip.SetToolTip(this.Premium_Settings_Help_PictureBox, "You need 7DSM Supporter to change these options.\r\nIt\'s almost free, please check " +
         "it out in \"Settings\" tab.");
             // 
-            // hide_don_btn
+            // Hide_Donation_Buttons_CheckBox
             // 
-            this.hide_don_btn.AutoSize = true;
-            this.hide_don_btn.Enabled = false;
-            this.hide_don_btn.Location = new System.Drawing.Point(18, 20);
-            this.hide_don_btn.Name = "hide_don_btn";
-            this.hide_don_btn.Size = new System.Drawing.Size(130, 17);
-            this.hide_don_btn.TabIndex = 41;
-            this.hide_don_btn.Text = "Hide donation buttons";
-            this.hide_don_btn.UseVisualStyleBackColor = true;
-            this.hide_don_btn.CheckedChanged += new System.EventHandler(this.hide_don_btn_CheckedChanged);
+            this.Hide_Donation_Buttons_CheckBox.AutoSize = true;
+            this.Hide_Donation_Buttons_CheckBox.Enabled = false;
+            this.Hide_Donation_Buttons_CheckBox.Location = new System.Drawing.Point(18, 20);
+            this.Hide_Donation_Buttons_CheckBox.Name = "Hide_Donation_Buttons_CheckBox";
+            this.Hide_Donation_Buttons_CheckBox.Size = new System.Drawing.Size(133, 17);
+            this.Hide_Donation_Buttons_CheckBox.TabIndex = 41;
+            this.Hide_Donation_Buttons_CheckBox.Text = "Hide Donation Buttons";
+            this.Hide_Donation_Buttons_CheckBox.UseVisualStyleBackColor = true;
+            this.Hide_Donation_Buttons_CheckBox.CheckedChanged += new System.EventHandler(this.hide_don_btn_CheckedChanged);
             // 
-            // prem_g
+            // Supporter_GroupBox
             // 
-            this.prem_g.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.prem_g.Controls.Add(this.prem_show);
-            this.prem_g.Controls.Add(this.dondon2);
-            this.prem_g.Controls.Add(this.prem_info_2);
-            this.prem_g.Controls.Add(this.prem_info);
-            this.prem_g.Controls.Add(this.prem_act);
-            this.prem_g.Controls.Add(this.prem_psw_l);
-            this.prem_g.Controls.Add(this.prem_psw);
-            this.prem_g.Location = new System.Drawing.Point(551, 255);
-            this.prem_g.Name = "prem_g";
-            this.prem_g.Size = new System.Drawing.Size(351, 199);
-            this.prem_g.TabIndex = 38;
-            this.prem_g.TabStop = false;
-            this.prem_g.Text = "7DSM Supporter";
+            this.Supporter_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Supporter_GroupBox.Controls.Add(this.Support_Code_Show_CheckBox);
+            this.Supporter_GroupBox.Controls.Add(this.Supporter_Donate_Button);
+            this.Supporter_GroupBox.Controls.Add(this.Supporter_Instructions_Label);
+            this.Supporter_GroupBox.Controls.Add(this.Supporter_Status_Label);
+            this.Supporter_GroupBox.Controls.Add(this.Supporter_Activate_Button);
+            this.Supporter_GroupBox.Controls.Add(this.Supporter_Code_Label);
+            this.Supporter_GroupBox.Controls.Add(this.Support_Code_TextBox);
+            this.Supporter_GroupBox.Location = new System.Drawing.Point(551, 255);
+            this.Supporter_GroupBox.Name = "Supporter_GroupBox";
+            this.Supporter_GroupBox.Size = new System.Drawing.Size(351, 199);
+            this.Supporter_GroupBox.TabIndex = 38;
+            this.Supporter_GroupBox.TabStop = false;
+            this.Supporter_GroupBox.Text = "7DSM Supporter";
             // 
-            // prem_show
+            // Support_Code_Show_CheckBox
             // 
-            this.prem_show.AutoSize = true;
-            this.prem_show.Location = new System.Drawing.Point(135, 19);
-            this.prem_show.Name = "prem_show";
-            this.prem_show.Size = new System.Drawing.Size(106, 17);
-            this.prem_show.TabIndex = 27;
-            this.prem_show.Text = "Show characters";
-            this.prem_show.UseVisualStyleBackColor = true;
-            this.prem_show.CheckedChanged += new System.EventHandler(this.prem_show_CheckedChanged);
+            this.Support_Code_Show_CheckBox.AutoSize = true;
+            this.Support_Code_Show_CheckBox.Location = new System.Drawing.Point(135, 19);
+            this.Support_Code_Show_CheckBox.Name = "Support_Code_Show_CheckBox";
+            this.Support_Code_Show_CheckBox.Size = new System.Drawing.Size(135, 17);
+            this.Support_Code_Show_CheckBox.TabIndex = 27;
+            this.Support_Code_Show_CheckBox.Text = "Show Code Characters";
+            this.Support_Code_Show_CheckBox.UseVisualStyleBackColor = true;
+            this.Support_Code_Show_CheckBox.CheckedChanged += new System.EventHandler(this.prem_show_CheckedChanged);
             // 
-            // dondon2
+            // Supporter_Donate_Button
             // 
-            this.dondon2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.dondon2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("dondon2.BackgroundImage")));
-            this.dondon2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.dondon2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dondon2.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dondon2.FlatAppearance.BorderSize = 0;
-            this.dondon2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dondon2.Location = new System.Drawing.Point(135, 68);
-            this.dondon2.Margin = new System.Windows.Forms.Padding(0);
-            this.dondon2.Name = "dondon2";
-            this.dondon2.Size = new System.Drawing.Size(75, 23);
-            this.dondon2.TabIndex = 26;
-            this.dondon2.UseVisualStyleBackColor = true;
-            this.dondon2.Click += new System.EventHandler(this.Forumklik_Click);
+            this.Supporter_Donate_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Supporter_Donate_Button.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Supporter_Donate_Button.BackgroundImage")));
+            this.Supporter_Donate_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Supporter_Donate_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Supporter_Donate_Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Supporter_Donate_Button.FlatAppearance.BorderSize = 0;
+            this.Supporter_Donate_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Supporter_Donate_Button.Location = new System.Drawing.Point(135, 68);
+            this.Supporter_Donate_Button.Margin = new System.Windows.Forms.Padding(0);
+            this.Supporter_Donate_Button.Name = "Supporter_Donate_Button";
+            this.Supporter_Donate_Button.Size = new System.Drawing.Size(75, 23);
+            this.Supporter_Donate_Button.TabIndex = 26;
+            this.Supporter_Donate_Button.UseVisualStyleBackColor = true;
+            this.Supporter_Donate_Button.Click += new System.EventHandler(this.Forumklik_Click);
             // 
-            // prem_info_2
+            // Supporter_Instructions_Label
             // 
-            this.prem_info_2.AutoSize = true;
-            this.prem_info_2.Location = new System.Drawing.Point(6, 114);
-            this.prem_info_2.Name = "prem_info_2";
-            this.prem_info_2.Size = new System.Drawing.Size(308, 78);
-            this.prem_info_2.TabIndex = 6;
-            this.prem_info_2.Text = resources.GetString("prem_info_2.Text");
+            this.Supporter_Instructions_Label.AutoSize = true;
+            this.Supporter_Instructions_Label.Location = new System.Drawing.Point(6, 114);
+            this.Supporter_Instructions_Label.Name = "Supporter_Instructions_Label";
+            this.Supporter_Instructions_Label.Size = new System.Drawing.Size(308, 78);
+            this.Supporter_Instructions_Label.TabIndex = 6;
+            this.Supporter_Instructions_Label.Text = resources.GetString("Supporter_Instructions_Label.Text");
             // 
-            // prem_info
+            // Supporter_Status_Label
             // 
-            this.prem_info.AutoSize = true;
-            this.prem_info.Location = new System.Drawing.Point(132, 94);
-            this.prem_info.Name = "prem_info";
-            this.prem_info.Size = new System.Drawing.Size(160, 13);
-            this.prem_info.TabIndex = 5;
-            this.prem_info.Text = "Supporter status: NOT activated";
+            this.Supporter_Status_Label.AutoSize = true;
+            this.Supporter_Status_Label.Location = new System.Drawing.Point(132, 94);
+            this.Supporter_Status_Label.Name = "Supporter_Status_Label";
+            this.Supporter_Status_Label.Size = new System.Drawing.Size(163, 13);
+            this.Supporter_Status_Label.TabIndex = 5;
+            this.Supporter_Status_Label.Text = "Supporter Status: NOT Activated";
             // 
-            // prem_act
+            // Supporter_Activate_Button
             // 
-            this.prem_act.Location = new System.Drawing.Point(216, 68);
-            this.prem_act.Name = "prem_act";
-            this.prem_act.Size = new System.Drawing.Size(75, 23);
-            this.prem_act.TabIndex = 4;
-            this.prem_act.Text = "Activate";
-            this.prem_act.UseVisualStyleBackColor = true;
-            this.prem_act.Click += new System.EventHandler(this.prem_act_Click);
+            this.Supporter_Activate_Button.Location = new System.Drawing.Point(216, 68);
+            this.Supporter_Activate_Button.Name = "Supporter_Activate_Button";
+            this.Supporter_Activate_Button.Size = new System.Drawing.Size(75, 23);
+            this.Supporter_Activate_Button.TabIndex = 4;
+            this.Supporter_Activate_Button.Text = "Activate";
+            this.Supporter_Activate_Button.UseVisualStyleBackColor = true;
+            this.Supporter_Activate_Button.Click += new System.EventHandler(this.prem_act_Click);
             // 
-            // prem_psw_l
+            // Supporter_Code_Label
             // 
-            this.prem_psw_l.AutoSize = true;
-            this.prem_psw_l.Location = new System.Drawing.Point(52, 45);
-            this.prem_psw_l.Name = "prem_psw_l";
-            this.prem_psw_l.Size = new System.Drawing.Size(83, 13);
-            this.prem_psw_l.TabIndex = 3;
-            this.prem_psw_l.Text = "Supporter code:";
+            this.Supporter_Code_Label.AutoSize = true;
+            this.Supporter_Code_Label.Location = new System.Drawing.Point(52, 45);
+            this.Supporter_Code_Label.Name = "Supporter_Code_Label";
+            this.Supporter_Code_Label.Size = new System.Drawing.Size(84, 13);
+            this.Supporter_Code_Label.TabIndex = 3;
+            this.Supporter_Code_Label.Text = "Supporter Code:";
             // 
-            // prem_psw
+            // Support_Code_TextBox
             // 
-            this.prem_psw.Location = new System.Drawing.Point(135, 42);
-            this.prem_psw.MaxLength = 8;
-            this.prem_psw.Name = "prem_psw";
-            this.prem_psw.PasswordChar = '*';
-            this.prem_psw.Size = new System.Drawing.Size(156, 20);
-            this.prem_psw.TabIndex = 1;
+            this.Support_Code_TextBox.Location = new System.Drawing.Point(140, 42);
+            this.Support_Code_TextBox.MaxLength = 8;
+            this.Support_Code_TextBox.Name = "Support_Code_TextBox";
+            this.Support_Code_TextBox.PasswordChar = '*';
+            this.Support_Code_TextBox.Size = new System.Drawing.Size(156, 20);
+            this.Support_Code_TextBox.TabIndex = 1;
             // 
             // debug_log
             // 
@@ -853,178 +863,183 @@
             this.debug_log.UseVisualStyleBackColor = true;
             this.debug_log.CheckedChanged += new System.EventHandler(this.debug_log_CheckedChanged);
             // 
-            // sql
+            // SQL_GroupBox
             // 
-            this.sql.Controls.Add(this.sql_enabled);
-            this.sql.Controls.Add(this.sql_updates_time_g);
-            this.sql.Controls.Add(this.sql_host_g);
-            this.sql.Controls.Add(this.how_to_sql);
-            this.sql.Controls.Add(this.sql_username_g);
-            this.sql.Controls.Add(this.sql_db_name_g);
-            this.sql.Controls.Add(this.sql_password_g);
-            this.sql.Location = new System.Drawing.Point(8, 238);
-            this.sql.Name = "sql";
-            this.sql.Size = new System.Drawing.Size(534, 376);
-            this.sql.TabIndex = 10;
-            this.sql.TabStop = false;
-            this.sql.Text = "SQL";
+            this.SQL_GroupBox.Controls.Add(this.SQL_Enabled_CheckBox);
+            this.SQL_GroupBox.Controls.Add(this.SQL_Update_Time_GroupBox);
+            this.SQL_GroupBox.Controls.Add(this.SQL_Host_GroupBox);
+            this.SQL_GroupBox.Controls.Add(this.SQL_How_To_Integrate_Button);
+            this.SQL_GroupBox.Controls.Add(this.SQL_Username_GroupBox);
+            this.SQL_GroupBox.Controls.Add(this.SQL_DB_Name_GroupBox);
+            this.SQL_GroupBox.Controls.Add(this.SQL_Password_GroupBox);
+            this.SQL_GroupBox.Location = new System.Drawing.Point(8, 238);
+            this.SQL_GroupBox.Name = "SQL_GroupBox";
+            this.SQL_GroupBox.Size = new System.Drawing.Size(534, 376);
+            this.SQL_GroupBox.TabIndex = 10;
+            this.SQL_GroupBox.TabStop = false;
+            this.SQL_GroupBox.Text = "SQL";
             // 
-            // sql_enabled
+            // SQL_Enabled_CheckBox
             // 
-            this.sql_enabled.AutoSize = true;
-            this.sql_enabled.Location = new System.Drawing.Point(6, 19);
-            this.sql_enabled.Name = "sql_enabled";
-            this.sql_enabled.Size = new System.Drawing.Size(83, 17);
-            this.sql_enabled.TabIndex = 0;
-            this.sql_enabled.Text = "sql_enabled";
-            this.sql_enabled.UseVisualStyleBackColor = true;
-            this.sql_enabled.CheckedChanged += new System.EventHandler(this.sql_enabled_CheckedChanged);
+            this.SQL_Enabled_CheckBox.AutoSize = true;
+            this.SQL_Enabled_CheckBox.Location = new System.Drawing.Point(6, 19);
+            this.SQL_Enabled_CheckBox.Name = "SQL_Enabled_CheckBox";
+            this.SQL_Enabled_CheckBox.Size = new System.Drawing.Size(185, 17);
+            this.SQL_Enabled_CheckBox.TabIndex = 0;
+            this.SQL_Enabled_CheckBox.Text = "Export Data To MySQL Database";
+            this.SQL_Enabled_CheckBox.UseVisualStyleBackColor = true;
+            this.SQL_Enabled_CheckBox.CheckedChanged += new System.EventHandler(this.Sql_enabled_CheckedChanged);
             // 
-            // sql_updates_time_g
+            // SQL_Update_Time_GroupBox
             // 
-            this.sql_updates_time_g.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.SQL_Update_Time_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.sql_updates_time_g.Controls.Add(this.sql_updates_time);
-            this.sql_updates_time_g.Controls.Add(this.upd_time);
-            this.sql_updates_time_g.Location = new System.Drawing.Point(6, 277);
-            this.sql_updates_time_g.Name = "sql_updates_time_g";
-            this.sql_updates_time_g.Size = new System.Drawing.Size(522, 50);
-            this.sql_updates_time_g.TabIndex = 9;
-            this.sql_updates_time_g.TabStop = false;
-            this.sql_updates_time_g.Text = "sql_updates_time_g";
+            this.SQL_Update_Time_GroupBox.Controls.Add(this.SQL_Update_Time_Info_PictureBox);
+            this.SQL_Update_Time_GroupBox.Controls.Add(this.SQL_Update_Time_TextBox);
+            this.SQL_Update_Time_GroupBox.Controls.Add(this.SQL_Update_Time_Label);
+            this.SQL_Update_Time_GroupBox.Location = new System.Drawing.Point(6, 277);
+            this.SQL_Update_Time_GroupBox.Name = "SQL_Update_Time_GroupBox";
+            this.SQL_Update_Time_GroupBox.Size = new System.Drawing.Size(522, 50);
+            this.SQL_Update_Time_GroupBox.TabIndex = 9;
+            this.SQL_Update_Time_GroupBox.TabStop = false;
+            this.SQL_Update_Time_GroupBox.Text = "SQL Update Time";
             // 
-            // sql_updates_time
+            // SQL_Update_Time_TextBox
             // 
-            this.sql_updates_time.Location = new System.Drawing.Point(6, 19);
-            this.sql_updates_time.Name = "sql_updates_time";
-            this.sql_updates_time.Size = new System.Drawing.Size(41, 20);
-            this.sql_updates_time.TabIndex = 1;
-            this.sql_updates_time.Text = "60";
-            this.sql_updates_time.TextChanged += new System.EventHandler(this.sql_updates_time_TextChanged);
+            this.SQL_Update_Time_TextBox.Location = new System.Drawing.Point(6, 19);
+            this.SQL_Update_Time_TextBox.Name = "SQL_Update_Time_TextBox";
+            this.SQL_Update_Time_TextBox.Size = new System.Drawing.Size(41, 20);
+            this.SQL_Update_Time_TextBox.TabIndex = 1;
+            this.SQL_Update_Time_TextBox.Text = "60";
+            this.SQL_Update_Time_TextBox.TextChanged += new System.EventHandler(this.Sql_updates_time_TextChanged);
             // 
-            // upd_time
+            // SQL_Update_Time_Label
             // 
-            this.upd_time.AutoSize = true;
-            this.upd_time.Location = new System.Drawing.Point(50, 22);
-            this.upd_time.Name = "upd_time";
-            this.upd_time.Size = new System.Drawing.Size(50, 13);
-            this.upd_time.TabIndex = 7;
-            this.upd_time.Text = "upd_time";
+            this.SQL_Update_Time_Label.AutoSize = true;
+            this.SQL_Update_Time_Label.Location = new System.Drawing.Point(50, 23);
+            this.SQL_Update_Time_Label.Name = "SQL_Update_Time_Label";
+            this.SQL_Update_Time_Label.Size = new System.Drawing.Size(43, 13);
+            this.SQL_Update_Time_Label.TabIndex = 7;
+            this.SQL_Update_Time_Label.Text = "minutes";
             // 
-            // sql_host_g
+            // SQL_Host_GroupBox
             // 
-            this.sql_host_g.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.SQL_Host_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.sql_host_g.Controls.Add(this.sql_host);
-            this.sql_host_g.Location = new System.Drawing.Point(6, 42);
-            this.sql_host_g.Name = "sql_host_g";
-            this.sql_host_g.Size = new System.Drawing.Size(522, 50);
-            this.sql_host_g.TabIndex = 2;
-            this.sql_host_g.TabStop = false;
-            this.sql_host_g.Text = "sql_host_g";
+            this.SQL_Host_GroupBox.Controls.Add(this.SQL_Host_Info_PictureBox);
+            this.SQL_Host_GroupBox.Controls.Add(this.SQL_Host_TextBox);
+            this.SQL_Host_GroupBox.Location = new System.Drawing.Point(6, 42);
+            this.SQL_Host_GroupBox.Name = "SQL_Host_GroupBox";
+            this.SQL_Host_GroupBox.Size = new System.Drawing.Size(522, 50);
+            this.SQL_Host_GroupBox.TabIndex = 2;
+            this.SQL_Host_GroupBox.TabStop = false;
+            this.SQL_Host_GroupBox.Text = "SQL Host";
             // 
-            // sql_host
+            // SQL_Host_TextBox
             // 
-            this.sql_host.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.SQL_Host_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.sql_host.Location = new System.Drawing.Point(6, 19);
-            this.sql_host.Name = "sql_host";
-            this.sql_host.Size = new System.Drawing.Size(510, 20);
-            this.sql_host.TabIndex = 1;
-            this.sql_host.Text = "localhost";
-            this.sql_host.TextChanged += new System.EventHandler(this.sql_host_TextChanged);
+            this.SQL_Host_TextBox.Location = new System.Drawing.Point(6, 19);
+            this.SQL_Host_TextBox.Name = "SQL_Host_TextBox";
+            this.SQL_Host_TextBox.Size = new System.Drawing.Size(490, 20);
+            this.SQL_Host_TextBox.TabIndex = 1;
+            this.SQL_Host_TextBox.Text = "localhost";
+            this.SQL_Host_TextBox.TextChanged += new System.EventHandler(this.Sql_host_TextChanged);
             // 
-            // how_to_sql
+            // SQL_How_To_Integrate_Button
             // 
-            this.how_to_sql.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.SQL_How_To_Integrate_Button.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.how_to_sql.Location = new System.Drawing.Point(6, 333);
-            this.how_to_sql.Name = "how_to_sql";
-            this.how_to_sql.Size = new System.Drawing.Size(522, 31);
-            this.how_to_sql.TabIndex = 8;
-            this.how_to_sql.Text = "How to integrate it with my website? - Examples";
-            this.how_to_sql.UseVisualStyleBackColor = true;
-            this.how_to_sql.Click += new System.EventHandler(this.how_to_sql_Click);
+            this.SQL_How_To_Integrate_Button.Location = new System.Drawing.Point(6, 333);
+            this.SQL_How_To_Integrate_Button.Name = "SQL_How_To_Integrate_Button";
+            this.SQL_How_To_Integrate_Button.Size = new System.Drawing.Size(522, 31);
+            this.SQL_How_To_Integrate_Button.TabIndex = 8;
+            this.SQL_How_To_Integrate_Button.Text = "How to integrate it with my website? - Examples";
+            this.SQL_How_To_Integrate_Button.UseVisualStyleBackColor = true;
+            this.SQL_How_To_Integrate_Button.Click += new System.EventHandler(this.How_to_sql_Click);
             // 
-            // sql_username_g
+            // SQL_Username_GroupBox
             // 
-            this.sql_username_g.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.SQL_Username_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.sql_username_g.Controls.Add(this.sql_username);
-            this.sql_username_g.Location = new System.Drawing.Point(6, 98);
-            this.sql_username_g.Name = "sql_username_g";
-            this.sql_username_g.Size = new System.Drawing.Size(522, 50);
-            this.sql_username_g.TabIndex = 3;
-            this.sql_username_g.TabStop = false;
-            this.sql_username_g.Text = "sql_username_g";
+            this.SQL_Username_GroupBox.Controls.Add(this.SQL_Username_Info_PictureBox);
+            this.SQL_Username_GroupBox.Controls.Add(this.SQL_Username_TextBox);
+            this.SQL_Username_GroupBox.Location = new System.Drawing.Point(6, 98);
+            this.SQL_Username_GroupBox.Name = "SQL_Username_GroupBox";
+            this.SQL_Username_GroupBox.Size = new System.Drawing.Size(522, 50);
+            this.SQL_Username_GroupBox.TabIndex = 3;
+            this.SQL_Username_GroupBox.TabStop = false;
+            this.SQL_Username_GroupBox.Text = "SQL Username";
             // 
-            // sql_username
+            // SQL_Username_TextBox
             // 
-            this.sql_username.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.SQL_Username_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.sql_username.Location = new System.Drawing.Point(6, 19);
-            this.sql_username.Name = "sql_username";
-            this.sql_username.Size = new System.Drawing.Size(510, 20);
-            this.sql_username.TabIndex = 1;
-            this.sql_username.Text = "root";
-            this.sql_username.TextChanged += new System.EventHandler(this.sql_username_TextChanged);
+            this.SQL_Username_TextBox.Location = new System.Drawing.Point(6, 19);
+            this.SQL_Username_TextBox.Name = "SQL_Username_TextBox";
+            this.SQL_Username_TextBox.Size = new System.Drawing.Size(490, 20);
+            this.SQL_Username_TextBox.TabIndex = 1;
+            this.SQL_Username_TextBox.Text = "root";
+            this.SQL_Username_TextBox.TextChanged += new System.EventHandler(this.Sql_username_TextChanged);
             // 
-            // sql_db_name_g
+            // SQL_DB_Name_GroupBox
             // 
-            this.sql_db_name_g.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.SQL_DB_Name_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.sql_db_name_g.Controls.Add(this.sql_db_name);
-            this.sql_db_name_g.Location = new System.Drawing.Point(6, 221);
-            this.sql_db_name_g.Name = "sql_db_name_g";
-            this.sql_db_name_g.Size = new System.Drawing.Size(522, 50);
-            this.sql_db_name_g.TabIndex = 5;
-            this.sql_db_name_g.TabStop = false;
-            this.sql_db_name_g.Text = "sql_db_name_g";
+            this.SQL_DB_Name_GroupBox.Controls.Add(this.SQL_Database_Name_Info_PictureBox);
+            this.SQL_DB_Name_GroupBox.Controls.Add(this.SQL_Database_Name_TextBox);
+            this.SQL_DB_Name_GroupBox.Location = new System.Drawing.Point(6, 221);
+            this.SQL_DB_Name_GroupBox.Name = "SQL_DB_Name_GroupBox";
+            this.SQL_DB_Name_GroupBox.Size = new System.Drawing.Size(522, 50);
+            this.SQL_DB_Name_GroupBox.TabIndex = 5;
+            this.SQL_DB_Name_GroupBox.TabStop = false;
+            this.SQL_DB_Name_GroupBox.Text = "SQL Database Name";
             // 
-            // sql_db_name
+            // SQL_Database_Name_TextBox
             // 
-            this.sql_db_name.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.SQL_Database_Name_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.sql_db_name.Location = new System.Drawing.Point(6, 19);
-            this.sql_db_name.Name = "sql_db_name";
-            this.sql_db_name.Size = new System.Drawing.Size(510, 20);
-            this.sql_db_name.TabIndex = 1;
-            this.sql_db_name.Text = "test";
-            this.sql_db_name.TextChanged += new System.EventHandler(this.sql_db_name_TextChanged);
+            this.SQL_Database_Name_TextBox.Location = new System.Drawing.Point(6, 19);
+            this.SQL_Database_Name_TextBox.Name = "SQL_Database_Name_TextBox";
+            this.SQL_Database_Name_TextBox.Size = new System.Drawing.Size(490, 20);
+            this.SQL_Database_Name_TextBox.TabIndex = 1;
+            this.SQL_Database_Name_TextBox.Text = "test";
+            this.SQL_Database_Name_TextBox.TextChanged += new System.EventHandler(this.Sql_db_name_TextChanged);
             // 
-            // sql_password_g
+            // SQL_Password_GroupBox
             // 
-            this.sql_password_g.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.SQL_Password_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.sql_password_g.Controls.Add(this.sql_warn);
-            this.sql_password_g.Controls.Add(this.sql_password);
-            this.sql_password_g.Location = new System.Drawing.Point(6, 154);
-            this.sql_password_g.Name = "sql_password_g";
-            this.sql_password_g.Size = new System.Drawing.Size(522, 61);
-            this.sql_password_g.TabIndex = 4;
-            this.sql_password_g.TabStop = false;
-            this.sql_password_g.Text = "sql_password_g";
+            this.SQL_Password_GroupBox.Controls.Add(this.SQL_Password_Info_PictureBox);
+            this.SQL_Password_GroupBox.Controls.Add(this.SQL_Encrption_Warning_Label);
+            this.SQL_Password_GroupBox.Controls.Add(this.SQL_Password_TextBox);
+            this.SQL_Password_GroupBox.Location = new System.Drawing.Point(6, 154);
+            this.SQL_Password_GroupBox.Name = "SQL_Password_GroupBox";
+            this.SQL_Password_GroupBox.Size = new System.Drawing.Size(522, 61);
+            this.SQL_Password_GroupBox.TabIndex = 4;
+            this.SQL_Password_GroupBox.TabStop = false;
+            this.SQL_Password_GroupBox.Text = "SQL Password";
             // 
-            // sql_warn
+            // SQL_Encrption_Warning_Label
             // 
-            this.sql_warn.AutoSize = true;
-            this.sql_warn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.sql_warn.Location = new System.Drawing.Point(6, 42);
-            this.sql_warn.Name = "sql_warn";
-            this.sql_warn.Size = new System.Drawing.Size(49, 13);
-            this.sql_warn.TabIndex = 7;
-            this.sql_warn.Text = "sql_warn";
+            this.SQL_Encrption_Warning_Label.AutoSize = true;
+            this.SQL_Encrption_Warning_Label.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.SQL_Encrption_Warning_Label.Location = new System.Drawing.Point(6, 42);
+            this.SQL_Encrption_Warning_Label.Name = "SQL_Encrption_Warning_Label";
+            this.SQL_Encrption_Warning_Label.Size = new System.Drawing.Size(177, 13);
+            this.SQL_Encrption_Warning_Label.TabIndex = 7;
+            this.SQL_Encrption_Warning_Label.Text = "Stored Password is NOT Encrypted!";
             // 
-            // sql_password
+            // SQL_Password_TextBox
             // 
-            this.sql_password.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.SQL_Password_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.sql_password.Location = new System.Drawing.Point(6, 19);
-            this.sql_password.Name = "sql_password";
-            this.sql_password.PasswordChar = '*';
-            this.sql_password.Size = new System.Drawing.Size(510, 20);
-            this.sql_password.TabIndex = 1;
-            this.sql_password.TextChanged += new System.EventHandler(this.sql_password_TextChanged);
+            this.SQL_Password_TextBox.Location = new System.Drawing.Point(6, 19);
+            this.SQL_Password_TextBox.Name = "SQL_Password_TextBox";
+            this.SQL_Password_TextBox.PasswordChar = '*';
+            this.SQL_Password_TextBox.Size = new System.Drawing.Size(490, 20);
+            this.SQL_Password_TextBox.TabIndex = 1;
+            this.SQL_Password_TextBox.TextChanged += new System.EventHandler(this.Sql_password_TextChanged);
             // 
             // blad
             // 
@@ -1059,25 +1074,25 @@
             this.taskman.Size = new System.Drawing.Size(352, 95);
             this.taskman.TabIndex = 26;
             // 
-            // ustawienia_grupa_ustawienia
+            // Settings_GroupBox
             // 
-            this.ustawienia_grupa_ustawienia.Controls.Add(this.skip_profiles);
-            this.ustawienia_grupa_ustawienia.Controls.Add(this.browse);
-            this.ustawienia_grupa_ustawienia.Controls.Add(this.anon_data_2);
-            this.ustawienia_grupa_ustawienia.Controls.Add(this.anon_data);
-            this.ustawienia_grupa_ustawienia.Controls.Add(this.cleanexit);
-            this.ustawienia_grupa_ustawienia.Controls.Add(this.show_ip);
-            this.ustawienia_grupa_ustawienia.Controls.Add(this.steamsearch);
-            this.ustawienia_grupa_ustawienia.Controls.Add(this.always_on_top);
-            this.ustawienia_grupa_ustawienia.Controls.Add(this.chpath);
-            this.ustawienia_grupa_ustawienia.Controls.Add(this.path);
-            this.ustawienia_grupa_ustawienia.Controls.Add(this.to_tray);
-            this.ustawienia_grupa_ustawienia.Location = new System.Drawing.Point(8, 3);
-            this.ustawienia_grupa_ustawienia.Name = "ustawienia_grupa_ustawienia";
-            this.ustawienia_grupa_ustawienia.Size = new System.Drawing.Size(534, 229);
-            this.ustawienia_grupa_ustawienia.TabIndex = 22;
-            this.ustawienia_grupa_ustawienia.TabStop = false;
-            this.ustawienia_grupa_ustawienia.Text = "ustawienia_grupa_ustawienia";
+            this.Settings_GroupBox.Controls.Add(this.skip_profiles);
+            this.Settings_GroupBox.Controls.Add(this.Browse_Game_File_Path_Button);
+            this.Settings_GroupBox.Controls.Add(this.anon_data_2);
+            this.Settings_GroupBox.Controls.Add(this.anon_data);
+            this.Settings_GroupBox.Controls.Add(this.cleanexit);
+            this.Settings_GroupBox.Controls.Add(this.show_ip);
+            this.Settings_GroupBox.Controls.Add(this.Auto_Detect_Game_File_Path_Button);
+            this.Settings_GroupBox.Controls.Add(this.always_on_top);
+            this.Settings_GroupBox.Controls.Add(this.Change_Game_File_Path_Button);
+            this.Settings_GroupBox.Controls.Add(this.Game_File_Path_Label);
+            this.Settings_GroupBox.Controls.Add(this.to_tray);
+            this.Settings_GroupBox.Location = new System.Drawing.Point(8, 3);
+            this.Settings_GroupBox.Name = "Settings_GroupBox";
+            this.Settings_GroupBox.Size = new System.Drawing.Size(534, 229);
+            this.Settings_GroupBox.TabIndex = 22;
+            this.Settings_GroupBox.TabStop = false;
+            this.Settings_GroupBox.Text = "Settings";
             // 
             // skip_profiles
             // 
@@ -1090,15 +1105,15 @@
             this.skip_profiles.UseVisualStyleBackColor = true;
             this.skip_profiles.CheckedChanged += new System.EventHandler(this.Skip_profiles_CheckedChanged);
             // 
-            // browse
+            // Browse_Game_File_Path_Button
             // 
-            this.browse.Location = new System.Drawing.Point(325, 200);
-            this.browse.Name = "browse";
-            this.browse.Size = new System.Drawing.Size(70, 23);
-            this.browse.TabIndex = 35;
-            this.browse.Text = "browse";
-            this.browse.UseVisualStyleBackColor = true;
-            this.browse.Click += new System.EventHandler(this.Browse_Click);
+            this.Browse_Game_File_Path_Button.Location = new System.Drawing.Point(325, 200);
+            this.Browse_Game_File_Path_Button.Name = "Browse_Game_File_Path_Button";
+            this.Browse_Game_File_Path_Button.Size = new System.Drawing.Size(70, 23);
+            this.Browse_Game_File_Path_Button.TabIndex = 35;
+            this.Browse_Game_File_Path_Button.Text = "Browse";
+            this.Browse_Game_File_Path_Button.UseVisualStyleBackColor = true;
+            this.Browse_Game_File_Path_Button.Click += new System.EventHandler(this.Browse_Click);
             // 
             // anon_data_2
             // 
@@ -1148,16 +1163,16 @@
             this.show_ip.UseVisualStyleBackColor = true;
             this.show_ip.CheckedChanged += new System.EventHandler(this.show_ip_CheckedChanged);
             // 
-            // steamsearch
+            // Auto_Detect_Game_File_Path_Button
             // 
-            this.steamsearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.steamsearch.Location = new System.Drawing.Point(6, 200);
-            this.steamsearch.Name = "steamsearch";
-            this.steamsearch.Size = new System.Drawing.Size(207, 23);
-            this.steamsearch.TabIndex = 29;
-            this.steamsearch.Text = "steamsearch";
-            this.steamsearch.UseVisualStyleBackColor = true;
-            this.steamsearch.Click += new System.EventHandler(this.steamsearch_Click);
+            this.Auto_Detect_Game_File_Path_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Auto_Detect_Game_File_Path_Button.Location = new System.Drawing.Point(6, 200);
+            this.Auto_Detect_Game_File_Path_Button.Name = "Auto_Detect_Game_File_Path_Button";
+            this.Auto_Detect_Game_File_Path_Button.Size = new System.Drawing.Size(207, 23);
+            this.Auto_Detect_Game_File_Path_Button.TabIndex = 29;
+            this.Auto_Detect_Game_File_Path_Button.Text = "Auto Detect";
+            this.Auto_Detect_Game_File_Path_Button.UseVisualStyleBackColor = true;
+            this.Auto_Detect_Game_File_Path_Button.Click += new System.EventHandler(this.steamsearch_Click);
             // 
             // always_on_top
             // 
@@ -1170,26 +1185,26 @@
             this.always_on_top.UseVisualStyleBackColor = true;
             this.always_on_top.CheckedChanged += new System.EventHandler(this.always_on_top_CheckedChanged);
             // 
-            // chpath
+            // Change_Game_File_Path_Button
             // 
-            this.chpath.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.chpath.Location = new System.Drawing.Point(219, 200);
-            this.chpath.Name = "chpath";
-            this.chpath.Size = new System.Drawing.Size(100, 23);
-            this.chpath.TabIndex = 24;
-            this.chpath.Text = "Zmień";
-            this.chpath.UseVisualStyleBackColor = true;
-            this.chpath.Click += new System.EventHandler(this.chpath_Click);
+            this.Change_Game_File_Path_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Change_Game_File_Path_Button.Location = new System.Drawing.Point(219, 200);
+            this.Change_Game_File_Path_Button.Name = "Change_Game_File_Path_Button";
+            this.Change_Game_File_Path_Button.Size = new System.Drawing.Size(100, 23);
+            this.Change_Game_File_Path_Button.TabIndex = 24;
+            this.Change_Game_File_Path_Button.Text = "Change Path";
+            this.Change_Game_File_Path_Button.UseVisualStyleBackColor = true;
+            this.Change_Game_File_Path_Button.Click += new System.EventHandler(this.chpath_Click);
             // 
-            // path
+            // Game_File_Path_Label
             // 
-            this.path.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.path.AutoSize = true;
-            this.path.Location = new System.Drawing.Point(5, 184);
-            this.path.Name = "path";
-            this.path.Size = new System.Drawing.Size(34, 13);
-            this.path.TabIndex = 23;
-            this.path.Text = "(brak)";
+            this.Game_File_Path_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Game_File_Path_Label.AutoSize = true;
+            this.Game_File_Path_Label.Location = new System.Drawing.Point(5, 184);
+            this.Game_File_Path_Label.Name = "Game_File_Path_Label";
+            this.Game_File_Path_Label.Size = new System.Drawing.Size(85, 13);
+            this.Game_File_Path_Label.TabIndex = 23;
+            this.Game_File_Path_Label.Text = "Game File Path: ";
             // 
             // to_tray
             // 
@@ -1202,16 +1217,16 @@
             this.to_tray.UseVisualStyleBackColor = true;
             this.to_tray.CheckedChanged += new System.EventHandler(this.to_tray_CheckedChanged);
             // 
-            // about
+            // About_Button
             // 
-            this.about.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.about.Location = new System.Drawing.Point(658, 649);
-            this.about.Name = "about";
-            this.about.Size = new System.Drawing.Size(243, 23);
-            this.about.TabIndex = 12;
-            this.about.Text = "about";
-            this.about.UseVisualStyleBackColor = true;
-            this.about.Click += new System.EventHandler(this.telnet_Click);
+            this.About_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.About_Button.Location = new System.Drawing.Point(658, 649);
+            this.About_Button.Name = "About_Button";
+            this.About_Button.Size = new System.Drawing.Size(243, 23);
+            this.About_Button.TabIndex = 12;
+            this.About_Button.Text = "About...";
+            this.About_Button.UseVisualStyleBackColor = true;
+            this.About_Button.Click += new System.EventHandler(this.telnet_Click);
             // 
             // auto_backup_group
             // 
@@ -1285,35 +1300,35 @@
             this.backup_time.Value = 16;
             this.backup_time.Scroll += new System.EventHandler(this.backup_time_Scroll);
             // 
-            // spawn_group
+            // Spawn_GroupBox
             // 
-            this.spawn_group.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.Spawn_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.spawn_group.Controls.Add(this.spawn_now);
-            this.spawn_group.Controls.Add(this.spawn_item);
-            this.spawn_group.Location = new System.Drawing.Point(309, 414);
-            this.spawn_group.Name = "spawn_group";
-            this.spawn_group.Size = new System.Drawing.Size(592, 48);
-            this.spawn_group.TabIndex = 21;
-            this.spawn_group.TabStop = false;
-            this.spawn_group.Text = "Spawn items";
+            this.Spawn_GroupBox.Controls.Add(this.Spawn_Item_Button);
+            this.Spawn_GroupBox.Controls.Add(this.Spawn_Item_ComboBox);
+            this.Spawn_GroupBox.Location = new System.Drawing.Point(309, 414);
+            this.Spawn_GroupBox.Name = "Spawn_GroupBox";
+            this.Spawn_GroupBox.Size = new System.Drawing.Size(592, 48);
+            this.Spawn_GroupBox.TabIndex = 21;
+            this.Spawn_GroupBox.TabStop = false;
+            this.Spawn_GroupBox.Text = "Spawn items";
             // 
-            // spawn_now
+            // Spawn_Item_Button
             // 
-            this.spawn_now.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.spawn_now.Location = new System.Drawing.Point(465, 19);
-            this.spawn_now.Name = "spawn_now";
-            this.spawn_now.Size = new System.Drawing.Size(121, 21);
-            this.spawn_now.TabIndex = 3;
-            this.spawn_now.Text = "Spawn";
-            this.spawn_now.UseVisualStyleBackColor = true;
-            this.spawn_now.Click += new System.EventHandler(this.spawn_now_Click);
+            this.Spawn_Item_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Spawn_Item_Button.Location = new System.Drawing.Point(465, 19);
+            this.Spawn_Item_Button.Name = "Spawn_Item_Button";
+            this.Spawn_Item_Button.Size = new System.Drawing.Size(121, 21);
+            this.Spawn_Item_Button.TabIndex = 3;
+            this.Spawn_Item_Button.Text = "Spawn";
+            this.Spawn_Item_Button.UseVisualStyleBackColor = true;
+            this.Spawn_Item_Button.Click += new System.EventHandler(this.spawn_now_Click);
             // 
-            // spawn_item
+            // Spawn_Item_ComboBox
             // 
-            this.spawn_item.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.spawn_item.FormattingEnabled = true;
-            this.spawn_item.Items.AddRange(new object[] {
+            this.Spawn_Item_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Spawn_Item_ComboBox.FormattingEnabled = true;
+            this.Spawn_Item_ComboBox.Items.AddRange(new object[] {
             "  1 - zombieTemplateMale",
             "  2 - zombieWightFeral",
             "  3 - zombieWightFeralRadiated",
@@ -1403,26 +1418,26 @@
             "  87 - npcTraderBob",
             "  88 - npcTraderJimmy",
             "  89 - npcTraderHugh"});
-            this.spawn_item.Location = new System.Drawing.Point(6, 19);
-            this.spawn_item.Name = "spawn_item";
-            this.spawn_item.Size = new System.Drawing.Size(151, 21);
-            this.spawn_item.TabIndex = 0;
+            this.Spawn_Item_ComboBox.Location = new System.Drawing.Point(6, 19);
+            this.Spawn_Item_ComboBox.Name = "Spawn_Item_ComboBox";
+            this.Spawn_Item_ComboBox.Size = new System.Drawing.Size(151, 21);
+            this.Spawn_Item_ComboBox.TabIndex = 0;
             // 
-            // telnet_group
+            // Game_Time_Controls_GroupBox
             // 
-            this.telnet_group.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.Game_Time_Controls_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.telnet_group.Controls.Add(this.godzina);
-            this.telnet_group.Controls.Add(this.dzien);
-            this.telnet_group.Controls.Add(this.telnet_connect);
-            this.telnet_group.Controls.Add(this.dzien_bar);
-            this.telnet_group.Controls.Add(this.godzina_bar);
-            this.telnet_group.Location = new System.Drawing.Point(309, 517);
-            this.telnet_group.Name = "telnet_group";
-            this.telnet_group.Size = new System.Drawing.Size(592, 140);
-            this.telnet_group.TabIndex = 19;
-            this.telnet_group.TabStop = false;
-            this.telnet_group.Text = "Change time";
+            this.Game_Time_Controls_GroupBox.Controls.Add(this.godzina);
+            this.Game_Time_Controls_GroupBox.Controls.Add(this.dzien);
+            this.Game_Time_Controls_GroupBox.Controls.Add(this.Set_Game_Time_Button);
+            this.Game_Time_Controls_GroupBox.Controls.Add(this.Game_Day_TrackBar);
+            this.Game_Time_Controls_GroupBox.Controls.Add(this.Game_Hour_TrackBar);
+            this.Game_Time_Controls_GroupBox.Location = new System.Drawing.Point(309, 517);
+            this.Game_Time_Controls_GroupBox.Name = "Game_Time_Controls_GroupBox";
+            this.Game_Time_Controls_GroupBox.Size = new System.Drawing.Size(592, 140);
+            this.Game_Time_Controls_GroupBox.TabIndex = 19;
+            this.Game_Time_Controls_GroupBox.TabStop = false;
+            this.Game_Time_Controls_GroupBox.Text = "Game Time Controls";
             // 
             // godzina
             // 
@@ -1442,71 +1457,71 @@
             this.dzien.TabIndex = 2;
             this.dzien.Text = "Day [1]";
             // 
-            // telnet_connect
+            // Set_Game_Time_Button
             // 
-            this.telnet_connect.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.telnet_connect.Location = new System.Drawing.Point(465, 113);
-            this.telnet_connect.Name = "telnet_connect";
-            this.telnet_connect.Size = new System.Drawing.Size(121, 21);
-            this.telnet_connect.TabIndex = 0;
-            this.telnet_connect.Text = "Set";
-            this.telnet_connect.UseVisualStyleBackColor = true;
-            this.telnet_connect.Click += new System.EventHandler(this.telnet_connect_Click);
+            this.Set_Game_Time_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.Set_Game_Time_Button.Location = new System.Drawing.Point(465, 113);
+            this.Set_Game_Time_Button.Name = "Set_Game_Time_Button";
+            this.Set_Game_Time_Button.Size = new System.Drawing.Size(121, 21);
+            this.Set_Game_Time_Button.TabIndex = 0;
+            this.Set_Game_Time_Button.Text = "Set";
+            this.Set_Game_Time_Button.UseVisualStyleBackColor = true;
+            this.Set_Game_Time_Button.Click += new System.EventHandler(this.telnet_connect_Click);
             // 
-            // dzien_bar
+            // Game_Day_TrackBar
             // 
-            this.dzien_bar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Game_Day_TrackBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dzien_bar.Location = new System.Drawing.Point(6, 34);
-            this.dzien_bar.Maximum = 365;
-            this.dzien_bar.Minimum = 1;
-            this.dzien_bar.Name = "dzien_bar";
-            this.dzien_bar.Size = new System.Drawing.Size(580, 45);
-            this.dzien_bar.TabIndex = 1;
-            this.dzien_bar.Value = 1;
-            this.dzien_bar.Scroll += new System.EventHandler(this.dzien_bar_Scroll);
+            this.Game_Day_TrackBar.Location = new System.Drawing.Point(6, 34);
+            this.Game_Day_TrackBar.Maximum = 365;
+            this.Game_Day_TrackBar.Minimum = 1;
+            this.Game_Day_TrackBar.Name = "Game_Day_TrackBar";
+            this.Game_Day_TrackBar.Size = new System.Drawing.Size(580, 45);
+            this.Game_Day_TrackBar.TabIndex = 1;
+            this.Game_Day_TrackBar.Value = 1;
+            this.Game_Day_TrackBar.Scroll += new System.EventHandler(this.dzien_bar_Scroll);
             // 
-            // godzina_bar
+            // Game_Hour_TrackBar
             // 
-            this.godzina_bar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Game_Hour_TrackBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.godzina_bar.Location = new System.Drawing.Point(6, 82);
-            this.godzina_bar.Maximum = 23;
-            this.godzina_bar.Name = "godzina_bar";
-            this.godzina_bar.Size = new System.Drawing.Size(580, 45);
-            this.godzina_bar.TabIndex = 3;
-            this.godzina_bar.Value = 8;
-            this.godzina_bar.Scroll += new System.EventHandler(this.godzina_bar_Scroll);
+            this.Game_Hour_TrackBar.Location = new System.Drawing.Point(6, 82);
+            this.Game_Hour_TrackBar.Maximum = 23;
+            this.Game_Hour_TrackBar.Name = "Game_Hour_TrackBar";
+            this.Game_Hour_TrackBar.Size = new System.Drawing.Size(580, 45);
+            this.Game_Hour_TrackBar.TabIndex = 3;
+            this.Game_Hour_TrackBar.Value = 8;
+            this.Game_Hour_TrackBar.Scroll += new System.EventHandler(this.godzina_bar_Scroll);
             // 
             // cmd
             // 
             this.cmd.AcceptsReturn = true;
             this.cmd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmd.Location = new System.Drawing.Point(6, 447);
+            this.cmd.Location = new System.Drawing.Point(6, 453);
             this.cmd.Name = "cmd";
             this.cmd.Size = new System.Drawing.Size(689, 20);
             this.cmd.TabIndex = 17;
             this.cmd.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmd_KeyPress);
             // 
-            // konsola
+            // Console_RichTextBox
             // 
-            this.konsola.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Console_RichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.konsola.BackColor = System.Drawing.Color.Black;
-            this.konsola.Cursor = System.Windows.Forms.Cursors.Default;
-            this.konsola.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.konsola.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
-            this.konsola.Location = new System.Drawing.Point(6, 19);
-            this.konsola.Name = "konsola";
-            this.konsola.ReadOnly = true;
-            this.konsola.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.konsola.Size = new System.Drawing.Size(686, 427);
-            this.konsola.TabIndex = 15;
-            this.konsola.Text = "";
-            this.konsola.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.Konsola_LinkClicked);
-            this.konsola.TextChanged += new System.EventHandler(this.konsola_TextChanged);
+            this.Console_RichTextBox.BackColor = System.Drawing.Color.Black;
+            this.Console_RichTextBox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Console_RichTextBox.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Console_RichTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.Console_RichTextBox.Location = new System.Drawing.Point(6, 19);
+            this.Console_RichTextBox.Name = "Console_RichTextBox";
+            this.Console_RichTextBox.ReadOnly = true;
+            this.Console_RichTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
+            this.Console_RichTextBox.Size = new System.Drawing.Size(686, 433);
+            this.Console_RichTextBox.TabIndex = 15;
+            this.Console_RichTextBox.Text = "";
+            this.Console_RichTextBox.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.Konsola_LinkClicked);
+            this.Console_RichTextBox.TextChanged += new System.EventHandler(this.konsola_TextChanged);
             // 
             // startbar
             // 
@@ -1526,7 +1541,7 @@
             this.tabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControl.Controls.Add(this.server_manage);
+            this.tabControl.Controls.Add(this.Manage_Server_TabPage);
             this.tabControl.Controls.Add(this.ban_kick);
             this.tabControl.Controls.Add(this.main_page);
             this.tabControl.Controls.Add(this.strings_page);
@@ -1549,20 +1564,20 @@
             this.tabControl.Size = new System.Drawing.Size(959, 692);
             this.tabControl.TabIndex = 22;
             // 
-            // server_manage
+            // Manage_Server_TabPage
             // 
-            this.server_manage.BackColor = System.Drawing.SystemColors.Control;
-            this.server_manage.Controls.Add(this.CommandsGroup);
-            this.server_manage.Controls.Add(this.zoomup);
-            this.server_manage.Controls.Add(this.overviewSplitter);
-            this.server_manage.Controls.Add(this.Timers_Group);
-            this.server_manage.Controls.Add(this.Server_Controls_Group);
-            this.server_manage.Controls.Add(this.startbar);
-            this.server_manage.ImageIndex = 0;
-            this.server_manage.Location = new System.Drawing.Point(47, 4);
-            this.server_manage.Name = "server_manage";
-            this.server_manage.Size = new System.Drawing.Size(908, 684);
-            this.server_manage.TabIndex = 7;
+            this.Manage_Server_TabPage.BackColor = System.Drawing.SystemColors.Control;
+            this.Manage_Server_TabPage.Controls.Add(this.CommandsGroup);
+            this.Manage_Server_TabPage.Controls.Add(this.zoomup);
+            this.Manage_Server_TabPage.Controls.Add(this.overviewSplitter);
+            this.Manage_Server_TabPage.Controls.Add(this.Timers_Group);
+            this.Manage_Server_TabPage.Controls.Add(this.Server_Controls_Group);
+            this.Manage_Server_TabPage.Controls.Add(this.startbar);
+            this.Manage_Server_TabPage.ImageIndex = 0;
+            this.Manage_Server_TabPage.Location = new System.Drawing.Point(47, 4);
+            this.Manage_Server_TabPage.Name = "Manage_Server_TabPage";
+            this.Manage_Server_TabPage.Size = new System.Drawing.Size(908, 684);
+            this.Manage_Server_TabPage.TabIndex = 7;
             // 
             // CommandsGroup
             // 
@@ -1747,17 +1762,18 @@
             this.News_Feed_RichTextBox.TabIndex = 0;
             this.News_Feed_RichTextBox.Text = "Downloading news...";
             this.News_Feed_RichTextBox.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.newsbox_LinkClicked);
+            this.News_Feed_RichTextBox.TextChanged += new System.EventHandler(this.News_Feed_RichTextBox_TextChanged);
             // 
             // Server_Status_Group
             // 
             this.Server_Status_Group.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Server_Status_Group.Controls.Add(this.osarch);
+            this.Server_Status_Group.Controls.Add(this.OS_Architecture_Label);
             this.Server_Status_Group.Controls.Add(this.telnetstatus);
-            this.Server_Status_Group.Controls.Add(this.osver);
+            this.Server_Status_Group.Controls.Add(this.OS_Version_Label);
             this.Server_Status_Group.Controls.Add(this.status);
-            this.Server_Status_Group.Controls.Add(this.twoje_ip);
+            this.Server_Status_Group.Controls.Add(this.IP_Label);
             this.Server_Status_Group.Location = new System.Drawing.Point(3, 8);
             this.Server_Status_Group.Name = "Server_Status_Group";
             this.Server_Status_Group.Size = new System.Drawing.Size(340, 160);
@@ -1765,18 +1781,18 @@
             this.Server_Status_Group.TabStop = false;
             this.Server_Status_Group.Text = "Server status";
             // 
-            // osarch
+            // OS_Architecture_Label
             // 
-            this.osarch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.osarch.AutoSize = true;
-            this.osarch.BackColor = System.Drawing.Color.Transparent;
-            this.osarch.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.osarch.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.osarch.Location = new System.Drawing.Point(6, 140);
-            this.osarch.Name = "osarch";
-            this.osarch.Size = new System.Drawing.Size(39, 13);
-            this.osarch.TabIndex = 5;
-            this.osarch.Text = "osarch";
+            this.OS_Architecture_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.OS_Architecture_Label.AutoSize = true;
+            this.OS_Architecture_Label.BackColor = System.Drawing.Color.Transparent;
+            this.OS_Architecture_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.OS_Architecture_Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.OS_Architecture_Label.Location = new System.Drawing.Point(6, 140);
+            this.OS_Architecture_Label.Name = "OS_Architecture_Label";
+            this.OS_Architecture_Label.Size = new System.Drawing.Size(82, 13);
+            this.OS_Architecture_Label.TabIndex = 5;
+            this.OS_Architecture_Label.Text = "OS Architecture";
             // 
             // telnetstatus
             // 
@@ -1790,18 +1806,18 @@
             this.telnetstatus.TabIndex = 4;
             this.telnetstatus.Text = "telnetstatus";
             // 
-            // osver
+            // OS_Version_Label
             // 
-            this.osver.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.osver.AutoSize = true;
-            this.osver.BackColor = System.Drawing.Color.Transparent;
-            this.osver.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.osver.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.osver.Location = new System.Drawing.Point(6, 120);
-            this.osver.Name = "osver";
-            this.osver.Size = new System.Drawing.Size(33, 13);
-            this.osver.TabIndex = 3;
-            this.osver.Text = "osver";
+            this.OS_Version_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.OS_Version_Label.AutoSize = true;
+            this.OS_Version_Label.BackColor = System.Drawing.Color.Transparent;
+            this.OS_Version_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.OS_Version_Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.OS_Version_Label.Location = new System.Drawing.Point(6, 120);
+            this.OS_Version_Label.Name = "OS_Version_Label";
+            this.OS_Version_Label.Size = new System.Drawing.Size(60, 13);
+            this.OS_Version_Label.TabIndex = 3;
+            this.OS_Version_Label.Text = "OS Version";
             // 
             // status
             // 
@@ -1821,11 +1837,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Console_Group.BackColor = System.Drawing.SystemColors.Control;
-            this.Console_Group.Controls.Add(this.konsola);
+            this.Console_Group.Controls.Add(this.Console_RichTextBox);
             this.Console_Group.Controls.Add(this.cmd);
             this.Console_Group.Location = new System.Drawing.Point(3, 8);
             this.Console_Group.Name = "Console_Group";
-            this.Console_Group.Size = new System.Drawing.Size(698, 478);
+            this.Console_Group.Size = new System.Drawing.Size(698, 484);
             this.Console_Group.TabIndex = 18;
             this.Console_Group.TabStop = false;
             this.Console_Group.Text = "Console";
@@ -2038,15 +2054,15 @@
             // ban_kick
             // 
             this.ban_kick.BackColor = System.Drawing.SystemColors.Control;
-            this.ban_kick.Controls.Add(this.Chat_Group);
-            this.ban_kick.Controls.Add(this.all_players_l);
-            this.ban_kick.Controls.Add(this.online_l);
+            this.ban_kick.Controls.Add(this.Chat_GroupBox);
+            this.ban_kick.Controls.Add(this.All_Players_Label);
+            this.ban_kick.Controls.Add(this.Online_Players_Label);
             this.ban_kick.Controls.Add(this.All_Players_List);
-            this.ban_kick.Controls.Add(this.player_g);
-            this.ban_kick.Controls.Add(this.telnet_group);
-            this.ban_kick.Controls.Add(this.kickgroup);
-            this.ban_kick.Controls.Add(this.spawn_group);
-            this.ban_kick.Controls.Add(this.bantime_slider);
+            this.ban_kick.Controls.Add(this.Player_GroupBox);
+            this.ban_kick.Controls.Add(this.Game_Time_Controls_GroupBox);
+            this.ban_kick.Controls.Add(this.Kick_GroupBox);
+            this.ban_kick.Controls.Add(this.Spawn_GroupBox);
+            this.ban_kick.Controls.Add(this.Ban_GroupBox);
             this.ban_kick.Controls.Add(this.Online_Player_List);
             this.ban_kick.ImageIndex = 2;
             this.ban_kick.Location = new System.Drawing.Point(47, 4);
@@ -2054,68 +2070,68 @@
             this.ban_kick.Size = new System.Drawing.Size(908, 684);
             this.ban_kick.TabIndex = 5;
             // 
-            // Chat_Group
+            // Chat_GroupBox
             // 
-            this.Chat_Group.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Chat_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Chat_Group.BackColor = System.Drawing.SystemColors.Control;
-            this.Chat_Group.Controls.Add(this.chat);
-            this.Chat_Group.Controls.Add(this.chat_text);
-            this.Chat_Group.Location = new System.Drawing.Point(309, 8);
-            this.Chat_Group.Name = "Chat_Group";
-            this.Chat_Group.Size = new System.Drawing.Size(592, 253);
-            this.Chat_Group.TabIndex = 26;
-            this.Chat_Group.TabStop = false;
-            this.Chat_Group.Text = "chat_g";
+            this.Chat_GroupBox.BackColor = System.Drawing.SystemColors.Control;
+            this.Chat_GroupBox.Controls.Add(this.Chat_RichTextBox);
+            this.Chat_GroupBox.Controls.Add(this.Chat_Input_TextBox);
+            this.Chat_GroupBox.Location = new System.Drawing.Point(309, 8);
+            this.Chat_GroupBox.Name = "Chat_GroupBox";
+            this.Chat_GroupBox.Size = new System.Drawing.Size(592, 253);
+            this.Chat_GroupBox.TabIndex = 26;
+            this.Chat_GroupBox.TabStop = false;
+            this.Chat_GroupBox.Text = "Chat";
             // 
-            // chat
+            // Chat_RichTextBox
             // 
-            this.chat.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.Chat_RichTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.chat.BackColor = System.Drawing.Color.Black;
-            this.chat.Cursor = System.Windows.Forms.Cursors.Default;
-            this.chat.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.chat.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
-            this.chat.Location = new System.Drawing.Point(6, 19);
-            this.chat.Name = "chat";
-            this.chat.ReadOnly = true;
-            this.chat.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.chat.Size = new System.Drawing.Size(581, 202);
-            this.chat.TabIndex = 15;
-            this.chat.Text = "";
-            this.chat.TextChanged += new System.EventHandler(this.chat_TextChanged);
+            this.Chat_RichTextBox.BackColor = System.Drawing.Color.Black;
+            this.Chat_RichTextBox.Cursor = System.Windows.Forms.Cursors.Default;
+            this.Chat_RichTextBox.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Chat_RichTextBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.Chat_RichTextBox.Location = new System.Drawing.Point(6, 19);
+            this.Chat_RichTextBox.Name = "Chat_RichTextBox";
+            this.Chat_RichTextBox.ReadOnly = true;
+            this.Chat_RichTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
+            this.Chat_RichTextBox.Size = new System.Drawing.Size(581, 202);
+            this.Chat_RichTextBox.TabIndex = 15;
+            this.Chat_RichTextBox.Text = "";
+            this.Chat_RichTextBox.TextChanged += new System.EventHandler(this.chat_TextChanged);
             // 
-            // chat_text
+            // Chat_Input_TextBox
             // 
-            this.chat_text.AcceptsReturn = true;
-            this.chat_text.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.Chat_Input_TextBox.AcceptsReturn = true;
+            this.Chat_Input_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.chat_text.Location = new System.Drawing.Point(6, 227);
-            this.chat_text.Name = "chat_text";
-            this.chat_text.Size = new System.Drawing.Size(580, 20);
-            this.chat_text.TabIndex = 17;
-            this.chat_text.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Chat_text_KeyPress);
+            this.Chat_Input_TextBox.Location = new System.Drawing.Point(6, 227);
+            this.Chat_Input_TextBox.Name = "Chat_Input_TextBox";
+            this.Chat_Input_TextBox.Size = new System.Drawing.Size(580, 20);
+            this.Chat_Input_TextBox.TabIndex = 17;
+            this.Chat_Input_TextBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Chat_text_KeyPress);
             // 
-            // all_players_l
+            // All_Players_Label
             // 
-            this.all_players_l.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.all_players_l.AutoSize = true;
-            this.all_players_l.Location = new System.Drawing.Point(5, 343);
-            this.all_players_l.Name = "all_players_l";
-            this.all_players_l.Size = new System.Drawing.Size(57, 13);
-            this.all_players_l.TabIndex = 25;
-            this.all_players_l.Text = "All players:";
+            this.All_Players_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.All_Players_Label.AutoSize = true;
+            this.All_Players_Label.Location = new System.Drawing.Point(5, 343);
+            this.All_Players_Label.Name = "All_Players_Label";
+            this.All_Players_Label.Size = new System.Drawing.Size(57, 13);
+            this.All_Players_Label.TabIndex = 25;
+            this.All_Players_Label.Text = "All players:";
             // 
-            // online_l
+            // Online_Players_Label
             // 
-            this.online_l.AutoSize = true;
-            this.online_l.Location = new System.Drawing.Point(5, 11);
-            this.online_l.Name = "online_l";
-            this.online_l.Size = new System.Drawing.Size(76, 13);
-            this.online_l.TabIndex = 24;
-            this.online_l.Text = "Online players:";
+            this.Online_Players_Label.AutoSize = true;
+            this.Online_Players_Label.Location = new System.Drawing.Point(5, 11);
+            this.Online_Players_Label.Name = "Online_Players_Label";
+            this.Online_Players_Label.Size = new System.Drawing.Size(76, 13);
+            this.Online_Players_Label.TabIndex = 24;
+            this.Online_Players_Label.Text = "Online players:";
             // 
             // All_Players_List
             // 
@@ -2147,145 +2163,145 @@
             this.columnHeader2.Text = "SteamID";
             this.columnHeader2.Width = 179;
             // 
-            // player_g
+            // Player_GroupBox
             // 
-            this.player_g.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.Player_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.player_g.Controls.Add(this.thirsty_player);
-            this.player_g.Controls.Add(this.starve_player);
-            this.player_g.Controls.Add(this.kill_player);
-            this.player_g.Location = new System.Drawing.Point(309, 468);
-            this.player_g.Name = "player_g";
-            this.player_g.Size = new System.Drawing.Size(592, 43);
-            this.player_g.TabIndex = 22;
-            this.player_g.TabStop = false;
-            this.player_g.Text = "Player";
+            this.Player_GroupBox.Controls.Add(this.Thirsty_Player_Button);
+            this.Player_GroupBox.Controls.Add(this.Starve_Player_Button);
+            this.Player_GroupBox.Controls.Add(this.Kill_Player_Button);
+            this.Player_GroupBox.Location = new System.Drawing.Point(309, 468);
+            this.Player_GroupBox.Name = "Player_GroupBox";
+            this.Player_GroupBox.Size = new System.Drawing.Size(592, 43);
+            this.Player_GroupBox.TabIndex = 22;
+            this.Player_GroupBox.TabStop = false;
+            this.Player_GroupBox.Text = "Player";
             // 
-            // thirsty_player
+            // Thirsty_Player_Button
             // 
-            this.thirsty_player.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.thirsty_player.Location = new System.Drawing.Point(465, 19);
-            this.thirsty_player.Name = "thirsty_player";
-            this.thirsty_player.Size = new System.Drawing.Size(121, 21);
-            this.thirsty_player.TabIndex = 5;
-            this.thirsty_player.Text = "Thirsty";
-            this.thirsty_player.UseVisualStyleBackColor = true;
-            this.thirsty_player.Click += new System.EventHandler(this.thirsty_player_Click);
+            this.Thirsty_Player_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Thirsty_Player_Button.Location = new System.Drawing.Point(465, 19);
+            this.Thirsty_Player_Button.Name = "Thirsty_Player_Button";
+            this.Thirsty_Player_Button.Size = new System.Drawing.Size(121, 21);
+            this.Thirsty_Player_Button.TabIndex = 5;
+            this.Thirsty_Player_Button.Text = "Thirsty";
+            this.Thirsty_Player_Button.UseVisualStyleBackColor = true;
+            this.Thirsty_Player_Button.Click += new System.EventHandler(this.thirsty_player_Click);
             // 
-            // starve_player
+            // Starve_Player_Button
             // 
-            this.starve_player.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.starve_player.Location = new System.Drawing.Point(235, 19);
-            this.starve_player.Name = "starve_player";
-            this.starve_player.Size = new System.Drawing.Size(121, 21);
-            this.starve_player.TabIndex = 4;
-            this.starve_player.Text = "Starve";
-            this.starve_player.UseVisualStyleBackColor = true;
-            this.starve_player.Click += new System.EventHandler(this.starve_player_Click);
+            this.Starve_Player_Button.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Starve_Player_Button.Location = new System.Drawing.Point(235, 19);
+            this.Starve_Player_Button.Name = "Starve_Player_Button";
+            this.Starve_Player_Button.Size = new System.Drawing.Size(121, 21);
+            this.Starve_Player_Button.TabIndex = 4;
+            this.Starve_Player_Button.Text = "Starve";
+            this.Starve_Player_Button.UseVisualStyleBackColor = true;
+            this.Starve_Player_Button.Click += new System.EventHandler(this.starve_player_Click);
             // 
-            // kill_player
+            // Kill_Player_Button
             // 
-            this.kill_player.Location = new System.Drawing.Point(6, 19);
-            this.kill_player.Name = "kill_player";
-            this.kill_player.Size = new System.Drawing.Size(121, 21);
-            this.kill_player.TabIndex = 3;
-            this.kill_player.Text = "Kill";
-            this.kill_player.UseVisualStyleBackColor = true;
-            this.kill_player.Click += new System.EventHandler(this.kill_player_Click);
+            this.Kill_Player_Button.Location = new System.Drawing.Point(6, 19);
+            this.Kill_Player_Button.Name = "Kill_Player_Button";
+            this.Kill_Player_Button.Size = new System.Drawing.Size(121, 21);
+            this.Kill_Player_Button.TabIndex = 3;
+            this.Kill_Player_Button.Text = "Kill";
+            this.Kill_Player_Button.UseVisualStyleBackColor = true;
+            this.Kill_Player_Button.Click += new System.EventHandler(this.kill_player_Click);
             // 
-            // kickgroup
+            // Kick_GroupBox
             // 
-            this.kickgroup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.Kick_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kickgroup.Controls.Add(this.kick);
-            this.kickgroup.Controls.Add(this.powod);
-            this.kickgroup.Location = new System.Drawing.Point(309, 359);
-            this.kickgroup.Name = "kickgroup";
-            this.kickgroup.Size = new System.Drawing.Size(592, 49);
-            this.kickgroup.TabIndex = 10;
-            this.kickgroup.TabStop = false;
-            this.kickgroup.Text = "KICK";
+            this.Kick_GroupBox.Controls.Add(this.Kick_Player_Button);
+            this.Kick_GroupBox.Controls.Add(this.Kick_Reason_ComboBox);
+            this.Kick_GroupBox.Location = new System.Drawing.Point(309, 359);
+            this.Kick_GroupBox.Name = "Kick_GroupBox";
+            this.Kick_GroupBox.Size = new System.Drawing.Size(592, 49);
+            this.Kick_GroupBox.TabIndex = 10;
+            this.Kick_GroupBox.TabStop = false;
+            this.Kick_GroupBox.Text = "KICK";
             // 
-            // kick
+            // Kick_Player_Button
             // 
-            this.kick.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.kick.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.kick.Location = new System.Drawing.Point(465, 21);
-            this.kick.Name = "kick";
-            this.kick.Size = new System.Drawing.Size(121, 21);
-            this.kick.TabIndex = 5;
-            this.kick.Text = "KICK";
-            this.kick.UseVisualStyleBackColor = false;
-            this.kick.Click += new System.EventHandler(this.kick_Click);
+            this.Kick_Player_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Kick_Player_Button.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.Kick_Player_Button.Location = new System.Drawing.Point(465, 21);
+            this.Kick_Player_Button.Name = "Kick_Player_Button";
+            this.Kick_Player_Button.Size = new System.Drawing.Size(121, 21);
+            this.Kick_Player_Button.TabIndex = 5;
+            this.Kick_Player_Button.Text = "KICK";
+            this.Kick_Player_Button.UseVisualStyleBackColor = false;
+            this.Kick_Player_Button.Click += new System.EventHandler(this.kick_Click);
             // 
-            // powod
+            // Kick_Reason_ComboBox
             // 
-            this.powod.FormattingEnabled = true;
-            this.powod.Items.AddRange(new object[] {
+            this.Kick_Reason_ComboBox.FormattingEnabled = true;
+            this.Kick_Reason_ComboBox.Items.AddRange(new object[] {
             "SPAMING",
             "Cheating",
             "Griefing",
             "Swearing",
             "Amazingly_stupid"});
-            this.powod.Location = new System.Drawing.Point(6, 21);
-            this.powod.Name = "powod";
-            this.powod.Size = new System.Drawing.Size(151, 21);
-            this.powod.TabIndex = 7;
+            this.Kick_Reason_ComboBox.Location = new System.Drawing.Point(6, 21);
+            this.Kick_Reason_ComboBox.Name = "Kick_Reason_ComboBox";
+            this.Kick_Reason_ComboBox.Size = new System.Drawing.Size(151, 21);
+            this.Kick_Reason_ComboBox.TabIndex = 7;
             // 
-            // bantime_slider
+            // Ban_GroupBox
             // 
-            this.bantime_slider.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.Ban_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.bantime_slider.Controls.Add(this.bantime);
-            this.bantime_slider.Controls.Add(this.ban);
-            this.bantime_slider.Controls.Add(this.ban_slide);
-            this.bantime_slider.Location = new System.Drawing.Point(309, 267);
-            this.bantime_slider.Name = "bantime_slider";
-            this.bantime_slider.Size = new System.Drawing.Size(592, 86);
-            this.bantime_slider.TabIndex = 9;
-            this.bantime_slider.TabStop = false;
-            this.bantime_slider.Text = "BAN";
+            this.Ban_GroupBox.Controls.Add(this.Ban_Time_ComboBox);
+            this.Ban_GroupBox.Controls.Add(this.Ban_Hammer_Button);
+            this.Ban_GroupBox.Controls.Add(this.Ban_Slider_TrackBar);
+            this.Ban_GroupBox.Location = new System.Drawing.Point(309, 267);
+            this.Ban_GroupBox.Name = "Ban_GroupBox";
+            this.Ban_GroupBox.Size = new System.Drawing.Size(592, 86);
+            this.Ban_GroupBox.TabIndex = 9;
+            this.Ban_GroupBox.TabStop = false;
+            this.Ban_GroupBox.Text = "BAN";
             // 
-            // bantime
+            // Ban_Time_ComboBox
             // 
-            this.bantime.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.bantime.FormattingEnabled = true;
-            this.bantime.Items.AddRange(new object[] {
+            this.Ban_Time_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Ban_Time_ComboBox.FormattingEnabled = true;
+            this.Ban_Time_ComboBox.Items.AddRange(new object[] {
             "minutes",
             "hours",
             "days",
             "weeks",
             "months",
             "years"});
-            this.bantime.Location = new System.Drawing.Point(6, 55);
-            this.bantime.Name = "bantime";
-            this.bantime.Size = new System.Drawing.Size(151, 21);
-            this.bantime.TabIndex = 8;
+            this.Ban_Time_ComboBox.Location = new System.Drawing.Point(6, 55);
+            this.Ban_Time_ComboBox.Name = "Ban_Time_ComboBox";
+            this.Ban_Time_ComboBox.Size = new System.Drawing.Size(151, 21);
+            this.Ban_Time_ComboBox.TabIndex = 8;
             // 
-            // ban
+            // Ban_Hammer_Button
             // 
-            this.ban.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ban.BackColor = System.Drawing.Color.LightCoral;
-            this.ban.Location = new System.Drawing.Point(465, 54);
-            this.ban.Name = "ban";
-            this.ban.Size = new System.Drawing.Size(121, 21);
-            this.ban.TabIndex = 4;
-            this.ban.Text = "BAN";
-            this.ban.UseVisualStyleBackColor = false;
-            this.ban.Click += new System.EventHandler(this.ban_Click);
+            this.Ban_Hammer_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Ban_Hammer_Button.BackColor = System.Drawing.Color.LightCoral;
+            this.Ban_Hammer_Button.Location = new System.Drawing.Point(465, 54);
+            this.Ban_Hammer_Button.Name = "Ban_Hammer_Button";
+            this.Ban_Hammer_Button.Size = new System.Drawing.Size(121, 21);
+            this.Ban_Hammer_Button.TabIndex = 4;
+            this.Ban_Hammer_Button.Text = "BAN";
+            this.Ban_Hammer_Button.UseVisualStyleBackColor = false;
+            this.Ban_Hammer_Button.Click += new System.EventHandler(this.ban_Click);
             // 
-            // ban_slide
+            // Ban_Slider_TrackBar
             // 
-            this.ban_slide.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Ban_Slider_TrackBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ban_slide.Location = new System.Drawing.Point(6, 19);
-            this.ban_slide.Maximum = 60;
-            this.ban_slide.Minimum = 1;
-            this.ban_slide.Name = "ban_slide";
-            this.ban_slide.Size = new System.Drawing.Size(580, 45);
-            this.ban_slide.TabIndex = 9;
-            this.ban_slide.Value = 1;
-            this.ban_slide.Scroll += new System.EventHandler(this.trackBar1_Scroll_1);
+            this.Ban_Slider_TrackBar.Location = new System.Drawing.Point(6, 19);
+            this.Ban_Slider_TrackBar.Maximum = 60;
+            this.Ban_Slider_TrackBar.Minimum = 1;
+            this.Ban_Slider_TrackBar.Name = "Ban_Slider_TrackBar";
+            this.Ban_Slider_TrackBar.Size = new System.Drawing.Size(580, 45);
+            this.Ban_Slider_TrackBar.TabIndex = 9;
+            this.Ban_Slider_TrackBar.Value = 1;
+            this.Ban_Slider_TrackBar.Scroll += new System.EventHandler(this.trackBar1_Scroll_1);
             // 
             // Online_Player_List
             // 
@@ -2348,21 +2364,22 @@
             // 
             // game_opts
             // 
-            this.game_opts.Controls.Add(this.reserved_g);
-            this.game_opts.Controls.Add(this.PlayerKillingMode_g);
-            this.game_opts.Controls.Add(this.spawn_p_l);
-            this.game_opts.Controls.Add(this.AirDropFrequency_g);
-            this.game_opts.Controls.Add(this.LandClaim);
-            this.game_opts.Controls.Add(this.LootRespawnDays_g);
-            this.game_opts.Controls.Add(this.LootAbundance_g);
-            this.game_opts.Controls.Add(this.maxplgroup);
-            this.game_opts.Controls.Add(this.trybgry);
-            this.game_opts.Controls.Add(this.zomb_pie);
+            this.game_opts.Controls.Add(this.Drop_On_Quit_GroupBox);
+            this.game_opts.Controls.Add(this.Server_Reserved_Slots_GroupBox);
+            this.game_opts.Controls.Add(this.Player_Killing_Mode_GroupBox);
+            this.game_opts.Controls.Add(this.Spawn_Settings_GroupBox);
+            this.game_opts.Controls.Add(this.Air_Drop_Frequency_GroupBox);
+            this.game_opts.Controls.Add(this.Land_Claim_GroupBox);
+            this.game_opts.Controls.Add(this.Loot_Respawn_Days_GroupBox);
+            this.game_opts.Controls.Add(this.Loot_Abundance_GroupBox);
+            this.game_opts.Controls.Add(this.Max_Players_GroupBox);
+            this.game_opts.Controls.Add(this.Game_Mode_Settings_GroupBox);
+            this.game_opts.Controls.Add(this.Zombie_Settings_GroupBox);
             this.game_opts.Controls.Add(this.nightpercentage_g);
-            this.game_opts.Controls.Add(this.dlugoscdnia_g);
+            this.game_opts.Controls.Add(this.Day_Length_GroupBox);
             this.game_opts.Controls.Add(this.bdm_g);
-            this.game_opts.Controls.Add(this.dod_g);
-            this.game_opts.Controls.Add(this.trudnoscgroup);
+            this.game_opts.Controls.Add(this.Drop_On_Death_Group_Box);
+            this.game_opts.Controls.Add(this.Game_Difficulty_GroupBox);
             this.game_opts.ImageIndex = 5;
             this.game_opts.Location = new System.Drawing.Point(4, 50);
             this.game_opts.Name = "game_opts";
@@ -2370,263 +2387,322 @@
             this.game_opts.TabIndex = 2;
             this.game_opts.UseVisualStyleBackColor = true;
             // 
-            // reserved_g
+            // Drop_On_Quit_GroupBox
             // 
-            this.reserved_g.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.reserved_g.Controls.Add(this.ServerAdminSlotsPermission);
-            this.reserved_g.Controls.Add(this.label2);
-            this.reserved_g.Controls.Add(this.label3);
-            this.reserved_g.Controls.Add(this.ServerAdminSlots);
-            this.reserved_g.Controls.Add(this.ServerReservedSlotsPermission);
-            this.reserved_g.Controls.Add(this.res_l2);
-            this.reserved_g.Controls.Add(this.res_l1);
-            this.reserved_g.Controls.Add(this.ServerReservedSlots);
-            this.reserved_g.Location = new System.Drawing.Point(524, 4);
-            this.reserved_g.Name = "reserved_g";
-            this.reserved_g.Size = new System.Drawing.Size(366, 65);
-            this.reserved_g.TabIndex = 51;
-            this.reserved_g.TabStop = false;
-            this.reserved_g.Text = "Server reserved slots";
+            this.Drop_On_Quit_GroupBox.Controls.Add(this.Drop_On_Quit_Mode_0);
+            this.Drop_On_Quit_GroupBox.Controls.Add(this.Drop_On_Quit_Mode_1);
+            this.Drop_On_Quit_GroupBox.Controls.Add(this.Drop_On_Quit_Mode_3);
+            this.Drop_On_Quit_GroupBox.Controls.Add(this.Drop_On_Quit_Mode_2);
+            this.Drop_On_Quit_GroupBox.Location = new System.Drawing.Point(616, 217);
+            this.Drop_On_Quit_GroupBox.Name = "Drop_On_Quit_GroupBox";
+            this.Drop_On_Quit_GroupBox.Size = new System.Drawing.Size(86, 112);
+            this.Drop_On_Quit_GroupBox.TabIndex = 52;
+            this.Drop_On_Quit_GroupBox.TabStop = false;
+            this.Drop_On_Quit_GroupBox.Text = "Drop On Quit";
             // 
-            // ServerAdminSlotsPermission
+            // Drop_On_Quit_Mode_0
             // 
-            this.ServerAdminSlotsPermission.Location = new System.Drawing.Point(285, 38);
-            this.ServerAdminSlotsPermission.Name = "ServerAdminSlotsPermission";
-            this.ServerAdminSlotsPermission.Size = new System.Drawing.Size(31, 20);
-            this.ServerAdminSlotsPermission.TabIndex = 7;
-            this.ServerAdminSlotsPermission.Text = "0";
-            this.ServerAdminSlotsPermission.TextChanged += new System.EventHandler(this.ServerAdminSlotsPermission_TextChanged);
+            this.Drop_On_Quit_Mode_0.AutoSize = true;
+            this.Drop_On_Quit_Mode_0.Checked = true;
+            this.Drop_On_Quit_Mode_0.Location = new System.Drawing.Point(8, 18);
+            this.Drop_On_Quit_Mode_0.Name = "Drop_On_Quit_Mode_0";
+            this.Drop_On_Quit_Mode_0.Size = new System.Drawing.Size(62, 17);
+            this.Drop_On_Quit_Mode_0.TabIndex = 28;
+            this.Drop_On_Quit_Mode_0.TabStop = true;
+            this.Drop_On_Quit_Mode_0.Text = "Nothing";
+            this.Drop_On_Quit_Mode_0.UseVisualStyleBackColor = true;
+            this.Drop_On_Quit_Mode_0.CheckedChanged += new System.EventHandler(this.doq_0_CheckedChanged);
             // 
-            // label2
+            // Drop_On_Quit_Mode_1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(95, 41);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(183, 13);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "slots for admins with permissions level";
+            this.Drop_On_Quit_Mode_1.AutoSize = true;
+            this.Drop_On_Quit_Mode_1.Location = new System.Drawing.Point(8, 41);
+            this.Drop_On_Quit_Mode_1.Name = "Drop_On_Quit_Mode_1";
+            this.Drop_On_Quit_Mode_1.Size = new System.Drawing.Size(75, 17);
+            this.Drop_On_Quit_Mode_1.TabIndex = 29;
+            this.Drop_On_Quit_Mode_1.Text = "Everything";
+            this.Drop_On_Quit_Mode_1.UseVisualStyleBackColor = true;
+            this.Drop_On_Quit_Mode_1.CheckedChanged += new System.EventHandler(this.doq_1_CheckedChanged);
             // 
-            // label3
+            // Drop_On_Quit_Mode_3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 41);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Reserve";
+            this.Drop_On_Quit_Mode_3.AutoSize = true;
+            this.Drop_On_Quit_Mode_3.Location = new System.Drawing.Point(8, 87);
+            this.Drop_On_Quit_Mode_3.Name = "Drop_On_Quit_Mode_3";
+            this.Drop_On_Quit_Mode_3.Size = new System.Drawing.Size(74, 17);
+            this.Drop_On_Quit_Mode_3.TabIndex = 31;
+            this.Drop_On_Quit_Mode_3.Text = "Backpack";
+            this.Drop_On_Quit_Mode_3.UseVisualStyleBackColor = true;
+            this.Drop_On_Quit_Mode_3.CheckedChanged += new System.EventHandler(this.doq_3_CheckedChanged);
             // 
-            // ServerAdminSlots
+            // Drop_On_Quit_Mode_2
             // 
-            this.ServerAdminSlots.Location = new System.Drawing.Point(59, 38);
-            this.ServerAdminSlots.Name = "ServerAdminSlots";
-            this.ServerAdminSlots.Size = new System.Drawing.Size(31, 20);
-            this.ServerAdminSlots.TabIndex = 4;
-            this.ServerAdminSlots.Text = "0";
-            this.ServerAdminSlots.TextChanged += new System.EventHandler(this.ServerAdminSlots_TextChanged);
+            this.Drop_On_Quit_Mode_2.AutoSize = true;
+            this.Drop_On_Quit_Mode_2.Location = new System.Drawing.Point(8, 64);
+            this.Drop_On_Quit_Mode_2.Name = "Drop_On_Quit_Mode_2";
+            this.Drop_On_Quit_Mode_2.Size = new System.Drawing.Size(63, 17);
+            this.Drop_On_Quit_Mode_2.TabIndex = 30;
+            this.Drop_On_Quit_Mode_2.Text = "Toolbelt";
+            this.Drop_On_Quit_Mode_2.UseVisualStyleBackColor = true;
+            this.Drop_On_Quit_Mode_2.CheckedChanged += new System.EventHandler(this.doq_2_CheckedChanged);
             // 
-            // ServerReservedSlotsPermission
+            // Server_Reserved_Slots_GroupBox
             // 
-            this.ServerReservedSlotsPermission.Location = new System.Drawing.Point(285, 13);
-            this.ServerReservedSlotsPermission.Name = "ServerReservedSlotsPermission";
-            this.ServerReservedSlotsPermission.Size = new System.Drawing.Size(31, 20);
-            this.ServerReservedSlotsPermission.TabIndex = 3;
-            this.ServerReservedSlotsPermission.Text = "100";
-            this.ServerReservedSlotsPermission.TextChanged += new System.EventHandler(this.ServerReservedSlotsPermission_TextChanged);
+            this.Server_Reserved_Slots_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Server_Reserved_Slots_GroupBox.Controls.Add(this.Server_Admin_Reserved_Slots_Permission);
+            this.Server_Reserved_Slots_GroupBox.Controls.Add(this.Admin_Slot_Text_Label);
+            this.Server_Reserved_Slots_GroupBox.Controls.Add(this.Admin_Reserve_Text_Label);
+            this.Server_Reserved_Slots_GroupBox.Controls.Add(this.Server_Admin_Reserved_Slots);
+            this.Server_Reserved_Slots_GroupBox.Controls.Add(this.Server_Player_Reserved_Slots_Permission);
+            this.Server_Reserved_Slots_GroupBox.Controls.Add(this.Player_Slot_Text_Label);
+            this.Server_Reserved_Slots_GroupBox.Controls.Add(this.Player_Reserve_Text_Label);
+            this.Server_Reserved_Slots_GroupBox.Controls.Add(this.Server_Player_Reserved_Slots);
+            this.Server_Reserved_Slots_GroupBox.Location = new System.Drawing.Point(524, 4);
+            this.Server_Reserved_Slots_GroupBox.Name = "Server_Reserved_Slots_GroupBox";
+            this.Server_Reserved_Slots_GroupBox.Size = new System.Drawing.Size(366, 65);
+            this.Server_Reserved_Slots_GroupBox.TabIndex = 51;
+            this.Server_Reserved_Slots_GroupBox.TabStop = false;
+            this.Server_Reserved_Slots_GroupBox.Text = "Server Reserved Slots";
             // 
-            // res_l2
+            // Server_Admin_Reserved_Slots_Permission
             // 
-            this.res_l2.AutoSize = true;
-            this.res_l2.Location = new System.Drawing.Point(96, 16);
-            this.res_l2.Name = "res_l2";
-            this.res_l2.Size = new System.Drawing.Size(183, 13);
-            this.res_l2.TabIndex = 2;
-            this.res_l2.Text = "slots for players with permissions level";
+            this.Server_Admin_Reserved_Slots_Permission.Location = new System.Drawing.Point(285, 38);
+            this.Server_Admin_Reserved_Slots_Permission.Name = "Server_Admin_Reserved_Slots_Permission";
+            this.Server_Admin_Reserved_Slots_Permission.Size = new System.Drawing.Size(31, 20);
+            this.Server_Admin_Reserved_Slots_Permission.TabIndex = 7;
+            this.Server_Admin_Reserved_Slots_Permission.Text = "0";
+            this.Server_Admin_Reserved_Slots_Permission.TextChanged += new System.EventHandler(this.ServerAdminSlotsPermission_TextChanged);
             // 
-            // res_l1
+            // Admin_Slot_Text_Label
             // 
-            this.res_l1.AutoSize = true;
-            this.res_l1.Location = new System.Drawing.Point(6, 16);
-            this.res_l1.Name = "res_l1";
-            this.res_l1.Size = new System.Drawing.Size(47, 13);
-            this.res_l1.TabIndex = 1;
-            this.res_l1.Text = "Reserve";
+            this.Admin_Slot_Text_Label.AutoSize = true;
+            this.Admin_Slot_Text_Label.Location = new System.Drawing.Point(95, 41);
+            this.Admin_Slot_Text_Label.Name = "Admin_Slot_Text_Label";
+            this.Admin_Slot_Text_Label.Size = new System.Drawing.Size(183, 13);
+            this.Admin_Slot_Text_Label.TabIndex = 6;
+            this.Admin_Slot_Text_Label.Text = "slots for admins with permissions level";
             // 
-            // ServerReservedSlots
+            // Admin_Reserve_Text_Label
             // 
-            this.ServerReservedSlots.Location = new System.Drawing.Point(59, 13);
-            this.ServerReservedSlots.Name = "ServerReservedSlots";
-            this.ServerReservedSlots.Size = new System.Drawing.Size(31, 20);
-            this.ServerReservedSlots.TabIndex = 0;
-            this.ServerReservedSlots.Text = "0";
-            this.ServerReservedSlots.TextChanged += new System.EventHandler(this.ServerReservedSlots_TextChanged);
+            this.Admin_Reserve_Text_Label.AutoSize = true;
+            this.Admin_Reserve_Text_Label.Location = new System.Drawing.Point(6, 41);
+            this.Admin_Reserve_Text_Label.Name = "Admin_Reserve_Text_Label";
+            this.Admin_Reserve_Text_Label.Size = new System.Drawing.Size(47, 13);
+            this.Admin_Reserve_Text_Label.TabIndex = 5;
+            this.Admin_Reserve_Text_Label.Text = "Reserve";
             // 
-            // PlayerKillingMode_g
+            // Server_Admin_Reserved_Slots
             // 
-            this.PlayerKillingMode_g.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.PlayerKillingMode_g.Controls.Add(this.panel1);
-            this.PlayerKillingMode_g.Location = new System.Drawing.Point(708, 310);
-            this.PlayerKillingMode_g.Name = "PlayerKillingMode_g";
-            this.PlayerKillingMode_g.Size = new System.Drawing.Size(179, 125);
-            this.PlayerKillingMode_g.TabIndex = 50;
-            this.PlayerKillingMode_g.TabStop = false;
-            this.PlayerKillingMode_g.Text = "Players killing";
+            this.Server_Admin_Reserved_Slots.Location = new System.Drawing.Point(59, 38);
+            this.Server_Admin_Reserved_Slots.Name = "Server_Admin_Reserved_Slots";
+            this.Server_Admin_Reserved_Slots.Size = new System.Drawing.Size(31, 20);
+            this.Server_Admin_Reserved_Slots.TabIndex = 4;
+            this.Server_Admin_Reserved_Slots.Text = "0";
+            this.Server_Admin_Reserved_Slots.TextChanged += new System.EventHandler(this.ServerAdminSlots_TextChanged);
+            // 
+            // Server_Player_Reserved_Slots_Permission
+            // 
+            this.Server_Player_Reserved_Slots_Permission.Location = new System.Drawing.Point(285, 13);
+            this.Server_Player_Reserved_Slots_Permission.Name = "Server_Player_Reserved_Slots_Permission";
+            this.Server_Player_Reserved_Slots_Permission.Size = new System.Drawing.Size(31, 20);
+            this.Server_Player_Reserved_Slots_Permission.TabIndex = 3;
+            this.Server_Player_Reserved_Slots_Permission.Text = "100";
+            this.Server_Player_Reserved_Slots_Permission.TextChanged += new System.EventHandler(this.ServerReservedSlotsPermission_TextChanged);
+            // 
+            // Player_Slot_Text_Label
+            // 
+            this.Player_Slot_Text_Label.AutoSize = true;
+            this.Player_Slot_Text_Label.Location = new System.Drawing.Point(96, 16);
+            this.Player_Slot_Text_Label.Name = "Player_Slot_Text_Label";
+            this.Player_Slot_Text_Label.Size = new System.Drawing.Size(183, 13);
+            this.Player_Slot_Text_Label.TabIndex = 2;
+            this.Player_Slot_Text_Label.Text = "slots for players with permissions level";
+            // 
+            // Player_Reserve_Text_Label
+            // 
+            this.Player_Reserve_Text_Label.AutoSize = true;
+            this.Player_Reserve_Text_Label.Location = new System.Drawing.Point(6, 16);
+            this.Player_Reserve_Text_Label.Name = "Player_Reserve_Text_Label";
+            this.Player_Reserve_Text_Label.Size = new System.Drawing.Size(47, 13);
+            this.Player_Reserve_Text_Label.TabIndex = 1;
+            this.Player_Reserve_Text_Label.Text = "Reserve";
+            // 
+            // Server_Player_Reserved_Slots
+            // 
+            this.Server_Player_Reserved_Slots.Location = new System.Drawing.Point(59, 13);
+            this.Server_Player_Reserved_Slots.Name = "Server_Player_Reserved_Slots";
+            this.Server_Player_Reserved_Slots.Size = new System.Drawing.Size(31, 20);
+            this.Server_Player_Reserved_Slots.TabIndex = 0;
+            this.Server_Player_Reserved_Slots.Text = "0";
+            this.Server_Player_Reserved_Slots.TextChanged += new System.EventHandler(this.ServerReservedSlots_TextChanged);
+            // 
+            // Player_Killing_Mode_GroupBox
+            // 
+            this.Player_Killing_Mode_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Player_Killing_Mode_GroupBox.Controls.Add(this.panel1);
+            this.Player_Killing_Mode_GroupBox.Location = new System.Drawing.Point(708, 310);
+            this.Player_Killing_Mode_GroupBox.Name = "Player_Killing_Mode_GroupBox";
+            this.Player_Killing_Mode_GroupBox.Size = new System.Drawing.Size(179, 125);
+            this.Player_Killing_Mode_GroupBox.TabIndex = 50;
+            this.Player_Killing_Mode_GroupBox.TabStop = false;
+            this.Player_Killing_Mode_GroupBox.Text = "Player Killing Mode";
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.PlayerKillingMode_0);
-            this.panel1.Controls.Add(this.PlayerKillingMode_1);
-            this.panel1.Controls.Add(this.PlayerKillingMode_2);
-            this.panel1.Controls.Add(this.PlayerKillingMode_3);
+            this.panel1.Controls.Add(this.Player_Killing_Mode_0);
+            this.panel1.Controls.Add(this.Player_Killing_Mode_1);
+            this.panel1.Controls.Add(this.Player_Killing_Mode_2);
+            this.panel1.Controls.Add(this.Player_Killing_Mode_3);
             this.panel1.Location = new System.Drawing.Point(6, 21);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(134, 95);
+            this.panel1.Size = new System.Drawing.Size(165, 95);
             this.panel1.TabIndex = 30;
             // 
-            // PlayerKillingMode_0
+            // Player_Killing_Mode_0
             // 
-            this.PlayerKillingMode_0.AutoSize = true;
-            this.PlayerKillingMode_0.Location = new System.Drawing.Point(3, 3);
-            this.PlayerKillingMode_0.Name = "PlayerKillingMode_0";
-            this.PlayerKillingMode_0.Size = new System.Drawing.Size(68, 17);
-            this.PlayerKillingMode_0.TabIndex = 24;
-            this.PlayerKillingMode_0.Text = "No killing";
-            this.PlayerKillingMode_0.UseVisualStyleBackColor = true;
+            this.Player_Killing_Mode_0.AutoSize = true;
+            this.Player_Killing_Mode_0.Location = new System.Drawing.Point(3, 3);
+            this.Player_Killing_Mode_0.Name = "Player_Killing_Mode_0";
+            this.Player_Killing_Mode_0.Size = new System.Drawing.Size(135, 17);
+            this.Player_Killing_Mode_0.TabIndex = 24;
+            this.Player_Killing_Mode_0.Text = "No Killing Other Players";
+            this.Player_Killing_Mode_0.UseVisualStyleBackColor = true;
             // 
-            // PlayerKillingMode_1
+            // Player_Killing_Mode_1
             // 
-            this.PlayerKillingMode_1.AutoSize = true;
-            this.PlayerKillingMode_1.Location = new System.Drawing.Point(3, 26);
-            this.PlayerKillingMode_1.Name = "PlayerKillingMode_1";
-            this.PlayerKillingMode_1.Size = new System.Drawing.Size(71, 17);
-            this.PlayerKillingMode_1.TabIndex = 25;
-            this.PlayerKillingMode_1.Text = "Allies only";
-            this.PlayerKillingMode_1.UseVisualStyleBackColor = true;
+            this.Player_Killing_Mode_1.AutoSize = true;
+            this.Player_Killing_Mode_1.Location = new System.Drawing.Point(3, 26);
+            this.Player_Killing_Mode_1.Name = "Player_Killing_Mode_1";
+            this.Player_Killing_Mode_1.Size = new System.Drawing.Size(89, 17);
+            this.Player_Killing_Mode_1.TabIndex = 25;
+            this.Player_Killing_Mode_1.Text = "Kill Allies Only";
+            this.Player_Killing_Mode_1.UseVisualStyleBackColor = true;
             // 
-            // PlayerKillingMode_2
+            // Player_Killing_Mode_2
             // 
-            this.PlayerKillingMode_2.AutoSize = true;
-            this.PlayerKillingMode_2.Location = new System.Drawing.Point(3, 49);
-            this.PlayerKillingMode_2.Name = "PlayerKillingMode_2";
-            this.PlayerKillingMode_2.Size = new System.Drawing.Size(87, 17);
-            this.PlayerKillingMode_2.TabIndex = 26;
-            this.PlayerKillingMode_2.Text = "Enemies only";
-            this.PlayerKillingMode_2.UseVisualStyleBackColor = true;
+            this.Player_Killing_Mode_2.AutoSize = true;
+            this.Player_Killing_Mode_2.Location = new System.Drawing.Point(3, 49);
+            this.Player_Killing_Mode_2.Name = "Player_Killing_Mode_2";
+            this.Player_Killing_Mode_2.Size = new System.Drawing.Size(134, 17);
+            this.Player_Killing_Mode_2.TabIndex = 26;
+            this.Player_Killing_Mode_2.Text = "Kill Enemy Players Only";
+            this.Player_Killing_Mode_2.UseVisualStyleBackColor = true;
             // 
-            // PlayerKillingMode_3
+            // Player_Killing_Mode_3
             // 
-            this.PlayerKillingMode_3.AutoSize = true;
-            this.PlayerKillingMode_3.Checked = true;
-            this.PlayerKillingMode_3.Location = new System.Drawing.Point(3, 72);
-            this.PlayerKillingMode_3.Name = "PlayerKillingMode_3";
-            this.PlayerKillingMode_3.Size = new System.Drawing.Size(85, 17);
-            this.PlayerKillingMode_3.TabIndex = 27;
-            this.PlayerKillingMode_3.TabStop = true;
-            this.PlayerKillingMode_3.Text = "Kill everyone";
-            this.PlayerKillingMode_3.UseVisualStyleBackColor = true;
+            this.Player_Killing_Mode_3.AutoSize = true;
+            this.Player_Killing_Mode_3.Checked = true;
+            this.Player_Killing_Mode_3.Location = new System.Drawing.Point(3, 72);
+            this.Player_Killing_Mode_3.Name = "Player_Killing_Mode_3";
+            this.Player_Killing_Mode_3.Size = new System.Drawing.Size(86, 17);
+            this.Player_Killing_Mode_3.TabIndex = 27;
+            this.Player_Killing_Mode_3.TabStop = true;
+            this.Player_Killing_Mode_3.Text = "Kill Everyone";
+            this.Player_Killing_Mode_3.UseVisualStyleBackColor = true;
             // 
-            // spawn_p_l
+            // Spawn_Settings_GroupBox
             // 
-            this.spawn_p_l.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.spawn_p_l.Controls.Add(this.PlayerSafeZoneHours_l);
-            this.spawn_p_l.Controls.Add(this.PlayerSafeZoneLevel_l);
-            this.spawn_p_l.Controls.Add(this.PlayerSafeZoneHours);
-            this.spawn_p_l.Controls.Add(this.PlayerSafeZoneLevel);
-            this.spawn_p_l.Location = new System.Drawing.Point(523, 500);
-            this.spawn_p_l.Name = "spawn_p_l";
-            this.spawn_p_l.Size = new System.Drawing.Size(366, 66);
-            this.spawn_p_l.TabIndex = 49;
-            this.spawn_p_l.TabStop = false;
-            this.spawn_p_l.Text = "Spawning";
+            this.Spawn_Settings_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Spawn_Settings_GroupBox.Controls.Add(this.Player_Safe_Zone_Hours_Label);
+            this.Spawn_Settings_GroupBox.Controls.Add(this.Player_Safe_Zone_Level_Label);
+            this.Spawn_Settings_GroupBox.Controls.Add(this.Player_Safe_Zone_Hours_TextBox);
+            this.Spawn_Settings_GroupBox.Controls.Add(this.Player_Safe_Zone_Level_TextBox);
+            this.Spawn_Settings_GroupBox.Location = new System.Drawing.Point(523, 500);
+            this.Spawn_Settings_GroupBox.Name = "Spawn_Settings_GroupBox";
+            this.Spawn_Settings_GroupBox.Size = new System.Drawing.Size(366, 66);
+            this.Spawn_Settings_GroupBox.TabIndex = 49;
+            this.Spawn_Settings_GroupBox.TabStop = false;
+            this.Spawn_Settings_GroupBox.Text = "Spawning";
             // 
-            // PlayerSafeZoneHours_l
+            // Player_Safe_Zone_Hours_Label
             // 
-            this.PlayerSafeZoneHours_l.AutoSize = true;
-            this.PlayerSafeZoneHours_l.Location = new System.Drawing.Point(17, 42);
-            this.PlayerSafeZoneHours_l.Name = "PlayerSafeZoneHours_l";
-            this.PlayerSafeZoneHours_l.Size = new System.Drawing.Size(114, 13);
-            this.PlayerSafeZoneHours_l.TabIndex = 3;
-            this.PlayerSafeZoneHours_l.Text = "Player safe zone hours";
+            this.Player_Safe_Zone_Hours_Label.AutoSize = true;
+            this.Player_Safe_Zone_Hours_Label.Location = new System.Drawing.Point(17, 42);
+            this.Player_Safe_Zone_Hours_Label.Name = "Player_Safe_Zone_Hours_Label";
+            this.Player_Safe_Zone_Hours_Label.Size = new System.Drawing.Size(120, 13);
+            this.Player_Safe_Zone_Hours_Label.TabIndex = 3;
+            this.Player_Safe_Zone_Hours_Label.Text = "Player Safe Zone Hours";
             // 
-            // PlayerSafeZoneLevel_l
+            // Player_Safe_Zone_Level_Label
             // 
-            this.PlayerSafeZoneLevel_l.AutoSize = true;
-            this.PlayerSafeZoneLevel_l.Location = new System.Drawing.Point(17, 16);
-            this.PlayerSafeZoneLevel_l.Name = "PlayerSafeZoneLevel_l";
-            this.PlayerSafeZoneLevel_l.Size = new System.Drawing.Size(110, 13);
-            this.PlayerSafeZoneLevel_l.TabIndex = 2;
-            this.PlayerSafeZoneLevel_l.Text = "Player safe zone level";
+            this.Player_Safe_Zone_Level_Label.AutoSize = true;
+            this.Player_Safe_Zone_Level_Label.Location = new System.Drawing.Point(17, 16);
+            this.Player_Safe_Zone_Level_Label.Name = "Player_Safe_Zone_Level_Label";
+            this.Player_Safe_Zone_Level_Label.Size = new System.Drawing.Size(118, 13);
+            this.Player_Safe_Zone_Level_Label.TabIndex = 2;
+            this.Player_Safe_Zone_Level_Label.Text = "Player Safe Zone Level";
             // 
-            // PlayerSafeZoneHours
+            // Player_Safe_Zone_Hours_TextBox
             // 
-            this.PlayerSafeZoneHours.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.PlayerSafeZoneHours.Location = new System.Drawing.Point(302, 39);
-            this.PlayerSafeZoneHours.Name = "PlayerSafeZoneHours";
-            this.PlayerSafeZoneHours.Size = new System.Drawing.Size(54, 20);
-            this.PlayerSafeZoneHours.TabIndex = 1;
-            this.PlayerSafeZoneHours.Text = "5";
-            this.PlayerSafeZoneHours.TextChanged += new System.EventHandler(this.PlayerSafeZoneHours_TextChanged);
+            this.Player_Safe_Zone_Hours_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Player_Safe_Zone_Hours_TextBox.Location = new System.Drawing.Point(302, 39);
+            this.Player_Safe_Zone_Hours_TextBox.Name = "Player_Safe_Zone_Hours_TextBox";
+            this.Player_Safe_Zone_Hours_TextBox.Size = new System.Drawing.Size(54, 20);
+            this.Player_Safe_Zone_Hours_TextBox.TabIndex = 1;
+            this.Player_Safe_Zone_Hours_TextBox.Text = "5";
+            this.Player_Safe_Zone_Hours_TextBox.TextChanged += new System.EventHandler(this.PlayerSafeZoneHours_TextChanged);
             // 
-            // PlayerSafeZoneLevel
+            // Player_Safe_Zone_Level_TextBox
             // 
-            this.PlayerSafeZoneLevel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.PlayerSafeZoneLevel.Location = new System.Drawing.Point(302, 13);
-            this.PlayerSafeZoneLevel.Name = "PlayerSafeZoneLevel";
-            this.PlayerSafeZoneLevel.Size = new System.Drawing.Size(54, 20);
-            this.PlayerSafeZoneLevel.TabIndex = 0;
-            this.PlayerSafeZoneLevel.Text = "5";
-            this.PlayerSafeZoneLevel.TextChanged += new System.EventHandler(this.PlayerSafeZoneLevel_TextChanged);
+            this.Player_Safe_Zone_Level_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Player_Safe_Zone_Level_TextBox.Location = new System.Drawing.Point(302, 13);
+            this.Player_Safe_Zone_Level_TextBox.Name = "Player_Safe_Zone_Level_TextBox";
+            this.Player_Safe_Zone_Level_TextBox.Size = new System.Drawing.Size(54, 20);
+            this.Player_Safe_Zone_Level_TextBox.TabIndex = 0;
+            this.Player_Safe_Zone_Level_TextBox.Text = "5";
+            this.Player_Safe_Zone_Level_TextBox.TextChanged += new System.EventHandler(this.PlayerSafeZoneLevel_TextChanged);
             // 
-            // AirDropFrequency_g
+            // Air_Drop_Frequency_GroupBox
             // 
-            this.AirDropFrequency_g.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.AirDropFrequency_g.Controls.Add(this.AirDropFrequency);
-            this.AirDropFrequency_g.Location = new System.Drawing.Point(524, 75);
-            this.AirDropFrequency_g.Name = "AirDropFrequency_g";
-            this.AirDropFrequency_g.Size = new System.Drawing.Size(366, 65);
-            this.AirDropFrequency_g.TabIndex = 48;
-            this.AirDropFrequency_g.TabStop = false;
-            this.AirDropFrequency_g.Text = "AirDropFrequency_g";
+            this.Air_Drop_Frequency_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Air_Drop_Frequency_GroupBox.Controls.Add(this.Air_Drop_Frequency_TrackBar);
+            this.Air_Drop_Frequency_GroupBox.Location = new System.Drawing.Point(524, 75);
+            this.Air_Drop_Frequency_GroupBox.Name = "Air_Drop_Frequency_GroupBox";
+            this.Air_Drop_Frequency_GroupBox.Size = new System.Drawing.Size(366, 65);
+            this.Air_Drop_Frequency_GroupBox.TabIndex = 48;
+            this.Air_Drop_Frequency_GroupBox.TabStop = false;
+            this.Air_Drop_Frequency_GroupBox.Text = "Air Drop Frequency";
             // 
-            // AirDropFrequency
+            // Air_Drop_Frequency_TrackBar
             // 
-            this.AirDropFrequency.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Air_Drop_Frequency_TrackBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.AirDropFrequency.Location = new System.Drawing.Point(6, 14);
-            this.AirDropFrequency.Maximum = 168;
-            this.AirDropFrequency.Name = "AirDropFrequency";
-            this.AirDropFrequency.Size = new System.Drawing.Size(354, 45);
-            this.AirDropFrequency.TabIndex = 8;
-            this.AirDropFrequency.Scroll += new System.EventHandler(this.AirDropFrequency_Scroll);
+            this.Air_Drop_Frequency_TrackBar.Location = new System.Drawing.Point(6, 14);
+            this.Air_Drop_Frequency_TrackBar.Maximum = 168;
+            this.Air_Drop_Frequency_TrackBar.Name = "Air_Drop_Frequency_TrackBar";
+            this.Air_Drop_Frequency_TrackBar.Size = new System.Drawing.Size(354, 45);
+            this.Air_Drop_Frequency_TrackBar.TabIndex = 8;
+            this.Air_Drop_Frequency_TrackBar.Scroll += new System.EventHandler(this.AirDropFrequency_Scroll);
             // 
-            // LandClaim
+            // Land_Claim_GroupBox
             // 
-            this.LandClaim.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Land_Claim_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LandClaim.Controls.Add(this.LandClaimDecayMode_g);
-            this.LandClaim.Controls.Add(this.LandClaim_g);
-            this.LandClaim.Controls.Add(this.LandClaimSize_g);
-            this.LandClaim.Controls.Add(this.LandClaimDeadZone_g);
-            this.LandClaim.Controls.Add(this.LandClaimExpiryTime_g);
-            this.LandClaim.Location = new System.Drawing.Point(10, 381);
-            this.LandClaim.Name = "LandClaim";
-            this.LandClaim.Size = new System.Drawing.Size(508, 185);
-            this.LandClaim.TabIndex = 39;
-            this.LandClaim.TabStop = false;
-            this.LandClaim.Text = "LandClaim";
+            this.Land_Claim_GroupBox.Controls.Add(this.Land_Claim_Decay_Mode_GroupBox);
+            this.Land_Claim_GroupBox.Controls.Add(this.Land_Claim_Durability_Modifier_GroupBox);
+            this.Land_Claim_GroupBox.Controls.Add(this.Land_Claim_Size_GroupBox);
+            this.Land_Claim_GroupBox.Controls.Add(this.Land_Claim_Dead_Zone_GroupBox);
+            this.Land_Claim_GroupBox.Controls.Add(this.Land_Claim_Expiry_Time_GroupBox);
+            this.Land_Claim_GroupBox.Location = new System.Drawing.Point(10, 381);
+            this.Land_Claim_GroupBox.Name = "Land_Claim_GroupBox";
+            this.Land_Claim_GroupBox.Size = new System.Drawing.Size(508, 185);
+            this.Land_Claim_GroupBox.TabIndex = 39;
+            this.Land_Claim_GroupBox.TabStop = false;
+            this.Land_Claim_GroupBox.Text = "Land Claims";
             // 
-            // LandClaimDecayMode_g
+            // Land_Claim_Decay_Mode_GroupBox
             // 
-            this.LandClaimDecayMode_g.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Land_Claim_Decay_Mode_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LandClaimDecayMode_g.Controls.Add(this.Full_prot);
-            this.LandClaimDecayMode_g.Controls.Add(this.Exponential);
-            this.LandClaimDecayMode_g.Controls.Add(this.Linear);
-            this.LandClaimDecayMode_g.Location = new System.Drawing.Point(6, 19);
-            this.LandClaimDecayMode_g.Name = "LandClaimDecayMode_g";
-            this.LandClaimDecayMode_g.Size = new System.Drawing.Size(342, 92);
-            this.LandClaimDecayMode_g.TabIndex = 3;
-            this.LandClaimDecayMode_g.TabStop = false;
-            this.LandClaimDecayMode_g.Text = "LandClaimDecayMode_g";
+            this.Land_Claim_Decay_Mode_GroupBox.Controls.Add(this.Full_prot);
+            this.Land_Claim_Decay_Mode_GroupBox.Controls.Add(this.Exponential);
+            this.Land_Claim_Decay_Mode_GroupBox.Controls.Add(this.Linear);
+            this.Land_Claim_Decay_Mode_GroupBox.Location = new System.Drawing.Point(6, 19);
+            this.Land_Claim_Decay_Mode_GroupBox.Name = "Land_Claim_Decay_Mode_GroupBox";
+            this.Land_Claim_Decay_Mode_GroupBox.Size = new System.Drawing.Size(342, 92);
+            this.Land_Claim_Decay_Mode_GroupBox.TabIndex = 3;
+            this.Land_Claim_Decay_Mode_GroupBox.TabStop = false;
+            this.Land_Claim_Decay_Mode_GroupBox.Text = "Land Claim Decay Mode";
             // 
             // Full_prot
             // 
@@ -2663,38 +2739,38 @@
             this.Linear.UseVisualStyleBackColor = true;
             this.Linear.CheckedChanged += new System.EventHandler(this.Linear_CheckedChanged);
             // 
-            // LandClaim_g
+            // Land_Claim_Durability_Modifier_GroupBox
             // 
-            this.LandClaim_g.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Land_Claim_Durability_Modifier_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LandClaim_g.Controls.Add(this.offline);
-            this.LandClaim_g.Controls.Add(this.online);
-            this.LandClaim_g.Controls.Add(this.LandClaimOfflineDurabilityModifier);
-            this.LandClaim_g.Controls.Add(this.LandClaimOnlineDurabilityModifier);
-            this.LandClaim_g.Location = new System.Drawing.Point(6, 113);
-            this.LandClaim_g.Name = "LandClaim_g";
-            this.LandClaim_g.Size = new System.Drawing.Size(342, 67);
-            this.LandClaim_g.TabIndex = 4;
-            this.LandClaim_g.TabStop = false;
-            this.LandClaim_g.Text = "LandClaim_g";
+            this.Land_Claim_Durability_Modifier_GroupBox.Controls.Add(this.Land_Claim_Durability_Offline_Label);
+            this.Land_Claim_Durability_Modifier_GroupBox.Controls.Add(this.Land_Claim_Durability_Online_Label);
+            this.Land_Claim_Durability_Modifier_GroupBox.Controls.Add(this.LandClaimOfflineDurabilityModifier);
+            this.Land_Claim_Durability_Modifier_GroupBox.Controls.Add(this.LandClaimOnlineDurabilityModifier);
+            this.Land_Claim_Durability_Modifier_GroupBox.Location = new System.Drawing.Point(6, 113);
+            this.Land_Claim_Durability_Modifier_GroupBox.Name = "Land_Claim_Durability_Modifier_GroupBox";
+            this.Land_Claim_Durability_Modifier_GroupBox.Size = new System.Drawing.Size(342, 67);
+            this.Land_Claim_Durability_Modifier_GroupBox.TabIndex = 4;
+            this.Land_Claim_Durability_Modifier_GroupBox.TabStop = false;
+            this.Land_Claim_Durability_Modifier_GroupBox.Text = "Land Claim Durability Modifier";
             // 
-            // offline
+            // Land_Claim_Durability_Offline_Label
             // 
-            this.offline.AutoSize = true;
-            this.offline.Location = new System.Drawing.Point(17, 42);
-            this.offline.Name = "offline";
-            this.offline.Size = new System.Drawing.Size(35, 13);
-            this.offline.TabIndex = 3;
-            this.offline.Text = "offline";
+            this.Land_Claim_Durability_Offline_Label.AutoSize = true;
+            this.Land_Claim_Durability_Offline_Label.Location = new System.Drawing.Point(17, 42);
+            this.Land_Claim_Durability_Offline_Label.Name = "Land_Claim_Durability_Offline_Label";
+            this.Land_Claim_Durability_Offline_Label.Size = new System.Drawing.Size(37, 13);
+            this.Land_Claim_Durability_Offline_Label.TabIndex = 3;
+            this.Land_Claim_Durability_Offline_Label.Text = "Offline";
             // 
-            // online
+            // Land_Claim_Durability_Online_Label
             // 
-            this.online.AutoSize = true;
-            this.online.Location = new System.Drawing.Point(17, 16);
-            this.online.Name = "online";
-            this.online.Size = new System.Drawing.Size(35, 13);
-            this.online.TabIndex = 2;
-            this.online.Text = "online";
+            this.Land_Claim_Durability_Online_Label.AutoSize = true;
+            this.Land_Claim_Durability_Online_Label.Location = new System.Drawing.Point(17, 16);
+            this.Land_Claim_Durability_Online_Label.Name = "Land_Claim_Durability_Online_Label";
+            this.Land_Claim_Durability_Online_Label.Size = new System.Drawing.Size(37, 13);
+            this.Land_Claim_Durability_Online_Label.TabIndex = 2;
+            this.Land_Claim_Durability_Online_Label.Text = "Online";
             // 
             // LandClaimOfflineDurabilityModifier
             // 
@@ -2714,77 +2790,77 @@
             this.LandClaimOnlineDurabilityModifier.Text = "32";
             this.LandClaimOnlineDurabilityModifier.TextChanged += new System.EventHandler(this.LandClaimOnlineDurabilityModifier_TextChanged);
             // 
-            // LandClaimSize_g
+            // Land_Claim_Size_GroupBox
             // 
-            this.LandClaimSize_g.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.LandClaimSize_g.Controls.Add(this.LandClaimSize);
-            this.LandClaimSize_g.Location = new System.Drawing.Point(354, 72);
-            this.LandClaimSize_g.Name = "LandClaimSize_g";
-            this.LandClaimSize_g.Size = new System.Drawing.Size(145, 51);
-            this.LandClaimSize_g.TabIndex = 0;
-            this.LandClaimSize_g.TabStop = false;
-            this.LandClaimSize_g.Text = "LandClaimSize_g";
+            this.Land_Claim_Size_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Land_Claim_Size_GroupBox.Controls.Add(this.Land_Claim_Size_TextBox);
+            this.Land_Claim_Size_GroupBox.Location = new System.Drawing.Point(354, 72);
+            this.Land_Claim_Size_GroupBox.Name = "Land_Claim_Size_GroupBox";
+            this.Land_Claim_Size_GroupBox.Size = new System.Drawing.Size(145, 51);
+            this.Land_Claim_Size_GroupBox.TabIndex = 0;
+            this.Land_Claim_Size_GroupBox.TabStop = false;
+            this.Land_Claim_Size_GroupBox.Text = "Land Claim Size";
             // 
-            // LandClaimSize
+            // Land_Claim_Size_TextBox
             // 
-            this.LandClaimSize.Location = new System.Drawing.Point(6, 19);
-            this.LandClaimSize.Name = "LandClaimSize";
-            this.LandClaimSize.Size = new System.Drawing.Size(133, 20);
-            this.LandClaimSize.TabIndex = 0;
-            this.LandClaimSize.Text = "7";
-            this.LandClaimSize.TextChanged += new System.EventHandler(this.LandClaimSize_TextChanged);
+            this.Land_Claim_Size_TextBox.Location = new System.Drawing.Point(6, 19);
+            this.Land_Claim_Size_TextBox.Name = "Land_Claim_Size_TextBox";
+            this.Land_Claim_Size_TextBox.Size = new System.Drawing.Size(133, 20);
+            this.Land_Claim_Size_TextBox.TabIndex = 0;
+            this.Land_Claim_Size_TextBox.Text = "7";
+            this.Land_Claim_Size_TextBox.TextChanged += new System.EventHandler(this.LandClaimSize_TextChanged);
             // 
-            // LandClaimDeadZone_g
+            // Land_Claim_Dead_Zone_GroupBox
             // 
-            this.LandClaimDeadZone_g.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.LandClaimDeadZone_g.Controls.Add(this.LandClaimDeadZone);
-            this.LandClaimDeadZone_g.Location = new System.Drawing.Point(354, 19);
-            this.LandClaimDeadZone_g.Name = "LandClaimDeadZone_g";
-            this.LandClaimDeadZone_g.Size = new System.Drawing.Size(145, 51);
-            this.LandClaimDeadZone_g.TabIndex = 1;
-            this.LandClaimDeadZone_g.TabStop = false;
-            this.LandClaimDeadZone_g.Text = "LandClaimDeadZone_g";
+            this.Land_Claim_Dead_Zone_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Land_Claim_Dead_Zone_GroupBox.Controls.Add(this.Land_Claim_Dead_Zone_TextBox);
+            this.Land_Claim_Dead_Zone_GroupBox.Location = new System.Drawing.Point(354, 19);
+            this.Land_Claim_Dead_Zone_GroupBox.Name = "Land_Claim_Dead_Zone_GroupBox";
+            this.Land_Claim_Dead_Zone_GroupBox.Size = new System.Drawing.Size(145, 51);
+            this.Land_Claim_Dead_Zone_GroupBox.TabIndex = 1;
+            this.Land_Claim_Dead_Zone_GroupBox.TabStop = false;
+            this.Land_Claim_Dead_Zone_GroupBox.Text = "Land Claim Dead Zone";
             // 
-            // LandClaimDeadZone
+            // Land_Claim_Dead_Zone_TextBox
             // 
-            this.LandClaimDeadZone.Location = new System.Drawing.Point(6, 19);
-            this.LandClaimDeadZone.Name = "LandClaimDeadZone";
-            this.LandClaimDeadZone.Size = new System.Drawing.Size(133, 20);
-            this.LandClaimDeadZone.TabIndex = 0;
-            this.LandClaimDeadZone.Text = "30";
-            this.LandClaimDeadZone.TextChanged += new System.EventHandler(this.LandClaimDeadZone_TextChanged);
+            this.Land_Claim_Dead_Zone_TextBox.Location = new System.Drawing.Point(6, 19);
+            this.Land_Claim_Dead_Zone_TextBox.Name = "Land_Claim_Dead_Zone_TextBox";
+            this.Land_Claim_Dead_Zone_TextBox.Size = new System.Drawing.Size(133, 20);
+            this.Land_Claim_Dead_Zone_TextBox.TabIndex = 0;
+            this.Land_Claim_Dead_Zone_TextBox.Text = "30";
+            this.Land_Claim_Dead_Zone_TextBox.TextChanged += new System.EventHandler(this.LandClaimDeadZone_TextChanged);
             // 
-            // LandClaimExpiryTime_g
+            // Land_Claim_Expiry_Time_GroupBox
             // 
-            this.LandClaimExpiryTime_g.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.LandClaimExpiryTime_g.Controls.Add(this.LandClaimExpiryTime);
-            this.LandClaimExpiryTime_g.Location = new System.Drawing.Point(354, 129);
-            this.LandClaimExpiryTime_g.Name = "LandClaimExpiryTime_g";
-            this.LandClaimExpiryTime_g.Size = new System.Drawing.Size(145, 51);
-            this.LandClaimExpiryTime_g.TabIndex = 2;
-            this.LandClaimExpiryTime_g.TabStop = false;
-            this.LandClaimExpiryTime_g.Text = "LandClaimExpiryTime_g";
+            this.Land_Claim_Expiry_Time_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Land_Claim_Expiry_Time_GroupBox.Controls.Add(this.Land_Claim_Expiry_Time_TextBox);
+            this.Land_Claim_Expiry_Time_GroupBox.Location = new System.Drawing.Point(354, 129);
+            this.Land_Claim_Expiry_Time_GroupBox.Name = "Land_Claim_Expiry_Time_GroupBox";
+            this.Land_Claim_Expiry_Time_GroupBox.Size = new System.Drawing.Size(145, 51);
+            this.Land_Claim_Expiry_Time_GroupBox.TabIndex = 2;
+            this.Land_Claim_Expiry_Time_GroupBox.TabStop = false;
+            this.Land_Claim_Expiry_Time_GroupBox.Text = "Land Claim Expiry Time";
             // 
-            // LandClaimExpiryTime
+            // Land_Claim_Expiry_Time_TextBox
             // 
-            this.LandClaimExpiryTime.Location = new System.Drawing.Point(6, 19);
-            this.LandClaimExpiryTime.Name = "LandClaimExpiryTime";
-            this.LandClaimExpiryTime.Size = new System.Drawing.Size(133, 20);
-            this.LandClaimExpiryTime.TabIndex = 0;
-            this.LandClaimExpiryTime.Text = "3";
-            this.LandClaimExpiryTime.TextChanged += new System.EventHandler(this.LandClaimExpiryTime_TextChanged);
+            this.Land_Claim_Expiry_Time_TextBox.Location = new System.Drawing.Point(6, 19);
+            this.Land_Claim_Expiry_Time_TextBox.Name = "Land_Claim_Expiry_Time_TextBox";
+            this.Land_Claim_Expiry_Time_TextBox.Size = new System.Drawing.Size(133, 20);
+            this.Land_Claim_Expiry_Time_TextBox.TabIndex = 0;
+            this.Land_Claim_Expiry_Time_TextBox.Text = "3";
+            this.Land_Claim_Expiry_Time_TextBox.TextChanged += new System.EventHandler(this.LandClaimExpiryTime_TextChanged);
             // 
-            // LootRespawnDays_g
+            // Loot_Respawn_Days_GroupBox
             // 
-            this.LootRespawnDays_g.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Loot_Respawn_Days_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LootRespawnDays_g.Controls.Add(this.LootRespawnDays);
-            this.LootRespawnDays_g.Location = new System.Drawing.Point(10, 310);
-            this.LootRespawnDays_g.Name = "LootRespawnDays_g";
-            this.LootRespawnDays_g.Size = new System.Drawing.Size(508, 65);
-            this.LootRespawnDays_g.TabIndex = 47;
-            this.LootRespawnDays_g.TabStop = false;
-            this.LootRespawnDays_g.Text = "LootRespawnDays_g";
+            this.Loot_Respawn_Days_GroupBox.Controls.Add(this.LootRespawnDays);
+            this.Loot_Respawn_Days_GroupBox.Location = new System.Drawing.Point(10, 310);
+            this.Loot_Respawn_Days_GroupBox.Name = "Loot_Respawn_Days_GroupBox";
+            this.Loot_Respawn_Days_GroupBox.Size = new System.Drawing.Size(508, 65);
+            this.Loot_Respawn_Days_GroupBox.TabIndex = 47;
+            this.Loot_Respawn_Days_GroupBox.TabStop = false;
+            this.Loot_Respawn_Days_GroupBox.Text = "Loot Respawn Days";
             // 
             // LootRespawnDays
             // 
@@ -2799,17 +2875,17 @@
             this.LootRespawnDays.Value = 50;
             this.LootRespawnDays.Scroll += new System.EventHandler(this.LootRespawnDays_Scroll);
             // 
-            // LootAbundance_g
+            // Loot_Abundance_GroupBox
             // 
-            this.LootAbundance_g.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Loot_Abundance_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.LootAbundance_g.Controls.Add(this.LootAbundance);
-            this.LootAbundance_g.Location = new System.Drawing.Point(10, 239);
-            this.LootAbundance_g.Name = "LootAbundance_g";
-            this.LootAbundance_g.Size = new System.Drawing.Size(508, 65);
-            this.LootAbundance_g.TabIndex = 46;
-            this.LootAbundance_g.TabStop = false;
-            this.LootAbundance_g.Text = "LootAbundance_g";
+            this.Loot_Abundance_GroupBox.Controls.Add(this.LootAbundance);
+            this.Loot_Abundance_GroupBox.Location = new System.Drawing.Point(10, 239);
+            this.Loot_Abundance_GroupBox.Name = "Loot_Abundance_GroupBox";
+            this.Loot_Abundance_GroupBox.Size = new System.Drawing.Size(508, 65);
+            this.Loot_Abundance_GroupBox.TabIndex = 46;
+            this.Loot_Abundance_GroupBox.TabStop = false;
+            this.Loot_Abundance_GroupBox.Text = "Loot Abundance %";
             // 
             // LootAbundance
             // 
@@ -2823,17 +2899,17 @@
             this.LootAbundance.Value = 50;
             this.LootAbundance.Scroll += new System.EventHandler(this.LootAbundance_Scroll);
             // 
-            // maxplgroup
+            // Max_Players_GroupBox
             // 
-            this.maxplgroup.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Max_Players_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.maxplgroup.Controls.Add(this.maxpl);
-            this.maxplgroup.Location = new System.Drawing.Point(10, 3);
-            this.maxplgroup.Name = "maxplgroup";
-            this.maxplgroup.Size = new System.Drawing.Size(508, 65);
-            this.maxplgroup.TabIndex = 45;
-            this.maxplgroup.TabStop = false;
-            this.maxplgroup.Text = "maxplgroup";
+            this.Max_Players_GroupBox.Controls.Add(this.maxpl);
+            this.Max_Players_GroupBox.Location = new System.Drawing.Point(10, 3);
+            this.Max_Players_GroupBox.Name = "Max_Players_GroupBox";
+            this.Max_Players_GroupBox.Size = new System.Drawing.Size(508, 65);
+            this.Max_Players_GroupBox.TabIndex = 45;
+            this.Max_Players_GroupBox.TabStop = false;
+            this.Max_Players_GroupBox.Text = "Max Players";
             // 
             // maxpl
             // 
@@ -2848,20 +2924,20 @@
             this.maxpl.Value = 16;
             this.maxpl.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
-            // trybgry
+            // Game_Mode_Settings_GroupBox
             // 
-            this.trybgry.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.trybgry.Controls.Add(this.PersistentPlayerProfiles);
-            this.trybgry.Controls.Add(this.feral);
-            this.trybgry.Controls.Add(this.gamemode_surv_pvp);
-            this.trybgry.Controls.Add(this.cheatmode);
-            this.trybgry.Controls.Add(this.gamemode_coop);
-            this.trybgry.Location = new System.Drawing.Point(523, 335);
-            this.trybgry.Name = "trybgry";
-            this.trybgry.Size = new System.Drawing.Size(179, 162);
-            this.trybgry.TabIndex = 44;
-            this.trybgry.TabStop = false;
-            this.trybgry.Text = "Tryb gry";
+            this.Game_Mode_Settings_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Game_Mode_Settings_GroupBox.Controls.Add(this.PersistentPlayerProfiles);
+            this.Game_Mode_Settings_GroupBox.Controls.Add(this.feral);
+            this.Game_Mode_Settings_GroupBox.Controls.Add(this.gamemode_surv_pvp);
+            this.Game_Mode_Settings_GroupBox.Controls.Add(this.cheatmode);
+            this.Game_Mode_Settings_GroupBox.Controls.Add(this.gamemode_coop);
+            this.Game_Mode_Settings_GroupBox.Location = new System.Drawing.Point(523, 335);
+            this.Game_Mode_Settings_GroupBox.Name = "Game_Mode_Settings_GroupBox";
+            this.Game_Mode_Settings_GroupBox.Size = new System.Drawing.Size(179, 162);
+            this.Game_Mode_Settings_GroupBox.TabIndex = 44;
+            this.Game_Mode_Settings_GroupBox.TabStop = false;
+            this.Game_Mode_Settings_GroupBox.Text = "Game Mode Settings";
             // 
             // PersistentPlayerProfiles
             // 
@@ -2920,18 +2996,18 @@
             this.gamemode_coop.UseVisualStyleBackColor = true;
             this.gamemode_coop.CheckedChanged += new System.EventHandler(this.gamemode_coop_CheckedChanged);
             // 
-            // zomb_pie
+            // Zombie_Settings_GroupBox
             // 
-            this.zomb_pie.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.zomb_pie.Controls.Add(this.zombie_never_run);
-            this.zomb_pie.Controls.Add(this.zombie_normal);
-            this.zomb_pie.Controls.Add(this.zombie_run);
-            this.zomb_pie.Location = new System.Drawing.Point(708, 217);
-            this.zomb_pie.Name = "zomb_pie";
-            this.zomb_pie.Size = new System.Drawing.Size(179, 87);
-            this.zomb_pie.TabIndex = 43;
-            this.zomb_pie.TabStop = false;
-            this.zomb_pie.Text = "Zachowanie zombie";
+            this.Zombie_Settings_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Zombie_Settings_GroupBox.Controls.Add(this.zombie_never_run);
+            this.Zombie_Settings_GroupBox.Controls.Add(this.zombie_normal);
+            this.Zombie_Settings_GroupBox.Controls.Add(this.zombie_run);
+            this.Zombie_Settings_GroupBox.Location = new System.Drawing.Point(708, 217);
+            this.Zombie_Settings_GroupBox.Name = "Zombie_Settings_GroupBox";
+            this.Zombie_Settings_GroupBox.Size = new System.Drawing.Size(179, 87);
+            this.Zombie_Settings_GroupBox.TabIndex = 43;
+            this.Zombie_Settings_GroupBox.TabStop = false;
+            this.Zombie_Settings_GroupBox.Text = "Zombies";
             // 
             // zombie_never_run
             // 
@@ -2993,18 +3069,18 @@
             this.nightpercentage.Value = 18;
             this.nightpercentage.Scroll += new System.EventHandler(this.nightpercentage_Scroll);
             // 
-            // dlugoscdnia_g
+            // Day_Length_GroupBox
             // 
-            this.dlugoscdnia_g.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Day_Length_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dlugoscdnia_g.Controls.Add(this.realtime);
-            this.dlugoscdnia_g.Controls.Add(this.dlugoscdnia);
-            this.dlugoscdnia_g.Location = new System.Drawing.Point(10, 145);
-            this.dlugoscdnia_g.Name = "dlugoscdnia_g";
-            this.dlugoscdnia_g.Size = new System.Drawing.Size(508, 88);
-            this.dlugoscdnia_g.TabIndex = 39;
-            this.dlugoscdnia_g.TabStop = false;
-            this.dlugoscdnia_g.Text = "dlugoscdnia";
+            this.Day_Length_GroupBox.Controls.Add(this.realtime);
+            this.Day_Length_GroupBox.Controls.Add(this.dlugoscdnia);
+            this.Day_Length_GroupBox.Location = new System.Drawing.Point(10, 145);
+            this.Day_Length_GroupBox.Name = "Day_Length_GroupBox";
+            this.Day_Length_GroupBox.Size = new System.Drawing.Size(508, 88);
+            this.Day_Length_GroupBox.TabIndex = 39;
+            this.Day_Length_GroupBox.TabStop = false;
+            this.Day_Length_GroupBox.Text = "Day Length";
             // 
             // realtime
             // 
@@ -3054,146 +3130,88 @@
             this.bdm.Value = 2;
             this.bdm.Scroll += new System.EventHandler(this.bdm_Scroll);
             // 
-            // dod_g
+            // Drop_On_Death_Group_Box
             // 
-            this.dod_g.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.dod_g.Controls.Add(this.dod_p);
-            this.dod_g.Controls.Add(this.doq_3);
-            this.dod_g.Controls.Add(this.doq_2);
-            this.dod_g.Controls.Add(this.doq_1);
-            this.dod_g.Controls.Add(this.doq_0);
-            this.dod_g.Location = new System.Drawing.Point(523, 217);
-            this.dod_g.Name = "dod_g";
-            this.dod_g.Size = new System.Drawing.Size(179, 112);
-            this.dod_g.TabIndex = 32;
-            this.dod_g.TabStop = false;
-            this.dod_g.Text = "dod_g";
+            this.Drop_On_Death_Group_Box.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Drop_On_Death_Group_Box.Controls.Add(this.Drop_On_Death_Mode_0);
+            this.Drop_On_Death_Group_Box.Controls.Add(this.Drop_On_Death_Mode_1);
+            this.Drop_On_Death_Group_Box.Controls.Add(this.Drop_On_Death_Mode_3);
+            this.Drop_On_Death_Group_Box.Controls.Add(this.Drop_On_Death_Mode_2);
+            this.Drop_On_Death_Group_Box.Location = new System.Drawing.Point(523, 217);
+            this.Drop_On_Death_Group_Box.Name = "Drop_On_Death_Group_Box";
+            this.Drop_On_Death_Group_Box.Size = new System.Drawing.Size(95, 112);
+            this.Drop_On_Death_Group_Box.TabIndex = 32;
+            this.Drop_On_Death_Group_Box.TabStop = false;
+            this.Drop_On_Death_Group_Box.Text = "Drop On Death";
             // 
-            // dod_p
+            // Drop_On_Death_Mode_0
             // 
-            this.dod_p.Controls.Add(this.dod_0);
-            this.dod_p.Controls.Add(this.dod_1);
-            this.dod_p.Controls.Add(this.dod_2);
-            this.dod_p.Controls.Add(this.dod_3);
-            this.dod_p.Location = new System.Drawing.Point(6, 15);
-            this.dod_p.Name = "dod_p";
-            this.dod_p.Size = new System.Drawing.Size(79, 95);
-            this.dod_p.TabIndex = 29;
+            this.Drop_On_Death_Mode_0.AutoSize = true;
+            this.Drop_On_Death_Mode_0.Location = new System.Drawing.Point(9, 18);
+            this.Drop_On_Death_Mode_0.Name = "Drop_On_Death_Mode_0";
+            this.Drop_On_Death_Mode_0.Size = new System.Drawing.Size(62, 17);
+            this.Drop_On_Death_Mode_0.TabIndex = 24;
+            this.Drop_On_Death_Mode_0.Text = "Nothing";
+            this.Drop_On_Death_Mode_0.UseVisualStyleBackColor = true;
+            this.Drop_On_Death_Mode_0.CheckedChanged += new System.EventHandler(this.dod_0_CheckedChanged);
             // 
-            // dod_0
+            // Drop_On_Death_Mode_1
             // 
-            this.dod_0.AutoSize = true;
-            this.dod_0.Location = new System.Drawing.Point(3, 3);
-            this.dod_0.Name = "dod_0";
-            this.dod_0.Size = new System.Drawing.Size(55, 17);
-            this.dod_0.TabIndex = 24;
-            this.dod_0.Text = "dod_0";
-            this.dod_0.UseVisualStyleBackColor = true;
-            this.dod_0.CheckedChanged += new System.EventHandler(this.dod_0_CheckedChanged);
+            this.Drop_On_Death_Mode_1.AutoSize = true;
+            this.Drop_On_Death_Mode_1.Location = new System.Drawing.Point(9, 41);
+            this.Drop_On_Death_Mode_1.Name = "Drop_On_Death_Mode_1";
+            this.Drop_On_Death_Mode_1.Size = new System.Drawing.Size(75, 17);
+            this.Drop_On_Death_Mode_1.TabIndex = 25;
+            this.Drop_On_Death_Mode_1.Text = "Everything";
+            this.Drop_On_Death_Mode_1.UseVisualStyleBackColor = true;
+            this.Drop_On_Death_Mode_1.CheckedChanged += new System.EventHandler(this.dod_1_CheckedChanged);
             // 
-            // dod_1
+            // Drop_On_Death_Mode_3
             // 
-            this.dod_1.AutoSize = true;
-            this.dod_1.Location = new System.Drawing.Point(3, 26);
-            this.dod_1.Name = "dod_1";
-            this.dod_1.Size = new System.Drawing.Size(55, 17);
-            this.dod_1.TabIndex = 25;
-            this.dod_1.Text = "dod_1";
-            this.dod_1.UseVisualStyleBackColor = true;
-            this.dod_1.CheckedChanged += new System.EventHandler(this.dod_1_CheckedChanged);
+            this.Drop_On_Death_Mode_3.AutoSize = true;
+            this.Drop_On_Death_Mode_3.Location = new System.Drawing.Point(9, 87);
+            this.Drop_On_Death_Mode_3.Name = "Drop_On_Death_Mode_3";
+            this.Drop_On_Death_Mode_3.Size = new System.Drawing.Size(74, 17);
+            this.Drop_On_Death_Mode_3.TabIndex = 27;
+            this.Drop_On_Death_Mode_3.Text = "Backpack";
+            this.Drop_On_Death_Mode_3.UseVisualStyleBackColor = true;
+            this.Drop_On_Death_Mode_3.CheckedChanged += new System.EventHandler(this.dod_3_CheckedChanged);
             // 
-            // dod_2
+            // Drop_On_Death_Mode_2
             // 
-            this.dod_2.AutoSize = true;
-            this.dod_2.Checked = true;
-            this.dod_2.Location = new System.Drawing.Point(3, 49);
-            this.dod_2.Name = "dod_2";
-            this.dod_2.Size = new System.Drawing.Size(55, 17);
-            this.dod_2.TabIndex = 26;
-            this.dod_2.TabStop = true;
-            this.dod_2.Text = "dod_2";
-            this.dod_2.UseVisualStyleBackColor = true;
-            this.dod_2.CheckedChanged += new System.EventHandler(this.dod_2_CheckedChanged);
+            this.Drop_On_Death_Mode_2.AutoSize = true;
+            this.Drop_On_Death_Mode_2.Checked = true;
+            this.Drop_On_Death_Mode_2.Location = new System.Drawing.Point(9, 64);
+            this.Drop_On_Death_Mode_2.Name = "Drop_On_Death_Mode_2";
+            this.Drop_On_Death_Mode_2.Size = new System.Drawing.Size(63, 17);
+            this.Drop_On_Death_Mode_2.TabIndex = 26;
+            this.Drop_On_Death_Mode_2.TabStop = true;
+            this.Drop_On_Death_Mode_2.Text = "Toolbelt";
+            this.Drop_On_Death_Mode_2.UseVisualStyleBackColor = true;
+            this.Drop_On_Death_Mode_2.CheckedChanged += new System.EventHandler(this.dod_2_CheckedChanged);
             // 
-            // dod_3
+            // Game_Difficulty_GroupBox
             // 
-            this.dod_3.AutoSize = true;
-            this.dod_3.Location = new System.Drawing.Point(3, 72);
-            this.dod_3.Name = "dod_3";
-            this.dod_3.Size = new System.Drawing.Size(55, 17);
-            this.dod_3.TabIndex = 27;
-            this.dod_3.Text = "dod_3";
-            this.dod_3.UseVisualStyleBackColor = true;
-            this.dod_3.CheckedChanged += new System.EventHandler(this.dod_3_CheckedChanged);
+            this.Game_Difficulty_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Game_Difficulty_GroupBox.Controls.Add(this.Game_Difficulty_TrackBar);
+            this.Game_Difficulty_GroupBox.Location = new System.Drawing.Point(523, 146);
+            this.Game_Difficulty_GroupBox.Name = "Game_Difficulty_GroupBox";
+            this.Game_Difficulty_GroupBox.Size = new System.Drawing.Size(179, 65);
+            this.Game_Difficulty_GroupBox.TabIndex = 31;
+            this.Game_Difficulty_GroupBox.TabStop = false;
+            this.Game_Difficulty_GroupBox.Text = "Difficulty";
             // 
-            // doq_3
+            // Game_Difficulty_TrackBar
             // 
-            this.doq_3.AutoSize = true;
-            this.doq_3.Location = new System.Drawing.Point(91, 87);
-            this.doq_3.Name = "doq_3";
-            this.doq_3.Size = new System.Drawing.Size(55, 17);
-            this.doq_3.TabIndex = 31;
-            this.doq_3.Text = "doq_3";
-            this.doq_3.UseVisualStyleBackColor = true;
-            this.doq_3.CheckedChanged += new System.EventHandler(this.doq_3_CheckedChanged);
-            // 
-            // doq_2
-            // 
-            this.doq_2.AutoSize = true;
-            this.doq_2.Location = new System.Drawing.Point(91, 64);
-            this.doq_2.Name = "doq_2";
-            this.doq_2.Size = new System.Drawing.Size(55, 17);
-            this.doq_2.TabIndex = 30;
-            this.doq_2.Text = "doq_2";
-            this.doq_2.UseVisualStyleBackColor = true;
-            this.doq_2.CheckedChanged += new System.EventHandler(this.doq_2_CheckedChanged);
-            // 
-            // doq_1
-            // 
-            this.doq_1.AutoSize = true;
-            this.doq_1.Location = new System.Drawing.Point(91, 41);
-            this.doq_1.Name = "doq_1";
-            this.doq_1.Size = new System.Drawing.Size(55, 17);
-            this.doq_1.TabIndex = 29;
-            this.doq_1.Text = "doq_1";
-            this.doq_1.UseVisualStyleBackColor = true;
-            this.doq_1.CheckedChanged += new System.EventHandler(this.doq_1_CheckedChanged);
-            // 
-            // doq_0
-            // 
-            this.doq_0.AutoSize = true;
-            this.doq_0.Checked = true;
-            this.doq_0.Location = new System.Drawing.Point(91, 18);
-            this.doq_0.Name = "doq_0";
-            this.doq_0.Size = new System.Drawing.Size(55, 17);
-            this.doq_0.TabIndex = 28;
-            this.doq_0.TabStop = true;
-            this.doq_0.Text = "doq_0";
-            this.doq_0.UseVisualStyleBackColor = true;
-            this.doq_0.CheckedChanged += new System.EventHandler(this.doq_0_CheckedChanged);
-            // 
-            // trudnoscgroup
-            // 
-            this.trudnoscgroup.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.trudnoscgroup.Controls.Add(this.trudnosc);
-            this.trudnoscgroup.Location = new System.Drawing.Point(523, 146);
-            this.trudnoscgroup.Name = "trudnoscgroup";
-            this.trudnoscgroup.Size = new System.Drawing.Size(179, 65);
-            this.trudnoscgroup.TabIndex = 31;
-            this.trudnoscgroup.TabStop = false;
-            this.trudnoscgroup.Text = "trudnoscgroup";
-            // 
-            // trudnosc
-            // 
-            this.trudnosc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Game_Difficulty_TrackBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.trudnosc.Location = new System.Drawing.Point(6, 13);
-            this.trudnosc.Maximum = 5;
-            this.trudnosc.Name = "trudnosc";
-            this.trudnosc.Size = new System.Drawing.Size(167, 45);
-            this.trudnosc.TabIndex = 9;
-            this.trudnosc.Value = 1;
-            this.trudnosc.Scroll += new System.EventHandler(this.trudnosc_Scroll);
+            this.Game_Difficulty_TrackBar.Location = new System.Drawing.Point(6, 13);
+            this.Game_Difficulty_TrackBar.Maximum = 5;
+            this.Game_Difficulty_TrackBar.Name = "Game_Difficulty_TrackBar";
+            this.Game_Difficulty_TrackBar.Size = new System.Drawing.Size(167, 45);
+            this.Game_Difficulty_TrackBar.TabIndex = 9;
+            this.Game_Difficulty_TrackBar.Value = 1;
+            this.Game_Difficulty_TrackBar.Scroll += new System.EventHandler(this.trudnosc_Scroll);
             // 
             // server_opts
             // 
@@ -5296,7 +5314,62 @@
             this.discord_b.UseVisualStyleBackColor = true;
             this.discord_b.Click += new System.EventHandler(this.discord_b_Click);
             // 
-            // server_panel
+            // SQL_Host_Info_PictureBox
+            // 
+            this.SQL_Host_Info_PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("SQL_Host_Info_PictureBox.Image")));
+            this.SQL_Host_Info_PictureBox.Location = new System.Drawing.Point(502, 21);
+            this.SQL_Host_Info_PictureBox.Name = "SQL_Host_Info_PictureBox";
+            this.SQL_Host_Info_PictureBox.Size = new System.Drawing.Size(16, 16);
+            this.SQL_Host_Info_PictureBox.TabIndex = 41;
+            this.SQL_Host_Info_PictureBox.TabStop = false;
+            this.toolTip.SetToolTip(this.SQL_Host_Info_PictureBox, "You need 7DSM Supporter to change these options.\r\nIt\'s almost free, please check " +
+        "it out in \"Settings\" tab.");
+            // 
+            // SQL_Username_Info_PictureBox
+            // 
+            this.SQL_Username_Info_PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("SQL_Username_Info_PictureBox.Image")));
+            this.SQL_Username_Info_PictureBox.Location = new System.Drawing.Point(502, 23);
+            this.SQL_Username_Info_PictureBox.Name = "SQL_Username_Info_PictureBox";
+            this.SQL_Username_Info_PictureBox.Size = new System.Drawing.Size(16, 16);
+            this.SQL_Username_Info_PictureBox.TabIndex = 42;
+            this.SQL_Username_Info_PictureBox.TabStop = false;
+            this.toolTip.SetToolTip(this.SQL_Username_Info_PictureBox, "You need 7DSM Supporter to change these options.\r\nIt\'s almost free, please check " +
+        "it out in \"Settings\" tab.");
+            // 
+            // SQL_Password_Info_PictureBox
+            // 
+            this.SQL_Password_Info_PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("SQL_Password_Info_PictureBox.Image")));
+            this.SQL_Password_Info_PictureBox.Location = new System.Drawing.Point(502, 19);
+            this.SQL_Password_Info_PictureBox.Name = "SQL_Password_Info_PictureBox";
+            this.SQL_Password_Info_PictureBox.Size = new System.Drawing.Size(16, 16);
+            this.SQL_Password_Info_PictureBox.TabIndex = 43;
+            this.SQL_Password_Info_PictureBox.TabStop = false;
+            this.toolTip.SetToolTip(this.SQL_Password_Info_PictureBox, "You need 7DSM Supporter to change these options.\r\nIt\'s almost free, please check " +
+        "it out in \"Settings\" tab.");
+            // 
+            // SQL_Database_Name_Info_PictureBox
+            // 
+            this.SQL_Database_Name_Info_PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("SQL_Database_Name_Info_PictureBox.Image")));
+            this.SQL_Database_Name_Info_PictureBox.Location = new System.Drawing.Point(502, 20);
+            this.SQL_Database_Name_Info_PictureBox.Name = "SQL_Database_Name_Info_PictureBox";
+            this.SQL_Database_Name_Info_PictureBox.Size = new System.Drawing.Size(16, 16);
+            this.SQL_Database_Name_Info_PictureBox.TabIndex = 44;
+            this.SQL_Database_Name_Info_PictureBox.TabStop = false;
+            this.toolTip.SetToolTip(this.SQL_Database_Name_Info_PictureBox, "You need 7DSM Supporter to change these options.\r\nIt\'s almost free, please check " +
+        "it out in \"Settings\" tab.");
+            // 
+            // SQL_Update_Time_Info_PictureBox
+            // 
+            this.SQL_Update_Time_Info_PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("SQL_Update_Time_Info_PictureBox.Image")));
+            this.SQL_Update_Time_Info_PictureBox.Location = new System.Drawing.Point(502, 23);
+            this.SQL_Update_Time_Info_PictureBox.Name = "SQL_Update_Time_Info_PictureBox";
+            this.SQL_Update_Time_Info_PictureBox.Size = new System.Drawing.Size(16, 16);
+            this.SQL_Update_Time_Info_PictureBox.TabIndex = 45;
+            this.SQL_Update_Time_Info_PictureBox.TabStop = false;
+            this.toolTip.SetToolTip(this.SQL_Update_Time_Info_PictureBox, "You need 7DSM Supporter to change these options.\r\nIt\'s almost free, please check " +
+        "it out in \"Settings\" tab.");
+            // 
+            // Server_Panel_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
@@ -5315,7 +5388,7 @@
             this.Controls.Add(this.img_status);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(969, 778);
-            this.Name = "server_panel";
+            this.Name = "Server_Panel_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "7 Days Server Manager";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.server_panel_FormClosing);
@@ -5324,39 +5397,39 @@
             this.Resize += new System.EventHandler(this.server_panel_Resize);
             this.settings.ResumeLayout(false);
             this.settings.PerformLayout();
-            this.dsm_updates_g.ResumeLayout(false);
-            this.dsm_updates_g.PerformLayout();
+            this.Updates_GroupBox.ResumeLayout(false);
+            this.Updates_GroupBox.PerformLayout();
             this.exe_settings_g.ResumeLayout(false);
             this.exe_settings_g.PerformLayout();
-            this.prem_set.ResumeLayout(false);
-            this.prem_set.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.prem_help1)).EndInit();
-            this.prem_g.ResumeLayout(false);
-            this.prem_g.PerformLayout();
-            this.sql.ResumeLayout(false);
-            this.sql.PerformLayout();
-            this.sql_updates_time_g.ResumeLayout(false);
-            this.sql_updates_time_g.PerformLayout();
-            this.sql_host_g.ResumeLayout(false);
-            this.sql_host_g.PerformLayout();
-            this.sql_username_g.ResumeLayout(false);
-            this.sql_username_g.PerformLayout();
-            this.sql_db_name_g.ResumeLayout(false);
-            this.sql_db_name_g.PerformLayout();
-            this.sql_password_g.ResumeLayout(false);
-            this.sql_password_g.PerformLayout();
-            this.ustawienia_grupa_ustawienia.ResumeLayout(false);
-            this.ustawienia_grupa_ustawienia.PerformLayout();
+            this.Supporter_Settings_GroupBox.ResumeLayout(false);
+            this.Supporter_Settings_GroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Premium_Settings_Help_PictureBox)).EndInit();
+            this.Supporter_GroupBox.ResumeLayout(false);
+            this.Supporter_GroupBox.PerformLayout();
+            this.SQL_GroupBox.ResumeLayout(false);
+            this.SQL_GroupBox.PerformLayout();
+            this.SQL_Update_Time_GroupBox.ResumeLayout(false);
+            this.SQL_Update_Time_GroupBox.PerformLayout();
+            this.SQL_Host_GroupBox.ResumeLayout(false);
+            this.SQL_Host_GroupBox.PerformLayout();
+            this.SQL_Username_GroupBox.ResumeLayout(false);
+            this.SQL_Username_GroupBox.PerformLayout();
+            this.SQL_DB_Name_GroupBox.ResumeLayout(false);
+            this.SQL_DB_Name_GroupBox.PerformLayout();
+            this.SQL_Password_GroupBox.ResumeLayout(false);
+            this.SQL_Password_GroupBox.PerformLayout();
+            this.Settings_GroupBox.ResumeLayout(false);
+            this.Settings_GroupBox.PerformLayout();
             this.auto_backup_group.ResumeLayout(false);
             this.auto_backup_group.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.backup_time)).EndInit();
-            this.spawn_group.ResumeLayout(false);
-            this.telnet_group.ResumeLayout(false);
-            this.telnet_group.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dzien_bar)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.godzina_bar)).EndInit();
+            this.Spawn_GroupBox.ResumeLayout(false);
+            this.Game_Time_Controls_GroupBox.ResumeLayout(false);
+            this.Game_Time_Controls_GroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Game_Day_TrackBar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Game_Hour_TrackBar)).EndInit();
             this.tabControl.ResumeLayout(false);
-            this.server_manage.ResumeLayout(false);
+            this.Manage_Server_TabPage.ResumeLayout(false);
             this.CommandsGroup.ResumeLayout(false);
             this.overviewSplitter.Panel1.ResumeLayout(false);
             this.overviewSplitter.Panel2.ResumeLayout(false);
@@ -5373,66 +5446,66 @@
             this.Server_Controls_Group.PerformLayout();
             this.ban_kick.ResumeLayout(false);
             this.ban_kick.PerformLayout();
-            this.Chat_Group.ResumeLayout(false);
-            this.Chat_Group.PerformLayout();
-            this.player_g.ResumeLayout(false);
-            this.kickgroup.ResumeLayout(false);
-            this.bantime_slider.ResumeLayout(false);
-            this.bantime_slider.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ban_slide)).EndInit();
+            this.Chat_GroupBox.ResumeLayout(false);
+            this.Chat_GroupBox.PerformLayout();
+            this.Player_GroupBox.ResumeLayout(false);
+            this.Kick_GroupBox.ResumeLayout(false);
+            this.Ban_GroupBox.ResumeLayout(false);
+            this.Ban_GroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Ban_Slider_TrackBar)).EndInit();
             this.main_page.ResumeLayout(false);
             this.main_page_opts.ResumeLayout(false);
             this.game_opts.ResumeLayout(false);
-            this.reserved_g.ResumeLayout(false);
-            this.reserved_g.PerformLayout();
-            this.PlayerKillingMode_g.ResumeLayout(false);
+            this.Drop_On_Quit_GroupBox.ResumeLayout(false);
+            this.Drop_On_Quit_GroupBox.PerformLayout();
+            this.Server_Reserved_Slots_GroupBox.ResumeLayout(false);
+            this.Server_Reserved_Slots_GroupBox.PerformLayout();
+            this.Player_Killing_Mode_GroupBox.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.spawn_p_l.ResumeLayout(false);
-            this.spawn_p_l.PerformLayout();
-            this.AirDropFrequency_g.ResumeLayout(false);
-            this.AirDropFrequency_g.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.AirDropFrequency)).EndInit();
-            this.LandClaim.ResumeLayout(false);
-            this.LandClaimDecayMode_g.ResumeLayout(false);
-            this.LandClaimDecayMode_g.PerformLayout();
-            this.LandClaim_g.ResumeLayout(false);
-            this.LandClaim_g.PerformLayout();
-            this.LandClaimSize_g.ResumeLayout(false);
-            this.LandClaimSize_g.PerformLayout();
-            this.LandClaimDeadZone_g.ResumeLayout(false);
-            this.LandClaimDeadZone_g.PerformLayout();
-            this.LandClaimExpiryTime_g.ResumeLayout(false);
-            this.LandClaimExpiryTime_g.PerformLayout();
-            this.LootRespawnDays_g.ResumeLayout(false);
-            this.LootRespawnDays_g.PerformLayout();
+            this.Spawn_Settings_GroupBox.ResumeLayout(false);
+            this.Spawn_Settings_GroupBox.PerformLayout();
+            this.Air_Drop_Frequency_GroupBox.ResumeLayout(false);
+            this.Air_Drop_Frequency_GroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Air_Drop_Frequency_TrackBar)).EndInit();
+            this.Land_Claim_GroupBox.ResumeLayout(false);
+            this.Land_Claim_Decay_Mode_GroupBox.ResumeLayout(false);
+            this.Land_Claim_Decay_Mode_GroupBox.PerformLayout();
+            this.Land_Claim_Durability_Modifier_GroupBox.ResumeLayout(false);
+            this.Land_Claim_Durability_Modifier_GroupBox.PerformLayout();
+            this.Land_Claim_Size_GroupBox.ResumeLayout(false);
+            this.Land_Claim_Size_GroupBox.PerformLayout();
+            this.Land_Claim_Dead_Zone_GroupBox.ResumeLayout(false);
+            this.Land_Claim_Dead_Zone_GroupBox.PerformLayout();
+            this.Land_Claim_Expiry_Time_GroupBox.ResumeLayout(false);
+            this.Land_Claim_Expiry_Time_GroupBox.PerformLayout();
+            this.Loot_Respawn_Days_GroupBox.ResumeLayout(false);
+            this.Loot_Respawn_Days_GroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LootRespawnDays)).EndInit();
-            this.LootAbundance_g.ResumeLayout(false);
-            this.LootAbundance_g.PerformLayout();
+            this.Loot_Abundance_GroupBox.ResumeLayout(false);
+            this.Loot_Abundance_GroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LootAbundance)).EndInit();
-            this.maxplgroup.ResumeLayout(false);
-            this.maxplgroup.PerformLayout();
+            this.Max_Players_GroupBox.ResumeLayout(false);
+            this.Max_Players_GroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.maxpl)).EndInit();
-            this.trybgry.ResumeLayout(false);
-            this.trybgry.PerformLayout();
-            this.zomb_pie.ResumeLayout(false);
-            this.zomb_pie.PerformLayout();
+            this.Game_Mode_Settings_GroupBox.ResumeLayout(false);
+            this.Game_Mode_Settings_GroupBox.PerformLayout();
+            this.Zombie_Settings_GroupBox.ResumeLayout(false);
+            this.Zombie_Settings_GroupBox.PerformLayout();
             this.nightpercentage_g.ResumeLayout(false);
             this.nightpercentage_g.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nightpercentage)).EndInit();
-            this.dlugoscdnia_g.ResumeLayout(false);
-            this.dlugoscdnia_g.PerformLayout();
+            this.Day_Length_GroupBox.ResumeLayout(false);
+            this.Day_Length_GroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dlugoscdnia)).EndInit();
             this.bdm_g.ResumeLayout(false);
             this.bdm_g.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bdm)).EndInit();
-            this.dod_g.ResumeLayout(false);
-            this.dod_g.PerformLayout();
-            this.dod_p.ResumeLayout(false);
-            this.dod_p.PerformLayout();
-            this.trudnoscgroup.ResumeLayout(false);
-            this.trudnoscgroup.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trudnosc)).EndInit();
+            this.Drop_On_Death_Group_Box.ResumeLayout(false);
+            this.Drop_On_Death_Group_Box.PerformLayout();
+            this.Game_Difficulty_GroupBox.ResumeLayout(false);
+            this.Game_Difficulty_GroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Game_Difficulty_TrackBar)).EndInit();
             this.server_opts.ResumeLayout(false);
             this.ServerWebsiteURL_g.ResumeLayout(false);
             this.ServerWebsiteURL_g.PerformLayout();
@@ -5520,6 +5593,11 @@
             this.deds_g.ResumeLayout(false);
             this.deds_g.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_status)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SQL_Host_Info_PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SQL_Username_Info_PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SQL_Password_Info_PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SQL_Database_Name_Info_PictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SQL_Update_Time_Info_PictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -5531,45 +5609,45 @@
         private System.Windows.Forms.FolderBrowserDialog select_dir;
         private System.Windows.Forms.NotifyIcon ikona;
         private System.Windows.Forms.PictureBox img_status;
-        private System.Windows.Forms.Label twoje_ip;
+        private System.Windows.Forms.Label IP_Label;
         private System.Windows.Forms.TabPage settings;
-        private System.Windows.Forms.GroupBox ustawienia_grupa_ustawienia;
-        private System.Windows.Forms.Button chpath;
-        private System.Windows.Forms.Label path;
+        private System.Windows.Forms.GroupBox Settings_GroupBox;
+        private System.Windows.Forms.Button Change_Game_File_Path_Button;
+        private System.Windows.Forms.Label Game_File_Path_Label;
         private System.Windows.Forms.CheckBox to_tray;
-        private System.Windows.Forms.Button about;
-        private System.Windows.Forms.GroupBox spawn_group;
-        private System.Windows.Forms.Button spawn_now;
-        private System.Windows.Forms.ComboBox spawn_item;
-        private System.Windows.Forms.GroupBox telnet_group;
+        private System.Windows.Forms.Button About_Button;
+        private System.Windows.Forms.GroupBox Spawn_GroupBox;
+        private System.Windows.Forms.Button Spawn_Item_Button;
+        private System.Windows.Forms.ComboBox Spawn_Item_ComboBox;
+        private System.Windows.Forms.GroupBox Game_Time_Controls_GroupBox;
         private System.Windows.Forms.Label godzina;
-        private System.Windows.Forms.TrackBar godzina_bar;
+        private System.Windows.Forms.TrackBar Game_Hour_TrackBar;
         private System.Windows.Forms.Label dzien;
-        private System.Windows.Forms.TrackBar dzien_bar;
-        private System.Windows.Forms.Button telnet_connect;
+        private System.Windows.Forms.TrackBar Game_Day_TrackBar;
+        private System.Windows.Forms.Button Set_Game_Time_Button;
         private System.Windows.Forms.TextBox cmd;
-        private System.Windows.Forms.RichTextBox konsola;
+        private System.Windows.Forms.RichTextBox Console_RichTextBox;
         private System.Windows.Forms.TabControl tabControl;
         private System.ComponentModel.BackgroundWorker server_startup_tasks;
         private System.Windows.Forms.ImageList ikony_naglowka;
         private System.Windows.Forms.TabPage ban_kick;
-        private System.Windows.Forms.Button kick;
-        private System.Windows.Forms.Button ban;
+        private System.Windows.Forms.Button Kick_Player_Button;
+        private System.Windows.Forms.Button Ban_Hammer_Button;
         private System.Windows.Forms.ProgressBar startbar;
-        private System.Windows.Forms.ComboBox powod;
-        private System.Windows.Forms.TabPage server_manage;
+        private System.Windows.Forms.ComboBox Kick_Reason_ComboBox;
+        private System.Windows.Forms.TabPage Manage_Server_TabPage;
         private System.ComponentModel.BackgroundWorker telnet_connection;
         private System.Windows.Forms.ListBox taskman;
         private System.ComponentModel.BackgroundWorker workers_list;
         private System.Windows.Forms.Label workerynapis;
-        private System.Windows.Forms.ComboBox bantime;
-        private System.Windows.Forms.GroupBox kickgroup;
-        private System.Windows.Forms.GroupBox bantime_slider;
-        private System.Windows.Forms.TrackBar ban_slide;
+        private System.Windows.Forms.ComboBox Ban_Time_ComboBox;
+        private System.Windows.Forms.GroupBox Kick_GroupBox;
+        private System.Windows.Forms.GroupBox Ban_GroupBox;
+        private System.Windows.Forms.TrackBar Ban_Slider_TrackBar;
         private System.Windows.Forms.GroupBox Console_Group;
         private System.Windows.Forms.CheckBox always_on_top;
         private System.Windows.Forms.Button blad;
-        private System.Windows.Forms.Button steamsearch;
+        private System.Windows.Forms.Button Auto_Detect_Game_File_Path_Button;
         private System.ComponentModel.BackgroundWorker auto_messages;
         private System.Windows.Forms.RichTextBox spam_list;
         private System.Windows.Forms.Label spaminfo;
@@ -5585,21 +5663,21 @@
         private System.Windows.Forms.Label status;
         private System.Windows.Forms.CheckBox anon_data;
         private System.Windows.Forms.LinkLabel anon_data_2;
-        private System.Windows.Forms.GroupBox sql_db_name_g;
-        private System.Windows.Forms.TextBox sql_db_name;
-        private System.Windows.Forms.GroupBox sql_password_g;
-        private System.Windows.Forms.TextBox sql_password;
-        private System.Windows.Forms.GroupBox sql_username_g;
-        private System.Windows.Forms.TextBox sql_username;
-        private System.Windows.Forms.GroupBox sql_host_g;
-        private System.Windows.Forms.TextBox sql_host;
-        private System.Windows.Forms.CheckBox sql_enabled;
+        private System.Windows.Forms.GroupBox SQL_DB_Name_GroupBox;
+        private System.Windows.Forms.TextBox SQL_Database_Name_TextBox;
+        private System.Windows.Forms.GroupBox SQL_Password_GroupBox;
+        private System.Windows.Forms.TextBox SQL_Password_TextBox;
+        private System.Windows.Forms.GroupBox SQL_Username_GroupBox;
+        private System.Windows.Forms.TextBox SQL_Username_TextBox;
+        private System.Windows.Forms.GroupBox SQL_Host_GroupBox;
+        private System.Windows.Forms.TextBox SQL_Host_TextBox;
+        private System.Windows.Forms.CheckBox SQL_Enabled_CheckBox;
         private System.ComponentModel.BackgroundWorker sql_exporter;
-        private System.Windows.Forms.Label sql_warn;
-        private System.Windows.Forms.Label upd_time;
-        private System.Windows.Forms.Button how_to_sql;
-        private System.Windows.Forms.GroupBox sql_updates_time_g;
-        private System.Windows.Forms.TextBox sql_updates_time;
+        private System.Windows.Forms.Label SQL_Encrption_Warning_Label;
+        private System.Windows.Forms.Label SQL_Update_Time_Label;
+        private System.Windows.Forms.Button SQL_How_To_Integrate_Button;
+        private System.Windows.Forms.GroupBox SQL_Update_Time_GroupBox;
+        private System.Windows.Forms.TextBox SQL_Update_Time_TextBox;
         private System.Windows.Forms.GroupBox Timers_Group;
         private System.Windows.Forms.Label SQL_Export_Timer_Label;
         private System.Windows.Forms.Label SQL_Export_Timer;
@@ -5618,18 +5696,17 @@
         private System.Windows.Forms.TabPage game_opts;
         private System.Windows.Forms.GroupBox bdm_g;
         private System.Windows.Forms.TrackBar bdm;
-        private System.Windows.Forms.GroupBox dod_g;
-        private System.Windows.Forms.Panel dod_p;
-        private System.Windows.Forms.RadioButton dod_0;
-        private System.Windows.Forms.RadioButton dod_1;
-        private System.Windows.Forms.RadioButton dod_2;
-        private System.Windows.Forms.RadioButton dod_3;
-        private System.Windows.Forms.RadioButton doq_3;
-        private System.Windows.Forms.RadioButton doq_2;
-        private System.Windows.Forms.RadioButton doq_1;
-        private System.Windows.Forms.RadioButton doq_0;
-        private System.Windows.Forms.GroupBox trudnoscgroup;
-        private System.Windows.Forms.TrackBar trudnosc;
+        private System.Windows.Forms.GroupBox Drop_On_Death_Group_Box;
+        private System.Windows.Forms.RadioButton Drop_On_Death_Mode_0;
+        private System.Windows.Forms.RadioButton Drop_On_Death_Mode_1;
+        private System.Windows.Forms.RadioButton Drop_On_Death_Mode_2;
+        private System.Windows.Forms.RadioButton Drop_On_Death_Mode_3;
+        private System.Windows.Forms.RadioButton Drop_On_Quit_Mode_3;
+        private System.Windows.Forms.RadioButton Drop_On_Quit_Mode_2;
+        private System.Windows.Forms.RadioButton Drop_On_Quit_Mode_1;
+        private System.Windows.Forms.RadioButton Drop_On_Quit_Mode_0;
+        private System.Windows.Forms.GroupBox Game_Difficulty_GroupBox;
+        private System.Windows.Forms.TrackBar Game_Difficulty_TrackBar;
         private System.Windows.Forms.GroupBox nazwamapa;
         private System.Windows.Forms.ComboBox nazwa;
         private System.Windows.Forms.TextBox server_nazwa;
@@ -5649,18 +5726,18 @@
         private System.Windows.Forms.CheckBox save_logfiles;
         private System.Windows.Forms.GroupBox nightpercentage_g;
         private System.Windows.Forms.TrackBar nightpercentage;
-        private System.Windows.Forms.GroupBox dlugoscdnia_g;
+        private System.Windows.Forms.GroupBox Day_Length_GroupBox;
         private System.Windows.Forms.CheckBox realtime;
         private System.Windows.Forms.TrackBar dlugoscdnia;
         private System.Windows.Forms.GroupBox autobots;
-        private System.Windows.Forms.GroupBox trybgry;
+        private System.Windows.Forms.GroupBox Game_Mode_Settings_GroupBox;
         private System.Windows.Forms.CheckBox cheatmode;
         private System.Windows.Forms.RadioButton gamemode_coop;
-        private System.Windows.Forms.GroupBox zomb_pie;
+        private System.Windows.Forms.GroupBox Zombie_Settings_GroupBox;
         private System.Windows.Forms.RadioButton zombie_never_run;
         private System.Windows.Forms.RadioButton zombie_normal;
         private System.Windows.Forms.RadioButton zombie_run;
-        private System.Windows.Forms.GroupBox maxplgroup;
+        private System.Windows.Forms.GroupBox Max_Players_GroupBox;
         private System.Windows.Forms.GroupBox telnet_g;
         private System.Windows.Forms.Label telnet_port_l;
         private System.Windows.Forms.TextBox telnet_port_p;
@@ -5668,29 +5745,29 @@
         private System.Windows.Forms.TextBox telnet_psw;
         private System.Windows.Forms.TextBox AdminFileName;
         private System.Windows.Forms.GroupBox filename_g;
-        private System.Windows.Forms.GroupBox LootAbundance_g;
+        private System.Windows.Forms.GroupBox Loot_Abundance_GroupBox;
         private System.Windows.Forms.TrackBar LootAbundance;
-        private System.Windows.Forms.GroupBox LootRespawnDays_g;
+        private System.Windows.Forms.GroupBox Loot_Respawn_Days_GroupBox;
         private System.Windows.Forms.TrackBar LootRespawnDays;
         private System.Windows.Forms.Button sa_edit;
-        private System.Windows.Forms.Button browse;
+        private System.Windows.Forms.Button Browse_Game_File_Path_Button;
         private System.Windows.Forms.RadioButton gamemode_surv_pvp;
-        private System.Windows.Forms.GroupBox LandClaimDeadZone_g;
-        private System.Windows.Forms.TextBox LandClaimDeadZone;
-        private System.Windows.Forms.GroupBox LandClaimSize_g;
-        private System.Windows.Forms.TextBox LandClaimSize;
-        private System.Windows.Forms.GroupBox LandClaim_g;
-        private System.Windows.Forms.Label offline;
-        private System.Windows.Forms.Label online;
+        private System.Windows.Forms.GroupBox Land_Claim_Dead_Zone_GroupBox;
+        private System.Windows.Forms.TextBox Land_Claim_Dead_Zone_TextBox;
+        private System.Windows.Forms.GroupBox Land_Claim_Size_GroupBox;
+        private System.Windows.Forms.TextBox Land_Claim_Size_TextBox;
+        private System.Windows.Forms.GroupBox Land_Claim_Durability_Modifier_GroupBox;
+        private System.Windows.Forms.Label Land_Claim_Durability_Offline_Label;
+        private System.Windows.Forms.Label Land_Claim_Durability_Online_Label;
         private System.Windows.Forms.TextBox LandClaimOfflineDurabilityModifier;
         private System.Windows.Forms.TextBox LandClaimOnlineDurabilityModifier;
-        private System.Windows.Forms.GroupBox LandClaimDecayMode_g;
+        private System.Windows.Forms.GroupBox Land_Claim_Decay_Mode_GroupBox;
         private System.Windows.Forms.RadioButton Full_prot;
         private System.Windows.Forms.RadioButton Exponential;
         private System.Windows.Forms.RadioButton Linear;
-        private System.Windows.Forms.GroupBox LandClaimExpiryTime_g;
-        private System.Windows.Forms.TextBox LandClaimExpiryTime;
-        private System.Windows.Forms.GroupBox LandClaim;
+        private System.Windows.Forms.GroupBox Land_Claim_Expiry_Time_GroupBox;
+        private System.Windows.Forms.TextBox Land_Claim_Expiry_Time_TextBox;
+        private System.Windows.Forms.GroupBox Land_Claim_GroupBox;
         private System.Windows.Forms.ColumnHeader login_header;
         private System.Windows.Forms.ColumnHeader steamid_header;
         private System.Windows.Forms.TabPage tasks;
@@ -5706,18 +5783,18 @@
         private System.Windows.Forms.TextBox save;
         private System.Windows.Forms.CheckBox spam_is_spam;
         private System.ComponentModel.BackgroundWorker stats;
-        private System.Windows.Forms.GroupBox AirDropFrequency_g;
-        private System.Windows.Forms.TrackBar AirDropFrequency;
+        private System.Windows.Forms.GroupBox Air_Drop_Frequency_GroupBox;
+        private System.Windows.Forms.TrackBar Air_Drop_Frequency_TrackBar;
         private System.Windows.Forms.CheckBox feral;
         private System.Windows.Forms.Button Connect_Running_Server_Button;
         private System.ComponentModel.BackgroundWorker reboot_telnet;
         private System.Windows.Forms.CheckBox VACEnabled;
         private System.Windows.Forms.GroupBox MaxSpawnedZombies_g;
         private System.Windows.Forms.TrackBar MaxSpawnedZombies;
-        private System.Windows.Forms.GroupBox Chat_Group;
-        private System.Windows.Forms.RichTextBox chat;
-        private System.Windows.Forms.TextBox chat_text;
-        private System.Windows.Forms.GroupBox sql;
+        private System.Windows.Forms.GroupBox Chat_GroupBox;
+        private System.Windows.Forms.RichTextBox Chat_RichTextBox;
+        private System.Windows.Forms.TextBox Chat_Input_TextBox;
+        private System.Windows.Forms.GroupBox SQL_GroupBox;
         private System.Windows.Forms.Label reboot_l;
         private System.Windows.Forms.Label backup_msg_1_l;
         private System.Windows.Forms.TextBox reboot;
@@ -5746,18 +5823,18 @@
         private System.Windows.Forms.CheckBox skip_profiles;
         private System.ComponentModel.BackgroundWorker server_stop_tasks;
         private System.Windows.Forms.Button like;
-        private System.Windows.Forms.GroupBox spawn_p_l;
-        private System.Windows.Forms.Label PlayerSafeZoneHours_l;
-        private System.Windows.Forms.Label PlayerSafeZoneLevel_l;
-        private System.Windows.Forms.TextBox PlayerSafeZoneHours;
-        private System.Windows.Forms.TextBox PlayerSafeZoneLevel;
+        private System.Windows.Forms.GroupBox Spawn_Settings_GroupBox;
+        private System.Windows.Forms.Label Player_Safe_Zone_Hours_Label;
+        private System.Windows.Forms.Label Player_Safe_Zone_Level_Label;
+        private System.Windows.Forms.TextBox Player_Safe_Zone_Hours_TextBox;
+        private System.Windows.Forms.TextBox Player_Safe_Zone_Level_TextBox;
         private System.Windows.Forms.GroupBox MaxSpawnedAnimals_g;
         private System.Windows.Forms.TrackBar MaxSpawnedAnimals;
         private System.Windows.Forms.ToolTip toolTip;
-        private System.Windows.Forms.GroupBox player_g;
-        private System.Windows.Forms.Button thirsty_player;
-        private System.Windows.Forms.Button starve_player;
-        private System.Windows.Forms.Button kill_player;
+        private System.Windows.Forms.GroupBox Player_GroupBox;
+        private System.Windows.Forms.Button Thirsty_Player_Button;
+        private System.Windows.Forms.Button Starve_Player_Button;
+        private System.Windows.Forms.Button Kill_Player_Button;
         private System.Windows.Forms.CheckBox debug_log;
         private System.Windows.Forms.Button www7dsm;
         private System.Windows.Forms.GroupBox whitelist_dl_g;
@@ -5777,17 +5854,17 @@
         private System.Windows.Forms.TextBox backup_location;
         private System.ComponentModel.BackgroundWorker check_updates;
         private System.ComponentModel.BackgroundWorker prepare_app_after_draw;
-        private System.Windows.Forms.GroupBox prem_g;
-        private System.Windows.Forms.Button prem_act;
-        private System.Windows.Forms.Label prem_psw_l;
-        private System.Windows.Forms.TextBox prem_psw;
-        private System.Windows.Forms.Label prem_info;
-        private System.Windows.Forms.Button dondon2;
-        private System.Windows.Forms.Label prem_info_2;
-        private System.Windows.Forms.CheckBox prem_show;
-        private System.Windows.Forms.GroupBox prem_set;
-        private System.Windows.Forms.PictureBox prem_help1;
-        private System.Windows.Forms.CheckBox hide_don_btn;
+        private System.Windows.Forms.GroupBox Supporter_GroupBox;
+        private System.Windows.Forms.Button Supporter_Activate_Button;
+        private System.Windows.Forms.Label Supporter_Code_Label;
+        private System.Windows.Forms.TextBox Support_Code_TextBox;
+        private System.Windows.Forms.Label Supporter_Status_Label;
+        private System.Windows.Forms.Button Supporter_Donate_Button;
+        private System.Windows.Forms.Label Supporter_Instructions_Label;
+        private System.Windows.Forms.CheckBox Support_Code_Show_CheckBox;
+        private System.Windows.Forms.GroupBox Supporter_Settings_GroupBox;
+        private System.Windows.Forms.PictureBox Premium_Settings_Help_PictureBox;
+        private System.Windows.Forms.CheckBox Hide_Donation_Buttons_CheckBox;
         private System.Windows.Forms.TabPage backup_tab;
         private System.Windows.Forms.GroupBox ex_backup;
         private System.Windows.Forms.PictureBox prem_help2;
@@ -5819,26 +5896,26 @@
         private System.Windows.Forms.TextBox exe_name;
         private System.Windows.Forms.Label exe_name_l;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.RadioButton PlayerKillingMode_0;
-        private System.Windows.Forms.RadioButton PlayerKillingMode_1;
-        private System.Windows.Forms.RadioButton PlayerKillingMode_2;
-        private System.Windows.Forms.RadioButton PlayerKillingMode_3;
-        private System.Windows.Forms.GroupBox PlayerKillingMode_g;
+        private System.Windows.Forms.RadioButton Player_Killing_Mode_0;
+        private System.Windows.Forms.RadioButton Player_Killing_Mode_1;
+        private System.Windows.Forms.RadioButton Player_Killing_Mode_2;
+        private System.Windows.Forms.RadioButton Player_Killing_Mode_3;
+        private System.Windows.Forms.GroupBox Player_Killing_Mode_GroupBox;
         private System.Windows.Forms.CheckBox AirDropMarker;
         private System.Windows.Forms.Button help_b;
         private System.Windows.Forms.ListView All_Players_List;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
-        private System.Windows.Forms.Label all_players_l;
-        private System.Windows.Forms.Label online_l;
-        private System.Windows.Forms.Label updates_channel_l;
-        private System.Windows.Forms.ComboBox updates_channel;
-        private System.Windows.Forms.GroupBox dsm_updates_g;
+        private System.Windows.Forms.Label All_Players_Label;
+        private System.Windows.Forms.Label Online_Players_Label;
+        private System.Windows.Forms.Label Update_Channel_Label;
+        private System.Windows.Forms.ComboBox Update_Channel_ComboBox;
+        private System.Windows.Forms.GroupBox Updates_GroupBox;
         private System.Windows.Forms.Label updates_info;
         private System.Windows.Forms.GroupBox exe_settings_g;
-        private System.Windows.Forms.Button force_upd;
-        private System.Windows.Forms.Button chk_upd;
-        private System.Windows.Forms.Button apply_update_channel;
+        private System.Windows.Forms.Button Force_Update_Button;
+        private System.Windows.Forms.Button Check_Updates_Button;
+        private System.Windows.Forms.Button Apply_Update_Channel_Button;
         private System.Windows.Forms.TabPage globalBanList;
         private System.Windows.Forms.GroupBox global_ban_g;
         private System.Windows.Forms.CheckBox sendbans;
@@ -5880,15 +5957,15 @@
         private System.Windows.Forms.CheckBox hide_footer;
         private System.Windows.Forms.PictureBox prem_help3;
         private System.Windows.Forms.TabPage net_opts;
-        private System.Windows.Forms.GroupBox reserved_g;
-        private System.Windows.Forms.TextBox ServerAdminSlotsPermission;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox ServerAdminSlots;
-        private System.Windows.Forms.TextBox ServerReservedSlotsPermission;
-        private System.Windows.Forms.Label res_l2;
-        private System.Windows.Forms.Label res_l1;
-        private System.Windows.Forms.TextBox ServerReservedSlots;
+        private System.Windows.Forms.GroupBox Server_Reserved_Slots_GroupBox;
+        private System.Windows.Forms.TextBox Server_Admin_Reserved_Slots_Permission;
+        private System.Windows.Forms.Label Admin_Slot_Text_Label;
+        private System.Windows.Forms.Label Admin_Reserve_Text_Label;
+        private System.Windows.Forms.TextBox Server_Admin_Reserved_Slots;
+        private System.Windows.Forms.TextBox Server_Player_Reserved_Slots_Permission;
+        private System.Windows.Forms.Label Player_Slot_Text_Label;
+        private System.Windows.Forms.Label Player_Reserve_Text_Label;
+        private System.Windows.Forms.TextBox Server_Player_Reserved_Slots;
         private System.Windows.Forms.GroupBox ServerDisabledNetworkProtocols_g;
         private System.Windows.Forms.CheckBox UNET;
         private System.Windows.Forms.CheckBox RakNet;
@@ -5917,12 +5994,18 @@
         private System.Windows.Forms.RichTextBox News_Feed_RichTextBox;
         private System.Windows.Forms.SplitContainer overviewSplitter;
         private System.Windows.Forms.Button zoomup;
-        private System.Windows.Forms.Label osver;
+        private System.Windows.Forms.Label OS_Version_Label;
         private System.Windows.Forms.Label telnetstatus;
-        private System.Windows.Forms.Label osarch;
+        private System.Windows.Forms.Label OS_Architecture_Label;
         private System.Windows.Forms.Button discord_b;
         private System.Windows.Forms.ListBox commandslist;
         private System.Windows.Forms.GroupBox CommandsGroup;
         private System.Windows.Forms.Button usecmd;
+        private System.Windows.Forms.GroupBox Drop_On_Quit_GroupBox;
+        private System.Windows.Forms.PictureBox SQL_Update_Time_Info_PictureBox;
+        private System.Windows.Forms.PictureBox SQL_Host_Info_PictureBox;
+        private System.Windows.Forms.PictureBox SQL_Username_Info_PictureBox;
+        private System.Windows.Forms.PictureBox SQL_Database_Name_Info_PictureBox;
+        private System.Windows.Forms.PictureBox SQL_Password_Info_PictureBox;
     }
 }

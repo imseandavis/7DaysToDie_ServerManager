@@ -7,19 +7,19 @@ using System.Windows.Forms;
 namespace _7DaysServerManager
 {
 
-    public partial class server_panel : Form
+    public partial class Server_Panel_Form : Form
     {
 
 
         public void load_lang()
         {
-            about.Text = lang("about");
+            About_Button.Text = lang("about");
             always_on_top.Text = lang("always_on_top");
             autobots.Text = lang("autobots");
-            ban.Text = lang("ban");
+            Ban_Hammer_Button.Text = lang("ban");
             blad.Text = lang("blad");
             cheatmode.Text = lang("cheatmode");
-            chpath.Text = lang("chpath");
+            Change_Game_File_Path_Button.Text = lang("chpath");
             cpl_pass.Text = lang("cpl_pass");
             cpl_port.Text = lang("cpl_port");
             ctrlp.Text = lang("ctrlp");
@@ -30,13 +30,13 @@ namespace _7DaysServerManager
             gamemode_coop.Text = lang("gamemode_coop");
 
             godzina.Text = lang("godzina") + " [8:00]";
-            kick.Text = lang("kick");
-            kickgroup.Text = lang("kickgroup");
+            Kick_Player_Button.Text = lang("kick");
+            Kick_GroupBox.Text = lang("kickgroup");
             Kill_Server_Process.Text = lang("kill_proccess");
             Console_Group.Text = lang("kons_group");
             Server_Controls_Group.Text = lang("kontrola");
 
-            maxplgroup.Text = lang("maxplgroup");
+            Max_Players_GroupBox.Text = lang("maxplgroup");
             nazwamapa.Text = lang("nazwamapa");
             odery.Text = lang("odery");
             port_g.Text = lang("port_g");
@@ -44,41 +44,41 @@ namespace _7DaysServerManager
             Save_Logs_CheckBox.Text = lang("save_logfiles_2");
             ServerIsPublic.Text = lang("ServerIsPublic");
 
-            spawn_group.Text = lang("spawn_group");
-            spawn_now.Text = lang("spawn_now");
+            Spawn_GroupBox.Text = lang("spawn_group");
+            Spawn_Item_Button.Text = lang("spawn_now");
 
             Start_Server_Button.Text = lang("start");
-            steamsearch.Text = lang("steamsearch");
+            Auto_Detect_Game_File_Path_Button.Text = lang("steamsearch");
             Shutdown_Server_Button.Text = lang("stop");
-            telnet_group.Text = lang("telnet_group");
+            Game_Time_Controls_GroupBox.Text = lang("telnet_group");
             to_tray.Text = lang("to_tray");
-            trudnoscgroup.Text = lang("trudnoscgroup");
-            trybgry.Text = lang("trybgry");
-            ustawienia_grupa_ustawienia.Text = lang("ustawienia_grupa_ustawienia");
+            Game_Difficulty_GroupBox.Text = lang("trudnoscgroup");
+            Game_Mode_Settings_GroupBox.Text = lang("trybgry");
+            Settings_GroupBox.Text = lang("ustawienia_grupa_ustawienia");
             workerynapis.Text = lang("workerynapis");
-            zomb_pie.Text = lang("zomb_pie");
+            Zombie_Settings_GroupBox.Text = lang("zomb_pie");
             zombie_never_run.Text = lang("zombie_never_run");
             zombie_normal.Text = lang("zombie_normal");
             zombie_run.Text = lang("zombie_run");
             PersistentPlayerProfiles.Text = lang("PersistentPlayerProfiles");
             
 
-            telnet_connect.Text = lang("telnet_connect");
+            Set_Game_Time_Button.Text = lang("telnet_connect");
             spaminfo.Text = lang("spaminfo");
             spam_time_g.Text = lang("spam_time");
             show_ip.Text = lang("show_ip");
-            powod.Text = lang("powod");
+            Kick_Reason_ComboBox.Text = lang("powod");
             cleanexit.Text = lang("cleanexit");
             anon_data.Text = lang("anon_data");
             anon_data_2.Text = lang("anon_data_2");
-            sql_enabled.Text = lang("sql_enabled");
-            sql_host_g.Text = lang("sql_host_g");
-            sql_username_g.Text = lang("sql_username_g");
-            sql_password_g.Text = lang("sql_password_g");
-            sql_db_name_g.Text = lang("sql_db_name_g");
-            sql_warn.Text = lang("sql_warn");
-            upd_time.Text = lang("upd_time");
-            sql_updates_time_g.Text = lang("sql_updates_time_g");
+            SQL_Enabled_CheckBox.Text = lang("sql_enabled");
+            SQL_Host_GroupBox.Text = lang("sql_host_g");
+            SQL_Username_GroupBox.Text = lang("sql_username_g");
+            SQL_Password_GroupBox.Text = lang("sql_password_g");
+            SQL_DB_Name_GroupBox.Text = lang("sql_db_name_g");
+            SQL_Encrption_Warning_Label.Text = lang("sql_warn");
+            SQL_Update_Time_Label.Text = lang("upd_time");
+            SQL_Update_Time_GroupBox.Text = lang("sql_updates_time_g");
             Timers_Group.Text = lang("timers_g");
             Auto_Command_Timer_Label.Text = lang("auto_messages_label");
             SQL_Export_Timer_Label.Text = lang("sql_export_label");
@@ -89,28 +89,28 @@ namespace _7DaysServerManager
             feral.Text = lang("feral");
 
 
-            LandClaim.Text = lang("LandClaim");
-            LandClaimDecayMode_g.Text = lang("LandClaimDecayMode_g");
+            Land_Claim_GroupBox.Text = lang("LandClaim");
+            Land_Claim_Decay_Mode_GroupBox.Text = lang("LandClaimDecayMode_g");
             Linear.Text = lang("Linear");
             Exponential.Text = lang("Exponential");
             Full_prot.Text = lang("Full_prot");
-            LandClaim_g.Text = lang("LandClaim_g");
-            online.Text = lang("online");
-            offline.Text = lang("offline");
-            LandClaimDeadZone_g.Text = lang("LandClaimDeadZone_g");
-            LandClaimSize_g.Text = lang("LandClaimSize_g");
-            LandClaimExpiryTime_g.Text = lang("LandClaimExpiryTime_g");
+            Land_Claim_Durability_Modifier_GroupBox.Text = lang("LandClaim_g");
+            Land_Claim_Durability_Online_Label.Text = lang("online");
+            Land_Claim_Durability_Offline_Label.Text = lang("offline");
+            Land_Claim_Dead_Zone_GroupBox.Text = lang("LandClaimDeadZone_g");
+            Land_Claim_Size_GroupBox.Text = lang("LandClaimSize_g");
+            Land_Claim_Expiry_Time_GroupBox.Text = lang("LandClaimExpiryTime_g");
 
 
-            dod_g.Text = lang("dod_g");
-            dod_0.Text = lang("dod_0");
-            dod_1.Text = lang("dod_1");
-            dod_2.Text = lang("dod_2");
-            dod_3.Text = lang("dod_3");
-            doq_0.Text = lang("doq_0");
-            doq_1.Text = lang("doq_1");
-            doq_2.Text = lang("doq_2");
-            doq_3.Text = lang("doq_3");
+            Drop_On_Death_Group_Box.Text = lang("dod_g");
+            Drop_On_Death_Mode_0.Text = lang("dod_0");
+            Drop_On_Death_Mode_1.Text = lang("dod_1");
+            Drop_On_Death_Mode_2.Text = lang("dod_2");
+            Drop_On_Death_Mode_3.Text = lang("dod_3");
+            Drop_On_Quit_Mode_0.Text = lang("doq_0");
+            Drop_On_Quit_Mode_1.Text = lang("doq_1");
+            Drop_On_Quit_Mode_2.Text = lang("doq_2");
+            Drop_On_Quit_Mode_3.Text = lang("doq_3");
 
 
 
@@ -129,7 +129,7 @@ namespace _7DaysServerManager
 
             VACEnabled.Text = lang("VACEnabled");
 
-            Chat_Group.Text = lang("chat_g");
+            Chat_GroupBox.Text = lang("chat_g");
             
             telnet_g.Text = lang("telnet_g");
             filename_g.Text = lang("filename_g");
@@ -137,9 +137,9 @@ namespace _7DaysServerManager
             telnet_psw_l.Text = lang("cpl_pass");
 
             sa_edit.Text = lang("sa_edit");
-            browse.Text = lang("browse");
+            Browse_Game_File_Path_Button.Text = lang("browse");
 
-            bantime_slider.Text = lang("bantime_slider") + " [" + Convert.ToString(ban_slide.Value) + "]";
+            Ban_GroupBox.Text = lang("bantime_slider") + " [" + Convert.ToString(Ban_Slider_TrackBar.Value) + "]";
 
             spam_g.Text = lang("spam_g");
 
@@ -151,10 +151,10 @@ namespace _7DaysServerManager
             save_g.Text = lang("save_g");
             spam_is_spam.Text = lang("spam_is_spam");
 
-            if (AirDropFrequency.Value != 0)
-                AirDropFrequency_g.Text = lang("AirDropFrequency") + " [" + Convert.ToString(AirDropFrequency.Value) + " h.]";
+            if (Air_Drop_Frequency_TrackBar.Value != 0)
+                Air_Drop_Frequency_GroupBox.Text = lang("AirDropFrequency") + " [" + Convert.ToString(Air_Drop_Frequency_TrackBar.Value) + " h.]";
             else
-                AirDropFrequency_g.Text = lang("AirDropFrequency") + " [" + lang("disabled") + "]";
+                Air_Drop_Frequency_GroupBox.Text = lang("AirDropFrequency") + " [" + lang("disabled") + "]";
 
 
             MaxSpawnedZombies_g.Text = lang("MaxSpawnedZombies_g") + " [" + Convert.ToString(MaxSpawnedZombies.Value) + "]";

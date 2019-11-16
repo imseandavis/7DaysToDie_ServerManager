@@ -22,7 +22,7 @@ namespace _7DaysServerManager
         public about()
         {
             InitializeComponent();
-            ver.Text = "version " + server_panel.ver;
+            ver.Text = "version " + Server_Panel_Form.ver;
         }
 
         private void zabij_Click(object sender, EventArgs e)

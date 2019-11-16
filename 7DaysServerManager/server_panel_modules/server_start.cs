@@ -11,7 +11,7 @@ using Microsoft.Win32;
 namespace _7DaysServerManager
 {
 
-    public partial class server_panel : Form
+    public partial class Server_Panel_Form : Form
     {
         public void run_server()
         {

@@ -24,7 +24,7 @@ namespace _7DaysServerManager
         {
             InitializeComponent();
             
-            rep.Text = "7DSM version: " + server_panel.ver + "\n\nException: " + err;
+            rep.Text = "7DSM version: " + Server_Panel_Form.ver + "\n\nException: " + err;
 
             if (err.Contains("Report by user"))
             {
@@ -42,7 +42,7 @@ namespace _7DaysServerManager
             using (WebClient client = new WebClient())
             {
                 System.Collections.Specialized.NameValueCollection reqparm = new System.Collections.Specialized.NameValueCollection();
-                reqparm.Add("ver", server_panel.ver);
+                reqparm.Add("ver", Server_Panel_Form.ver);
                 reqparm.Add("exc", rep.Text);
                 reqparm.Add("opt", opt.Text);
                 byte[] responsebytes = client.UploadValues("https://7dsm.smartmoose.org/system/error.php", "POST", reqparm);

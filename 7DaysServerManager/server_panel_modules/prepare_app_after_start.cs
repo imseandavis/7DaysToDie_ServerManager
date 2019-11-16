@@ -11,7 +11,7 @@ using System.Diagnostics;
 namespace _7DaysServerManager
 {
 
-    public partial class server_panel : Form
+    public partial class Server_Panel_Form : Form
     {
 
 
@@ -152,7 +152,7 @@ namespace _7DaysServerManager
 
             workers_list.RunWorkerAsync();
 
-            spawn_item.SelectedIndex = 0;
+            Spawn_Item_ComboBox.SelectedIndex = 0;
 
 
 
@@ -436,7 +436,7 @@ namespace _7DaysServerManager
 
             if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "sql_enabled", null) == "1")
             {
-                sql_enabled.Checked = true;
+                SQL_Enabled_CheckBox.Checked = true;
             }
 
 
@@ -453,7 +453,7 @@ namespace _7DaysServerManager
 
             if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "show_ip", null) == "1")
             {
-                twoje_ip.Visible = true;
+                IP_Label.Visible = true;
                 show_ip.Checked = true;
             }
 
@@ -474,7 +474,7 @@ namespace _7DaysServerManager
 
             if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "hide_don_btn", null) == "1")
             {
-                hide_don_btn.Checked = true;
+                Hide_Donation_Buttons_CheckBox.Checked = true;
             }
 
 
@@ -566,7 +566,7 @@ namespace _7DaysServerManager
             try
             {
                 string psw = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\", "prem_code", null);
-                prem_psw.Text = psw;
+                Support_Code_TextBox.Text = psw;
             }
             catch { }
 
@@ -619,8 +619,8 @@ namespace _7DaysServerManager
 
 
             //kopiowanie itemów
-            object[] dtds_temp_items = new object[spawn_item.Items.Count];
-            spawn_item.Items.CopyTo(dtds_temp_items, 0);
+            object[] dtds_temp_items = new object[Spawn_Item_ComboBox.Items.Count];
+            Spawn_Item_ComboBox.Items.CopyTo(dtds_temp_items, 0);
             dtds_possible.Items.AddRange(dtds_temp_items);
             dtds_possible.SelectedIndex = 0;
 
@@ -631,10 +631,10 @@ namespace _7DaysServerManager
 
             spam_list.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "spam_list", null);
 
-            sql_host.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "sql_host", null);
-            sql_username.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "sql_username", null);
-            sql_password.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "sql_password", null);
-            sql_db_name.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "sql_db_name", null);
+            SQL_Host_TextBox.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "sql_host", null);
+            SQL_Username_TextBox.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "sql_username", null);
+            SQL_Password_TextBox.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "sql_password", null);
+            SQL_Database_Name_TextBox.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "sql_db_name", null);
 
 
 
@@ -649,15 +649,15 @@ namespace _7DaysServerManager
 
 
 
-            path.Text = lang("path") + (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", null);
+            Game_File_Path_Label.Text = lang("path") + (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", null);
 
-            if (path.Text == lang("path"))
-                path.Text = lang("path") + "ERROR- NONE";
+            if (Game_File_Path_Label.Text == lang("path"))
+                Game_File_Path_Label.Text = lang("path") + "ERROR- NONE";
 
 
-            maxplgroup.Text = lang("maxplgroup") + " [" + Convert.ToString(maxpl.Value) + "]";
-            trudnoscgroup.Text = lang("trudnoscgroup") + " [" + Convert.ToString(trudnosc.Value) + "]";
-            dlugoscdnia_g.Text = lang("dlugoscdnia") + " [" + Convert.ToString(dlugoscdnia.Value) + " min.]";
+            Max_Players_GroupBox.Text = lang("maxplgroup") + " [" + Convert.ToString(maxpl.Value) + "]";
+            Game_Difficulty_GroupBox.Text = lang("trudnoscgroup") + " [" + Convert.ToString(Game_Difficulty_TrackBar.Value) + "]";
+            Day_Length_GroupBox.Text = lang("dlugoscdnia") + " [" + Convert.ToString(dlugoscdnia.Value) + " min.]";
 
 
 
@@ -812,11 +812,11 @@ namespace _7DaysServerManager
 
             if (gamemode_surv_pvp.Checked == true)
             {
-                LandClaim.Visible = true;
+                Land_Claim_GroupBox.Visible = true;
             }
             else
             {
-                LandClaim.Visible = false;
+                Land_Claim_GroupBox.Visible = false;
             }
 
 

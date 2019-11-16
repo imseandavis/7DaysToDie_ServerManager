@@ -63,7 +63,6 @@ C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerMana
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\bin\Debug\7DaysServerManager.exe
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\bin\Debug\7DaysServerManager.pdb
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\bin\Debug\MySql.Data.dll
-C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Debug\7DaysServerManager.csprojAssemblyReference.cache
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.about.resources
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.ankieta.resources
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.contact.resources
@@ -74,10 +73,10 @@ C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerMana
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.profile_selector.resources
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.error_reporter.resources
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.Properties.Resources.resources
-C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.server_panel.resources
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.update.resources
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Debug\7DaysServerManager.csproj.GenerateResource.cache
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Debug\7DaysServerManager.csproj.CoreCompileInputs.cache
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Debug\7DaysServerManager.csproj.CopyComplete
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Debug\7DaysServerManager.exe
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Debug\7DaysServerManager.pdb
+C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.Server_Panel_Form.resources

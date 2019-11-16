@@ -8,7 +8,7 @@ using Microsoft.Win32;
 
 namespace _7DaysServerManager
 {
-    public partial class server_panel : Form
+    public partial class Server_Panel_Form : Form
     {
 
         public HttpListener _listener = new HttpListener();
@@ -117,7 +117,7 @@ namespace _7DaysServerManager
                         content = www_main_content.Text;
 
                     sname = server_nazwa.Text;
-                    ip = twoje_ip.Text;
+                    ip = IP_Label.Text;
                     if (server_online)
                         serv_onl = "ONLINE";
                     else

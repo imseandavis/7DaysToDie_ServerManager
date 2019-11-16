@@ -7,7 +7,7 @@ using System.Windows.Forms;
 namespace _7DaysServerManager
 {
 
-    public partial class server_panel : Form
+    public partial class Server_Panel_Form : Form
     {
 
 
@@ -19,10 +19,10 @@ namespace _7DaysServerManager
             Shutdown_Server_Button.Enabled = true;
 
 
-            PlayerKillingMode_g.Enabled = false;
+            Player_Killing_Mode_GroupBox.Enabled = false;
             AirDropMarker.Enabled = false;
             maxpl.Enabled = false;
-            trudnosc.Enabled = false;
+            Game_Difficulty_TrackBar.Enabled = false;
             if (!realtime.Checked)
                 dlugoscdnia.Enabled = false;
 
@@ -43,26 +43,26 @@ namespace _7DaysServerManager
             port.Enabled = false;
             server_nazwa.Enabled = false;
 
-            sql_enabled.Enabled = false;
-            sql_host.Enabled = false;
-            sql_username.Enabled = false;
-            sql_password.Enabled = false;
-            sql_db_name.Enabled = false;
-            sql_updates_time.Enabled = false;
+            SQL_Enabled_CheckBox.Enabled = false;
+            SQL_Host_TextBox.Enabled = false;
+            SQL_Username_TextBox.Enabled = false;
+            SQL_Password_TextBox.Enabled = false;
+            SQL_Database_Name_TextBox.Enabled = false;
+            SQL_Update_Time_TextBox.Enabled = false;
 
 
             if (auto_backup_check.Checked)
                 backup_time.Enabled = false;
             auto_backup_check.Enabled = false;
 
-            dod_0.Enabled = false;
-            dod_1.Enabled = false;
-            dod_2.Enabled = false;
-            dod_3.Enabled = false;
-            doq_0.Enabled = false;
-            doq_1.Enabled = false;
-            doq_2.Enabled = false;
-            doq_3.Enabled = false;
+            Drop_On_Death_Mode_0.Enabled = false;
+            Drop_On_Death_Mode_1.Enabled = false;
+            Drop_On_Death_Mode_2.Enabled = false;
+            Drop_On_Death_Mode_3.Enabled = false;
+            Drop_On_Quit_Mode_0.Enabled = false;
+            Drop_On_Quit_Mode_1.Enabled = false;
+            Drop_On_Quit_Mode_2.Enabled = false;
+            Drop_On_Quit_Mode_3.Enabled = false;
 
 
             EnemySpawnMode.Enabled = false;
@@ -77,19 +77,19 @@ namespace _7DaysServerManager
             LootAbundance.Enabled = false;
             LootRespawnDays.Enabled = false;
 
-            LandClaim.Enabled = false;
+            Land_Claim_GroupBox.Enabled = false;
             Linear.Enabled = false;
             Exponential.Enabled = false;
             Full_prot.Enabled = false;
-            LandClaim.Enabled = false;
-            online.Enabled = false;
-            offline.Enabled = false;
-            LandClaimDeadZone.Enabled = false;
-            LandClaimSize.Enabled = false;
-            LandClaimExpiryTime.Enabled = false;
+            Land_Claim_GroupBox.Enabled = false;
+            Land_Claim_Durability_Online_Label.Enabled = false;
+            Land_Claim_Durability_Offline_Label.Enabled = false;
+            Land_Claim_Dead_Zone_TextBox.Enabled = false;
+            Land_Claim_Size_TextBox.Enabled = false;
+            Land_Claim_Expiry_Time_TextBox.Enabled = false;
             gamemode_surv_pvp.Enabled = false;
             feral.Enabled = false;
-            AirDropFrequency.Enabled = false;
+            Air_Drop_Frequency_TrackBar.Enabled = false;
             VACEnabled.Enabled = false;
             MaxSpawnedZombies.Enabled = false;
             save.Enabled = false;
@@ -102,8 +102,8 @@ namespace _7DaysServerManager
 
             reset_g.Enabled = false;
             whitelist_dl_g.Enabled = false;
-            PlayerSafeZoneLevel.Enabled = false;
-            PlayerSafeZoneHours.Enabled = false;
+            Player_Safe_Zone_Level_TextBox.Enabled = false;
+            Player_Safe_Zone_Hours_TextBox.Enabled = false;
             MaxSpawnedAnimals.Enabled = false;
 
         }
@@ -115,10 +115,10 @@ namespace _7DaysServerManager
             Shutdown_Server_Button.Enabled = false;
 
 
-            PlayerKillingMode_g.Enabled = true;
+            Player_Killing_Mode_GroupBox.Enabled = true;
             AirDropMarker.Enabled = true;
             maxpl.Enabled = true;
-            trudnosc.Enabled = true;
+            Game_Difficulty_TrackBar.Enabled = true;
             if (!realtime.Checked)
                 dlugoscdnia.Enabled = true;
             ctrlp.Enabled = true;
@@ -137,12 +137,12 @@ namespace _7DaysServerManager
             port.Enabled = true;
             server_nazwa.Enabled = true;
 
-            sql_enabled.Enabled = true;
-            sql_host.Enabled = true;
-            sql_username.Enabled = true;
-            sql_password.Enabled = true;
-            sql_db_name.Enabled = true;
-            sql_updates_time.Enabled = true;
+            SQL_Enabled_CheckBox.Enabled = true;
+            SQL_Host_TextBox.Enabled = true;
+            SQL_Username_TextBox.Enabled = true;
+            SQL_Password_TextBox.Enabled = true;
+            SQL_Database_Name_TextBox.Enabled = true;
+            SQL_Update_Time_TextBox.Enabled = true;
 
 
 
@@ -151,14 +151,14 @@ namespace _7DaysServerManager
                 backup_time.Enabled = true;
             auto_backup_check.Enabled = true;
 
-            dod_0.Enabled = true;
-            dod_1.Enabled = true;
-            dod_2.Enabled = true;
-            dod_3.Enabled = true;
-            doq_0.Enabled = true;
-            doq_1.Enabled = true;
-            doq_2.Enabled = true;
-            doq_3.Enabled = true;
+            Drop_On_Death_Mode_0.Enabled = true;
+            Drop_On_Death_Mode_1.Enabled = true;
+            Drop_On_Death_Mode_2.Enabled = true;
+            Drop_On_Death_Mode_3.Enabled = true;
+            Drop_On_Quit_Mode_0.Enabled = true;
+            Drop_On_Quit_Mode_1.Enabled = true;
+            Drop_On_Quit_Mode_2.Enabled = true;
+            Drop_On_Quit_Mode_3.Enabled = true;
 
 
             EnemySpawnMode.Enabled = true;
@@ -173,19 +173,19 @@ namespace _7DaysServerManager
             LootAbundance.Enabled = true;
             LootRespawnDays.Enabled = true;
 
-            LandClaim.Enabled = true;
+            Land_Claim_GroupBox.Enabled = true;
             Linear.Enabled = true;
             Exponential.Enabled = true;
             Full_prot.Enabled = true;
-            LandClaim.Enabled = true;
-            online.Enabled = true;
-            offline.Enabled = true;
-            LandClaimDeadZone.Enabled = true;
-            LandClaimSize.Enabled = true;
-            LandClaimExpiryTime.Enabled = true;
+            Land_Claim_GroupBox.Enabled = true;
+            Land_Claim_Durability_Online_Label.Enabled = true;
+            Land_Claim_Durability_Offline_Label.Enabled = true;
+            Land_Claim_Dead_Zone_TextBox.Enabled = true;
+            Land_Claim_Size_TextBox.Enabled = true;
+            Land_Claim_Expiry_Time_TextBox.Enabled = true;
             gamemode_surv_pvp.Enabled = true;
             feral.Enabled = true;
-            AirDropFrequency.Enabled = true;
+            Air_Drop_Frequency_TrackBar.Enabled = true;
             VACEnabled.Enabled = true;
             MaxSpawnedZombies.Enabled = true;
             save.Enabled = true;
@@ -198,8 +198,8 @@ namespace _7DaysServerManager
 
             reset_g.Enabled = true;
             whitelist_dl_g.Enabled = true;
-            PlayerSafeZoneLevel.Enabled = true;
-            PlayerSafeZoneHours.Enabled = true;
+            Player_Safe_Zone_Level_TextBox.Enabled = true;
+            Player_Safe_Zone_Hours_TextBox.Enabled = true;
             MaxSpawnedAnimals.Enabled = true;
 
         }

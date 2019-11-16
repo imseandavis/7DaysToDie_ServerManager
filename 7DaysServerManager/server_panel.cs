@@ -37,7 +37,7 @@ namespace _7DaysServerManager
      */
 
 
-    public partial class server_panel : Form
+    public partial class Server_Panel_Form : Form
     {
 
         List<string> players_ids = new List<string>();
@@ -105,7 +105,7 @@ namespace _7DaysServerManager
             }
         }
 
-        public server_panel()
+        public Server_Panel_Form()
         {
             /*Charging Internal Distances?*/
             AppDomain.CurrentDomain.AssemblyResolve += (sender, args) =>
@@ -135,28 +135,28 @@ namespace _7DaysServerManager
 
         public void echo(string tekst, int kolor, bool enter)
         {
-            konsola.Invoke((MethodInvoker)delegate
+            Console_RichTextBox.Invoke((MethodInvoker)delegate
             {
 
-                konsola.SelectionStart = konsola.Text.Length;
-                konsola.ScrollToCaret();
+                Console_RichTextBox.SelectionStart = Console_RichTextBox.Text.Length;
+                Console_RichTextBox.ScrollToCaret();
 
                 if (kolor == 4)
-                    konsola.SelectionColor = Color.LightGray;
+                    Console_RichTextBox.SelectionColor = Color.LightGray;
                 if (kolor == 3)
-                    konsola.SelectionColor = Color.Red;
+                    Console_RichTextBox.SelectionColor = Color.Red;
                 if (kolor == 2)
-                    konsola.SelectionColor = Color.Orange;
+                    Console_RichTextBox.SelectionColor = Color.Orange;
                 if (kolor == 1)
-                    konsola.SelectionColor = Color.Lime;
+                    Console_RichTextBox.SelectionColor = Color.Lime;
 
                 if (enter == true)
-                    konsola.SelectedText = tekst + "\n";
+                    Console_RichTextBox.SelectedText = tekst + "\n";
                 else
-                    konsola.SelectedText = tekst;
+                    Console_RichTextBox.SelectedText = tekst;
 
-                konsola.SelectionStart = konsola.Text.Length;
-                konsola.ScrollToCaret();
+                Console_RichTextBox.SelectionStart = Console_RichTextBox.Text.Length;
+                Console_RichTextBox.ScrollToCaret();
             });
 
         }
@@ -165,22 +165,22 @@ namespace _7DaysServerManager
 
         public void echo_chat(string tekst, bool kolor)
         {
-            chat.Invoke((MethodInvoker)delegate
+            Chat_RichTextBox.Invoke((MethodInvoker)delegate
             {
 
-                chat.SelectionStart = chat.Text.Length;
-                chat.ScrollToCaret();
+                Chat_RichTextBox.SelectionStart = Chat_RichTextBox.Text.Length;
+                Chat_RichTextBox.ScrollToCaret();
 
                 if (kolor)
-                    chat.SelectionColor = Color.Orange;
+                    Chat_RichTextBox.SelectionColor = Color.Orange;
                 else
-                    chat.SelectionColor = Color.LightGray;
+                    Chat_RichTextBox.SelectionColor = Color.LightGray;
 
-                chat.SelectedText = tekst + "\n";
+                Chat_RichTextBox.SelectedText = tekst + "\n";
 
 
-                chat.SelectionStart = chat.Text.Length;
-                chat.ScrollToCaret();
+                Chat_RichTextBox.SelectionStart = Chat_RichTextBox.Text.Length;
+                Chat_RichTextBox.ScrollToCaret();
             });
 
         }
@@ -239,12 +239,12 @@ namespace _7DaysServerManager
             if (realtime.Checked)
             {
                 dlugoscdnia.Enabled = false;
-                dlugoscdnia_g.Text = lang("dlugoscdnia") + " [realtime]";
+                Day_Length_GroupBox.Text = lang("dlugoscdnia") + " [realtime]";
             }
             else
             {
                 dlugoscdnia.Enabled = true;
-                dlugoscdnia_g.Text = lang("dlugoscdnia") + " [" + dlugoscdnia.Value + " min.]";
+                Day_Length_GroupBox.Text = lang("dlugoscdnia") + " [" + dlugoscdnia.Value + " min.]";
             }
         }
 
@@ -420,14 +420,14 @@ namespace _7DaysServerManager
             status.Invoke((MethodInvoker)delegate
             {
                 status.Text = lang("status_not");
-                osver.Text = "OS: "+Convert.ToString(System.Environment.OSVersion);
+                OS_Version_Label.Text = "OS: "+Convert.ToString(System.Environment.OSVersion);
 
                 if (Environment.Is64BitOperatingSystem)
-                    osarch.Text = "OS architecture: 64bit (x64)";
+                    OS_Architecture_Label.Text = "OS architecture: 64bit (x64)";
                 else
                 {
-                    osarch.BackColor = Color.FromArgb(255, 178, 102);
-                    osarch.Text = "OS architecture: 32bit (x86): Update to 64bit recommended!";
+                    OS_Architecture_Label.BackColor = Color.FromArgb(255, 178, 102);
+                    OS_Architecture_Label.Text = "OS architecture: 32bit (x86): Update to 64bit recommended!";
                 }
 
             });
@@ -581,13 +581,13 @@ namespace _7DaysServerManager
 
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
-            maxplgroup.Text = lang("maxplgroup") + " [" + Convert.ToString(maxpl.Value) + "]";
+            Max_Players_GroupBox.Text = lang("maxplgroup") + " [" + Convert.ToString(maxpl.Value) + "]";
             generuj_config();
         }
 
         private void trudnosc_Scroll(object sender, EventArgs e)
         {
-            trudnoscgroup.Text = lang("trudnoscgroup") + " [" + Convert.ToString(trudnosc.Value) + "]";
+            Game_Difficulty_GroupBox.Text = lang("trudnoscgroup") + " [" + Convert.ToString(Game_Difficulty_TrackBar.Value) + "]";
             generuj_config();
         }
 
@@ -725,7 +725,7 @@ namespace _7DaysServerManager
 
                         else if (cmd.Text == "cls")
                         {
-                            konsola.Text = "";
+                            Console_RichTextBox.Text = "";
                         }
 
                         else if (cmd.Text == "glass")
@@ -816,18 +816,18 @@ namespace _7DaysServerManager
 
         private void telnet_connect_Click(object sender, EventArgs e)
         {
-            int s = (((godzina_bar.Value * 1000) - 8000) + ((dzien_bar.Value * 24000) - 24000) - 8000);
+            int s = (((Game_Hour_TrackBar.Value * 1000) - 8000) + ((Game_Day_TrackBar.Value * 24000) - 24000) - 8000);
             telnet_queue.Enqueue("settime " + s);
         }
 
         private void dzien_bar_Scroll(object sender, EventArgs e)
         {
-            dzien.Text = lang("dzien") + " [" + Convert.ToString(dzien_bar.Value) + "]";
+            dzien.Text = lang("dzien") + " [" + Convert.ToString(Game_Day_TrackBar.Value) + "]";
         }
 
         private void godzina_bar_Scroll(object sender, EventArgs e)
         {
-            godzina.Text = lang("godzina") + " [" + Convert.ToString(godzina_bar.Value) + ":00]";
+            godzina.Text = lang("godzina") + " [" + Convert.ToString(Game_Hour_TrackBar.Value) + ":00]";
         }
 
 
@@ -903,7 +903,7 @@ namespace _7DaysServerManager
             //telnet_NOW = "spawnentity" + players_ids[spawn_player.SelectedIndex] + "" + Convert.ToString(spawn_item.SelectedIndex + 1);
             try
             {
-                telnet_queue.Enqueue("spawnentity \"" + Online_Player_List.SelectedItems[0].SubItems[0].Text + "\" " + Convert.ToString(spawn_item.SelectedIndex + 1));
+                telnet_queue.Enqueue("spawnentity \"" + Online_Player_List.SelectedItems[0].SubItems[0].Text + "\" " + Convert.ToString(Spawn_Item_ComboBox.SelectedIndex + 1));
             }
             catch
             {
@@ -1024,7 +1024,7 @@ namespace _7DaysServerManager
 
 
 
-            if (sql_enabled.Checked)
+            if (SQL_Enabled_CheckBox.Checked)
             {
                 try
                 {
@@ -1172,7 +1172,7 @@ namespace _7DaysServerManager
             echo_debug("---kick---");
             try
             {
-                telnet_queue.Enqueue("kick " + Convert.ToString(Online_Player_List.SelectedItems[0].Text) + " " + powod.Text);
+                telnet_queue.Enqueue("kick " + Convert.ToString(Online_Player_List.SelectedItems[0].Text) + " " + Kick_Reason_ComboBox.Text);
                 MessageBox.Show(Convert.ToString(Online_Player_List.SelectedItems[0].Text) + lang("kick_ok"), lang("kick"));
 
 
@@ -1229,26 +1229,26 @@ namespace _7DaysServerManager
                 {
                     string czas;
 
-                    if (bantime.Text != "")
+                    if (Ban_Time_ComboBox.Text != "")
                     {
 
-                        if (bantime.Text == "minutes")
+                        if (Ban_Time_ComboBox.Text == "minutes")
                         {
                             czas = "minutes";
                         }
-                        else if (bantime.Text == "hours")
+                        else if (Ban_Time_ComboBox.Text == "hours")
                         {
                             czas = "hours";
                         }
-                        else if (bantime.Text == "days")
+                        else if (Ban_Time_ComboBox.Text == "days")
                         {
                             czas = "days";
                         }
-                        else if (bantime.Text == "weeks")
+                        else if (Ban_Time_ComboBox.Text == "weeks")
                         {
                             czas = "weeks";
                         }
-                        else if (bantime.Text == "months")
+                        else if (Ban_Time_ComboBox.Text == "months")
                         {
                             czas = "months";
                         }
@@ -1259,7 +1259,7 @@ namespace _7DaysServerManager
 
 
 
-                        telnet_queue.Enqueue("ban add " + user + " " + ban_slide.Value + " " + czas);
+                        telnet_queue.Enqueue("ban add " + user + " " + Ban_Slider_TrackBar.Value + " " + czas);
                         MessageBox.Show(user + lang("banned"), lang("ban"));
                     }
                     else
@@ -1936,13 +1936,13 @@ namespace _7DaysServerManager
                 try
                 {
 
-                    main_log.WriteLine(konsola.Text.Replace(konsola_pre, ""));
+                    main_log.WriteLine(Console_RichTextBox.Text.Replace(konsola_pre, ""));
 
-                    if (konsola.Text.Length > konsola_offset)
-                        konsola.Text = konsola.Text.Substring(konsola.Text.Length - konsola_offset);
+                    if (Console_RichTextBox.Text.Length > konsola_offset)
+                        Console_RichTextBox.Text = Console_RichTextBox.Text.Substring(Console_RichTextBox.Text.Length - konsola_offset);
 
 
-                    konsola_pre = konsola.Text;
+                    konsola_pre = Console_RichTextBox.Text;
 
                 }
                 catch { }
@@ -1951,7 +1951,7 @@ namespace _7DaysServerManager
 
         private void trackBar1_Scroll_1(object sender, EventArgs e)
         {
-            bantime_slider.Text = "BAN [" + Convert.ToString(ban_slide.Value) + "]";
+            Ban_GroupBox.Text = "BAN [" + Convert.ToString(Ban_Slider_TrackBar.Value) + "]";
         }
 
         private void save_logfiles_2_CheckedChanged(object sender, EventArgs e)
@@ -2003,7 +2003,7 @@ namespace _7DaysServerManager
 
         private void dlugoscdnia_Scroll(object sender, EventArgs e)
         {
-            dlugoscdnia_g.Text = lang("dlugoscdnia") + " [" + Convert.ToString(dlugoscdnia.Value) + " min.]";
+            Day_Length_GroupBox.Text = lang("dlugoscdnia") + " [" + Convert.ToString(dlugoscdnia.Value) + " min.]";
             generuj_config();
         }
 
@@ -2103,7 +2103,7 @@ namespace _7DaysServerManager
                 {
                     MessageBox.Show(lang("steam_ok"), lang("saved"));
                     Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", sciezka);
-                    path.Text = lang("path") + (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", null);
+                    Game_File_Path_Label.Text = lang("path") + (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", null);
                 }
                 else
                 {
@@ -2112,7 +2112,7 @@ namespace _7DaysServerManager
                     {
                         MessageBox.Show(lang("steam_ok"), lang("saved"));
                         Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", sciezka);
-                        path.Text = lang("path") + (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", null);
+                        Game_File_Path_Label.Text = lang("path") + (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", null);
                     }
                     else
                     {
@@ -2277,12 +2277,12 @@ namespace _7DaysServerManager
             if (show_ip.Checked)
             {
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "show_ip", "1");
-                twoje_ip.Visible = true;
+                IP_Label.Visible = true;
             }
             else
             {
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "show_ip", "0");
-                twoje_ip.Visible = false;
+                IP_Label.Visible = false;
             }
         }
 
@@ -2332,13 +2332,13 @@ namespace _7DaysServerManager
             MySql.Data.MySqlClient.MySqlConnection conn;
             string myConnectionString = "server=127.0.0.1;uid=root;pwd=;database=7dsm;";
 
-            if (sql_updates_time.Text == "")
-                sql_updates_time.Text = "60";
+            if (SQL_Update_Time_TextBox.Text == "")
+                SQL_Update_Time_TextBox.Text = "60";
 
 
             startbar.Invoke((MethodInvoker)delegate
             {
-                myConnectionString = "server=" + sql_host.Text + ";uid=" + sql_username.Text + ";" + "pwd=" + sql_password.Text + ";database=" + sql_db_name.Text + ";";
+                myConnectionString = "server=" + SQL_Host_TextBox.Text + ";uid=" + SQL_Username_TextBox.Text + ";" + "pwd=" + SQL_Password_TextBox.Text + ";database=" + SQL_Database_Name_TextBox.Text + ";";
             });
 
 
@@ -2602,7 +2602,7 @@ namespace _7DaysServerManager
                 /*--------------------------------------------------*/
                 //System.Threading.Thread.Sleep(1000 * Convert.ToInt32(sql_updates_time.Text));
 
-                for (int n = Convert.ToInt32(sql_updates_time.Text); n >= 0; n--)
+                for (int n = Convert.ToInt32(SQL_Update_Time_TextBox.Text); n >= 0; n--)
                 {
                     System.Threading.Thread.Sleep(1000);
 
@@ -2647,9 +2647,9 @@ namespace _7DaysServerManager
 
 
 
-        private void sql_enabled_CheckedChanged(object sender, EventArgs e)
+        private void Sql_enabled_CheckedChanged(object sender, EventArgs e)
         {
-            if (sql_enabled.Checked)
+            if (SQL_Enabled_CheckBox.Checked)
             {
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "sql_enabled", "1");
             }
@@ -2659,45 +2659,42 @@ namespace _7DaysServerManager
             }
         }
 
-        private void sql_host_TextChanged(object sender, EventArgs e)
+        private void Sql_host_TextChanged(object sender, EventArgs e)
         {
-            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "sql_host", sql_host.Text);
+            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "sql_host", SQL_Host_TextBox.Text);
         }
 
-        private void sql_username_TextChanged(object sender, EventArgs e)
+        private void Sql_username_TextChanged(object sender, EventArgs e)
         {
-            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "sql_username", sql_username.Text);
+            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "sql_username", SQL_Username_TextBox.Text);
         }
 
-        private void sql_password_TextChanged(object sender, EventArgs e)
+        private void Sql_password_TextChanged(object sender, EventArgs e)
         {
-            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "sql_password", sql_password.Text);
+            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "sql_password", SQL_Password_TextBox.Text);
         }
 
-        private void sql_db_name_TextChanged(object sender, EventArgs e)
+        private void Sql_db_name_TextChanged(object sender, EventArgs e)
         {
-            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "sql_db_name", sql_db_name.Text);
+            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "sql_db_name", SQL_Database_Name_TextBox.Text);
         }
 
-        private void how_to_sql_Click(object sender, EventArgs e)
+        private void How_to_sql_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://7dsm.smartmoose.org/index.php?id=mysql-tutorial");
         }
 
-        private void sql_updates_time_TextChanged(object sender, EventArgs e)
+        private void Sql_updates_time_TextChanged(object sender, EventArgs e)
         {
-
-
-
             double num;
-            if (!double.TryParse(sql_updates_time.Text, out num) && sql_updates_time.Text != "")
+            if (!double.TryParse(SQL_Update_Time_TextBox.Text, out num) && SQL_Update_Time_TextBox.Text != "")
             {
-                sql_updates_time.Text = "60";
+                SQL_Update_Time_TextBox.Text = "60";
             }
 
-            if (sql_updates_time.Text != "")
+            if (SQL_Update_Time_TextBox.Text != "")
             {
-                Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "sql_updates_time", Convert.ToInt32(sql_updates_time.Text));
+                Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "sql_updates_time", Convert.ToInt32(SQL_Update_Time_TextBox.Text));
             }
         }
 
@@ -3085,7 +3082,7 @@ namespace _7DaysServerManager
 
         private void LootAbundance_Scroll(object sender, EventArgs e)
         {
-            LootAbundance_g.Text = lang("LootAbundance_g") + " [" + LootAbundance.Value + "%]";
+            Loot_Abundance_GroupBox.Text = lang("LootAbundance_g") + " [" + LootAbundance.Value + "%]";
             generuj_config();
         }
 
@@ -3093,9 +3090,9 @@ namespace _7DaysServerManager
         {
 
             if (LootRespawnDays.Value == -1)
-                LootRespawnDays_g.Text = lang("LootRespawnDays_g") + " [" + lang("disabled") + "]";
+                Loot_Respawn_Days_GroupBox.Text = lang("LootRespawnDays_g") + " [" + lang("disabled") + "]";
             else
-                LootRespawnDays_g.Text = lang("LootRespawnDays_g") + " [" + LootRespawnDays.Value + "]";
+                Loot_Respawn_Days_GroupBox.Text = lang("LootRespawnDays_g") + " [" + LootRespawnDays.Value + "]";
             generuj_config();
         }
 
@@ -3135,11 +3132,11 @@ namespace _7DaysServerManager
         {
             if (gamemode_surv_pvp.Checked == true)
             {
-                LandClaim.Visible = true;
+                Land_Claim_GroupBox.Visible = true;
             }
             else
             {
-                LandClaim.Visible = false;
+                Land_Claim_GroupBox.Visible = false;
             }
             generuj_config();
         }
@@ -3189,7 +3186,7 @@ namespace _7DaysServerManager
             int n = 0;
             bool en = true, chat = false;
 
-            konsola.Invoke((MethodInvoker)delegate
+            Console_RichTextBox.Invoke((MethodInvoker)delegate
             {
                 n = reset_time.Value;
                 chat = reset_chat.Checked;
@@ -3304,7 +3301,7 @@ namespace _7DaysServerManager
                     run_server();
                 });
 
-                konsola.Invoke((MethodInvoker)delegate
+                Console_RichTextBox.Invoke((MethodInvoker)delegate
                 {
                     en = reset_enabled.Checked;
                     n = reset_time.Value;
@@ -3391,7 +3388,7 @@ namespace _7DaysServerManager
             client = new System.Net.WebClient();
 
             bool anonimowy = false;
-            konsola.Invoke((MethodInvoker)delegate
+            Console_RichTextBox.Invoke((MethodInvoker)delegate
             {
                 anonimowy = anon_data.Checked;
             });
@@ -3431,11 +3428,11 @@ namespace _7DaysServerManager
                     ip = "IP: (error)";
                 }
 
-                twoje_ip.Invoke((MethodInvoker)delegate
+                IP_Label.Invoke((MethodInvoker)delegate
                 {
                     try
                     {
-                        twoje_ip.Text = ip;
+                        IP_Label.Text = ip;
                     }
                     catch { }
                 });
@@ -3452,10 +3449,10 @@ namespace _7DaysServerManager
 
         private void AirDropFrequency_Scroll(object sender, EventArgs e)
         {
-            if (AirDropFrequency.Value != 0)
-                AirDropFrequency_g.Text = lang("AirDropFrequency") + " [" + Convert.ToString(AirDropFrequency.Value) + " h.]";
+            if (Air_Drop_Frequency_TrackBar.Value != 0)
+                Air_Drop_Frequency_GroupBox.Text = lang("AirDropFrequency") + " [" + Convert.ToString(Air_Drop_Frequency_TrackBar.Value) + " h.]";
             else
-                AirDropFrequency_g.Text = lang("AirDropFrequency") + " [" + lang("disabled") + "]";
+                Air_Drop_Frequency_GroupBox.Text = lang("AirDropFrequency") + " [" + lang("disabled") + "]";
 
             generuj_config();
         }
@@ -3517,8 +3514,8 @@ namespace _7DaysServerManager
         {
             if (e.KeyChar == (char)13)
             {
-                telnet_queue.Enqueue("say \"" + chat_text.Text + "\"");
-                chat_text.Text = "";
+                telnet_queue.Enqueue("say \"" + Chat_Input_TextBox.Text + "\"");
+                Chat_Input_TextBox.Text = "";
                 e.Handled = true;
             }
         }
@@ -3603,7 +3600,7 @@ namespace _7DaysServerManager
 
 
 
-                    konsola.Invoke((MethodInvoker)delegate
+                    Console_RichTextBox.Invoke((MethodInvoker)delegate
                     {
                         klucz = dtds_auth.Text;
                     });
@@ -3623,7 +3620,7 @@ namespace _7DaysServerManager
                                 telnet_queue.Enqueue("say \"You didn't vote!\"");
                                 break;
                             case "1":
-                                konsola.Invoke((MethodInvoker)delegate
+                                Console_RichTextBox.Invoke((MethodInvoker)delegate
                                 {
                                     foreach (var item in dtds_lista.Items)
                                     {
@@ -3902,7 +3899,7 @@ namespace _7DaysServerManager
 
             server_online = false;
 
-            konsola.Invoke((MethodInvoker)delegate
+            Console_RichTextBox.Invoke((MethodInvoker)delegate
             {
                 Shutdown_Server_Button.Text = lang("wait");
                 Shutdown_Server_Button.Enabled = false;
@@ -3912,7 +3909,7 @@ namespace _7DaysServerManager
 
             telnet_queue.Enqueue("shutdown");
 
-            konsola.Invoke((MethodInvoker)delegate
+            Console_RichTextBox.Invoke((MethodInvoker)delegate
             {
                 Online_Player_List.Items.Clear();
             });
@@ -3951,7 +3948,7 @@ namespace _7DaysServerManager
             }
 
 
-            konsola.Invoke((MethodInvoker)delegate
+            Console_RichTextBox.Invoke((MethodInvoker)delegate
             {
                 unlock_ctrl();
                 this.ControlBox = true;
@@ -4223,7 +4220,7 @@ namespace _7DaysServerManager
                 DialogResult dialogResult = MessageBox.Show(lang("upd_ava_2"), lang("update"), MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
-                    konsola.Invoke((MethodInvoker)delegate
+                    Console_RichTextBox.Invoke((MethodInvoker)delegate
                     {
                         update up = new update();
                         up.Show();
@@ -4275,13 +4272,13 @@ namespace _7DaysServerManager
 
         private void prem_act_Click(object sender, EventArgs e)
         {
-            if (prem_act.Text == "Activate")
+            if (Supporter_Activate_Button.Text == "Activate")
             {
 
-                if (prem_psw.Text.Length == 8)
+                if (Support_Code_TextBox.Text.Length == 8)
                 {
 
-                    Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\", "prem_code", prem_psw.Text);
+                    Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\", "prem_code", Support_Code_TextBox.Text);
 
                     isPremium();
 
@@ -4301,20 +4298,20 @@ namespace _7DaysServerManager
             }
             else
             {
-                if (prem_psw.ReadOnly == true)
+                if (Support_Code_TextBox.ReadOnly == true)
                 {
-                    prem_psw.ReadOnly = false;
-                    prem_act.Text = "Activate";
+                    Support_Code_TextBox.ReadOnly = false;
+                    Supporter_Activate_Button.Text = "Activate";
                 }
             }
         }
 
         private void prem_show_CheckedChanged(object sender, EventArgs e)
         {
-            if (prem_show.Checked)
-                prem_psw.PasswordChar = '\0';
+            if (Support_Code_Show_CheckBox.Checked)
+                Support_Code_TextBox.PasswordChar = '\0';
             else
-                prem_psw.PasswordChar = '*';
+                Support_Code_TextBox.PasswordChar = '*';
         }
 
 
@@ -4358,17 +4355,17 @@ namespace _7DaysServerManager
             echo_debug("premium unlocked");
             Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\", "tmp_prem", "1");
 
-            hide_don_btn.Enabled = true;
+            Hide_Donation_Buttons_CheckBox.Enabled = true;
 
-            konsola.Invoke((MethodInvoker)delegate
+            Console_RichTextBox.Invoke((MethodInvoker)delegate
             {
-                prem_info.Text = "Supporter status: ACTIVE :)";
+                Supporter_Status_Label.Text = "Supporter status: ACTIVE :)";
 
-                if (hide_don_btn.Checked)
+                if (Hide_Donation_Buttons_CheckBox.Checked)
                 {
                     forumklik.Visible = false;
                     don_l.Visible = false;
-                    dondon2.Visible = false;
+                    Supporter_Donate_Button.Visible = false;
 
                     if (!ikony_przesuniete)
                     {
@@ -4382,10 +4379,10 @@ namespace _7DaysServerManager
                 }
 
 
-                prem_act.Text = "Change";
-                prem_psw.ReadOnly = true;
+                Supporter_Activate_Button.Text = "Change";
+                Support_Code_TextBox.ReadOnly = true;
 
-                prem_help1.Visible = false;
+                Premium_Settings_Help_PictureBox.Visible = false;
                 prem_help2.Visible = false;
                 prem_help3.Visible = false;
 
@@ -4407,17 +4404,17 @@ namespace _7DaysServerManager
             echo_debug("premium locked");
             Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\", "tmp_prem", "0");
 
-            hide_don_btn.Enabled = false;
+            Hide_Donation_Buttons_CheckBox.Enabled = false;
 
-            konsola.Invoke((MethodInvoker)delegate
+            Console_RichTextBox.Invoke((MethodInvoker)delegate
             {
-                prem_info.Text = "Supporter status: NOT activated";
+                Supporter_Status_Label.Text = "Supporter status: NOT activated";
 
-                if (hide_don_btn.Checked)
+                if (Hide_Donation_Buttons_CheckBox.Checked)
                 {
                     forumklik.Visible = true;
                     don_l.Visible = true;
-                    dondon2.Visible = true;
+                    Supporter_Donate_Button.Visible = true;
 
                     if (ikony_przesuniete)
                     {
@@ -4431,10 +4428,10 @@ namespace _7DaysServerManager
                 }
 
 
-                prem_act.Text = "Activate";
-                prem_psw.ReadOnly = false;
+                Supporter_Activate_Button.Text = "Activate";
+                Support_Code_TextBox.ReadOnly = false;
 
-                prem_help1.Visible = true;
+                Premium_Settings_Help_PictureBox.Visible = true;
                 prem_help2.Visible = true;
                 prem_help3.Visible = true;
 
@@ -4453,12 +4450,12 @@ namespace _7DaysServerManager
         private void hide_don_btn_CheckedChanged(object sender, EventArgs e)
         {
             if (premium)
-                if (hide_don_btn.Checked)
+                if (Hide_Donation_Buttons_CheckBox.Checked)
                 {
                     Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "hide_don_btn", "1");
                     forumklik.Visible = false;
                     don_l.Visible = false;
-                    dondon2.Visible = false;
+                    Supporter_Donate_Button.Visible = false;
 
                     if (!ikony_przesuniete)
                     {
@@ -4475,7 +4472,7 @@ namespace _7DaysServerManager
                     Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "hide_don_btn", "0");
                     forumklik.Visible = true;
                     don_l.Visible = true;
-                    dondon2.Visible = true;
+                    Supporter_Donate_Button.Visible = true;
 
                     if (ikony_przesuniete)
                     {
@@ -4678,11 +4675,6 @@ namespace _7DaysServerManager
                         MessageBox.Show("FAILED! Please restart machine and try again (some files may be locked).\n" + ex, "ERROR");
                     }
 
-
-
-
-
-
                 }
 
             }
@@ -4725,14 +4717,14 @@ namespace _7DaysServerManager
 
                 try
                 {
-                    chat_log.WriteLine(chat.Text.Replace(chat_pre, ""));
+                    chat_log.WriteLine(Chat_RichTextBox.Text.Replace(chat_pre, ""));
 
 
-                    if (chat.Text.Length > konsola_offset)
-                        chat.Text = chat.Text.Substring(chat.Text.Length - konsola_offset);
+                    if (Chat_RichTextBox.Text.Length > konsola_offset)
+                        Chat_RichTextBox.Text = Chat_RichTextBox.Text.Substring(Chat_RichTextBox.Text.Length - konsola_offset);
 
 
-                    chat_pre = chat.Text;
+                    chat_pre = Chat_RichTextBox.Text;
 
                 }
                 catch { }
@@ -4749,8 +4741,6 @@ namespace _7DaysServerManager
             System.Diagnostics.Process.Start("https://7dsm.smartmoose.org/index.php?id=help");
         }
 
-
-
         private void chk_upd_Click(object sender, EventArgs e)
         {
             updater_invoked_manually = true;
@@ -4766,7 +4756,7 @@ namespace _7DaysServerManager
             DialogResult dialogResult = MessageBox.Show("Are you sure?", lang("update"), MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
-                konsola.Invoke((MethodInvoker)delegate
+                Console_RichTextBox.Invoke((MethodInvoker)delegate
                 {
                     update up = new update();
                     up.Show();
@@ -4777,17 +4767,17 @@ namespace _7DaysServerManager
         private void all_players_list_SelectedIndexChanged(object sender, EventArgs e)
         {
             wybrana_lista_graczy_offline = true;
-            kickgroup.Enabled = false;
-            spawn_group.Enabled = false;
-            player_g.Enabled = false;
+            Kick_GroupBox.Enabled = false;
+            Spawn_GroupBox.Enabled = false;
+            Player_GroupBox.Enabled = false;
         }
 
         private void players_list_SelectedIndexChanged(object sender, EventArgs e)
         {
             wybrana_lista_graczy_offline = false;
-            kickgroup.Enabled = true;
-            spawn_group.Enabled = true;
-            player_g.Enabled = true;
+            Kick_GroupBox.Enabled = true;
+            Spawn_GroupBox.Enabled = true;
+            Player_GroupBox.Enabled = true;
         }
 
         private void players_list_Click(object sender, EventArgs e)
@@ -4802,11 +4792,11 @@ namespace _7DaysServerManager
 
         private void apply_update_channel_Click(object sender, EventArgs e)
         {
-            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM", "dev", Convert.ToString(updates_channel.SelectedIndex));
+            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM", "dev", Convert.ToString(Update_Channel_ComboBox.SelectedIndex));
 
             MessageBox.Show("7DSM will now download latest version from selected update channel.", lang("update"));
 
-            konsola.Invoke((MethodInvoker)delegate
+            Console_RichTextBox.Invoke((MethodInvoker)delegate
             {
                 update up = new update();
                 up.Show();
@@ -4822,7 +4812,7 @@ namespace _7DaysServerManager
         {
             bool allow_bans_sending = false;
 
-            konsola.Invoke((MethodInvoker)delegate
+            Console_RichTextBox.Invoke((MethodInvoker)delegate
             {
                 allow_bans_sending = sendbans.Checked;
             });
@@ -4918,6 +4908,9 @@ namespace _7DaysServerManager
 
         }
 
+
+        // CONFIG STATE CHANGES
+
         private void sendbans_CheckedChanged(object sender, EventArgs e)
         {
             if (sendbans.Checked)
@@ -4942,8 +4935,6 @@ namespace _7DaysServerManager
         {
             System.Diagnostics.Process.Start("https://7dsm.smartmoose.org/ban");
         }
-
-
 
         private void dbg_btn_2_Click(object sender, EventArgs e)
         {
@@ -5158,8 +5149,6 @@ namespace _7DaysServerManager
             generuj_config();
         }
 
-
-
         private void zoomup_Click(object sender, EventArgs e)
         {
             overviewSplitter.Panel1Collapsed = !overviewSplitter.Panel1Collapsed;
@@ -5177,6 +5166,11 @@ namespace _7DaysServerManager
         private void newsbox_LinkClicked(object sender, LinkClickedEventArgs e)
         {
             System.Diagnostics.Process.Start(e.LinkText);
+        }
+
+        private void News_Feed_RichTextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void usecmd_Click(object sender, EventArgs e)
@@ -5197,8 +5191,6 @@ namespace _7DaysServerManager
         {
             generuj_config();
         }
-
-
 
     }
 
