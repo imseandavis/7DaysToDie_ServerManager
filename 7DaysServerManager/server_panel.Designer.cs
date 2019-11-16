@@ -649,7 +649,7 @@
             this.Force_Update_Button.TabIndex = 43;
             this.Force_Update_Button.Text = "Force Update Now";
             this.Force_Update_Button.UseVisualStyleBackColor = true;
-            this.Force_Update_Button.Click += new System.EventHandler(this.force_upd_Click);
+            this.Force_Update_Button.Click += new System.EventHandler(this.Force_upd_Click);
             // 
             // Check_Updates_Button
             // 
@@ -659,7 +659,7 @@
             this.Check_Updates_Button.TabIndex = 42;
             this.Check_Updates_Button.Text = "Check For Updates Now";
             this.Check_Updates_Button.UseVisualStyleBackColor = true;
-            this.Check_Updates_Button.Click += new System.EventHandler(this.chk_upd_Click);
+            this.Check_Updates_Button.Click += new System.EventHandler(this.Chk_upd_Click);
             // 
             // updates_info
             // 
@@ -723,7 +723,7 @@
             this.exe_name.Size = new System.Drawing.Size(161, 20);
             this.exe_name.TabIndex = 37;
             this.exe_name.Text = "7DaysToDie.exe";
-            this.exe_name.TextChanged += new System.EventHandler(this.exe_name_TextChanged);
+            this.exe_name.TextChanged += new System.EventHandler(this.Exe_name_TextChanged);
             // 
             // Supporter_Settings_GroupBox
             // 
@@ -786,7 +786,7 @@
             this.Support_Code_Show_CheckBox.TabIndex = 27;
             this.Support_Code_Show_CheckBox.Text = "Show Code Characters";
             this.Support_Code_Show_CheckBox.UseVisualStyleBackColor = true;
-            this.Support_Code_Show_CheckBox.CheckedChanged += new System.EventHandler(this.prem_show_CheckedChanged);
+            this.Support_Code_Show_CheckBox.CheckedChanged += new System.EventHandler(this.Prem_show_CheckedChanged);
             // 
             // Supporter_Donate_Button
             // 
@@ -1768,7 +1768,7 @@
             this.zoomup.TabIndex = 21;
             this.zoomup.Text = "▲";
             this.zoomup.UseVisualStyleBackColor = true;
-            this.zoomup.Click += new System.EventHandler(this.zoomup_Click);
+            this.zoomup.Click += new System.EventHandler(this.Zoomup_Click);
             // 
             // overviewSplitter
             // 
@@ -2040,7 +2040,7 @@
             this.Start_7DSM_With_Windows_CheckBox.TabIndex = 20;
             this.Start_7DSM_With_Windows_CheckBox.Text = "Start 7DSM With Windows";
             this.Start_7DSM_With_Windows_CheckBox.UseVisualStyleBackColor = true;
-            this.Start_7DSM_With_Windows_CheckBox.CheckedChanged += new System.EventHandler(this.start_with_win_CheckedChanged);
+            this.Start_7DSM_With_Windows_CheckBox.CheckedChanged += new System.EventHandler(this.Start_with_win_CheckedChanged);
             // 
             // Start_With_7DSM_CheckBox
             // 
@@ -2051,7 +2051,7 @@
             this.Start_With_7DSM_CheckBox.TabIndex = 19;
             this.Start_With_7DSM_CheckBox.Text = "Start Server With 7DSM";
             this.Start_With_7DSM_CheckBox.UseVisualStyleBackColor = true;
-            this.Start_With_7DSM_CheckBox.CheckedChanged += new System.EventHandler(this.start_with_7dsm_CheckedChanged);
+            this.Start_With_7DSM_CheckBox.CheckedChanged += new System.EventHandler(this.Start_with_7dsm_CheckedChanged);
             // 
             // Start_Server_Button
             // 
@@ -2156,7 +2156,7 @@
             this.Chat_RichTextBox.Size = new System.Drawing.Size(581, 202);
             this.Chat_RichTextBox.TabIndex = 15;
             this.Chat_RichTextBox.Text = "";
-            this.Chat_RichTextBox.TextChanged += new System.EventHandler(this.chat_TextChanged);
+            this.Chat_RichTextBox.TextChanged += new System.EventHandler(this.Chat_TextChanged);
             // 
             // Chat_Input_TextBox
             // 
@@ -2205,7 +2205,7 @@
             this.All_Players_List.TabIndex = 23;
             this.All_Players_List.UseCompatibleStateImageBehavior = false;
             this.All_Players_List.View = System.Windows.Forms.View.Details;
-            this.All_Players_List.SelectedIndexChanged += new System.EventHandler(this.all_players_list_SelectedIndexChanged);
+            this.All_Players_List.SelectedIndexChanged += new System.EventHandler(this.All_players_list_SelectedIndexChanged);
             this.All_Players_List.Click += new System.EventHandler(this.All_players_list_Click);
             // 
             // columnHeader1
@@ -3208,7 +3208,7 @@
             this.Drop_On_Death_Mode_0.TabIndex = 24;
             this.Drop_On_Death_Mode_0.Text = "Nothing";
             this.Drop_On_Death_Mode_0.UseVisualStyleBackColor = true;
-            this.Drop_On_Death_Mode_0.CheckedChanged += new System.EventHandler(this.dtds_show_CheckedChanged);
+            this.Drop_On_Death_Mode_0.CheckedChanged += new System.EventHandler(this.Dtds_show_CheckedChanged);
             // 
             // Drop_On_Death_Mode_1
             // 
@@ -4792,7 +4792,7 @@
             this.Use_Whitelist_CheckBox.Text = "Use whitelist (File must be put in main game folder, named whitelist.txt. Every n" +
     "ickname must be in new line.)";
             this.Use_Whitelist_CheckBox.UseVisualStyleBackColor = true;
-            this.Use_Whitelist_CheckBox.CheckedChanged += new System.EventHandler(this.use_wl_CheckedChanged);
+            this.Use_Whitelist_CheckBox.CheckedChanged += new System.EventHandler(this.Use_wl_CheckedChanged);
             // 
             // Auto_Update_Whitelist_Text_Label
             // 
@@ -4810,7 +4810,7 @@
             this.Update_Whitelist_Interval_TextBox.Size = new System.Drawing.Size(27, 20);
             this.Update_Whitelist_Interval_TextBox.TabIndex = 3;
             this.Update_Whitelist_Interval_TextBox.Text = "60";
-            this.Update_Whitelist_Interval_TextBox.TextChanged += new System.EventHandler(this.wl_interval_TextChanged);
+            this.Update_Whitelist_Interval_TextBox.TextChanged += new System.EventHandler(this.Wl_interval_TextChanged);
             // 
             // Auto_Update_Whitelist_CheckBox
             // 
@@ -4821,7 +4821,7 @@
             this.Auto_Update_Whitelist_CheckBox.TabIndex = 2;
             this.Auto_Update_Whitelist_CheckBox.Text = "Auto Update Whitelist Every";
             this.Auto_Update_Whitelist_CheckBox.UseVisualStyleBackColor = true;
-            this.Auto_Update_Whitelist_CheckBox.CheckedChanged += new System.EventHandler(this.wl_chk_CheckedChanged);
+            this.Auto_Update_Whitelist_CheckBox.CheckedChanged += new System.EventHandler(this.Wl_chk_CheckedChanged);
             // 
             // Auto_Update_External_Whitelist_Note_Label
             // 
@@ -4842,7 +4842,7 @@
             this.Auto_Update_External_Whitelist_URL_TextBox.Size = new System.Drawing.Size(542, 20);
             this.Auto_Update_External_Whitelist_URL_TextBox.TabIndex = 0;
             this.Auto_Update_External_Whitelist_URL_TextBox.Text = "http://";
-            this.Auto_Update_External_Whitelist_URL_TextBox.TextChanged += new System.EventHandler(this.wl_add_TextChanged);
+            this.Auto_Update_External_Whitelist_URL_TextBox.TextChanged += new System.EventHandler(this.Wl_add_TextChanged);
             // 
             // backup_tab
             // 
@@ -4883,7 +4883,7 @@
             this.opeb_bp_dir.TabIndex = 5;
             this.opeb_bp_dir.Text = "Open backups directory";
             this.opeb_bp_dir.UseVisualStyleBackColor = true;
-            this.opeb_bp_dir.Click += new System.EventHandler(this.opeb_bp_dir_Click);
+            this.opeb_bp_dir.Click += new System.EventHandler(this.Opeb_bp_dir_Click);
             // 
             // create_bp_now
             // 
@@ -4894,7 +4894,7 @@
             this.create_bp_now.TabIndex = 4;
             this.create_bp_now.Text = "Create backup now";
             this.create_bp_now.UseVisualStyleBackColor = true;
-            this.create_bp_now.Click += new System.EventHandler(this.create_bp_now_Click);
+            this.create_bp_now.Click += new System.EventHandler(this.Create_bp_now_Click);
             // 
             // backup_del
             // 
@@ -4927,7 +4927,7 @@
             this.restore_now.TabIndex = 1;
             this.restore_now.Text = "Restore selected backup";
             this.restore_now.UseVisualStyleBackColor = true;
-            this.restore_now.Click += new System.EventHandler(this.restore_now_Click);
+            this.restore_now.Click += new System.EventHandler(this.Restore_now_Click);
             // 
             // backups_list
             // 
@@ -4973,7 +4973,7 @@
             this.rem_old_backups_count.Size = new System.Drawing.Size(23, 20);
             this.rem_old_backups_count.TabIndex = 43;
             this.rem_old_backups_count.Text = "3";
-            this.rem_old_backups_count.TextChanged += new System.EventHandler(this.rem_old_backups_count_TextChanged);
+            this.rem_old_backups_count.TextChanged += new System.EventHandler(this.Rem_old_backups_count_TextChanged);
             // 
             // rem_old_backups
             // 
@@ -4985,7 +4985,7 @@
             this.rem_old_backups.TabIndex = 42;
             this.rem_old_backups.Text = "Remove old backups, keep only";
             this.rem_old_backups.UseVisualStyleBackColor = true;
-            this.rem_old_backups.CheckedChanged += new System.EventHandler(this.rem_old_backups_CheckedChanged);
+            this.rem_old_backups.CheckedChanged += new System.EventHandler(this.Rem_old_backups_CheckedChanged);
             // 
             // prem_help2
             // 
@@ -5040,7 +5040,7 @@
             this.dtds_show.TabIndex = 28;
             this.dtds_show.Text = "Show characters";
             this.dtds_show.UseVisualStyleBackColor = true;
-            this.dtds_show.CheckedChanged += new System.EventHandler(this.dtds_show_CheckedChanged);
+            this.dtds_show.CheckedChanged += new System.EventHandler(this.Dtds_show_CheckedChanged);
             // 
             // dtds_info2
             // 
@@ -5126,7 +5126,7 @@
             this.dtds_enable.TabIndex = 1;
             this.dtds_enable.Text = "Enable 7daystodie-servers.com rewards on my server.";
             this.dtds_enable.UseVisualStyleBackColor = true;
-            this.dtds_enable.CheckedChanged += new System.EventHandler(this.dtds_enable_CheckedChanged);
+            this.dtds_enable.CheckedChanged += new System.EventHandler(this.Dtds_enable_CheckedChanged);
             // 
             // dtds_visit
             // 
@@ -5137,7 +5137,7 @@
             this.dtds_visit.TabIndex = 0;
             this.dtds_visit.Text = "Visit website";
             this.dtds_visit.UseVisualStyleBackColor = true;
-            this.dtds_visit.Click += new System.EventHandler(this.dtds_visit_Click);
+            this.dtds_visit.Click += new System.EventHandler(this.Dtds_visit_Click);
             // 
             // server_startup_tasks
             // 
@@ -5241,11 +5241,11 @@
             // 
             // check_updates
             // 
-            this.check_updates.DoWork += new System.ComponentModel.DoWorkEventHandler(this.check_updates_DoWork);
+            this.check_updates.DoWork += new System.ComponentModel.DoWorkEventHandler(this.Check_updates_DoWork);
             // 
             // prepare_app_after_draw
             // 
-            this.prepare_app_after_draw.DoWork += new System.ComponentModel.DoWorkEventHandler(this.prepare_app_after_draw_DoWork);
+            this.prepare_app_after_draw.DoWork += new System.ComponentModel.DoWorkEventHandler(this.Prepare_app_after_draw_DoWork);
             // 
             // dbg_btn
             // 
@@ -5285,7 +5285,7 @@
             this.help_b.Size = new System.Drawing.Size(43, 43);
             this.help_b.TabIndex = 40;
             this.help_b.UseVisualStyleBackColor = true;
-            this.help_b.Click += new System.EventHandler(this.help_b_Click);
+            this.help_b.Click += new System.EventHandler(this.Help_b_Click);
             // 
             // contact_b
             // 
@@ -5333,7 +5333,7 @@
             this.www7dsm.Size = new System.Drawing.Size(43, 43);
             this.www7dsm.TabIndex = 36;
             this.www7dsm.UseVisualStyleBackColor = true;
-            this.www7dsm.Click += new System.EventHandler(this.button1_Click_3);
+            this.www7dsm.Click += new System.EventHandler(this.Button1_Click_3);
             // 
             // like
             // 
@@ -5369,7 +5369,7 @@
             this.discord_b.Size = new System.Drawing.Size(43, 43);
             this.discord_b.TabIndex = 42;
             this.discord_b.UseVisualStyleBackColor = true;
-            this.discord_b.Click += new System.EventHandler(this.discord_b_Click);
+            this.discord_b.Click += new System.EventHandler(this.Discord_b_Click);
             // 
             // Server_Panel_Form
             // 

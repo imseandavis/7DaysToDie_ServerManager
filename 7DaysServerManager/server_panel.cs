@@ -683,7 +683,7 @@ namespace _7DaysServerManager
 
                         else if (cmd.Text == "ankieta")
                         {
-                            ankieta an = new ankieta();
+                            Survey_Form an = new Survey_Form();
                             an.Show();
                         }
 
@@ -1638,8 +1638,10 @@ namespace _7DaysServerManager
 
                                     if (allowed_players.Contains(podzielony[3]) || !Use_Whitelist_CheckBox.Checked)
                                     {
-                                        ListViewItem lvi = new ListViewItem();
-                                        lvi.Text = podzielony[3];
+                                        ListViewItem lvi = new ListViewItem
+                                        {
+                                            Text = podzielony[3]
+                                        };
                                         lvi.SubItems.Add(podzielony[4]);
 
                                         ListViewItem item = Online_Player_List.FindItemWithText(podzielony[3]);
@@ -1718,8 +1720,10 @@ namespace _7DaysServerManager
                                 string[] podzielony = reply_telnet.Split('\'');
                                 startbar.Invoke((MethodInvoker)delegate
                                 {
-                                    ListViewItem lvi = new ListViewItem();
-                                    lvi.Text = podzielony[1];
+                                    ListViewItem lvi = new ListViewItem
+                                    {
+                                        Text = podzielony[1]
+                                    };
                                     lvi.SubItems.Add("n/a");
 
 
@@ -2278,18 +2282,16 @@ namespace _7DaysServerManager
                 conn.Open();
 
 
-                MySqlCommand sql_cmd = new MySqlCommand();
-                sql_cmd.Connection = conn;
+                MySqlCommand sql_cmd = new MySqlCommand
+                {
+                    Connection = conn,
 
 
-                sql_cmd.CommandText = "CREATE TABLE IF NOT EXISTS `7days_stats` (`players` int(11) NOT NULL,`max_players` int(11) NOT NULL,`last_update` int(32) NOT NULL);";
+                    CommandText = "CREATE TABLE IF NOT EXISTS `7days_stats` (`players` int(11) NOT NULL,`max_players` int(11) NOT NULL,`last_update` int(32) NOT NULL);"
+                };
                 sql_cmd.ExecuteNonQuery();
 
-
-
-
                 sql_cmd.CommandText = "CREATE TABLE IF NOT EXISTS `7days_players` (`id` int(11) NOT NULL AUTO_INCREMENT, `login` varchar(64) COLLATE utf8_bin NOT NULL, `x` varchar(10) COLLATE utf8_bin NOT NULL, `y` varchar(10) COLLATE utf8_bin NOT NULL, `z` varchar(10) COLLATE utf8_bin NOT NULL, `hp` int(4) NOT NULL, PRIMARY KEY (`id`));";
-
 
                 sql_cmd.ExecuteNonQuery();
 
@@ -2359,11 +2361,11 @@ namespace _7DaysServerManager
                         conn.Open();
 
 
-                        MySqlCommand sql_cmd = new MySqlCommand();
-                        sql_cmd.Connection = conn;
-
-
-                        sql_cmd.CommandText = "DELETE FROM 7days_stats";
+                        MySqlCommand sql_cmd = new MySqlCommand
+                        {
+                            Connection = conn,
+                            CommandText = "DELETE FROM 7days_stats"
+                        };
                         sql_cmd.ExecuteNonQuery();
                         sql_cmd.CommandText = "DELETE FROM 7days_players";
                         sql_cmd.ExecuteNonQuery();
@@ -2401,9 +2403,11 @@ namespace _7DaysServerManager
                                 conn.Open();
 
 
-                                MySqlCommand sql_cmd = new MySqlCommand();
-                                sql_cmd.Connection = conn;
-                                
+                                MySqlCommand sql_cmd = new MySqlCommand
+                                {
+                                    Connection = conn
+                                };
+
                                 Echo_debug("SQL ITEM: players: " + l);
 
                                 sql_cmd.CommandText = "INSERT INTO 7days_stats(players, max_players, last_update) VALUES(?players,?max_players,?last_update)";
@@ -2463,9 +2467,10 @@ namespace _7DaysServerManager
                                         conn.Open();
 
 
-                                        MySqlCommand sql_cmd = new MySqlCommand();
-                                        sql_cmd.Connection = conn;
-
+                                        MySqlCommand sql_cmd = new MySqlCommand
+                                        {
+                                            Connection = conn
+                                        };
 
                                         Echo_debug("SQL ITEM: login: " + gracz_info[1] + " x: " + gracz_info[2] + " y: " + gracz_info[3] + " z: " + gracz_info[4] + " hp: " + gracz_info[9]);
 
@@ -2600,8 +2605,7 @@ namespace _7DaysServerManager
 
         private void Sql_updates_time_TextChanged(object sender, EventArgs e)
         {
-            double num;
-            if (!double.TryParse(SQL_Update_Time_TextBox.Text, out num) && SQL_Update_Time_TextBox.Text != "")
+            if (!double.TryParse(SQL_Update_Time_TextBox.Text, out double num) && SQL_Update_Time_TextBox.Text != "")
             {
                 SQL_Update_Time_TextBox.Text = "60";
             }
@@ -3931,12 +3935,12 @@ namespace _7DaysServerManager
             file_log = debug_log.Checked;
         }
 
-        private void button1_Click_3(object sender, EventArgs e)
+        private void Button1_Click_3(object sender, EventArgs e)
         {
             Process.Start("https://7dsm.smartmoose.org");
         }
 
-        private void wl_chk_CheckedChanged(object sender, EventArgs e)
+        private void Wl_chk_CheckedChanged(object sender, EventArgs e)
         {
             if (Auto_Update_Whitelist_CheckBox.Checked)
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "autoupdate_whitelist", "1");
@@ -3944,12 +3948,12 @@ namespace _7DaysServerManager
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "autoupdate_whitelist", "0");
         }
 
-        private void wl_interval_TextChanged(object sender, EventArgs e)
+        private void Wl_interval_TextChanged(object sender, EventArgs e)
         {
             Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "wl_interval", Update_Whitelist_Interval_TextBox.Text);
         }
 
-        private void wl_add_TextChanged(object sender, EventArgs e)
+        private void Wl_add_TextChanged(object sender, EventArgs e)
         {
             Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "wl_add", Auto_Update_External_Whitelist_URL_TextBox.Text);
         }
@@ -3995,17 +3999,12 @@ namespace _7DaysServerManager
                     Echo("Couldn't download whitelist file!", 3, true);
                 }
 
-
-
                 for (int k = i * 60; k >= 0; k--)
                 {
                     Thread.Sleep(1000);
 
                     int k_m = k;
                     //int hrs = 0;
-
-
-
 
                     int min = k_m / 60;
                     int sec = k_m % 60;
@@ -4022,9 +4021,6 @@ namespace _7DaysServerManager
                         sec_str = "0" + Convert.ToString(sec);
 
 
-
-
-
                     startbar.Invoke((MethodInvoker)delegate
                     {
                         Whitelist_Update_Timer.Text = min_str + ":" + sec_str;
@@ -4038,7 +4034,7 @@ namespace _7DaysServerManager
 
         }
 
-        private void use_wl_CheckedChanged(object sender, EventArgs e)
+        private void Use_wl_CheckedChanged(object sender, EventArgs e)
         {
             if (Use_Whitelist_CheckBox.Checked)
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "use_wl", "1");
@@ -4046,7 +4042,7 @@ namespace _7DaysServerManager
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "use_wl", "0");
         }
 
-        private void start_with_7dsm_CheckedChanged(object sender, EventArgs e)
+        private void Start_with_7dsm_CheckedChanged(object sender, EventArgs e)
         {
             if (Start_With_7DSM_CheckBox.Checked)
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "start_with_7dsm", "1");
@@ -4054,7 +4050,7 @@ namespace _7DaysServerManager
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "start_with_7dsm", "0");
         }
 
-        private void start_with_win_CheckedChanged(object sender, EventArgs e)
+        private void Start_with_win_CheckedChanged(object sender, EventArgs e)
         {
             if (Start_7DSM_With_Windows_CheckBox.Checked)
             {
@@ -4076,7 +4072,7 @@ namespace _7DaysServerManager
 
 
 
-        private void check_updates_DoWork(object sender, DoWorkEventArgs e)
+        private void Check_updates_DoWork(object sender, DoWorkEventArgs e)
         {
             string update_avaible = "0";
             WebClient client;
@@ -4144,7 +4140,7 @@ namespace _7DaysServerManager
 
         }
 
-        private void prepare_app_after_draw_DoWork(object sender, DoWorkEventArgs e)
+        private void Prepare_app_after_draw_DoWork(object sender, DoWorkEventArgs e)
         {
             Echo("Type \"local help\" for commands.", 0, true);
 
@@ -4194,7 +4190,7 @@ namespace _7DaysServerManager
             }
         }
 
-        private void prem_show_CheckedChanged(object sender, EventArgs e)
+        private void Prem_show_CheckedChanged(object sender, EventArgs e)
         {
             if (Support_Code_Show_CheckBox.Checked)
                 Support_Code_TextBox.PasswordChar = '\0';
@@ -4364,7 +4360,7 @@ namespace _7DaysServerManager
                 }
         }
 
-        private void rem_old_backups_CheckedChanged(object sender, EventArgs e)
+        private void Rem_old_backups_CheckedChanged(object sender, EventArgs e)
         {
             if (rem_old_backups.Checked)
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "rem_old_backups", "1");
@@ -4372,18 +4368,18 @@ namespace _7DaysServerManager
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "rem_old_backups", "0");
         }
 
-        private void rem_old_backups_count_TextChanged(object sender, EventArgs e)
+        private void Rem_old_backups_count_TextChanged(object sender, EventArgs e)
         {
             Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "rem_old_backups_count", rem_old_backups_count.Text);
         }
 
 
-        private void dtds_visit_Click(object sender, EventArgs e)
+        private void Dtds_visit_Click(object sender, EventArgs e)
         {
             Process.Start("http://7daystodie-servers.com/");
         }
 
-        private void dtds_enable_CheckedChanged(object sender, EventArgs e)
+        private void Dtds_enable_CheckedChanged(object sender, EventArgs e)
         {
             if (dtds_enable.Checked)
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "dtds_enable", "1");
@@ -4497,7 +4493,7 @@ namespace _7DaysServerManager
             }
         }
 
-        private void restore_now_Click(object sender, EventArgs e)
+        private void Restore_now_Click(object sender, EventArgs e)
         {
             if (backups_list.SelectedIndex != -1)
             {
@@ -4556,12 +4552,12 @@ namespace _7DaysServerManager
             }
         }
 
-        private void create_bp_now_Click(object sender, EventArgs e)
+        private void Create_bp_now_Click(object sender, EventArgs e)
         {
             Create_backup_now();
         }
 
-        private void opeb_bp_dir_Click(object sender, EventArgs e)
+        private void Opeb_bp_dir_Click(object sender, EventArgs e)
         {
             if (backup_location.Text == "")
                 Process.Start("backups");
@@ -4569,7 +4565,7 @@ namespace _7DaysServerManager
                 Process.Start(backup_location.Text);
         }
 
-        private void dtds_show_CheckedChanged(object sender, EventArgs e)
+        private void Dtds_show_CheckedChanged(object sender, EventArgs e)
         {
             if (dtds_show.Checked)
                 dtds_auth.PasswordChar = '\0';
@@ -4577,12 +4573,12 @@ namespace _7DaysServerManager
                 dtds_auth.PasswordChar = '*';
         }
 
-        private void exe_name_TextChanged(object sender, EventArgs e)
+        private void Exe_name_TextChanged(object sender, EventArgs e)
         {
             Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "exe_name", exe_name.Text);
         }
 
-        private void chat_TextChanged(object sender, EventArgs e)
+        private void Chat_TextChanged(object sender, EventArgs e)
         {
             if (save_logfiles.Checked)
             {
@@ -4602,12 +4598,12 @@ namespace _7DaysServerManager
             }
         }
 
-        private void help_b_Click(object sender, EventArgs e)
+        private void Help_b_Click(object sender, EventArgs e)
         {
             Process.Start("https://7dsm.smartmoose.org/index.php?id=help");
         }
 
-        private void chk_upd_Click(object sender, EventArgs e)
+        private void Chk_upd_Click(object sender, EventArgs e)
         {
             updater_invoked_manually = true;
             try
@@ -4617,7 +4613,7 @@ namespace _7DaysServerManager
             catch { }
         }
 
-        private void force_upd_Click(object sender, EventArgs e)
+        private void Force_upd_Click(object sender, EventArgs e)
         {
             DialogResult dialogResult = MessageBox.Show("Are you sure?", lang("update"), MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
@@ -4630,7 +4626,7 @@ namespace _7DaysServerManager
             }
         }
 
-        private void all_players_list_SelectedIndexChanged(object sender, EventArgs e)
+        private void All_players_list_SelectedIndexChanged(object sender, EventArgs e)
         {
             selected_player_list_offline = true;
             Kick_GroupBox.Enabled = false;
@@ -4653,7 +4649,7 @@ namespace _7DaysServerManager
 
         private void All_players_list_Click(object sender, EventArgs e)
         {
-            all_players_list_SelectedIndexChanged(null, null);
+            All_players_list_SelectedIndexChanged(null, null);
         }
 
         private void Apply_update_channel_Click(object sender, EventArgs e)
@@ -5005,7 +5001,7 @@ namespace _7DaysServerManager
             Generate_Config();
         }
 
-        private void zoomup_Click(object sender, EventArgs e)
+        private void Zoomup_Click(object sender, EventArgs e)
         {
             overviewSplitter.Panel1Collapsed = !overviewSplitter.Panel1Collapsed;
             if(overviewSplitter.Panel1Collapsed)
@@ -5014,7 +5010,7 @@ namespace _7DaysServerManager
                 zoomup.Text = "▲";
         }
 
-        private void discord_b_Click(object sender, EventArgs e)
+        private void Discord_b_Click(object sender, EventArgs e)
         {
             Process.Start("https://discordapp.com/invite/rHuzfER");
         }

@@ -14,19 +14,19 @@ using System.Resources;
 
 namespace _7DaysServerManager
 {
-    public partial class ankieta : Form
+    public partial class Survey_Form : Form
     {
-        public ankieta()
+        public Survey_Form()
         {
             InitializeComponent();
-            this.Text = lang("ankieta");
-            tak.Text = lang("ankieta_tak");
-            potem.Text = lang("ankieta_potem");
-            nigdy.Text = lang("ankieta_nie");
-            ankieta_ask.Text = lang("ankieta_ask");
+            this.Text = Language("ankieta");
+            Complete_Survey_Now_Button.Text = Language("ankieta_tak");
+            Complete_Survey_Later_Button.Text = Language("ankieta_potem");
+            Never_Complete_Survey_Button.Text = Language("ankieta_nie");
+            Survey_Label.Text = Language("ankieta_ask");
         }
 
-        public string lang(string text)
+        public string Language(string text)
         {
             ResourceManager rm = new ResourceManager("_7DaysServerManager.lang.lang_en", this.GetType().Assembly);
 
@@ -38,33 +38,33 @@ namespace _7DaysServerManager
             return rm.GetString(text);
         }
 
-        private void potem_Click(object sender, EventArgs e)
+        private void Later_Click(object sender, EventArgs e)
         {
             Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM", "survey_done", "0");
             this.Close();
         }
 
-        private void nigdy_Click(object sender, EventArgs e)
+        private void Never_Click(object sender, EventArgs e)
         {
             Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM", "survey_done", "1");
             this.Close();
         }
 
-        private void tak_Click(object sender, EventArgs e)
+        private void Now_Click(object sender, EventArgs e)
         {
             ank.Visible = true;
-            smile.Visible = false;
-            tak.Visible = false;
-            nigdy.Visible = false;
-            potem.Visible = false;
-            ankieta_ask.Visible = false;
+            Survey_Smile_PictureBox.Visible = false;
+            Complete_Survey_Now_Button.Visible = false;
+            Never_Complete_Survey_Button.Visible = false;
+            Complete_Survey_Later_Button.Visible = false;
+            Survey_Label.Visible = false;
             this.ControlBox = true;
             this.Width = 800;
             this.Height = 600;
             Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM", "survey_done", "1");
         }
 
-        private void ankieta_Load(object sender, EventArgs e)
+        private void Survey_Load(object sender, EventArgs e)
         {
 
         }
