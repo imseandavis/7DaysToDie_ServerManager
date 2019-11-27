@@ -28,10 +28,10 @@ namespace _7DaysServerManager
                 string gamemode = "GameModeSurvivalMP", serverispublic = "false", cheat = "false", cpl = "false", zombierun = "0", dropondeathmode = "0", droponquitmode = "0", feral_c = "0", vac = "false", PersistentPlayerProfiles_l = "false", PlayerKillingMode = "0", adm = "false", hce = "0", sdnp = "", EnemySpawnMode_Selected="false";
 
                 // Set Game Mode
-                if (gamemode_coop.Checked)
-                    gamemode = "GameModeSurvivalSP";
-                else if (gamemode_surv_pvp.Checked)
-                    gamemode = "GameModeSurvivalMP";
+                //if (gamemode_coop.Checked)
+                //    gamemode = "GameModeSurvivalSP";
+                //else if (gamemode_surv_pvp.Checked)
+                //    gamemode = "GameModeSurvivalMP";
 
                 // Set Enemy Spawn Mode
                 if (EnemySpawnMode.Checked)
@@ -74,7 +74,7 @@ namespace _7DaysServerManager
                     PersistentPlayerProfiles_l = "true";
 
                 // Set EAC Mode
-                if (VACEnabled.Checked)
+                if (Enable_Easy_Anti_Cheat_CheckBox.Checked)
                     vac = "true";
 
                 // Set Air Drop Marker
@@ -267,11 +267,11 @@ namespace _7DaysServerManager
                 string config = "<?xml version=\"1.0\"?>\r\n<ServerSettings>\r\n  " +
                     "<property name=\"ServerPort\" 			        value=\"" + port.Text +
                     "\"/>\r\n  <property name=\"ServerIsPublic\" 		    	value=\"" + serverispublic + 
-                    "\"/>\r\n  <property name=\"ServerName\" 				    value=\"" + server_nazwa.Text + 
+                    "\"/>\r\n  <property name=\"ServerName\" 				    value=\"" + Server_Name_TextBox.Text + 
                     "\"/>\r\n  <property name=\"ServerPassword\" 		    	value=\"" + ServerPassword.Text + 
                     "\"/>\r\n  <property name=\"ServerMaxPlayerCount\"      	value=\"" + MaxPlayers.Value + 
-                    "\"/>\r\n  \r\n  <property name=\"GameWorld\" 		        	value=\"" + mapa.Text + 
-                    "\"/>\r\n  <property name=\"GameName\" 				    value=\"" + gamename.Text + 
+                    "\"/>\r\n  \r\n  <property name=\"GameWorld\" 		        	value=\"" + Game_World_Type_ComboBox.Text + 
+                    "\"/>\r\n  <property name=\"GameName\" 				    value=\"" + GameName_ComboBox.Text + 
                     "\"/>\r\n  <property name=\"GameDifficulty\" 		    	value=\"" + Game_Difficulty_TrackBar.Value +
                     "\"/>\r\n  <property name=\"GameMode\"				    	value=\"" + gamemode +
 
@@ -295,7 +295,7 @@ namespace _7DaysServerManager
                     "\"/>\r\n  <property name=\"ControlPanelPassword\"      	value=\"" + ctrlppass.Text + 
                     "\"/>\r\n\r\n  <property name=\"TelnetEnabled\"	 	    	value=\"true\"" +
                     "/>\r\n  <property name=\"TelnetPort\" 				    value=\"" + telnet_port_p.Text +
-                    "\"/>\r\n  <property name=\"AdminFileName\"			    value=\"" + AdminFileName.Text +
+                    "\"/>\r\n  <property name=\"AdminFileName\"			    value=\"" + Server_Admin_File_Name_TextBox.Text +
                     "\"/>\r\n\r\n  <property name=\"DropOnDeath\"			    	value=\"" + dropondeathmode + 
                     "\"/>\r\n  <property name=\"DropOnQuit\"			    	value=\"" + droponquitmode +
                     "\"/>\r\n  <property name=\"BlockDurabilityModifier\"		value=\"" + bdm_t +
@@ -362,25 +362,25 @@ namespace _7DaysServerManager
                             else if (name == "ServerIsPublic" && value == "true")
                                 ServerIsPublic.Checked = true;
                             else if (name == "GameName")
-                                this.gamename.Text = value;
+                                this.GameName_ComboBox.Text = value;
                             else if (name == "ServerName")
-                                server_nazwa.Text = value;
+                                Server_Name_TextBox.Text = value;
                             else if (name == "ServerPassword")
                                 ServerPassword.Text = value;
                             else if (name == "ServerMaxPlayerCount")
                                 MaxPlayers.Value = Convert.ToInt32(value);
                             else if (name == "GameWorld")
-                                mapa.Text = value;
+                                Game_World_Type_ComboBox.Text = value;
                             else if (name == "GameDifficulty")
                                 Game_Difficulty_TrackBar.Value = Convert.ToInt32(value);
-                            else if (name == "GameMode")
-                            {
-                                if (value == "GameModeSurvival")
-                                    gamemode_coop.Checked = true;
-                                else
-                                    gamemode_surv_pvp.Checked = true;
+                            //else if (name == "GameMode")
+                            //{
+                                //if (value == "GameModeSurvival")
+                                    //gamemode_coop.Checked = true;
+                                //else
+                                    //gamemode_surv_pvp.Checked = true;
                                
-                            }
+                            //}
                             else if (name == "PersistentPlayerProfiles" && value == "true")
                                 PersistentPlayerProfiles.Checked = true;
 
@@ -405,7 +405,7 @@ namespace _7DaysServerManager
                             else if (name == "PlayerSafeZoneHours")
                                 Player_Safe_Zone_Hours_TextBox.Text = value;
                             else if (name == "EACEnabled" && value == "false")
-                                VACEnabled.Checked = false;
+                                Enable_Easy_Anti_Cheat_CheckBox.Checked = false;
                             else if (name == "MaxSpawnedZombies")
                                 MaxSpawnedZombies.Value = Convert.ToInt32(value);
                             else if (name == "MaxSpawnedAnimals")
@@ -520,7 +520,7 @@ namespace _7DaysServerManager
                                 telnet_port_p.Text = value;
 
                             else if (name == "AdminFileName")
-                                AdminFileName.Text = value;
+                                Server_Admin_File_Name_TextBox.Text = value;
 
                             else if (name == "LootAbundance")
                                 LootAbundance.Value = Convert.ToInt32(value);

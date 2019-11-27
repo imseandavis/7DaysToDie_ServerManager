@@ -36,14 +36,14 @@ namespace _7DaysServerManager
             zombie_never_run.Enabled = false;
             ServerIsPublic.Enabled = false;
             ServerPassword.Enabled = false;
-            gamename.Enabled = false;
-            mapa.Enabled = false;
+            GameName_ComboBox.Enabled = false;
+            Game_World_Type_ComboBox.Enabled = false;
             port.Enabled = false;
             gamemode_coop.Enabled = false;
 
             cheatmode.Enabled = false;
             port.Enabled = false;
-            server_nazwa.Enabled = false;
+            Server_Name_TextBox.Enabled = false;
 
             // SQL Tab
             SQL_Enabled_CheckBox.Enabled = false;
@@ -74,7 +74,7 @@ namespace _7DaysServerManager
             nightpercentage.Enabled = false;
             bdm.Enabled = false;
 
-            AdminFileName.Enabled = false;
+            Server_Admin_File_Name_TextBox.Enabled = false;
             telnet_port_p.Enabled = false;
             telnet_psw.Enabled = false;
             LootAbundance.Enabled = false;
@@ -93,7 +93,7 @@ namespace _7DaysServerManager
             gamemode_surv_pvp.Enabled = false;
             feral.Enabled = false;
             Air_Drop_Frequency_TrackBar.Enabled = false;
-            VACEnabled.Enabled = false;
+            Enable_Easy_Anti_Cheat_CheckBox.Enabled = false;
             MaxSpawnedZombies.Enabled = false;
             save.Enabled = false;
 
@@ -134,13 +134,13 @@ namespace _7DaysServerManager
             zombie_never_run.Enabled = true;
             ServerIsPublic.Enabled = true;
             ServerPassword.Enabled = true;
-            gamename.Enabled = true;
-            mapa.Enabled = true;
+            GameName_ComboBox.Enabled = true;
+            Game_World_Type_ComboBox.Enabled = true;
             port.Enabled = true;
             gamemode_coop.Enabled = true;
             cheatmode.Enabled = true;
             port.Enabled = true;
-            server_nazwa.Enabled = true;
+            Server_Name_TextBox.Enabled = true;
 
             // SQL Tab
             SQL_Enabled_CheckBox.Enabled = true;
@@ -172,7 +172,7 @@ namespace _7DaysServerManager
             nightpercentage.Enabled = true;
             bdm.Enabled = true;
 
-            AdminFileName.Enabled = true;
+            Server_Admin_File_Name_TextBox.Enabled = true;
             telnet_port_p.Enabled = true;
             telnet_psw.Enabled = true;
             LootAbundance.Enabled = true;
@@ -191,7 +191,7 @@ namespace _7DaysServerManager
             gamemode_surv_pvp.Enabled = true;
             feral.Enabled = true;
             Air_Drop_Frequency_TrackBar.Enabled = true;
-            VACEnabled.Enabled = true;
+            Enable_Easy_Anti_Cheat_CheckBox.Enabled = true;
             MaxSpawnedZombies.Enabled = true;
             save.Enabled = true;
 

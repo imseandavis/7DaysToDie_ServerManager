@@ -126,13 +126,13 @@ namespace _7DaysServerManager
 
                 foreach (string dany_save in wszystkie_mapy)
                 {
-                    mapa.Items.Add(dany_save.Replace((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", null) + "\\Data\\Worlds\\", ""));
+                    Game_World_Type_ComboBox.Items.Add(dany_save.Replace((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", null) + "\\Data\\Worlds\\", ""));
                 }
             }
             catch { }
             try
             {
-                mapa.Text = "Navezgane";
+                Game_World_Type_ComboBox.Text = "Navezgane";
             }
             catch { }
             /*kuniec*/
@@ -272,7 +272,7 @@ namespace _7DaysServerManager
 
             if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "save_logfiles", null) == "1")
             {
-                save_logfiles.Checked = true;
+                Save_Logs_To_Files_CheckBox.Checked = true;
                 Save_Logs_CheckBox.Checked = true;
             }
 
@@ -701,7 +701,7 @@ namespace _7DaysServerManager
 
 
 
-            Download_maps(mapa.Text);
+            Download_maps(Game_World_Type_ComboBox.Text);
 
 
 

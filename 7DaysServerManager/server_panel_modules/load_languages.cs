@@ -9,10 +9,12 @@ namespace _7DaysServerManager
 
     public partial class Server_Panel_Form : Form
     {
-
-
+        // Load Language Localizations
         public void Load_Languages()
         {
+            //Server Management Tab
+
+
             About_Button.Text = LocalizedLanguage("about");
             Settings_Always_On_Top_CheckBox.Text = LocalizedLanguage("always_on_top");
             autobots.Text = LocalizedLanguage("autobots");
@@ -23,7 +25,7 @@ namespace _7DaysServerManager
             cpl_pass.Text = LocalizedLanguage("cpl_pass");
             cpl_port.Text = LocalizedLanguage("cpl_port");
             ctrlp.Text = LocalizedLanguage("ctrlp");
-            ctrlpanel.Text = LocalizedLanguage("ctrlpanel");
+            Admin_Control_Panel_GroupBox.Text = LocalizedLanguage("ctrlpanel");
             dostep.Text = LocalizedLanguage("dostep");
             dzien.Text = LocalizedLanguage("dzien") + " [1]";
 
@@ -37,10 +39,10 @@ namespace _7DaysServerManager
             Server_Controls_Group.Text = LocalizedLanguage("kontrola");
 
             Max_Players_GroupBox.Text = LocalizedLanguage("maxplgroup");
-            nazwamapa.Text = LocalizedLanguage("nazwamapa");
-            odery.Text = LocalizedLanguage("odery");
+            Game_World_Settings_GroupBox.Text = LocalizedLanguage("nazwamapa");
+            Other_Game_Settings_GroupBox.Text = LocalizedLanguage("odery");
             port_g.Text = LocalizedLanguage("port_g");
-            save_logfiles.Text = LocalizedLanguage("save_logfiles");
+            Save_Logs_To_Files_CheckBox.Text = LocalizedLanguage("save_logfiles");
             Save_Logs_CheckBox.Text = LocalizedLanguage("save_logfiles_2");
             ServerIsPublic.Text = LocalizedLanguage("ServerIsPublic");
 
@@ -116,16 +118,16 @@ namespace _7DaysServerManager
 
             Connect_Running_Server_Button.Text = LocalizedLanguage("reboot_con");
 
-            VACEnabled.Text = LocalizedLanguage("VACEnabled");
+            Enable_Easy_Anti_Cheat_CheckBox.Text = LocalizedLanguage("VACEnabled");
 
             Chat_GroupBox.Text = LocalizedLanguage("chat_g");
             
-            telnet_g.Text = LocalizedLanguage("telnet_g");
-            filename_g.Text = LocalizedLanguage("filename_g");
+            Telnet_Settings_GroupBox.Text = LocalizedLanguage("telnet_g");
+            Server_Admin_Config_File_GroupBox.Text = LocalizedLanguage("filename_g");
             telnet_port_l.Text = LocalizedLanguage("cpl_port");
             telnet_psw_l.Text = LocalizedLanguage("cpl_pass");
 
-            sa_edit.Text = LocalizedLanguage("sa_edit");
+            Server_Admin_Path_Selector_Button.Text = LocalizedLanguage("sa_edit");
             Browse_Game_File_Path_Button.Text = LocalizedLanguage("browse");
 
             Ban_GroupBox.Text = LocalizedLanguage("bantime_slider") + " [" + Convert.ToString(Ban_Slider_TrackBar.Value) + "]";
@@ -137,7 +139,7 @@ namespace _7DaysServerManager
             Warn_Before_Restart_CheckBox.Text = LocalizedLanguage("reset_chat");
             Enable_Auto_Restarts_CheckBox.Text = LocalizedLanguage("reset_enabled");
 
-            save_g.Text = LocalizedLanguage("save_g");
+            Game_Saves_Directory_GroupBox.Text = LocalizedLanguage("save_g");
             Server_Commands_Say_Switch_CheckBox.Text = LocalizedLanguage("spam_is_spam");
 
             if (Air_Drop_Frequency_TrackBar.Value != 0)
@@ -160,8 +162,8 @@ namespace _7DaysServerManager
             configfile_g.Text = LocalizedLanguage("configfile_g");
             configfile_e.Text = LocalizedLanguage("sa_edit");
 
-            ServerWebsiteURL_g.Text = LocalizedLanguage("ServerWebsiteURL_g");
-            ServerDescription_g.Text = LocalizedLanguage("ServerDescription_g");
+            ServerWebsiteURL_GroupBox.Text = LocalizedLanguage("ServerWebsiteURL_g");
+            ServerDescription_GroupBox.Text = LocalizedLanguage("ServerDescription_g");
         }
 
     }

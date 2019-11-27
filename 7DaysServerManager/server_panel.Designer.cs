@@ -146,7 +146,7 @@
             this.Connect_Running_Server_Button = new System.Windows.Forms.Button();
             this.Save_Logs_CheckBox = new System.Windows.Forms.CheckBox();
             this.Kill_Server_Process = new System.Windows.Forms.Button();
-            this.PlayerManagement_TabPage = new System.Windows.Forms.TabPage();
+            this.ManagePlayers_TabPage = new System.Windows.Forms.TabPage();
             this.Chat_GroupBox = new System.Windows.Forms.GroupBox();
             this.Chat_RichTextBox = new System.Windows.Forms.RichTextBox();
             this.Chat_Input_TextBox = new System.Windows.Forms.TextBox();
@@ -171,7 +171,7 @@
             this.steamid_header = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.GameSettings_TabPage = new System.Windows.Forms.TabPage();
             this.main_page_opts = new System.Windows.Forms.TabControl();
-            this.game_opts = new System.Windows.Forms.TabPage();
+            this.Game_Options_TabPage = new System.Windows.Forms.TabPage();
             this.Drop_On_Quit_GroupBox = new System.Windows.Forms.GroupBox();
             this.Drop_On_Quit_Mode_0 = new System.Windows.Forms.RadioButton();
             this.Drop_On_Quit_Mode_1 = new System.Windows.Forms.RadioButton();
@@ -245,29 +245,34 @@
             this.Drop_On_Death_Mode_2 = new System.Windows.Forms.RadioButton();
             this.Game_Difficulty_GroupBox = new System.Windows.Forms.GroupBox();
             this.Game_Difficulty_TrackBar = new System.Windows.Forms.TrackBar();
-            this.server_opts = new System.Windows.Forms.TabPage();
-            this.ServerWebsiteURL_g = new System.Windows.Forms.GroupBox();
+            this.Server_Options_TabPage = new System.Windows.Forms.TabPage();
+            this.Server_Login_Confirmation_Text_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Server_Login_Confirmation_Text_RichTextBox = new System.Windows.Forms.RichTextBox();
+            this.Server_Password_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Server_Password_TextBox = new System.Windows.Forms.TextBox();
+            this.Server_Name_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Server_Name_TextBox = new System.Windows.Forms.TextBox();
+            this.ServerWebsiteURL_GroupBox = new System.Windows.Forms.GroupBox();
             this.ServerWebsiteURL = new System.Windows.Forms.TextBox();
-            this.ServerDescription_g = new System.Windows.Forms.GroupBox();
+            this.ServerDescription_GroupBox = new System.Windows.Forms.GroupBox();
             this.ServerDescription = new System.Windows.Forms.TextBox();
             this.configfile_g = new System.Windows.Forms.GroupBox();
             this.configfile_e = new System.Windows.Forms.Button();
             this.configfile = new System.Windows.Forms.TextBox();
-            this.save_g = new System.Windows.Forms.GroupBox();
+            this.Game_Saves_Directory_GroupBox = new System.Windows.Forms.GroupBox();
             this.save = new System.Windows.Forms.TextBox();
-            this.filename_g = new System.Windows.Forms.GroupBox();
-            this.sa_edit = new System.Windows.Forms.Button();
-            this.AdminFileName = new System.Windows.Forms.TextBox();
-            this.nazwamapa = new System.Windows.Forms.GroupBox();
-            this.gamename = new System.Windows.Forms.ComboBox();
-            this.server_nazwa = new System.Windows.Forms.TextBox();
-            this.mapa = new System.Windows.Forms.ComboBox();
+            this.Server_Admin_Config_File_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Server_Admin_Path_Selector_Button = new System.Windows.Forms.Button();
+            this.Server_Admin_File_Name_TextBox = new System.Windows.Forms.TextBox();
+            this.Game_World_Settings_GroupBox = new System.Windows.Forms.GroupBox();
+            this.GameName_ComboBox = new System.Windows.Forms.ComboBox();
+            this.Game_World_Type_ComboBox = new System.Windows.Forms.ComboBox();
             this.dostep = new System.Windows.Forms.GroupBox();
             this.ServerPassword = new System.Windows.Forms.TextBox();
             this.ServerIsPublic = new System.Windows.Forms.CheckBox();
-            this.odery = new System.Windows.Forms.GroupBox();
-            this.VACEnabled = new System.Windows.Forms.CheckBox();
-            this.save_logfiles = new System.Windows.Forms.CheckBox();
+            this.Other_Game_Settings_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Enable_Easy_Anti_Cheat_CheckBox = new System.Windows.Forms.CheckBox();
+            this.Save_Logs_To_Files_CheckBox = new System.Windows.Forms.CheckBox();
             this.autobots = new System.Windows.Forms.GroupBox();
             this.EnemySpawnMode = new System.Windows.Forms.CheckBox();
             this.BedrollDeadZoneSize_g = new System.Windows.Forms.GroupBox();
@@ -279,7 +284,13 @@
             this.MaxSpawnedAnimals = new System.Windows.Forms.TrackBar();
             this.MaxSpawnedZombies_g = new System.Windows.Forms.GroupBox();
             this.MaxSpawnedZombies = new System.Windows.Forms.TrackBar();
-            this.net_opts = new System.Windows.Forms.TabPage();
+            this.Web_Options_TabPage = new System.Windows.Forms.TabPage();
+            this.Terminal_Window_Group_Box = new System.Windows.Forms.GroupBox();
+            this.Terminal_Window_Enabled_CheckBox = new System.Windows.Forms.CheckBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.Server_Visibility_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Server_Visibility_ComboBox = new System.Windows.Forms.ComboBox();
             this.MaxUncoveredMapChunksPerPlayer_g = new System.Windows.Forms.GroupBox();
             this.MaxUncoveredMapChunksPerPlayer = new System.Windows.Forms.TextBox();
             this.HideCommandExecutionLog_g = new System.Windows.Forms.GroupBox();
@@ -292,19 +303,35 @@
             this.RakNet = new System.Windows.Forms.CheckBox();
             this.SteamNetworking = new System.Windows.Forms.CheckBox();
             this.UNET = new System.Windows.Forms.CheckBox();
+            this.Telnet_Settings_GroupBox = new System.Windows.Forms.GroupBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Telnet_Enabled_CheckBox = new System.Windows.Forms.CheckBox();
+            this.telnet_port_l = new System.Windows.Forms.Label();
+            this.telnet_port_p = new System.Windows.Forms.TextBox();
+            this.telnet_psw_l = new System.Windows.Forms.Label();
+            this.telnet_psw = new System.Windows.Forms.TextBox();
             this.port_g = new System.Windows.Forms.GroupBox();
             this.port = new System.Windows.Forms.TextBox();
-            this.ctrlpanel = new System.Windows.Forms.GroupBox();
+            this.Admin_Control_Panel_GroupBox = new System.Windows.Forms.GroupBox();
             this.cpl_port = new System.Windows.Forms.Label();
             this.port_panel = new System.Windows.Forms.TextBox();
             this.cpl_pass = new System.Windows.Forms.Label();
             this.ctrlp = new System.Windows.Forms.CheckBox();
             this.ctrlppass = new System.Windows.Forms.TextBox();
-            this.telnet_g = new System.Windows.Forms.GroupBox();
-            this.telnet_port_l = new System.Windows.Forms.Label();
-            this.telnet_port_p = new System.Windows.Forms.TextBox();
-            this.telnet_psw_l = new System.Windows.Forms.Label();
-            this.telnet_psw = new System.Windows.Forms.TextBox();
+            this.Mod_Options_TabPage = new System.Windows.Forms.TabPage();
+            this.button1 = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.Retrieve_Mods_From_Nexus_Button = new System.Windows.Forms.Button();
+            this.Mods_List_GroupBox = new System.Windows.Forms.GroupBox();
             this.Header_Icons = new System.Windows.Forms.ImageList(this.components);
             this.Messaging_TabPage = new System.Windows.Forms.TabPage();
             this.Server_Chat_Messages_GroupBox = new System.Windows.Forms.GroupBox();
@@ -326,7 +353,6 @@
             this.Enable_Custom_Commands_CheckBox = new System.Windows.Forms.CheckBox();
             this.How_To_Commands_Button = new System.Windows.Forms.Button();
             this.Custom_Commands_RichTextBox = new System.Windows.Forms.RichTextBox();
-            this.Mods_TabPage = new System.Windows.Forms.TabPage();
             this.GlobalBanList_TabPage = new System.Windows.Forms.TabPage();
             this.check_bans = new System.Windows.Forms.Button();
             this.global_ban_g = new System.Windows.Forms.GroupBox();
@@ -434,6 +460,8 @@
             this.externalCallFile = new System.Windows.Forms.OpenFileDialog();
             this.discord_b = new System.Windows.Forms.Button();
             this.GitHub_Repo_Button = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.trackBar2 = new System.Windows.Forms.TrackBar();
             this.Settings_TabPage.SuspendLayout();
             this.Updates_GroupBox.SuspendLayout();
             this.exe_settings_g.SuspendLayout();
@@ -470,7 +498,7 @@
             this.Console_Group.SuspendLayout();
             this.Timers_Group.SuspendLayout();
             this.Server_Controls_Group.SuspendLayout();
-            this.PlayerManagement_TabPage.SuspendLayout();
+            this.ManagePlayers_TabPage.SuspendLayout();
             this.Chat_GroupBox.SuspendLayout();
             this.Player_GroupBox.SuspendLayout();
             this.Kick_GroupBox.SuspendLayout();
@@ -478,7 +506,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Ban_Slider_TrackBar)).BeginInit();
             this.GameSettings_TabPage.SuspendLayout();
             this.main_page_opts.SuspendLayout();
-            this.game_opts.SuspendLayout();
+            this.Game_Options_TabPage.SuspendLayout();
             this.Drop_On_Quit_GroupBox.SuspendLayout();
             this.Server_Reserved_Slots_GroupBox.SuspendLayout();
             this.Player_Killing_Mode_GroupBox.SuspendLayout();
@@ -509,15 +537,18 @@
             this.Drop_On_Death_Group_Box.SuspendLayout();
             this.Game_Difficulty_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Game_Difficulty_TrackBar)).BeginInit();
-            this.server_opts.SuspendLayout();
-            this.ServerWebsiteURL_g.SuspendLayout();
-            this.ServerDescription_g.SuspendLayout();
+            this.Server_Options_TabPage.SuspendLayout();
+            this.Server_Login_Confirmation_Text_GroupBox.SuspendLayout();
+            this.Server_Password_GroupBox.SuspendLayout();
+            this.Server_Name_GroupBox.SuspendLayout();
+            this.ServerWebsiteURL_GroupBox.SuspendLayout();
+            this.ServerDescription_GroupBox.SuspendLayout();
             this.configfile_g.SuspendLayout();
-            this.save_g.SuspendLayout();
-            this.filename_g.SuspendLayout();
-            this.nazwamapa.SuspendLayout();
+            this.Game_Saves_Directory_GroupBox.SuspendLayout();
+            this.Server_Admin_Config_File_GroupBox.SuspendLayout();
+            this.Game_World_Settings_GroupBox.SuspendLayout();
             this.dostep.SuspendLayout();
-            this.odery.SuspendLayout();
+            this.Other_Game_Settings_GroupBox.SuspendLayout();
             this.autobots.SuspendLayout();
             this.BedrollDeadZoneSize_g.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BedrollDeadZoneSize)).BeginInit();
@@ -527,14 +558,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.MaxSpawnedAnimals)).BeginInit();
             this.MaxSpawnedZombies_g.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MaxSpawnedZombies)).BeginInit();
-            this.net_opts.SuspendLayout();
+            this.Web_Options_TabPage.SuspendLayout();
+            this.Terminal_Window_Group_Box.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            this.Server_Visibility_GroupBox.SuspendLayout();
             this.MaxUncoveredMapChunksPerPlayer_g.SuspendLayout();
             this.HideCommandExecutionLog_g.SuspendLayout();
             this.panel2.SuspendLayout();
             this.ServerDisabledNetworkProtocols_g.SuspendLayout();
+            this.Telnet_Settings_GroupBox.SuspendLayout();
             this.port_g.SuspendLayout();
-            this.ctrlpanel.SuspendLayout();
-            this.telnet_g.SuspendLayout();
+            this.Admin_Control_Panel_GroupBox.SuspendLayout();
+            this.Mod_Options_TabPage.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.Messaging_TabPage.SuspendLayout();
             this.Server_Chat_Messages_GroupBox.SuspendLayout();
             this.Custom_Commands_GroupBox.SuspendLayout();
@@ -564,6 +602,7 @@
             this.Rewards_TabPage.SuspendLayout();
             this.deds_g.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_status)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
             this.SuspendLayout();
             // 
             // status_updater
@@ -1555,7 +1594,7 @@
             this.cmd.AcceptsReturn = true;
             this.cmd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmd.Location = new System.Drawing.Point(6, 471);
+            this.cmd.Location = new System.Drawing.Point(6, 477);
             this.cmd.Name = "cmd";
             this.cmd.Size = new System.Drawing.Size(689, 20);
             this.cmd.TabIndex = 17;
@@ -1574,7 +1613,7 @@
             this.Console_RichTextBox.Name = "Console_RichTextBox";
             this.Console_RichTextBox.ReadOnly = true;
             this.Console_RichTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.Console_RichTextBox.Size = new System.Drawing.Size(686, 451);
+            this.Console_RichTextBox.Size = new System.Drawing.Size(686, 457);
             this.Console_RichTextBox.TabIndex = 15;
             this.Console_RichTextBox.Text = "";
             this.Console_RichTextBox.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.Console_LinkClicked);
@@ -1599,10 +1638,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl.Controls.Add(this.ManageServer_TabPage);
-            this.tabControl.Controls.Add(this.PlayerManagement_TabPage);
+            this.tabControl.Controls.Add(this.ManagePlayers_TabPage);
             this.tabControl.Controls.Add(this.GameSettings_TabPage);
             this.tabControl.Controls.Add(this.Messaging_TabPage);
-            this.tabControl.Controls.Add(this.Mods_TabPage);
             this.tabControl.Controls.Add(this.GlobalBanList_TabPage);
             this.tabControl.Controls.Add(this.WebServer_TabPage);
             this.tabControl.Controls.Add(this.ServerTasks_TabPage);
@@ -1913,7 +1951,7 @@
             this.Console_Group.Controls.Add(this.cmd);
             this.Console_Group.Location = new System.Drawing.Point(3, 8);
             this.Console_Group.Name = "Console_Group";
-            this.Console_Group.Size = new System.Drawing.Size(698, 502);
+            this.Console_Group.Size = new System.Drawing.Size(698, 508);
             this.Console_Group.TabIndex = 18;
             this.Console_Group.TabStop = false;
             this.Console_Group.Text = "Console";
@@ -2123,24 +2161,24 @@
             this.Kill_Server_Process.UseVisualStyleBackColor = true;
             this.Kill_Server_Process.Click += new System.EventHandler(this.Kill_proccess_Click);
             // 
-            // PlayerManagement_TabPage
+            // ManagePlayers_TabPage
             // 
-            this.PlayerManagement_TabPage.BackColor = System.Drawing.SystemColors.Control;
-            this.PlayerManagement_TabPage.Controls.Add(this.Chat_GroupBox);
-            this.PlayerManagement_TabPage.Controls.Add(this.All_Players_Label);
-            this.PlayerManagement_TabPage.Controls.Add(this.Online_Players_Label);
-            this.PlayerManagement_TabPage.Controls.Add(this.All_Players_List);
-            this.PlayerManagement_TabPage.Controls.Add(this.Player_GroupBox);
-            this.PlayerManagement_TabPage.Controls.Add(this.Game_Time_Controls_GroupBox);
-            this.PlayerManagement_TabPage.Controls.Add(this.Kick_GroupBox);
-            this.PlayerManagement_TabPage.Controls.Add(this.Spawn_GroupBox);
-            this.PlayerManagement_TabPage.Controls.Add(this.Ban_GroupBox);
-            this.PlayerManagement_TabPage.Controls.Add(this.Online_Player_List);
-            this.PlayerManagement_TabPage.ImageIndex = 2;
-            this.PlayerManagement_TabPage.Location = new System.Drawing.Point(47, 4);
-            this.PlayerManagement_TabPage.Name = "PlayerManagement_TabPage";
-            this.PlayerManagement_TabPage.Size = new System.Drawing.Size(908, 684);
-            this.PlayerManagement_TabPage.TabIndex = 5;
+            this.ManagePlayers_TabPage.BackColor = System.Drawing.SystemColors.Control;
+            this.ManagePlayers_TabPage.Controls.Add(this.Chat_GroupBox);
+            this.ManagePlayers_TabPage.Controls.Add(this.All_Players_Label);
+            this.ManagePlayers_TabPage.Controls.Add(this.Online_Players_Label);
+            this.ManagePlayers_TabPage.Controls.Add(this.All_Players_List);
+            this.ManagePlayers_TabPage.Controls.Add(this.Player_GroupBox);
+            this.ManagePlayers_TabPage.Controls.Add(this.Game_Time_Controls_GroupBox);
+            this.ManagePlayers_TabPage.Controls.Add(this.Kick_GroupBox);
+            this.ManagePlayers_TabPage.Controls.Add(this.Spawn_GroupBox);
+            this.ManagePlayers_TabPage.Controls.Add(this.Ban_GroupBox);
+            this.ManagePlayers_TabPage.Controls.Add(this.Online_Player_List);
+            this.ManagePlayers_TabPage.ImageIndex = 2;
+            this.ManagePlayers_TabPage.Location = new System.Drawing.Point(47, 4);
+            this.ManagePlayers_TabPage.Name = "ManagePlayers_TabPage";
+            this.ManagePlayers_TabPage.Size = new System.Drawing.Size(908, 684);
+            this.ManagePlayers_TabPage.TabIndex = 5;
             // 
             // Chat_GroupBox
             // 
@@ -2422,9 +2460,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.main_page_opts.Appearance = System.Windows.Forms.TabAppearance.FlatButtons;
-            this.main_page_opts.Controls.Add(this.game_opts);
-            this.main_page_opts.Controls.Add(this.server_opts);
-            this.main_page_opts.Controls.Add(this.net_opts);
+            this.main_page_opts.Controls.Add(this.Game_Options_TabPage);
+            this.main_page_opts.Controls.Add(this.Server_Options_TabPage);
+            this.main_page_opts.Controls.Add(this.Web_Options_TabPage);
+            this.main_page_opts.Controls.Add(this.Mod_Options_TabPage);
             this.main_page_opts.ImageList = this.Header_Icons;
             this.main_page_opts.ItemSize = new System.Drawing.Size(46, 46);
             this.main_page_opts.Location = new System.Drawing.Point(3, 0);
@@ -2434,30 +2473,30 @@
             this.main_page_opts.Size = new System.Drawing.Size(905, 684);
             this.main_page_opts.TabIndex = 0;
             // 
-            // game_opts
+            // Game_Options_TabPage
             // 
-            this.game_opts.Controls.Add(this.Drop_On_Quit_GroupBox);
-            this.game_opts.Controls.Add(this.Server_Reserved_Slots_GroupBox);
-            this.game_opts.Controls.Add(this.Player_Killing_Mode_GroupBox);
-            this.game_opts.Controls.Add(this.Spawn_Settings_GroupBox);
-            this.game_opts.Controls.Add(this.Air_Drop_Frequency_GroupBox);
-            this.game_opts.Controls.Add(this.Land_Claim_GroupBox);
-            this.game_opts.Controls.Add(this.Loot_Respawn_Days_GroupBox);
-            this.game_opts.Controls.Add(this.Loot_Abundance_GroupBox);
-            this.game_opts.Controls.Add(this.Max_Players_GroupBox);
-            this.game_opts.Controls.Add(this.Game_Mode_Settings_GroupBox);
-            this.game_opts.Controls.Add(this.Zombie_Settings_GroupBox);
-            this.game_opts.Controls.Add(this.nightpercentage_g);
-            this.game_opts.Controls.Add(this.Day_Length_GroupBox);
-            this.game_opts.Controls.Add(this.bdm_g);
-            this.game_opts.Controls.Add(this.Drop_On_Death_Group_Box);
-            this.game_opts.Controls.Add(this.Game_Difficulty_GroupBox);
-            this.game_opts.ImageIndex = 5;
-            this.game_opts.Location = new System.Drawing.Point(4, 50);
-            this.game_opts.Name = "game_opts";
-            this.game_opts.Size = new System.Drawing.Size(897, 630);
-            this.game_opts.TabIndex = 2;
-            this.game_opts.UseVisualStyleBackColor = true;
+            this.Game_Options_TabPage.Controls.Add(this.Drop_On_Quit_GroupBox);
+            this.Game_Options_TabPage.Controls.Add(this.Server_Reserved_Slots_GroupBox);
+            this.Game_Options_TabPage.Controls.Add(this.Player_Killing_Mode_GroupBox);
+            this.Game_Options_TabPage.Controls.Add(this.Spawn_Settings_GroupBox);
+            this.Game_Options_TabPage.Controls.Add(this.Air_Drop_Frequency_GroupBox);
+            this.Game_Options_TabPage.Controls.Add(this.Land_Claim_GroupBox);
+            this.Game_Options_TabPage.Controls.Add(this.Loot_Respawn_Days_GroupBox);
+            this.Game_Options_TabPage.Controls.Add(this.Loot_Abundance_GroupBox);
+            this.Game_Options_TabPage.Controls.Add(this.Max_Players_GroupBox);
+            this.Game_Options_TabPage.Controls.Add(this.Game_Mode_Settings_GroupBox);
+            this.Game_Options_TabPage.Controls.Add(this.Zombie_Settings_GroupBox);
+            this.Game_Options_TabPage.Controls.Add(this.nightpercentage_g);
+            this.Game_Options_TabPage.Controls.Add(this.Day_Length_GroupBox);
+            this.Game_Options_TabPage.Controls.Add(this.bdm_g);
+            this.Game_Options_TabPage.Controls.Add(this.Drop_On_Death_Group_Box);
+            this.Game_Options_TabPage.Controls.Add(this.Game_Difficulty_GroupBox);
+            this.Game_Options_TabPage.ImageIndex = 5;
+            this.Game_Options_TabPage.Location = new System.Drawing.Point(4, 50);
+            this.Game_Options_TabPage.Name = "Game_Options_TabPage";
+            this.Game_Options_TabPage.Size = new System.Drawing.Size(897, 630);
+            this.Game_Options_TabPage.TabIndex = 2;
+            this.Game_Options_TabPage.UseVisualStyleBackColor = true;
             // 
             // Drop_On_Quit_GroupBox
             // 
@@ -3044,7 +3083,6 @@
             this.gamemode_surv_pvp.TabStop = true;
             this.gamemode_surv_pvp.Text = "Survival MP";
             this.gamemode_surv_pvp.UseVisualStyleBackColor = true;
-            this.gamemode_surv_pvp.CheckedChanged += new System.EventHandler(this.Gamemode_surv_pvp_CheckedChanged);
             // 
             // cheatmode
             // 
@@ -3285,34 +3323,94 @@
             this.Game_Difficulty_TrackBar.Value = 1;
             this.Game_Difficulty_TrackBar.Scroll += new System.EventHandler(this.Trudnosc_Scroll);
             // 
-            // server_opts
+            // Server_Options_TabPage
             // 
-            this.server_opts.Controls.Add(this.ServerWebsiteURL_g);
-            this.server_opts.Controls.Add(this.ServerDescription_g);
-            this.server_opts.Controls.Add(this.configfile_g);
-            this.server_opts.Controls.Add(this.save_g);
-            this.server_opts.Controls.Add(this.filename_g);
-            this.server_opts.Controls.Add(this.nazwamapa);
-            this.server_opts.Controls.Add(this.dostep);
-            this.server_opts.Controls.Add(this.odery);
-            this.server_opts.Controls.Add(this.autobots);
-            this.server_opts.ImageIndex = 6;
-            this.server_opts.Location = new System.Drawing.Point(4, 50);
-            this.server_opts.Name = "server_opts";
-            this.server_opts.Padding = new System.Windows.Forms.Padding(3);
-            this.server_opts.Size = new System.Drawing.Size(897, 630);
-            this.server_opts.TabIndex = 1;
-            this.server_opts.UseVisualStyleBackColor = true;
+            this.Server_Options_TabPage.Controls.Add(this.Server_Login_Confirmation_Text_GroupBox);
+            this.Server_Options_TabPage.Controls.Add(this.Server_Password_GroupBox);
+            this.Server_Options_TabPage.Controls.Add(this.Server_Name_GroupBox);
+            this.Server_Options_TabPage.Controls.Add(this.ServerWebsiteURL_GroupBox);
+            this.Server_Options_TabPage.Controls.Add(this.ServerDescription_GroupBox);
+            this.Server_Options_TabPage.Controls.Add(this.configfile_g);
+            this.Server_Options_TabPage.Controls.Add(this.Game_Saves_Directory_GroupBox);
+            this.Server_Options_TabPage.Controls.Add(this.Server_Admin_Config_File_GroupBox);
+            this.Server_Options_TabPage.Controls.Add(this.Game_World_Settings_GroupBox);
+            this.Server_Options_TabPage.Controls.Add(this.dostep);
+            this.Server_Options_TabPage.Controls.Add(this.Other_Game_Settings_GroupBox);
+            this.Server_Options_TabPage.Controls.Add(this.autobots);
+            this.Server_Options_TabPage.ImageIndex = 6;
+            this.Server_Options_TabPage.Location = new System.Drawing.Point(4, 50);
+            this.Server_Options_TabPage.Name = "Server_Options_TabPage";
+            this.Server_Options_TabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.Server_Options_TabPage.Size = new System.Drawing.Size(897, 630);
+            this.Server_Options_TabPage.TabIndex = 1;
+            this.Server_Options_TabPage.UseVisualStyleBackColor = true;
             // 
-            // ServerWebsiteURL_g
+            // Server_Login_Confirmation_Text_GroupBox
             // 
-            this.ServerWebsiteURL_g.Controls.Add(this.ServerWebsiteURL);
-            this.ServerWebsiteURL_g.Location = new System.Drawing.Point(8, 371);
-            this.ServerWebsiteURL_g.Name = "ServerWebsiteURL_g";
-            this.ServerWebsiteURL_g.Size = new System.Drawing.Size(369, 48);
-            this.ServerWebsiteURL_g.TabIndex = 42;
-            this.ServerWebsiteURL_g.TabStop = false;
-            this.ServerWebsiteURL_g.Text = "ServerWebsiteURL_g";
+            this.Server_Login_Confirmation_Text_GroupBox.Controls.Add(this.Server_Login_Confirmation_Text_RichTextBox);
+            this.Server_Login_Confirmation_Text_GroupBox.Location = new System.Drawing.Point(8, 222);
+            this.Server_Login_Confirmation_Text_GroupBox.Name = "Server_Login_Confirmation_Text_GroupBox";
+            this.Server_Login_Confirmation_Text_GroupBox.Size = new System.Drawing.Size(369, 144);
+            this.Server_Login_Confirmation_Text_GroupBox.TabIndex = 40;
+            this.Server_Login_Confirmation_Text_GroupBox.TabStop = false;
+            this.Server_Login_Confirmation_Text_GroupBox.Text = "Server Login Confirmation Text";
+            // 
+            // Server_Login_Confirmation_Text_RichTextBox
+            // 
+            this.Server_Login_Confirmation_Text_RichTextBox.Location = new System.Drawing.Point(9, 20);
+            this.Server_Login_Confirmation_Text_RichTextBox.Multiline = false;
+            this.Server_Login_Confirmation_Text_RichTextBox.Name = "Server_Login_Confirmation_Text_RichTextBox";
+            this.Server_Login_Confirmation_Text_RichTextBox.Size = new System.Drawing.Size(354, 117);
+            this.Server_Login_Confirmation_Text_RichTextBox.TabIndex = 0;
+            this.Server_Login_Confirmation_Text_RichTextBox.Text = "";
+            // 
+            // Server_Password_GroupBox
+            // 
+            this.Server_Password_GroupBox.Controls.Add(this.Server_Password_TextBox);
+            this.Server_Password_GroupBox.Location = new System.Drawing.Point(8, 168);
+            this.Server_Password_GroupBox.Name = "Server_Password_GroupBox";
+            this.Server_Password_GroupBox.Size = new System.Drawing.Size(369, 48);
+            this.Server_Password_GroupBox.TabIndex = 43;
+            this.Server_Password_GroupBox.TabStop = false;
+            this.Server_Password_GroupBox.Text = "Server Password";
+            // 
+            // Server_Password_TextBox
+            // 
+            this.Server_Password_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Server_Password_TextBox.Location = new System.Drawing.Point(9, 19);
+            this.Server_Password_TextBox.Name = "Server_Password_TextBox";
+            this.Server_Password_TextBox.Size = new System.Drawing.Size(354, 20);
+            this.Server_Password_TextBox.TabIndex = 30;
+            // 
+            // Server_Name_GroupBox
+            // 
+            this.Server_Name_GroupBox.Controls.Add(this.Server_Name_TextBox);
+            this.Server_Name_GroupBox.Location = new System.Drawing.Point(8, 6);
+            this.Server_Name_GroupBox.Name = "Server_Name_GroupBox";
+            this.Server_Name_GroupBox.Size = new System.Drawing.Size(369, 48);
+            this.Server_Name_GroupBox.TabIndex = 40;
+            this.Server_Name_GroupBox.TabStop = false;
+            this.Server_Name_GroupBox.Text = "Server Name";
+            // 
+            // Server_Name_TextBox
+            // 
+            this.Server_Name_TextBox.Location = new System.Drawing.Point(6, 19);
+            this.Server_Name_TextBox.Name = "Server_Name_TextBox";
+            this.Server_Name_TextBox.Size = new System.Drawing.Size(357, 20);
+            this.Server_Name_TextBox.TabIndex = 3;
+            this.Server_Name_TextBox.Text = "7DaysServerManager";
+            this.Server_Name_TextBox.TextChanged += new System.EventHandler(this.Server_nazwa_TextChanged);
+            // 
+            // ServerWebsiteURL_GroupBox
+            // 
+            this.ServerWebsiteURL_GroupBox.Controls.Add(this.ServerWebsiteURL);
+            this.ServerWebsiteURL_GroupBox.Location = new System.Drawing.Point(8, 114);
+            this.ServerWebsiteURL_GroupBox.Name = "ServerWebsiteURL_GroupBox";
+            this.ServerWebsiteURL_GroupBox.Size = new System.Drawing.Size(369, 48);
+            this.ServerWebsiteURL_GroupBox.TabIndex = 42;
+            this.ServerWebsiteURL_GroupBox.TabStop = false;
+            this.ServerWebsiteURL_GroupBox.Text = "Server Website URL";
             // 
             // ServerWebsiteURL
             // 
@@ -3324,15 +3422,15 @@
             this.ServerWebsiteURL.TabIndex = 30;
             this.ServerWebsiteURL.Text = "https://7dsm.smartmoose.org";
             // 
-            // ServerDescription_g
+            // ServerDescription_GroupBox
             // 
-            this.ServerDescription_g.Controls.Add(this.ServerDescription);
-            this.ServerDescription_g.Location = new System.Drawing.Point(8, 317);
-            this.ServerDescription_g.Name = "ServerDescription_g";
-            this.ServerDescription_g.Size = new System.Drawing.Size(369, 48);
-            this.ServerDescription_g.TabIndex = 41;
-            this.ServerDescription_g.TabStop = false;
-            this.ServerDescription_g.Text = "ServerDescription_g";
+            this.ServerDescription_GroupBox.Controls.Add(this.ServerDescription);
+            this.ServerDescription_GroupBox.Location = new System.Drawing.Point(8, 60);
+            this.ServerDescription_GroupBox.Name = "ServerDescription_GroupBox";
+            this.ServerDescription_GroupBox.Size = new System.Drawing.Size(369, 48);
+            this.ServerDescription_GroupBox.TabIndex = 41;
+            this.ServerDescription_GroupBox.TabStop = false;
+            this.ServerDescription_GroupBox.Text = "Server Description";
             // 
             // ServerDescription
             // 
@@ -3348,7 +3446,7 @@
             // 
             this.configfile_g.Controls.Add(this.configfile_e);
             this.configfile_g.Controls.Add(this.configfile);
-            this.configfile_g.Location = new System.Drawing.Point(194, 214);
+            this.configfile_g.Location = new System.Drawing.Point(194, 516);
             this.configfile_g.Name = "configfile_g";
             this.configfile_g.Size = new System.Drawing.Size(183, 48);
             this.configfile_g.TabIndex = 40;
@@ -3376,15 +3474,15 @@
             this.configfile.TabIndex = 30;
             this.configfile.TextChanged += new System.EventHandler(this.Configfile_TextChanged);
             // 
-            // save_g
+            // Game_Saves_Directory_GroupBox
             // 
-            this.save_g.Controls.Add(this.save);
-            this.save_g.Location = new System.Drawing.Point(8, 263);
-            this.save_g.Name = "save_g";
-            this.save_g.Size = new System.Drawing.Size(369, 48);
-            this.save_g.TabIndex = 39;
-            this.save_g.TabStop = false;
-            this.save_g.Text = "save_g";
+            this.Game_Saves_Directory_GroupBox.Controls.Add(this.save);
+            this.Game_Saves_Directory_GroupBox.Location = new System.Drawing.Point(8, 565);
+            this.Game_Saves_Directory_GroupBox.Name = "Game_Saves_Directory_GroupBox";
+            this.Game_Saves_Directory_GroupBox.Size = new System.Drawing.Size(369, 48);
+            this.Game_Saves_Directory_GroupBox.TabIndex = 39;
+            this.Game_Saves_Directory_GroupBox.TabStop = false;
+            this.Game_Saves_Directory_GroupBox.Text = "Game Saves Directory";
             // 
             // save
             // 
@@ -3396,86 +3494,80 @@
             this.save.TabIndex = 30;
             this.save.TextChanged += new System.EventHandler(this.Save_TextChanged);
             // 
-            // filename_g
+            // Server_Admin_Config_File_GroupBox
             // 
-            this.filename_g.Controls.Add(this.sa_edit);
-            this.filename_g.Controls.Add(this.AdminFileName);
-            this.filename_g.Location = new System.Drawing.Point(8, 214);
-            this.filename_g.Name = "filename_g";
-            this.filename_g.Size = new System.Drawing.Size(180, 48);
-            this.filename_g.TabIndex = 31;
-            this.filename_g.TabStop = false;
-            this.filename_g.Text = "filename_g";
+            this.Server_Admin_Config_File_GroupBox.Controls.Add(this.Server_Admin_Path_Selector_Button);
+            this.Server_Admin_Config_File_GroupBox.Controls.Add(this.Server_Admin_File_Name_TextBox);
+            this.Server_Admin_Config_File_GroupBox.Location = new System.Drawing.Point(8, 516);
+            this.Server_Admin_Config_File_GroupBox.Name = "Server_Admin_Config_File_GroupBox";
+            this.Server_Admin_Config_File_GroupBox.Size = new System.Drawing.Size(180, 48);
+            this.Server_Admin_Config_File_GroupBox.TabIndex = 31;
+            this.Server_Admin_Config_File_GroupBox.TabStop = false;
+            this.Server_Admin_Config_File_GroupBox.Text = "Server Admin Config File";
             // 
-            // sa_edit
+            // Server_Admin_Path_Selector_Button
             // 
-            this.sa_edit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.sa_edit.Location = new System.Drawing.Point(117, 17);
-            this.sa_edit.Name = "sa_edit";
-            this.sa_edit.Size = new System.Drawing.Size(57, 23);
-            this.sa_edit.TabIndex = 31;
-            this.sa_edit.Text = "sa_edit";
-            this.sa_edit.UseVisualStyleBackColor = true;
-            this.sa_edit.Click += new System.EventHandler(this.Sa_edit_Click);
+            this.Server_Admin_Path_Selector_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Server_Admin_Path_Selector_Button.Location = new System.Drawing.Point(117, 17);
+            this.Server_Admin_Path_Selector_Button.Name = "Server_Admin_Path_Selector_Button";
+            this.Server_Admin_Path_Selector_Button.Size = new System.Drawing.Size(57, 23);
+            this.Server_Admin_Path_Selector_Button.TabIndex = 31;
+            this.Server_Admin_Path_Selector_Button.Text = "Edit";
+            this.Server_Admin_Path_Selector_Button.UseVisualStyleBackColor = true;
+            this.Server_Admin_Path_Selector_Button.Click += new System.EventHandler(this.Sa_edit_Click);
             // 
-            // AdminFileName
+            // Server_Admin_File_Name_TextBox
             // 
-            this.AdminFileName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Server_Admin_File_Name_TextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.AdminFileName.Location = new System.Drawing.Point(13, 19);
-            this.AdminFileName.Name = "AdminFileName";
-            this.AdminFileName.Size = new System.Drawing.Size(98, 20);
-            this.AdminFileName.TabIndex = 30;
-            this.AdminFileName.Text = "serveradmin.xml";
-            this.AdminFileName.TextChanged += new System.EventHandler(this.AdminFileName_TextChanged);
+            this.Server_Admin_File_Name_TextBox.Location = new System.Drawing.Point(13, 19);
+            this.Server_Admin_File_Name_TextBox.Name = "Server_Admin_File_Name_TextBox";
+            this.Server_Admin_File_Name_TextBox.Size = new System.Drawing.Size(98, 20);
+            this.Server_Admin_File_Name_TextBox.TabIndex = 30;
+            this.Server_Admin_File_Name_TextBox.Text = "serveradmin.xml";
+            this.Server_Admin_File_Name_TextBox.TextChanged += new System.EventHandler(this.AdminFileName_TextChanged);
             // 
-            // nazwamapa
+            // Game_World_Settings_GroupBox
             // 
-            this.nazwamapa.Controls.Add(this.gamename);
-            this.nazwamapa.Controls.Add(this.server_nazwa);
-            this.nazwamapa.Controls.Add(this.mapa);
-            this.nazwamapa.Location = new System.Drawing.Point(8, 6);
-            this.nazwamapa.Name = "nazwamapa";
-            this.nazwamapa.Size = new System.Drawing.Size(369, 81);
-            this.nazwamapa.TabIndex = 28;
-            this.nazwamapa.TabStop = false;
-            this.nazwamapa.Text = "Nazwa gry i wybór mapy";
+            this.Game_World_Settings_GroupBox.Controls.Add(this.trackBar2);
+            this.Game_World_Settings_GroupBox.Controls.Add(this.textBox3);
+            this.Game_World_Settings_GroupBox.Controls.Add(this.GameName_ComboBox);
+            this.Game_World_Settings_GroupBox.Controls.Add(this.Game_World_Type_ComboBox);
+            this.Game_World_Settings_GroupBox.Location = new System.Drawing.Point(458, 469);
+            this.Game_World_Settings_GroupBox.Name = "Game_World_Settings_GroupBox";
+            this.Game_World_Settings_GroupBox.Size = new System.Drawing.Size(369, 144);
+            this.Game_World_Settings_GroupBox.TabIndex = 28;
+            this.Game_World_Settings_GroupBox.TabStop = false;
+            this.Game_World_Settings_GroupBox.Text = "Game World Settings";
             // 
-            // gamename
+            // GameName_ComboBox
             // 
-            this.gamename.FormattingEnabled = true;
-            this.gamename.Location = new System.Drawing.Point(6, 22);
-            this.gamename.Name = "gamename";
-            this.gamename.Size = new System.Drawing.Size(190, 21);
-            this.gamename.TabIndex = 4;
-            this.gamename.SelectedIndexChanged += new System.EventHandler(this.Nazwa_SelectedIndexChanged);
-            this.gamename.TextChanged += new System.EventHandler(this.Nazwa_TextChanged);
+            this.GameName_ComboBox.FormattingEnabled = true;
+            this.GameName_ComboBox.Location = new System.Drawing.Point(6, 22);
+            this.GameName_ComboBox.Name = "GameName_ComboBox";
+            this.GameName_ComboBox.Size = new System.Drawing.Size(190, 21);
+            this.GameName_ComboBox.TabIndex = 4;
+            this.GameName_ComboBox.TextChanged += new System.EventHandler(this.Nazwa_TextChanged);
             // 
-            // server_nazwa
+            // Game_World_Type_ComboBox
             // 
-            this.server_nazwa.Location = new System.Drawing.Point(6, 48);
-            this.server_nazwa.Name = "server_nazwa";
-            this.server_nazwa.Size = new System.Drawing.Size(190, 20);
-            this.server_nazwa.TabIndex = 3;
-            this.server_nazwa.Text = "7DaysServerManager";
-            this.server_nazwa.TextChanged += new System.EventHandler(this.Server_nazwa_TextChanged);
-            // 
-            // mapa
-            // 
-            this.mapa.DisplayMember = "a";
-            this.mapa.FormattingEnabled = true;
-            this.mapa.Location = new System.Drawing.Point(203, 22);
-            this.mapa.Name = "mapa";
-            this.mapa.Size = new System.Drawing.Size(160, 21);
-            this.mapa.TabIndex = 2;
-            this.mapa.Text = "Navezgane";
-            this.mapa.SelectedIndexChanged += new System.EventHandler(this.Mapa_SelectedIndexChanged);
+            this.Game_World_Type_ComboBox.DisplayMember = "a";
+            this.Game_World_Type_ComboBox.FormattingEnabled = true;
+            this.Game_World_Type_ComboBox.Items.AddRange(new object[] {
+            "Navegane",
+            "RWG"});
+            this.Game_World_Type_ComboBox.Location = new System.Drawing.Point(203, 22);
+            this.Game_World_Type_ComboBox.Name = "Game_World_Type_ComboBox";
+            this.Game_World_Type_ComboBox.Size = new System.Drawing.Size(160, 21);
+            this.Game_World_Type_ComboBox.TabIndex = 2;
+            this.Game_World_Type_ComboBox.Text = "Navezgane";
+            this.Game_World_Type_ComboBox.SelectedIndexChanged += new System.EventHandler(this.Mapa_SelectedIndexChanged);
             // 
             // dostep
             // 
             this.dostep.Controls.Add(this.ServerPassword);
             this.dostep.Controls.Add(this.ServerIsPublic);
-            this.dostep.Location = new System.Drawing.Point(8, 165);
+            this.dostep.Location = new System.Drawing.Point(8, 467);
             this.dostep.Name = "dostep";
             this.dostep.Size = new System.Drawing.Size(369, 43);
             this.dostep.TabIndex = 25;
@@ -3502,40 +3594,40 @@
             this.ServerIsPublic.UseVisualStyleBackColor = true;
             this.ServerIsPublic.CheckedChanged += new System.EventHandler(this.ServerIsPublic_CheckedChanged);
             // 
-            // odery
+            // Other_Game_Settings_GroupBox
             // 
-            this.odery.Controls.Add(this.VACEnabled);
-            this.odery.Controls.Add(this.save_logfiles);
-            this.odery.Location = new System.Drawing.Point(11, 93);
-            this.odery.Name = "odery";
-            this.odery.Size = new System.Drawing.Size(366, 66);
-            this.odery.TabIndex = 24;
-            this.odery.TabStop = false;
-            this.odery.Text = "Pozostałe";
+            this.Other_Game_Settings_GroupBox.Controls.Add(this.Enable_Easy_Anti_Cheat_CheckBox);
+            this.Other_Game_Settings_GroupBox.Controls.Add(this.Save_Logs_To_Files_CheckBox);
+            this.Other_Game_Settings_GroupBox.Location = new System.Drawing.Point(11, 395);
+            this.Other_Game_Settings_GroupBox.Name = "Other_Game_Settings_GroupBox";
+            this.Other_Game_Settings_GroupBox.Size = new System.Drawing.Size(366, 66);
+            this.Other_Game_Settings_GroupBox.TabIndex = 24;
+            this.Other_Game_Settings_GroupBox.TabStop = false;
+            this.Other_Game_Settings_GroupBox.Text = "Other Game Settings";
             // 
-            // VACEnabled
+            // Enable_Easy_Anti_Cheat_CheckBox
             // 
-            this.VACEnabled.AutoSize = true;
-            this.VACEnabled.Checked = true;
-            this.VACEnabled.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.VACEnabled.Location = new System.Drawing.Point(9, 41);
-            this.VACEnabled.Name = "VACEnabled";
-            this.VACEnabled.Size = new System.Drawing.Size(86, 17);
-            this.VACEnabled.TabIndex = 3;
-            this.VACEnabled.Text = "VACEnabled";
-            this.VACEnabled.UseVisualStyleBackColor = true;
-            this.VACEnabled.CheckedChanged += new System.EventHandler(this.VACEnabled_CheckedChanged);
+            this.Enable_Easy_Anti_Cheat_CheckBox.AutoSize = true;
+            this.Enable_Easy_Anti_Cheat_CheckBox.Checked = true;
+            this.Enable_Easy_Anti_Cheat_CheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.Enable_Easy_Anti_Cheat_CheckBox.Location = new System.Drawing.Point(9, 41);
+            this.Enable_Easy_Anti_Cheat_CheckBox.Name = "Enable_Easy_Anti_Cheat_CheckBox";
+            this.Enable_Easy_Anti_Cheat_CheckBox.Size = new System.Drawing.Size(134, 17);
+            this.Enable_Easy_Anti_Cheat_CheckBox.TabIndex = 3;
+            this.Enable_Easy_Anti_Cheat_CheckBox.Text = "Enable Easy AntiCheat";
+            this.Enable_Easy_Anti_Cheat_CheckBox.UseVisualStyleBackColor = true;
+            this.Enable_Easy_Anti_Cheat_CheckBox.CheckedChanged += new System.EventHandler(this.VACEnabled_CheckedChanged);
             // 
-            // save_logfiles
+            // Save_Logs_To_Files_CheckBox
             // 
-            this.save_logfiles.AutoSize = true;
-            this.save_logfiles.Location = new System.Drawing.Point(9, 18);
-            this.save_logfiles.Name = "save_logfiles";
-            this.save_logfiles.Size = new System.Drawing.Size(159, 17);
-            this.save_logfiles.TabIndex = 1;
-            this.save_logfiles.Text = "Zapisuj logi serwera do pliku";
-            this.save_logfiles.UseVisualStyleBackColor = true;
-            this.save_logfiles.CheckedChanged += new System.EventHandler(this.Save_logfiles_CheckedChanged);
+            this.Save_Logs_To_Files_CheckBox.AutoSize = true;
+            this.Save_Logs_To_Files_CheckBox.Location = new System.Drawing.Point(9, 18);
+            this.Save_Logs_To_Files_CheckBox.Name = "Save_Logs_To_Files_CheckBox";
+            this.Save_Logs_To_Files_CheckBox.Size = new System.Drawing.Size(117, 17);
+            this.Save_Logs_To_Files_CheckBox.TabIndex = 1;
+            this.Save_Logs_To_Files_CheckBox.Text = "Save Logs To Files";
+            this.Save_Logs_To_Files_CheckBox.UseVisualStyleBackColor = true;
+            this.Save_Logs_To_Files_CheckBox.CheckedChanged += new System.EventHandler(this.Save_logfiles_CheckedChanged);
             // 
             // autobots
             // 
@@ -3679,20 +3771,84 @@
             this.MaxSpawnedZombies.Value = 60;
             this.MaxSpawnedZombies.Scroll += new System.EventHandler(this.MaxSpawnedZombies_Scroll);
             // 
-            // net_opts
+            // Web_Options_TabPage
             // 
-            this.net_opts.Controls.Add(this.MaxUncoveredMapChunksPerPlayer_g);
-            this.net_opts.Controls.Add(this.HideCommandExecutionLog_g);
-            this.net_opts.Controls.Add(this.ServerDisabledNetworkProtocols_g);
-            this.net_opts.Controls.Add(this.port_g);
-            this.net_opts.Controls.Add(this.ctrlpanel);
-            this.net_opts.Controls.Add(this.telnet_g);
-            this.net_opts.ImageIndex = 12;
-            this.net_opts.Location = new System.Drawing.Point(4, 50);
-            this.net_opts.Name = "net_opts";
-            this.net_opts.Size = new System.Drawing.Size(897, 630);
-            this.net_opts.TabIndex = 3;
-            this.net_opts.UseVisualStyleBackColor = true;
+            this.Web_Options_TabPage.Controls.Add(this.Terminal_Window_Group_Box);
+            this.Web_Options_TabPage.Controls.Add(this.groupBox3);
+            this.Web_Options_TabPage.Controls.Add(this.Server_Visibility_GroupBox);
+            this.Web_Options_TabPage.Controls.Add(this.MaxUncoveredMapChunksPerPlayer_g);
+            this.Web_Options_TabPage.Controls.Add(this.HideCommandExecutionLog_g);
+            this.Web_Options_TabPage.Controls.Add(this.ServerDisabledNetworkProtocols_g);
+            this.Web_Options_TabPage.Controls.Add(this.Telnet_Settings_GroupBox);
+            this.Web_Options_TabPage.Controls.Add(this.port_g);
+            this.Web_Options_TabPage.Controls.Add(this.Admin_Control_Panel_GroupBox);
+            this.Web_Options_TabPage.ImageIndex = 12;
+            this.Web_Options_TabPage.Location = new System.Drawing.Point(4, 50);
+            this.Web_Options_TabPage.Name = "Web_Options_TabPage";
+            this.Web_Options_TabPage.Size = new System.Drawing.Size(897, 630);
+            this.Web_Options_TabPage.TabIndex = 3;
+            this.Web_Options_TabPage.UseVisualStyleBackColor = true;
+            // 
+            // Terminal_Window_Group_Box
+            // 
+            this.Terminal_Window_Group_Box.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Terminal_Window_Group_Box.Controls.Add(this.Terminal_Window_Enabled_CheckBox);
+            this.Terminal_Window_Group_Box.Location = new System.Drawing.Point(505, 180);
+            this.Terminal_Window_Group_Box.Name = "Terminal_Window_Group_Box";
+            this.Terminal_Window_Group_Box.Size = new System.Drawing.Size(382, 48);
+            this.Terminal_Window_Group_Box.TabIndex = 53;
+            this.Terminal_Window_Group_Box.TabStop = false;
+            this.Terminal_Window_Group_Box.Text = "Terminal Window";
+            // 
+            // Terminal_Window_Enabled_CheckBox
+            // 
+            this.Terminal_Window_Enabled_CheckBox.AutoSize = true;
+            this.Terminal_Window_Enabled_CheckBox.Location = new System.Drawing.Point(6, 19);
+            this.Terminal_Window_Enabled_CheckBox.Name = "Terminal_Window_Enabled_CheckBox";
+            this.Terminal_Window_Enabled_CheckBox.Size = new System.Drawing.Size(59, 17);
+            this.Terminal_Window_Enabled_CheckBox.TabIndex = 0;
+            this.Terminal_Window_Enabled_CheckBox.Text = "Enable";
+            this.Terminal_Window_Enabled_CheckBox.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox3.Controls.Add(this.trackBar1);
+            this.groupBox3.Location = new System.Drawing.Point(8, 435);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(485, 69);
+            this.groupBox3.TabIndex = 53;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Server Max World Transfer Speed (KiB/s)";
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.Location = new System.Drawing.Point(7, 20);
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(471, 45);
+            this.trackBar1.TabIndex = 0;
+            // 
+            // Server_Visibility_GroupBox
+            // 
+            this.Server_Visibility_GroupBox.Controls.Add(this.Server_Visibility_ComboBox);
+            this.Server_Visibility_GroupBox.Location = new System.Drawing.Point(279, 381);
+            this.Server_Visibility_GroupBox.Name = "Server_Visibility_GroupBox";
+            this.Server_Visibility_GroupBox.Size = new System.Drawing.Size(214, 48);
+            this.Server_Visibility_GroupBox.TabIndex = 24;
+            this.Server_Visibility_GroupBox.TabStop = false;
+            this.Server_Visibility_GroupBox.Text = "Server Visibility";
+            // 
+            // Server_Visibility_ComboBox
+            // 
+            this.Server_Visibility_ComboBox.FormattingEnabled = true;
+            this.Server_Visibility_ComboBox.Items.AddRange(new object[] {
+            "Not Listed",
+            "Only Listed To Friends",
+            "Public"});
+            this.Server_Visibility_ComboBox.Location = new System.Drawing.Point(6, 19);
+            this.Server_Visibility_ComboBox.Name = "Server_Visibility_ComboBox";
+            this.Server_Visibility_ComboBox.Size = new System.Drawing.Size(201, 21);
+            this.Server_Visibility_ComboBox.TabIndex = 0;
             // 
             // MaxUncoveredMapChunksPerPlayer_g
             // 
@@ -3765,9 +3921,9 @@
             this.HideCommandExecutionLog_2.AutoSize = true;
             this.HideCommandExecutionLog_2.Location = new System.Drawing.Point(3, 49);
             this.HideCommandExecutionLog_2.Name = "HideCommandExecutionLog_2";
-            this.HideCommandExecutionLog_2.Size = new System.Drawing.Size(215, 17);
+            this.HideCommandExecutionLog_2.Size = new System.Drawing.Size(218, 17);
             this.HideCommandExecutionLog_2.TabIndex = 26;
-            this.HideCommandExecutionLog_2.Text = "hite from &DSM/telnet and remote players";
+            this.HideCommandExecutionLog_2.Text = "hide from &DSM/telnet and remote players";
             this.HideCommandExecutionLog_2.UseVisualStyleBackColor = true;
             this.HideCommandExecutionLog_2.CheckedChanged += new System.EventHandler(this.HideCommandExecutionLog_2_CheckedChanged);
             // 
@@ -3789,7 +3945,7 @@
             this.ServerDisabledNetworkProtocols_g.Controls.Add(this.RakNet);
             this.ServerDisabledNetworkProtocols_g.Controls.Add(this.SteamNetworking);
             this.ServerDisabledNetworkProtocols_g.Controls.Add(this.UNET);
-            this.ServerDisabledNetworkProtocols_g.Location = new System.Drawing.Point(8, 197);
+            this.ServerDisabledNetworkProtocols_g.Location = new System.Drawing.Point(8, 275);
             this.ServerDisabledNetworkProtocols_g.Name = "ServerDisabledNetworkProtocols_g";
             this.ServerDisabledNetworkProtocols_g.Size = new System.Drawing.Size(485, 100);
             this.ServerDisabledNetworkProtocols_g.TabIndex = 31;
@@ -3829,12 +3985,112 @@
             this.UNET.UseVisualStyleBackColor = true;
             this.UNET.CheckedChanged += new System.EventHandler(this.UNET_CheckedChanged);
             // 
+            // Telnet_Settings_GroupBox
+            // 
+            this.Telnet_Settings_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Telnet_Settings_GroupBox.Controls.Add(this.label7);
+            this.Telnet_Settings_GroupBox.Controls.Add(this.textBox2);
+            this.Telnet_Settings_GroupBox.Controls.Add(this.label6);
+            this.Telnet_Settings_GroupBox.Controls.Add(this.textBox1);
+            this.Telnet_Settings_GroupBox.Controls.Add(this.Telnet_Enabled_CheckBox);
+            this.Telnet_Settings_GroupBox.Controls.Add(this.telnet_port_l);
+            this.Telnet_Settings_GroupBox.Controls.Add(this.telnet_port_p);
+            this.Telnet_Settings_GroupBox.Controls.Add(this.telnet_psw_l);
+            this.Telnet_Settings_GroupBox.Controls.Add(this.telnet_psw);
+            this.Telnet_Settings_GroupBox.Location = new System.Drawing.Point(8, 107);
+            this.Telnet_Settings_GroupBox.Name = "Telnet_Settings_GroupBox";
+            this.Telnet_Settings_GroupBox.Size = new System.Drawing.Size(485, 162);
+            this.Telnet_Settings_GroupBox.TabIndex = 29;
+            this.Telnet_Settings_GroupBox.TabStop = false;
+            this.Telnet_Settings_GroupBox.Text = "Telnet Settings";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(9, 122);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(135, 13);
+            this.label7.TabIndex = 21;
+            this.label7.Text = "Failed Login Blocked Time:";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(159, 119);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
+            this.textBox2.Size = new System.Drawing.Size(169, 20);
+            this.textBox2.TabIndex = 20;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(9, 97);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(91, 13);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "Failed Login Limit:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(159, 93);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.PasswordChar = '*';
+            this.textBox1.Size = new System.Drawing.Size(169, 20);
+            this.textBox1.TabIndex = 18;
+            // 
+            // Telnet_Enabled_CheckBox
+            // 
+            this.Telnet_Enabled_CheckBox.AutoSize = true;
+            this.Telnet_Enabled_CheckBox.Location = new System.Drawing.Point(9, 19);
+            this.Telnet_Enabled_CheckBox.Name = "Telnet_Enabled_CheckBox";
+            this.Telnet_Enabled_CheckBox.Size = new System.Drawing.Size(59, 17);
+            this.Telnet_Enabled_CheckBox.TabIndex = 17;
+            this.Telnet_Enabled_CheckBox.Text = "Enable";
+            this.Telnet_Enabled_CheckBox.UseVisualStyleBackColor = true;
+            // 
+            // telnet_port_l
+            // 
+            this.telnet_port_l.AutoSize = true;
+            this.telnet_port_l.Location = new System.Drawing.Point(9, 72);
+            this.telnet_port_l.Name = "telnet_port_l";
+            this.telnet_port_l.Size = new System.Drawing.Size(29, 13);
+            this.telnet_port_l.TabIndex = 16;
+            this.telnet_port_l.Text = "Port:";
+            // 
+            // telnet_port_p
+            // 
+            this.telnet_port_p.Location = new System.Drawing.Point(96, 69);
+            this.telnet_port_p.Name = "telnet_port_p";
+            this.telnet_port_p.Size = new System.Drawing.Size(49, 20);
+            this.telnet_port_p.TabIndex = 15;
+            this.telnet_port_p.Text = "8081";
+            this.telnet_port_p.TextChanged += new System.EventHandler(this.Telnet_port_TextChanged);
+            // 
+            // telnet_psw_l
+            // 
+            this.telnet_psw_l.AutoSize = true;
+            this.telnet_psw_l.Location = new System.Drawing.Point(10, 46);
+            this.telnet_psw_l.Name = "telnet_psw_l";
+            this.telnet_psw_l.Size = new System.Drawing.Size(56, 13);
+            this.telnet_psw_l.TabIndex = 14;
+            this.telnet_psw_l.Text = "Password:";
+            // 
+            // telnet_psw
+            // 
+            this.telnet_psw.Location = new System.Drawing.Point(96, 43);
+            this.telnet_psw.Name = "telnet_psw";
+            this.telnet_psw.PasswordChar = '*';
+            this.telnet_psw.Size = new System.Drawing.Size(169, 20);
+            this.telnet_psw.TabIndex = 13;
+            this.telnet_psw.TextChanged += new System.EventHandler(this.Telnet_psw_TextChanged);
+            // 
             // port_g
             // 
             this.port_g.Controls.Add(this.port);
-            this.port_g.Location = new System.Drawing.Point(8, 303);
+            this.port_g.Location = new System.Drawing.Point(8, 381);
             this.port_g.Name = "port_g";
-            this.port_g.Size = new System.Drawing.Size(485, 48);
+            this.port_g.Size = new System.Drawing.Size(265, 48);
             this.port_g.TabIndex = 23;
             this.port_g.TabStop = false;
             this.port_g.Text = "Server port";
@@ -3848,21 +4104,21 @@
             this.port.Text = "26900";
             this.port.TextChanged += new System.EventHandler(this.Port_TextChanged);
             // 
-            // ctrlpanel
+            // Admin_Control_Panel_GroupBox
             // 
-            this.ctrlpanel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.Admin_Control_Panel_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ctrlpanel.Controls.Add(this.cpl_port);
-            this.ctrlpanel.Controls.Add(this.port_panel);
-            this.ctrlpanel.Controls.Add(this.cpl_pass);
-            this.ctrlpanel.Controls.Add(this.ctrlp);
-            this.ctrlpanel.Controls.Add(this.ctrlppass);
-            this.ctrlpanel.Location = new System.Drawing.Point(8, 3);
-            this.ctrlpanel.Name = "ctrlpanel";
-            this.ctrlpanel.Size = new System.Drawing.Size(485, 98);
-            this.ctrlpanel.TabIndex = 26;
-            this.ctrlpanel.TabStop = false;
-            this.ctrlpanel.Text = "Control panel";
+            this.Admin_Control_Panel_GroupBox.Controls.Add(this.cpl_port);
+            this.Admin_Control_Panel_GroupBox.Controls.Add(this.port_panel);
+            this.Admin_Control_Panel_GroupBox.Controls.Add(this.cpl_pass);
+            this.Admin_Control_Panel_GroupBox.Controls.Add(this.ctrlp);
+            this.Admin_Control_Panel_GroupBox.Controls.Add(this.ctrlppass);
+            this.Admin_Control_Panel_GroupBox.Location = new System.Drawing.Point(8, 3);
+            this.Admin_Control_Panel_GroupBox.Name = "Admin_Control_Panel_GroupBox";
+            this.Admin_Control_Panel_GroupBox.Size = new System.Drawing.Size(485, 98);
+            this.Admin_Control_Panel_GroupBox.TabIndex = 26;
+            this.Admin_Control_Panel_GroupBox.TabStop = false;
+            this.Admin_Control_Panel_GroupBox.Text = "Control Panel";
             // 
             // cpl_port
             // 
@@ -3896,9 +4152,9 @@
             this.ctrlp.AutoSize = true;
             this.ctrlp.Location = new System.Drawing.Point(9, 19);
             this.ctrlp.Name = "ctrlp";
-            this.ctrlp.Size = new System.Drawing.Size(68, 17);
+            this.ctrlp.Size = new System.Drawing.Size(59, 17);
             this.ctrlp.TabIndex = 9;
-            this.ctrlp.Text = "Allow cpl";
+            this.ctrlp.Text = "Enable";
             this.ctrlp.UseVisualStyleBackColor = true;
             this.ctrlp.CheckedChanged += new System.EventHandler(this.Ctrlp_CheckedChanged);
             // 
@@ -3911,56 +4167,155 @@
             this.ctrlppass.TabIndex = 8;
             this.ctrlppass.TextChanged += new System.EventHandler(this.Ctrlppass_TextChanged);
             // 
-            // telnet_g
+            // Mod_Options_TabPage
             // 
-            this.telnet_g.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.telnet_g.Controls.Add(this.telnet_port_l);
-            this.telnet_g.Controls.Add(this.telnet_port_p);
-            this.telnet_g.Controls.Add(this.telnet_psw_l);
-            this.telnet_g.Controls.Add(this.telnet_psw);
-            this.telnet_g.Location = new System.Drawing.Point(8, 107);
-            this.telnet_g.Name = "telnet_g";
-            this.telnet_g.Size = new System.Drawing.Size(485, 84);
-            this.telnet_g.TabIndex = 29;
-            this.telnet_g.TabStop = false;
-            this.telnet_g.Text = "telnet_g";
+            this.Mod_Options_TabPage.Controls.Add(this.button1);
+            this.Mod_Options_TabPage.Controls.Add(this.groupBox2);
+            this.Mod_Options_TabPage.Controls.Add(this.groupBox1);
+            this.Mod_Options_TabPage.Controls.Add(this.Retrieve_Mods_From_Nexus_Button);
+            this.Mod_Options_TabPage.Controls.Add(this.Mods_List_GroupBox);
+            this.Mod_Options_TabPage.ImageIndex = 6;
+            this.Mod_Options_TabPage.Location = new System.Drawing.Point(4, 50);
+            this.Mod_Options_TabPage.Name = "Mod_Options_TabPage";
+            this.Mod_Options_TabPage.Size = new System.Drawing.Size(897, 630);
+            this.Mod_Options_TabPage.TabIndex = 4;
+            this.Mod_Options_TabPage.UseVisualStyleBackColor = true;
             // 
-            // telnet_port_l
+            // button1
             // 
-            this.telnet_port_l.AutoSize = true;
-            this.telnet_port_l.Location = new System.Drawing.Point(9, 54);
-            this.telnet_port_l.Name = "telnet_port_l";
-            this.telnet_port_l.Size = new System.Drawing.Size(29, 13);
-            this.telnet_port_l.TabIndex = 16;
-            this.telnet_port_l.Text = "Port:";
+            this.button1.Location = new System.Drawing.Point(3, 77);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(291, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "https://www.nexusmods.com/users/myaccount?tab=api";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // telnet_port_p
+            // groupBox2
             // 
-            this.telnet_port_p.Location = new System.Drawing.Point(96, 51);
-            this.telnet_port_p.Name = "telnet_port_p";
-            this.telnet_port_p.Size = new System.Drawing.Size(49, 20);
-            this.telnet_port_p.TabIndex = 15;
-            this.telnet_port_p.Text = "8081";
-            this.telnet_port_p.TextChanged += new System.EventHandler(this.Telnet_port_TextChanged);
+            this.groupBox2.Controls.Add(this.label5);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Location = new System.Drawing.Point(456, 389);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(431, 238);
+            this.groupBox2.TabIndex = 3;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Mod Info";
             // 
-            // telnet_psw_l
+            // label5
             // 
-            this.telnet_psw_l.AutoSize = true;
-            this.telnet_psw_l.Location = new System.Drawing.Point(10, 28);
-            this.telnet_psw_l.Name = "telnet_psw_l";
-            this.telnet_psw_l.Size = new System.Drawing.Size(56, 13);
-            this.telnet_psw_l.TabIndex = 14;
-            this.telnet_psw_l.Text = "Password:";
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(44, 102);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(45, 13);
+            this.label5.TabIndex = 3;
+            this.label5.Text = "Version:";
             // 
-            // telnet_psw
+            // label4
             // 
-            this.telnet_psw.Location = new System.Drawing.Point(96, 25);
-            this.telnet_psw.Name = "telnet_psw";
-            this.telnet_psw.PasswordChar = '*';
-            this.telnet_psw.Size = new System.Drawing.Size(169, 20);
-            this.telnet_psw.TabIndex = 13;
-            this.telnet_psw.TextChanged += new System.EventHandler(this.Telnet_psw_TextChanged);
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(44, 79);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(41, 13);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Author:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(44, 57);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 13);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Description:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(44, 35);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Name:";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.checkedListBox1);
+            this.groupBox1.Location = new System.Drawing.Point(7, 389);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(443, 238);
+            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Enable / Disable Installed Mods";
+            // 
+            // checkedListBox1
+            // 
+            this.checkedListBox1.FormattingEnabled = true;
+            this.checkedListBox1.Items.AddRange(new object[] {
+            "hg",
+            "das",
+            "dg",
+            "a",
+            "da",
+            "sd",
+            "gas",
+            "dg",
+            "asd",
+            "ga",
+            "dfg",
+            "d",
+            "fgs",
+            "df",
+            "gsd",
+            "fg",
+            "sdgf",
+            "kjhlkjh",
+            "d",
+            "fg",
+            "dfg",
+            "d",
+            "fg",
+            "ds",
+            "fgs",
+            "df",
+            "s",
+            "dh",
+            "fg",
+            "n",
+            "x",
+            "c",
+            "b",
+            "d",
+            "fh",
+            "ar",
+            "h",
+            "a",
+            "h",
+            "st"});
+            this.checkedListBox1.Location = new System.Drawing.Point(6, 19);
+            this.checkedListBox1.Name = "checkedListBox1";
+            this.checkedListBox1.Size = new System.Drawing.Size(431, 214);
+            this.checkedListBox1.TabIndex = 2;
+            // 
+            // Retrieve_Mods_From_Nexus_Button
+            // 
+            this.Retrieve_Mods_From_Nexus_Button.Location = new System.Drawing.Point(3, 4);
+            this.Retrieve_Mods_From_Nexus_Button.Name = "Retrieve_Mods_From_Nexus_Button";
+            this.Retrieve_Mods_From_Nexus_Button.Size = new System.Drawing.Size(291, 23);
+            this.Retrieve_Mods_From_Nexus_Button.TabIndex = 1;
+            this.Retrieve_Mods_From_Nexus_Button.Text = "Get Latest Mods List From Nexus (Last 30 Days)";
+            this.Retrieve_Mods_From_Nexus_Button.UseVisualStyleBackColor = true;
+            this.Retrieve_Mods_From_Nexus_Button.Click += new System.EventHandler(this.Retrieve_Mods_From_Nexus_Button_Click);
+            // 
+            // Mods_List_GroupBox
+            // 
+            this.Mods_List_GroupBox.Location = new System.Drawing.Point(300, 3);
+            this.Mods_List_GroupBox.Name = "Mods_List_GroupBox";
+            this.Mods_List_GroupBox.Size = new System.Drawing.Size(587, 297);
+            this.Mods_List_GroupBox.TabIndex = 0;
+            this.Mods_List_GroupBox.TabStop = false;
+            this.Mods_List_GroupBox.Text = "Nexus Mods List";
             // 
             // Header_Icons
             // 
@@ -4038,7 +4393,6 @@
             this.Backup_Completed_Message_Label.Size = new System.Drawing.Size(100, 13);
             this.Backup_Completed_Message_Label.TabIndex = 11;
             this.Backup_Completed_Message_Label.Text = "Backup Completed:";
-            this.Backup_Completed_Message_Label.Click += new System.EventHandler(this.Backup_Completed_Message_Label_Click);
             // 
             // reboot
             // 
@@ -4194,14 +4548,6 @@
             this.Custom_Commands_RichTextBox.TabIndex = 13;
             this.Custom_Commands_RichTextBox.Text = "";
             this.Custom_Commands_RichTextBox.TextChanged += new System.EventHandler(this.Customcommands_TextChanged);
-            // 
-            // Mods_TabPage
-            // 
-            this.Mods_TabPage.Location = new System.Drawing.Point(47, 4);
-            this.Mods_TabPage.Name = "Mods_TabPage";
-            this.Mods_TabPage.Size = new System.Drawing.Size(908, 684);
-            this.Mods_TabPage.TabIndex = 19;
-            this.Mods_TabPage.UseVisualStyleBackColor = true;
             // 
             // GlobalBanList_TabPage
             // 
@@ -5396,6 +5742,25 @@
             this.GitHub_Repo_Button.UseVisualStyleBackColor = true;
             this.GitHub_Repo_Button.Click += new System.EventHandler(this.GitHub_Repo_Button_Click);
             // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(91, 67);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.PasswordChar = '*';
+            this.textBox3.Size = new System.Drawing.Size(158, 20);
+            this.textBox3.TabIndex = 5;
+            // 
+            // trackBar2
+            // 
+            this.trackBar2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.trackBar2.Location = new System.Drawing.Point(15, 93);
+            this.trackBar2.Maximum = 150;
+            this.trackBar2.Name = "trackBar2";
+            this.trackBar2.Size = new System.Drawing.Size(338, 45);
+            this.trackBar2.TabIndex = 9;
+            this.trackBar2.Value = 15;
+            // 
             // Server_Panel_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -5476,8 +5841,8 @@
             this.Timers_Group.PerformLayout();
             this.Server_Controls_Group.ResumeLayout(false);
             this.Server_Controls_Group.PerformLayout();
-            this.PlayerManagement_TabPage.ResumeLayout(false);
-            this.PlayerManagement_TabPage.PerformLayout();
+            this.ManagePlayers_TabPage.ResumeLayout(false);
+            this.ManagePlayers_TabPage.PerformLayout();
             this.Chat_GroupBox.ResumeLayout(false);
             this.Chat_GroupBox.PerformLayout();
             this.Player_GroupBox.ResumeLayout(false);
@@ -5487,7 +5852,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Ban_Slider_TrackBar)).EndInit();
             this.GameSettings_TabPage.ResumeLayout(false);
             this.main_page_opts.ResumeLayout(false);
-            this.game_opts.ResumeLayout(false);
+            this.Game_Options_TabPage.ResumeLayout(false);
             this.Drop_On_Quit_GroupBox.ResumeLayout(false);
             this.Drop_On_Quit_GroupBox.PerformLayout();
             this.Server_Reserved_Slots_GroupBox.ResumeLayout(false);
@@ -5538,23 +5903,28 @@
             this.Game_Difficulty_GroupBox.ResumeLayout(false);
             this.Game_Difficulty_GroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Game_Difficulty_TrackBar)).EndInit();
-            this.server_opts.ResumeLayout(false);
-            this.ServerWebsiteURL_g.ResumeLayout(false);
-            this.ServerWebsiteURL_g.PerformLayout();
-            this.ServerDescription_g.ResumeLayout(false);
-            this.ServerDescription_g.PerformLayout();
+            this.Server_Options_TabPage.ResumeLayout(false);
+            this.Server_Login_Confirmation_Text_GroupBox.ResumeLayout(false);
+            this.Server_Password_GroupBox.ResumeLayout(false);
+            this.Server_Password_GroupBox.PerformLayout();
+            this.Server_Name_GroupBox.ResumeLayout(false);
+            this.Server_Name_GroupBox.PerformLayout();
+            this.ServerWebsiteURL_GroupBox.ResumeLayout(false);
+            this.ServerWebsiteURL_GroupBox.PerformLayout();
+            this.ServerDescription_GroupBox.ResumeLayout(false);
+            this.ServerDescription_GroupBox.PerformLayout();
             this.configfile_g.ResumeLayout(false);
             this.configfile_g.PerformLayout();
-            this.save_g.ResumeLayout(false);
-            this.save_g.PerformLayout();
-            this.filename_g.ResumeLayout(false);
-            this.filename_g.PerformLayout();
-            this.nazwamapa.ResumeLayout(false);
-            this.nazwamapa.PerformLayout();
+            this.Game_Saves_Directory_GroupBox.ResumeLayout(false);
+            this.Game_Saves_Directory_GroupBox.PerformLayout();
+            this.Server_Admin_Config_File_GroupBox.ResumeLayout(false);
+            this.Server_Admin_Config_File_GroupBox.PerformLayout();
+            this.Game_World_Settings_GroupBox.ResumeLayout(false);
+            this.Game_World_Settings_GroupBox.PerformLayout();
             this.dostep.ResumeLayout(false);
             this.dostep.PerformLayout();
-            this.odery.ResumeLayout(false);
-            this.odery.PerformLayout();
+            this.Other_Game_Settings_GroupBox.ResumeLayout(false);
+            this.Other_Game_Settings_GroupBox.PerformLayout();
             this.autobots.ResumeLayout(false);
             this.autobots.PerformLayout();
             this.BedrollDeadZoneSize_g.ResumeLayout(false);
@@ -5569,7 +5939,13 @@
             this.MaxSpawnedZombies_g.ResumeLayout(false);
             this.MaxSpawnedZombies_g.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MaxSpawnedZombies)).EndInit();
-            this.net_opts.ResumeLayout(false);
+            this.Web_Options_TabPage.ResumeLayout(false);
+            this.Terminal_Window_Group_Box.ResumeLayout(false);
+            this.Terminal_Window_Group_Box.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            this.Server_Visibility_GroupBox.ResumeLayout(false);
             this.MaxUncoveredMapChunksPerPlayer_g.ResumeLayout(false);
             this.MaxUncoveredMapChunksPerPlayer_g.PerformLayout();
             this.HideCommandExecutionLog_g.ResumeLayout(false);
@@ -5577,12 +5953,16 @@
             this.panel2.PerformLayout();
             this.ServerDisabledNetworkProtocols_g.ResumeLayout(false);
             this.ServerDisabledNetworkProtocols_g.PerformLayout();
+            this.Telnet_Settings_GroupBox.ResumeLayout(false);
+            this.Telnet_Settings_GroupBox.PerformLayout();
             this.port_g.ResumeLayout(false);
             this.port_g.PerformLayout();
-            this.ctrlpanel.ResumeLayout(false);
-            this.ctrlpanel.PerformLayout();
-            this.telnet_g.ResumeLayout(false);
-            this.telnet_g.PerformLayout();
+            this.Admin_Control_Panel_GroupBox.ResumeLayout(false);
+            this.Admin_Control_Panel_GroupBox.PerformLayout();
+            this.Mod_Options_TabPage.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.Messaging_TabPage.ResumeLayout(false);
             this.Server_Chat_Messages_GroupBox.ResumeLayout(false);
             this.Server_Chat_Messages_GroupBox.PerformLayout();
@@ -5625,6 +6005,7 @@
             this.deds_g.ResumeLayout(false);
             this.deds_g.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_status)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -5657,7 +6038,7 @@
         private System.Windows.Forms.TabControl tabControl;
         private System.ComponentModel.BackgroundWorker server_startup_tasks;
         private System.Windows.Forms.ImageList Header_Icons;
-        private System.Windows.Forms.TabPage PlayerManagement_TabPage;
+        private System.Windows.Forms.TabPage ManagePlayers_TabPage;
         private System.Windows.Forms.Button Kick_Player_Button;
         private System.Windows.Forms.Button Ban_Hammer_Button;
         private System.Windows.Forms.ProgressBar startbar;
@@ -5719,8 +6100,8 @@
         private System.Windows.Forms.Button forumklik;
         private System.Windows.Forms.TabPage GameSettings_TabPage;
         private System.Windows.Forms.TabControl main_page_opts;
-        private System.Windows.Forms.TabPage server_opts;
-        private System.Windows.Forms.TabPage game_opts;
+        private System.Windows.Forms.TabPage Server_Options_TabPage;
+        private System.Windows.Forms.TabPage Game_Options_TabPage;
         private System.Windows.Forms.GroupBox bdm_g;
         private System.Windows.Forms.TrackBar bdm;
         private System.Windows.Forms.GroupBox Drop_On_Death_Group_Box;
@@ -5734,11 +6115,11 @@
         private System.Windows.Forms.RadioButton Drop_On_Quit_Mode_0;
         private System.Windows.Forms.GroupBox Game_Difficulty_GroupBox;
         private System.Windows.Forms.TrackBar Game_Difficulty_TrackBar;
-        private System.Windows.Forms.GroupBox nazwamapa;
-        private System.Windows.Forms.ComboBox gamename;
-        private System.Windows.Forms.TextBox server_nazwa;
-        private System.Windows.Forms.ComboBox mapa;
-        private System.Windows.Forms.GroupBox ctrlpanel;
+        private System.Windows.Forms.GroupBox Game_World_Settings_GroupBox;
+        private System.Windows.Forms.ComboBox GameName_ComboBox;
+        private System.Windows.Forms.TextBox Server_Name_TextBox;
+        private System.Windows.Forms.ComboBox Game_World_Type_ComboBox;
+        private System.Windows.Forms.GroupBox Admin_Control_Panel_GroupBox;
         private System.Windows.Forms.Label cpl_port;
         private System.Windows.Forms.TextBox port_panel;
         private System.Windows.Forms.Label cpl_pass;
@@ -5749,8 +6130,8 @@
         private System.Windows.Forms.GroupBox dostep;
         private System.Windows.Forms.TextBox ServerPassword;
         private System.Windows.Forms.CheckBox ServerIsPublic;
-        private System.Windows.Forms.GroupBox odery;
-        private System.Windows.Forms.CheckBox save_logfiles;
+        private System.Windows.Forms.GroupBox Other_Game_Settings_GroupBox;
+        private System.Windows.Forms.CheckBox Save_Logs_To_Files_CheckBox;
         private System.Windows.Forms.GroupBox nightpercentage_g;
         private System.Windows.Forms.TrackBar nightpercentage;
         private System.Windows.Forms.GroupBox Day_Length_GroupBox;
@@ -5765,18 +6146,18 @@
         private System.Windows.Forms.RadioButton zombie_normal;
         private System.Windows.Forms.RadioButton zombie_run;
         private System.Windows.Forms.GroupBox Max_Players_GroupBox;
-        private System.Windows.Forms.GroupBox telnet_g;
+        private System.Windows.Forms.GroupBox Telnet_Settings_GroupBox;
         private System.Windows.Forms.Label telnet_port_l;
         private System.Windows.Forms.TextBox telnet_port_p;
         private System.Windows.Forms.Label telnet_psw_l;
         private System.Windows.Forms.TextBox telnet_psw;
-        private System.Windows.Forms.TextBox AdminFileName;
-        private System.Windows.Forms.GroupBox filename_g;
+        private System.Windows.Forms.TextBox Server_Admin_File_Name_TextBox;
+        private System.Windows.Forms.GroupBox Server_Admin_Config_File_GroupBox;
         private System.Windows.Forms.GroupBox Loot_Abundance_GroupBox;
         private System.Windows.Forms.TrackBar LootAbundance;
         private System.Windows.Forms.GroupBox Loot_Respawn_Days_GroupBox;
         private System.Windows.Forms.TrackBar LootRespawnDays;
-        private System.Windows.Forms.Button sa_edit;
+        private System.Windows.Forms.Button Server_Admin_Path_Selector_Button;
         private System.Windows.Forms.Button Browse_Game_File_Path_Button;
         private System.Windows.Forms.RadioButton gamemode_surv_pvp;
         private System.Windows.Forms.GroupBox Land_Claim_Dead_Zone_GroupBox;
@@ -5806,7 +6187,7 @@
         private System.Windows.Forms.TrackBar Auto_Restart_Time_TrackBar;
         private System.Windows.Forms.Label Auto_Restart_Timer;
         private System.Windows.Forms.Label Auto_Restart_Timer_Label;
-        private System.Windows.Forms.GroupBox save_g;
+        private System.Windows.Forms.GroupBox Game_Saves_Directory_GroupBox;
         private System.Windows.Forms.TextBox save;
         private System.Windows.Forms.CheckBox Server_Commands_Say_Switch_CheckBox;
         private System.ComponentModel.BackgroundWorker stats;
@@ -5815,7 +6196,7 @@
         private System.Windows.Forms.CheckBox feral;
         private System.Windows.Forms.Button Connect_Running_Server_Button;
         private System.ComponentModel.BackgroundWorker reboot_telnet;
-        private System.Windows.Forms.CheckBox VACEnabled;
+        private System.Windows.Forms.CheckBox Enable_Easy_Anti_Cheat_CheckBox;
         private System.Windows.Forms.GroupBox MaxSpawnedZombies_g;
         private System.Windows.Forms.TrackBar MaxSpawnedZombies;
         private System.Windows.Forms.GroupBox Chat_GroupBox;
@@ -5842,9 +6223,9 @@
         private System.Windows.Forms.GroupBox configfile_g;
         private System.Windows.Forms.Button configfile_e;
         private System.Windows.Forms.TextBox configfile;
-        private System.Windows.Forms.GroupBox ServerWebsiteURL_g;
+        private System.Windows.Forms.GroupBox ServerWebsiteURL_GroupBox;
         private System.Windows.Forms.TextBox ServerWebsiteURL;
-        private System.Windows.Forms.GroupBox ServerDescription_g;
+        private System.Windows.Forms.GroupBox ServerDescription_GroupBox;
         private System.Windows.Forms.TextBox ServerDescription;
         private System.Windows.Forms.CheckBox PersistentPlayerProfiles;
         private System.Windows.Forms.CheckBox Settings_Skip_Profiles_CheckBox;
@@ -5982,7 +6363,7 @@
         private System.Windows.Forms.Label allowed_replacements_l;
         private System.Windows.Forms.CheckBox hide_footer;
         private System.Windows.Forms.PictureBox prem_help3;
-        private System.Windows.Forms.TabPage net_opts;
+        private System.Windows.Forms.TabPage Web_Options_TabPage;
         private System.Windows.Forms.GroupBox Server_Reserved_Slots_GroupBox;
         private System.Windows.Forms.TextBox Server_Admin_Reserved_Slots_Permission;
         private System.Windows.Forms.Label Admin_Slot_Text_Label;
@@ -6033,8 +6414,36 @@
         private System.Windows.Forms.PictureBox SQL_Username_Info_PictureBox;
         private System.Windows.Forms.PictureBox SQL_Database_Name_Info_PictureBox;
         private System.Windows.Forms.PictureBox SQL_Password_Info_PictureBox;
-        private System.Windows.Forms.TabPage Mods_TabPage;
         private System.Windows.Forms.Label Private_IP_Address_Label;
         private System.Windows.Forms.Button GitHub_Repo_Button;
+        private System.Windows.Forms.TabPage Mod_Options_TabPage;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.Button Retrieve_Mods_From_Nexus_Button;
+        private System.Windows.Forms.GroupBox Mods_List_GroupBox;
+        private System.Windows.Forms.GroupBox Server_Name_GroupBox;
+        private System.Windows.Forms.GroupBox Server_Login_Confirmation_Text_GroupBox;
+        private System.Windows.Forms.RichTextBox Server_Login_Confirmation_Text_RichTextBox;
+        private System.Windows.Forms.GroupBox Server_Password_GroupBox;
+        private System.Windows.Forms.TextBox Server_Password_TextBox;
+        private System.Windows.Forms.GroupBox Server_Visibility_GroupBox;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.ComboBox Server_Visibility_ComboBox;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.CheckBox Telnet_Enabled_CheckBox;
+        private System.Windows.Forms.GroupBox Terminal_Window_Group_Box;
+        private System.Windows.Forms.CheckBox Terminal_Window_Enabled_CheckBox;
+        private System.Windows.Forms.TrackBar trackBar2;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }

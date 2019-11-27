@@ -148,6 +148,7 @@
     <Compile Include="about.Designer.cs">
       <DependentUpon>about.cs</DependentUpon>
     </Compile>
+    <Compile Include="server_panel_modules\Networking.cs" />
     <Compile Include="survey.cs">
       <SubType>Form</SubType>
     </Compile>
