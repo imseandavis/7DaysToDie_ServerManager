@@ -167,13 +167,13 @@ namespace _7DaysServerManager
                 try
                 {
                     File.Delete("server_updater.exe");
-                    MessageBox.Show(lang("update_ok"), lang("update"));
-                    Echo(lang("update_ok"), 0, true);
+                    MessageBox.Show(LocalizedLanguage("update_ok"), LocalizedLanguage("update"));
+                    Echo(LocalizedLanguage("update_ok"), 0, true);
                     MessageBox.Show(whatsnew, "What's new in ServerManager " + ver);
                 }
                 catch
                 {
-                    MessageBox.Show(lang("err_su_rem"), lang("error"));
+                    MessageBox.Show(LocalizedLanguage("err_su_rem"), LocalizedLanguage("error"));
                 }
 
                 try
@@ -341,9 +341,9 @@ namespace _7DaysServerManager
                     min_s = Convert.ToString(min);
                 }
 
-                auto_backup_group.Text = lang("backup_time") + " [" + hrs_s + ":" + min_s + " h.]";
+                auto_backup_group.Text = LocalizedLanguage("backup_time") + " [" + hrs_s + ":" + min_s + " h.]";
             }
-            catch { auto_backup_group.Text = lang("backup_time"); }
+            catch { auto_backup_group.Text = LocalizedLanguage("backup_time"); }
 
 
 
@@ -401,9 +401,9 @@ namespace _7DaysServerManager
                     min_s = Convert.ToString(min);
                 }
 
-                Auto_Restarts_GroupBox.Text = lang("reset_g") + " [" + hrs_s + ":" + min_s + " h.]";
+                Auto_Restarts_GroupBox.Text = LocalizedLanguage("reset_g") + " [" + hrs_s + ":" + min_s + " h.]";
             }
-            catch { Auto_Restarts_GroupBox.Text = lang("reset_g"); }
+            catch { Auto_Restarts_GroupBox.Text = LocalizedLanguage("reset_g"); }
 
 
 
@@ -627,7 +627,7 @@ namespace _7DaysServerManager
 
 
 
-            Server_Commands_Delay_GroupBox.Text = lang("spam_time") + " [" + Server_Commands_Time_TrackBar.Value * 0.5 + " min.]";
+            Server_Commands_Delay_GroupBox.Text = LocalizedLanguage("spam_time") + " [" + Server_Commands_Time_TrackBar.Value * 0.5 + " min.]";
 
             Server_Commands_List_RichTextBox.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "spam_list", null);
 
@@ -649,15 +649,15 @@ namespace _7DaysServerManager
 
 
 
-            Game_File_Path_Label.Text = lang("path") + (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", null);
+            Game_File_Path_Label.Text = LocalizedLanguage("path") + (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", null);
 
-            if (Game_File_Path_Label.Text == lang("path"))
-                Game_File_Path_Label.Text = lang("path") + "ERROR- NONE";
+            if (Game_File_Path_Label.Text == LocalizedLanguage("path"))
+                Game_File_Path_Label.Text = LocalizedLanguage("path") + "ERROR- NONE";
 
 
-            Max_Players_GroupBox.Text = lang("maxplgroup") + " [" + Convert.ToString(maxpl.Value) + "]";
-            Game_Difficulty_GroupBox.Text = lang("trudnoscgroup") + " [" + Convert.ToString(Game_Difficulty_TrackBar.Value) + "]";
-            Day_Length_GroupBox.Text = lang("dlugoscdnia") + " [" + Convert.ToString(dayLength.Value) + " min.]";
+            Max_Players_GroupBox.Text = LocalizedLanguage("maxplgroup") + " [" + Convert.ToString(MaxPlayers.Value) + "]";
+            Game_Difficulty_GroupBox.Text = LocalizedLanguage("trudnoscgroup") + " [" + Convert.ToString(Game_Difficulty_TrackBar.Value) + "]";
+            Day_Length_GroupBox.Text = LocalizedLanguage("dlugoscdnia") + " [" + Convert.ToString(dayLength.Value) + " min.]";
 
 
 
@@ -726,30 +726,30 @@ namespace _7DaysServerManager
             }*/
 
             if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "backup_msg_1", null) == null || (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "backup_msg_1", null) == "")
-                Starting_Backup_Message_TextBox.Text = lang("chat_backup_1");
+                Starting_Backup_Message_TextBox.Text = LocalizedLanguage("chat_backup_1");
             else
                 Starting_Backup_Message_TextBox.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "backup_msg_1", null);
 
 
             if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "backup_msg_2", null) == null || (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "backup_msg_2", null) == "")
-                Backup_Completed_Message_TextBox.Text = lang("chat_backup_2");
+                Backup_Completed_Message_TextBox.Text = LocalizedLanguage("chat_backup_2");
             else
                 Backup_Completed_Message_TextBox.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "backup_msg_2", null);
 
 
             if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "reboot_time", null) == null || (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "reboot_time", null) == "")
-                reboot_time.Text = lang("reset_time_left");
+                reboot_time.Text = LocalizedLanguage("reset_time_left");
             else
                 reboot_time.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "reboot_time", null);
 
             if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "reboot", null) == null || (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "reboot", null) == "")
-                reboot.Text = lang("rebooting");
+                reboot.Text = LocalizedLanguage("rebooting");
             else
                 reboot.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "reboot", null);
 
 
             if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "cmd_not_yet", null) == null || (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "cmd_not_yet", null) == "")
-                cmd_not_yet.Text = lang("cmd_not_yet");
+                cmd_not_yet.Text = LocalizedLanguage("cmd_not_yet");
             else
                 cmd_not_yet.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "cmd_not_yet", null);
 
@@ -836,7 +836,7 @@ namespace _7DaysServerManager
 
 
             if (Start_With_7DSM_CheckBox.Checked)
-                run_server();
+                Run_Server();
 
 
             file_log = debug_log.Checked;

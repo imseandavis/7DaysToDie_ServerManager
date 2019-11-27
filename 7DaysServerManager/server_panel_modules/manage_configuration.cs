@@ -269,7 +269,7 @@ namespace _7DaysServerManager
                     "\"/>\r\n  <property name=\"ServerIsPublic\" 		    	value=\"" + serverispublic + 
                     "\"/>\r\n  <property name=\"ServerName\" 				    value=\"" + server_nazwa.Text + 
                     "\"/>\r\n  <property name=\"ServerPassword\" 		    	value=\"" + ServerPassword.Text + 
-                    "\"/>\r\n  <property name=\"ServerMaxPlayerCount\"      	value=\"" + maxpl.Value + 
+                    "\"/>\r\n  <property name=\"ServerMaxPlayerCount\"      	value=\"" + MaxPlayers.Value + 
                     "\"/>\r\n  \r\n  <property name=\"GameWorld\" 		        	value=\"" + mapa.Text + 
                     "\"/>\r\n  <property name=\"GameName\" 				    value=\"" + gamename.Text + 
                     "\"/>\r\n  <property name=\"GameDifficulty\" 		    	value=\"" + Game_Difficulty_TrackBar.Value +
@@ -368,7 +368,7 @@ namespace _7DaysServerManager
                             else if (name == "ServerPassword")
                                 ServerPassword.Text = value;
                             else if (name == "ServerMaxPlayerCount")
-                                maxpl.Value = Convert.ToInt32(value);
+                                MaxPlayers.Value = Convert.ToInt32(value);
                             else if (name == "GameWorld")
                                 mapa.Text = value;
                             else if (name == "GameDifficulty")
@@ -502,15 +502,15 @@ namespace _7DaysServerManager
                                 bdm.Value = Convert.ToInt32(value) / 50;
 
                                 if (bdm.Value == 0)
-                                    bdm_g.Text = lang("bdm_g") + " [25%]";
+                                    bdm_g.Text = LocalizedLanguage("bdm_g") + " [25%]";
                                 else
-                                    bdm_g.Text = lang("bdm_g") + " [" + bdm.Value * 50 + "%]";
+                                    bdm_g.Text = LocalizedLanguage("bdm_g") + " [" + bdm.Value * 50 + "%]";
                             }
 
                             else if (name == "DayLightLength")
                             {
                                 nightpercentage.Value = Convert.ToInt32(value);
-                                nightpercentage_g.Text = lang("nightpercentage_g") + " [" + nightpercentage.Value + "h]";
+                                nightpercentage_g.Text = LocalizedLanguage("nightpercentage_g") + " [" + nightpercentage.Value + "h]";
                             }
 
                             else if (name == "TelnetPassword")
@@ -602,12 +602,12 @@ namespace _7DaysServerManager
                             if (name == "ServerWebsiteURL")
                                 ServerWebsiteURL.Text = value;
 
-                            Loot_Abundance_GroupBox.Text = lang("LootAbundance_g") + " [" + LootAbundance.Value + "%]";
+                            Loot_Abundance_GroupBox.Text = LocalizedLanguage("LootAbundance_g") + " [" + LootAbundance.Value + "%]";
 
                             if (LootRespawnDays.Value == -1)
-                                Loot_Respawn_Days_GroupBox.Text = lang("LootRespawnDays_g") + " [" + lang("disabled") + "]";
+                                Loot_Respawn_Days_GroupBox.Text = LocalizedLanguage("LootRespawnDays_g") + " [" + LocalizedLanguage("disabled") + "]";
                             else
-                                Loot_Respawn_Days_GroupBox.Text = lang("LootRespawnDays_g") + " [" + LootRespawnDays.Value + "]";
+                                Loot_Respawn_Days_GroupBox.Text = LocalizedLanguage("LootRespawnDays_g") + " [" + LootRespawnDays.Value + "]";
 
                         }
 

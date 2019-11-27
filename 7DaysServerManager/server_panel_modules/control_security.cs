@@ -11,17 +11,18 @@ namespace _7DaysServerManager
     {
 
 
-        public void Lock_ctrl()
+        public void Lock_Panel_Controls()
         {
-            Echo_debug("---locking ctrl---");
+            Echo_debug("---Locking Panel Controls---");
 
+            // Server Tab
             Start_Server_Button.Enabled = false;
             Shutdown_Server_Button.Enabled = true;
 
-
+            // Game Settings Tab
             Player_Killing_Mode_GroupBox.Enabled = false;
             AirDropMarker.Enabled = false;
-            maxpl.Enabled = false;
+            MaxPlayers.Enabled = false;
             Game_Difficulty_TrackBar.Enabled = false;
 
             if (!realtime.Checked)
@@ -44,6 +45,7 @@ namespace _7DaysServerManager
             port.Enabled = false;
             server_nazwa.Enabled = false;
 
+            // SQL Tab
             SQL_Enabled_CheckBox.Enabled = false;
             SQL_Host_TextBox.Enabled = false;
             SQL_Username_TextBox.Enabled = false;
@@ -109,16 +111,18 @@ namespace _7DaysServerManager
 
         }
 
-        public void unlock_ctrl()
+        public void Unlock_Panel_Controls()
         {
+            Echo_debug("---Unlocking Panel Controls---");
 
+            // Server Tab
             Start_Server_Button.Enabled = true;
             Shutdown_Server_Button.Enabled = false;
 
-
+            // Game Settings Tab
             Player_Killing_Mode_GroupBox.Enabled = true;
             AirDropMarker.Enabled = true;
-            maxpl.Enabled = true;
+            MaxPlayers.Enabled = true;
             Game_Difficulty_TrackBar.Enabled = true;
             if (!realtime.Checked)
                 dayLength.Enabled = true;
@@ -138,6 +142,7 @@ namespace _7DaysServerManager
             port.Enabled = true;
             server_nazwa.Enabled = true;
 
+            // SQL Tab
             SQL_Enabled_CheckBox.Enabled = true;
             SQL_Host_TextBox.Enabled = true;
             SQL_Username_TextBox.Enabled = true;
@@ -145,12 +150,11 @@ namespace _7DaysServerManager
             SQL_Database_Name_TextBox.Enabled = true;
             SQL_Update_Time_TextBox.Enabled = true;
 
-
-
-
+            // Backup Tab
             if (auto_backup_check.Checked)
                 backup_time.Enabled = true;
             auto_backup_check.Enabled = true;
+
 
             Drop_On_Death_Mode_0.Enabled = true;
             Drop_On_Death_Mode_1.Enabled = true;
@@ -204,7 +208,5 @@ namespace _7DaysServerManager
             MaxSpawnedAnimals.Enabled = true;
 
         }
-
-
     }
 }

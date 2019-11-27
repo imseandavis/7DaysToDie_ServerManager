@@ -121,6 +121,7 @@
             this.News_Group = new System.Windows.Forms.GroupBox();
             this.News_Feed_RichTextBox = new System.Windows.Forms.RichTextBox();
             this.Server_Status_Group = new System.Windows.Forms.GroupBox();
+            this.Private_IP_Address_Label = new System.Windows.Forms.Label();
             this.OS_Architecture_Label = new System.Windows.Forms.Label();
             this.telnetstatus = new System.Windows.Forms.Label();
             this.OS_Version_Label = new System.Windows.Forms.Label();
@@ -219,7 +220,7 @@
             this.Loot_Abundance_GroupBox = new System.Windows.Forms.GroupBox();
             this.LootAbundance = new System.Windows.Forms.TrackBar();
             this.Max_Players_GroupBox = new System.Windows.Forms.GroupBox();
-            this.maxpl = new System.Windows.Forms.TrackBar();
+            this.MaxPlayers = new System.Windows.Forms.TrackBar();
             this.Game_Mode_Settings_GroupBox = new System.Windows.Forms.GroupBox();
             this.PersistentPlayerProfiles = new System.Windows.Forms.CheckBox();
             this.feral = new System.Windows.Forms.CheckBox();
@@ -325,6 +326,7 @@
             this.Enable_Custom_Commands_CheckBox = new System.Windows.Forms.CheckBox();
             this.How_To_Commands_Button = new System.Windows.Forms.Button();
             this.Custom_Commands_RichTextBox = new System.Windows.Forms.RichTextBox();
+            this.Mods_TabPage = new System.Windows.Forms.TabPage();
             this.GlobalBanList_TabPage = new System.Windows.Forms.TabPage();
             this.check_bans = new System.Windows.Forms.Button();
             this.global_ban_g = new System.Windows.Forms.GroupBox();
@@ -429,11 +431,9 @@
             this.contact_b = new System.Windows.Forms.Button();
             this.forumklik = new System.Windows.Forms.Button();
             this.www7dsm = new System.Windows.Forms.Button();
-            this.like = new System.Windows.Forms.Button();
             this.externalCallFile = new System.Windows.Forms.OpenFileDialog();
             this.discord_b = new System.Windows.Forms.Button();
-            this.Mods_TabPage = new System.Windows.Forms.TabPage();
-            this.Private_IP_Address_Label = new System.Windows.Forms.Label();
+            this.GitHub_Repo_Button = new System.Windows.Forms.Button();
             this.Settings_TabPage.SuspendLayout();
             this.Updates_GroupBox.SuspendLayout();
             this.exe_settings_g.SuspendLayout();
@@ -497,7 +497,7 @@
             this.Loot_Abundance_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LootAbundance)).BeginInit();
             this.Max_Players_GroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.maxpl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MaxPlayers)).BeginInit();
             this.Game_Mode_Settings_GroupBox.SuspendLayout();
             this.Zombie_Settings_GroupBox.SuspendLayout();
             this.nightpercentage_g.SuspendLayout();
@@ -1555,7 +1555,7 @@
             this.cmd.AcceptsReturn = true;
             this.cmd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmd.Location = new System.Drawing.Point(6, 468);
+            this.cmd.Location = new System.Drawing.Point(6, 471);
             this.cmd.Name = "cmd";
             this.cmd.Size = new System.Drawing.Size(689, 20);
             this.cmd.TabIndex = 17;
@@ -1574,10 +1574,10 @@
             this.Console_RichTextBox.Name = "Console_RichTextBox";
             this.Console_RichTextBox.ReadOnly = true;
             this.Console_RichTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.Console_RichTextBox.Size = new System.Drawing.Size(686, 448);
+            this.Console_RichTextBox.Size = new System.Drawing.Size(686, 451);
             this.Console_RichTextBox.TabIndex = 15;
             this.Console_RichTextBox.Text = "";
-            this.Console_RichTextBox.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.Konsola_LinkClicked);
+            this.Console_RichTextBox.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.Console_LinkClicked);
             this.Console_RichTextBox.TextChanged += new System.EventHandler(this.Console_TextChanged);
             // 
             // startbar
@@ -1840,6 +1840,19 @@
             this.Server_Status_Group.TabStop = false;
             this.Server_Status_Group.Text = "Server status";
             // 
+            // Private_IP_Address_Label
+            // 
+            this.Private_IP_Address_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Private_IP_Address_Label.AutoSize = true;
+            this.Private_IP_Address_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Private_IP_Address_Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Private_IP_Address_Label.Location = new System.Drawing.Point(6, 80);
+            this.Private_IP_Address_Label.Name = "Private_IP_Address_Label";
+            this.Private_IP_Address_Label.Size = new System.Drawing.Size(99, 13);
+            this.Private_IP_Address_Label.TabIndex = 24;
+            this.Private_IP_Address_Label.Text = "Getting Private IP...";
+            this.Private_IP_Address_Label.Visible = false;
+            // 
             // OS_Architecture_Label
             // 
             this.OS_Architecture_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -1900,7 +1913,7 @@
             this.Console_Group.Controls.Add(this.cmd);
             this.Console_Group.Location = new System.Drawing.Point(3, 8);
             this.Console_Group.Name = "Console_Group";
-            this.Console_Group.Size = new System.Drawing.Size(698, 499);
+            this.Console_Group.Size = new System.Drawing.Size(698, 502);
             this.Console_Group.TabIndex = 18;
             this.Console_Group.TabStop = false;
             this.Console_Group.Text = "Console";
@@ -2962,7 +2975,7 @@
             // 
             this.Max_Players_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Max_Players_GroupBox.Controls.Add(this.maxpl);
+            this.Max_Players_GroupBox.Controls.Add(this.MaxPlayers);
             this.Max_Players_GroupBox.Location = new System.Drawing.Point(10, 3);
             this.Max_Players_GroupBox.Name = "Max_Players_GroupBox";
             this.Max_Players_GroupBox.Size = new System.Drawing.Size(508, 65);
@@ -2970,18 +2983,18 @@
             this.Max_Players_GroupBox.TabStop = false;
             this.Max_Players_GroupBox.Text = "Max Players";
             // 
-            // maxpl
+            // MaxPlayers
             // 
-            this.maxpl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.MaxPlayers.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.maxpl.Location = new System.Drawing.Point(6, 14);
-            this.maxpl.Maximum = 64;
-            this.maxpl.Minimum = 1;
-            this.maxpl.Name = "maxpl";
-            this.maxpl.Size = new System.Drawing.Size(496, 45);
-            this.maxpl.TabIndex = 8;
-            this.maxpl.Value = 16;
-            this.maxpl.Scroll += new System.EventHandler(this.TrackBar1_Scroll);
+            this.MaxPlayers.Location = new System.Drawing.Point(6, 14);
+            this.MaxPlayers.Maximum = 64;
+            this.MaxPlayers.Minimum = 1;
+            this.MaxPlayers.Name = "MaxPlayers";
+            this.MaxPlayers.Size = new System.Drawing.Size(496, 45);
+            this.MaxPlayers.TabIndex = 8;
+            this.MaxPlayers.Value = 16;
+            this.MaxPlayers.Scroll += new System.EventHandler(this.TrackBar1_Scroll);
             // 
             // Game_Mode_Settings_GroupBox
             // 
@@ -3428,11 +3441,11 @@
             this.nazwamapa.TabStop = false;
             this.nazwamapa.Text = "Nazwa gry i wybór mapy";
             // 
-            // nazwa
+            // gamename
             // 
             this.gamename.FormattingEnabled = true;
             this.gamename.Location = new System.Drawing.Point(6, 22);
-            this.gamename.Name = "nazwa";
+            this.gamename.Name = "gamename";
             this.gamename.Size = new System.Drawing.Size(190, 21);
             this.gamename.TabIndex = 4;
             this.gamename.SelectedIndexChanged += new System.EventHandler(this.Nazwa_SelectedIndexChanged);
@@ -4181,6 +4194,14 @@
             this.Custom_Commands_RichTextBox.TabIndex = 13;
             this.Custom_Commands_RichTextBox.Text = "";
             this.Custom_Commands_RichTextBox.TextChanged += new System.EventHandler(this.Customcommands_TextChanged);
+            // 
+            // Mods_TabPage
+            // 
+            this.Mods_TabPage.Location = new System.Drawing.Point(47, 4);
+            this.Mods_TabPage.Name = "Mods_TabPage";
+            this.Mods_TabPage.Size = new System.Drawing.Size(908, 684);
+            this.Mods_TabPage.TabIndex = 19;
+            this.Mods_TabPage.UseVisualStyleBackColor = true;
             // 
             // GlobalBanList_TabPage
             // 
@@ -5339,22 +5360,6 @@
             this.www7dsm.UseVisualStyleBackColor = true;
             this.www7dsm.Click += new System.EventHandler(this.Button1_Click_3);
             // 
-            // like
-            // 
-            this.like.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.like.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.like.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.like.FlatAppearance.BorderSize = 0;
-            this.like.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.like.Image = ((System.Drawing.Image)(resources.GetObject("like.Image")));
-            this.like.Location = new System.Drawing.Point(737, 698);
-            this.like.Margin = new System.Windows.Forms.Padding(0);
-            this.like.Name = "like";
-            this.like.Size = new System.Drawing.Size(43, 43);
-            this.like.TabIndex = 35;
-            this.like.UseVisualStyleBackColor = true;
-            this.like.Click += new System.EventHandler(this.Like_Click);
-            // 
             // externalCallFile
             // 
             this.externalCallFile.Title = "External call";
@@ -5375,26 +5380,21 @@
             this.discord_b.UseVisualStyleBackColor = true;
             this.discord_b.Click += new System.EventHandler(this.Discord_b_Click);
             // 
-            // Mods_TabPage
+            // GitHub_Repo_Button
             // 
-            this.Mods_TabPage.Location = new System.Drawing.Point(47, 4);
-            this.Mods_TabPage.Name = "Mods_TabPage";
-            this.Mods_TabPage.Size = new System.Drawing.Size(908, 684);
-            this.Mods_TabPage.TabIndex = 19;
-            this.Mods_TabPage.UseVisualStyleBackColor = true;
-            // 
-            // Private_IP_Address_Label
-            // 
-            this.Private_IP_Address_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.Private_IP_Address_Label.AutoSize = true;
-            this.Private_IP_Address_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Private_IP_Address_Label.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.Private_IP_Address_Label.Location = new System.Drawing.Point(6, 80);
-            this.Private_IP_Address_Label.Name = "Private_IP_Address_Label";
-            this.Private_IP_Address_Label.Size = new System.Drawing.Size(99, 13);
-            this.Private_IP_Address_Label.TabIndex = 24;
-            this.Private_IP_Address_Label.Text = "Getting Private IP...";
-            this.Private_IP_Address_Label.Visible = false;
+            this.GitHub_Repo_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.GitHub_Repo_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GitHub_Repo_Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.GitHub_Repo_Button.FlatAppearance.BorderSize = 0;
+            this.GitHub_Repo_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.GitHub_Repo_Button.Image = ((System.Drawing.Image)(resources.GetObject("GitHub_Repo_Button.Image")));
+            this.GitHub_Repo_Button.Location = new System.Drawing.Point(737, 698);
+            this.GitHub_Repo_Button.Margin = new System.Windows.Forms.Padding(0);
+            this.GitHub_Repo_Button.Name = "GitHub_Repo_Button";
+            this.GitHub_Repo_Button.Size = new System.Drawing.Size(43, 43);
+            this.GitHub_Repo_Button.TabIndex = 35;
+            this.GitHub_Repo_Button.UseVisualStyleBackColor = true;
+            this.GitHub_Repo_Button.Click += new System.EventHandler(this.GitHub_Repo_Button_Click);
             // 
             // Server_Panel_Form
             // 
@@ -5402,6 +5402,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(961, 747);
+            this.Controls.Add(this.GitHub_Repo_Button);
             this.Controls.Add(this.discord_b);
             this.Controls.Add(this.dbg_btn_2);
             this.Controls.Add(this.help_b);
@@ -5410,7 +5411,6 @@
             this.Controls.Add(this.forumklik);
             this.Controls.Add(this.don_l);
             this.Controls.Add(this.www7dsm);
-            this.Controls.Add(this.like);
             this.Controls.Add(this.tabControl);
             this.Controls.Add(this.img_status);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -5519,7 +5519,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.LootAbundance)).EndInit();
             this.Max_Players_GroupBox.ResumeLayout(false);
             this.Max_Players_GroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.maxpl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MaxPlayers)).EndInit();
             this.Game_Mode_Settings_GroupBox.ResumeLayout(false);
             this.Game_Mode_Settings_GroupBox.PerformLayout();
             this.Zombie_Settings_GroupBox.ResumeLayout(false);
@@ -5849,7 +5849,6 @@
         private System.Windows.Forms.CheckBox PersistentPlayerProfiles;
         private System.Windows.Forms.CheckBox Settings_Skip_Profiles_CheckBox;
         private System.ComponentModel.BackgroundWorker server_stop_tasks;
-        private System.Windows.Forms.Button like;
         private System.Windows.Forms.GroupBox Spawn_Settings_GroupBox;
         private System.Windows.Forms.Label Player_Safe_Zone_Hours_Label;
         private System.Windows.Forms.Label Player_Safe_Zone_Level_Label;
@@ -5955,7 +5954,7 @@
         private System.Windows.Forms.Button check_bans;
         private System.Windows.Forms.Button dbg_btn_2;
         public System.Windows.Forms.ListView Online_Player_List;
-        public System.Windows.Forms.TrackBar maxpl;
+        public System.Windows.Forms.TrackBar MaxPlayers;
         private System.Windows.Forms.TabPage WebServer_TabPage;
         private System.Windows.Forms.GroupBox android_g;
         private System.Windows.Forms.CheckBox android_allow;
@@ -6036,5 +6035,6 @@
         private System.Windows.Forms.PictureBox SQL_Password_Info_PictureBox;
         private System.Windows.Forms.TabPage Mods_TabPage;
         private System.Windows.Forms.Label Private_IP_Address_Label;
+        private System.Windows.Forms.Button GitHub_Repo_Button;
     }
 }

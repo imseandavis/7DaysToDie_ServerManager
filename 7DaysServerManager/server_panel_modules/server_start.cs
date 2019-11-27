@@ -13,30 +13,33 @@ namespace _7DaysServerManager
 
     public partial class Server_Panel_Form : Form
     {
-        public void run_server()
+        // Start The 7 Days To Die Server
+        public void Run_Server()
         {
-            Echo_debug("---server start---");
+            Echo_debug("---Start Server---");
+
+            // Set Server Offline Until Server Is Up
             server_online = false;
 
-
-
+            // Init Telnet Connections
             if (telnet_connection.IsBusy)
                 telnet_connection.CancelAsync();
 
+            // Init Auto Message
             if (auto_messages.IsBusy)
                 auto_messages.CancelAsync();
 
+            // Init Auto Update
             if (autoupdate_whitelist.IsBusy)
                 autoupdate_whitelist.CancelAsync();
 
-
+            // Add Start Server Command Options
             string parametry = "-quit -batchmode -nographics";
 
+            // Retrieve The 7 Days To Die Dedicated Server Path
             string exec_name = exe_name.Text;
             if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "server_type", null) == "server")
                 exec_name = "7DaysToDieServer.exe";
-
-            
 
             file_path = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", null);
             
@@ -49,9 +52,9 @@ namespace _7DaysServerManager
 
                 if (file_path == "" | !File.Exists(file_path + "\\" + exec_name))
                 {
-                    Echo(lang("error"), 3, true);
-                    Echo(lang("game_not_found_cons"), 3, true);
-                    MessageBox.Show(lang("game_not_found"), lang("error"));
+                    Echo(LocalizedLanguage("error"), 3, true);
+                    Echo(LocalizedLanguage("game_not_found_cons"), 3, true);
+                    MessageBox.Show(LocalizedLanguage("game_not_found"), LocalizedLanguage("error"));
 
 
 
@@ -64,22 +67,22 @@ namespace _7DaysServerManager
 
                         if (File.Exists(file_path + "\\" + exe_name.Text))
                         {
-                            MessageBox.Show(lang("dir_ok"), lang("saved"));
-                            Echo(lang("dir_ok"), 0, true);
+                            MessageBox.Show(LocalizedLanguage("dir_ok"), LocalizedLanguage("saved"));
+                            Echo(LocalizedLanguage("dir_ok"), 0, true);
                             Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", file_path);
                             Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "server_type", "client");
                         }
                         else if (File.Exists(file_path + "\\7daystodieserver.exe"))
                         {
-                            MessageBox.Show(lang("dir_ok"), lang("saved"));
-                            Echo(lang("dir_ok"), 0, true);
+                            MessageBox.Show(LocalizedLanguage("dir_ok"), LocalizedLanguage("saved"));
+                            Echo(LocalizedLanguage("dir_ok"), 0, true);
                             Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", file_path);
                             Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "server_type", "server");
                         }
                         else
                         {
-                            MessageBox.Show(lang("game_not_found_2"), lang("error"));
-                            Echo(lang("game_not_found_2"), 3, true);
+                            MessageBox.Show(LocalizedLanguage("game_not_found_2"), LocalizedLanguage("error"));
+                            Echo(LocalizedLanguage("game_not_found_2"), 3, true);
                         }
                     }
                 }
@@ -92,12 +95,12 @@ namespace _7DaysServerManager
 
                     //this.ControlBox = false;
 
-                    Lock_ctrl();
+                    Lock_Panel_Controls();
 
                     server_online = true;
 
                     //echo("OK", 1, true);
-                    Echo(lang("run_from") + file_path, 0, true);
+                    Echo(LocalizedLanguage("run_from") + file_path, 0, true);
 
                     try
                     {

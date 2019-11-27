@@ -213,12 +213,12 @@ namespace _7DaysServerManager
             if (realtime.Checked)
             {
                 dayLength.Enabled = false;
-                Day_Length_GroupBox.Text = lang("dlugoscdnia") + " [realtime]";
+                Day_Length_GroupBox.Text = LocalizedLanguage("dlugoscdnia") + " [realtime]";
             }
             else
             {
                 dayLength.Enabled = true;
-                Day_Length_GroupBox.Text = lang("dlugoscdnia") + " [" + dayLength.Value + " min.]";
+                Day_Length_GroupBox.Text = LocalizedLanguage("dlugoscdnia") + " [" + dayLength.Value + " min.]";
             }
         }
 
@@ -295,7 +295,7 @@ namespace _7DaysServerManager
 
         private void Start_Server_Button_Click(object sender, EventArgs e)
         {
-            run_server();
+            Run_Server();
         }
 
 
@@ -307,7 +307,7 @@ namespace _7DaysServerManager
             {
                 status.Invoke((MethodInvoker)delegate
                 {
-                    status.Text = lang("status_working");
+                    status.Text = LocalizedLanguage("status_working");
 
 
                     if (tc != null && tc.IsConnected)
@@ -335,15 +335,15 @@ namespace _7DaysServerManager
                     status.Invoke((MethodInvoker)delegate
                     {
                         Connect_Running_Server_Button.Enabled = false;
-                        status.Text = lang("status_not");
-                        unlock_ctrl();
+                        status.Text = LocalizedLanguage("status_not");
+                        Unlock_Panel_Controls();
                         img_status.Image = Properties.Resources.status_stopped;
 
                         if (server_online == true)
                         {
                             System.Threading.Thread.Sleep(500);
                             //restart crasha
-                            Echo(lang("crash"), 2, true);
+                            Echo(LocalizedLanguage("crash"), 2, true);
 
                             System.Threading.Thread.Sleep(5000);
 
@@ -359,7 +359,7 @@ namespace _7DaysServerManager
 
             status.Invoke((MethodInvoker)delegate
             {
-                status.Text = lang("status_not");
+                status.Text = LocalizedLanguage("status_not");
                 OS_Version_Label.Text = "OS: "+Convert.ToString(System.Environment.OSVersion);
 
                 if (Environment.Is64BitOperatingSystem)
@@ -407,53 +407,52 @@ namespace _7DaysServerManager
         }
 
 
-
-        public string lang(string text)
+        // Language Localization
+        public string LocalizedLanguage(string text)
         {
+            // Init Variables
+            string LocalizedText = "";
+            bool LocalizedTextFound = false;
 
-            string text2 = "";
-            bool znalazl = false;
-
-
+            // Init Langauage Reader
             try
             {
                 XmlReader xmlReader = XmlReader.Create("lang.xml");
                 while (xmlReader.Read())
                 {
-
                     if ((xmlReader.NodeType == XmlNodeType.Element) && (xmlReader.Name == "property"))
                     {
-
                         if (xmlReader.HasAttributes)
                         {
-                            //MessageBox.Show(xmlReader.GetAttribute("name"));
                             if (xmlReader.GetAttribute("name") == text)
                             {
-                                text2 = xmlReader.GetAttribute("text");
-                                znalazl = true;
+                                LocalizedText = xmlReader.GetAttribute("text");
+                                LocalizedTextFound = true;
                                 break;
                             }
-
-
                         }
-
                     }
                 }
 
-                if (!znalazl)
+                // If The Localized Text Doesn't Exist
+                if (!LocalizedTextFound)
                 {
+                    // Check To See If The Lang File Exists
                     if (File.Exists("lang.xml"))
                     {
+                        // Theres A Translation Error
                         translation_error = true;
                         if (!translation_error_c.Contains(text))
                             translation_error_c = translation_error_c + "Missing label: " + text + "\n";
                         //echo("Missing label in lang.xml: "+text+". Check for lang.xml updates!", 3, true);
                     }
 
+                    // Set The Language For This Instance
                     ResourceManager rm = new ResourceManager("_7DaysServerManager.lang.lang_en", this.GetType().Assembly);
-                    text2 = rm.GetString(text);
+                    LocalizedText = rm.GetString(text);
                 }
 
+                // Close Reader
                 xmlReader.Close();
 
             }
@@ -468,22 +467,12 @@ namespace _7DaysServerManager
                 }
 
                 ResourceManager rm = new ResourceManager("_7DaysServerManager.lang.lang_en", this.GetType().Assembly);
-                text2 = rm.GetString(text);
-
+                LocalizedText = rm.GetString(text);
             }
 
-
-
-            return text2;
+            return LocalizedText;
 
         }
-
-
-
-
-
-
-
 
         private void Server_panel_Load(object sender, EventArgs e)
         {
@@ -514,13 +503,13 @@ namespace _7DaysServerManager
 
         private void TrackBar1_Scroll(object sender, EventArgs e)
         {
-            Max_Players_GroupBox.Text = lang("maxplgroup") + " [" + Convert.ToString(maxpl.Value) + "]";
+            Max_Players_GroupBox.Text = LocalizedLanguage("maxplgroup") + " [" + Convert.ToString(MaxPlayers.Value) + "]";
             Update_Config();
         }
 
         private void Trudnosc_Scroll(object sender, EventArgs e)
         {
-            Game_Difficulty_GroupBox.Text = lang("trudnoscgroup") + " [" + Convert.ToString(Game_Difficulty_TrackBar.Value) + "]";
+            Game_Difficulty_GroupBox.Text = LocalizedLanguage("trudnoscgroup") + " [" + Convert.ToString(Game_Difficulty_TrackBar.Value) + "]";
             Update_Config();
         }
 
@@ -575,18 +564,18 @@ namespace _7DaysServerManager
 
             if (server_online == true && Settings_Clean_Exit_CheckBox.Checked)
             {
-                Echo(lang("wn_cl"), 2, false);
-                DialogResult dialogResult = MessageBox.Show(lang("sure_close"), lang("wn_cl"), MessageBoxButtons.YesNo);
+                Echo(LocalizedLanguage("wn_cl"), 2, false);
+                DialogResult dialogResult = MessageBox.Show(LocalizedLanguage("sure_close"), LocalizedLanguage("wn_cl"), MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
                     Stop_Click(null, null);
-                    Echo("\n" + lang("potw"), 1, true);
+                    Echo("\n" + LocalizedLanguage("potw"), 1, true);
                     System.Threading.Thread.Sleep(3000);
                 }
                 else
                 {
                     e.Cancel = true;
-                    Echo("\n" + lang("anul"), 1, true);
+                    Echo("\n" + LocalizedLanguage("anul"), 1, true);
                 }
             }
             try
@@ -755,12 +744,12 @@ namespace _7DaysServerManager
 
         private void Dzien_bar_Scroll(object sender, EventArgs e)
         {
-            dzien.Text = lang("dzien") + " [" + Convert.ToString(Game_Day_TrackBar.Value) + "]";
+            dzien.Text = LocalizedLanguage("dzien") + " [" + Convert.ToString(Game_Day_TrackBar.Value) + "]";
         }
 
         private void Godzina_bar_Scroll(object sender, EventArgs e)
         {
-            godzina.Text = lang("godzina") + " [" + Convert.ToString(Game_Hour_TrackBar.Value) + ":00]";
+            godzina.Text = LocalizedLanguage("godzina") + " [" + Convert.ToString(Game_Hour_TrackBar.Value) + ":00]";
         }
 
         private void Server_panel_Resize(object sender, EventArgs e)
@@ -769,7 +758,7 @@ namespace _7DaysServerManager
             {
                 App_Icon.Visible = true;
                 this.Visible = false;
-                App_Icon.ShowBalloonTip(15000, lang("imhere"), lang("restore"), ToolTipIcon.Info);
+                App_Icon.ShowBalloonTip(15000, LocalizedLanguage("imhere"), LocalizedLanguage("restore"), ToolTipIcon.Info);
             }
 
         }
@@ -791,21 +780,21 @@ namespace _7DaysServerManager
 
                 if (File.Exists(@sciezka_plikow))
                 {
-                    MessageBox.Show(lang("dir_ok"), lang("saved"));
+                    MessageBox.Show(LocalizedLanguage("dir_ok"), LocalizedLanguage("saved"));
                     Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", Select_Game_Directory.SelectedPath);
                     Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "server_type", "client");
 
                 }
                 else if (File.Exists(@sciezka_plikow_server))
                 {
-                    MessageBox.Show(lang("dir_ok"), lang("saved"));
+                    MessageBox.Show(LocalizedLanguage("dir_ok"), LocalizedLanguage("saved"));
                     Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", Select_Game_Directory.SelectedPath);
                     Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "server_type", "server");
 
                 }
                 else
                 {
-                    MessageBox.Show(lang("game_not_found_2"), lang("error"));
+                    MessageBox.Show(LocalizedLanguage("game_not_found_2"), LocalizedLanguage("error"));
                 }
 
             }
@@ -822,7 +811,7 @@ namespace _7DaysServerManager
             }
             catch
             {
-                MessageBox.Show(lang("select_player"));
+                MessageBox.Show(LocalizedLanguage("select_player"));
             }
 
         }
@@ -831,7 +820,7 @@ namespace _7DaysServerManager
         {
 
             Echo_debug("---killing 7daystodie.exe---");
-            DialogResult dialogResult = MessageBox.Show(lang("kill_click"), lang("warning"), MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show(LocalizedLanguage("kill_click"), LocalizedLanguage("warning"), MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
 
@@ -841,12 +830,12 @@ namespace _7DaysServerManager
                 }
                 catch (Exception eksepszyn)
                 {
-                    error_reporter err_rep = new error_reporter(lang("kill_workers_err") + "\n" + Convert.ToString(eksepszyn));
+                    error_reporter err_rep = new error_reporter(LocalizedLanguage("kill_workers_err") + "\n" + Convert.ToString(eksepszyn));
                     err_rep.Show();
                 }
 
 
-                Echo(lang("killing_proc"), 0, false);
+                Echo(LocalizedLanguage("killing_proc"), 0, false);
 
                 //telnet_cmd("shutdown", false, false);
 
@@ -858,13 +847,13 @@ namespace _7DaysServerManager
                     }
                 }
 
-                unlock_ctrl();
+                Unlock_Panel_Controls();
                 this.ControlBox = true;
 
 
                 server_online = false;
                 Echo("OK", 1, true);
-                Echo(lang("proc_killed"), 0, true);
+                Echo(LocalizedLanguage("proc_killed"), 0, true);
             }
         }
 
@@ -1046,7 +1035,7 @@ namespace _7DaysServerManager
             try
             {
                 telnet_queue.Enqueue("kick " + Convert.ToString(Online_Player_List.SelectedItems[0].Text) + " " + Kick_Reason_ComboBox.Text);
-                MessageBox.Show(Convert.ToString(Online_Player_List.SelectedItems[0].Text) + lang("kick_ok"), lang("kick"));
+                MessageBox.Show(Convert.ToString(Online_Player_List.SelectedItems[0].Text) + LocalizedLanguage("kick_ok"), LocalizedLanguage("kick"));
 
                 int liczba = 0; string cur_pl = "";
                 startbar.Invoke((MethodInvoker)delegate
@@ -1077,7 +1066,7 @@ namespace _7DaysServerManager
             }
             catch
             {
-                MessageBox.Show(lang("select_player"));
+                MessageBox.Show(LocalizedLanguage("select_player"));
             }
         }
 
@@ -1095,7 +1084,7 @@ namespace _7DaysServerManager
                     user = Convert.ToString(Online_Player_List.SelectedItems[0].Text);
 
 
-                DialogResult dialogResult = MessageBox.Show(lang("ban_sure") + user + "?\n", lang("warning"), MessageBoxButtons.YesNo);
+                DialogResult dialogResult = MessageBox.Show(LocalizedLanguage("ban_sure") + user + "?\n", LocalizedLanguage("warning"), MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
                     string czas;
@@ -1129,21 +1118,21 @@ namespace _7DaysServerManager
                         }
 
                         telnet_queue.Enqueue("ban add " + user + " " + Ban_Slider_TrackBar.Value + " " + czas);
-                        MessageBox.Show(user + lang("banned"), lang("ban"));
+                        MessageBox.Show(user + LocalizedLanguage("banned"), LocalizedLanguage("ban"));
                     }
                     else
                     {
-                        MessageBox.Show(lang("sel_ban_time"), lang("warning"));
+                        MessageBox.Show(LocalizedLanguage("sel_ban_time"), LocalizedLanguage("warning"));
                     }
                 }
                 else
                 {
-                    MessageBox.Show(lang("canceled"), lang("ban"));
+                    MessageBox.Show(LocalizedLanguage("canceled"), LocalizedLanguage("ban"));
                 }
             }
             catch
             {
-                MessageBox.Show(lang("select_player"));
+                MessageBox.Show(LocalizedLanguage("select_player"));
             }
         }
 
@@ -1283,7 +1272,7 @@ namespace _7DaysServerManager
 
             if (tc == null)
             {
-                MessageBox.Show(lang("sth_went_terribly_wrong"), lang("warning"));
+                MessageBox.Show(LocalizedLanguage("sth_went_terribly_wrong"), LocalizedLanguage("warning"));
                 e.Cancel = true;
                 return;
             }
@@ -1342,7 +1331,7 @@ namespace _7DaysServerManager
                 if (!just_killin)
                     if (!tc.IsConnected)
                     {
-                        Echo(lang("telnet_broken"), 2, true);
+                        Echo(LocalizedLanguage("telnet_broken"), 2, true);
                         try
                         {
                             reboot_telnet.RunWorkerAsync();
@@ -1797,7 +1786,7 @@ namespace _7DaysServerManager
 
         private void Day_Length_Scroll(object sender, EventArgs e)
         {
-            Day_Length_GroupBox.Text = lang("dlugoscdnia") + " [" + Convert.ToString(dayLength.Value) + " min.]";
+            Day_Length_GroupBox.Text = LocalizedLanguage("dlugoscdnia") + " [" + Convert.ToString(dayLength.Value) + " min.]";
             Update_Config();
         }
 
@@ -1890,32 +1879,32 @@ namespace _7DaysServerManager
 
                 if (File.Exists(@sciezka + "\\" + exe_name.Text))
                 {
-                    MessageBox.Show(lang("steam_ok"), lang("saved"));
+                    MessageBox.Show(LocalizedLanguage("steam_ok"), LocalizedLanguage("saved"));
                     Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", sciezka);
-                    Game_File_Path_Label.Text = lang("path") + (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", null);
+                    Game_File_Path_Label.Text = LocalizedLanguage("path") + (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", null);
                 }
                 else
                 {
                     sciezka = sciezka + " Dedicated Server";
                     if (File.Exists(@sciezka + "\\7DaysToDieServer.exe"))
                     {
-                        MessageBox.Show(lang("steam_ok"), lang("saved"));
+                        MessageBox.Show(LocalizedLanguage("steam_ok"), LocalizedLanguage("saved"));
                         Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", sciezka);
-                        Game_File_Path_Label.Text = lang("path") + (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", null);
+                        Game_File_Path_Label.Text = LocalizedLanguage("path") + (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", null);
                     }
                     else
                     {
 
-                        MessageBox.Show(lang("steam_no_game"), lang("error"));
-                        Echo(lang("steam_no_game"), 3, true);
+                        MessageBox.Show(LocalizedLanguage("steam_no_game"), LocalizedLanguage("error"));
+                        Echo(LocalizedLanguage("steam_no_game"), 3, true);
                     }
                 }
 
-
+                Registry.SetValue()
             }
             catch
             {
-                MessageBox.Show(lang("steam_no_steam"), lang("error"));
+                MessageBox.Show(LocalizedLanguage("steam_no_steam"), LocalizedLanguage("error"));
             }
         }
 
@@ -2030,7 +2019,7 @@ namespace _7DaysServerManager
 
         private void Spam_time_Scroll(object sender, EventArgs e)
         {
-            Server_Commands_Delay_GroupBox.Text = lang("spam_time") + " [" + Server_Commands_Time_TrackBar.Value * 0.5 + " min.]";
+            Server_Commands_Delay_GroupBox.Text = LocalizedLanguage("spam_time") + " [" + Server_Commands_Time_TrackBar.Value * 0.5 + " min.]";
             Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "spam_time", Server_Commands_Time_TrackBar.Value);
         }
 
@@ -2074,7 +2063,7 @@ namespace _7DaysServerManager
 
         private void Anon_data_2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            MessageBox.Show(lang("anon_data_info"), lang("anon_data_2"));
+            MessageBox.Show(LocalizedLanguage("anon_data_info"), LocalizedLanguage("anon_data_2"));
         }
 
         private void Anon_data_CheckedChanged(object sender, EventArgs e)
@@ -2149,7 +2138,7 @@ namespace _7DaysServerManager
 
                 if (reply_lp == "error")
                 {
-                    Echo(lang("ref_err"), 3, true);
+                    Echo(LocalizedLanguage("ref_err"), 3, true);
                 }
                 else
                 {
@@ -2207,7 +2196,7 @@ namespace _7DaysServerManager
 
                                 sql_cmd.CommandText = "INSERT INTO 7days_stats(players, max_players, last_update) VALUES(?players,?max_players,?last_update)";
                                 sql_cmd.Parameters.Add("?players", MySqlDbType.VarChar).Value = l;
-                                sql_cmd.Parameters.Add("?max_players", MySqlDbType.VarChar).Value = maxpl.Value;
+                                sql_cmd.Parameters.Add("?max_players", MySqlDbType.VarChar).Value = MaxPlayers.Value;
                                 sql_cmd.Parameters.Add("?last_update", MySqlDbType.VarChar).Value = unixTimestamp;
 
 
@@ -2437,7 +2426,7 @@ namespace _7DaysServerManager
                 min_s = Convert.ToString(min);
             }
 
-            auto_backup_group.Text = lang("backup_time") + " [" + hrs_s + ":" + min_s + " h.]";
+            auto_backup_group.Text = LocalizedLanguage("backup_time") + " [" + hrs_s + ":" + min_s + " h.]";
             Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "backup_time", backup_time.Value);
         }
 
@@ -2475,7 +2464,7 @@ namespace _7DaysServerManager
             }
 
             /*backup*/
-            Echo(lang("chat_backup_1"), 1, true);
+            Echo(LocalizedLanguage("chat_backup_1"), 1, true);
             if (pokazuj_chat)
                 telnet_queue.Enqueue("say \"" + (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "backup_msg_1", null) + "\"");
 
@@ -2528,7 +2517,7 @@ namespace _7DaysServerManager
             }
 
             /*/backup*/
-            Echo(lang("chat_backup_2"), 1, true);
+            Echo(LocalizedLanguage("chat_backup_2"), 1, true);
             if (pokazuj_chat)
                 telnet_queue.Enqueue("say \"" + (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "backup_msg_2", null) + "\"");
 
@@ -2623,7 +2612,7 @@ namespace _7DaysServerManager
 
         private void Forumklik_Click(object sender, EventArgs e)
         {
-            Process.Start("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=S26A3894C2JGA");
+            Process.Start("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Y6XKJPQ4YB5Y8");
             Echo("\n\n████████╗██╗  ██╗ █████╗ ███╗   ██╗██╗  ██╗    ██╗   ██╗ ██████╗ ██╗   ██╗   ██╗ \n╚══██╔══╝██║  ██║██╔══██╗████╗  ██║██║ ██╔╝    ╚██╗ ██╔╝██╔═══██╗██║   ██║██╗╚██╗\n   ██║   ███████║███████║██╔██╗ ██║█████╔╝      ╚████╔╝ ██║   ██║██║   ██║╚═╝ ██║\n   ██║   ██╔══██║██╔══██║██║╚██╗██║██╔═██╗       ╚██╔╝  ██║   ██║██║   ██║██╗ ██║\n   ██║   ██║  ██║██║  ██║██║ ╚████║██║  ██╗       ██║   ╚██████╔╝╚██████╔╝╚═╝██╔╝\n   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝       ╚═╝    ╚═════╝  ╚═════╝    ╚═╝ \n\n", 0, true);
         }
 
@@ -2701,7 +2690,7 @@ namespace _7DaysServerManager
         {
             Update_Config();
 
-            nightpercentage_g.Text = lang("nightpercentage_g") + " [" + nightpercentage.Value + "h]";
+            nightpercentage_g.Text = LocalizedLanguage("nightpercentage_g") + " [" + nightpercentage.Value + "h]";
         }
 
         private void Bdm_Scroll(object sender, EventArgs e)
@@ -2709,9 +2698,9 @@ namespace _7DaysServerManager
             Update_Config();
 
             if (bdm.Value == 0)
-                bdm_g.Text = lang("bdm_g") + " [25%]";
+                bdm_g.Text = LocalizedLanguage("bdm_g") + " [25%]";
             else
-                bdm_g.Text = lang("bdm_g") + " [" + bdm.Value * 50 + "%]";
+                bdm_g.Text = LocalizedLanguage("bdm_g") + " [" + bdm.Value * 50 + "%]";
         }
 
         private void Realtime_CheckedChanged(object sender, EventArgs e)
@@ -2741,7 +2730,7 @@ namespace _7DaysServerManager
 
         private void LootAbundance_Scroll(object sender, EventArgs e)
         {
-            Loot_Abundance_GroupBox.Text = lang("LootAbundance_g") + " [" + LootAbundance.Value + "%]";
+            Loot_Abundance_GroupBox.Text = LocalizedLanguage("LootAbundance_g") + " [" + LootAbundance.Value + "%]";
             Update_Config();
         }
 
@@ -2749,9 +2738,9 @@ namespace _7DaysServerManager
         {
 
             if (LootRespawnDays.Value == -1)
-                Loot_Respawn_Days_GroupBox.Text = lang("LootRespawnDays_g") + " [" + lang("disabled") + "]";
+                Loot_Respawn_Days_GroupBox.Text = LocalizedLanguage("LootRespawnDays_g") + " [" + LocalizedLanguage("disabled") + "]";
             else
-                Loot_Respawn_Days_GroupBox.Text = lang("LootRespawnDays_g") + " [" + LootRespawnDays.Value + "]";
+                Loot_Respawn_Days_GroupBox.Text = LocalizedLanguage("LootRespawnDays_g") + " [" + LootRespawnDays.Value + "]";
             Update_Config();
         }
 
@@ -2945,7 +2934,7 @@ namespace _7DaysServerManager
                     Start_Server_Button.Enabled = false;
                 });
 
-                Echo(lang("start_in"), 1, false);
+                Echo(LocalizedLanguage("start_in"), 1, false);
 
                 for (int lol = 10; lol > 0; lol--)
                 {
@@ -2957,7 +2946,7 @@ namespace _7DaysServerManager
 
                 startbar.Invoke((MethodInvoker)delegate
                 {
-                    run_server();
+                    Run_Server();
                 });
 
                 Console_RichTextBox.Invoke((MethodInvoker)delegate
@@ -2994,7 +2983,7 @@ namespace _7DaysServerManager
                 min_s = Convert.ToString(min);
             }
 
-            Auto_Restarts_GroupBox.Text = lang("reset_g") + " [" + hrs_s + ":" + min_s + " h.]";
+            Auto_Restarts_GroupBox.Text = LocalizedLanguage("reset_g") + " [" + hrs_s + ":" + min_s + " h.]";
             Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "reset_time", Auto_Restart_Time_TrackBar.Value);
         }
 
@@ -3061,7 +3050,7 @@ namespace _7DaysServerManager
                 // If Send Anonymous Stats Is Enabled
                 if (anonymous)
                 {
-                    // Send Windows Version Info
+                    // Get Windows Version Info
                     string os_ver = (string)Registry.GetValue(@"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion", "CurrentVersion", null);
 
                     // If Version Is Windows 10, Get The Build Number
@@ -3138,20 +3127,20 @@ namespace _7DaysServerManager
             }
         }
 
-        // Update Text On Air Drop Frequency Label When Slider Value Changes
+        // Update Text On Air Drop Frequency Control When Slider Value Changes
         private void AirDropFrequency_Scroll(object sender, EventArgs e)
         {
             // Determine If Disabled Or Set To Specific Amount of Hours
             if (Air_Drop_Frequency_TrackBar.Value != 0)
-                Air_Drop_Frequency_GroupBox.Text = lang("AirDropFrequency") + " [" + Convert.ToString(Air_Drop_Frequency_TrackBar.Value) + " h.]";
+                Air_Drop_Frequency_GroupBox.Text = LocalizedLanguage("AirDropFrequency") + " [" + Convert.ToString(Air_Drop_Frequency_TrackBar.Value) + " h.]";
             else
-                Air_Drop_Frequency_GroupBox.Text = lang("AirDropFrequency") + " [" + lang("disabled") + "]";
+                Air_Drop_Frequency_GroupBox.Text = LocalizedLanguage("AirDropFrequency") + " [" + LocalizedLanguage("disabled") + "]";
 
             // Update The Config
             Update_Config();
         }
 
-        private void Konsola_LinkClicked(object sender, LinkClickedEventArgs e)
+        private void Console_LinkClicked(object sender, LinkClickedEventArgs e)
         {
             Process.Start(e.LinkText);
         }
@@ -3170,19 +3159,19 @@ namespace _7DaysServerManager
 
         private void Reboot_telnet_DoWork(object sender, DoWorkEventArgs e)
         {
-            Echo(lang("rees"), 2, true);
+            Echo(LocalizedLanguage("rees"), 2, true);
             break_telnet = true;
-            server_online = true; //żeby mogli się ciulasy łączyć bez odpalania z 7dsm
+            server_online = true; //so that they can connect without firing up with 7dsm
             try
             {
                 telnet_connection.CancelAsync();
             }
             catch { }
-            System.Threading.Thread.Sleep(500);
+            Thread.Sleep(500);
             try
             {
                 server_startup_tasks.RunWorkerAsync(false);
-                Lock_ctrl();
+                Lock_Panel_Controls();
             }
             catch { }
 
@@ -3194,7 +3183,7 @@ namespace _7DaysServerManager
 
         private void MaxSpawnedZombies_Scroll(object sender, EventArgs e)
         {
-            MaxSpawnedZombies_g.Text = lang("MaxSpawnedZombies_g") + " [" + Convert.ToString(MaxSpawnedZombies.Value) + "]";
+            MaxSpawnedZombies_g.Text = LocalizedLanguage("MaxSpawnedZombies_g") + " [" + Convert.ToString(MaxSpawnedZombies.Value) + "]";
             Update_Config();
         }
 
@@ -3595,11 +3584,11 @@ namespace _7DaysServerManager
 
             Console_RichTextBox.Invoke((MethodInvoker)delegate
             {
-                Shutdown_Server_Button.Text = lang("wait");
+                Shutdown_Server_Button.Text = LocalizedLanguage("wait");
                 Shutdown_Server_Button.Enabled = false;
             });
 
-            Echo(lang("closing"), 2, true);
+            Echo(LocalizedLanguage("closing"), 2, true);
 
             telnet_queue.Enqueue("shutdown");
 
@@ -3613,8 +3602,8 @@ namespace _7DaysServerManager
 
             if (reply_telnet == "error")
             {
-                Echo(lang("error"), 3, true);
-                Echo(lang("killing_proc"), 0, false);
+                Echo(LocalizedLanguage("error"), 3, true);
+                Echo(LocalizedLanguage("killing_proc"), 0, false);
 
                 foreach (Process myProc in Process.GetProcesses())
                 {
@@ -3644,15 +3633,15 @@ namespace _7DaysServerManager
 
             Console_RichTextBox.Invoke((MethodInvoker)delegate
             {
-                unlock_ctrl();
+                Unlock_Panel_Controls();
                 this.ControlBox = true;
                 Start_Server_Button.Enabled = true;
-                Shutdown_Server_Button.Text = lang("close");
+                Shutdown_Server_Button.Text = LocalizedLanguage("close");
             });
 
 
             //echo("OK", 1, true);
-            Echo(lang("server_closed"), 1, true);
+            Echo(LocalizedLanguage("server_closed"), 1, true);
 
             just_killin = false;
 
@@ -3676,7 +3665,7 @@ namespace _7DaysServerManager
 
         private void MaxSpawnedAnimals_Scroll(object sender, EventArgs e)
         {
-            MaxSpawnedAnimals_g.Text = lang("MaxSpawnedAnimals_g") + " [" + Convert.ToString(MaxSpawnedAnimals.Value) + "]";
+            MaxSpawnedAnimals_g.Text = LocalizedLanguage("MaxSpawnedAnimals_g") + " [" + Convert.ToString(MaxSpawnedAnimals.Value) + "]";
             Update_Config();
         }
 
@@ -3688,7 +3677,7 @@ namespace _7DaysServerManager
             }
             catch
             {
-                MessageBox.Show(lang("select_player"));
+                MessageBox.Show(LocalizedLanguage("select_player"));
             }
         }
 
@@ -3700,7 +3689,7 @@ namespace _7DaysServerManager
             }
             catch
             {
-                MessageBox.Show(lang("select_player"));
+                MessageBox.Show(LocalizedLanguage("select_player"));
             }
         }
 
@@ -3712,7 +3701,7 @@ namespace _7DaysServerManager
             }
             catch
             {
-                MessageBox.Show(lang("select_player"));
+                MessageBox.Show(LocalizedLanguage("select_player"));
             }
         }
 
@@ -3889,7 +3878,7 @@ namespace _7DaysServerManager
             catch
             {
                 update_avaible = "err";
-                Echo(lang("upd_err"), 3, true);
+                Echo(LocalizedLanguage("upd_err"), 3, true);
 
                 if (updater_invoked_manually)
                 {
@@ -3899,8 +3888,8 @@ namespace _7DaysServerManager
 
             if (update_avaible == "1")
             {
-                Echo(lang("upd_ava"), 2, true);
-                DialogResult dialogResult = MessageBox.Show(lang("upd_ava_2"), lang("update"), MessageBoxButtons.YesNo);
+                Echo(LocalizedLanguage("upd_ava"), 2, true);
+                DialogResult dialogResult = MessageBox.Show(LocalizedLanguage("upd_ava_2"), LocalizedLanguage("update"), MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
                     Console_RichTextBox.Invoke((MethodInvoker)delegate
@@ -4041,9 +4030,10 @@ namespace _7DaysServerManager
                     don_l.Visible = false;
                     Supporter_Donate_Button.Visible = false;
 
+                    // Reset Icon Locations
                     if (!icons_moved)
                     {
-                        like.Location = new Point(like.Location.X + 123, like.Location.Y);
+                        GitHub_Repo_Button.Location = new Point(GitHub_Repo_Button.Location.X + 123, GitHub_Repo_Button.Location.Y);
                         www7dsm.Location = new Point(www7dsm.Location.X + 123, www7dsm.Location.Y);
                         contact_b.Location = new Point(contact_b.Location.X + 123, contact_b.Location.Y);
                         help_b.Location = new Point(help_b.Location.X + 123, help_b.Location.Y);
@@ -4088,7 +4078,7 @@ namespace _7DaysServerManager
 
                     if (icons_moved)
                     {
-                        like.Location = new Point(like.Location.X - 123, like.Location.Y);
+                        GitHub_Repo_Button.Location = new Point(GitHub_Repo_Button.Location.X - 123, GitHub_Repo_Button.Location.Y);
                         www7dsm.Location = new Point(www7dsm.Location.X - 123, www7dsm.Location.Y);
                         contact_b.Location = new Point(contact_b.Location.X - 123, contact_b.Location.Y);
                         help_b.Location = new Point(help_b.Location.X - 123, help_b.Location.Y);
@@ -4125,9 +4115,10 @@ namespace _7DaysServerManager
                     don_l.Visible = false;
                     Supporter_Donate_Button.Visible = false;
 
+                    // Reset Icon Locations
                     if (!icons_moved)
                     {
-                        like.Location = new Point(like.Location.X + 123, like.Location.Y);
+                        GitHub_Repo_Button.Location = new Point(GitHub_Repo_Button.Location.X + 123, GitHub_Repo_Button.Location.Y);
                         www7dsm.Location = new Point(www7dsm.Location.X + 123, www7dsm.Location.Y);
                         contact_b.Location = new Point(contact_b.Location.X + 123, contact_b.Location.Y);
                         help_b.Location = new Point(help_b.Location.X + 123, help_b.Location.Y);
@@ -4142,9 +4133,10 @@ namespace _7DaysServerManager
                     don_l.Visible = true;
                     Supporter_Donate_Button.Visible = true;
 
+                    // Reset Icon Locations
                     if (icons_moved)
                     {
-                        like.Location = new Point(like.Location.X - 123, like.Location.Y);
+                        GitHub_Repo_Button.Location = new Point(GitHub_Repo_Button.Location.X - 123, GitHub_Repo_Button.Location.Y);
                         www7dsm.Location = new Point(www7dsm.Location.X - 123, www7dsm.Location.Y);
                         contact_b.Location = new Point(contact_b.Location.X - 123, contact_b.Location.Y);
                         help_b.Location = new Point(help_b.Location.X - 123, help_b.Location.Y);
@@ -4409,7 +4401,7 @@ namespace _7DaysServerManager
 
         private void Force_upd_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Are you sure?", lang("update"), MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("Are you sure?", LocalizedLanguage("update"), MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 Console_RichTextBox.Invoke((MethodInvoker)delegate
@@ -4450,7 +4442,7 @@ namespace _7DaysServerManager
         {
             Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM", "dev", Convert.ToString(Update_Channel_ComboBox.SelectedIndex));
 
-            MessageBox.Show("7DSM will now download latest version from selected update channel.", lang("update"));
+            MessageBox.Show("7DSM will now download latest version from selected update channel.", LocalizedLanguage("update"));
 
             Console_RichTextBox.Invoke((MethodInvoker)delegate
             {
@@ -4806,7 +4798,7 @@ namespace _7DaysServerManager
 
         private void Discord_b_Click(object sender, EventArgs e)
         {
-            Process.Start("https://discordapp.com/invite/rHuzfER");
+            Process.Start("https://discord.gg/yr54RS"); // 7DSM Discord Channel, I Might Be There, I Might Not
         }
 
         private void Newsbox_LinkClicked(object sender, LinkClickedEventArgs e)
@@ -4820,6 +4812,11 @@ namespace _7DaysServerManager
         }
 
         private void Backup_Completed_Message_Label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GitHub_Repo_Button_Click(object sender, EventArgs e)
         {
 
         }

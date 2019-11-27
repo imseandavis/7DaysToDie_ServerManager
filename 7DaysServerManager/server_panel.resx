@@ -1259,6 +1259,9 @@
         /////v////////////////////////////8=
 </value>
   </data>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>655, 56</value>
+  </metadata>
   <data name="Premium_Settings_Help_PictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
@@ -1270,9 +1273,6 @@
         Jjl5xQH2Qr2tnZQdR9vWn/8t9qH21LOpSfRMotvWhe3O/BdZtgVoC7C58nFkcwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>655, 56</value>
-  </metadata>
   <data name="Supporter_Donate_Button.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         R0lGODlhXAAaAIcAAP/x2//9+P7mtP+vM/+sLf7kr/7gpf7hqv7fof7ShP+xOP+zPUBRVv61Qr65oM8L
@@ -2115,6 +2115,9 @@ This is just example. Put your own rules here.</value>
   <metadata name="server_stop_tasks.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>510, 56</value>
   </metadata>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>655, 56</value>
+  </metadata>
   <data name="img_status.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
@@ -2358,26 +2361,6 @@ This is just example. Put your own rules here.</value>
         5j1u/njnjxGb6AjT04zb61G+I5Oa1KSerpyc/gX0C3SN3uFxzAAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="like.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAYAAADFw8lbAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
-        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsQAAALEAGtI711AAADDUlE
-        QVRYR+2X20tUURTGhZ70H+iP6C27aGakL10mi0pNHRJCGy+QdjHIC6mUiYZJqePYzQtICZPjYJZGF5IU
-        euihIIixckrLSrEblKPTfK2155zxdBhHyZPH4HzwMczZ+6z9m73OWvtMmCFD82hjmm0FOUJjh0vhtREF
-        ZEgz2UF2augucry0zOJFwfjXMyT+gTukZRYvCsagvAPBFlqQY81NAavG7NIyixcF+yvQ9ckNSMhuRVFt
-        H863DaC+fVB8ph69hqh9VnmevqAxqY1Iym/H85cf8WNqBkqV1d1F5J46ea6+oJv3X0Jvv0tC+1PF5+4g
-        cm+9PFdf0G0Hm/H0xZgA8/l8ePTEjUrbA5y90o/EvHZEL5fU78hqgWt4XIB6pr3ILu3CKlMtVu++ICBj
-        Z+fqBxqTaoPJ0oIh94QAnfLMIKvUgbWJgXQrvfSgDLjd0oysk50oqLqFkbEvAnSadrT68kNklNiRXeYQ
-        nWBDSqN839KDckoLa3rxk6qcn0ul+Lvs8oZ7+la9DDrl8Up4wXWC5qzRs+qjU6w4VtWDoTcTeEtp5yJi
-        8eaOffqO4dFJuN99Rm5ZF9YlNcj36VNM/OxFJVuxJfMqXG5/1XMxZZZ0UsXXiROJDwPFPfqAsuWqdwWp
-        eh5TzdcPlM19VN2eFOlWWntQThmndiHmk0m5oxZqWXxsBubMpl9bUArsjEu/iF25bdiZE9oJ5LSC63g9
-        MilAPdQFjlffxtbM5sAcE+24dDppB0oBI6gInCZq5ocre3DodPe8Lqzpw+iHr37QGS9qWgao2TvFWF7F
-        TToUHNhk1hy0SYDyc3eEQPMq/IuFciG9g74f/yZAvb98qG0dRE65U4zlnyFQOvu1BzXbIqiZO/m548Us
-        tBu8I6HMMI+fjeAVpZ/b1CnrfWQU3/CPE+SBIrv2qadg4WT+IyZ2YaHmd9K4dL/5O/3gwJji7albWkYb
-        UcB4cgfZrqG7ySulJQwZMvS/CEHMmuu6bpoLQH19WYDKVkp5XT2mi+aCUF/XHTYUqNqGDBnSV2FhvwHK
-        iFYn9qfZRwAAAABJRU5ErkJggg==
-</value>
-  </data>
   <metadata name="externalCallFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 95</value>
   </metadata>
@@ -2400,6 +2383,30 @@ This is just example. Put your own rules here.</value>
         fYokooAWUA3HQJ/LeuAuQolZUgm/7pR+VspXnePw17tAQQX9L2oNILmtj9Td8TbyB5K+3/pKG4/VyRVv
         o1wF1PpISevLj7t+HylpE/n9rGLGWELa8US+X63rifnbKEl0kdzWR+pMPJH/t09BBRWUXxUV/QG6mOBU
         wkWC4AAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="GitHub_Repo_Button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACoAAAAqCAIAAABKoV4MAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAABC9JREFUWEftl9lPVHcUx/0nlH0Th4KogCY0igR8URh80LqgLDVGqBVMNG6xGuOT
+        GKlQaxOpJgLDMjggog8WCQwDfUAeiEYhIUBAw+6QIKDsm9/mnnvzmzN3mLnGhDTxk/My93vO+d7lt82a
+        5VXlu/0q8j+0n52dbWtrq66uLjeZysvLa2pq2tvb5+fnSdaCBvuxsbGC/PwD+/f7enu7rV3Lwt/X92hi
+        orG09POnT1TgAi7ZT0xMZN24sd7fn1mqRpBO9+edO9PT01S8Is7t/21sDN+yhXk4jR8jI1taWqiFY5zY
+        59275+Hmxlq7GD5eXmVGIzVywEr2Obdvs45aw33dOgwXaqeGQ3uTyYRi1u4rAi8PU4Oa2qFu39XVhZGs
+        tLh65cr7d++KDIbYmBjlomrE7d5tevSot7c3MyNDuRgcFDQ0NEStbVGxX1pa+mnfPqUYUVdbK0mLi4vF
+        RUUXzp3DrTRYLK9f/Ue92Yw3fPbMmaonT1ArZWI9EDuknTghXWeo2FssFrESARvSXMZsNosd8AnevnlD
+        moCK/dEjR8RKBBY40lwG6w9rknHqFGkC3N5qtXq6u4tlGIB4vSS7TGVlpdgEgcE0OTlJsgy3r7D9ZojT
+        mZmkaSQ5KYm1qqurI02G2/92+TKraW1tJU0jlvp61ir71i3SZLh94qFDYkFgQMDCwgJpGsEW5W67Yv56
+        8iRpMtx+V2ysWBC2eTMJ2sEWzIbR4YMHSZPh9tFRUWJB0IYNylTWCgYa2y+wnJAmw+31cXFiAW5/fHyc
+        NI10d3eLrRCpycmkyXD79LQ0VlPz4gVpGjEajazVpYsXSZPh9rk5OawmNSWFNC3gk+1NSGCtCgsKSJbh
+        9s0vX7IaxD/Pn5PsMiXFxawJoqOjg2QZbo9ptik0lJVhwXr29CllOAPPbTAYvDw8WJOo7dspQ4DbAxzr
+        pIJf0tN/z87eGh4u/cQhs6qqamRkhPJsgevAwEBZWVn8nj1SPgscnChVQMXe+uFDgJ8fCkKCg7HZNDU1
+        xURHK12wBfycmspmI6b4Xr1+hePJpo0b7Rd8oGIP/rp7Vyrz8/Hp7Ow0FBYGCMfcxoYGyhOofPxYSbCP
+        0pISyrNF3X5ubi5Br5cqcVLo7+/HUeL4sWMpSUkXzp+HSnkCPT09ihkLVDlau9TtwfDw8LaICBTjlWLc
+        wXLEam1uboYNZdgyODgoWiqxc8eOsY8fKckOh/YAy1ZEWBha4A4w+/MfPqyoqPg7L0/16THuRFcpMNod
+        nfIkVrIHeCZ9fLzY0dvTc2pqimQBfCAxDYENZnR0lGQHOLEHGNV/5OZKcwGBCa06hvv6+hRjXWDgg/v3
+        HX1vEef2EhgK169d+0Gnwz+9mZkZuiogndJCQ0JuZmU5fWgFV+0l8NcaNvTDDtyi1r/Z2uy/Od/tV5FV
+        tV9e/gIyuAxnbMY1bgAAAABJRU5ErkJggg==
 </value>
   </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
