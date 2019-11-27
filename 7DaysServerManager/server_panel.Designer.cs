@@ -567,20 +567,20 @@
             // status_updater
             // 
             this.status_updater.WorkerSupportsCancellation = true;
-            this.status_updater.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker1_DoWork);
+            this.status_updater.DoWork += new System.ComponentModel.DoWorkEventHandler(this.BackgroundWorker1_DoWork);
             // 
             // Select_Game_Directory
             // 
             this.Select_Game_Directory.Description = "Game dir";
             this.Select_Game_Directory.ShowNewFolderButton = false;
-            this.Select_Game_Directory.HelpRequest += new System.EventHandler(this.select_dir_HelpRequest);
+            this.Select_Game_Directory.HelpRequest += new System.EventHandler(this.Select_dir_HelpRequest);
             // 
             // App_Icon
             // 
             this.App_Icon.Icon = ((System.Drawing.Icon)(resources.GetObject("App_Icon.Icon")));
             this.App_Icon.Text = "7 Days Server Manager";
             this.App_Icon.Visible = true;
-            this.App_Icon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ikona_MouseClick);
+            this.App_Icon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Ikona_MouseClick);
             // 
             // IP_Label
             // 
@@ -1105,7 +1105,7 @@
             this.blad.TabIndex = 28;
             this.blad.Text = "blad";
             this.blad.UseVisualStyleBackColor = true;
-            this.blad.Click += new System.EventHandler(this.blad_Click);
+            this.blad.Click += new System.EventHandler(this.Blad_Click);
             // 
             // workerynapis
             // 
@@ -1179,7 +1179,7 @@
             this.anon_data_2.TabIndex = 33;
             this.anon_data_2.TabStop = true;
             this.anon_data_2.Text = "anon_data_2";
-            this.anon_data_2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.anon_data_2_LinkClicked);
+            this.anon_data_2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Anon_data_2_LinkClicked);
             // 
             // anon_data
             // 
@@ -1192,7 +1192,7 @@
             this.anon_data.TabIndex = 32;
             this.anon_data.Text = "anon_data";
             this.anon_data.UseVisualStyleBackColor = true;
-            this.anon_data.CheckedChanged += new System.EventHandler(this.anon_data_CheckedChanged);
+            this.anon_data.CheckedChanged += new System.EventHandler(this.Anon_data_CheckedChanged);
             // 
             // cleanexit
             // 
@@ -1205,7 +1205,7 @@
             this.cleanexit.TabIndex = 31;
             this.cleanexit.Text = "cleanexit";
             this.cleanexit.UseVisualStyleBackColor = true;
-            this.cleanexit.CheckedChanged += new System.EventHandler(this.cleanexit_CheckedChanged);
+            this.cleanexit.CheckedChanged += new System.EventHandler(this.Cleanexit_CheckedChanged);
             // 
             // show_ip
             // 
@@ -1227,7 +1227,7 @@
             this.Auto_Detect_Game_File_Path_Button.TabIndex = 29;
             this.Auto_Detect_Game_File_Path_Button.Text = "Auto Detect";
             this.Auto_Detect_Game_File_Path_Button.UseVisualStyleBackColor = true;
-            this.Auto_Detect_Game_File_Path_Button.Click += new System.EventHandler(this.steamsearch_Click);
+            this.Auto_Detect_Game_File_Path_Button.Click += new System.EventHandler(this.Steamsearch_Click);
             // 
             // always_on_top
             // 
@@ -1238,7 +1238,7 @@
             this.always_on_top.TabIndex = 26;
             this.always_on_top.Text = "always_on_top";
             this.always_on_top.UseVisualStyleBackColor = true;
-            this.always_on_top.CheckedChanged += new System.EventHandler(this.always_on_top_CheckedChanged);
+            this.always_on_top.CheckedChanged += new System.EventHandler(this.Always_on_top_CheckedChanged);
             // 
             // Change_Game_File_Path_Button
             // 
@@ -1249,7 +1249,7 @@
             this.Change_Game_File_Path_Button.TabIndex = 24;
             this.Change_Game_File_Path_Button.Text = "Change Path";
             this.Change_Game_File_Path_Button.UseVisualStyleBackColor = true;
-            this.Change_Game_File_Path_Button.Click += new System.EventHandler(this.chpath_Click);
+            this.Change_Game_File_Path_Button.Click += new System.EventHandler(this.Chpath_Click);
             // 
             // Game_File_Path_Label
             // 
@@ -1270,7 +1270,7 @@
             this.to_tray.TabIndex = 21;
             this.to_tray.Text = "to_tray";
             this.to_tray.UseVisualStyleBackColor = true;
-            this.to_tray.CheckedChanged += new System.EventHandler(this.to_tray_CheckedChanged);
+            this.to_tray.CheckedChanged += new System.EventHandler(this.To_tray_CheckedChanged);
             // 
             // About_Button
             // 
@@ -1281,7 +1281,7 @@
             this.About_Button.TabIndex = 12;
             this.About_Button.Text = "About...";
             this.About_Button.UseVisualStyleBackColor = true;
-            this.About_Button.Click += new System.EventHandler(this.telnet_Click);
+            this.About_Button.Click += new System.EventHandler(this.Telnet_Click);
             // 
             // auto_backup_group
             // 
@@ -1316,7 +1316,7 @@
             this.backup_location.Name = "backup_location";
             this.backup_location.Size = new System.Drawing.Size(681, 20);
             this.backup_location.TabIndex = 11;
-            this.backup_location.TextChanged += new System.EventHandler(this.backup_location_TextChanged);
+            this.backup_location.TextChanged += new System.EventHandler(this.Backup_location_TextChanged);
             // 
             // backup_chat
             // 
@@ -1353,7 +1353,7 @@
             this.backup_time.Size = new System.Drawing.Size(670, 45);
             this.backup_time.TabIndex = 8;
             this.backup_time.Value = 16;
-            this.backup_time.Scroll += new System.EventHandler(this.backup_time_Scroll);
+            this.backup_time.Scroll += new System.EventHandler(this.Backup_time_Scroll);
             // 
             // Spawn_GroupBox
             // 
@@ -1377,7 +1377,7 @@
             this.Spawn_Item_Button.TabIndex = 3;
             this.Spawn_Item_Button.Text = "Spawn";
             this.Spawn_Item_Button.UseVisualStyleBackColor = true;
-            this.Spawn_Item_Button.Click += new System.EventHandler(this.spawn_now_Click);
+            this.Spawn_Item_Button.Click += new System.EventHandler(this.Spawn_now_Click);
             // 
             // Spawn_Item_ComboBox
             // 
@@ -1521,7 +1521,7 @@
             this.Set_Game_Time_Button.TabIndex = 0;
             this.Set_Game_Time_Button.Text = "Set";
             this.Set_Game_Time_Button.UseVisualStyleBackColor = true;
-            this.Set_Game_Time_Button.Click += new System.EventHandler(this.telnet_connect_Click);
+            this.Set_Game_Time_Button.Click += new System.EventHandler(this.Telnet_connect_Click);
             // 
             // Game_Day_TrackBar
             // 
@@ -1534,7 +1534,7 @@
             this.Game_Day_TrackBar.Size = new System.Drawing.Size(580, 45);
             this.Game_Day_TrackBar.TabIndex = 1;
             this.Game_Day_TrackBar.Value = 1;
-            this.Game_Day_TrackBar.Scroll += new System.EventHandler(this.dzien_bar_Scroll);
+            this.Game_Day_TrackBar.Scroll += new System.EventHandler(this.Dzien_bar_Scroll);
             // 
             // Game_Hour_TrackBar
             // 
@@ -1546,18 +1546,18 @@
             this.Game_Hour_TrackBar.Size = new System.Drawing.Size(580, 45);
             this.Game_Hour_TrackBar.TabIndex = 3;
             this.Game_Hour_TrackBar.Value = 8;
-            this.Game_Hour_TrackBar.Scroll += new System.EventHandler(this.godzina_bar_Scroll);
+            this.Game_Hour_TrackBar.Scroll += new System.EventHandler(this.Godzina_bar_Scroll);
             // 
             // cmd
             // 
             this.cmd.AcceptsReturn = true;
             this.cmd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmd.Location = new System.Drawing.Point(6, 459);
+            this.cmd.Location = new System.Drawing.Point(6, 465);
             this.cmd.Name = "cmd";
             this.cmd.Size = new System.Drawing.Size(689, 20);
             this.cmd.TabIndex = 17;
-            this.cmd.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cmd_KeyPress);
+            this.cmd.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Cmd_KeyPress);
             // 
             // Console_RichTextBox
             // 
@@ -1572,7 +1572,7 @@
             this.Console_RichTextBox.Name = "Console_RichTextBox";
             this.Console_RichTextBox.ReadOnly = true;
             this.Console_RichTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.Console_RichTextBox.Size = new System.Drawing.Size(686, 439);
+            this.Console_RichTextBox.Size = new System.Drawing.Size(686, 445);
             this.Console_RichTextBox.TabIndex = 15;
             this.Console_RichTextBox.Text = "";
             this.Console_RichTextBox.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.Konsola_LinkClicked);
@@ -1656,7 +1656,7 @@
             this.usecmd.TabIndex = 23;
             this.usecmd.Text = "Use ►";
             this.usecmd.UseVisualStyleBackColor = true;
-            this.usecmd.Click += new System.EventHandler(this.usecmd_Click);
+            this.usecmd.Click += new System.EventHandler(this.Usecmd_Click);
             // 
             // commandslist
             // 
@@ -1896,7 +1896,7 @@
             this.Console_Group.Controls.Add(this.cmd);
             this.Console_Group.Location = new System.Drawing.Point(3, 8);
             this.Console_Group.Name = "Console_Group";
-            this.Console_Group.Size = new System.Drawing.Size(698, 490);
+            this.Console_Group.Size = new System.Drawing.Size(698, 496);
             this.Console_Group.TabIndex = 18;
             this.Console_Group.TabStop = false;
             this.Console_Group.Text = "Console";
@@ -2094,7 +2094,7 @@
             this.Save_Logs_CheckBox.TabIndex = 8;
             this.Save_Logs_CheckBox.Text = "Save Logs To File";
             this.Save_Logs_CheckBox.UseVisualStyleBackColor = true;
-            this.Save_Logs_CheckBox.CheckedChanged += new System.EventHandler(this.save_logfiles_2_CheckedChanged);
+            this.Save_Logs_CheckBox.CheckedChanged += new System.EventHandler(this.Save_logfiles_2_CheckedChanged);
             // 
             // Kill_Server_Process
             // 
@@ -2104,7 +2104,7 @@
             this.Kill_Server_Process.TabIndex = 6;
             this.Kill_Server_Process.Text = "Kill Process";
             this.Kill_Server_Process.UseVisualStyleBackColor = true;
-            this.Kill_Server_Process.Click += new System.EventHandler(this.kill_proccess_Click);
+            this.Kill_Server_Process.Click += new System.EventHandler(this.Kill_proccess_Click);
             // 
             // ban_kick
             // 
@@ -2356,7 +2356,7 @@
             this.Ban_Slider_TrackBar.Size = new System.Drawing.Size(580, 45);
             this.Ban_Slider_TrackBar.TabIndex = 9;
             this.Ban_Slider_TrackBar.Value = 1;
-            this.Ban_Slider_TrackBar.Scroll += new System.EventHandler(this.trackBar1_Scroll_1);
+            this.Ban_Slider_TrackBar.Scroll += new System.EventHandler(this.TrackBar1_Scroll_1);
             // 
             // Online_Player_List
             // 
@@ -2466,7 +2466,7 @@
             this.Drop_On_Quit_Mode_0.TabStop = true;
             this.Drop_On_Quit_Mode_0.Text = "Nothing";
             this.Drop_On_Quit_Mode_0.UseVisualStyleBackColor = true;
-            this.Drop_On_Quit_Mode_0.CheckedChanged += new System.EventHandler(this.doq_0_CheckedChanged);
+            this.Drop_On_Quit_Mode_0.CheckedChanged += new System.EventHandler(this.Doq_0_CheckedChanged);
             // 
             // Drop_On_Quit_Mode_1
             // 
@@ -2477,7 +2477,7 @@
             this.Drop_On_Quit_Mode_1.TabIndex = 29;
             this.Drop_On_Quit_Mode_1.Text = "Everything";
             this.Drop_On_Quit_Mode_1.UseVisualStyleBackColor = true;
-            this.Drop_On_Quit_Mode_1.CheckedChanged += new System.EventHandler(this.doq_1_CheckedChanged);
+            this.Drop_On_Quit_Mode_1.CheckedChanged += new System.EventHandler(this.Doq_1_CheckedChanged);
             // 
             // Drop_On_Quit_Mode_3
             // 
@@ -2488,7 +2488,7 @@
             this.Drop_On_Quit_Mode_3.TabIndex = 31;
             this.Drop_On_Quit_Mode_3.Text = "Backpack";
             this.Drop_On_Quit_Mode_3.UseVisualStyleBackColor = true;
-            this.Drop_On_Quit_Mode_3.CheckedChanged += new System.EventHandler(this.doq_3_CheckedChanged);
+            this.Drop_On_Quit_Mode_3.CheckedChanged += new System.EventHandler(this.Doq_3_CheckedChanged);
             // 
             // Drop_On_Quit_Mode_2
             // 
@@ -2499,7 +2499,7 @@
             this.Drop_On_Quit_Mode_2.TabIndex = 30;
             this.Drop_On_Quit_Mode_2.Text = "Toolbelt";
             this.Drop_On_Quit_Mode_2.UseVisualStyleBackColor = true;
-            this.Drop_On_Quit_Mode_2.CheckedChanged += new System.EventHandler(this.doq_2_CheckedChanged);
+            this.Drop_On_Quit_Mode_2.CheckedChanged += new System.EventHandler(this.Doq_2_CheckedChanged);
             // 
             // Server_Reserved_Slots_GroupBox
             // 
@@ -2977,7 +2977,7 @@
             this.maxpl.Size = new System.Drawing.Size(496, 45);
             this.maxpl.TabIndex = 8;
             this.maxpl.Value = 16;
-            this.maxpl.Scroll += new System.EventHandler(this.trackBar1_Scroll);
+            this.maxpl.Scroll += new System.EventHandler(this.TrackBar1_Scroll);
             // 
             // Game_Mode_Settings_GroupBox
             // 
@@ -3027,7 +3027,7 @@
             this.gamemode_surv_pvp.TabStop = true;
             this.gamemode_surv_pvp.Text = "Survival MP";
             this.gamemode_surv_pvp.UseVisualStyleBackColor = true;
-            this.gamemode_surv_pvp.CheckedChanged += new System.EventHandler(this.gamemode_surv_pvp_CheckedChanged);
+            this.gamemode_surv_pvp.CheckedChanged += new System.EventHandler(this.Gamemode_surv_pvp_CheckedChanged);
             // 
             // cheatmode
             // 
@@ -3038,7 +3038,7 @@
             this.cheatmode.TabIndex = 14;
             this.cheatmode.Text = "Cheat Mode";
             this.cheatmode.UseVisualStyleBackColor = true;
-            this.cheatmode.CheckedChanged += new System.EventHandler(this.cheatmode_CheckedChanged);
+            this.cheatmode.CheckedChanged += new System.EventHandler(this.Cheatmode_CheckedChanged);
             // 
             // gamemode_coop
             // 
@@ -3049,7 +3049,7 @@
             this.gamemode_coop.TabIndex = 10;
             this.gamemode_coop.Text = "Survival SP";
             this.gamemode_coop.UseVisualStyleBackColor = true;
-            this.gamemode_coop.CheckedChanged += new System.EventHandler(this.gamemode_coop_CheckedChanged);
+            this.gamemode_coop.CheckedChanged += new System.EventHandler(this.Gamemode_coop_CheckedChanged);
             // 
             // Zombie_Settings_GroupBox
             // 
@@ -3074,19 +3074,19 @@
             this.zombie_never_run.TabStop = true;
             this.zombie_never_run.Text = "Zombie nigdy nie biegają";
             this.zombie_never_run.UseVisualStyleBackColor = true;
-            this.zombie_never_run.CheckedChanged += new System.EventHandler(this.zombie_never_run_CheckedChanged);
+            this.zombie_never_run.CheckedChanged += new System.EventHandler(this.Zombie_never_run_CheckedChanged);
             // 
             // zombie_normal
             // 
             this.zombie_normal.AutoSize = true;
             this.zombie_normal.Location = new System.Drawing.Point(6, 18);
             this.zombie_normal.Name = "zombie_normal";
-            this.zombie_normal.Size = new System.Drawing.Size(134, 17);
+            this.zombie_normal.Size = new System.Drawing.Size(124, 17);
             this.zombie_normal.TabIndex = 24;
             this.zombie_normal.TabStop = true;
-            this.zombie_normal.Text = "Zombie biegają w nocy";
+            this.zombie_normal.Text = "Zombie Run At Night";
             this.zombie_normal.UseVisualStyleBackColor = true;
-            this.zombie_normal.CheckedChanged += new System.EventHandler(this.zombie_normal_CheckedChanged);
+            this.zombie_normal.CheckedChanged += new System.EventHandler(this.Zombie_normal_CheckedChanged);
             // 
             // zombie_run
             // 
@@ -3098,7 +3098,7 @@
             this.zombie_run.TabStop = true;
             this.zombie_run.Text = "Zombie zawsze biegają";
             this.zombie_run.UseVisualStyleBackColor = true;
-            this.zombie_run.CheckedChanged += new System.EventHandler(this.zombie_run_CheckedChanged);
+            this.zombie_run.CheckedChanged += new System.EventHandler(this.Zombie_run_CheckedChanged);
             // 
             // nightpercentage_g
             // 
@@ -3122,7 +3122,7 @@
             this.nightpercentage.Size = new System.Drawing.Size(496, 45);
             this.nightpercentage.TabIndex = 9;
             this.nightpercentage.Value = 18;
-            this.nightpercentage.Scroll += new System.EventHandler(this.nightpercentage_Scroll);
+            this.nightpercentage.Scroll += new System.EventHandler(this.Nightpercentage_Scroll);
             // 
             // Day_Length_GroupBox
             // 
@@ -3146,7 +3146,7 @@
             this.realtime.TabIndex = 10;
             this.realtime.Text = "realtime";
             this.realtime.UseVisualStyleBackColor = true;
-            this.realtime.CheckedChanged += new System.EventHandler(this.realtime_CheckedChanged);
+            this.realtime.CheckedChanged += new System.EventHandler(this.Realtime_CheckedChanged);
             // 
             // dayLength
             // 
@@ -3160,7 +3160,7 @@
             this.dayLength.Size = new System.Drawing.Size(496, 45);
             this.dayLength.TabIndex = 9;
             this.dayLength.Value = 20;
-            this.dayLength.Scroll += new System.EventHandler(this.dlugoscdnia_Scroll);
+            this.dayLength.Scroll += new System.EventHandler(this.Day_Length_Scroll);
             // 
             // bdm_g
             // 
@@ -3183,7 +3183,7 @@
             this.bdm.Size = new System.Drawing.Size(167, 45);
             this.bdm.TabIndex = 9;
             this.bdm.Value = 2;
-            this.bdm.Scroll += new System.EventHandler(this.bdm_Scroll);
+            this.bdm.Scroll += new System.EventHandler(this.Bdm_Scroll);
             // 
             // Drop_On_Death_Group_Box
             // 
@@ -3230,7 +3230,7 @@
             this.Drop_On_Death_Mode_3.TabIndex = 27;
             this.Drop_On_Death_Mode_3.Text = "Backpack";
             this.Drop_On_Death_Mode_3.UseVisualStyleBackColor = true;
-            this.Drop_On_Death_Mode_3.CheckedChanged += new System.EventHandler(this.dod_3_CheckedChanged);
+            this.Drop_On_Death_Mode_3.CheckedChanged += new System.EventHandler(this.Dod_3_CheckedChanged);
             // 
             // Drop_On_Death_Mode_2
             // 
@@ -3243,7 +3243,7 @@
             this.Drop_On_Death_Mode_2.TabStop = true;
             this.Drop_On_Death_Mode_2.Text = "Toolbelt";
             this.Drop_On_Death_Mode_2.UseVisualStyleBackColor = true;
-            this.Drop_On_Death_Mode_2.CheckedChanged += new System.EventHandler(this.dod_2_CheckedChanged);
+            this.Drop_On_Death_Mode_2.CheckedChanged += new System.EventHandler(this.Dod_2_CheckedChanged);
             // 
             // Game_Difficulty_GroupBox
             // 
@@ -3266,7 +3266,7 @@
             this.Game_Difficulty_TrackBar.Size = new System.Drawing.Size(167, 45);
             this.Game_Difficulty_TrackBar.TabIndex = 9;
             this.Game_Difficulty_TrackBar.Value = 1;
-            this.Game_Difficulty_TrackBar.Scroll += new System.EventHandler(this.trudnosc_Scroll);
+            this.Game_Difficulty_TrackBar.Scroll += new System.EventHandler(this.Trudnosc_Scroll);
             // 
             // server_opts
             // 
@@ -3431,8 +3431,8 @@
             this.nazwa.Name = "nazwa";
             this.nazwa.Size = new System.Drawing.Size(190, 21);
             this.nazwa.TabIndex = 4;
-            this.nazwa.SelectedIndexChanged += new System.EventHandler(this.nazwa_SelectedIndexChanged);
-            this.nazwa.TextChanged += new System.EventHandler(this.nazwa_TextChanged);
+            this.nazwa.SelectedIndexChanged += new System.EventHandler(this.Nazwa_SelectedIndexChanged);
+            this.nazwa.TextChanged += new System.EventHandler(this.Nazwa_TextChanged);
             // 
             // server_nazwa
             // 
@@ -3452,7 +3452,7 @@
             this.mapa.Size = new System.Drawing.Size(160, 21);
             this.mapa.TabIndex = 2;
             this.mapa.Text = "Navezgane";
-            this.mapa.SelectedIndexChanged += new System.EventHandler(this.mapa_SelectedIndexChanged);
+            this.mapa.SelectedIndexChanged += new System.EventHandler(this.Mapa_SelectedIndexChanged);
             // 
             // dostep
             // 
@@ -3518,7 +3518,7 @@
             this.save_logfiles.TabIndex = 1;
             this.save_logfiles.Text = "Zapisuj logi serwera do pliku";
             this.save_logfiles.UseVisualStyleBackColor = true;
-            this.save_logfiles.CheckedChanged += new System.EventHandler(this.save_logfiles_CheckedChanged);
+            this.save_logfiles.CheckedChanged += new System.EventHandler(this.Save_logfiles_CheckedChanged);
             // 
             // autobots
             // 
@@ -3829,7 +3829,7 @@
             this.port.Size = new System.Drawing.Size(70, 20);
             this.port.TabIndex = 0;
             this.port.Text = "26900";
-            this.port.TextChanged += new System.EventHandler(this.port_TextChanged);
+            this.port.TextChanged += new System.EventHandler(this.Port_TextChanged);
             // 
             // ctrlpanel
             // 
@@ -3863,7 +3863,7 @@
             this.port_panel.Size = new System.Drawing.Size(49, 20);
             this.port_panel.TabIndex = 11;
             this.port_panel.Text = "8080";
-            this.port_panel.TextChanged += new System.EventHandler(this.port_panel_TextChanged);
+            this.port_panel.TextChanged += new System.EventHandler(this.Port_panel_TextChanged);
             // 
             // cpl_pass
             // 
@@ -3883,7 +3883,7 @@
             this.ctrlp.TabIndex = 9;
             this.ctrlp.Text = "Allow cpl";
             this.ctrlp.UseVisualStyleBackColor = true;
-            this.ctrlp.CheckedChanged += new System.EventHandler(this.ctrlp_CheckedChanged);
+            this.ctrlp.CheckedChanged += new System.EventHandler(this.Ctrlp_CheckedChanged);
             // 
             // ctrlppass
             // 
@@ -3892,7 +3892,7 @@
             this.ctrlppass.PasswordChar = '*';
             this.ctrlppass.Size = new System.Drawing.Size(169, 20);
             this.ctrlppass.TabIndex = 8;
-            this.ctrlppass.TextChanged += new System.EventHandler(this.ctrlppass_TextChanged);
+            this.ctrlppass.TextChanged += new System.EventHandler(this.Ctrlppass_TextChanged);
             // 
             // telnet_g
             // 
@@ -4108,7 +4108,7 @@
             this.How_To_Use_External_Calls_Button.TabIndex = 19;
             this.How_To_Use_External_Calls_Button.Text = "How to use external calling?";
             this.How_To_Use_External_Calls_Button.UseVisualStyleBackColor = true;
-            this.How_To_Use_External_Calls_Button.Click += new System.EventHandler(this.how_to_commands2_Click);
+            this.How_To_Use_External_Calls_Button.Click += new System.EventHandler(this.How_to_commands2_Click);
             // 
             // External_Call_File_Name_Label
             // 
@@ -4130,7 +4130,7 @@
             this.External_Call_File_Select_Button.TabIndex = 17;
             this.External_Call_File_Select_Button.Text = "Select File To Call...";
             this.External_Call_File_Select_Button.UseVisualStyleBackColor = true;
-            this.External_Call_File_Select_Button.Click += new System.EventHandler(this.excall_file_Click);
+            this.External_Call_File_Select_Button.Click += new System.EventHandler(this.Excall_file_Click);
             // 
             // Use_External_Call_CheckBox
             // 
@@ -4142,7 +4142,7 @@
             this.Use_External_Call_CheckBox.TabIndex = 16;
             this.Use_External_Call_CheckBox.Text = "Instead use external call (harder to use, but gives much more possibilities)";
             this.Use_External_Call_CheckBox.UseVisualStyleBackColor = true;
-            this.Use_External_Call_CheckBox.CheckedChanged += new System.EventHandler(this.excall_CheckedChanged);
+            this.Use_External_Call_CheckBox.CheckedChanged += new System.EventHandler(this.Excall_CheckedChanged);
             // 
             // Enable_Custom_Commands_CheckBox
             // 
@@ -4689,7 +4689,7 @@
             this.Auto_Restart_Time_TrackBar.Size = new System.Drawing.Size(667, 45);
             this.Auto_Restart_Time_TrackBar.TabIndex = 8;
             this.Auto_Restart_Time_TrackBar.Value = 16;
-            this.Auto_Restart_Time_TrackBar.Scroll += new System.EventHandler(this.reset_time_Scroll);
+            this.Auto_Restart_Time_TrackBar.Scroll += new System.EventHandler(this.Reset_time_Scroll);
             // 
             // Server_Commands_GroupBox
             // 
@@ -4738,7 +4738,7 @@
             this.Server_Commands_List_RichTextBox.Size = new System.Drawing.Size(878, 372);
             this.Server_Commands_List_RichTextBox.TabIndex = 0;
             this.Server_Commands_List_RichTextBox.Text = "";
-            this.Server_Commands_List_RichTextBox.TextChanged += new System.EventHandler(this.spam_list_TextChanged);
+            this.Server_Commands_List_RichTextBox.TextChanged += new System.EventHandler(this.Spam_list_TextChanged);
             // 
             // Server_Commands_Delay_GroupBox
             // 
@@ -4763,7 +4763,7 @@
             this.Server_Commands_Time_TrackBar.Size = new System.Drawing.Size(866, 45);
             this.Server_Commands_Time_TrackBar.TabIndex = 2;
             this.Server_Commands_Time_TrackBar.Value = 1;
-            this.Server_Commands_Time_TrackBar.Scroll += new System.EventHandler(this.spam_time_Scroll);
+            this.Server_Commands_Time_TrackBar.Scroll += new System.EventHandler(this.Spam_time_Scroll);
             // 
             // Whitelist_GroupBox
             // 
@@ -5058,7 +5058,7 @@
             this.dtds_auth.PasswordChar = '*';
             this.dtds_auth.Size = new System.Drawing.Size(286, 20);
             this.dtds_auth.TabIndex = 8;
-            this.dtds_auth.TextChanged += new System.EventHandler(this.dtds_auth_TextChanged);
+            this.dtds_auth.TextChanged += new System.EventHandler(this.Dtds_auth_TextChanged);
             // 
             // dtds_rem
             // 
@@ -5068,7 +5068,7 @@
             this.dtds_rem.TabIndex = 7;
             this.dtds_rem.Text = "Remove selected";
             this.dtds_rem.UseVisualStyleBackColor = true;
-            this.dtds_rem.Click += new System.EventHandler(this.dtds_rem_Click);
+            this.dtds_rem.Click += new System.EventHandler(this.Dtds_rem_Click);
             // 
             // dtds_info
             // 
@@ -5142,27 +5142,27 @@
             // server_startup_tasks
             // 
             this.server_startup_tasks.WorkerSupportsCancellation = true;
-            this.server_startup_tasks.DoWork += new System.ComponentModel.DoWorkEventHandler(this.work_after_start_DoWork);
+            this.server_startup_tasks.DoWork += new System.ComponentModel.DoWorkEventHandler(this.Work_after_start_DoWork);
             // 
             // telnet_connection
             // 
             this.telnet_connection.WorkerSupportsCancellation = true;
-            this.telnet_connection.DoWork += new System.ComponentModel.DoWorkEventHandler(this.telnet_connection_DoWork);
+            this.telnet_connection.DoWork += new System.ComponentModel.DoWorkEventHandler(this.Telnet_connection_DoWork);
             // 
             // workers_list
             // 
             this.workers_list.WorkerSupportsCancellation = true;
-            this.workers_list.DoWork += new System.ComponentModel.DoWorkEventHandler(this.taskman_worker_DoWork);
+            this.workers_list.DoWork += new System.ComponentModel.DoWorkEventHandler(this.Taskman_worker_DoWork);
             // 
             // auto_messages
             // 
             this.auto_messages.WorkerSupportsCancellation = true;
-            this.auto_messages.DoWork += new System.ComponentModel.DoWorkEventHandler(this.spamer_DoWork);
+            this.auto_messages.DoWork += new System.ComponentModel.DoWorkEventHandler(this.Spamer_DoWork);
             // 
             // sql_exporter
             // 
             this.sql_exporter.WorkerSupportsCancellation = true;
-            this.sql_exporter.DoWork += new System.ComponentModel.DoWorkEventHandler(this.sql_exporter_DoWork);
+            this.sql_exporter.DoWork += new System.ComponentModel.DoWorkEventHandler(this.Sql_exporter_DoWork);
             // 
             // auto_backup
             // 
@@ -5172,7 +5172,7 @@
             // auto_reset
             // 
             this.auto_reset.WorkerSupportsCancellation = true;
-            this.auto_reset.DoWork += new System.ComponentModel.DoWorkEventHandler(this.auto_reset_DoWork);
+            this.auto_reset.DoWork += new System.ComponentModel.DoWorkEventHandler(this.Auto_reset_DoWork);
             // 
             // stats
             // 
@@ -5187,7 +5187,7 @@
             // custom_cmd_executor
             // 
             this.custom_cmd_executor.WorkerSupportsCancellation = true;
-            this.custom_cmd_executor.DoWork += new System.ComponentModel.DoWorkEventHandler(this.custom_cmd_executor_DoWork);
+            this.custom_cmd_executor.DoWork += new System.ComponentModel.DoWorkEventHandler(this.Custom_cmd_executor_DoWork);
             // 
             // server_stop_tasks
             // 
@@ -5394,9 +5394,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "7 Days Server Manager";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Server_Panel_FormClosing);
-            this.Load += new System.EventHandler(this.server_panel_Load);
+            this.Load += new System.EventHandler(this.Server_panel_Load);
             this.Shown += new System.EventHandler(this.Server_panel_Shown);
-            this.Resize += new System.EventHandler(this.server_panel_Resize);
+            this.Resize += new System.EventHandler(this.Server_panel_Resize);
             this.settings.ResumeLayout(false);
             this.settings.PerformLayout();
             this.Updates_GroupBox.ResumeLayout(false);

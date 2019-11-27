@@ -64,7 +64,6 @@ C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerMana
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\bin\Debug\7DaysServerManager.pdb
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\bin\Debug\MySql.Data.dll
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.about.resources
-C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.ankieta.resources
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.contact.resources
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.license.resources
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.new_profile.resources
@@ -81,3 +80,4 @@ C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerMana
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Debug\7DaysServerManager.pdb
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.Server_Panel_Form.resources
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Debug\7DaysServerManager.csprojAssemblyReference.cache
+C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Debug\_7DaysServerManager.Survey_Form.resources

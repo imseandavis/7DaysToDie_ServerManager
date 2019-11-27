@@ -977,7 +977,7 @@ namespace _7DaysServerManager.lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to  has been kicked..
+        ///   Looks up a localized string similar to has been kicked..
         /// </summary>
         public static string kick_ok {
             get {
