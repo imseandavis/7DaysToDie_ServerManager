@@ -14,7 +14,7 @@ namespace _7DaysServerManager
         public void Load_Languages()
         {
             About_Button.Text = lang("about");
-            always_on_top.Text = lang("always_on_top");
+            Settings_Always_On_Top_CheckBox.Text = lang("always_on_top");
             autobots.Text = lang("autobots");
             Ban_Hammer_Button.Text = lang("ban");
             blad.Text = lang("blad");
@@ -51,7 +51,7 @@ namespace _7DaysServerManager
             Auto_Detect_Game_File_Path_Button.Text = lang("steamsearch");
             Shutdown_Server_Button.Text = lang("stop");
             Game_Time_Controls_GroupBox.Text = lang("telnet_group");
-            to_tray.Text = lang("to_tray");
+            Settings_Send_To_Tray_CheckBox.Text = lang("to_tray");
             Game_Difficulty_GroupBox.Text = lang("trudnoscgroup");
             Game_Mode_Settings_GroupBox.Text = lang("trybgry");
             Settings_GroupBox.Text = lang("ustawienia_grupa_ustawienia");
@@ -66,10 +66,10 @@ namespace _7DaysServerManager
             Set_Game_Time_Button.Text = lang("telnet_connect");
             Server_Commands_Note_Label.Text = lang("spaminfo");
             Server_Commands_Delay_GroupBox.Text = lang("spam_time");
-            show_ip.Text = lang("show_ip");
+            Settings_Show_IPS_CheckBox.Text = lang("show_ip");
             Kick_Reason_ComboBox.Text = lang("powod");
-            cleanexit.Text = lang("cleanexit");
-            anon_data.Text = lang("anon_data");
+            Settings_Clean_Exit_CheckBox.Text = lang("cleanexit");
+            Settings_Allow_Anon_Data_CheckBox.Text = lang("anon_data");
             anon_data_2.Text = lang("anon_data_2");
             SQL_Enabled_CheckBox.Text = lang("sql_enabled");
             SQL_Host_GroupBox.Text = lang("sql_host_g");

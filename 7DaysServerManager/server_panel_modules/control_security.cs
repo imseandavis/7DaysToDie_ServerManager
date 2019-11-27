@@ -35,7 +35,7 @@ namespace _7DaysServerManager
             zombie_never_run.Enabled = false;
             ServerIsPublic.Enabled = false;
             ServerPassword.Enabled = false;
-            nazwa.Enabled = false;
+            gamename.Enabled = false;
             mapa.Enabled = false;
             port.Enabled = false;
             gamemode_coop.Enabled = false;
@@ -130,7 +130,7 @@ namespace _7DaysServerManager
             zombie_never_run.Enabled = true;
             ServerIsPublic.Enabled = true;
             ServerPassword.Enabled = true;
-            nazwa.Enabled = true;
+            gamename.Enabled = true;
             mapa.Enabled = true;
             port.Enabled = true;
             gamemode_coop.Enabled = true;

@@ -117,7 +117,7 @@ namespace _7DaysServerManager
                         content = www_main_content.Text;
 
                     sname = server_nazwa.Text;
-                    ip = IP_Label.Text;
+                    ip = Public_IP_Address_Label.Text;
                     if (server_online)
                         serv_onl = "ONLINE";
                     else

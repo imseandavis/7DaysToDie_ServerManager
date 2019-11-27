@@ -33,8 +33,8 @@
             this.status_updater = new System.ComponentModel.BackgroundWorker();
             this.Select_Game_Directory = new System.Windows.Forms.FolderBrowserDialog();
             this.App_Icon = new System.Windows.Forms.NotifyIcon(this.components);
-            this.IP_Label = new System.Windows.Forms.Label();
-            this.settings = new System.Windows.Forms.TabPage();
+            this.Public_IP_Address_Label = new System.Windows.Forms.Label();
+            this.Settings_TabPage = new System.Windows.Forms.TabPage();
             this.Updates_GroupBox = new System.Windows.Forms.GroupBox();
             this.Apply_Update_Channel_Button = new System.Windows.Forms.Button();
             this.Force_Update_Button = new System.Windows.Forms.Button();
@@ -81,17 +81,17 @@
             this.workerynapis = new System.Windows.Forms.Label();
             this.taskman = new System.Windows.Forms.ListBox();
             this.Settings_GroupBox = new System.Windows.Forms.GroupBox();
-            this.skip_profiles = new System.Windows.Forms.CheckBox();
+            this.Settings_Skip_Profiles_CheckBox = new System.Windows.Forms.CheckBox();
             this.Browse_Game_File_Path_Button = new System.Windows.Forms.Button();
             this.anon_data_2 = new System.Windows.Forms.LinkLabel();
-            this.anon_data = new System.Windows.Forms.CheckBox();
-            this.cleanexit = new System.Windows.Forms.CheckBox();
-            this.show_ip = new System.Windows.Forms.CheckBox();
+            this.Settings_Allow_Anon_Data_CheckBox = new System.Windows.Forms.CheckBox();
+            this.Settings_Clean_Exit_CheckBox = new System.Windows.Forms.CheckBox();
+            this.Settings_Show_IPS_CheckBox = new System.Windows.Forms.CheckBox();
             this.Auto_Detect_Game_File_Path_Button = new System.Windows.Forms.Button();
-            this.always_on_top = new System.Windows.Forms.CheckBox();
+            this.Settings_Always_On_Top_CheckBox = new System.Windows.Forms.CheckBox();
             this.Change_Game_File_Path_Button = new System.Windows.Forms.Button();
             this.Game_File_Path_Label = new System.Windows.Forms.Label();
-            this.to_tray = new System.Windows.Forms.CheckBox();
+            this.Settings_Send_To_Tray_CheckBox = new System.Windows.Forms.CheckBox();
             this.About_Button = new System.Windows.Forms.Button();
             this.auto_backup_group = new System.Windows.Forms.GroupBox();
             this.backup_location_l = new System.Windows.Forms.Label();
@@ -112,7 +112,7 @@
             this.Console_RichTextBox = new System.Windows.Forms.RichTextBox();
             this.startbar = new System.Windows.Forms.ProgressBar();
             this.tabControl = new System.Windows.Forms.TabControl();
-            this.Manage_Server_TabPage = new System.Windows.Forms.TabPage();
+            this.ManageServer_TabPage = new System.Windows.Forms.TabPage();
             this.CommandsGroup = new System.Windows.Forms.GroupBox();
             this.usecmd = new System.Windows.Forms.Button();
             this.commandslist = new System.Windows.Forms.ListBox();
@@ -145,7 +145,7 @@
             this.Connect_Running_Server_Button = new System.Windows.Forms.Button();
             this.Save_Logs_CheckBox = new System.Windows.Forms.CheckBox();
             this.Kill_Server_Process = new System.Windows.Forms.Button();
-            this.ban_kick = new System.Windows.Forms.TabPage();
+            this.PlayerManagement_TabPage = new System.Windows.Forms.TabPage();
             this.Chat_GroupBox = new System.Windows.Forms.GroupBox();
             this.Chat_RichTextBox = new System.Windows.Forms.RichTextBox();
             this.Chat_Input_TextBox = new System.Windows.Forms.TextBox();
@@ -168,7 +168,7 @@
             this.Online_Player_List = new System.Windows.Forms.ListView();
             this.login_header = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.steamid_header = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.main_page = new System.Windows.Forms.TabPage();
+            this.GameSettings_TabPage = new System.Windows.Forms.TabPage();
             this.main_page_opts = new System.Windows.Forms.TabControl();
             this.game_opts = new System.Windows.Forms.TabPage();
             this.Drop_On_Quit_GroupBox = new System.Windows.Forms.GroupBox();
@@ -258,7 +258,7 @@
             this.sa_edit = new System.Windows.Forms.Button();
             this.AdminFileName = new System.Windows.Forms.TextBox();
             this.nazwamapa = new System.Windows.Forms.GroupBox();
-            this.nazwa = new System.Windows.Forms.ComboBox();
+            this.gamename = new System.Windows.Forms.ComboBox();
             this.server_nazwa = new System.Windows.Forms.TextBox();
             this.mapa = new System.Windows.Forms.ComboBox();
             this.dostep = new System.Windows.Forms.GroupBox();
@@ -305,7 +305,7 @@
             this.telnet_psw_l = new System.Windows.Forms.Label();
             this.telnet_psw = new System.Windows.Forms.TextBox();
             this.Header_Icons = new System.Windows.Forms.ImageList(this.components);
-            this.strings_page = new System.Windows.Forms.TabPage();
+            this.Messaging_TabPage = new System.Windows.Forms.TabPage();
             this.Server_Chat_Messages_GroupBox = new System.Windows.Forms.GroupBox();
             this.cmd_not_yet = new System.Windows.Forms.TextBox();
             this.Command_Wait_Message_Label = new System.Windows.Forms.Label();
@@ -325,7 +325,7 @@
             this.Enable_Custom_Commands_CheckBox = new System.Windows.Forms.CheckBox();
             this.How_To_Commands_Button = new System.Windows.Forms.Button();
             this.Custom_Commands_RichTextBox = new System.Windows.Forms.RichTextBox();
-            this.globalBanList = new System.Windows.Forms.TabPage();
+            this.GlobalBanList_TabPage = new System.Windows.Forms.TabPage();
             this.check_bans = new System.Windows.Forms.Button();
             this.global_ban_g = new System.Windows.Forms.GroupBox();
             this.sendbans = new System.Windows.Forms.CheckBox();
@@ -335,7 +335,7 @@
             this.glob_2 = new System.Windows.Forms.RadioButton();
             this.glob_1 = new System.Windows.Forms.RadioButton();
             this.banlist_logo = new System.Windows.Forms.PictureBox();
-            this.WebServer = new System.Windows.Forms.TabPage();
+            this.WebServer_TabPage = new System.Windows.Forms.TabPage();
             this.autofix_g = new System.Windows.Forms.GroupBox();
             this.reverse_reservation = new System.Windows.Forms.Button();
             this.conflict_l = new System.Windows.Forms.Label();
@@ -362,7 +362,7 @@
             this.android_play = new System.Windows.Forms.Button();
             this.android_allow = new System.Windows.Forms.CheckBox();
             this.android_access_key = new System.Windows.Forms.Label();
-            this.tasks = new System.Windows.Forms.TabPage();
+            this.ServerTasks_TabPage = new System.Windows.Forms.TabPage();
             this.Auto_Restarts_GroupBox = new System.Windows.Forms.GroupBox();
             this.Warn_Before_Restart_CheckBox = new System.Windows.Forms.CheckBox();
             this.Enable_Auto_Restarts_CheckBox = new System.Windows.Forms.CheckBox();
@@ -380,7 +380,7 @@
             this.Auto_Update_Whitelist_CheckBox = new System.Windows.Forms.CheckBox();
             this.Auto_Update_External_Whitelist_Note_Label = new System.Windows.Forms.Label();
             this.Auto_Update_External_Whitelist_URL_TextBox = new System.Windows.Forms.TextBox();
-            this.backup_tab = new System.Windows.Forms.TabPage();
+            this.Backups_TabPage = new System.Windows.Forms.TabPage();
             this.restore_backup_g = new System.Windows.Forms.GroupBox();
             this.opeb_bp_dir = new System.Windows.Forms.Button();
             this.create_bp_now = new System.Windows.Forms.Button();
@@ -393,7 +393,7 @@
             this.rem_old_backups_count = new System.Windows.Forms.TextBox();
             this.rem_old_backups = new System.Windows.Forms.CheckBox();
             this.prem_help2 = new System.Windows.Forms.PictureBox();
-            this.srv_list = new System.Windows.Forms.TabPage();
+            this.Rewards_TabPage = new System.Windows.Forms.TabPage();
             this.deds_g = new System.Windows.Forms.GroupBox();
             this.dtds_show = new System.Windows.Forms.CheckBox();
             this.dtds_info2 = new System.Windows.Forms.Label();
@@ -432,7 +432,9 @@
             this.like = new System.Windows.Forms.Button();
             this.externalCallFile = new System.Windows.Forms.OpenFileDialog();
             this.discord_b = new System.Windows.Forms.Button();
-            this.settings.SuspendLayout();
+            this.Mods_TabPage = new System.Windows.Forms.TabPage();
+            this.Private_IP_Address_Label = new System.Windows.Forms.Label();
+            this.Settings_TabPage.SuspendLayout();
             this.Updates_GroupBox.SuspendLayout();
             this.exe_settings_g.SuspendLayout();
             this.Supporter_Settings_GroupBox.SuspendLayout();
@@ -457,7 +459,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Game_Day_TrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Game_Hour_TrackBar)).BeginInit();
             this.tabControl.SuspendLayout();
-            this.Manage_Server_TabPage.SuspendLayout();
+            this.ManageServer_TabPage.SuspendLayout();
             this.CommandsGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.overviewSplitter)).BeginInit();
             this.overviewSplitter.Panel1.SuspendLayout();
@@ -468,13 +470,13 @@
             this.Console_Group.SuspendLayout();
             this.Timers_Group.SuspendLayout();
             this.Server_Controls_Group.SuspendLayout();
-            this.ban_kick.SuspendLayout();
+            this.PlayerManagement_TabPage.SuspendLayout();
             this.Chat_GroupBox.SuspendLayout();
             this.Player_GroupBox.SuspendLayout();
             this.Kick_GroupBox.SuspendLayout();
             this.Ban_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Ban_Slider_TrackBar)).BeginInit();
-            this.main_page.SuspendLayout();
+            this.GameSettings_TabPage.SuspendLayout();
             this.main_page_opts.SuspendLayout();
             this.game_opts.SuspendLayout();
             this.Drop_On_Quit_GroupBox.SuspendLayout();
@@ -533,13 +535,13 @@
             this.port_g.SuspendLayout();
             this.ctrlpanel.SuspendLayout();
             this.telnet_g.SuspendLayout();
-            this.strings_page.SuspendLayout();
+            this.Messaging_TabPage.SuspendLayout();
             this.Server_Chat_Messages_GroupBox.SuspendLayout();
             this.Custom_Commands_GroupBox.SuspendLayout();
-            this.globalBanList.SuspendLayout();
+            this.GlobalBanList_TabPage.SuspendLayout();
             this.global_ban_g.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.banlist_logo)).BeginInit();
-            this.WebServer.SuspendLayout();
+            this.WebServer_TabPage.SuspendLayout();
             this.autofix_g.SuspendLayout();
             this.website_g.SuspendLayout();
             this.www_rules_content.SuspendLayout();
@@ -548,18 +550,18 @@
             this.other_tab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.prem_help3)).BeginInit();
             this.android_g.SuspendLayout();
-            this.tasks.SuspendLayout();
+            this.ServerTasks_TabPage.SuspendLayout();
             this.Auto_Restarts_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Auto_Restart_Time_TrackBar)).BeginInit();
             this.Server_Commands_GroupBox.SuspendLayout();
             this.Server_Commands_Delay_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Server_Commands_Time_TrackBar)).BeginInit();
             this.Whitelist_GroupBox.SuspendLayout();
-            this.backup_tab.SuspendLayout();
+            this.Backups_TabPage.SuspendLayout();
             this.restore_backup_g.SuspendLayout();
             this.ex_backup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.prem_help2)).BeginInit();
-            this.srv_list.SuspendLayout();
+            this.Rewards_TabPage.SuspendLayout();
             this.deds_g.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_status)).BeginInit();
             this.SuspendLayout();
@@ -582,38 +584,38 @@
             this.App_Icon.Visible = true;
             this.App_Icon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Ikona_MouseClick);
             // 
-            // IP_Label
+            // Public_IP_Address_Label
             // 
-            this.IP_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.IP_Label.AutoSize = true;
-            this.IP_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.IP_Label.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.IP_Label.Location = new System.Drawing.Point(6, 100);
-            this.IP_Label.Name = "IP_Label";
-            this.IP_Label.Size = new System.Drawing.Size(92, 13);
-            this.IP_Label.TabIndex = 23;
-            this.IP_Label.Text = "Getting Local IP...";
-            this.IP_Label.Visible = false;
+            this.Public_IP_Address_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Public_IP_Address_Label.AutoSize = true;
+            this.Public_IP_Address_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Public_IP_Address_Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Public_IP_Address_Label.Location = new System.Drawing.Point(6, 100);
+            this.Public_IP_Address_Label.Name = "Public_IP_Address_Label";
+            this.Public_IP_Address_Label.Size = new System.Drawing.Size(95, 13);
+            this.Public_IP_Address_Label.TabIndex = 23;
+            this.Public_IP_Address_Label.Text = "Getting Public IP...";
+            this.Public_IP_Address_Label.Visible = false;
             // 
-            // settings
+            // Settings_TabPage
             // 
-            this.settings.BackColor = System.Drawing.SystemColors.Control;
-            this.settings.Controls.Add(this.Updates_GroupBox);
-            this.settings.Controls.Add(this.exe_settings_g);
-            this.settings.Controls.Add(this.Supporter_Settings_GroupBox);
-            this.settings.Controls.Add(this.Supporter_GroupBox);
-            this.settings.Controls.Add(this.debug_log);
-            this.settings.Controls.Add(this.SQL_GroupBox);
-            this.settings.Controls.Add(this.blad);
-            this.settings.Controls.Add(this.workerynapis);
-            this.settings.Controls.Add(this.taskman);
-            this.settings.Controls.Add(this.Settings_GroupBox);
-            this.settings.Controls.Add(this.About_Button);
-            this.settings.ImageIndex = 4;
-            this.settings.Location = new System.Drawing.Point(47, 4);
-            this.settings.Name = "settings";
-            this.settings.Size = new System.Drawing.Size(908, 684);
-            this.settings.TabIndex = 4;
+            this.Settings_TabPage.BackColor = System.Drawing.SystemColors.Control;
+            this.Settings_TabPage.Controls.Add(this.Updates_GroupBox);
+            this.Settings_TabPage.Controls.Add(this.exe_settings_g);
+            this.Settings_TabPage.Controls.Add(this.Supporter_Settings_GroupBox);
+            this.Settings_TabPage.Controls.Add(this.Supporter_GroupBox);
+            this.Settings_TabPage.Controls.Add(this.debug_log);
+            this.Settings_TabPage.Controls.Add(this.SQL_GroupBox);
+            this.Settings_TabPage.Controls.Add(this.blad);
+            this.Settings_TabPage.Controls.Add(this.workerynapis);
+            this.Settings_TabPage.Controls.Add(this.taskman);
+            this.Settings_TabPage.Controls.Add(this.Settings_GroupBox);
+            this.Settings_TabPage.Controls.Add(this.About_Button);
+            this.Settings_TabPage.ImageIndex = 4;
+            this.Settings_TabPage.Location = new System.Drawing.Point(47, 4);
+            this.Settings_TabPage.Name = "Settings_TabPage";
+            this.Settings_TabPage.Size = new System.Drawing.Size(908, 684);
+            this.Settings_TabPage.TabIndex = 4;
             // 
             // Updates_GroupBox
             // 
@@ -1131,17 +1133,17 @@
             // 
             // Settings_GroupBox
             // 
-            this.Settings_GroupBox.Controls.Add(this.skip_profiles);
+            this.Settings_GroupBox.Controls.Add(this.Settings_Skip_Profiles_CheckBox);
             this.Settings_GroupBox.Controls.Add(this.Browse_Game_File_Path_Button);
             this.Settings_GroupBox.Controls.Add(this.anon_data_2);
-            this.Settings_GroupBox.Controls.Add(this.anon_data);
-            this.Settings_GroupBox.Controls.Add(this.cleanexit);
-            this.Settings_GroupBox.Controls.Add(this.show_ip);
+            this.Settings_GroupBox.Controls.Add(this.Settings_Allow_Anon_Data_CheckBox);
+            this.Settings_GroupBox.Controls.Add(this.Settings_Clean_Exit_CheckBox);
+            this.Settings_GroupBox.Controls.Add(this.Settings_Show_IPS_CheckBox);
             this.Settings_GroupBox.Controls.Add(this.Auto_Detect_Game_File_Path_Button);
-            this.Settings_GroupBox.Controls.Add(this.always_on_top);
+            this.Settings_GroupBox.Controls.Add(this.Settings_Always_On_Top_CheckBox);
             this.Settings_GroupBox.Controls.Add(this.Change_Game_File_Path_Button);
             this.Settings_GroupBox.Controls.Add(this.Game_File_Path_Label);
-            this.Settings_GroupBox.Controls.Add(this.to_tray);
+            this.Settings_GroupBox.Controls.Add(this.Settings_Send_To_Tray_CheckBox);
             this.Settings_GroupBox.Location = new System.Drawing.Point(8, 3);
             this.Settings_GroupBox.Name = "Settings_GroupBox";
             this.Settings_GroupBox.Size = new System.Drawing.Size(534, 229);
@@ -1149,16 +1151,16 @@
             this.Settings_GroupBox.TabStop = false;
             this.Settings_GroupBox.Text = "Settings";
             // 
-            // skip_profiles
+            // Settings_Skip_Profiles_CheckBox
             // 
-            this.skip_profiles.AutoSize = true;
-            this.skip_profiles.Location = new System.Drawing.Point(6, 111);
-            this.skip_profiles.Name = "skip_profiles";
-            this.skip_profiles.Size = new System.Drawing.Size(123, 17);
-            this.skip_profiles.TabIndex = 36;
-            this.skip_profiles.Text = "Skip profile selection";
-            this.skip_profiles.UseVisualStyleBackColor = true;
-            this.skip_profiles.CheckedChanged += new System.EventHandler(this.Skip_profiles_CheckedChanged);
+            this.Settings_Skip_Profiles_CheckBox.AutoSize = true;
+            this.Settings_Skip_Profiles_CheckBox.Location = new System.Drawing.Point(6, 111);
+            this.Settings_Skip_Profiles_CheckBox.Name = "Settings_Skip_Profiles_CheckBox";
+            this.Settings_Skip_Profiles_CheckBox.Size = new System.Drawing.Size(126, 17);
+            this.Settings_Skip_Profiles_CheckBox.TabIndex = 36;
+            this.Settings_Skip_Profiles_CheckBox.Text = "Skip Profile Selection";
+            this.Settings_Skip_Profiles_CheckBox.UseVisualStyleBackColor = true;
+            this.Settings_Skip_Profiles_CheckBox.CheckedChanged += new System.EventHandler(this.Skip_profiles_CheckedChanged);
             // 
             // Browse_Game_File_Path_Button
             // 
@@ -1181,42 +1183,42 @@
             this.anon_data_2.Text = "anon_data_2";
             this.anon_data_2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Anon_data_2_LinkClicked);
             // 
-            // anon_data
+            // Settings_Allow_Anon_Data_CheckBox
             // 
-            this.anon_data.AutoSize = true;
-            this.anon_data.Checked = true;
-            this.anon_data.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.anon_data.Location = new System.Drawing.Point(6, 134);
-            this.anon_data.Name = "anon_data";
-            this.anon_data.Size = new System.Drawing.Size(77, 17);
-            this.anon_data.TabIndex = 32;
-            this.anon_data.Text = "anon_data";
-            this.anon_data.UseVisualStyleBackColor = true;
-            this.anon_data.CheckedChanged += new System.EventHandler(this.Anon_data_CheckedChanged);
+            this.Settings_Allow_Anon_Data_CheckBox.AutoSize = true;
+            this.Settings_Allow_Anon_Data_CheckBox.Checked = true;
+            this.Settings_Allow_Anon_Data_CheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.Settings_Allow_Anon_Data_CheckBox.Location = new System.Drawing.Point(6, 134);
+            this.Settings_Allow_Anon_Data_CheckBox.Name = "Settings_Allow_Anon_Data_CheckBox";
+            this.Settings_Allow_Anon_Data_CheckBox.Size = new System.Drawing.Size(188, 17);
+            this.Settings_Allow_Anon_Data_CheckBox.TabIndex = 32;
+            this.Settings_Allow_Anon_Data_CheckBox.Text = "Send Anonymous Usage Statistics";
+            this.Settings_Allow_Anon_Data_CheckBox.UseVisualStyleBackColor = true;
+            this.Settings_Allow_Anon_Data_CheckBox.CheckedChanged += new System.EventHandler(this.Anon_data_CheckedChanged);
             // 
-            // cleanexit
+            // Settings_Clean_Exit_CheckBox
             // 
-            this.cleanexit.AutoSize = true;
-            this.cleanexit.Checked = true;
-            this.cleanexit.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cleanexit.Location = new System.Drawing.Point(6, 88);
-            this.cleanexit.Name = "cleanexit";
-            this.cleanexit.Size = new System.Drawing.Size(68, 17);
-            this.cleanexit.TabIndex = 31;
-            this.cleanexit.Text = "cleanexit";
-            this.cleanexit.UseVisualStyleBackColor = true;
-            this.cleanexit.CheckedChanged += new System.EventHandler(this.Cleanexit_CheckedChanged);
+            this.Settings_Clean_Exit_CheckBox.AutoSize = true;
+            this.Settings_Clean_Exit_CheckBox.Checked = true;
+            this.Settings_Clean_Exit_CheckBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.Settings_Clean_Exit_CheckBox.Location = new System.Drawing.Point(6, 88);
+            this.Settings_Clean_Exit_CheckBox.Name = "Settings_Clean_Exit_CheckBox";
+            this.Settings_Clean_Exit_CheckBox.Size = new System.Drawing.Size(73, 17);
+            this.Settings_Clean_Exit_CheckBox.TabIndex = 31;
+            this.Settings_Clean_Exit_CheckBox.Text = "Clean Exit";
+            this.Settings_Clean_Exit_CheckBox.UseVisualStyleBackColor = true;
+            this.Settings_Clean_Exit_CheckBox.CheckedChanged += new System.EventHandler(this.Cleanexit_CheckedChanged);
             // 
-            // show_ip
+            // Settings_Show_IPS_CheckBox
             // 
-            this.show_ip.AutoSize = true;
-            this.show_ip.Location = new System.Drawing.Point(6, 65);
-            this.show_ip.Name = "show_ip";
-            this.show_ip.Size = new System.Drawing.Size(65, 17);
-            this.show_ip.TabIndex = 30;
-            this.show_ip.Text = "show_ip";
-            this.show_ip.UseVisualStyleBackColor = true;
-            this.show_ip.CheckedChanged += new System.EventHandler(this.Show_IP_CheckedChanged);
+            this.Settings_Show_IPS_CheckBox.AutoSize = true;
+            this.Settings_Show_IPS_CheckBox.Location = new System.Drawing.Point(6, 65);
+            this.Settings_Show_IPS_CheckBox.Name = "Settings_Show_IPS_CheckBox";
+            this.Settings_Show_IPS_CheckBox.Size = new System.Drawing.Size(73, 17);
+            this.Settings_Show_IPS_CheckBox.TabIndex = 30;
+            this.Settings_Show_IPS_CheckBox.Text = "Show IP\'s";
+            this.Settings_Show_IPS_CheckBox.UseVisualStyleBackColor = true;
+            this.Settings_Show_IPS_CheckBox.CheckedChanged += new System.EventHandler(this.Show_IP_CheckedChanged);
             // 
             // Auto_Detect_Game_File_Path_Button
             // 
@@ -1229,16 +1231,16 @@
             this.Auto_Detect_Game_File_Path_Button.UseVisualStyleBackColor = true;
             this.Auto_Detect_Game_File_Path_Button.Click += new System.EventHandler(this.Steamsearch_Click);
             // 
-            // always_on_top
+            // Settings_Always_On_Top_CheckBox
             // 
-            this.always_on_top.AutoSize = true;
-            this.always_on_top.Location = new System.Drawing.Point(6, 42);
-            this.always_on_top.Name = "always_on_top";
-            this.always_on_top.Size = new System.Drawing.Size(97, 17);
-            this.always_on_top.TabIndex = 26;
-            this.always_on_top.Text = "always_on_top";
-            this.always_on_top.UseVisualStyleBackColor = true;
-            this.always_on_top.CheckedChanged += new System.EventHandler(this.Always_on_top_CheckedChanged);
+            this.Settings_Always_On_Top_CheckBox.AutoSize = true;
+            this.Settings_Always_On_Top_CheckBox.Location = new System.Drawing.Point(6, 42);
+            this.Settings_Always_On_Top_CheckBox.Name = "Settings_Always_On_Top_CheckBox";
+            this.Settings_Always_On_Top_CheckBox.Size = new System.Drawing.Size(98, 17);
+            this.Settings_Always_On_Top_CheckBox.TabIndex = 26;
+            this.Settings_Always_On_Top_CheckBox.Text = "Always On Top";
+            this.Settings_Always_On_Top_CheckBox.UseVisualStyleBackColor = true;
+            this.Settings_Always_On_Top_CheckBox.CheckedChanged += new System.EventHandler(this.Always_on_top_CheckedChanged);
             // 
             // Change_Game_File_Path_Button
             // 
@@ -1261,16 +1263,16 @@
             this.Game_File_Path_Label.TabIndex = 23;
             this.Game_File_Path_Label.Text = "Game File Path: ";
             // 
-            // to_tray
+            // Settings_Send_To_Tray_CheckBox
             // 
-            this.to_tray.AutoSize = true;
-            this.to_tray.Location = new System.Drawing.Point(6, 19);
-            this.to_tray.Name = "to_tray";
-            this.to_tray.Size = new System.Drawing.Size(58, 17);
-            this.to_tray.TabIndex = 21;
-            this.to_tray.Text = "to_tray";
-            this.to_tray.UseVisualStyleBackColor = true;
-            this.to_tray.CheckedChanged += new System.EventHandler(this.To_tray_CheckedChanged);
+            this.Settings_Send_To_Tray_CheckBox.AutoSize = true;
+            this.Settings_Send_To_Tray_CheckBox.Location = new System.Drawing.Point(6, 19);
+            this.Settings_Send_To_Tray_CheckBox.Name = "Settings_Send_To_Tray_CheckBox";
+            this.Settings_Send_To_Tray_CheckBox.Size = new System.Drawing.Size(106, 17);
+            this.Settings_Send_To_Tray_CheckBox.TabIndex = 21;
+            this.Settings_Send_To_Tray_CheckBox.Text = "Minimize To Tray";
+            this.Settings_Send_To_Tray_CheckBox.UseVisualStyleBackColor = true;
+            this.Settings_Send_To_Tray_CheckBox.CheckedChanged += new System.EventHandler(this.To_tray_CheckedChanged);
             // 
             // About_Button
             // 
@@ -1553,7 +1555,7 @@
             this.cmd.AcceptsReturn = true;
             this.cmd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmd.Location = new System.Drawing.Point(6, 465);
+            this.cmd.Location = new System.Drawing.Point(6, 468);
             this.cmd.Name = "cmd";
             this.cmd.Size = new System.Drawing.Size(689, 20);
             this.cmd.TabIndex = 17;
@@ -1572,7 +1574,7 @@
             this.Console_RichTextBox.Name = "Console_RichTextBox";
             this.Console_RichTextBox.ReadOnly = true;
             this.Console_RichTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.Console_RichTextBox.Size = new System.Drawing.Size(686, 445);
+            this.Console_RichTextBox.Size = new System.Drawing.Size(686, 448);
             this.Console_RichTextBox.TabIndex = 15;
             this.Console_RichTextBox.Text = "";
             this.Console_RichTextBox.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.Konsola_LinkClicked);
@@ -1596,16 +1598,17 @@
             this.tabControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControl.Controls.Add(this.Manage_Server_TabPage);
-            this.tabControl.Controls.Add(this.ban_kick);
-            this.tabControl.Controls.Add(this.main_page);
-            this.tabControl.Controls.Add(this.strings_page);
-            this.tabControl.Controls.Add(this.globalBanList);
-            this.tabControl.Controls.Add(this.WebServer);
-            this.tabControl.Controls.Add(this.tasks);
-            this.tabControl.Controls.Add(this.backup_tab);
-            this.tabControl.Controls.Add(this.srv_list);
-            this.tabControl.Controls.Add(this.settings);
+            this.tabControl.Controls.Add(this.ManageServer_TabPage);
+            this.tabControl.Controls.Add(this.PlayerManagement_TabPage);
+            this.tabControl.Controls.Add(this.GameSettings_TabPage);
+            this.tabControl.Controls.Add(this.Messaging_TabPage);
+            this.tabControl.Controls.Add(this.Mods_TabPage);
+            this.tabControl.Controls.Add(this.GlobalBanList_TabPage);
+            this.tabControl.Controls.Add(this.WebServer_TabPage);
+            this.tabControl.Controls.Add(this.ServerTasks_TabPage);
+            this.tabControl.Controls.Add(this.Backups_TabPage);
+            this.tabControl.Controls.Add(this.Rewards_TabPage);
+            this.tabControl.Controls.Add(this.Settings_TabPage);
             this.tabControl.ImageList = this.Header_Icons;
             this.tabControl.ItemSize = new System.Drawing.Size(43, 43);
             this.tabControl.Location = new System.Drawing.Point(1, 0);
@@ -1619,20 +1622,20 @@
             this.tabControl.Size = new System.Drawing.Size(959, 692);
             this.tabControl.TabIndex = 22;
             // 
-            // Manage_Server_TabPage
+            // ManageServer_TabPage
             // 
-            this.Manage_Server_TabPage.BackColor = System.Drawing.SystemColors.Control;
-            this.Manage_Server_TabPage.Controls.Add(this.CommandsGroup);
-            this.Manage_Server_TabPage.Controls.Add(this.zoomup);
-            this.Manage_Server_TabPage.Controls.Add(this.overviewSplitter);
-            this.Manage_Server_TabPage.Controls.Add(this.Timers_Group);
-            this.Manage_Server_TabPage.Controls.Add(this.Server_Controls_Group);
-            this.Manage_Server_TabPage.Controls.Add(this.startbar);
-            this.Manage_Server_TabPage.ImageIndex = 0;
-            this.Manage_Server_TabPage.Location = new System.Drawing.Point(47, 4);
-            this.Manage_Server_TabPage.Name = "Manage_Server_TabPage";
-            this.Manage_Server_TabPage.Size = new System.Drawing.Size(908, 684);
-            this.Manage_Server_TabPage.TabIndex = 7;
+            this.ManageServer_TabPage.BackColor = System.Drawing.SystemColors.Control;
+            this.ManageServer_TabPage.Controls.Add(this.CommandsGroup);
+            this.ManageServer_TabPage.Controls.Add(this.zoomup);
+            this.ManageServer_TabPage.Controls.Add(this.overviewSplitter);
+            this.ManageServer_TabPage.Controls.Add(this.Timers_Group);
+            this.ManageServer_TabPage.Controls.Add(this.Server_Controls_Group);
+            this.ManageServer_TabPage.Controls.Add(this.startbar);
+            this.ManageServer_TabPage.ImageIndex = 0;
+            this.ManageServer_TabPage.Location = new System.Drawing.Point(47, 4);
+            this.ManageServer_TabPage.Name = "ManageServer_TabPage";
+            this.ManageServer_TabPage.Size = new System.Drawing.Size(908, 684);
+            this.ManageServer_TabPage.TabIndex = 7;
             // 
             // CommandsGroup
             // 
@@ -1824,11 +1827,12 @@
             this.Server_Status_Group.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.Server_Status_Group.Controls.Add(this.Private_IP_Address_Label);
             this.Server_Status_Group.Controls.Add(this.OS_Architecture_Label);
             this.Server_Status_Group.Controls.Add(this.telnetstatus);
             this.Server_Status_Group.Controls.Add(this.OS_Version_Label);
             this.Server_Status_Group.Controls.Add(this.status);
-            this.Server_Status_Group.Controls.Add(this.IP_Label);
+            this.Server_Status_Group.Controls.Add(this.Public_IP_Address_Label);
             this.Server_Status_Group.Location = new System.Drawing.Point(3, 8);
             this.Server_Status_Group.Name = "Server_Status_Group";
             this.Server_Status_Group.Size = new System.Drawing.Size(340, 160);
@@ -1896,7 +1900,7 @@
             this.Console_Group.Controls.Add(this.cmd);
             this.Console_Group.Location = new System.Drawing.Point(3, 8);
             this.Console_Group.Name = "Console_Group";
-            this.Console_Group.Size = new System.Drawing.Size(698, 496);
+            this.Console_Group.Size = new System.Drawing.Size(698, 499);
             this.Console_Group.TabIndex = 18;
             this.Console_Group.TabStop = false;
             this.Console_Group.Text = "Console";
@@ -2106,24 +2110,24 @@
             this.Kill_Server_Process.UseVisualStyleBackColor = true;
             this.Kill_Server_Process.Click += new System.EventHandler(this.Kill_proccess_Click);
             // 
-            // ban_kick
+            // PlayerManagement_TabPage
             // 
-            this.ban_kick.BackColor = System.Drawing.SystemColors.Control;
-            this.ban_kick.Controls.Add(this.Chat_GroupBox);
-            this.ban_kick.Controls.Add(this.All_Players_Label);
-            this.ban_kick.Controls.Add(this.Online_Players_Label);
-            this.ban_kick.Controls.Add(this.All_Players_List);
-            this.ban_kick.Controls.Add(this.Player_GroupBox);
-            this.ban_kick.Controls.Add(this.Game_Time_Controls_GroupBox);
-            this.ban_kick.Controls.Add(this.Kick_GroupBox);
-            this.ban_kick.Controls.Add(this.Spawn_GroupBox);
-            this.ban_kick.Controls.Add(this.Ban_GroupBox);
-            this.ban_kick.Controls.Add(this.Online_Player_List);
-            this.ban_kick.ImageIndex = 2;
-            this.ban_kick.Location = new System.Drawing.Point(47, 4);
-            this.ban_kick.Name = "ban_kick";
-            this.ban_kick.Size = new System.Drawing.Size(908, 684);
-            this.ban_kick.TabIndex = 5;
+            this.PlayerManagement_TabPage.BackColor = System.Drawing.SystemColors.Control;
+            this.PlayerManagement_TabPage.Controls.Add(this.Chat_GroupBox);
+            this.PlayerManagement_TabPage.Controls.Add(this.All_Players_Label);
+            this.PlayerManagement_TabPage.Controls.Add(this.Online_Players_Label);
+            this.PlayerManagement_TabPage.Controls.Add(this.All_Players_List);
+            this.PlayerManagement_TabPage.Controls.Add(this.Player_GroupBox);
+            this.PlayerManagement_TabPage.Controls.Add(this.Game_Time_Controls_GroupBox);
+            this.PlayerManagement_TabPage.Controls.Add(this.Kick_GroupBox);
+            this.PlayerManagement_TabPage.Controls.Add(this.Spawn_GroupBox);
+            this.PlayerManagement_TabPage.Controls.Add(this.Ban_GroupBox);
+            this.PlayerManagement_TabPage.Controls.Add(this.Online_Player_List);
+            this.PlayerManagement_TabPage.ImageIndex = 2;
+            this.PlayerManagement_TabPage.Location = new System.Drawing.Point(47, 4);
+            this.PlayerManagement_TabPage.Name = "PlayerManagement_TabPage";
+            this.PlayerManagement_TabPage.Size = new System.Drawing.Size(908, 684);
+            this.PlayerManagement_TabPage.TabIndex = 5;
             // 
             // Chat_GroupBox
             // 
@@ -2389,15 +2393,15 @@
             this.steamid_header.Text = "SteamID";
             this.steamid_header.Width = 179;
             // 
-            // main_page
+            // GameSettings_TabPage
             // 
-            this.main_page.BackColor = System.Drawing.SystemColors.Control;
-            this.main_page.Controls.Add(this.main_page_opts);
-            this.main_page.ImageIndex = 1;
-            this.main_page.Location = new System.Drawing.Point(47, 4);
-            this.main_page.Name = "main_page";
-            this.main_page.Size = new System.Drawing.Size(908, 684);
-            this.main_page.TabIndex = 11;
+            this.GameSettings_TabPage.BackColor = System.Drawing.SystemColors.Control;
+            this.GameSettings_TabPage.Controls.Add(this.main_page_opts);
+            this.GameSettings_TabPage.ImageIndex = 1;
+            this.GameSettings_TabPage.Location = new System.Drawing.Point(47, 4);
+            this.GameSettings_TabPage.Name = "GameSettings_TabPage";
+            this.GameSettings_TabPage.Size = new System.Drawing.Size(908, 684);
+            this.GameSettings_TabPage.TabIndex = 11;
             // 
             // main_page_opts
             // 
@@ -3414,7 +3418,7 @@
             // 
             // nazwamapa
             // 
-            this.nazwamapa.Controls.Add(this.nazwa);
+            this.nazwamapa.Controls.Add(this.gamename);
             this.nazwamapa.Controls.Add(this.server_nazwa);
             this.nazwamapa.Controls.Add(this.mapa);
             this.nazwamapa.Location = new System.Drawing.Point(8, 6);
@@ -3426,13 +3430,13 @@
             // 
             // nazwa
             // 
-            this.nazwa.FormattingEnabled = true;
-            this.nazwa.Location = new System.Drawing.Point(6, 22);
-            this.nazwa.Name = "nazwa";
-            this.nazwa.Size = new System.Drawing.Size(190, 21);
-            this.nazwa.TabIndex = 4;
-            this.nazwa.SelectedIndexChanged += new System.EventHandler(this.Nazwa_SelectedIndexChanged);
-            this.nazwa.TextChanged += new System.EventHandler(this.Nazwa_TextChanged);
+            this.gamename.FormattingEnabled = true;
+            this.gamename.Location = new System.Drawing.Point(6, 22);
+            this.gamename.Name = "nazwa";
+            this.gamename.Size = new System.Drawing.Size(190, 21);
+            this.gamename.TabIndex = 4;
+            this.gamename.SelectedIndexChanged += new System.EventHandler(this.Nazwa_SelectedIndexChanged);
+            this.gamename.TextChanged += new System.EventHandler(this.Nazwa_TextChanged);
             // 
             // server_nazwa
             // 
@@ -3951,17 +3955,17 @@
             this.Header_Icons.ImageSize = new System.Drawing.Size(40, 40);
             this.Header_Icons.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // strings_page
+            // Messaging_TabPage
             // 
-            this.strings_page.BackColor = System.Drawing.SystemColors.Control;
-            this.strings_page.Controls.Add(this.Server_Chat_Messages_GroupBox);
-            this.strings_page.Controls.Add(this.Custom_Commands_GroupBox);
-            this.strings_page.ImageIndex = 3;
-            this.strings_page.Location = new System.Drawing.Point(47, 4);
-            this.strings_page.Name = "strings_page";
-            this.strings_page.Padding = new System.Windows.Forms.Padding(3);
-            this.strings_page.Size = new System.Drawing.Size(908, 684);
-            this.strings_page.TabIndex = 13;
+            this.Messaging_TabPage.BackColor = System.Drawing.SystemColors.Control;
+            this.Messaging_TabPage.Controls.Add(this.Server_Chat_Messages_GroupBox);
+            this.Messaging_TabPage.Controls.Add(this.Custom_Commands_GroupBox);
+            this.Messaging_TabPage.ImageIndex = 3;
+            this.Messaging_TabPage.Location = new System.Drawing.Point(47, 4);
+            this.Messaging_TabPage.Name = "Messaging_TabPage";
+            this.Messaging_TabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.Messaging_TabPage.Size = new System.Drawing.Size(908, 684);
+            this.Messaging_TabPage.TabIndex = 13;
             // 
             // Server_Chat_Messages_GroupBox
             // 
@@ -4178,18 +4182,18 @@
             this.Custom_Commands_RichTextBox.Text = "";
             this.Custom_Commands_RichTextBox.TextChanged += new System.EventHandler(this.Customcommands_TextChanged);
             // 
-            // globalBanList
+            // GlobalBanList_TabPage
             // 
-            this.globalBanList.BackColor = System.Drawing.SystemColors.Control;
-            this.globalBanList.Controls.Add(this.check_bans);
-            this.globalBanList.Controls.Add(this.global_ban_g);
-            this.globalBanList.Controls.Add(this.banlist_logo);
-            this.globalBanList.ImageIndex = 10;
-            this.globalBanList.Location = new System.Drawing.Point(47, 4);
-            this.globalBanList.Name = "globalBanList";
-            this.globalBanList.Padding = new System.Windows.Forms.Padding(3);
-            this.globalBanList.Size = new System.Drawing.Size(908, 684);
-            this.globalBanList.TabIndex = 17;
+            this.GlobalBanList_TabPage.BackColor = System.Drawing.SystemColors.Control;
+            this.GlobalBanList_TabPage.Controls.Add(this.check_bans);
+            this.GlobalBanList_TabPage.Controls.Add(this.global_ban_g);
+            this.GlobalBanList_TabPage.Controls.Add(this.banlist_logo);
+            this.GlobalBanList_TabPage.ImageIndex = 10;
+            this.GlobalBanList_TabPage.Location = new System.Drawing.Point(47, 4);
+            this.GlobalBanList_TabPage.Name = "GlobalBanList_TabPage";
+            this.GlobalBanList_TabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.GlobalBanList_TabPage.Size = new System.Drawing.Size(908, 684);
+            this.GlobalBanList_TabPage.TabIndex = 17;
             // 
             // check_bans
             // 
@@ -4303,17 +4307,17 @@
             this.banlist_logo.TabIndex = 28;
             this.banlist_logo.TabStop = false;
             // 
-            // WebServer
+            // WebServer_TabPage
             // 
-            this.WebServer.BackColor = System.Drawing.SystemColors.Control;
-            this.WebServer.Controls.Add(this.autofix_g);
-            this.WebServer.Controls.Add(this.website_g);
-            this.WebServer.Controls.Add(this.android_g);
-            this.WebServer.ImageIndex = 11;
-            this.WebServer.Location = new System.Drawing.Point(47, 4);
-            this.WebServer.Name = "WebServer";
-            this.WebServer.Size = new System.Drawing.Size(908, 684);
-            this.WebServer.TabIndex = 18;
+            this.WebServer_TabPage.BackColor = System.Drawing.SystemColors.Control;
+            this.WebServer_TabPage.Controls.Add(this.autofix_g);
+            this.WebServer_TabPage.Controls.Add(this.website_g);
+            this.WebServer_TabPage.Controls.Add(this.android_g);
+            this.WebServer_TabPage.ImageIndex = 11;
+            this.WebServer_TabPage.Location = new System.Drawing.Point(47, 4);
+            this.WebServer_TabPage.Name = "WebServer_TabPage";
+            this.WebServer_TabPage.Size = new System.Drawing.Size(908, 684);
+            this.WebServer_TabPage.TabIndex = 18;
             // 
             // autofix_g
             // 
@@ -4624,19 +4628,19 @@
             this.android_access_key.TabIndex = 0;
             this.android_access_key.Text = "Android access key";
             // 
-            // tasks
+            // ServerTasks_TabPage
             // 
-            this.tasks.BackColor = System.Drawing.SystemColors.Control;
-            this.tasks.Controls.Add(this.Auto_Restarts_GroupBox);
-            this.tasks.Controls.Add(this.Server_Commands_GroupBox);
-            this.tasks.Controls.Add(this.Whitelist_GroupBox);
-            this.tasks.ImageIndex = 7;
-            this.tasks.Location = new System.Drawing.Point(47, 4);
-            this.tasks.Name = "tasks";
-            this.tasks.Padding = new System.Windows.Forms.Padding(3);
-            this.tasks.Size = new System.Drawing.Size(908, 684);
-            this.tasks.TabIndex = 12;
-            this.tasks.Text = " ";
+            this.ServerTasks_TabPage.BackColor = System.Drawing.SystemColors.Control;
+            this.ServerTasks_TabPage.Controls.Add(this.Auto_Restarts_GroupBox);
+            this.ServerTasks_TabPage.Controls.Add(this.Server_Commands_GroupBox);
+            this.ServerTasks_TabPage.Controls.Add(this.Whitelist_GroupBox);
+            this.ServerTasks_TabPage.ImageIndex = 7;
+            this.ServerTasks_TabPage.Location = new System.Drawing.Point(47, 4);
+            this.ServerTasks_TabPage.Name = "ServerTasks_TabPage";
+            this.ServerTasks_TabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.ServerTasks_TabPage.Size = new System.Drawing.Size(908, 684);
+            this.ServerTasks_TabPage.TabIndex = 12;
+            this.ServerTasks_TabPage.Text = " ";
             // 
             // Auto_Restarts_GroupBox
             // 
@@ -4844,18 +4848,18 @@
             this.Auto_Update_External_Whitelist_URL_TextBox.Text = "http://";
             this.Auto_Update_External_Whitelist_URL_TextBox.TextChanged += new System.EventHandler(this.Wl_add_TextChanged);
             // 
-            // backup_tab
+            // Backups_TabPage
             // 
-            this.backup_tab.BackColor = System.Drawing.SystemColors.Control;
-            this.backup_tab.Controls.Add(this.restore_backup_g);
-            this.backup_tab.Controls.Add(this.ex_backup);
-            this.backup_tab.Controls.Add(this.auto_backup_group);
-            this.backup_tab.ImageIndex = 8;
-            this.backup_tab.Location = new System.Drawing.Point(47, 4);
-            this.backup_tab.Name = "backup_tab";
-            this.backup_tab.Padding = new System.Windows.Forms.Padding(3);
-            this.backup_tab.Size = new System.Drawing.Size(908, 684);
-            this.backup_tab.TabIndex = 14;
+            this.Backups_TabPage.BackColor = System.Drawing.SystemColors.Control;
+            this.Backups_TabPage.Controls.Add(this.restore_backup_g);
+            this.Backups_TabPage.Controls.Add(this.ex_backup);
+            this.Backups_TabPage.Controls.Add(this.auto_backup_group);
+            this.Backups_TabPage.ImageIndex = 8;
+            this.Backups_TabPage.Location = new System.Drawing.Point(47, 4);
+            this.Backups_TabPage.Name = "Backups_TabPage";
+            this.Backups_TabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.Backups_TabPage.Size = new System.Drawing.Size(908, 684);
+            this.Backups_TabPage.TabIndex = 14;
             // 
             // restore_backup_g
             // 
@@ -4998,16 +5002,16 @@
             this.toolTip.SetToolTip(this.prem_help2, "You need 7DSM Supporter to change these options.\r\nIt\'s almost free, please check " +
         "it out in \"Settings\" tab.");
             // 
-            // srv_list
+            // Rewards_TabPage
             // 
-            this.srv_list.BackColor = System.Drawing.SystemColors.Control;
-            this.srv_list.Controls.Add(this.deds_g);
-            this.srv_list.ImageIndex = 9;
-            this.srv_list.Location = new System.Drawing.Point(47, 4);
-            this.srv_list.Name = "srv_list";
-            this.srv_list.Padding = new System.Windows.Forms.Padding(3);
-            this.srv_list.Size = new System.Drawing.Size(908, 684);
-            this.srv_list.TabIndex = 15;
+            this.Rewards_TabPage.BackColor = System.Drawing.SystemColors.Control;
+            this.Rewards_TabPage.Controls.Add(this.deds_g);
+            this.Rewards_TabPage.ImageIndex = 9;
+            this.Rewards_TabPage.Location = new System.Drawing.Point(47, 4);
+            this.Rewards_TabPage.Name = "Rewards_TabPage";
+            this.Rewards_TabPage.Padding = new System.Windows.Forms.Padding(3);
+            this.Rewards_TabPage.Size = new System.Drawing.Size(908, 684);
+            this.Rewards_TabPage.TabIndex = 15;
             // 
             // deds_g
             // 
@@ -5371,6 +5375,27 @@
             this.discord_b.UseVisualStyleBackColor = true;
             this.discord_b.Click += new System.EventHandler(this.Discord_b_Click);
             // 
+            // Mods_TabPage
+            // 
+            this.Mods_TabPage.Location = new System.Drawing.Point(47, 4);
+            this.Mods_TabPage.Name = "Mods_TabPage";
+            this.Mods_TabPage.Size = new System.Drawing.Size(908, 684);
+            this.Mods_TabPage.TabIndex = 19;
+            this.Mods_TabPage.UseVisualStyleBackColor = true;
+            // 
+            // Private_IP_Address_Label
+            // 
+            this.Private_IP_Address_Label.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.Private_IP_Address_Label.AutoSize = true;
+            this.Private_IP_Address_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Private_IP_Address_Label.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.Private_IP_Address_Label.Location = new System.Drawing.Point(6, 80);
+            this.Private_IP_Address_Label.Name = "Private_IP_Address_Label";
+            this.Private_IP_Address_Label.Size = new System.Drawing.Size(99, 13);
+            this.Private_IP_Address_Label.TabIndex = 24;
+            this.Private_IP_Address_Label.Text = "Getting Private IP...";
+            this.Private_IP_Address_Label.Visible = false;
+            // 
             // Server_Panel_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -5397,8 +5422,8 @@
             this.Load += new System.EventHandler(this.Server_panel_Load);
             this.Shown += new System.EventHandler(this.Server_panel_Shown);
             this.Resize += new System.EventHandler(this.Server_panel_Resize);
-            this.settings.ResumeLayout(false);
-            this.settings.PerformLayout();
+            this.Settings_TabPage.ResumeLayout(false);
+            this.Settings_TabPage.PerformLayout();
             this.Updates_GroupBox.ResumeLayout(false);
             this.Updates_GroupBox.PerformLayout();
             this.exe_settings_g.ResumeLayout(false);
@@ -5436,7 +5461,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Game_Day_TrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Game_Hour_TrackBar)).EndInit();
             this.tabControl.ResumeLayout(false);
-            this.Manage_Server_TabPage.ResumeLayout(false);
+            this.ManageServer_TabPage.ResumeLayout(false);
             this.CommandsGroup.ResumeLayout(false);
             this.overviewSplitter.Panel1.ResumeLayout(false);
             this.overviewSplitter.Panel2.ResumeLayout(false);
@@ -5451,8 +5476,8 @@
             this.Timers_Group.PerformLayout();
             this.Server_Controls_Group.ResumeLayout(false);
             this.Server_Controls_Group.PerformLayout();
-            this.ban_kick.ResumeLayout(false);
-            this.ban_kick.PerformLayout();
+            this.PlayerManagement_TabPage.ResumeLayout(false);
+            this.PlayerManagement_TabPage.PerformLayout();
             this.Chat_GroupBox.ResumeLayout(false);
             this.Chat_GroupBox.PerformLayout();
             this.Player_GroupBox.ResumeLayout(false);
@@ -5460,7 +5485,7 @@
             this.Ban_GroupBox.ResumeLayout(false);
             this.Ban_GroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Ban_Slider_TrackBar)).EndInit();
-            this.main_page.ResumeLayout(false);
+            this.GameSettings_TabPage.ResumeLayout(false);
             this.main_page_opts.ResumeLayout(false);
             this.game_opts.ResumeLayout(false);
             this.Drop_On_Quit_GroupBox.ResumeLayout(false);
@@ -5558,16 +5583,16 @@
             this.ctrlpanel.PerformLayout();
             this.telnet_g.ResumeLayout(false);
             this.telnet_g.PerformLayout();
-            this.strings_page.ResumeLayout(false);
+            this.Messaging_TabPage.ResumeLayout(false);
             this.Server_Chat_Messages_GroupBox.ResumeLayout(false);
             this.Server_Chat_Messages_GroupBox.PerformLayout();
             this.Custom_Commands_GroupBox.ResumeLayout(false);
             this.Custom_Commands_GroupBox.PerformLayout();
-            this.globalBanList.ResumeLayout(false);
+            this.GlobalBanList_TabPage.ResumeLayout(false);
             this.global_ban_g.ResumeLayout(false);
             this.global_ban_g.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.banlist_logo)).EndInit();
-            this.WebServer.ResumeLayout(false);
+            this.WebServer_TabPage.ResumeLayout(false);
             this.autofix_g.ResumeLayout(false);
             this.autofix_g.PerformLayout();
             this.website_g.ResumeLayout(false);
@@ -5580,7 +5605,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.prem_help3)).EndInit();
             this.android_g.ResumeLayout(false);
             this.android_g.PerformLayout();
-            this.tasks.ResumeLayout(false);
+            this.ServerTasks_TabPage.ResumeLayout(false);
             this.Auto_Restarts_GroupBox.ResumeLayout(false);
             this.Auto_Restarts_GroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Auto_Restart_Time_TrackBar)).EndInit();
@@ -5591,12 +5616,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.Server_Commands_Time_TrackBar)).EndInit();
             this.Whitelist_GroupBox.ResumeLayout(false);
             this.Whitelist_GroupBox.PerformLayout();
-            this.backup_tab.ResumeLayout(false);
+            this.Backups_TabPage.ResumeLayout(false);
             this.restore_backup_g.ResumeLayout(false);
             this.ex_backup.ResumeLayout(false);
             this.ex_backup.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.prem_help2)).EndInit();
-            this.srv_list.ResumeLayout(false);
+            this.Rewards_TabPage.ResumeLayout(false);
             this.deds_g.ResumeLayout(false);
             this.deds_g.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_status)).EndInit();
@@ -5611,12 +5636,12 @@
         private System.Windows.Forms.FolderBrowserDialog Select_Game_Directory;
         private System.Windows.Forms.NotifyIcon App_Icon;
         private System.Windows.Forms.PictureBox img_status;
-        private System.Windows.Forms.Label IP_Label;
-        private System.Windows.Forms.TabPage settings;
+        private System.Windows.Forms.Label Public_IP_Address_Label;
+        private System.Windows.Forms.TabPage Settings_TabPage;
         private System.Windows.Forms.GroupBox Settings_GroupBox;
         private System.Windows.Forms.Button Change_Game_File_Path_Button;
         private System.Windows.Forms.Label Game_File_Path_Label;
-        private System.Windows.Forms.CheckBox to_tray;
+        private System.Windows.Forms.CheckBox Settings_Send_To_Tray_CheckBox;
         private System.Windows.Forms.Button About_Button;
         private System.Windows.Forms.GroupBox Spawn_GroupBox;
         private System.Windows.Forms.Button Spawn_Item_Button;
@@ -5632,12 +5657,12 @@
         private System.Windows.Forms.TabControl tabControl;
         private System.ComponentModel.BackgroundWorker server_startup_tasks;
         private System.Windows.Forms.ImageList Header_Icons;
-        private System.Windows.Forms.TabPage ban_kick;
+        private System.Windows.Forms.TabPage PlayerManagement_TabPage;
         private System.Windows.Forms.Button Kick_Player_Button;
         private System.Windows.Forms.Button Ban_Hammer_Button;
         private System.Windows.Forms.ProgressBar startbar;
         private System.Windows.Forms.ComboBox Kick_Reason_ComboBox;
-        private System.Windows.Forms.TabPage Manage_Server_TabPage;
+        private System.Windows.Forms.TabPage ManageServer_TabPage;
         private System.ComponentModel.BackgroundWorker telnet_connection;
         private System.Windows.Forms.ListBox taskman;
         private System.ComponentModel.BackgroundWorker workers_list;
@@ -5647,7 +5672,7 @@
         private System.Windows.Forms.GroupBox Ban_GroupBox;
         private System.Windows.Forms.TrackBar Ban_Slider_TrackBar;
         private System.Windows.Forms.GroupBox Console_Group;
-        private System.Windows.Forms.CheckBox always_on_top;
+        private System.Windows.Forms.CheckBox Settings_Always_On_Top_CheckBox;
         private System.Windows.Forms.Button blad;
         private System.Windows.Forms.Button Auto_Detect_Game_File_Path_Button;
         private System.ComponentModel.BackgroundWorker auto_messages;
@@ -5655,15 +5680,15 @@
         private System.Windows.Forms.Label Server_Commands_Note_Label;
         private System.Windows.Forms.TrackBar Server_Commands_Time_TrackBar;
         private System.Windows.Forms.GroupBox Server_Commands_Delay_GroupBox;
-        private System.Windows.Forms.CheckBox show_ip;
-        private System.Windows.Forms.CheckBox cleanexit;
+        private System.Windows.Forms.CheckBox Settings_Show_IPS_CheckBox;
+        private System.Windows.Forms.CheckBox Settings_Clean_Exit_CheckBox;
         private System.Windows.Forms.GroupBox Server_Controls_Group;
         private System.Windows.Forms.CheckBox Save_Logs_CheckBox;
         private System.Windows.Forms.Button Shutdown_Server_Button;
         private System.Windows.Forms.Button Start_Server_Button;
         private System.Windows.Forms.Button Kill_Server_Process;
         private System.Windows.Forms.Label status;
-        private System.Windows.Forms.CheckBox anon_data;
+        private System.Windows.Forms.CheckBox Settings_Allow_Anon_Data_CheckBox;
         private System.Windows.Forms.LinkLabel anon_data_2;
         private System.Windows.Forms.GroupBox SQL_DB_Name_GroupBox;
         private System.Windows.Forms.TextBox SQL_Database_Name_TextBox;
@@ -5692,7 +5717,7 @@
         private System.Windows.Forms.TrackBar backup_time;
         private System.Windows.Forms.CheckBox backup_chat;
         private System.Windows.Forms.Button forumklik;
-        private System.Windows.Forms.TabPage main_page;
+        private System.Windows.Forms.TabPage GameSettings_TabPage;
         private System.Windows.Forms.TabControl main_page_opts;
         private System.Windows.Forms.TabPage server_opts;
         private System.Windows.Forms.TabPage game_opts;
@@ -5710,7 +5735,7 @@
         private System.Windows.Forms.GroupBox Game_Difficulty_GroupBox;
         private System.Windows.Forms.TrackBar Game_Difficulty_TrackBar;
         private System.Windows.Forms.GroupBox nazwamapa;
-        private System.Windows.Forms.ComboBox nazwa;
+        private System.Windows.Forms.ComboBox gamename;
         private System.Windows.Forms.TextBox server_nazwa;
         private System.Windows.Forms.ComboBox mapa;
         private System.Windows.Forms.GroupBox ctrlpanel;
@@ -5772,7 +5797,7 @@
         private System.Windows.Forms.GroupBox Land_Claim_GroupBox;
         private System.Windows.Forms.ColumnHeader login_header;
         private System.Windows.Forms.ColumnHeader steamid_header;
-        private System.Windows.Forms.TabPage tasks;
+        private System.Windows.Forms.TabPage ServerTasks_TabPage;
         private System.Windows.Forms.GroupBox Server_Commands_GroupBox;
         private System.ComponentModel.BackgroundWorker auto_reset;
         private System.Windows.Forms.GroupBox Auto_Restarts_GroupBox;
@@ -5813,7 +5838,7 @@
         private System.ComponentModel.BackgroundWorker custom_cmd_executor;
         private System.Windows.Forms.TextBox cmd_not_yet;
         private System.Windows.Forms.Label Command_Wait_Message_Label;
-        private System.Windows.Forms.TabPage strings_page;
+        private System.Windows.Forms.TabPage Messaging_TabPage;
         private System.Windows.Forms.GroupBox configfile_g;
         private System.Windows.Forms.Button configfile_e;
         private System.Windows.Forms.TextBox configfile;
@@ -5822,7 +5847,7 @@
         private System.Windows.Forms.GroupBox ServerDescription_g;
         private System.Windows.Forms.TextBox ServerDescription;
         private System.Windows.Forms.CheckBox PersistentPlayerProfiles;
-        private System.Windows.Forms.CheckBox skip_profiles;
+        private System.Windows.Forms.CheckBox Settings_Skip_Profiles_CheckBox;
         private System.ComponentModel.BackgroundWorker server_stop_tasks;
         private System.Windows.Forms.Button like;
         private System.Windows.Forms.GroupBox Spawn_Settings_GroupBox;
@@ -5867,13 +5892,13 @@
         private System.Windows.Forms.GroupBox Supporter_Settings_GroupBox;
         private System.Windows.Forms.PictureBox Premium_Settings_Help_PictureBox;
         private System.Windows.Forms.CheckBox Hide_Donation_Buttons_CheckBox;
-        private System.Windows.Forms.TabPage backup_tab;
+        private System.Windows.Forms.TabPage Backups_TabPage;
         private System.Windows.Forms.GroupBox ex_backup;
         private System.Windows.Forms.PictureBox prem_help2;
         private System.Windows.Forms.Label rem_old_backups_l;
         private System.Windows.Forms.TextBox rem_old_backups_count;
         private System.Windows.Forms.CheckBox rem_old_backups;
-        private System.Windows.Forms.TabPage srv_list;
+        private System.Windows.Forms.TabPage Rewards_TabPage;
         private System.Windows.Forms.GroupBox deds_g;
         private System.Windows.Forms.Button dtds_visit;
         private System.Windows.Forms.Label dtds_info;
@@ -5918,7 +5943,7 @@
         private System.Windows.Forms.Button Force_Update_Button;
         private System.Windows.Forms.Button Check_Updates_Button;
         private System.Windows.Forms.Button Apply_Update_Channel_Button;
-        private System.Windows.Forms.TabPage globalBanList;
+        private System.Windows.Forms.TabPage GlobalBanList_TabPage;
         private System.Windows.Forms.GroupBox global_ban_g;
         private System.Windows.Forms.CheckBox sendbans;
         private System.Windows.Forms.Label label1;
@@ -5931,7 +5956,7 @@
         private System.Windows.Forms.Button dbg_btn_2;
         public System.Windows.Forms.ListView Online_Player_List;
         public System.Windows.Forms.TrackBar maxpl;
-        private System.Windows.Forms.TabPage WebServer;
+        private System.Windows.Forms.TabPage WebServer_TabPage;
         private System.Windows.Forms.GroupBox android_g;
         private System.Windows.Forms.CheckBox android_allow;
         private System.Windows.Forms.Label android_access_key;
@@ -6009,5 +6034,7 @@
         private System.Windows.Forms.PictureBox SQL_Username_Info_PictureBox;
         private System.Windows.Forms.PictureBox SQL_Database_Name_Info_PictureBox;
         private System.Windows.Forms.PictureBox SQL_Password_Info_PictureBox;
+        private System.Windows.Forms.TabPage Mods_TabPage;
+        private System.Windows.Forms.Label Private_IP_Address_Label;
     }
 }

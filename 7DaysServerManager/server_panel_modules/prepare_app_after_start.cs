@@ -94,7 +94,7 @@ namespace _7DaysServerManager
 
             if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "anon_data", null) == "0")
             {
-                anon_data.Checked = false;
+                Settings_Allow_Anon_Data_CheckBox.Checked = false;
             }
 
 
@@ -443,18 +443,18 @@ namespace _7DaysServerManager
 
             if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "cleanexit", null) == "0")
             {
-                cleanexit.Checked = false;
+                Settings_Clean_Exit_CheckBox.Checked = false;
             }
 
             if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM", "skip_profiles", null) == "1")
             {
-                skip_profiles.Checked = true;
+                Settings_Skip_Profiles_CheckBox.Checked = true;
             }
 
             if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "show_ip", null) == "1")
             {
-                IP_Label.Visible = true;
-                show_ip.Checked = true;
+                Public_IP_Address_Label.Visible = true;
+                Settings_Show_IPS_CheckBox.Checked = true;
             }
 
 
@@ -463,13 +463,13 @@ namespace _7DaysServerManager
 
             if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "always_on_top", null) == "1")
             {
-                always_on_top.Checked = true;
+                Settings_Always_On_Top_CheckBox.Checked = true;
                 this.TopMost = true;
             }
 
             if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "to_tray", null) == "1")
             {
-                to_tray.Checked = true;
+                Settings_Send_To_Tray_CheckBox.Checked = true;
             }
 
             if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "hide_don_btn", null) == "1")

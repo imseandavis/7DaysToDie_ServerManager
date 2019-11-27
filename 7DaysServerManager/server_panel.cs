@@ -28,12 +28,6 @@ namespace _7DaysServerManager
      * Update Variables To English
      * 
      * 
-     * 
-     * 
-     * 
-     * 
-     * 
-     * 
      */
 
 
@@ -274,7 +268,7 @@ namespace _7DaysServerManager
 
         public void Download_maps(string selected_map)
         {
-            nazwa.Items.Clear();
+            gamename.Items.Clear();
 
             try
             {
@@ -293,7 +287,7 @@ namespace _7DaysServerManager
 
                 foreach (string dany_save in wszystkie_mapy)
                 {
-                    nazwa.Items.Add(dany_save.Replace(sci, "").Replace("\\", ""));
+                    gamename.Items.Add(dany_save.Replace(sci, "").Replace("\\", ""));
                 }
             }
             catch { }
@@ -359,7 +353,6 @@ namespace _7DaysServerManager
                 }
             }
         }
-
 
         private void BackgroundWorker1_DoWork(object sender, DoWorkEventArgs e)
         {
@@ -522,13 +515,13 @@ namespace _7DaysServerManager
         private void TrackBar1_Scroll(object sender, EventArgs e)
         {
             Max_Players_GroupBox.Text = lang("maxplgroup") + " [" + Convert.ToString(maxpl.Value) + "]";
-            Generate_Config();
+            Update_Config();
         }
 
         private void Trudnosc_Scroll(object sender, EventArgs e)
         {
             Game_Difficulty_GroupBox.Text = lang("trudnoscgroup") + " [" + Convert.ToString(Game_Difficulty_TrackBar.Value) + "]";
-            Generate_Config();
+            Update_Config();
         }
 
 
@@ -536,19 +529,19 @@ namespace _7DaysServerManager
         {
             if (gamemode_coop.Checked == true)
 
-                Generate_Config();
+                Update_Config();
         }
 
         private void Port_TextChanged(object sender, EventArgs e)
         {
 
-            Generate_Config();
+            Update_Config();
         }
 
         private void Nazwa_TextChanged(object sender, EventArgs e)
         {
 
-            Generate_Config();
+            Update_Config();
         }
 
 
@@ -580,7 +573,7 @@ namespace _7DaysServerManager
             chat_log.Close();
             chat_log_stream.Close();
 
-            if (server_online == true && cleanexit.Checked)
+            if (server_online == true && Settings_Clean_Exit_CheckBox.Checked)
             {
                 Echo(lang("wn_cl"), 2, false);
                 DialogResult dialogResult = MessageBox.Show(lang("sure_close"), lang("wn_cl"), MessageBoxButtons.YesNo);
@@ -772,7 +765,7 @@ namespace _7DaysServerManager
 
         private void Server_panel_Resize(object sender, EventArgs e)
         {
-            if (FormWindowState.Minimized == this.WindowState & to_tray.Checked)
+            if (FormWindowState.Minimized == this.WindowState & Settings_Send_To_Tray_CheckBox.Checked)
             {
                 App_Icon.Visible = true;
                 this.Visible = false;
@@ -1777,7 +1770,7 @@ namespace _7DaysServerManager
 
         private void To_tray_CheckedChanged(object sender, EventArgs e)
         {
-            if (to_tray.Checked)
+            if (Settings_Send_To_Tray_CheckBox.Checked)
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "to_tray", "1");
             else
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "to_tray", "0");
@@ -1785,7 +1778,7 @@ namespace _7DaysServerManager
 
         private void Always_on_top_CheckedChanged(object sender, EventArgs e)
         {
-            if (always_on_top.Checked)
+            if (Settings_Always_On_Top_CheckBox.Checked)
             {
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "always_on_top", "1");
                 this.TopMost = true;
@@ -1799,69 +1792,69 @@ namespace _7DaysServerManager
 
         private void CheckBox1_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Day_Length_Scroll(object sender, EventArgs e)
         {
             Day_Length_GroupBox.Text = lang("dlugoscdnia") + " [" + Convert.ToString(dayLength.Value) + " min.]";
-            Generate_Config();
+            Update_Config();
         }
 
         private void Ctrlp_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Ctrlppass_TextChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Port_panel_TextChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Zombiespawn_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void ServerIsPublic_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void ServerPassword_TextChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Mapa_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
             Download_maps(mapa.Text);
         }
 
         private void Showonmap_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Friendlyfire_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Rebuildmap_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Cheatmode_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Blad_Click(object sender, EventArgs e)
@@ -1872,17 +1865,17 @@ namespace _7DaysServerManager
 
         private void Zombie_normal_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Zombie_run_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Zombie_never_run_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Steamsearch_Click(object sender, EventArgs e)
@@ -2041,23 +2034,27 @@ namespace _7DaysServerManager
             Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "spam_time", Server_Commands_Time_TrackBar.Value);
         }
 
+
+        //Show or Hide IP Addresses On Server Management Tab
         private void Show_IP_CheckedChanged(object sender, EventArgs e)
         {
-            if (show_ip.Checked)
+            if (Settings_Show_IPS_CheckBox.Checked)
             {
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "show_ip", "1");
-                IP_Label.Visible = true;
+                Public_IP_Address_Label.Visible = true;
+                Private_IP_Address_Label.Visible = true;
             }
             else
             {
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "show_ip", "0");
-                IP_Label.Visible = false;
+                Public_IP_Address_Label.Visible = false;
+                Private_IP_Address_Label.Visible = false;
             }
         }
 
         private void Cleanexit_CheckedChanged(object sender, EventArgs e)
         {
-            if (cleanexit.Checked)
+            if (Settings_Clean_Exit_CheckBox.Checked)
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "cleanexit", "1");
             else
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "cleanexit", "0");
@@ -2082,7 +2079,7 @@ namespace _7DaysServerManager
 
         private void Anon_data_CheckedChanged(object sender, EventArgs e)
         {
-            if (anon_data.Checked)
+            if (Settings_Allow_Anon_Data_CheckBox.Checked)
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "anon_data", "1");
             else
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "anon_data", "0");
@@ -2396,7 +2393,7 @@ namespace _7DaysServerManager
 
         private void Server_nazwa_TextChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Auto_backup_check_CheckedChanged(object sender, EventArgs e)
@@ -2455,7 +2452,7 @@ namespace _7DaysServerManager
                 try
                 {
                     selected_map = mapa.Text;
-                    game_name = nazwa.Text;
+                    game_name = gamename.Text;
                     backup_location = this.backup_location.Text;
                     pokazuj_chat = backup_chat.Checked;
                     lokacja = save.Text;
@@ -2632,84 +2629,84 @@ namespace _7DaysServerManager
 
         private void Dod_0_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Dod_1_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Dod_2_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Dod_3_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Doq_0_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Doq_1_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Doq_2_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Doq_3_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Ctime_0_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Ctime_1_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Ctime_2_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Ltime_0_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Ltime_1_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Ltime_2_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Nightpercentage_Scroll(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
 
             nightpercentage_g.Text = lang("nightpercentage_g") + " [" + nightpercentage.Value + "h]";
         }
 
         private void Bdm_Scroll(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
 
             if (bdm.Value == 0)
                 bdm_g.Text = lang("bdm_g") + " [25%]";
@@ -2729,23 +2726,23 @@ namespace _7DaysServerManager
 
         private void Telnet_psw_TextChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Telnet_port_TextChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void AdminFileName_TextChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void LootAbundance_Scroll(object sender, EventArgs e)
         {
             Loot_Abundance_GroupBox.Text = lang("LootAbundance_g") + " [" + LootAbundance.Value + "%]";
-            Generate_Config();
+            Update_Config();
         }
 
         private void LootRespawnDays_Scroll(object sender, EventArgs e)
@@ -2755,7 +2752,7 @@ namespace _7DaysServerManager
                 Loot_Respawn_Days_GroupBox.Text = lang("LootRespawnDays_g") + " [" + lang("disabled") + "]";
             else
                 Loot_Respawn_Days_GroupBox.Text = lang("LootRespawnDays_g") + " [" + LootRespawnDays.Value + "]";
-            Generate_Config();
+            Update_Config();
         }
 
         private void Browse_Click(object sender, EventArgs e)
@@ -2800,47 +2797,47 @@ namespace _7DaysServerManager
             {
                 Land_Claim_GroupBox.Visible = false;
             }
-            Generate_Config();
+            Update_Config();
         }
 
         private void Linear_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Exponential_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Full_prot_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void LandClaimOnlineDurabilityModifier_TextChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void LandClaimOfflineDurabilityModifier_TextChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void LandClaimDeadZone_TextChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void LandClaimSize_TextChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void LandClaimExpiryTime_TextChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Auto_reset_DoWork(object sender, DoWorkEventArgs e)
@@ -3027,7 +3024,7 @@ namespace _7DaysServerManager
 
         private void Save_TextChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Nazwa_SelectedIndexChanged(object sender, EventArgs e)
@@ -3043,78 +3040,115 @@ namespace _7DaysServerManager
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "spam_is_spam", "0");
         }
 
+        // Process And Send Anonymous Statistics
         private void Stats_DoWork(object sender, DoWorkEventArgs e)
         {
-            System.Net.WebClient client;
+            // Setup New Webclient
+            WebClient client;
+            client = new WebClient();
 
-            client = new System.Net.WebClient();
-
+            // Init Variables
             bool anonymous = false;
+
+            // Set The Anonymous Variable
             Console_RichTextBox.Invoke((MethodInvoker)delegate
             {
-                anonymous = anon_data.Checked;
+                anonymous = Settings_Allow_Anon_Data_CheckBox.Checked;
             });
-
 
             while (true)
             {
-
+                // If Send Anonymous Stats Is Enabled
                 if (anonymous)
                 {
+                    // Send Windows Version Info
                     string os_ver = (string)Registry.GetValue(@"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion", "CurrentVersion", null);
 
+                    // If Version Is Windows 10, Get The Build Number
                     try
                     {
                         if (os_ver == "6.3")
                             if (Convert.ToInt32((string)Registry.GetValue(@"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion", "CurrentBuild", null)) > 10000)
                                 os_ver = "10.0";
                     }
-                    catch { }
+                    catch
+                    {
+                        Echo_debug("Couldn't Obtain Windows 10 Build");
+                    }
 
-                    client.Headers.Add("User-Agent", (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM", "install_id", null) + ";" + os_ver + ";" + "n\\a" + ";" + ServerIsPublic.Checked + ";" + port.Text + ";" + nazwa.Text + ";" + ver + ";" + (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "android_allow", null) + ";" + (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "enable_website", null));
+                    // Send Install ID, Windows Version, Is Server Public, Server Port, Game Name, Game Version, Android Enable Flag, Profile Name, and Website Enabled Flag
+                    client.Headers.Add("User-Agent", (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM", "install_id", null) + ";" + os_ver + ";" + "n\\a" + ";" + ServerIsPublic.Checked + ";" + port.Text + ";" + gamename.Text + ";" + ver + ";" + (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "android_allow", null) + ";" + (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "enable_website", null));
                 }
                 else
                 {
+                    // Only Send Install ID
                     client.Headers.Add("User-Agent", (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM", "install_id", null) + ";ANON;ANON;0;0;0;0;0");
                 }
 
+                // Reset IP Variables To Ensure They Are Updated
+                string Public_IP = "";
+                string Private_IP = "";
 
-                string ip = "";
+                // Retrieve Public IP Address From Website
                 try
                 {
-                    ip = "IP: " + client.DownloadString("https://7dsm.smartmoose.org/system/ip.php");
-
+                    Public_IP = "IP: " + new WebClient().DownloadString("http://icanhazip.com"); //Get IP From Website
                 }
                 catch
                 {
-                    ip = "IP: (error)";
+                    Public_IP = "IP: Error Retrieving Public IP";
                 }
 
-                IP_Label.Invoke((MethodInvoker)delegate
+                //Retrieve Private IP Address From System Info
+                try
                 {
-                    try
+                    if (!System.Net.NetworkInformation.NetworkInterface.GetIsNetworkAvailable())
                     {
-                        IP_Label.Text = ip;
+                        Private_IP = "IP: Network Is Not Available!";
                     }
-                    catch { }
+                    else
+                    {
+                        Private_IP = "IP: " + Dns.GetHostEntry(Dns.GetHostName());
+                    }
+                }
+                catch
+                {
+                    Private_IP = "IP: Error Retrieving Private IP";
+                }
+
+                // Set Public IP
+                Public_IP_Address_Label.Invoke((MethodInvoker)delegate
+                {
+                    Public_IP_Address_Label.Text = Public_IP;
+                    Echo_debug("Public IP Has Been Set");
                 });
 
-                Echo_debug("IP SET");
+                //Set Private IP
+                Private_IP_Address_Label.Invoke((MethodInvoker)delegate
+                {
+                    Private_IP_Address_Label.Text = Public_IP;
+                    Echo_debug("Private IP Has Been Set");
+                });
 
-                Parse_adminfile();
+                // Parse The Admin File
+                Process_Bans();
 
-                Thread.Sleep(1000 * 3600);
+                // Sleep For An Hour
+                Thread.Sleep(3600 * 1000);
             }
         }
 
+        // Update Text On Air Drop Frequency Label When Slider Value Changes
         private void AirDropFrequency_Scroll(object sender, EventArgs e)
         {
+            // Determine If Disabled Or Set To Specific Amount of Hours
             if (Air_Drop_Frequency_TrackBar.Value != 0)
                 Air_Drop_Frequency_GroupBox.Text = lang("AirDropFrequency") + " [" + Convert.ToString(Air_Drop_Frequency_TrackBar.Value) + " h.]";
             else
                 Air_Drop_Frequency_GroupBox.Text = lang("AirDropFrequency") + " [" + lang("disabled") + "]";
 
-            Generate_Config();
+            // Update The Config
+            Update_Config();
         }
 
         private void Konsola_LinkClicked(object sender, LinkClickedEventArgs e)
@@ -3124,7 +3158,7 @@ namespace _7DaysServerManager
 
         private void Feral_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Reboot_con_Click(object sender, EventArgs e)
@@ -3161,12 +3195,12 @@ namespace _7DaysServerManager
         private void MaxSpawnedZombies_Scroll(object sender, EventArgs e)
         {
             MaxSpawnedZombies_g.Text = lang("MaxSpawnedZombies_g") + " [" + Convert.ToString(MaxSpawnedZombies.Value) + "]";
-            Generate_Config();
+            Update_Config();
         }
 
         private void VACEnabled_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
 
@@ -3536,12 +3570,12 @@ namespace _7DaysServerManager
 
         private void PersistentPlayerProfiles_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Skip_profiles_CheckedChanged(object sender, EventArgs e)
         {
-            if (skip_profiles.Checked)
+            if (Settings_Skip_Profiles_CheckBox.Checked)
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM", "skip_profiles", "1");
             else
                 Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM", "skip_profiles", "0");
@@ -3632,18 +3666,18 @@ namespace _7DaysServerManager
 
         private void PlayerSafeZoneLevel_TextChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void PlayerSafeZoneHours_TextChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void MaxSpawnedAnimals_Scroll(object sender, EventArgs e)
         {
             MaxSpawnedAnimals_g.Text = lang("MaxSpawnedAnimals_g") + " [" + Convert.ToString(MaxSpawnedAnimals.Value) + "]";
-            Generate_Config();
+            Update_Config();
         }
 
         private void Kill_Player_Click(object sender, EventArgs e)
@@ -4266,11 +4300,11 @@ namespace _7DaysServerManager
 
                         if (save.Text == "")
                         {
-                            direct = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\7DaysToDie\\Saves\\" + mapa.Text + "\\" + nazwa.Text;
+                            direct = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\7DaysToDie\\Saves\\" + mapa.Text + "\\" + gamename.Text;
                         }
                         else
                         {
-                            direct = save.Text + "\\" + mapa.Text + "\\" + nazwa.Text;
+                            direct = save.Text + "\\" + mapa.Text + "\\" + gamename.Text;
                         }
 
                         MessageBox.Show("This may take a while.");
@@ -4426,7 +4460,7 @@ namespace _7DaysServerManager
 
         }
 
-        private void Parse_adminfile()
+        private void Process_Bans()
         {
             bool allow_bans_sending = false;
 
@@ -4658,54 +4692,54 @@ namespace _7DaysServerManager
         private void BloodMoonEnemyCount_Scroll(object sender, EventArgs e)
         {
             BloodMoonEnemyCount_g.Text = "Zombies spawned for every player during Blood Moon [" + Convert.ToString(BloodMoonEnemyCount.Value) + "]";
-            Generate_Config();
+            Update_Config();
         }
 
         private void BedrollDeadZoneSize_Scroll(object sender, EventArgs e)
         {
 
             BedrollDeadZoneSize_g.Text = "Minimum enemy spawn distance from bedroll [" + Convert.ToString(BedrollDeadZoneSize.Value) + "]";
-            Generate_Config();
+            Update_Config();
         }
 
         private void ServerReservedSlots_TextChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void ServerAdminSlots_TextChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void ServerReservedSlotsPermission_TextChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void ServerAdminSlotsPermission_TextChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void UNET_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void RakNet_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void SteamNetworking_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void HideCommandExecutionLog_0_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Excall_CheckedChanged(object sender, EventArgs e)
@@ -4748,17 +4782,17 @@ namespace _7DaysServerManager
 
         private void HideCommandExecutionLog_1_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void HideCommandExecutionLog_2_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void HideCommandExecutionLog_3_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void Zoomup_Click(object sender, EventArgs e)
@@ -4801,12 +4835,12 @@ namespace _7DaysServerManager
 
         private void MaxUncoveredMapChunksPerPlayer_TextChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
         private void EnemySpawnMode_CheckedChanged(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
     }

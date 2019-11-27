@@ -16,13 +16,13 @@ namespace _7DaysServerManager
 
         public void Generate_config(object sender, EventArgs e)
         {
-            Generate_Config();
+            Update_Config();
         }
 
 
-        public void Generate_Config()
+        public void Update_Config()
         {
-            if (IP_Label.Text != "Checking IP...")  // The Label Is Changed After The Configuraiton Is Loaded So That It Doesn't Get Accessed When Loading The Configuration From A File.
+            if (Public_IP_Address_Label.Text != "Checking IP...")  // The Label Is Changed After The Configuraiton Is Loaded So That It Doesn't Get Accessed When Loading The Configuration From A File.
             {
                 Echo_debug("---Saving Config---");
                 string gamemode = "GameModeSurvivalMP", serverispublic = "false", cheat = "false", cpl = "false", zombierun = "0", dropondeathmode = "0", droponquitmode = "0", feral_c = "0", vac = "false", PersistentPlayerProfiles_l = "false", PlayerKillingMode = "0", adm = "false", hce = "0", sdnp = "", EnemySpawnMode_Selected="false";
@@ -271,7 +271,7 @@ namespace _7DaysServerManager
                     "\"/>\r\n  <property name=\"ServerPassword\" 		    	value=\"" + ServerPassword.Text + 
                     "\"/>\r\n  <property name=\"ServerMaxPlayerCount\"      	value=\"" + maxpl.Value + 
                     "\"/>\r\n  \r\n  <property name=\"GameWorld\" 		        	value=\"" + mapa.Text + 
-                    "\"/>\r\n  <property name=\"GameName\" 				    value=\"" + nazwa.Text + 
+                    "\"/>\r\n  <property name=\"GameName\" 				    value=\"" + gamename.Text + 
                     "\"/>\r\n  <property name=\"GameDifficulty\" 		    	value=\"" + Game_Difficulty_TrackBar.Value +
                     "\"/>\r\n  <property name=\"GameMode\"				    	value=\"" + gamemode +
 
@@ -362,7 +362,7 @@ namespace _7DaysServerManager
                             else if (name == "ServerIsPublic" && value == "true")
                                 ServerIsPublic.Checked = true;
                             else if (name == "GameName")
-                                nazwa.Text = value;
+                                this.gamename.Text = value;
                             else if (name == "ServerName")
                                 server_nazwa.Text = value;
                             else if (name == "ServerPassword")
