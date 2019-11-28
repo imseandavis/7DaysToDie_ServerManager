@@ -246,7 +246,7 @@ namespace _7DaysServerManager
                 try
                 {
                     // Get Config File Path
-                    StreamWriter str = new StreamWriter((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", null) + "\\serverconfig.xml");
+                    StreamWriter str = new StreamWriter((string)Registry.GetValue(base_registry_key + profile_name, "game_path", null) + "\\serverconfig.xml");
 
                     // Write To File
                     str.WriteLine(config);
@@ -269,7 +269,7 @@ namespace _7DaysServerManager
 
             try
             {
-                XmlReader xmlReader = XmlReader.Create((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", null) + "\\serverconfig.xml");
+                XmlReader xmlReader = XmlReader.Create((string)Registry.GetValue(base_registry_key + profile_name, "game_path", null) + "\\serverconfig.xml");
                 while (xmlReader.Read())
                 {
                     if ((xmlReader.NodeType == XmlNodeType.Element) && (xmlReader.Name == "property"))
