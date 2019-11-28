@@ -116,14 +116,14 @@ namespace _7DaysServerManager
                     else
                         content = www_main_content.Text;
 
-                    sname = Server_Name_TextBox.Text;
+                    sname = ConfigProperty_ServerName.Text;
                     ip = Public_IP_Address_Label.Text;
                     if (server_online)
                         serv_onl = "ONLINE";
                     else
                         serv_onl = "OFFLINE";
 
-                    port_ = port.Text;
+                    port_ = ConfigProperty_ServerPort.Text;
                     pl_cnt = Convert.ToString(Online_Player_List.Items.Count);
                     max_pl_cnt = Convert.ToString(MaxPlayers.Value);
                     for_url = forum_url.Text;

@@ -258,7 +258,7 @@ namespace _7DaysServerManager
 
         public void Download_maps(string selected_map)
         {
-            GameName_ComboBox.Items.Clear();
+            ConfigProperty_GameName.Items.Clear();
 
             try
             {
@@ -277,7 +277,7 @@ namespace _7DaysServerManager
 
                 foreach (string dany_save in wszystkie_mapy)
                 {
-                    GameName_ComboBox.Items.Add(dany_save.Replace(sci, "").Replace("\\", ""));
+                    ConfigProperty_GameName.Items.Add(dany_save.Replace(sci, "").Replace("\\", ""));
                 }
             }
             catch { }
@@ -489,7 +489,7 @@ namespace _7DaysServerManager
             profile_name = (string)Registry.GetValue(base_registry_key, "last_profile", null);
             string profile_registry_key = @"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name;
 
-            prepare_app_after_start();
+            Prepare_app_after_start();
         }
 
 
@@ -503,13 +503,6 @@ namespace _7DaysServerManager
         private void Trudnosc_Scroll(object sender, EventArgs e)
         {
             Game_Difficulty_GroupBox.Text = LocalizedLanguage("trudnoscgroup") + " [" + Convert.ToString(Game_Difficulty_TrackBar.Value) + "]";
-            Update_Config();
-        }
-
-        private void Gamemode_coop_CheckedChanged(object sender, EventArgs e)
-        {
-            if (gamemode_coop.Checked == true)
-
             Update_Config();
         }
 
@@ -1811,7 +1804,7 @@ namespace _7DaysServerManager
         private void Mapa_SelectedIndexChanged(object sender, EventArgs e)
         {
             Update_Config();
-            Download_maps(Game_World_Type_ComboBox.Text);
+            Download_maps(ConfigProperty_GameWorld.Text);
         }
 
         private void Showonmap_CheckedChanged(object sender, EventArgs e)
@@ -2427,8 +2420,8 @@ namespace _7DaysServerManager
             {
                 try
                 {
-                    selected_map = Game_World_Type_ComboBox.Text;
-                    game_name = GameName_ComboBox.Text;
+                    selected_map = ConfigProperty_GameWorld.Text;
+                    game_name = ConfigProperty_GameName.Text;
                     backup_location = this.backup_location.Text;
                     pokazuj_chat = backup_chat.Checked;
                     lokacja = save.Text;
@@ -3049,7 +3042,7 @@ namespace _7DaysServerManager
                     }
 
                     // Send Install ID, Windows Version, Is Server Public, Server Port, Game Name, Game Version, Android Enable Flag, Profile Name, and Website Enabled Flag
-                    client.Headers.Add("User-Agent", (string)Registry.GetValue(base_registry_key, "install_id", null) + ";" + os_ver + ";" + "n\\a" + ";" + ServerIsPublic.Checked + ";" + port.Text + ";" + GameName_ComboBox.Text + ";" + ver + ";" + (string)Registry.GetValue(base_registry_key + profile_name, "android_allow", null) + ";" + (string)Registry.GetValue(base_registry_key + profile_name, "enable_website", null));
+                    client.Headers.Add("User-Agent", (string)Registry.GetValue(base_registry_key, "install_id", null) + ";" + os_ver + ";" + "n\\a" + ";" + ServerIsPublic.Checked + ";" + ConfigProperty_ServerPort.Text + ";" + ConfigProperty_GameName.Text + ";" + ver + ";" + (string)Registry.GetValue(base_registry_key + profile_name, "android_allow", null) + ";" + (string)Registry.GetValue(base_registry_key + profile_name, "enable_website", null));
                 }
                 else
                 {
@@ -4275,11 +4268,11 @@ namespace _7DaysServerManager
 
                         if (save.Text == "")
                         {
-                            direct = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\7DaysToDie\\Saves\\" + Game_World_Type_ComboBox.Text + "\\" + GameName_ComboBox.Text;
+                            direct = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\7DaysToDie\\Saves\\" + ConfigProperty_GameWorld.Text + "\\" + ConfigProperty_GameName.Text;
                         }
                         else
                         {
-                            direct = save.Text + "\\" + Game_World_Type_ComboBox.Text + "\\" + GameName_ComboBox.Text;
+                            direct = save.Text + "\\" + ConfigProperty_GameWorld.Text + "\\" + ConfigProperty_GameName.Text;
                         }
 
                         MessageBox.Show("This may take a while.");

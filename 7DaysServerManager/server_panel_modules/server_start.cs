@@ -38,14 +38,12 @@ namespace _7DaysServerManager
 
             // Retrieve The 7 Days To Die Dedicated Server Path
             string exec_name = exe_name.Text;
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "server_type", null) == "server")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "server_type", null) == "server")
                 exec_name = "7DaysToDieServer.exe";
 
-            file_path = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", null);
-            
+            file_path = (string)Registry.GetValue(base_registry_key + profile_name, "game_path", null);
 
-            parametry = parametry + " -configfile=" + (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "configfile", null);
-
+            parametry = parametry + " -configfile=" + (string)Registry.GetValue(base_registry_key + profile_name, "configfile", null);
 
             parametry = parametry + " -dedicated";
 
@@ -56,28 +54,24 @@ namespace _7DaysServerManager
                     Echo(LocalizedLanguage("game_not_found_cons"), 3, true);
                     MessageBox.Show(LocalizedLanguage("game_not_found"), LocalizedLanguage("error"));
 
-
-
                     if (Select_Game_Directory.ShowDialog() == DialogResult.OK)
                     {
                         file_path = Select_Game_Directory.SelectedPath + "\\" + exe_name.Text;
-                        string sciezka_plikow_server = Select_Game_Directory.SelectedPath + "\\7DaysToDieServer.exe";
-
-
+                        string server_file_path = Select_Game_Directory.SelectedPath + "\\7DaysToDieServer.exe";
 
                         if (File.Exists(file_path + "\\" + exe_name.Text))
                         {
                             MessageBox.Show(LocalizedLanguage("dir_ok"), LocalizedLanguage("saved"));
                             Echo(LocalizedLanguage("dir_ok"), 0, true);
-                            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", file_path);
-                            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "server_type", "client");
+                            Registry.SetValue(base_registry_key + profile_name, "game_path", file_path);
+                            Registry.SetValue(base_registry_key + profile_name, "server_type", "client");
                         }
                         else if (File.Exists(file_path + "\\7daystodieserver.exe"))
                         {
                             MessageBox.Show(LocalizedLanguage("dir_ok"), LocalizedLanguage("saved"));
                             Echo(LocalizedLanguage("dir_ok"), 0, true);
-                            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", file_path);
-                            Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "server_type", "server");
+                            Registry.SetValue(base_registry_key + profile_name, "game_path", file_path);
+                            Registry.SetValue(base_registry_key + profile_name, "server_type", "server");
                         }
                         else
                         {
@@ -109,9 +103,6 @@ namespace _7DaysServerManager
                     catch { }
 
                 }
-
-
-
 
             Echo_debug("---DONE!---");
         }

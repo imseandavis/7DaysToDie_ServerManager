@@ -14,32 +14,24 @@ namespace _7DaysServerManager
     public partial class Server_Panel_Form : Form
     {
 
-
         public string[] GetPrefixes(Boolean all_of_them)
         {
-            List<string> pref = new List<string>();
+            List<string> pref = new List<string>
+            {
 
-            //android
+                //Android List
+                "http://+:17011/widget/",
+                "http://+:17011/widget/{aak}/",
 
-
-            pref.Add("http://+:17011/widget/");
-            pref.Add("http://+:17011/widget/{aak}/");
-
-            pref.Add("http://+:80/");
-            pref.Add("http://+:80/rules/");
-            pref.Add("http://+:80/shop/");
-            
-            
+                "http://+:80/",
+                "http://+:80/rules/",
+                "http://+:80/shop/"
+            };
 
             string[] prefixes = pref.ToArray<string>();
 
-
             return prefixes;
         }
-
-
-
-
 
         public string CreatePassword(int length)
         {
@@ -53,10 +45,7 @@ namespace _7DaysServerManager
             return res.ToString();
         }
 
-
-
-
-        private void prepare_app_after_start()
+        private void Prepare_app_after_start()
         {
 
 
@@ -92,7 +81,7 @@ namespace _7DaysServerManager
 
             Echo_debug("7DaysServerManager ver: " + ver + " game ver: " + game_ver + "\nDEBUG MODE");
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "anon_data", null) == "0")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "anon_data", null) == "0")
             {
                 Settings_Allow_Anon_Data_CheckBox.Checked = false;
             }
@@ -121,18 +110,18 @@ namespace _7DaysServerManager
             //mapa.Items.Clear();
             try
             {
-                string[] wszystkie_mapy = System.IO.Directory.GetDirectories((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", null) + "\\Data\\Worlds\\", "*", System.IO.SearchOption.TopDirectoryOnly);
+                string[] wszystkie_mapy = System.IO.Directory.GetDirectories((string)Registry.GetValue(base_registry_key + profile_name, "game_path", null) + "\\Data\\Worlds\\", "*", System.IO.SearchOption.TopDirectoryOnly);
 
 
                 foreach (string dany_save in wszystkie_mapy)
                 {
-                    Game_World_Type_ComboBox.Items.Add(dany_save.Replace((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", null) + "\\Data\\Worlds\\", ""));
+                    ConfigProperty_GameWorld.Items.Add(dany_save.Replace((string)Registry.GetValue(base_registry_key + profile_name, "game_path", null) + "\\Data\\Worlds\\", ""));
                 }
             }
             catch { }
             try
             {
-                Game_World_Type_ComboBox.Text = "Navezgane";
+                ConfigProperty_GameWorld.Text = "Navezgane";
             }
             catch { }
             /*kuniec*/
@@ -261,7 +250,7 @@ namespace _7DaysServerManager
 
 
 
-            /*if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", null) == null)
+            /*if ((string)Registry.GetValue(base_registry_key + profile_name, "game_path", null) == null)
             {
                 first_run fr = new first_run();
                 fr.Show();
@@ -270,19 +259,19 @@ namespace _7DaysServerManager
             }*/
 
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "save_logfiles", null) == "1")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "save_logfiles", null) == "1")
             {
                 Save_Logs_To_Files_CheckBox.Checked = true;
                 Save_Logs_CheckBox.Checked = true;
             }
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "realtime", null) == "1")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "realtime", null) == "1")
             {
                 realtime.Checked = true;
             }
 
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "auto_backup", null) == "1")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "auto_backup", null) == "1")
             {
                 auto_backup_check.Checked = true;
                 backup_chat.Enabled = true;
@@ -290,23 +279,23 @@ namespace _7DaysServerManager
 
             }
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "backup_chat", null) == "1")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "backup_chat", null) == "1")
             {
                 backup_chat.Checked = true;
             }
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "android_allow", null) == "1")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "android_allow", null) == "1")
             {
                 android_allow.Checked = true;
             }
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "enable_website", null) == "1")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "enable_website", null) == "1")
             {
                 enable_website.Checked = true;
             }
 
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "autoupdate_whitelist", null) == "1")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "autoupdate_whitelist", null) == "1")
             {
                 Auto_Update_Whitelist_CheckBox.Checked = true;
             }
@@ -314,7 +303,7 @@ namespace _7DaysServerManager
 
             try
             {
-                int auto_backup_time_v = (int)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "backup_time", null);
+                int auto_backup_time_v = (int)Registry.GetValue(base_registry_key + profile_name, "backup_time", null);
                 backup_time.Value = auto_backup_time_v;
 
 
@@ -348,7 +337,7 @@ namespace _7DaysServerManager
 
 
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "spam_is_spam", null) == "1")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "spam_is_spam", null) == "1")
             {
                 Server_Commands_Say_Switch_CheckBox.Checked = true;
             }
@@ -359,7 +348,7 @@ namespace _7DaysServerManager
 
 
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "auto_reset", null) == "1")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "auto_reset", null) == "1")
             {
                 Enable_Auto_Restarts_CheckBox.Checked = true;
                 Warn_Before_Restart_CheckBox.Enabled = true;
@@ -367,14 +356,14 @@ namespace _7DaysServerManager
 
             }
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "reset_chat", null) == "0")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "reset_chat", null) == "0")
             {
                 Warn_Before_Restart_CheckBox.Checked = false;
             }
 
             try
             {
-                int auto_reset_time_v = (int)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "reset_time", null);
+                int auto_reset_time_v = (int)Registry.GetValue(base_registry_key + profile_name, "reset_time", null);
                 Auto_Restart_Time_TrackBar.Value = auto_reset_time_v;
 
 
@@ -412,7 +401,7 @@ namespace _7DaysServerManager
 
 
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "start_with_7dsm", null) == "1")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "start_with_7dsm", null) == "1")
             {
                 Start_With_7DSM_CheckBox.Checked = true;
             }
@@ -427,21 +416,21 @@ namespace _7DaysServerManager
 
 
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "use_wl", null) == "1")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "use_wl", null) == "1")
             {
                 Use_Whitelist_CheckBox.Checked = true;
             }
 
 
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "sql_enabled", null) == "1")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "sql_enabled", null) == "1")
             {
                 SQL_Enabled_CheckBox.Checked = true;
             }
 
 
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "cleanexit", null) == "0")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "cleanexit", null) == "0")
             {
                 Settings_Clean_Exit_CheckBox.Checked = false;
             }
@@ -451,7 +440,7 @@ namespace _7DaysServerManager
                 Settings_Skip_Profiles_CheckBox.Checked = true;
             }
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "show_ip", null) == "1")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "show_ip", null) == "1")
             {
                 Public_IP_Address_Label.Visible = true;
                 Settings_Show_IPS_CheckBox.Checked = true;
@@ -461,67 +450,67 @@ namespace _7DaysServerManager
 
 
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "always_on_top", null) == "1")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "always_on_top", null) == "1")
             {
                 Settings_Always_On_Top_CheckBox.Checked = true;
                 this.TopMost = true;
             }
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "to_tray", null) == "1")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "to_tray", null) == "1")
             {
                 Settings_Send_To_Tray_CheckBox.Checked = true;
             }
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "hide_don_btn", null) == "1")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "hide_don_btn", null) == "1")
             {
                 Hide_Donation_Buttons_CheckBox.Checked = true;
             }
 
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "rem_old_backups", null) == "1")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "rem_old_backups", null) == "1")
             {
                 rem_old_backups.Checked = true;
             }
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "dtds_enable", null) == "1")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "dtds_enable", null) == "1")
             {
                 dtds_enable.Checked = true;
             }
 
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "sendbans", null) == "0")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "sendbans", null) == "0")
             {
                 sendbans.Checked = false;
             }
 
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "glob", null) == "0")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "glob", null) == "0")
             {
                 glob_0.Checked = true;
             }
-            else if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "glob", null) == "1")
+            else if ((string)Registry.GetValue(base_registry_key + profile_name, "glob", null) == "1")
             {
                 glob_1.Checked = true;
             }
-            else if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "glob", null) == "2")
+            else if ((string)Registry.GetValue(base_registry_key + profile_name, "glob", null) == "2")
             {
                 glob_2.Checked = true;
             }
-            else if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "glob", null) == "3")
+            else if ((string)Registry.GetValue(base_registry_key + profile_name, "glob", null) == "3")
             {
                 glob_3.Checked = true;
             }
 
 
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "excall", null) == "1")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "excall", null) == "1")
             {
                 Use_External_Call_CheckBox.Checked = true;
             }
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "excall_file", null) != null)
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "excall_file", null) != null)
             {
-                External_Call_File_Name_Label.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "excall_file", null);
+                External_Call_File_Name_Label.Text = (string)Registry.GetValue(base_registry_key + profile_name, "excall_file", null);
             }
 
 
@@ -529,14 +518,14 @@ namespace _7DaysServerManager
             string aak = "";
             try
             {
-                aak = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "android_access_key", null);
+                aak = (string)Registry.GetValue(base_registry_key + profile_name, "android_access_key", null);
                 //echo_debug(aak);
 
                 if (aak == null)
                 {
                     Echo_debug("AAK");
                     aak = CreatePassword(5);
-                    Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "android_access_key", aak);
+                    Registry.SetValue(base_registry_key + profile_name, "android_access_key", aak);
                 }
 
                 android_access_key.Text = "Android access key: " + aak;
@@ -550,14 +539,14 @@ namespace _7DaysServerManager
 
             try
             {
-                string psw = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "rem_old_backups_count", null);
+                string psw = (string)Registry.GetValue(base_registry_key + profile_name, "rem_old_backups_count", null);
                 rem_old_backups_count.Text = psw;
             }
             catch { }
 
             try
             {
-                string psw = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "dtds_auth", null);
+                string psw = (string)Registry.GetValue(base_registry_key + profile_name, "dtds_auth", null);
                 dtds_auth.Text = psw;
             }
             catch { }
@@ -565,7 +554,7 @@ namespace _7DaysServerManager
 
             try
             {
-                string psw = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\", "prem_code", null);
+                string psw = (string)Registry.GetValue(base_registry_key, "prem_code", null);
                 Support_Code_TextBox.Text = psw;
             }
             catch { }
@@ -574,7 +563,7 @@ namespace _7DaysServerManager
 
             try
             {
-                int s_time = (int)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "spam_time", null);
+                int s_time = (int)Registry.GetValue(base_registry_key + profile_name, "spam_time", null);
                 Server_Commands_Time_TrackBar.Value = s_time;
             }
             catch { }
@@ -584,7 +573,7 @@ namespace _7DaysServerManager
 
 
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "debug_log", null) == "1")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "debug_log", null) == "1")
             {
                 debug_log.Checked = true;
                 debug_mode = true;
@@ -602,7 +591,7 @@ namespace _7DaysServerManager
 
             try
             {
-                string full = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "dtds_items", null);
+                string full = (string)Registry.GetValue(base_registry_key + profile_name, "dtds_items", null);
 
                 string[] poj = full.Split(';');
 
@@ -629,27 +618,27 @@ namespace _7DaysServerManager
 
             Server_Commands_Delay_GroupBox.Text = LocalizedLanguage("spam_time") + " [" + Server_Commands_Time_TrackBar.Value * 0.5 + " min.]";
 
-            Server_Commands_List_RichTextBox.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "spam_list", null);
+            Server_Commands_List_RichTextBox.Text = (string)Registry.GetValue(base_registry_key + profile_name, "spam_list", null);
 
-            SQL_Host_TextBox.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "sql_host", null);
-            SQL_Username_TextBox.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "sql_username", null);
-            SQL_Password_TextBox.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "sql_password", null);
-            SQL_Database_Name_TextBox.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "sql_db_name", null);
-
-
+            SQL_Host_TextBox.Text = (string)Registry.GetValue(base_registry_key + profile_name, "sql_host", null);
+            SQL_Username_TextBox.Text = (string)Registry.GetValue(base_registry_key + profile_name, "sql_username", null);
+            SQL_Password_TextBox.Text = (string)Registry.GetValue(base_registry_key + profile_name, "sql_password", null);
+            SQL_Database_Name_TextBox.Text = (string)Registry.GetValue(base_registry_key + profile_name, "sql_db_name", null);
 
 
 
 
 
-            Auto_Update_External_Whitelist_URL_TextBox.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "wl_add", null);
-            Update_Whitelist_Interval_TextBox.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "wl_interval", null);
+
+
+            Auto_Update_External_Whitelist_URL_TextBox.Text = (string)Registry.GetValue(base_registry_key + profile_name, "wl_add", null);
+            Update_Whitelist_Interval_TextBox.Text = (string)Registry.GetValue(base_registry_key + profile_name, "wl_interval", null);
 
 
 
 
 
-            Game_File_Path_Label.Text = LocalizedLanguage("path") + (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "game_path", null);
+            Game_File_Path_Label.Text = LocalizedLanguage("path") + (string)Registry.GetValue(base_registry_key + profile_name, "game_path", null);
 
             if (Game_File_Path_Label.Text == LocalizedLanguage("path"))
                 Game_File_Path_Label.Text = LocalizedLanguage("path") + "ERROR- NONE";
@@ -687,7 +676,7 @@ namespace _7DaysServerManager
 
 
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\", "tmp_prem", null) == "1")
+            if ((string)Registry.GetValue(base_registry_key, "tmp_prem", null) == "1")
             {
                 Echo_debug("local premium valid, unlocking");
                 Unlock_Premium();
@@ -701,17 +690,17 @@ namespace _7DaysServerManager
 
 
 
-            Download_maps(Game_World_Type_ComboBox.Text);
+            Download_maps(ConfigProperty_GameWorld.Text);
 
 
 
 
 
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "exe_name", null) == null || (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "exe_name", null) == "")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "exe_name", null) == null || (string)Registry.GetValue(base_registry_key + profile_name, "exe_name", null) == "")
                 exe_name.Text = "7DaysToDie.exe";
             else
-                exe_name.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "exe_name", null);
+                exe_name.Text = (string)Registry.GetValue(base_registry_key + profile_name, "exe_name", null);
 
 
 
@@ -725,102 +714,82 @@ namespace _7DaysServerManager
                 show_msg.Show();
             }*/
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "backup_msg_1", null) == null || (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "backup_msg_1", null) == "")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "backup_msg_1", null) == null || (string)Registry.GetValue(base_registry_key + profile_name, "backup_msg_1", null) == "")
                 Starting_Backup_Message_TextBox.Text = LocalizedLanguage("chat_backup_1");
             else
-                Starting_Backup_Message_TextBox.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "backup_msg_1", null);
+                Starting_Backup_Message_TextBox.Text = (string)Registry.GetValue(base_registry_key + profile_name, "backup_msg_1", null);
 
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "backup_msg_2", null) == null || (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "backup_msg_2", null) == "")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "backup_msg_2", null) == null || (string)Registry.GetValue(base_registry_key + profile_name, "backup_msg_2", null) == "")
                 Backup_Completed_Message_TextBox.Text = LocalizedLanguage("chat_backup_2");
             else
-                Backup_Completed_Message_TextBox.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "backup_msg_2", null);
+                Backup_Completed_Message_TextBox.Text = (string)Registry.GetValue(base_registry_key + profile_name, "backup_msg_2", null);
 
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "reboot_time", null) == null || (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "reboot_time", null) == "")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "reboot_time", null) == null || (string)Registry.GetValue(base_registry_key + profile_name, "reboot_time", null) == "")
                 reboot_time.Text = LocalizedLanguage("reset_time_left");
             else
-                reboot_time.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "reboot_time", null);
+                reboot_time.Text = (string)Registry.GetValue(base_registry_key + profile_name, "reboot_time", null);
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "reboot", null) == null || (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "reboot", null) == "")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "reboot", null) == null || (string)Registry.GetValue(base_registry_key + profile_name, "reboot", null) == "")
                 reboot.Text = LocalizedLanguage("rebooting");
             else
-                reboot.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "reboot", null);
+                reboot.Text = (string)Registry.GetValue(base_registry_key + profile_name, "reboot", null);
 
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "cmd_not_yet", null) == null || (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "cmd_not_yet", null) == "")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "cmd_not_yet", null) == null || (string)Registry.GetValue(base_registry_key + profile_name, "cmd_not_yet", null) == "")
                 cmd_not_yet.Text = LocalizedLanguage("cmd_not_yet");
             else
-                cmd_not_yet.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "cmd_not_yet", null);
+                cmd_not_yet.Text = (string)Registry.GetValue(base_registry_key + profile_name, "cmd_not_yet", null);
 
 
 
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "configfile", null) == null || (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "configfile", null) == "")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "configfile", null) == null || (string)Registry.GetValue(base_registry_key + profile_name, "configfile", null) == "")
                 configfile.Text = "serverconfig.xml";
             else
-                configfile.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "configfile", null);
+                configfile.Text = (string)Registry.GetValue(base_registry_key + profile_name, "configfile", null);
 
 
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "cc", null) == null)
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "cc", null) == null)
                 Custom_Commands_RichTextBox.Text = "whoami:say \"You are %player%\":0\nrules:say \"No cheating!\":0\nkit:spawnentity %player% 32;say \"Here you are\":3600\nhelp:say \"Available commands are whoami, kit and rules\":0";
             else
-                Custom_Commands_RichTextBox.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "cc", null);
+                Custom_Commands_RichTextBox.Text = (string)Registry.GetValue(base_registry_key + profile_name, "cc", null);
 
 
 
 
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "www_main_content", null) != null)
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "www_main_content", null) != null)
             {
-                www_main_content.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "www_main_content", null);
+                www_main_content.Text = (string)Registry.GetValue(base_registry_key + profile_name, "www_main_content", null);
             }
 
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "rules_content", null) != null)
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "rules_content", null) != null)
             {
-                rules_content.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "rules_content", null);
+                rules_content.Text = (string)Registry.GetValue(base_registry_key + profile_name, "rules_content", null);
             }
 
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "forum_url", null) != null)
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "forum_url", null) != null)
             {
-                forum_url.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "forum_url", null);
+                forum_url.Text = (string)Registry.GetValue(base_registry_key + profile_name, "forum_url", null);
             }
 
 
-
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "backup_location", null) == null)
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "backup_location", null) == null)
                 backup_location.Text = AppDomain.CurrentDomain.BaseDirectory + "backups";
             else
-                backup_location.Text = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "backup_location", null);
+                backup_location.Text = (string)Registry.GetValue(base_registry_key + profile_name, "backup_location", null);
 
 
-
-
-
-            if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "enable_cc", null) == "1")
+            if ((string)Registry.GetValue(base_registry_key + profile_name, "enable_cc", null) == "1")
             {
                 Enable_Custom_Commands_CheckBox.Checked = true;
             }
 
-
-
             this.KeyPreview = true;
-
-
-
-            if (gamemode_surv_pvp.Checked == true)
-            {
-                Land_Claim_GroupBox.Visible = true;
-            }
-            else
-            {
-                Land_Claim_GroupBox.Visible = false;
-            }
-
-
-
 
             Refresh_backups_list();
 
@@ -831,19 +800,11 @@ namespace _7DaysServerManager
                 Echo("If You're author of translation type \"local transerr\" otherwise look for updated lang.xml file.", 2, true);
             }
 
-
-
-
-
             if (Start_With_7DSM_CheckBox.Checked)
                 Run_Server();
 
 
             file_log = debug_log.Checked;
-
-
-
-
 
 
 
@@ -884,7 +845,7 @@ namespace _7DaysServerManager
 
 
 
-
+        // Fire Up the 7 Days to Die Server Manager Webserver
         public void StartWebServer()
         {
 
@@ -904,21 +865,18 @@ namespace _7DaysServerManager
             string aak = "";
             try
             {
-                aak = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "android_access_key", null);
+                aak = (string)Registry.GetValue(base_registry_key + profile_name, "android_access_key", null);
 
                 if (aak == null)
                 {
                     aak = CreatePassword(5);
-                    Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "android_access_key", aak);
+                    Registry.SetValue(base_registry_key + profile_name, "android_access_key", aak);
                 }
             }
             catch (Exception e)
             {
                 Echo_debug(e + "");
             }
-
-
-
 
             foreach (string s in prefixes)
             {
@@ -956,12 +914,12 @@ namespace _7DaysServerManager
             string aak = "";
             try
             {
-                aak = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "android_access_key", null);
+                aak = (string)Registry.GetValue(base_registry_key + profile_name, "android_access_key", null);
 
                 if (aak == null)
                 {
                     aak = CreatePassword(5);
-                    Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "android_access_key", aak);
+                    Registry.SetValue(base_registry_key + profile_name, "android_access_key", aak);
                 }
             }
             catch (Exception e)
@@ -980,9 +938,7 @@ namespace _7DaysServerManager
                 Echo_debug(comd.Replace("{prefix}", s).Replace("{aak}", aak) + "\n");
             }
 
-
-
-            comd = "netsh http add urlacl url={prefix} user=" + System.Environment.UserDomainName + "\\" + System.Environment.UserName;
+            comd = "netsh http add urlacl url={prefix} user=" + Environment.UserDomainName + "\\" + Environment.UserName;
 
             foreach (string s in prefixes)
             {
@@ -1002,6 +958,7 @@ namespace _7DaysServerManager
             string obrobiony = all_comds.Replace("\n", " & ");
             obrobiony = obrobiony.Remove(obrobiony.Length - 2);
             //obrobiony += " & netsh advfirewall firewall add rule name=\"7DSM\" dir=in action=allow program=\"" + System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName + "\" enable=yes";
+            // TODO YOU NEED TO MAKE SURE THERES NOT SOMETHING ALREADY ON 80
             obrobiony += " & netsh advfirewall firewall add rule name=\"Open Port 80 (7DSM WebServer)\" dir=in action=allow protocol=TCP localport=80";
             obrobiony += " & netsh advfirewall firewall add rule name=\"Open Port 17011 (7DSM Widget Server)\" dir=in action=allow protocol=TCP localport=17011";
 
@@ -1013,9 +970,12 @@ namespace _7DaysServerManager
 
             Echo_debug(obrobiony);
 
-            ProcessStartInfo startInfo = new ProcessStartInfo("cmd.exe", "/c " + obrobiony);
-            startInfo.Verb = "runas";
-            startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            ProcessStartInfo startInfo = new ProcessStartInfo("cmd.exe", "/c " + obrobiony)
+            {
+                Verb = "runas",
+                WindowStyle = ProcessWindowStyle.Hidden
+            };
+
             try
             {
                 System.Diagnostics.Process.Start(startInfo);
@@ -1039,12 +999,12 @@ namespace _7DaysServerManager
             string aak = "";
             try
             {
-                aak = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "android_access_key", null);
+                aak = (string)Registry.GetValue(base_registry_key + profile_name, "android_access_key", null);
 
                 if (aak == null)
                 {
                     aak = CreatePassword(5);
-                    Registry.SetValue(@"HKEY_CURRENT_USER\Software\pionner\7DSM\" + profile_name, "android_access_key", aak);
+                    Registry.SetValue(base_registry_key + profile_name, "android_access_key", aak);
                 }
             }
             catch (Exception e)
@@ -1065,33 +1025,29 @@ namespace _7DaysServerManager
             }
 
 
-
-            
-
-
             DialogResult dialogResult = MessageBox.Show(
             "Do you want to see details before executing?"
             , "Cancel reservations", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
 
 
-
-
-
-            string obrobiony = all_comds.Replace("\n", " & ");
-            obrobiony = obrobiony.Remove(obrobiony.Length - 2);
+            // Initi Processed Commands
+            string processed = all_comds.Replace("\n", " & ");
+            processed = processed.Remove(processed.Length - 2);
 
 
 
             if (dialogResult == DialogResult.Yes)
-                MessageBox.Show("Following commands will be executed on administrative rights:\n\n" + obrobiony);
+                MessageBox.Show("Following commands will be executed on administrative rights:\n\n" + processed);
 
 
 
-            Echo_debug(obrobiony);
+            Echo_debug(processed);
 
-            ProcessStartInfo startInfo = new ProcessStartInfo("cmd.exe", "/c " + obrobiony);
-            startInfo.Verb = "runas";
-            startInfo.WindowStyle = ProcessWindowStyle.Hidden;
+            ProcessStartInfo startInfo = new ProcessStartInfo("cmd.exe", "/c " + processed)
+            {
+                Verb = "runas",
+                WindowStyle = ProcessWindowStyle.Hidden
+            };
             try
             {
                 System.Diagnostics.Process.Start(startInfo);

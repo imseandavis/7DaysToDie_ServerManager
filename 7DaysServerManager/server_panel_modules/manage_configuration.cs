@@ -14,24 +14,33 @@ namespace _7DaysServerManager
     public partial class Server_Panel_Form : Form
     {
 
-        public void Generate_config(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
+        //public void Generate_Config(object sender, EventArgs e)
+        //{
+        //    Update_Config();
+        //}
 
         public void Update_Config()
         {
-            if (Public_IP_Address_Label.Text != "Checking IP...")  // The Label Is Changed After The Configuraiton Is Loaded So That It Doesn't Get Accessed When Loading The Configuration From A File.
+            if (Public_IP_Address_Label.Text != "Checking IP...")  // The Label Is Changed After The Configuration Is Loaded, So That It Doesn't Get Accessed When Loading The Configuration From A File.
             {
-                Echo_debug("---Saving Config---");
-                string gamemode = "GameModeSurvivalMP", serverispublic = "false", cheat = "false", cpl = "false", zombierun = "0", dropondeathmode = "0", droponquitmode = "0", feral_c = "0", vac = "false", PersistentPlayerProfiles_l = "false", PlayerKillingMode = "0", adm = "false", hce = "0", sdnp = "", EnemySpawnMode_Selected="false";
+                Echo_debug("---Updating & Saving Config---");
 
-                // Set Game Mode
-                //if (gamemode_coop.Checked)
-                //    gamemode = "GameModeSurvivalSP";
-                //else if (gamemode_surv_pvp.Checked)
-                //    gamemode = "GameModeSurvivalMP";
+                // Init Config Default Values
+                string gamemode = "GameModeSurvivalMP";
+                string serverispublic = "false";
+                string cheat = "false";
+                string cpl = "false";
+                string zombierun = "0";
+                string dropondeathmode = "0";
+                string droponquitmode = "0";
+                string feral_c = "0";
+                string vac = "false";
+                string PersistentPlayerProfiles_l = "false";
+                string PlayerKillingMode = "0";
+                string adm = "false";
+                string hce = "0";
+                string sdnp = "";
+                string EnemySpawnMode_Selected="false";
 
                 // Set Enemy Spawn Mode
                 if (EnemySpawnMode.Checked)
@@ -265,13 +274,13 @@ namespace _7DaysServerManager
 
 
                 string config = "<?xml version=\"1.0\"?>\r\n<ServerSettings>\r\n  " +
-                    "<property name=\"ServerPort\" 			        value=\"" + port.Text +
+                    "<property name=\"ServerPort\" 			        value=\"" + ConfigProperty_ServerPort.Text +
                     "\"/>\r\n  <property name=\"ServerIsPublic\" 		    	value=\"" + serverispublic + 
-                    "\"/>\r\n  <property name=\"ServerName\" 				    value=\"" + Server_Name_TextBox.Text + 
+                    "\"/>\r\n  <property name=\"ServerName\" 				    value=\"" + ConfigProperty_ServerName.Text + 
                     "\"/>\r\n  <property name=\"ServerPassword\" 		    	value=\"" + ServerPassword.Text + 
                     "\"/>\r\n  <property name=\"ServerMaxPlayerCount\"      	value=\"" + MaxPlayers.Value + 
-                    "\"/>\r\n  \r\n  <property name=\"GameWorld\" 		        	value=\"" + Game_World_Type_ComboBox.Text + 
-                    "\"/>\r\n  <property name=\"GameName\" 				    value=\"" + GameName_ComboBox.Text + 
+                    "\"/>\r\n  \r\n  <property name=\"GameWorld\" 		        	value=\"" + ConfigProperty_GameWorld.Text + 
+                    "\"/>\r\n  <property name=\"GameName\" 				    value=\"" + ConfigProperty_GameName.Text + 
                     "\"/>\r\n  <property name=\"GameDifficulty\" 		    	value=\"" + Game_Difficulty_TrackBar.Value +
                     "\"/>\r\n  <property name=\"GameMode\"				    	value=\"" + gamemode +
 
@@ -313,8 +322,8 @@ namespace _7DaysServerManager
                     "\"/>\r\n  <property name=\"EnemyDifficulty\"				value=\"" + feral_c +
                     "\"/>\r\n  <property name=\"EACEnabled\"				value=\"" + vac +
                     "\"/>\r\n  <property name=\"AirDropMarker\"				value=\"" + adm +
-                    "\"/>\r\n\r\n\r\n\r\n  <property name=\"ServerWebsiteURL\"				value=\"" + ServerWebsiteURL.Text +
-                    "\"/>\r\n  <property name=\"ServerDescription\"				value=\"" + ServerDescription.Text +
+                    "\"/>\r\n\r\n\r\n\r\n  <property name=\"ServerWebsiteURL\"				value=\"" + ConfigProperty_ServerWebsiteURL.Text +
+                    "\"/>\r\n  <property name=\"ServerDescription\"				value=\"" + ConfigProperty_ServerDescription.Text +
                     "\"/>\r\n  <property name=\"MaxSpawnedZombies\"				value=\"" + MaxSpawnedZombies.Value +
                     "\"/>\r\n  <property name=\"MaxSpawnedAnimals\"				value=\"" + MaxSpawnedAnimals.Value +
                     "\"/>\r\n  <property name=\"PlayerSafeZoneLevel\"				value=\"" + Player_Safe_Zone_Level_TextBox.Text +
@@ -358,19 +367,19 @@ namespace _7DaysServerManager
                             //echo_debug(name + ": " + value);
 
                             if (name == "ServerPort")
-                                port.Text = value;
+                                ConfigProperty_ServerPort.Text = value;
                             else if (name == "ServerIsPublic" && value == "true")
                                 ServerIsPublic.Checked = true;
                             else if (name == "GameName")
-                                this.GameName_ComboBox.Text = value;
+                                this.ConfigProperty_GameName.Text = value;
                             else if (name == "ServerName")
-                                Server_Name_TextBox.Text = value;
+                                ConfigProperty_ServerName.Text = value;
                             else if (name == "ServerPassword")
                                 ServerPassword.Text = value;
                             else if (name == "ServerMaxPlayerCount")
                                 MaxPlayers.Value = Convert.ToInt32(value);
                             else if (name == "GameWorld")
-                                Game_World_Type_ComboBox.Text = value;
+                                ConfigProperty_GameWorld.Text = value;
                             else if (name == "GameDifficulty")
                                 Game_Difficulty_TrackBar.Value = Convert.ToInt32(value);
                             //else if (name == "GameMode")
@@ -597,10 +606,10 @@ namespace _7DaysServerManager
                                     feral.Checked = true;
 
                             if (name == "ServerDescription")
-                                ServerDescription.Text = value;
+                                ConfigProperty_ServerDescription.Text = value;
 
                             if (name == "ServerWebsiteURL")
-                                ServerWebsiteURL.Text = value;
+                                ConfigProperty_ServerWebsiteURL.Text = value;
 
                             Loot_Abundance_GroupBox.Text = LocalizedLanguage("LootAbundance_g") + " [" + LootAbundance.Value + "%]";
 

@@ -29,8 +29,6 @@ namespace _7DaysServerManager
             dostep.Text = LocalizedLanguage("dostep");
             dzien.Text = LocalizedLanguage("dzien") + " [1]";
 
-            gamemode_coop.Text = LocalizedLanguage("gamemode_coop");
-
             godzina.Text = LocalizedLanguage("godzina") + " [8:00]";
             Kick_Player_Button.Text = LocalizedLanguage("kick");
             Kick_GroupBox.Text = LocalizedLanguage("kickgroup");

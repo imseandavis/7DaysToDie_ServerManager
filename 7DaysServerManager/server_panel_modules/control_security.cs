@@ -36,14 +36,13 @@ namespace _7DaysServerManager
             zombie_never_run.Enabled = false;
             ServerIsPublic.Enabled = false;
             ServerPassword.Enabled = false;
-            GameName_ComboBox.Enabled = false;
-            Game_World_Type_ComboBox.Enabled = false;
-            port.Enabled = false;
-            gamemode_coop.Enabled = false;
+            ConfigProperty_GameName.Enabled = false;
+            ConfigProperty_GameWorld.Enabled = false;
+            ConfigProperty_ServerPort.Enabled = false;
 
             cheatmode.Enabled = false;
-            port.Enabled = false;
-            Server_Name_TextBox.Enabled = false;
+            ConfigProperty_ServerPort.Enabled = false;
+            ConfigProperty_ServerName.Enabled = false;
 
             // SQL Tab
             SQL_Enabled_CheckBox.Enabled = false;
@@ -90,7 +89,6 @@ namespace _7DaysServerManager
             Land_Claim_Dead_Zone_TextBox.Enabled = false;
             Land_Claim_Size_TextBox.Enabled = false;
             Land_Claim_Expiry_Time_TextBox.Enabled = false;
-            gamemode_surv_pvp.Enabled = false;
             feral.Enabled = false;
             Air_Drop_Frequency_TrackBar.Enabled = false;
             Enable_Easy_Anti_Cheat_CheckBox.Enabled = false;
@@ -100,8 +98,8 @@ namespace _7DaysServerManager
             PersistentPlayerProfiles.Enabled = false;
             configfile.Enabled = false;
             MaxSpawnedZombies.Enabled = false;
-            ServerDescription.Enabled = false;
-            ServerWebsiteURL.Enabled = false;
+            ConfigProperty_ServerDescription.Enabled = false;
+            ConfigProperty_ServerWebsiteURL.Enabled = false;
 
             Auto_Restarts_GroupBox.Enabled = false;
             Whitelist_GroupBox.Enabled = false;
@@ -134,13 +132,12 @@ namespace _7DaysServerManager
             zombie_never_run.Enabled = true;
             ServerIsPublic.Enabled = true;
             ServerPassword.Enabled = true;
-            GameName_ComboBox.Enabled = true;
-            Game_World_Type_ComboBox.Enabled = true;
-            port.Enabled = true;
-            gamemode_coop.Enabled = true;
+            ConfigProperty_GameName.Enabled = true;
+            ConfigProperty_GameWorld.Enabled = true;
+            ConfigProperty_ServerPort.Enabled = true;
             cheatmode.Enabled = true;
-            port.Enabled = true;
-            Server_Name_TextBox.Enabled = true;
+            ConfigProperty_ServerPort.Enabled = true;
+            ConfigProperty_ServerName.Enabled = true;
 
             // SQL Tab
             SQL_Enabled_CheckBox.Enabled = true;
@@ -188,7 +185,6 @@ namespace _7DaysServerManager
             Land_Claim_Dead_Zone_TextBox.Enabled = true;
             Land_Claim_Size_TextBox.Enabled = true;
             Land_Claim_Expiry_Time_TextBox.Enabled = true;
-            gamemode_surv_pvp.Enabled = true;
             feral.Enabled = true;
             Air_Drop_Frequency_TrackBar.Enabled = true;
             Enable_Easy_Anti_Cheat_CheckBox.Enabled = true;
@@ -198,8 +194,8 @@ namespace _7DaysServerManager
             PersistentPlayerProfiles.Enabled = true;
             configfile.Enabled = true;
             MaxSpawnedZombies.Enabled = true;
-            ServerDescription.Enabled = true;
-            ServerWebsiteURL.Enabled = true;
+            ConfigProperty_ServerDescription.Enabled = true;
+            ConfigProperty_ServerWebsiteURL.Enabled = true;
 
             Auto_Restarts_GroupBox.Enabled = true;
             Whitelist_GroupBox.Enabled = true;
