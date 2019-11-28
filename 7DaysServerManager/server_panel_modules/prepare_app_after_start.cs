@@ -267,7 +267,7 @@ namespace _7DaysServerManager
 
             if ((string)Registry.GetValue(base_registry_key + profile_name, "realtime", null) == "1")
             {
-                realtime.Checked = true;
+                DayNightLength_Realtime_Mode.Checked = true;
             }
 
 
@@ -644,9 +644,9 @@ namespace _7DaysServerManager
                 Game_File_Path_Label.Text = LocalizedLanguage("path") + "ERROR- NONE";
 
 
-            Max_Players_GroupBox.Text = LocalizedLanguage("maxplgroup") + " [" + Convert.ToString(MaxPlayers.Value) + "]";
-            Game_Difficulty_GroupBox.Text = LocalizedLanguage("trudnoscgroup") + " [" + Convert.ToString(Game_Difficulty_TrackBar.Value) + "]";
-            Day_Length_GroupBox.Text = LocalizedLanguage("dlugoscdnia") + " [" + Convert.ToString(dayLength.Value) + " min.]";
+            Max_Players_GroupBox.Text = LocalizedLanguage("maxplgroup") + " [" + Convert.ToString(ConfigProperty_ServerMaxPlayerCount.Value) + "]";
+            GameDifficulty_GroupBox.Text = LocalizedLanguage("trudnoscgroup") + " [" + Convert.ToString(ConfigProperty_GameDifficulty.Value) + "]";
+            DayNightLength_GroupBox.Text = LocalizedLanguage("dlugoscdnia") + " [" + Convert.ToString(ConfigProperty_DayNightLength.Value) + " min.]";
 
 
 
@@ -746,9 +746,9 @@ namespace _7DaysServerManager
 
 
             if ((string)Registry.GetValue(base_registry_key + profile_name, "configfile", null) == null || (string)Registry.GetValue(base_registry_key + profile_name, "configfile", null) == "")
-                configfile.Text = "serverconfig.xml";
+                ConfigProperty_UserDataFolder.Text = "serverconfig.xml";
             else
-                configfile.Text = (string)Registry.GetValue(base_registry_key + profile_name, "configfile", null);
+                ConfigProperty_UserDataFolder.Text = (string)Registry.GetValue(base_registry_key + profile_name, "configfile", null);
 
 
 

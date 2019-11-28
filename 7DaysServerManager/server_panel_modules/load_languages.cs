@@ -20,13 +20,13 @@ namespace _7DaysServerManager
             autobots.Text = LocalizedLanguage("autobots");
             Ban_Hammer_Button.Text = LocalizedLanguage("ban");
             blad.Text = LocalizedLanguage("blad");
-            cheatmode.Text = LocalizedLanguage("cheatmode");
+            ConfigProperty_BuildCreate.Text = LocalizedLanguage("cheatmode");
             Change_Game_File_Path_Button.Text = LocalizedLanguage("chpath");
             cpl_pass.Text = LocalizedLanguage("cpl_pass");
             cpl_port.Text = LocalizedLanguage("cpl_port");
-            ctrlp.Text = LocalizedLanguage("ctrlp");
+            ConfigProperty_ControlPanelEnabled.Text = LocalizedLanguage("ctrlp");
             Admin_Control_Panel_GroupBox.Text = LocalizedLanguage("ctrlpanel");
-            dostep.Text = LocalizedLanguage("dostep");
+            ServerListAndPassword_GroupBox.Text = LocalizedLanguage("dostep");
             dzien.Text = LocalizedLanguage("dzien") + " [1]";
 
             godzina.Text = LocalizedLanguage("godzina") + " [8:00]";
@@ -52,7 +52,7 @@ namespace _7DaysServerManager
             Shutdown_Server_Button.Text = LocalizedLanguage("stop");
             Game_Time_Controls_GroupBox.Text = LocalizedLanguage("telnet_group");
             Settings_Send_To_Tray_CheckBox.Text = LocalizedLanguage("to_tray");
-            Game_Difficulty_GroupBox.Text = LocalizedLanguage("trudnoscgroup");
+            GameDifficulty_GroupBox.Text = LocalizedLanguage("trudnoscgroup");
             Game_Mode_Settings_GroupBox.Text = LocalizedLanguage("trybgry");
             Settings_GroupBox.Text = LocalizedLanguage("ustawienia_grupa_ustawienia");
             workerynapis.Text = LocalizedLanguage("workerynapis");
@@ -60,7 +60,7 @@ namespace _7DaysServerManager
             zombie_never_run.Text = LocalizedLanguage("zombie_never_run");
             zombie_normal.Text = LocalizedLanguage("zombie_normal");
             zombie_run.Text = LocalizedLanguage("zombie_run");
-            PersistentPlayerProfiles.Text = LocalizedLanguage("PersistentPlayerProfiles");
+            ConfigProperty_PersistentPlayerProfiles.Text = LocalizedLanguage("PersistentPlayerProfiles");
             
 
             Set_Game_Time_Button.Text = LocalizedLanguage("telnet_connect");
@@ -86,37 +86,33 @@ namespace _7DaysServerManager
             Backup_Timer_Label.Text = LocalizedLanguage("backup_timer_label");
             auto_backup_check.Text = LocalizedLanguage("auto_backup_check");
             backup_chat.Text = LocalizedLanguage("backup_chat");
-            feral.Text = LocalizedLanguage("feral");
+            ConfigProperty_EnemyDifficulty.Text = LocalizedLanguage("feral");
 
 
             Land_Claim_GroupBox.Text = LocalizedLanguage("LandClaim");
-            Land_Claim_Decay_Mode_GroupBox.Text = LocalizedLanguage("LandClaimDecayMode_g");
+            LandClaimDecayMode_GroupBox.Text = LocalizedLanguage("LandClaimDecayMode_g");
             Linear.Text = LocalizedLanguage("Linear");
             Exponential.Text = LocalizedLanguage("Exponential");
             Full_prot.Text = LocalizedLanguage("Full_prot");
-            Land_Claim_Durability_Modifier_GroupBox.Text = LocalizedLanguage("LandClaim_g");
+            LandClaimDurabilityModifier_GroupBox.Text = LocalizedLanguage("LandClaim_g");
             Land_Claim_Durability_Online_Label.Text = LocalizedLanguage("online");
             Land_Claim_Durability_Offline_Label.Text = LocalizedLanguage("offline");
-            Land_Claim_Dead_Zone_GroupBox.Text = LocalizedLanguage("LandClaimDeadZone_g");
-            Land_Claim_Size_GroupBox.Text = LocalizedLanguage("LandClaimSize_g");
-            Land_Claim_Expiry_Time_GroupBox.Text = LocalizedLanguage("LandClaimExpiryTime_g");
+            LandClaimDeadZone_GroupBox.Text = LocalizedLanguage("LandClaimDeadZone_g");
+            LandClaimSize_GroupBox.Text = LocalizedLanguage("LandClaimSize_g");
+            LandClaimExpiryTime_GroupBox.Text = LocalizedLanguage("LandClaimExpiryTime_g");
 
 
-            Drop_On_Death_Group_Box.Text = LocalizedLanguage("dod_g");
-            Drop_On_Death_Mode_0.Text = LocalizedLanguage("dod_0");
-            Drop_On_Death_Mode_1.Text = LocalizedLanguage("dod_1");
-            Drop_On_Death_Mode_2.Text = LocalizedLanguage("dod_2");
-            Drop_On_Death_Mode_3.Text = LocalizedLanguage("dod_3");
-            Drop_On_Quit_Mode_0.Text = LocalizedLanguage("doq_0");
-            Drop_On_Quit_Mode_1.Text = LocalizedLanguage("doq_1");
-            Drop_On_Quit_Mode_2.Text = LocalizedLanguage("doq_2");
-            Drop_On_Quit_Mode_3.Text = LocalizedLanguage("doq_3");
+            DropOnDeath_GroupBox.Text = LocalizedLanguage("dod_g");
 
-            realtime.Text = LocalizedLanguage("realtime");
+            // TODO: DOD and DOQ Localization
+            ConfigProperty_DropOnDeath.Text = LocalizedLanguage("dod_0");
+            ConfigProperty_DropOnQuit.Text = LocalizedLanguage("dod_1");
+
+            DayNightLength_Realtime_Mode.Text = LocalizedLanguage("realtime");
 
             Connect_Running_Server_Button.Text = LocalizedLanguage("reboot_con");
 
-            Enable_Easy_Anti_Cheat_CheckBox.Text = LocalizedLanguage("VACEnabled");
+            ConfigProperty_EACEnabled.Text = LocalizedLanguage("VACEnabled");
 
             Chat_GroupBox.Text = LocalizedLanguage("chat_g");
             
@@ -137,16 +133,16 @@ namespace _7DaysServerManager
             Warn_Before_Restart_CheckBox.Text = LocalizedLanguage("reset_chat");
             Enable_Auto_Restarts_CheckBox.Text = LocalizedLanguage("reset_enabled");
 
-            Game_Saves_Directory_GroupBox.Text = LocalizedLanguage("save_g");
+            Save_Game_Folder_GroupBox.Text = LocalizedLanguage("save_g");
             Server_Commands_Say_Switch_CheckBox.Text = LocalizedLanguage("spam_is_spam");
 
-            if (Air_Drop_Frequency_TrackBar.Value != 0)
-                Air_Drop_Frequency_GroupBox.Text = LocalizedLanguage("AirDropFrequency") + " [" + Convert.ToString(Air_Drop_Frequency_TrackBar.Value) + " h.]";
+            if (ConfigProperty_AirDropFrequency.Value != 0)
+                AirDropFrequency_GroupBox.Text = LocalizedLanguage("AirDropFrequency") + " [" + Convert.ToString(ConfigProperty_AirDropFrequency.Value) + " h.]";
             else
-                Air_Drop_Frequency_GroupBox.Text = LocalizedLanguage("AirDropFrequency") + " [" + LocalizedLanguage("disabled") + "]";
+                AirDropFrequency_GroupBox.Text = LocalizedLanguage("AirDropFrequency") + " [" + LocalizedLanguage("disabled") + "]";
 
-            MaxSpawnedZombies_g.Text = LocalizedLanguage("MaxSpawnedZombies_g") + " [" + Convert.ToString(MaxSpawnedZombies.Value) + "]";
-            MaxSpawnedAnimals_g.Text = LocalizedLanguage("MaxSpawnedAnimals_g") + " [" + Convert.ToString(MaxSpawnedAnimals.Value) + "]";
+            MaxSpawnedZombies_GroupBox.Text = LocalizedLanguage("MaxSpawnedZombies_g") + " [" + Convert.ToString(ConfigProperty_MaxSpawnedZombies.Value) + "]";
+            MaxSpawnedAnimals_GroupBox.Text = LocalizedLanguage("MaxSpawnedAnimals_g") + " [" + Convert.ToString(ConfigProperty_MaxSpawnedAnimals.Value) + "]";
 
             Starting_Backup_Message_Label.Text = LocalizedLanguage("backup_msg_1_l");
             Backup_Completed_Message_Label.Text = LocalizedLanguage("backup_msg_2_l");
@@ -157,7 +153,7 @@ namespace _7DaysServerManager
             How_To_Commands_Button.Text = LocalizedLanguage("how_to_commands");
             Enable_Custom_Commands_CheckBox.Text = LocalizedLanguage("enable_cc");
             Command_Wait_Message_Label.Text = LocalizedLanguage("cmd_not_yet_l");
-            configfile_g.Text = LocalizedLanguage("configfile_g");
+            User_Data_Folder_GroupBox.Text = LocalizedLanguage("configfile_g");
             configfile_e.Text = LocalizedLanguage("sa_edit");
 
             ServerWebsiteURL_GroupBox.Text = LocalizedLanguage("ServerWebsiteURL_g");

@@ -95,7 +95,7 @@ namespace _7DaysServerManager
 
                     Online_Player_List.Invoke((MethodInvoker)delegate
                     {
-                        rstr += "Players: " + Online_Player_List.Items.Count + "/" + MaxPlayers.Value;
+                        rstr += "Players: " + Online_Player_List.Items.Count + "/" + ConfigProperty_ServerMaxPlayerCount.Value;
                     });
 
                 }
@@ -125,7 +125,7 @@ namespace _7DaysServerManager
 
                     port_ = ConfigProperty_ServerPort.Text;
                     pl_cnt = Convert.ToString(Online_Player_List.Items.Count);
-                    max_pl_cnt = Convert.ToString(MaxPlayers.Value);
+                    max_pl_cnt = Convert.ToString(ConfigProperty_ServerMaxPlayerCount.Value);
                     for_url = forum_url.Text;
                 });
 

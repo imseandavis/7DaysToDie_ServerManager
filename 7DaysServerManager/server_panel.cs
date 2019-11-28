@@ -188,9 +188,9 @@ namespace _7DaysServerManager
 
         public int Realtime_get()
         {
-            if (!realtime.Checked)
+            if (!DayNightLength_Realtime_Mode.Checked)
             {
-                return dayLength.Value;
+                return ConfigProperty_DayNightLength.Value;
             }
             else
             {
@@ -200,15 +200,15 @@ namespace _7DaysServerManager
 
         public void Realtime_prepare()
         {
-            if (realtime.Checked)
+            if (DayNightLength_Realtime_Mode.Checked)
             {
-                dayLength.Enabled = false;
-                Day_Length_GroupBox.Text = LocalizedLanguage("dlugoscdnia") + " [realtime]";
+                ConfigProperty_DayNightLength.Enabled = false;
+                DayNightLength_GroupBox.Text = LocalizedLanguage("long-lasting") + " [realtime]";
             }
             else
             {
-                dayLength.Enabled = true;
-                Day_Length_GroupBox.Text = LocalizedLanguage("dlugoscdnia") + " [" + dayLength.Value + " min.]";
+                ConfigProperty_DayNightLength.Enabled = true;
+                DayNightLength_GroupBox.Text = LocalizedLanguage("long-lasting") + " [" + ConfigProperty_DayNightLength.Value + " min.]";
             }
         }
 
@@ -263,14 +263,14 @@ namespace _7DaysServerManager
             try
             {
                 string sci = "";
-                if (save.Text == "")
+                if (ConfigProperty_SaveGameFolder.Text == "")
                 {
                     sci = Environment.GetEnvironmentVariable("userprofile") + "\\Documents\\7 Days To Die\\Saves\\" + selected_map + "\\";
 
                 }
                 else
                 {
-                    sci = save.Text;
+                    sci = ConfigProperty_SaveGameFolder.Text;
                 }
 
                 string[] wszystkie_mapy = System.IO.Directory.GetDirectories(@sci, "*", System.IO.SearchOption.TopDirectoryOnly);
@@ -496,13 +496,13 @@ namespace _7DaysServerManager
 
         private void TrackBar1_Scroll(object sender, EventArgs e)
         {
-            Max_Players_GroupBox.Text = LocalizedLanguage("maxplgroup") + " [" + Convert.ToString(MaxPlayers.Value) + "]";
+            Max_Players_GroupBox.Text = LocalizedLanguage("maxplgroup") + " [" + Convert.ToString(ConfigProperty_ServerMaxPlayerCount.Value) + "]";
             Update_Config();
         }
 
         private void Trudnosc_Scroll(object sender, EventArgs e)
         {
-            Game_Difficulty_GroupBox.Text = LocalizedLanguage("trudnoscgroup") + " [" + Convert.ToString(Game_Difficulty_TrackBar.Value) + "]";
+            GameDifficulty_GroupBox.Text = LocalizedLanguage("trudnoscgroup") + " [" + Convert.ToString(ConfigProperty_GameDifficulty.Value) + "]";
             Update_Config();
         }
 
@@ -980,7 +980,7 @@ namespace _7DaysServerManager
             });
 
 
-            if (realtime.Checked)
+            if (DayNightLength_Realtime_Mode.Checked)
             {
 
                 //DateTime d1 = DateTime.Now;
@@ -1227,7 +1227,7 @@ namespace _7DaysServerManager
 
             startbar.Invoke((MethodInvoker)delegate
             {
-                telnet_port = Convert.ToInt32(telnet_port_p.Text);
+                telnet_port = Convert.ToInt32(ConfigProperty_TelnetPort.Text);
             });
 
             /*string telnet_host = "towel.blinkenlights.nl";
@@ -1263,7 +1263,7 @@ namespace _7DaysServerManager
 
             startbar.Invoke((MethodInvoker)delegate
             {
-                telnet_NOW = telnet_psw.Text;
+                telnet_NOW = ConfigProperty_TelnetPassword.Text;
             });
 
             tc.WriteLine(telnet_NOW);
@@ -1767,7 +1767,7 @@ namespace _7DaysServerManager
 
         private void Day_Length_Scroll(object sender, EventArgs e)
         {
-            Day_Length_GroupBox.Text = LocalizedLanguage("dlugoscdnia") + " [" + Convert.ToString(dayLength.Value) + " min.]";
+            DayNightLength_GroupBox.Text = LocalizedLanguage("dlugoscdnia") + " [" + Convert.ToString(ConfigProperty_DayNightLength.Value) + " min.]";
             Update_Config();
         }
 
@@ -2176,7 +2176,7 @@ namespace _7DaysServerManager
 
                                 sql_cmd.CommandText = "INSERT INTO 7days_stats(players, max_players, last_update) VALUES(?players,?max_players,?last_update)";
                                 sql_cmd.Parameters.Add("?players", MySqlDbType.VarChar).Value = l;
-                                sql_cmd.Parameters.Add("?max_players", MySqlDbType.VarChar).Value = MaxPlayers.Value;
+                                sql_cmd.Parameters.Add("?max_players", MySqlDbType.VarChar).Value = ConfigProperty_ServerMaxPlayerCount.Value;
                                 sql_cmd.Parameters.Add("?last_update", MySqlDbType.VarChar).Value = unixTimestamp;
 
 
@@ -2424,7 +2424,7 @@ namespace _7DaysServerManager
                     game_name = ConfigProperty_GameName.Text;
                     backup_location = this.backup_location.Text;
                     pokazuj_chat = backup_chat.Checked;
-                    lokacja = save.Text;
+                    lokacja = ConfigProperty_SaveGameFolder.Text;
                     usun_stare = rem_old_backups.Checked;
                     delete_old_number = Convert.ToInt32(rem_old_backups_count.Text);
                 }
@@ -2670,22 +2670,22 @@ namespace _7DaysServerManager
         {
             Update_Config();
 
-            nightpercentage_g.Text = LocalizedLanguage("nightpercentage_g") + " [" + nightpercentage.Value + "h]";
+            DayLightLength_GroupBox.Text = LocalizedLanguage("nightpercentage_g") + " [" + ConfigProperty_DayLightLength.Value + "h]";
         }
 
         private void Bdm_Scroll(object sender, EventArgs e)
         {
             Update_Config();
 
-            if (bdm.Value == 0)
-                bdm_g.Text = LocalizedLanguage("bdm_g") + " [25%]";
+            if (ConfigProperty_BlockDamagePlayer.Value == 0)
+                BlockDamagePlayer_GroupBox.Text = LocalizedLanguage("bdm_g") + " [25%]";
             else
-                bdm_g.Text = LocalizedLanguage("bdm_g") + " [" + bdm.Value * 50 + "%]";
+                BlockDamagePlayer_GroupBox.Text = LocalizedLanguage("bdm_g") + " [" + ConfigProperty_BlockDamagePlayer.Value * 50 + "%]";
         }
 
         private void Realtime_CheckedChanged(object sender, EventArgs e)
         {
-            if (realtime.Checked)
+            if (DayNightLength_Realtime_Mode.Checked)
                 Registry.SetValue(base_registry_key + profile_name, "realtime", "1");
             else
                 Registry.SetValue(base_registry_key + profile_name, "realtime", "0");
@@ -2710,17 +2710,17 @@ namespace _7DaysServerManager
 
         private void LootAbundance_Scroll(object sender, EventArgs e)
         {
-            Loot_Abundance_GroupBox.Text = LocalizedLanguage("LootAbundance_g") + " [" + LootAbundance.Value + "%]";
+            LootAbundance_GroupBox.Text = LocalizedLanguage("LootAbundance_g") + " [" + ConfigProperty_LootAbundance.Value + "%]";
             Update_Config();
         }
 
         private void LootRespawnDays_Scroll(object sender, EventArgs e)
         {
 
-            if (LootRespawnDays.Value == -1)
-                Loot_Respawn_Days_GroupBox.Text = LocalizedLanguage("LootRespawnDays_g") + " [" + LocalizedLanguage("disabled") + "]";
+            if (ConfigProperty_LootRespawnDays.Value == -1)
+                LootRespawnDays_GroupBox.Text = LocalizedLanguage("LootRespawnDays_g") + " [" + LocalizedLanguage("disabled") + "]";
             else
-                Loot_Respawn_Days_GroupBox.Text = LocalizedLanguage("LootRespawnDays_g") + " [" + LootRespawnDays.Value + "]";
+                LootRespawnDays_GroupBox.Text = LocalizedLanguage("LootRespawnDays_g") + " [" + ConfigProperty_LootRespawnDays.Value + "]";
             Update_Config();
         }
 
@@ -2736,7 +2736,7 @@ namespace _7DaysServerManager
             try
             {
                 Process prc = new Process();
-                prc.StartInfo.FileName = (string)Registry.GetValue(base_registry_key + profile_name, "game_path", null) + "\\" + Server_Admin_File_Name_TextBox.Text;
+                prc.StartInfo.FileName = (string)Registry.GetValue(base_registry_key + profile_name, "game_path", null) + "\\" + ConfigProperty_AdminFileName.Text;
                 prc.Start();
             }
             catch (Exception ex)
@@ -2744,14 +2744,14 @@ namespace _7DaysServerManager
                 try
                 {
                     Process prc = new Process();
-                    prc.StartInfo.FileName = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\7DaysToDie\\Saves\\" + Server_Admin_File_Name_TextBox.Text;
+                    prc.StartInfo.FileName = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\7DaysToDie\\Saves\\" + ConfigProperty_AdminFileName.Text;
                     prc.Start();
                 }
                 catch (Exception ex2)
                 {
                     Echo_debug("\n\n\nEXCEPTION WHILE OPENING ADMINFILE:\n1st try:\n" + ex + "\n\n2nd try:\n" + ex2 + "\n\n\n");
                     MessageBox.Show("Can't open file.", "Error");
-                    MessageBox.Show((string)Registry.GetValue(base_registry_key + profile_name, "game_path", null) + "\\" + Server_Admin_File_Name_TextBox.Text);
+                    MessageBox.Show((string)Registry.GetValue(base_registry_key + profile_name, "game_path", null) + "\\" + ConfigProperty_AdminFileName.Text);
                 }
             }
         }
@@ -3107,10 +3107,10 @@ namespace _7DaysServerManager
         private void AirDropFrequency_Scroll(object sender, EventArgs e)
         {
             // Determine If Disabled Or Set To Specific Amount of Hours
-            if (Air_Drop_Frequency_TrackBar.Value != 0)
-                Air_Drop_Frequency_GroupBox.Text = LocalizedLanguage("AirDropFrequency") + " [" + Convert.ToString(Air_Drop_Frequency_TrackBar.Value) + " h.]";
+            if (ConfigProperty_AirDropFrequency.Value != 0)
+                AirDropFrequency_GroupBox.Text = LocalizedLanguage("AirDropFrequency") + " [" + Convert.ToString(ConfigProperty_AirDropFrequency.Value) + " h.]";
             else
-                Air_Drop_Frequency_GroupBox.Text = LocalizedLanguage("AirDropFrequency") + " [" + LocalizedLanguage("disabled") + "]";
+                AirDropFrequency_GroupBox.Text = LocalizedLanguage("AirDropFrequency") + " [" + LocalizedLanguage("disabled") + "]";
 
             // Update The Config
             Update_Config();
@@ -3159,7 +3159,7 @@ namespace _7DaysServerManager
 
         private void MaxSpawnedZombies_Scroll(object sender, EventArgs e)
         {
-            MaxSpawnedZombies_g.Text = LocalizedLanguage("MaxSpawnedZombies_g") + " [" + Convert.ToString(MaxSpawnedZombies.Value) + "]";
+            MaxSpawnedZombies_GroupBox.Text = LocalizedLanguage("MaxSpawnedZombies_g") + " [" + Convert.ToString(ConfigProperty_MaxSpawnedZombies.Value) + "]";
             Update_Config();
         }
 
@@ -3514,7 +3514,7 @@ namespace _7DaysServerManager
             try
             {
                 Process prc = new Process();
-                prc.StartInfo.FileName = (string)Registry.GetValue(base_registry_key + profile_name, "game_path", null) + "\\" + configfile.Text;
+                prc.StartInfo.FileName = (string)Registry.GetValue(base_registry_key + profile_name, "game_path", null) + "\\" + ConfigProperty_UserDataFolder.Text;
                 prc.Start();
             }
             catch
@@ -3525,7 +3525,7 @@ namespace _7DaysServerManager
 
         private void Configfile_TextChanged(object sender, EventArgs e)
         {
-            Registry.SetValue(base_registry_key + profile_name, "configfile", configfile.Text);
+            Registry.SetValue(base_registry_key + profile_name, "configfile", ConfigProperty_UserDataFolder.Text);
         }
 
         private void Customcommands_TextChanged(object sender, EventArgs e)
@@ -3641,7 +3641,7 @@ namespace _7DaysServerManager
 
         private void MaxSpawnedAnimals_Scroll(object sender, EventArgs e)
         {
-            MaxSpawnedAnimals_g.Text = LocalizedLanguage("MaxSpawnedAnimals_g") + " [" + Convert.ToString(MaxSpawnedAnimals.Value) + "]";
+            MaxSpawnedAnimals_GroupBox.Text = LocalizedLanguage("MaxSpawnedAnimals_g") + " [" + Convert.ToString(ConfigProperty_MaxSpawnedAnimals.Value) + "]";
             Update_Config();
         }
 
@@ -4266,13 +4266,13 @@ namespace _7DaysServerManager
                     {
                         string direct = "";
 
-                        if (save.Text == "")
+                        if (ConfigProperty_SaveGameFolder.Text == "")
                         {
                             direct = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\7DaysToDie\\Saves\\" + ConfigProperty_GameWorld.Text + "\\" + ConfigProperty_GameName.Text;
                         }
                         else
                         {
-                            direct = save.Text + "\\" + ConfigProperty_GameWorld.Text + "\\" + ConfigProperty_GameName.Text;
+                            direct = ConfigProperty_SaveGameFolder.Text + "\\" + ConfigProperty_GameWorld.Text + "\\" + ConfigProperty_GameName.Text;
                         }
 
                         MessageBox.Show("This may take a while.");
@@ -4444,10 +4444,10 @@ namespace _7DaysServerManager
 
             string nazwa_w = null;
 
-            if (File.Exists((string)Registry.GetValue(base_registry_key + profile_name, "game_path", null) + "\\" + Server_Admin_File_Name_TextBox.Text))
-                nazwa_w = (string)Registry.GetValue(base_registry_key + profile_name, "game_path", null) + "\\" + Server_Admin_File_Name_TextBox.Text;
-            else if (File.Exists(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\7DaysToDie\\Saves\\" + Server_Admin_File_Name_TextBox.Text))
-                nazwa_w = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\7DaysToDie\\Saves\\" + Server_Admin_File_Name_TextBox.Text;
+            if (File.Exists((string)Registry.GetValue(base_registry_key + profile_name, "game_path", null) + "\\" + ConfigProperty_AdminFileName.Text))
+                nazwa_w = (string)Registry.GetValue(base_registry_key + profile_name, "game_path", null) + "\\" + ConfigProperty_AdminFileName.Text;
+            else if (File.Exists(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\7DaysToDie\\Saves\\" + ConfigProperty_AdminFileName.Text))
+                nazwa_w = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\7DaysToDie\\Saves\\" + ConfigProperty_AdminFileName.Text;
 
 
             if (nazwa_w == null)
@@ -4617,12 +4617,12 @@ namespace _7DaysServerManager
             Cancel_WebServer();
         }
 
-        private void Android_apk_Click(object sender, EventArgs e)
+        private void Android_APK_Click(object sender, EventArgs e)
         {
             Process.Start("https://7dsm.smartmoose.org/index.php?id=downloads");
         }
 
-        private void Android_play_Click(object sender, EventArgs e)
+        private void Android_Play_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Not yet available on Google Play. Please download .APK file.");
         }
@@ -4659,14 +4659,14 @@ namespace _7DaysServerManager
 
         private void BloodMoonEnemyCount_Scroll(object sender, EventArgs e)
         {
-            BloodMoonEnemyCount_g.Text = "Zombies spawned for every player during Blood Moon [" + Convert.ToString(BloodMoonEnemyCount.Value) + "]";
+            BloodMoonEnemyCount_GroupBox.Text = "Zombies spawned for every player during Blood Moon [" + Convert.ToString(ConfigProperty_BloodMoonEnemyCount.Value) + "]";
             Update_Config();
         }
 
         private void BedrollDeadZoneSize_Scroll(object sender, EventArgs e)
         {
 
-            BedrollDeadZoneSize_g.Text = "Minimum enemy spawn distance from bedroll [" + Convert.ToString(BedrollDeadZoneSize.Value) + "]";
+            BedrollDeadZoneSize_GroupBox.Text = "Minimum enemy spawn distance from bedroll [" + Convert.ToString(ConfigProperty_BedrollDeadZoneSize.Value) + "]";
             Update_Config();
         }
 
@@ -4701,11 +4701,6 @@ namespace _7DaysServerManager
         }
 
         private void SteamNetworking_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void HideCommandExecutionLog_0_CheckedChanged(object sender, EventArgs e)
         {
             Update_Config();
         }
@@ -4746,21 +4741,6 @@ namespace _7DaysServerManager
         private void How_to_commands2_Click(object sender, EventArgs e)
         {
             Process.Start("https://7dsm.smartmoose.org/index.php?id=custom-commands-external-call");
-        }
-
-        private void HideCommandExecutionLog_1_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void HideCommandExecutionLog_2_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void HideCommandExecutionLog_3_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
         }
 
         private void Zoomup_Click(object sender, EventArgs e)

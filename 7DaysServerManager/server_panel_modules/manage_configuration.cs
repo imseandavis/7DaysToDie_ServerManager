@@ -43,7 +43,7 @@ namespace _7DaysServerManager
                 string EnemySpawnMode_Selected="false";
 
                 // Set Enemy Spawn Mode
-                if (EnemySpawnMode.Checked)
+                if (ConfigProperty_EnemySpawnMode.Checked)
                     EnemySpawnMode_Selected = "true";
                 else
                     EnemySpawnMode_Selected = "false";
@@ -59,7 +59,7 @@ namespace _7DaysServerManager
                     serverispublic = "true";
 
                 // Set Server Cheat Mode
-                if (cheatmode.Checked)
+                if (ConfigProperty_BuildCreate.Checked)
                     cheat = "true";
 
                 // Set Server Networking Modes
@@ -75,15 +75,15 @@ namespace _7DaysServerManager
                     sdnp = sdnp.Substring(0, sdnp.Length - 1);
 
                 // Set ???
-                if (ctrlp.Checked)
+                if (ConfigProperty_ControlPanelEnabled.Checked)
                     cpl = "true";
 
                 // Set Player Persistant Profiles
-                if (PersistentPlayerProfiles.Checked)
+                if (ConfigProperty_PersistentPlayerProfiles.Checked)
                     PersistentPlayerProfiles_l = "true";
 
                 // Set EAC Mode
-                if (Enable_Easy_Anti_Cheat_CheckBox.Checked)
+                if (ConfigProperty_EACEnabled.Checked)
                     vac = "true";
 
                 // Set Air Drop Marker
@@ -100,34 +100,37 @@ namespace _7DaysServerManager
                 else if (Player_Killing_Mode_3.Checked)
                     PlayerKillingMode = "3";
 
-                // Set Player drop On Death Mode
-                if (Drop_On_Death_Mode_0.Checked)
+                // Set Player Drop On Death Mode
+                if (ConfigProperty_DropOnDeath.Text == "Nothing")
                     dropondeathmode = "0";
-                else if (Drop_On_Death_Mode_1.Checked)
+                else if (ConfigProperty_DropOnDeath.Text == "Everything")
                     dropondeathmode = "1";
-                else if (Drop_On_Death_Mode_2.Checked)
+                else if (ConfigProperty_DropOnDeath.Text == "Toolbelt Only")
                     dropondeathmode = "2";
-                else if (Drop_On_Death_Mode_3.Checked)
+                else if (ConfigProperty_DropOnDeath.Text == "Backpack Only")
                     dropondeathmode = "3";
+                else if (ConfigProperty_DropOnDeath.Text == "Delete All")
+                    dropondeathmode = "4";
 
                 // Set Player Drop On Quit Mode
-                if (Drop_On_Quit_Mode_0.Checked)
+                if (ConfigProperty_DropOnQuit.Text == "Nothing")
                     droponquitmode = "0";
-                else if (Drop_On_Quit_Mode_1.Checked)
+                else if (ConfigProperty_DropOnQuit.Text == "Everything")
                     droponquitmode = "1";
-                else if (Drop_On_Quit_Mode_2.Checked)
+                else if (ConfigProperty_DropOnQuit.Text == "Toolbelt Only")
                     droponquitmode = "2";
-                else if (Drop_On_Quit_Mode_3.Checked)
+                else if (ConfigProperty_DropOnQuit.Text == "Backpack Only")
                     droponquitmode = "3";
 
                 // Set Terminal Window Mode
-                if (HideCommandExecutionLog_0.Checked)
+                //TODO: UPDATE TO CASE STATEMENT???
+                if (ConfigProperty_HideCommandExecutionLog.Text == "Show Everything")
                     hce = "0";
-                else if (HideCommandExecutionLog_1.Checked)
+                else if (ConfigProperty_HideCommandExecutionLog.Text == "Hide Only From Telnet / Control Panel")
                     hce = "1";
-                else if (HideCommandExecutionLog_2.Checked)
+                else if (ConfigProperty_HideCommandExecutionLog.Text == "Hide From Telnet / Control Panel / Remote Game Clients")
                     hce = "2";
-                else if (HideCommandExecutionLog_3.Checked)
+                else if (ConfigProperty_HideCommandExecutionLog.Text == "Hide Everything")
                     hce = "3";
 
                 // Set ????
@@ -141,20 +144,20 @@ namespace _7DaysServerManager
 
                 // Set ????
                 int bdm_t = 0;
-                if (bdm.Value == 0)
+                if (ConfigProperty_BlockDamagePlayer.Value == 0)
                     bdm_t = 25;
                 else
-                    bdm_t = bdm.Value*50;
+                    bdm_t = ConfigProperty_BlockDamagePlayer.Value*50;
 
                 // Set ????
-                if (feral.Checked)
+                if (ConfigProperty_EnemyDifficulty.Checked)
                     feral_c = "1";
 
                 // Set ????
                 string savegamefolderproperty = "";
-                if (save.Text != "")
+                if (ConfigProperty_SaveGameFolder.Text != "")
                 {
-                    savegamefolderproperty = "  <property name=\"SaveGameFolder\"				value=\"" + save.Text + "\"/>\r\n";
+                    savegamefolderproperty = "  <property name=\"SaveGameFolder\"				value=\"" + ConfigProperty_SaveGameFolder.Text + "\"/>\r\n";
                 }
 
                 /*
@@ -278,20 +281,20 @@ namespace _7DaysServerManager
                     "\"/>\r\n  <property name=\"ServerIsPublic\" 		    	value=\"" + serverispublic + 
                     "\"/>\r\n  <property name=\"ServerName\" 				    value=\"" + ConfigProperty_ServerName.Text + 
                     "\"/>\r\n  <property name=\"ServerPassword\" 		    	value=\"" + ServerPassword.Text + 
-                    "\"/>\r\n  <property name=\"ServerMaxPlayerCount\"      	value=\"" + MaxPlayers.Value + 
+                    "\"/>\r\n  <property name=\"ServerMaxPlayerCount\"      	value=\"" + ConfigProperty_ServerMaxPlayerCount.Value + 
                     "\"/>\r\n  \r\n  <property name=\"GameWorld\" 		        	value=\"" + ConfigProperty_GameWorld.Text + 
                     "\"/>\r\n  <property name=\"GameName\" 				    value=\"" + ConfigProperty_GameName.Text + 
-                    "\"/>\r\n  <property name=\"GameDifficulty\" 		    	value=\"" + Game_Difficulty_TrackBar.Value +
+                    "\"/>\r\n  <property name=\"GameDifficulty\" 		    	value=\"" + ConfigProperty_GameDifficulty.Value +
                     "\"/>\r\n  <property name=\"GameMode\"				    	value=\"" + gamemode +
 
-                    "\"/>\r\n  <property name=\"ServerReservedSlots\"				    	value=\"" + Server_Player_Reserved_Slots.Text +
-                    "\"/>\r\n  <property name=\"ServerReservedSlotsPermission\"				    	value=\"" + Server_Player_Reserved_Slots_Permission.Text +
-                    "\"/>\r\n  <property name=\"ServerAdminSlots\"				    	value=\"" + Server_Admin_Reserved_Slots.Text +
-                    "\"/>\r\n  <property name=\"ServerAdminSlotsPermission\"				    	value=\"" + Server_Admin_Reserved_Slots_Permission.Text +
+                    "\"/>\r\n  <property name=\"ServerReservedSlots\"				    	value=\"" + ConfigProperty_ServerReservedSlots.Text +
+                    "\"/>\r\n  <property name=\"ServerReservedSlotsPermission\"				    	value=\"" + ConfigProperty_ServerReservedSlotsPermission.Text +
+                    "\"/>\r\n  <property name=\"ServerAdminSlots\"				    	value=\"" + ConfigProperty_ServerAdminSlots.Text +
+                    "\"/>\r\n  <property name=\"ServerAdminSlotsPermission\"				    	value=\"" + ConfigProperty_ServerAdminSlotsPermission.Text +
 
-                    "\"/>\r\n  <property name=\"BloodMoonEnemyCount\"				    	value=\"" + BloodMoonEnemyCount.Value +
-                    "\"/>\r\n  <property name=\"MaxUncoveredMapChunksPerPlayer\"				    	value=\"" + MaxUncoveredMapChunksPerPlayer.Text +
-                    "\"/>\r\n  <property name=\"BedrollDeadZoneSize\"				    	value=\"" + BedrollDeadZoneSize.Value +
+                    "\"/>\r\n  <property name=\"BloodMoonEnemyCount\"				    	value=\"" + ConfigProperty_BloodMoonEnemyCount.Value +
+                    "\"/>\r\n  <property name=\"MaxUncoveredMapChunksPerPlayer\"				    	value=\"" + ConfigProperty_MaxUncoveredMapChunksPerPlayer.Text +
+                    "\"/>\r\n  <property name=\"BedrollDeadZoneSize\"				    	value=\"" + ConfigProperty_BedrollDeadZoneSize.Value +
                     "\"/>\r\n  <property name=\"HideCommandExecutionLog\"				    	value=\"" + hce +
                     "\"/>\r\n  <property name=\"ServerDisabledNetworkProtocols\"				    	value=\"" + sdnp +
 
@@ -300,36 +303,36 @@ namespace _7DaysServerManager
                     "\" />\r\n  <property name=\"DayNightLength\"		    	value=\"" + Realtime_get() +
                     "\" />\r\n  <property name=\"PlayerKillingMode\"			    	value=\"" + PlayerKillingMode + 
                     "\" />\r\n\r\n  <property name=\"ControlPanelEnabled\"	 	    value=\"" + cpl + 
-                    "\"/>\r\n  <property name=\"ControlPanelPort\" 		    value=\"" + port_panel.Text + 
-                    "\"/>\r\n  <property name=\"ControlPanelPassword\"      	value=\"" + ctrlppass.Text + 
+                    "\"/>\r\n  <property name=\"ControlPanelPort\" 		    value=\"" + ConfigProperty_ControlPanelPort.Text + 
+                    "\"/>\r\n  <property name=\"ControlPanelPassword\"      	value=\"" + ConfigProperty_ControlPanelPassword.Text + 
                     "\"/>\r\n\r\n  <property name=\"TelnetEnabled\"	 	    	value=\"true\"" +
-                    "/>\r\n  <property name=\"TelnetPort\" 				    value=\"" + telnet_port_p.Text +
-                    "\"/>\r\n  <property name=\"AdminFileName\"			    value=\"" + Server_Admin_File_Name_TextBox.Text +
+                    "/>\r\n  <property name=\"TelnetPort\" 				    value=\"" + ConfigProperty_TelnetPort.Text +
+                    "\"/>\r\n  <property name=\"AdminFileName\"			    value=\"" + ConfigProperty_AdminFileName.Text +
                     "\"/>\r\n\r\n  <property name=\"DropOnDeath\"			    	value=\"" + dropondeathmode + 
                     "\"/>\r\n  <property name=\"DropOnQuit\"			    	value=\"" + droponquitmode +
                     "\"/>\r\n  <property name=\"BlockDurabilityModifier\"		value=\"" + bdm_t +
-                    "\"/>\r\n  <property name=\"DayLightLength\"				value=\"" + nightpercentage.Value +
-                    "\"/>\r\n  <property name=\"LootAbundance\"				value=\"" + LootAbundance.Value +
-                    "\"/>\r\n  <property name=\"LootRespawnDays\"				value=\"" + LootRespawnDays.Value +
-                    "\"/>\r\n  <property name=\"TelnetPassword\"				value=\"" + telnet_psw.Text +
+                    "\"/>\r\n  <property name=\"DayLightLength\"				value=\"" + ConfigProperty_DayLightLength.Value +
+                    "\"/>\r\n  <property name=\"LootAbundance\"				value=\"" + ConfigProperty_LootAbundance.Value +
+                    "\"/>\r\n  <property name=\"LootRespawnDays\"				value=\"" + ConfigProperty_LootRespawnDays.Value +
+                    "\"/>\r\n  <property name=\"TelnetPassword\"				value=\"" + ConfigProperty_TelnetPassword.Text +
                     "\"/>\r\n  <property name=\"EnemySpawnMode\"				value=\"" + EnemySpawnMode_Selected +
-                    "\"/>\r\n  <property name=\"AirDropFrequency\"		value=\"" + Air_Drop_Frequency_TrackBar.Value +
+                    "\"/>\r\n  <property name=\"AirDropFrequency\"		value=\"" + ConfigProperty_AirDropFrequency.Value +
                     "\"/>\r\n  <property name=\"PersistentPlayerProfiles\"		value=\"" + PersistentPlayerProfiles_l + 
-                    "\"/>\r\n\r\n\r\n\r\n  <property name=\"LandClaimSize\"				value=\"" + Land_Claim_Size_TextBox.Text +
-                    "\"/>\r\n  <property name=\"LandClaimDeadZone\"				value=\"" + Land_Claim_Dead_Zone_TextBox.Text +
-                    "\"/>\r\n  <property name=\"LandClaimExpiryTime\"				value=\"" + Land_Claim_Expiry_Time_TextBox.Text +
+                    "\"/>\r\n\r\n\r\n\r\n  <property name=\"LandClaimSize\"				value=\"" + ConfigProperty_LandClaimSize.Text +
+                    "\"/>\r\n  <property name=\"LandClaimDeadZone\"				value=\"" + ConfigProperty_LandClaimDeadZone.Text +
+                    "\"/>\r\n  <property name=\"LandClaimExpiryTime\"				value=\"" + ConfigProperty_LandClaimExpiryTime.Text +
                     "\"/>\r\n  <property name=\"LandClaimDecayMode\"				value=\"" + lcdm +
                     "\"/>\r\n  <property name=\"EnemyDifficulty\"				value=\"" + feral_c +
                     "\"/>\r\n  <property name=\"EACEnabled\"				value=\"" + vac +
                     "\"/>\r\n  <property name=\"AirDropMarker\"				value=\"" + adm +
                     "\"/>\r\n\r\n\r\n\r\n  <property name=\"ServerWebsiteURL\"				value=\"" + ConfigProperty_ServerWebsiteURL.Text +
                     "\"/>\r\n  <property name=\"ServerDescription\"				value=\"" + ConfigProperty_ServerDescription.Text +
-                    "\"/>\r\n  <property name=\"MaxSpawnedZombies\"				value=\"" + MaxSpawnedZombies.Value +
-                    "\"/>\r\n  <property name=\"MaxSpawnedAnimals\"				value=\"" + MaxSpawnedAnimals.Value +
-                    "\"/>\r\n  <property name=\"PlayerSafeZoneLevel\"				value=\"" + Player_Safe_Zone_Level_TextBox.Text +
-                    "\"/>\r\n  <property name=\"PlayerSafeZoneHours\"				value=\"" + Player_Safe_Zone_Hours_TextBox.Text +
-                    "\"/>\r\n  <property name=\"LandClaimOnlineDurabilityModifier\"				value=\"" + LandClaimOnlineDurabilityModifier.Text +
-                    "\"/>\r\n  <property name=\"LandClaimOfflineDurabilityModifier\"				value=\"" + LandClaimOfflineDurabilityModifier.Text + "\"/>\r\n" +
+                    "\"/>\r\n  <property name=\"MaxSpawnedZombies\"				value=\"" + ConfigProperty_MaxSpawnedZombies.Value +
+                    "\"/>\r\n  <property name=\"MaxSpawnedAnimals\"				value=\"" + ConfigProperty_MaxSpawnedAnimals.Value +
+                    "\"/>\r\n  <property name=\"PlayerSafeZoneLevel\"				value=\"" + ConfigProperty_PlayerSafeZoneLevel.Text +
+                    "\"/>\r\n  <property name=\"PlayerSafeZoneHours\"				value=\"" + ConfigProperty_PlayerSafeZoneHours.Text +
+                    "\"/>\r\n  <property name=\"LandClaimOnlineDurabilityModifier\"				value=\"" + ConfigProperty_LandClaimOnlineDurabilityModifier.Text +
+                    "\"/>\r\n  <property name=\"LandClaimOfflineDurabilityModifier\"				value=\"" + ConfigProperty_LandClaimOfflineDurabilityModifier.Text + "\"/>\r\n" +
                     
                     "</ServerSettings>";
                 try
@@ -377,11 +380,11 @@ namespace _7DaysServerManager
                             else if (name == "ServerPassword")
                                 ServerPassword.Text = value;
                             else if (name == "ServerMaxPlayerCount")
-                                MaxPlayers.Value = Convert.ToInt32(value);
+                                ConfigProperty_ServerMaxPlayerCount.Value = Convert.ToInt32(value);
                             else if (name == "GameWorld")
                                 ConfigProperty_GameWorld.Text = value;
                             else if (name == "GameDifficulty")
-                                Game_Difficulty_TrackBar.Value = Convert.ToInt32(value);
+                                ConfigProperty_GameDifficulty.Value = Convert.ToInt32(value);
                             //else if (name == "GameMode")
                             //{
                                 //if (value == "GameModeSurvival")
@@ -391,34 +394,34 @@ namespace _7DaysServerManager
                                
                             //}
                             else if (name == "PersistentPlayerProfiles" && value == "true")
-                                PersistentPlayerProfiles.Checked = true;
+                                ConfigProperty_PersistentPlayerProfiles.Checked = true;
 
 
 
                             else if (name == "AirDropMarker" && value == "true")
                                 AirDropMarker.Checked = true;
                             else if (name == "BuildCreate" && value == "true")
-                                cheatmode.Checked = true;
+                                ConfigProperty_BuildCreate.Checked = true;
                             else if (name == "DayNightLength")
-                                dayLength.Value = Convert.ToInt32(value);
+                                ConfigProperty_DayNightLength.Value = Convert.ToInt32(value);
                             else if (name == "AirDropFrequency")
-                                Air_Drop_Frequency_TrackBar.Value = Convert.ToInt32(value);
+                                ConfigProperty_AirDropFrequency.Value = Convert.ToInt32(value);
                             else if (name == "ControlPanelEnabled" && value == "true")
-                                ctrlp.Checked = true;
+                                ConfigProperty_ControlPanelEnabled.Checked = true;
                             else if (name == "ControlPanelPort")
-                                port_panel.Text = value;
+                                ConfigProperty_ControlPanelPort.Text = value;
                             else if (name == "ControlPanelPassword")
-                                ctrlppass.Text = value;
+                                ConfigProperty_ControlPanelPassword.Text = value;
                             else if (name == "PlayerSafeZoneLevel")
-                                Player_Safe_Zone_Level_TextBox.Text = value;
+                                ConfigProperty_PlayerSafeZoneLevel.Text = value;
                             else if (name == "PlayerSafeZoneHours")
-                                Player_Safe_Zone_Hours_TextBox.Text = value;
+                                ConfigProperty_PlayerSafeZoneHours.Text = value;
                             else if (name == "EACEnabled" && value == "false")
-                                Enable_Easy_Anti_Cheat_CheckBox.Checked = false;
+                                ConfigProperty_EACEnabled.Checked = false;
                             else if (name == "MaxSpawnedZombies")
-                                MaxSpawnedZombies.Value = Convert.ToInt32(value);
+                                ConfigProperty_MaxSpawnedZombies.Value = Convert.ToInt32(value);
                             else if (name == "MaxSpawnedAnimals")
-                                MaxSpawnedAnimals.Value = Convert.ToInt32(value);
+                                ConfigProperty_MaxSpawnedAnimals.Value = Convert.ToInt32(value);
 
                             else if (name == "ZombiesRun")
                             {
@@ -445,25 +448,27 @@ namespace _7DaysServerManager
                             else if (name == "DropOnDeath")
                             {
                                 if (value == "0")
-                                    Drop_On_Death_Mode_0.Checked = true;
+                                    ConfigProperty_DropOnDeath.Text = "Nothing";
                                 else if (value == "1")
-                                    Drop_On_Death_Mode_1.Checked = true;
+                                    ConfigProperty_DropOnDeath.Text = "Everything";
                                 else if (value == "2")
-                                    Drop_On_Death_Mode_2.Checked = true;
+                                    ConfigProperty_DropOnDeath.Text = "Toolbelt Only";
                                 else if (value == "3")
-                                    Drop_On_Death_Mode_3.Checked = true;
+                                    ConfigProperty_DropOnDeath.Text = "Backpack Only";
+                                else if (value == "4")
+                                    ConfigProperty_DropOnDeath.Text = "Delete All";
                             }
 
                             else if (name == "DropOnQuit")
                             {
                                 if (value == "0")
-                                    Drop_On_Quit_Mode_0.Checked = true;
+                                    ConfigProperty_DropOnQuit.Text = "Nothing";
                                 else if (value == "1")
-                                    Drop_On_Quit_Mode_1.Checked = true;
+                                    ConfigProperty_DropOnQuit.Text = "Everything";
                                 else if (value == "2")
-                                    Drop_On_Quit_Mode_2.Checked = true;
+                                    ConfigProperty_DropOnQuit.Text = "Toolbelt Only";
                                 else if (value == "3")
-                                    Drop_On_Quit_Mode_3.Checked = true;
+                                    ConfigProperty_DropOnQuit.Text = "Backpack Only";
                             }
 
                             /*else if (name == "CraftTimer")
@@ -488,79 +493,80 @@ namespace _7DaysServerManager
 
                             else if (name == "BloodMoonEnemyCount")
                             {
-                                BloodMoonEnemyCount.Value = Convert.ToInt32(value);
-                                BloodMoonEnemyCount_g.Text = "Zombies spawned for every player during Blood Moon [" + Convert.ToInt32(BloodMoonEnemyCount.Value) * 5 + " sec.]";
+                                ConfigProperty_BloodMoonEnemyCount.Value = Convert.ToInt32(value);
+                                BloodMoonEnemyCount_GroupBox.Text = "Zombies spawned for every player during Blood Moon [" + Convert.ToInt32(ConfigProperty_BloodMoonEnemyCount.Value) * 5 + " sec.]";
                             }
 
                             else if (name == "BedrollDeadZoneSize")
                             {
-                                BedrollDeadZoneSize.Value = Convert.ToInt32(value);
-                                BedrollDeadZoneSize_g.Text = "Minimum enemy spawn distance from bedroll [" + Convert.ToInt32(BloodMoonEnemyCount.Value) * 5 + " sec.]";
+                                ConfigProperty_BedrollDeadZoneSize.Value = Convert.ToInt32(value);
+                                BedrollDeadZoneSize_GroupBox.Text = "Minimum enemy spawn distance from bedroll [" + Convert.ToInt32(ConfigProperty_BloodMoonEnemyCount.Value) * 5 + " sec.]";
                             }
 
                             else if (name == "EnemySpawnMode")
                             {
                                 if (value == "true")
-                                    EnemySpawnMode.Checked = true;
+                                    ConfigProperty_EnemySpawnMode.Checked = true;
                                 else
-                                    EnemySpawnMode.Checked = false;
+                                    ConfigProperty_EnemySpawnMode.Checked = false;
                             }
 
                             else if (name == "BlockDurabilityModifier")
                             {
-                                bdm.Value = Convert.ToInt32(value) / 50;
+                                ConfigProperty_BlockDamagePlayer.Value = Convert.ToInt32(value) / 50;
 
-                                if (bdm.Value == 0)
-                                    bdm_g.Text = LocalizedLanguage("bdm_g") + " [25%]";
+                                if (ConfigProperty_BlockDamagePlayer.Value == 0)
+                                    BlockDamagePlayer_GroupBox.Text = LocalizedLanguage("bdm_g") + " [25%]";
                                 else
-                                    bdm_g.Text = LocalizedLanguage("bdm_g") + " [" + bdm.Value * 50 + "%]";
+                                    BlockDamagePlayer_GroupBox.Text = LocalizedLanguage("bdm_g") + " [" + ConfigProperty_BlockDamagePlayer.Value * 50 + "%]";
                             }
 
                             else if (name == "DayLightLength")
                             {
-                                nightpercentage.Value = Convert.ToInt32(value);
-                                nightpercentage_g.Text = LocalizedLanguage("nightpercentage_g") + " [" + nightpercentage.Value + "h]";
+                                ConfigProperty_DayLightLength.Value = Convert.ToInt32(value);
+                                DayLightLength_GroupBox.Text = LocalizedLanguage("nightpercentage_g") + " [" + ConfigProperty_DayLightLength.Value + "h]";
                             }
 
                             else if (name == "TelnetPassword")
-                                telnet_psw.Text = value;
+                                ConfigProperty_TelnetPassword.Text = value;
 
                             else if (name == "TelnetPort")
-                                telnet_port_p.Text = value;
+                                ConfigProperty_TelnetPort.Text = value;
 
                             else if (name == "AdminFileName")
-                                Server_Admin_File_Name_TextBox.Text = value;
+                                ConfigProperty_AdminFileName.Text = value;
 
                             else if (name == "LootAbundance")
-                                LootAbundance.Value = Convert.ToInt32(value);
+                                ConfigProperty_LootAbundance.Value = Convert.ToInt32(value);
                             else if (name == "LootRespawnDays")
-                                LootRespawnDays.Value = Convert.ToInt32(value);
+                                ConfigProperty_LootRespawnDays.Value = Convert.ToInt32(value);
 
                             else if (name == "ServerReservedSlots")
-                                Server_Player_Reserved_Slots.Text = value;
+                                ConfigProperty_ServerReservedSlots.Text = value;
 
                             else if (name == "ServerReservedSlotsPermission")
-                                Server_Player_Reserved_Slots_Permission.Text = value;
+                                ConfigProperty_ServerReservedSlotsPermission.Text = value;
 
                             else if (name == "ServerAdminSlots")
-                                Server_Admin_Reserved_Slots.Text = value;
+                                ConfigProperty_ServerAdminSlots.Text = value;
 
                             else if (name == "ServerAdminSlotsPermission")
-                                Server_Admin_Reserved_Slots_Permission.Text = value;
+                                ConfigProperty_ServerAdminSlotsPermission.Text = value;
 
                             else if (name == "MaxUncoveredMapChunksPerPlayer")
-                                MaxUncoveredMapChunksPerPlayer.Text = value;
+                                ConfigProperty_MaxUncoveredMapChunksPerPlayer.Text = value;
 
+                            // Set Hide Command Execution Log Dropdown To Appropriate Value
                             else if (name == "HideCommandExecutionLog")
                             {
                                 if (value == "0")
-                                    HideCommandExecutionLog_0.Checked = true;
+                                    ConfigProperty_HideCommandExecutionLog.Text = "Show Everything";
                                 else if (value == "1")
-                                    HideCommandExecutionLog_1.Checked = true;
+                                    ConfigProperty_HideCommandExecutionLog.Text = "Hide Only From Telnet / Control Panel";
                                 else if (value == "2")
-                                    HideCommandExecutionLog_2.Checked = true;
+                                    ConfigProperty_HideCommandExecutionLog.Text = "Hide From Telnet / Control Panel / Remote Game Clients";
                                 else if (value == "3")
-                                    HideCommandExecutionLog_3.Checked = true;
+                                    ConfigProperty_HideCommandExecutionLog.Text = "Hide Everything";
                             }
 
                             else if(name=="ServerDisabledNetworkProtocols")
@@ -574,13 +580,13 @@ namespace _7DaysServerManager
                             }
 
                             else if (name == "LandClaimSize")
-                                Land_Claim_Size_TextBox.Text = value;
+                                ConfigProperty_LandClaimSize.Text = value;
 
                             else if (name == "LandClaimDeadZone")
-                                Land_Claim_Dead_Zone_TextBox.Text = value;
+                                ConfigProperty_LandClaimDeadZone.Text = value;
 
                             else if (name == "LandClaimExpiryTime")
-                                Land_Claim_Expiry_Time_TextBox.Text = value;
+                                ConfigProperty_LandClaimExpiryTime.Text = value;
 
                             else if (name == "LandClaimDecayMode")
                             {
@@ -593,17 +599,17 @@ namespace _7DaysServerManager
                             }
 
                             else if (name == "LandClaimOnlineDurabilityModifier")
-                                LandClaimOnlineDurabilityModifier.Text = value;
+                                ConfigProperty_LandClaimOnlineDurabilityModifier.Text = value;
 
                             else if (name == "LandClaimOfflineDurabilityModifier")
-                                LandClaimOfflineDurabilityModifier.Text = value;
+                                ConfigProperty_LandClaimOfflineDurabilityModifier.Text = value;
 
                             else if (name == "SaveGameFolder")
-                                save.Text = value;
+                                ConfigProperty_SaveGameFolder.Text = value;
 
                             else if (name == "EnemyDifficulty")
                                 if (value == "1")
-                                    feral.Checked = true;
+                                    ConfigProperty_EnemyDifficulty.Checked = true;
 
                             if (name == "ServerDescription")
                                 ConfigProperty_ServerDescription.Text = value;
@@ -611,12 +617,12 @@ namespace _7DaysServerManager
                             if (name == "ServerWebsiteURL")
                                 ConfigProperty_ServerWebsiteURL.Text = value;
 
-                            Loot_Abundance_GroupBox.Text = LocalizedLanguage("LootAbundance_g") + " [" + LootAbundance.Value + "%]";
+                            LootAbundance_GroupBox.Text = LocalizedLanguage("LootAbundance_g") + " [" + ConfigProperty_LootAbundance.Value + "%]";
 
-                            if (LootRespawnDays.Value == -1)
-                                Loot_Respawn_Days_GroupBox.Text = LocalizedLanguage("LootRespawnDays_g") + " [" + LocalizedLanguage("disabled") + "]";
+                            if (ConfigProperty_LootRespawnDays.Value == -1)
+                                LootRespawnDays_GroupBox.Text = LocalizedLanguage("LootRespawnDays_g") + " [" + LocalizedLanguage("disabled") + "]";
                             else
-                                Loot_Respawn_Days_GroupBox.Text = LocalizedLanguage("LootRespawnDays_g") + " [" + LootRespawnDays.Value + "]";
+                                LootRespawnDays_GroupBox.Text = LocalizedLanguage("LootRespawnDays_g") + " [" + ConfigProperty_LootRespawnDays.Value + "]";
 
                         }
 
