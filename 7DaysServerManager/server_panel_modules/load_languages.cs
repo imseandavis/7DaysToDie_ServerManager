@@ -56,10 +56,6 @@ namespace _7DaysServerManager
             Game_Mode_Settings_GroupBox.Text = LocalizedLanguage("trybgry");
             Settings_GroupBox.Text = LocalizedLanguage("ustawienia_grupa_ustawienia");
             workerynapis.Text = LocalizedLanguage("workerynapis");
-            Zombie_Settings_GroupBox.Text = LocalizedLanguage("zomb_pie");
-            zombie_never_run.Text = LocalizedLanguage("zombie_never_run");
-            zombie_normal.Text = LocalizedLanguage("zombie_normal");
-            zombie_run.Text = LocalizedLanguage("zombie_run");
             ConfigProperty_PersistentPlayerProfiles.Text = LocalizedLanguage("PersistentPlayerProfiles");
             
 
@@ -91,9 +87,6 @@ namespace _7DaysServerManager
 
             Land_Claim_GroupBox.Text = LocalizedLanguage("LandClaim");
             LandClaimDecayMode_GroupBox.Text = LocalizedLanguage("LandClaimDecayMode_g");
-            Linear.Text = LocalizedLanguage("Linear");
-            Exponential.Text = LocalizedLanguage("Exponential");
-            Full_prot.Text = LocalizedLanguage("Full_prot");
             LandClaimDurabilityModifier_GroupBox.Text = LocalizedLanguage("LandClaim_g");
             Land_Claim_Durability_Online_Label.Text = LocalizedLanguage("online");
             Land_Claim_Durability_Offline_Label.Text = LocalizedLanguage("offline");

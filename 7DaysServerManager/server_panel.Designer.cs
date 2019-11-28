@@ -186,16 +186,11 @@
             this.Player_Reserve_Text_Label = new System.Windows.Forms.Label();
             this.ConfigProperty_ServerReservedSlots = new System.Windows.Forms.TextBox();
             this.Player_Killing_Mode_GroupBox = new System.Windows.Forms.GroupBox();
-            this.PlayerSafeZone_GroupBox = new System.Windows.Forms.GroupBox();
-            this.Player_Safe_Zone_Hours_Label = new System.Windows.Forms.Label();
-            this.Player_Safe_Zone_Level_Label = new System.Windows.Forms.Label();
-            this.ConfigProperty_PlayerSafeZoneHours = new System.Windows.Forms.TextBox();
-            this.ConfigProperty_PlayerSafeZoneLevel = new System.Windows.Forms.TextBox();
             this.AirDropFrequency_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_AirDropFrequency = new System.Windows.Forms.TrackBar();
             this.Land_Claim_GroupBox = new System.Windows.Forms.GroupBox();
             this.BlockDamageAIBM_GroupBox = new System.Windows.Forms.GroupBox();
-            this.trackBar1 = new System.Windows.Forms.TrackBar();
+            this.ConfigProperty_BlockDamageAIBM = new System.Windows.Forms.TrackBar();
             this.LandClaimDecayMode_GroupBox = new System.Windows.Forms.GroupBox();
             this.LandClaimDurabilityModifier_GroupBox = new System.Windows.Forms.GroupBox();
             this.Land_Claim_Durability_Offline_Label = new System.Windows.Forms.Label();
@@ -472,6 +467,10 @@
             this.ConfigProperty_LandClaimDecayMode = new System.Windows.Forms.ComboBox();
             this.LandClaimCount_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_LandClaimCount = new System.Windows.Forms.NumericUpDown();
+            this.Player_Safe_Zone_Hours_Label = new System.Windows.Forms.Label();
+            this.Player_Safe_Zone_Level_Label = new System.Windows.Forms.Label();
+            this.ConfigProperty_PlayerSafeZoneHours = new System.Windows.Forms.TextBox();
+            this.ConfigProperty_PlayerSafeZoneLevel = new System.Windows.Forms.TextBox();
             this.Settings_TabPage.SuspendLayout();
             this.Updates_GroupBox.SuspendLayout();
             this.exe_settings_g.SuspendLayout();
@@ -523,12 +522,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BlockDamageAI)).BeginInit();
             this.Server_Reserved_Slots_GroupBox.SuspendLayout();
             this.Player_Killing_Mode_GroupBox.SuspendLayout();
-            this.PlayerSafeZone_GroupBox.SuspendLayout();
             this.AirDropFrequency_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_AirDropFrequency)).BeginInit();
             this.Land_Claim_GroupBox.SuspendLayout();
             this.BlockDamageAIBM_GroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BlockDamageAIBM)).BeginInit();
             this.LandClaimDecayMode_GroupBox.SuspendLayout();
             this.LandClaimDurabilityModifier_GroupBox.SuspendLayout();
             this.LandClaimSize_GroupBox.SuspendLayout();
@@ -2516,7 +2514,6 @@
             this.Game_Options_TabPage.Controls.Add(this.BlockDamageAI_GroupBox);
             this.Game_Options_TabPage.Controls.Add(this.Server_Reserved_Slots_GroupBox);
             this.Game_Options_TabPage.Controls.Add(this.Player_Killing_Mode_GroupBox);
-            this.Game_Options_TabPage.Controls.Add(this.PlayerSafeZone_GroupBox);
             this.Game_Options_TabPage.Controls.Add(this.DropOnDeath_GroupBox);
             this.Game_Options_TabPage.Controls.Add(this.AirDropFrequency_GroupBox);
             this.Game_Options_TabPage.Controls.Add(this.Land_Claim_GroupBox);
@@ -2694,61 +2691,6 @@
             this.Player_Killing_Mode_GroupBox.TabStop = false;
             this.Player_Killing_Mode_GroupBox.Text = "Player Killing Mode";
             // 
-            // PlayerSafeZone_GroupBox
-            // 
-            this.PlayerSafeZone_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.PlayerSafeZone_GroupBox.Controls.Add(this.Player_Safe_Zone_Hours_Label);
-            this.PlayerSafeZone_GroupBox.Controls.Add(this.Player_Safe_Zone_Level_Label);
-            this.PlayerSafeZone_GroupBox.Controls.Add(this.ConfigProperty_PlayerSafeZoneHours);
-            this.PlayerSafeZone_GroupBox.Controls.Add(this.ConfigProperty_PlayerSafeZoneLevel);
-            this.PlayerSafeZone_GroupBox.Location = new System.Drawing.Point(682, 557);
-            this.PlayerSafeZone_GroupBox.Name = "PlayerSafeZone_GroupBox";
-            this.PlayerSafeZone_GroupBox.Size = new System.Drawing.Size(208, 66);
-            this.PlayerSafeZone_GroupBox.TabIndex = 49;
-            this.PlayerSafeZone_GroupBox.TabStop = false;
-            this.PlayerSafeZone_GroupBox.Text = "Spawning";
-            // 
-            // Player_Safe_Zone_Hours_Label
-            // 
-            this.Player_Safe_Zone_Hours_Label.AutoSize = true;
-            this.Player_Safe_Zone_Hours_Label.Location = new System.Drawing.Point(17, 42);
-            this.Player_Safe_Zone_Hours_Label.Name = "Player_Safe_Zone_Hours_Label";
-            this.Player_Safe_Zone_Hours_Label.Size = new System.Drawing.Size(120, 13);
-            this.Player_Safe_Zone_Hours_Label.TabIndex = 3;
-            this.Player_Safe_Zone_Hours_Label.Text = "Player Safe Zone Hours";
-            // 
-            // Player_Safe_Zone_Level_Label
-            // 
-            this.Player_Safe_Zone_Level_Label.AutoSize = true;
-            this.Player_Safe_Zone_Level_Label.Location = new System.Drawing.Point(17, 16);
-            this.Player_Safe_Zone_Level_Label.Name = "Player_Safe_Zone_Level_Label";
-            this.Player_Safe_Zone_Level_Label.Size = new System.Drawing.Size(118, 13);
-            this.Player_Safe_Zone_Level_Label.TabIndex = 2;
-            this.Player_Safe_Zone_Level_Label.Text = "Player Safe Zone Level";
-            // 
-            // ConfigProperty_PlayerSafeZoneHours
-            // 
-            this.ConfigProperty_PlayerSafeZoneHours.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ConfigProperty_PlayerSafeZoneHours.Location = new System.Drawing.Point(144, 39);
-            this.ConfigProperty_PlayerSafeZoneHours.Name = "ConfigProperty_PlayerSafeZoneHours";
-            this.ConfigProperty_PlayerSafeZoneHours.Size = new System.Drawing.Size(54, 20);
-            this.ConfigProperty_PlayerSafeZoneHours.TabIndex = 1;
-            this.ConfigProperty_PlayerSafeZoneHours.Text = "5";
-            this.toolTip.SetToolTip(this.ConfigProperty_PlayerSafeZoneHours, "Hours in world time this safe zone exists.");
-            this.ConfigProperty_PlayerSafeZoneHours.TextChanged += new System.EventHandler(this.PlayerSafeZoneHours_TextChanged);
-            // 
-            // ConfigProperty_PlayerSafeZoneLevel
-            // 
-            this.ConfigProperty_PlayerSafeZoneLevel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ConfigProperty_PlayerSafeZoneLevel.Location = new System.Drawing.Point(144, 13);
-            this.ConfigProperty_PlayerSafeZoneLevel.Name = "ConfigProperty_PlayerSafeZoneLevel";
-            this.ConfigProperty_PlayerSafeZoneLevel.Size = new System.Drawing.Size(54, 20);
-            this.ConfigProperty_PlayerSafeZoneLevel.TabIndex = 0;
-            this.ConfigProperty_PlayerSafeZoneLevel.Text = "5";
-            this.toolTip.SetToolTip(this.ConfigProperty_PlayerSafeZoneLevel, "If a player is less or equal this level he will create a safe zone (no enemies) w" +
-        "hen spawned.");
-            this.ConfigProperty_PlayerSafeZoneLevel.TextChanged += new System.EventHandler(this.PlayerSafeZoneLevel_TextChanged);
-            // 
             // AirDropFrequency_GroupBox
             // 
             this.AirDropFrequency_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -2793,29 +2735,29 @@
             // BlockDamageAIBM_GroupBox
             // 
             this.BlockDamageAIBM_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BlockDamageAIBM_GroupBox.Controls.Add(this.trackBar1);
-            this.BlockDamageAIBM_GroupBox.Location = new System.Drawing.Point(497, 558);
+            this.BlockDamageAIBM_GroupBox.Controls.Add(this.ConfigProperty_BlockDamageAIBM);
+            this.BlockDamageAIBM_GroupBox.Location = new System.Drawing.Point(708, 561);
             this.BlockDamageAIBM_GroupBox.Name = "BlockDamageAIBM_GroupBox";
             this.BlockDamageAIBM_GroupBox.Size = new System.Drawing.Size(179, 65);
             this.BlockDamageAIBM_GroupBox.TabIndex = 53;
             this.BlockDamageAIBM_GroupBox.TabStop = false;
             this.BlockDamageAIBM_GroupBox.Text = "AI Block Damage (Blood Moon)";
             // 
-            // trackBar1
+            // ConfigProperty_BlockDamageAIBM
             // 
-            this.trackBar1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.ConfigProperty_BlockDamageAIBM.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.trackBar1.Location = new System.Drawing.Point(6, 17);
-            this.trackBar1.Maximum = 1000;
-            this.trackBar1.Minimum = 1;
-            this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(167, 45);
-            this.trackBar1.SmallChange = 10;
-            this.trackBar1.TabIndex = 9;
-            this.trackBar1.TickFrequency = 10;
-            this.toolTip.SetToolTip(this.trackBar1, "How much damage do AIs during blood moons to blocks (percentage in whole numbers)" +
+            this.ConfigProperty_BlockDamageAIBM.Location = new System.Drawing.Point(6, 17);
+            this.ConfigProperty_BlockDamageAIBM.Maximum = 1000;
+            this.ConfigProperty_BlockDamageAIBM.Minimum = 1;
+            this.ConfigProperty_BlockDamageAIBM.Name = "ConfigProperty_BlockDamageAIBM";
+            this.ConfigProperty_BlockDamageAIBM.Size = new System.Drawing.Size(167, 45);
+            this.ConfigProperty_BlockDamageAIBM.SmallChange = 10;
+            this.ConfigProperty_BlockDamageAIBM.TabIndex = 9;
+            this.ConfigProperty_BlockDamageAIBM.TickFrequency = 10;
+            this.toolTip.SetToolTip(this.ConfigProperty_BlockDamageAIBM, "How much damage do AIs during blood moons to blocks (percentage in whole numbers)" +
         ".");
-            this.trackBar1.Value = 100;
+            this.ConfigProperty_BlockDamageAIBM.Value = 100;
             // 
             // LandClaimDecayMode_GroupBox
             // 
@@ -3568,6 +3510,10 @@
             // 
             this.autobots.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.autobots.Controls.Add(this.Player_Safe_Zone_Hours_Label);
+            this.autobots.Controls.Add(this.Player_Safe_Zone_Level_Label);
+            this.autobots.Controls.Add(this.ConfigProperty_PlayerSafeZoneHours);
+            this.autobots.Controls.Add(this.ConfigProperty_PlayerSafeZoneLevel);
             this.autobots.Controls.Add(this.BedrollExpiryTime_GroupBox);
             this.autobots.Controls.Add(this.ConfigProperty_EnemySpawnMode);
             this.autobots.Controls.Add(this.BedrollDeadZoneSize_GroupBox);
@@ -6070,6 +6016,45 @@
             0,
             0});
             // 
+            // Player_Safe_Zone_Hours_Label
+            // 
+            this.Player_Safe_Zone_Hours_Label.AutoSize = true;
+            this.Player_Safe_Zone_Hours_Label.Location = new System.Drawing.Point(296, 49);
+            this.Player_Safe_Zone_Hours_Label.Name = "Player_Safe_Zone_Hours_Label";
+            this.Player_Safe_Zone_Hours_Label.Size = new System.Drawing.Size(120, 13);
+            this.Player_Safe_Zone_Hours_Label.TabIndex = 21;
+            this.Player_Safe_Zone_Hours_Label.Text = "Player Safe Zone Hours";
+            // 
+            // Player_Safe_Zone_Level_Label
+            // 
+            this.Player_Safe_Zone_Level_Label.AutoSize = true;
+            this.Player_Safe_Zone_Level_Label.Location = new System.Drawing.Point(296, 23);
+            this.Player_Safe_Zone_Level_Label.Name = "Player_Safe_Zone_Level_Label";
+            this.Player_Safe_Zone_Level_Label.Size = new System.Drawing.Size(118, 13);
+            this.Player_Safe_Zone_Level_Label.TabIndex = 20;
+            this.Player_Safe_Zone_Level_Label.Text = "Player Safe Zone Level";
+            // 
+            // ConfigProperty_PlayerSafeZoneHours
+            // 
+            this.ConfigProperty_PlayerSafeZoneHours.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ConfigProperty_PlayerSafeZoneHours.Location = new System.Drawing.Point(423, 46);
+            this.ConfigProperty_PlayerSafeZoneHours.Name = "ConfigProperty_PlayerSafeZoneHours";
+            this.ConfigProperty_PlayerSafeZoneHours.Size = new System.Drawing.Size(54, 20);
+            this.ConfigProperty_PlayerSafeZoneHours.TabIndex = 19;
+            this.ConfigProperty_PlayerSafeZoneHours.Text = "5";
+            this.toolTip.SetToolTip(this.ConfigProperty_PlayerSafeZoneHours, "Hours in world time this safe zone exists.");
+            // 
+            // ConfigProperty_PlayerSafeZoneLevel
+            // 
+            this.ConfigProperty_PlayerSafeZoneLevel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ConfigProperty_PlayerSafeZoneLevel.Location = new System.Drawing.Point(423, 20);
+            this.ConfigProperty_PlayerSafeZoneLevel.Name = "ConfigProperty_PlayerSafeZoneLevel";
+            this.ConfigProperty_PlayerSafeZoneLevel.Size = new System.Drawing.Size(54, 20);
+            this.ConfigProperty_PlayerSafeZoneLevel.TabIndex = 18;
+            this.ConfigProperty_PlayerSafeZoneLevel.Text = "5";
+            this.toolTip.SetToolTip(this.ConfigProperty_PlayerSafeZoneLevel, "If a player is less or equal this level he will create a safe zone (no enemies) w" +
+        "hen spawned.");
+            // 
             // Server_Panel_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -6171,15 +6156,13 @@
             this.Server_Reserved_Slots_GroupBox.ResumeLayout(false);
             this.Server_Reserved_Slots_GroupBox.PerformLayout();
             this.Player_Killing_Mode_GroupBox.ResumeLayout(false);
-            this.PlayerSafeZone_GroupBox.ResumeLayout(false);
-            this.PlayerSafeZone_GroupBox.PerformLayout();
             this.AirDropFrequency_GroupBox.ResumeLayout(false);
             this.AirDropFrequency_GroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_AirDropFrequency)).EndInit();
             this.Land_Claim_GroupBox.ResumeLayout(false);
             this.BlockDamageAIBM_GroupBox.ResumeLayout(false);
             this.BlockDamageAIBM_GroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BlockDamageAIBM)).EndInit();
             this.LandClaimDecayMode_GroupBox.ResumeLayout(false);
             this.LandClaimDurabilityModifier_GroupBox.ResumeLayout(false);
             this.LandClaimDurabilityModifier_GroupBox.PerformLayout();
@@ -6539,11 +6522,6 @@
         private System.Windows.Forms.CheckBox ConfigProperty_PersistentPlayerProfiles;
         private System.Windows.Forms.CheckBox Settings_Skip_Profiles_CheckBox;
         private System.ComponentModel.BackgroundWorker server_stop_tasks;
-        private System.Windows.Forms.GroupBox PlayerSafeZone_GroupBox;
-        private System.Windows.Forms.Label Player_Safe_Zone_Hours_Label;
-        private System.Windows.Forms.Label Player_Safe_Zone_Level_Label;
-        private System.Windows.Forms.TextBox ConfigProperty_PlayerSafeZoneHours;
-        private System.Windows.Forms.TextBox ConfigProperty_PlayerSafeZoneLevel;
         private System.Windows.Forms.GroupBox MaxSpawnedAnimals_GroupBox;
         private System.Windows.Forms.TrackBar ConfigProperty_MaxSpawnedAnimals;
         private System.Windows.Forms.ToolTip toolTip;
@@ -6752,7 +6730,7 @@
         private System.Windows.Forms.GroupBox BlockDamageAI_GroupBox;
         private System.Windows.Forms.TrackBar ConfigProperty_BlockDamageAI;
         private System.Windows.Forms.GroupBox BlockDamageAIBM_GroupBox;
-        private System.Windows.Forms.TrackBar trackBar1;
+        private System.Windows.Forms.TrackBar ConfigProperty_BlockDamageAIBM;
         private System.Windows.Forms.GroupBox BlockDamagePlayer_GroupBox;
         private System.Windows.Forms.TrackBar ConfigProperty_BlockDamagePlayer;
         private System.Windows.Forms.ComboBox ConfigProperty_DropOnDeath;
@@ -6784,5 +6762,9 @@
         private System.Windows.Forms.ComboBox ConfigProperty_LandClaimDecayMode;
         private System.Windows.Forms.GroupBox LandClaimCount_GroupBox;
         private System.Windows.Forms.NumericUpDown ConfigProperty_LandClaimCount;
+        private System.Windows.Forms.Label Player_Safe_Zone_Hours_Label;
+        private System.Windows.Forms.Label Player_Safe_Zone_Level_Label;
+        private System.Windows.Forms.TextBox ConfigProperty_PlayerSafeZoneHours;
+        private System.Windows.Forms.TextBox ConfigProperty_PlayerSafeZoneLevel;
     }
 }

@@ -31,9 +31,10 @@ namespace _7DaysServerManager
             ConfigProperty_ControlPanelEnabled.Enabled = false;
             ConfigProperty_ControlPanelPassword.Enabled = false;
             ConfigProperty_ControlPanelPort.Enabled = false;
-            zombie_normal.Enabled = false;
-            zombie_run.Enabled = false;
-            zombie_never_run.Enabled = false;
+            ConfigProperty_ZombieMove.Enabled = false;
+            ConfigProperty_ZombieMoveNight.Enabled = false;
+            ConfigProperty_ZombieFeralMove.Enabled = false;
+            ConfigProperty_ZombieBMMove.Enabled = false;
             ServerIsPublic.Enabled = false;
             ServerPassword.Enabled = false;
             ConfigProperty_GameName.Enabled = false;
@@ -73,9 +74,7 @@ namespace _7DaysServerManager
             ConfigProperty_LootRespawnDays.Enabled = false;
 
             Land_Claim_GroupBox.Enabled = false;
-            Linear.Enabled = false;
-            Exponential.Enabled = false;
-            Full_prot.Enabled = false;
+            ConfigProperty_LandClaimDecayMode.Enabled = false;
             Land_Claim_GroupBox.Enabled = false;
             Land_Claim_Durability_Online_Label.Enabled = false;
             Land_Claim_Durability_Offline_Label.Enabled = false;
@@ -120,9 +119,10 @@ namespace _7DaysServerManager
             ConfigProperty_ControlPanelEnabled.Enabled = true;
             ConfigProperty_ControlPanelPassword.Enabled = true;
             ConfigProperty_ControlPanelPort.Enabled = true;
-            zombie_normal.Enabled = true;
-            zombie_run.Enabled = true;
-            zombie_never_run.Enabled = true;
+            ConfigProperty_ZombieMove.Enabled = true;
+            ConfigProperty_ZombieMoveNight.Enabled = true;
+            ConfigProperty_ZombieFeralMove.Enabled = true;
+            ConfigProperty_ZombieBMMove.Enabled = true;
             ServerIsPublic.Enabled = true;
             ServerPassword.Enabled = true;
             ConfigProperty_GameName.Enabled = true;
@@ -161,9 +161,7 @@ namespace _7DaysServerManager
             ConfigProperty_LootRespawnDays.Enabled = true;
 
             Land_Claim_GroupBox.Enabled = true;
-            Linear.Enabled = true;
-            Exponential.Enabled = true;
-            Full_prot.Enabled = true;
+            ConfigProperty_LandClaimDecayMode.Enabled = true;
             Land_Claim_GroupBox.Enabled = true;
             Land_Claim_Durability_Online_Label.Enabled = true;
             Land_Claim_Durability_Offline_Label.Enabled = true;

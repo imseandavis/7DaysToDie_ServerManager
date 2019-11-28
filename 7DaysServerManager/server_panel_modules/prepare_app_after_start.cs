@@ -135,7 +135,7 @@ namespace _7DaysServerManager
 
 
 
-            Read_config();
+            Import_Config();
 
             Load_Languages();
 
