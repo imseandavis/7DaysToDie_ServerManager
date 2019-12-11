@@ -1,0 +1,1 @@
+<!-- This file is NOT full global banlist, it's only a cache. Please don't remove it. -->

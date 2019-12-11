@@ -24,36 +24,6 @@ namespace _7DaysServerManager
             {
                 Echo_debug("---Updating & Saving Server Config---");
 
-                // Init Variables Default Values
-                string ControlPanelEnabled = "false";
-                string TelnetEnabled = "true";
-                string TerminalWindowEnabled = "true";
-                string EACEnabled = "true";
-                string PersistentPlayerProfiles = "false";
-                string BuildCreate = "false";
-                string EnemySpawnMode = "true";
-                string AirDropMarker1 = "false";
-
-                // Resolve All Boolean Values
-                if (ConfigProperty_ControlPanelEnabled.Checked)
-                    ControlPanelEnabled = "true";
-                if (ConfigProperty_TelnetEnabled.Checked)
-                    TelnetEnabled = "true";
-                if (ConfigProperty_TerminalWindowEnabled.Checked)
-                    TerminalWindowEnabled = "true";
-                if (ConfigProperty_EACEnabled.Checked)
-                    EACEnabled = "true";
-                if (ConfigProperty_PersistentPlayerProfiles.Checked)
-                    PersistentPlayerProfiles = "true";
-                if (ConfigProperty_BuildCreate.Checked)
-                    BuildCreate = "true";
-                if (ConfigProperty_EnemySpawnMode.Checked)
-                    EnemySpawnMode = "true";
-                else
-                    EnemySpawnMode = "false";
-                if (ConfigProperty_AirDropMarker.Checked)
-                    AirDropMarker1 = "true";
-
                 // Resolve All Calculated Fields
                 // TODO: FIX CHECK BOX LIST CALCS
                 //if (UNET.Checked)
@@ -151,100 +121,101 @@ namespace _7DaysServerManager
                 //}
 
 
-                // Alpha 18.1 Configuration File Sample
-                string config = "<?xml version=\"1.0\"?>\r\n<ServerSettings>\r\n  " +
-                        "\n\n<!-- GENERAL SERVER SETTINGS -->" +
-                        "\n\n<!-- Server representation -->" +
-                        "\"/>\r\n  <property name=\"ServerName\" 				            value=\"" + ConfigProperty_ServerName.Text + 
-                        "\"/>\r\n  <property name=\"ServerDescription\"				        value=\"" + ConfigProperty_ServerDescription.Text +
-                        "\"/>\r\n  <property name=\"ServerWebsiteURL\"				        value=\"" + ConfigProperty_ServerWebsiteURL.Text +
-                        "\"/>\r\n  <property name=\"ServerPassword\" 		    	        value=\"" + ConfigProperty_ServerPassword.Text +
-                        "\"/>\r\n  <property name=\"ServerLoginConfirmationText\"	        value=\"" + ConfigProperty_ServerPassword.Text +
-                        "\n\n<!-- Networking -->" +
-                        "\"/>\r\n  <property name=\"ServerPort\" 			                value=\"" + ConfigProperty_ServerPort.Text +
-                        "\"/>\r\n  <property name=\"ServerVisibility\" 		    	        value=\"" + ConfigProperty_ServerVisibility.Text + 
-                        "\"/>\r\n  <property name=\"ServerDisabledNetworkProtocols\"		value=\"" + ConfigProperty_ServerDisabledNetworkProtocols.Text +
-                        "\"/>\r\n  <property name=\"ServerMaxWorldTransferSpeedKiBs\"       value=\"" + ConfigProperty_ServerMaxWorldTransferSpeedKiBs.Text +
-                        "\n\n<!-- Slots -->" +
-                        "\"/>\r\n  <property name=\"ServerMaxPlayerCount\"      	        value=\"" + ConfigProperty_ServerMaxPlayerCount.Value +
-                        "\"/>\r\n  <property name=\"ServerReservedSlots\"				   	value=\"" + ConfigProperty_ServerReservedSlots.Text +
-                        "\"/>\r\n  <property name=\"ServerReservedSlotsPermission\"			value=\"" + ConfigProperty_ServerReservedSlotsPermission.Text +
-                        "\"/>\r\n  <property name=\"ServerAdminSlots\"				    	value=\"" + ConfigProperty_ServerAdminSlots.Text +
-                        "\"/>\r\n  <property name=\"ServerAdminSlotsPermission\"			value=\"" + ConfigProperty_ServerAdminSlotsPermission.Text +
-                        "\n\n<!-- Admin Interfaces -->" +
-                        "\"/>\r\n  <property name=\"ControlPanelEnabled\"	 	            value=\"" + ConfigProperty_ControlPanelEnabled.Text + 
-                        "\"/>\r\n  <property name=\"ControlPanelPort\" 		                value=\"" + ConfigProperty_ControlPanelPort.Text + 
-                        "\"/>\r\n  <property name=\"ControlPanelPassword\"      	        value=\"" + ConfigProperty_ControlPanelPassword.Text + 
-                        "\"/>\r\n  <property name=\"TelnetEnabled\"	 	    	            value=\"" + ConfigProperty_TelnetEnabled.Text +
-                        "\"/>\r\n  <property name=\"TelnetPort\" 				            value=\"" + ConfigProperty_TelnetPort.Text +
-                        "\"/>\r\n  <property name=\"TelnetPassword\"				        value=\"" + ConfigProperty_TelnetPassword.Text +
-                        "\"/>\r\n  <property name=\"TelnetFailedLoginLimit\"			    value=\"" + ConfigProperty_TelnetFailedLoginLimit.Text +
-                        "\"/>\r\n  <property name=\"TelnetFailedLoginsBlocktime\"	        value=\"" + ConfigProperty_TelnetFailedLoginsBlocktime.Text +
-                        "\"/>\r\n  <property name=\"TerminalWindowEnabled\"			        value=\"" + ConfigProperty_TerminalWindowEnabled.Text +
-                        "\n\n<!-- Folder and file locations -->" +
-                        "\"/>\r\n  <property name=\"AdminFileName\"			                value=\"" + ConfigProperty_AdminFileName.Text +
-                        "\"/>\r\n  <property name=\"UserDataFolder\"				        value=\"" + ConfigProperty_UserDataFolder.Text +
-                        "\"/>\r\n  <property name=\"SaveGameFolder\"				        value=\"" + ConfigProperty_SaveGameFolder.Text +
-                        "\n\n<!-- Other technical settings -->" +
-                        "\"/>\r\n  <property name=\"EACEnabled\"				            value=\"" + ConfigProperty_EACEnabled.Text +
-                        "\"/>\r\n  <property name=\"HideCommandExecutionLog\"				value=\"" + ConfigProperty_HideCommandExecutionLog.Text +
-                        "\"/>\r\n  <property name=\"MaxUncoveredMapChunksPerPlayer\"		value=\"" + ConfigProperty_MaxUncoveredMapChunksPerPlayer.Text +
-                        "\"/>\r\n  <property name=\"PersistentPlayerProfiles\"		        value=\"" + ConfigProperty_PersistentPlayerProfiles.Text +
-                        "\n\n<!-- GAMEPLAY -->\n" +
-                        "\n\n<!-- World -->\n" +
-                        "\"/>\r\n  \r\n  <property name=\"GameWorld\" 		        	    value=\"" + ConfigProperty_GameWorld.Text +
-                        "\"/>\r\n  <property name=\"WorldGenSeed\"					        value=\"" + ConfigProperty_WorldGenSeed.Text +
-                        "\"/>\r\n  <property name=\"WorldGenSize\"					        value=\"" + ConfigProperty_WorldGenSize.Text +
-                        "\"/>\r\n  <property name=\"GameName\" 				                value=\"" + ConfigProperty_GameName.Text +
-                        "\"/>\r\n  <property name=\"GameMode\"				    	        value=\"" + ConfigProperty_GameMode.Text +
-                        "\n\n<!-- Difficulty -->\n" +
-                        "\"/>\r\n  <property name=\"GameDifficulty\" 		    	        value=\"" + ConfigProperty_GameDifficulty.Text +
-                        "\"/>\r\n<property name=\"BlockDamagePlayer\"				        value=\"" + ConfigProperty_BlockDamagePlayer.Text +
-                        "\"/>\r\n<property name=\"BlockDamageAI\"					        value=\"" + ConfigProperty_BlockDamageAI.Text +
-                        "\"/>\r\n<property name=\"BlockDamageAIBM\"				            value=\"" + ConfigProperty_BlockDamageAIBM.Text +
-                        "\"/>\r\n<property name=\"XPMultiplier\"					        value=\"" + ConfigProperty_XPMultiplier.Text +
-                        "\"/>\r\n  <property name=\"PlayerSafeZoneLevel\"				    value=\"" + ConfigProperty_PlayerSafeZoneLevel.Text +
-                        "\"/>\r\n  <property name=\"PlayerSafeZoneHours\"				    value=\"" + ConfigProperty_PlayerSafeZoneHours.Text +
-                        "\n\n<!--  -->\n" +
-                        "\"/>\r\n  <property name=\"BuildCreate\"			    	        value=\"" + ConfigProperty_BuildCreate.Text +
-                        "\"/>\r\n  <property name=\"DayNightLength\"		    	        value=\"" + ConfigProperty_DayNightLength.Text +
-                        "\"/>\r\n  <property name=\"DayLightLength\"				        value=\"" + ConfigProperty_DayLightLength.Text +
-                        "\"/>\r\n  <property name=\"DropOnDeath\"			    	        value=\"" + ConfigProperty_DropOnDeath.Text +
-                        "\"/>\r\n  <property name=\"DropOnQuit\"			    	        value=\"" + ConfigProperty_DropOnQuit.Text +
-                        "\"/>\r\n  <property name=\"BedrollDeadZoneSize\"				    value=\"" + ConfigProperty_BedrollDeadZoneSize.Text +
-                        "\"/>\r\n  <property name=\"BedrollExpiryTime\"				        value=\"" + ConfigProperty_BedrollExpiryTime.Text +
-                        "\n\n<!-- Performance Related -->\n" +
-                        "\"/>\r\n  <property name=\"MaxSpawnedZombies\"				        value=\"" + ConfigProperty_MaxSpawnedZombies.Value +
-                        "\"/>\r\n  <property name=\"MaxSpawnedAnimals\"				        value=\"" + ConfigProperty_MaxSpawnedAnimals.Value +
-                        "\"/>\r\n  <property name=\"ServerMaxAllowedViewDistance\"	        value=\"" + ConfigProperty_ServerMaxAllowedViewDistance.Value +
-                        "\n\n<!-- Zombie Settings -->\n" +
-                        "\"/>\r\n  <property name=\"EnemySpawnMode\"				        value=\"" + ConfigProperty_EnemySpawnMode.Text +
-                        "\"/>\r\n  <property name=\"EnemyDifficulty\"				        value=\"" + ConfigProperty_EnemyDifficulty.Text +
-                        "\"/>\r\n  <property name=\"ZombieMove\"						    value=\"" + ConfigProperty_ZombieMove.Text +
-                        "\"/>\r\n  <property name=\"ZombieMoveNight\"				        value=\"" + ConfigProperty_ZombieMoveNight.Text +
-                        "\"/>\r\n  <property name=\"ZombieFeralMove\"				        value=\""+ ConfigProperty_ZombieFeralMove.Text +
-                        "\"/>\r\n  <property name=\"ZombieBMMove\"					        value=\""+ ConfigProperty_ZombieBMMove.Text +
-                        "\"/>\r\n  <property name=\"BloodMoonFrequency\"				    value=\"" + ConfigProperty_BloodMoonFrequency.Text +
-                        "\"/>\r\n  <property name=\"BloodMoonRange\"					    value=\"" + ConfigProperty_BloodMoonRange.Text +
-                        "\"/>\r\n  <property name=\"BloodMoonWarning\"				        value=\"" + ConfigProperty_BloodMoonWarning.Text +
-                        "\"/>\r\n  <property name=\"BloodMoonEnemyCount\"				    value=\"" + ConfigProperty_BloodMoonEnemyCount.Value +	                   
-                        "\n\n<!-- Loot -->\n" +
-                        "\"/>\r\n  <property name=\"LootAbundance\"				            value=\"" + ConfigProperty_LootAbundance.Value +
-                        "\"/>\r\n  <property name=\"LootRespawnDays\"				        value=\"" + ConfigProperty_LootRespawnDays.Value +
-                        "\"/>\r\n  <property name=\"AirDropFrequency\"		                value=\"" + ConfigProperty_AirDropFrequency.Value +
-                        "\"/>\r\n  <property name=\"AirDropMarker\"				            value=\"" + ConfigProperty_AirDropMarker.Text +
-                        "\n\n<!-- Multiplayer -->\n" +
-                        "\"/>\r\n  <property name=\"PartySharedKillRange\"			        value=\"" + ConfigProperty_PartySharedKillRange.Text +
-                        "\"/>\r\n  <property name=\"PlayerKillingMode\"			    	    value=\"" + ConfigProperty_PlayerKillingMode.Text + 	                    
-                        "\n\n<!-- Land Claim Options -->\n" +
-                        "\"/>\r\n  <property name=\"LandClaimCount\"					    value=\"" + ConfigProperty_LandClaimCount.Value +
-                        "\"/>\r\n  <property name=\"LandClaimSize\"				            value=\"" + ConfigProperty_LandClaimSize.Text +
-                        "\"/>\r\n  <property name=\"LandClaimDeadZone\"				        value=\"" + ConfigProperty_LandClaimDeadZone.Text +
-                        "\"/>\r\n  <property name=\"LandClaimExpiryTime\"				    value=\"" + ConfigProperty_LandClaimExpiryTime.Text +
-                        "\"/>\r\n  <property name=\"LandClaimDecayMode\"				    value=\"" + ConfigProperty_LandClaimDecayMode.Text +
-                        "\"/>\r\n  <property name=\"LandClaimOnlineDurabilityModifier\"		value=\"" + ConfigProperty_LandClaimOnlineDurabilityModifier.Text +
-                        "\"/>\r\n  <property name=\"LandClaimOfflineDurabilityModifier\"	value=\"" + ConfigProperty_LandClaimOfflineDurabilityModifier.Text + "\"/>\r\n" +
-                    "</ServerSettings>";
+                // Alpha 18.1 Configuration File Sample - Leave Spacing Exactly As Is For Perfect Replication Of Config File
+                string config = "<?xml version=\"1.0\"?>" +
+                        "\n<ServerSettings>\r\n  " +
+                        "\t<!-- GENERAL SERVER SETTINGS -->" +
+                        "\r\n\r\n\t<!-- Server representation -->" +
+                        "\r\n\t<property name=\"ServerName\"                                value=\"" + ConfigProperty_ServerName.Text + "\"/>" +
+                        "\r\n\t<property name=\"ServerDescription\"                         value=\"" + ConfigProperty_ServerDescription.Text + "\"/>" +
+                        "\r\n\t<property name=\"ServerWebsiteURL\"                          value=\"" + ConfigProperty_ServerWebsiteURL.Text + "\"/>" +
+                        "\r\n\t<property name=\"ServerPassword\"                            value=\"" + ConfigProperty_ServerPassword.Text + "\"/>" +
+                        "\r\n\t<property name=\"ServerLoginConfirmationText\"               value=\"" + ConfigProperty_ServerLoginConfirmationText.Text + "\"/>" +
+                        "\r\n\r\n\t<!-- Networking -->" +
+                        "\r\n\t<property name=\"ServerPort\"                                value=\"" + ConfigProperty_ServerPort.Value + "\"/>" +
+                        "\r\n\t<property name=\"ServerVisibility\"                          value=\"" + ConfigProperty_ServerVisibility.Text + "\"/>" +
+                        "\r\n\t<property name=\"ServerDisabledNetworkProtocols\"            value=\"" + ConfigProperty_ServerDisabledNetworkProtocols.Text + "\"/>" +
+                        "\r\n\t<property name=\"ServerMaxWorldTransferSpeedKiBs\"           value=\"" + ConfigProperty_ServerMaxWorldTransferSpeedKiBs.Value + "\"/>" +
+                        "\r\n\r\n\t<!-- Slots -->" +
+                        "\r\n\t<property name=\"ServerMaxPlayerCount\"                      value=\"" + ConfigProperty_ServerMaxPlayerCount.Value + "\"/>" +
+                        "\r\n\t<property name=\"ServerReservedSlots\"                       value=\"" + ConfigProperty_ServerReservedSlots.Text + "\"/>" +
+                        "\r\n\t<property name=\"ServerReservedSlotsPermission\"             value=\"" + ConfigProperty_ServerReservedSlotsPermission.Text + "\"/>" +
+                        "\r\n\t<property name=\"ServerAdminSlots\"                          value=\"" + ConfigProperty_ServerAdminSlots.Text + "\"/>" +
+                        "\r\n\t<property name=\"ServerAdminSlotsPermission\"                value=\"" + ConfigProperty_ServerAdminSlotsPermission.Text + "\"/>" +
+                        "\r\n\r\n\t<!-- Admin Interfaces -->" +
+                        "\r\n\t<property name=\"ControlPanelEnabled\"                       value=\"" + ConfigProperty_ControlPanelEnabled.Checked.ToString().ToLower() + "\"/>" +
+                        "\r\n\t<property name=\"ControlPanelPort\"                          value=\"" + ConfigProperty_ControlPanelPort.Text + "\"/>" +
+                        "\r\n\t<property name=\"ControlPanelPassword\"                      value=\"" + ConfigProperty_ControlPanelPassword.Text + "\"/>" +
+                        "\r\n\t<property name=\"TelnetEnabled\"                             value=\"" + ConfigProperty_TelnetEnabled.Checked.ToString().ToLower() + "\"/>" +
+                        "\r\n\t<property name=\"TelnetPort\"                                value=\"" + ConfigProperty_TelnetPort.Text + "\"/>" +
+                        "\r\n\t<property name=\"TelnetPassword\"                            value=\"" + ConfigProperty_TelnetPassword.Text + "\"/>" +
+                        "\r\n\t<property name=\"TelnetFailedLoginLimit\"                    value=\"" + ConfigProperty_TelnetFailedLoginLimit.Text + "\"/>" +
+                        "\r\n\t<property name=\"TelnetFailedLoginsBlocktime\"               value=\"" + ConfigProperty_TelnetFailedLoginsBlocktime.Text + "\"/>" +
+                        "\r\n\t<property name=\"TerminalWindowEnabled\"                     value=\"" + ConfigProperty_TerminalWindowEnabled.Checked.ToString().ToLower() + "\"/>" +
+                        "\r\n\r\n\t<!-- Folder and file locations -->" +
+                        "\r\n\t<property name=\"AdminFileName\"                             value=\"" + ConfigProperty_AdminFileName.Text + "\"/>" +
+                        "\r\n\t<property name=\"UserDataFolder\"                            value=\"" + ConfigProperty_UserDataFolder.Text + "\"/>" +
+                        "\r\n\t<property name=\"SaveGameFolder\"                            value=\"" + ConfigProperty_SaveGameFolder.Text + "\"/>" +
+                        "\r\n\r\n\t<!-- Other technical settings -->" +
+                        "\r\n\t<property name=\"EACEnabled\"                                value=\"" + ConfigProperty_EACEnabled.Checked.ToString().ToLower() + "\"/>" +
+                        "\r\n\t<property name=\"HideCommandExecutionLog\"                   value=\"" + ConfigProperty_HideCommandExecutionLog.Text + "\"/>" +
+                        "\r\n\t<property name=\"MaxUncoveredMapChunksPerPlayer\"            value=\"" + ConfigProperty_MaxUncoveredMapChunksPerPlayer.Text + "\"/>" +
+                        "\r\n\t<property name=\"PersistentPlayerProfiles\"                  value=\"" + ConfigProperty_PersistentPlayerProfiles.Checked.ToString().ToLower() + "\"/>" +
+                        "\r\n\r\n\t<!-- GAMEPLAY -->" +
+                        "\r\n\r\n\t<!-- World -->" +
+                        "\r\n\t<property name=\"GameWorld\"                                 value=\"" + ConfigProperty_GameWorld.Text + "\"/>" +
+                        "\r\n\t<property name=\"WorldGenSeed\"                              value=\"" + ConfigProperty_WorldGenSeed.Text + "\"/>" +
+                        "\r\n\t<property name=\"WorldGenSize\"                              value=\"" + ConfigProperty_WorldGenSize.Text + "\"/>" +
+                        "\r\n\t<property name=\"GameName\"                                  value=\"" + ConfigProperty_GameName.Text + "\"/>" +
+                        "\r\n\t<property name=\"GameMode\"                                  value=\"" + ConfigProperty_GameMode.Text + "\"/>" +
+                        "\r\n\r\n\t<!-- Difficulty -->" +
+                        "\r\n\t<property name=\"GameDifficulty\"                            value=\"" + ConfigProperty_GameDifficulty.Text + "\"/>" +
+                        "\r\n\t<property name=\"BlockDamagePlayer\"                         value=\"" + ConfigProperty_BlockDamagePlayer.Text + "\"/>" +
+                        "\r\n\t<property name=\"BlockDamageAI\"                             value=\"" + ConfigProperty_BlockDamageAI.Text + "\"/>" +
+                        "\r\n\t<property name=\"BlockDamageAIBM\"                           value=\"" + ConfigProperty_BlockDamageAIBM.Text + "\"/>" +
+                        "\r\n\t<property name=\"XPMultiplier\"                              value=\"" + ConfigProperty_XPMultiplier.Text + "\"/>" +
+                        "\r\n\t<property name=\"PlayerSafeZoneLevel\"                       value=\"" + ConfigProperty_PlayerSafeZoneLevel.Text + "\"/>" +
+                        "\r\n\t<property name=\"PlayerSafeZoneHours\"                       value=\"" + ConfigProperty_PlayerSafeZoneHours.Text + "\"/>" +
+                        "\r\n\r\n\t<!--  -->" +
+                        "\r\n\t<property name=\"BuildCreate\"                               value=\"" + ConfigProperty_BuildCreate.Checked.ToString().ToLower() + "\"/>" +
+                        "\r\n\t<property name=\"DayNightLength\"                            value=\"" + ConfigProperty_DayNightLength.Text + "\"/>" +
+                        "\r\n\t<property name=\"DayLightLength\"                            value=\"" + ConfigProperty_DayLightLength.Text + "\"/>" +
+                        "\r\n\t<property name=\"DropOnDeath\"                               value=\"" + ConfigProperty_DropOnDeath.Text + "\"/>" +
+                        "\r\n\t<property name=\"DropOnQuit\"                                value=\"" + ConfigProperty_DropOnQuit.Text + "\"/>" +
+                        "\r\n\t<property name=\"BedrollDeadZoneSize\"                       value=\"" + ConfigProperty_BedrollDeadZoneSize.Text + "\"/>" +
+                        "\r\n\t<property name=\"BedrollExpiryTime\"                         value=\"" + ConfigProperty_BedrollExpiryTime.Text + "\"/>" +
+                        "\r\n\r\n\t<!-- Performance Related -->" +
+                        "\r\n\t<property name=\"MaxSpawnedZombies\"                         value=\"" + ConfigProperty_MaxSpawnedZombies.Value + "\"/>" +
+                        "\r\n\t<property name=\"MaxSpawnedAnimals\"                         value=\"" + ConfigProperty_MaxSpawnedAnimals.Value + "\"/>" +
+                        "\r\n\t<property name=\"ServerMaxAllowedViewDistance\"              value=\"" + ConfigProperty_ServerMaxAllowedViewDistance.Value + "\"/>" +
+                        "\r\n\r\n\t<!-- Zombie Settings -->" +
+                        "\r\n\t<property name=\"EnemySpawnMode\"                            value=\"" + ConfigProperty_EnemySpawnMode.Checked.ToString().ToLower() + "\"/>" +
+                        "\r\n\t<property name=\"EnemyDifficulty\"                           value=\"" + ConfigProperty_EnemyDifficulty.Text + "\"/>" +
+                        "\r\n\t<property name=\"ZombieMove\"                                value=\"" + ConfigProperty_ZombieMove.Text + "\"/>" +
+                        "\r\n\t<property name=\"ZombieMoveNight\"                           value=\"" + ConfigProperty_ZombieMoveNight.Text + "\"/>" +
+                        "\r\n\t<property name=\"ZombieFeralMove\"                           value=\"" + ConfigProperty_ZombieFeralMove.Text + "\"/>" +
+                        "\r\n\t<property name=\"ZombieBMMove\"                              value=\"" + ConfigProperty_ZombieBMMove.Text + "\"/>" +
+                        "\r\n\t<property name=\"BloodMoonFrequency\"                        value=\"" + ConfigProperty_BloodMoonFrequency.Text + "\"/>" +
+                        "\r\n\t<property name=\"BloodMoonRange\"                            value=\"" + ConfigProperty_BloodMoonRange.Text + "\"/>" +
+                        "\r\n\t<property name=\"BloodMoonWarning\"                          value=\"" + ConfigProperty_BloodMoonWarning.Text + "\"/>" +
+                        "\r\n\t<property name=\"BloodMoonEnemyCount\"                       value=\"" + ConfigProperty_BloodMoonEnemyCount.Value + "\"/>" +
+                        "\r\n\r\n\t<!-- Loot -->" +
+                        "\r\n\t<property name=\"LootAbundance\"                             value=\"" + ConfigProperty_LootAbundance.Value + "\"/>" +
+                        "\r\n\t<property name=\"LootRespawnDays\"                           value=\"" + ConfigProperty_LootRespawnDays.Value + "\"/>" +
+                        "\r\n\t<property name=\"AirDropFrequency\"                          value=\"" + ConfigProperty_AirDropFrequency.Value + "\"/>" +
+                        "\r\n\t<property name=\"AirDropMarker\"                             value=\"" + ConfigProperty_AirDropMarker.Checked.ToString().ToLower() + "\"/>" +
+                        "\r\n\r\n\t<!-- Multiplayer -->" +
+                        "\r\n\t<property name=\"PartySharedKillRange\"                      value=\"" + ConfigProperty_PartySharedKillRange.Text + "\"/>" +
+                        "\r\n\t<property name=\"PlayerKillingMode\"                         value=\"" + ConfigProperty_PlayerKillingMode.Text + "\"/>" +
+                        "\r\n\r\n\t<!-- Land Claim Options -->" +
+                        "\r\n\t<property name=\"LandClaimCount\"                            value=\"" + ConfigProperty_LandClaimCount.Value + "\"/>" +
+                        "\r\n\t<property name=\"LandClaimSize\"                             value=\"" + ConfigProperty_LandClaimSize.Text + "\"/>" +
+                        "\r\n\t<property name=\"LandClaimDeadZone\"                         value=\"" + ConfigProperty_LandClaimDeadZone.Text + "\"/>" +
+                        "\r\n\t<property name=\"LandClaimExpiryTime\"                       value=\"" + ConfigProperty_LandClaimExpiryTime.Text + "\"/>" +
+                        "\r\n\t<property name=\"LandClaimDecayMode\"                        value=\"" + ConfigProperty_LandClaimDecayMode.Text + "\"/>" +
+                        "\r\n\t<property name=\"LandClaimOnlineDurabilityModifier\"         value=\"" + ConfigProperty_LandClaimOnlineDurabilityModifier.Text + "\"/>" +
+                        "\r\n\t<property name=\"LandClaimOfflineDurabilityModifier\"        value=\"" + ConfigProperty_LandClaimOfflineDurabilityModifier.Text + "\"/>\r\n" +
+                    "\r\n</ServerSettings>";
 
                 // Write The Server Config To File
                 try

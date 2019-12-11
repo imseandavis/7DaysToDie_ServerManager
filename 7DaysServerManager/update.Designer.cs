@@ -51,7 +51,7 @@
             this.Name = "update";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Update...";
-            this.Load += new System.EventHandler(this.update_Load);
+            this.Load += new System.EventHandler(this.Update_Load);
             this.ResumeLayout(false);
 
         }

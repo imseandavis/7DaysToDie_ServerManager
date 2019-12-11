@@ -13,8 +13,6 @@ namespace _7DaysServerManager
         public void Load_Languages()
         {
             //Server Management Tab
-
-
             About_Button.Text = LocalizedLanguage("about");
             Settings_Always_On_Top_CheckBox.Text = LocalizedLanguage("always_on_top");
             autobots.Text = LocalizedLanguage("autobots");
@@ -26,7 +24,6 @@ namespace _7DaysServerManager
             cpl_port.Text = LocalizedLanguage("cpl_port");
             ConfigProperty_ControlPanelEnabled.Text = LocalizedLanguage("ctrlp");
             Admin_Control_Panel_GroupBox.Text = LocalizedLanguage("ctrlpanel");
-            ServerListAndPassword_GroupBox.Text = LocalizedLanguage("dostep");
             dzien.Text = LocalizedLanguage("dzien") + " [1]";
 
             godzina.Text = LocalizedLanguage("godzina") + " [8:00]";
@@ -42,7 +39,6 @@ namespace _7DaysServerManager
             port_g.Text = LocalizedLanguage("port_g");
             Save_Logs_To_Files_CheckBox.Text = LocalizedLanguage("save_logfiles");
             Save_Logs_CheckBox.Text = LocalizedLanguage("save_logfiles_2");
-            ServerIsPublic.Text = LocalizedLanguage("ServerIsPublic");
 
             Spawn_GroupBox.Text = LocalizedLanguage("spawn_group");
             Spawn_Item_Button.Text = LocalizedLanguage("spawn_now");

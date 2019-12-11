@@ -35,8 +35,6 @@ namespace _7DaysServerManager
             ConfigProperty_ZombieMoveNight.Enabled = false;
             ConfigProperty_ZombieFeralMove.Enabled = false;
             ConfigProperty_ZombieBMMove.Enabled = false;
-            ServerIsPublic.Enabled = false;
-            ServerPassword.Enabled = false;
             ConfigProperty_GameName.Enabled = false;
             ConfigProperty_GameWorld.Enabled = false;
             ConfigProperty_ServerPort.Enabled = false;
@@ -105,7 +103,7 @@ namespace _7DaysServerManager
         {
             Echo_debug("---Unlocking Panel Controls---");
 
-            // Server Tab
+            // Server Management Tab
             Start_Server_Button.Enabled = true;
             Shutdown_Server_Button.Enabled = false;
 
@@ -123,8 +121,6 @@ namespace _7DaysServerManager
             ConfigProperty_ZombieMoveNight.Enabled = true;
             ConfigProperty_ZombieFeralMove.Enabled = true;
             ConfigProperty_ZombieBMMove.Enabled = true;
-            ServerIsPublic.Enabled = true;
-            ServerPassword.Enabled = true;
             ConfigProperty_GameName.Enabled = true;
             ConfigProperty_GameWorld.Enabled = true;
             ConfigProperty_ServerPort.Enabled = true;

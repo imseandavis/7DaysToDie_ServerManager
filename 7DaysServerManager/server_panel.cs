@@ -1285,7 +1285,7 @@ namespace _7DaysServerManager
 
             for (int a = 0; a < telnet_NOW.Length; a++)
             {
-                fakepsw = fakepsw + "*";
+                fakepsw += "*";
             }
             Echo(reply.Replace("Please enter password:", "Please enter password: " + fakepsw), 4, true);
 
@@ -1855,7 +1855,7 @@ namespace _7DaysServerManager
                 string sciezka = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\Valve\Steam", "SteamPath", null);
                 sciezka = sciezka.Replace("/", "\\");
 
-                sciezka = sciezka + "\\steamapps\\common\\7 Days To Die";
+                sciezka += "\\steamapps\\common\\7 Days To Die";
 
 
                 if (File.Exists(@sciezka + "\\" + exe_name.Text))
@@ -1866,7 +1866,7 @@ namespace _7DaysServerManager
                 }
                 else
                 {
-                    sciezka = sciezka + " Dedicated Server";
+                    sciezka += " Dedicated Server";
                     if (File.Exists(@sciezka + "\\7DaysToDieServer.exe"))
                     {
                         MessageBox.Show(LocalizedLanguage("steam_ok"), LocalizedLanguage("saved"));
@@ -2360,7 +2360,7 @@ namespace _7DaysServerManager
             }
         }
 
-        private void Server_nazwa_TextChanged(object sender, EventArgs e)
+        private void ServerName_TextChanged(object sender, EventArgs e)
         {
             Update_Config();
         }
@@ -2532,7 +2532,7 @@ namespace _7DaysServerManager
 
                     while (k_m >= 3600)
                     {
-                        k_m = k_m - 3600;
+                        k_m -= 3600;
                         hrs++;
                     }
 
@@ -2835,7 +2835,7 @@ namespace _7DaysServerManager
 
                     while (k_m >= 3600)
                     {
-                        k_m = k_m - 3600;
+                        k_m -= 3600;
                         hrs++;
                     }
 
@@ -3042,7 +3042,7 @@ namespace _7DaysServerManager
                     }
 
                     // Send Install ID, Windows Version, Is Server Public, Server Port, Game Name, Game Version, Android Enable Flag, Profile Name, and Website Enabled Flag
-                    client.Headers.Add("User-Agent", (string)Registry.GetValue(base_registry_key, "install_id", null) + ";" + os_ver + ";" + "n\\a" + ";" + ServerIsPublic.Checked + ";" + ConfigProperty_ServerPort.Text + ";" + ConfigProperty_GameName.Text + ";" + ver + ";" + (string)Registry.GetValue(base_registry_key + profile_name, "android_allow", null) + ";" + (string)Registry.GetValue(base_registry_key + profile_name, "enable_website", null));
+                    client.Headers.Add("User-Agent", (string)Registry.GetValue(base_registry_key, "install_id", null) + ";" + os_ver + ";" + "n\\a" + ";" + ConfigProperty_ServerVisibility.Text + ";" + ConfigProperty_ServerPort.Text + ";" + ConfigProperty_GameName.Text + ";" + ver + ";" + (string)Registry.GetValue(base_registry_key + profile_name, "android_allow", null) + ";" + (string)Registry.GetValue(base_registry_key + profile_name, "enable_website", null));
                 }
                 else
                 {
@@ -4789,6 +4789,21 @@ namespace _7DaysServerManager
 
             // API CALL TO GET INFO FOR EACH GAME
             // curl -X GET "https://api.nexusmods.com/v1/games/7DaysToDie/mods/22.json" -H "accept: application/json" -H "apikey: SmpkZWI2bmhWY3lQczVOUnZXT3EzTHR5Rmp6SmlHYmVnNkFxVTVoTjdHM1M0SUVHZ0NQSlQxNFdpa1FwWm5KMC0tZlFvTWlCMXo3YitFQndJZDhaTHgvUT09--c263c337518233d4b00051b7114989af6f837328"
+        }
+
+        private void ServerDescription_TextChanged(object sender, EventArgs e)
+        {
+            Update_Config();
+        }
+
+        private void ServerWebsiteURL_TextChanged(object sender, EventArgs e)
+        {
+            Update_Config();
+        }
+
+        private void ServerLoginConfirmationText_TextChanged(object sender, EventArgs e)
+        {
+            Update_Config();
         }
 
         private void Usecmd_Click(object sender, EventArgs e)

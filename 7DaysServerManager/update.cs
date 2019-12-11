@@ -17,7 +17,7 @@ namespace _7DaysServerManager
             InitializeComponent();
         }
 
-        private void update_Load(object sender, EventArgs e)
+        private void Update_Load(object sender, EventArgs e)
         {
 
             bool dl_dev = false;
