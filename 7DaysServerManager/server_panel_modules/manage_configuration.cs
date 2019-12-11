@@ -35,18 +35,22 @@ namespace _7DaysServerManager
                 string AirDropMarker1 = "false";
 
                 // Resolve All Boolean Values
+                if (ConfigProperty_ControlPanelEnabled.Checked)
+                    ControlPanelEnabled = "true";
+                if (ConfigProperty_TelnetEnabled.Checked)
+                    TelnetEnabled = "true";
+                if (ConfigProperty_TerminalWindowEnabled.Checked)
+                    TerminalWindowEnabled = "true";
+                if (ConfigProperty_EACEnabled.Checked)
+                    EACEnabled = "true";
+                if (ConfigProperty_PersistentPlayerProfiles.Checked)
+                    PersistentPlayerProfiles = "true";
+                if (ConfigProperty_BuildCreate.Checked)
+                    BuildCreate = "true";
                 if (ConfigProperty_EnemySpawnMode.Checked)
                     EnemySpawnMode = "true";
                 else
                     EnemySpawnMode = "false";
-                if (ConfigProperty_BuildCreate.Checked)
-                    BuildCreate = "true";
-                if (ConfigProperty_ControlPanelEnabled.Checked)
-                    ControlPanelEnabled = "true";
-                if (ConfigProperty_PersistentPlayerProfiles.Checked)
-                    PersistentPlayerProfiles = "true";
-                if (ConfigProperty_EACEnabled.Checked)
-                    EACEnabled = "true";
                 if (ConfigProperty_AirDropMarker.Checked)
                     AirDropMarker1 = "true";
 

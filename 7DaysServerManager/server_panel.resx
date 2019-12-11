@@ -1259,9 +1259,6 @@
         /////v////////////////////////////8=
 </value>
   </data>
-  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>655, 56</value>
-  </metadata>
   <data name="Premium_Settings_Help_PictureBox.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
@@ -1273,6 +1270,9 @@
         Jjl5xQH2Qr2tnZQdR9vWn/8t9qH21LOpSfRMotvWhe3O/BdZtgVoC7C58nFkcwAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>655, 56</value>
+  </metadata>
   <data name="Supporter_Donate_Button.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         R0lGODlhXAAaAIcAAP/x2//9+P7mtP+vM/+sLf7kr/7gpf7hqv7fof7ShP+xOP+zPUBRVv61Qr65oM8L
@@ -1370,12 +1370,6 @@ Please, do not share it (publicly shared codes may get banned).
         Jjl5xQH2Qr2tnZQdR9vWn/8t9qH21LOpSfRMotvWhe3O/BdZtgVoC7C58nFkcwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <metadata name="toolTip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>655, 56</value>
-  </metadata>
-  <metadata name="Header_Icons.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>200, 56</value>
-  </metadata>
   <data name="ConfigProperty_ServerLoginConfirmationText.ToolTip" xml:space="preserve">
     <value>If set the user will see the message during joining the server and has to confirm it before continuing. 
 
@@ -1401,17 +1395,17 @@ It does not control the generic layout of the world if creating an RWG world.</v
     <value>Size (box "radius", so a box with 2 times the given value for each side's length) of bedroll deadzone.
 No zombies will spawn inside this area, and any cleared sleeper volumes that touch a bedroll deadzone will not spawn after they've been cleared.</value>
   </data>
-  <data name="MaxSpawnedAnimals_GroupBox.ToolTip" xml:space="preserve">
-    <value>If your server has a large number of players you can increase this limit to add more wildlife. 
-
-Animals don't consume as much CPU as zombies. 
-
-NOTE: That this doesn't cause more animals to spawn arbitrarily: The biome spawning system only spawns a certain number of animals in a given area, but if you have lots of players that are all spread out then you may be hitting the limit and can increase it.</value>
-  </data>
   <data name="ConfigProperty_MaxSpawnedAnimals.ToolTip" xml:space="preserve">
     <value>If your server has a large number of players you can increase this limit to add more wildlife.
 
 Animals don't consume as much CPU as zombies.
+
+NOTE: That this doesn't cause more animals to spawn arbitrarily: The biome spawning system only spawns a certain number of animals in a given area, but if you have lots of players that are all spread out then you may be hitting the limit and can increase it.</value>
+  </data>
+  <data name="MaxSpawnedAnimals_GroupBox.ToolTip" xml:space="preserve">
+    <value>If your server has a large number of players you can increase this limit to add more wildlife. 
+
+Animals don't consume as much CPU as zombies. 
 
 NOTE: That this doesn't cause more animals to spawn arbitrarily: The biome spawning system only spawns a certain number of animals in a given area, but if you have lots of players that are all spread out then you may be hitting the limit and can increase it.</value>
   </data>
@@ -1427,6 +1421,9 @@ Resulting max map file size limit per player is (x * 512 Bytes), uncovered area 
 
 Default 131072 means max 32 km² can be uncovered at any time.</value>
   </data>
+  <metadata name="Header_Icons.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>200, 56</value>
+  </metadata>
   <data name="banlist_logo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAngAAABgCAYAAACOjQ/lAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6

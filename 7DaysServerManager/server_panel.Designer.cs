@@ -172,6 +172,20 @@
             this.GameSettings_TabPage = new System.Windows.Forms.TabPage();
             this.main_page_opts = new System.Windows.Forms.TabControl();
             this.Game_Options_TabPage = new System.Windows.Forms.TabPage();
+            this.BlockDamageAIBM_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_BlockDamageAIBM = new System.Windows.Forms.TrackBar();
+            this.PartySharedKillRange_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_PartySharedKillRange = new System.Windows.Forms.TrackBar();
+            this.ZombieBloodMoonSpeed_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_ZombieBMMove = new System.Windows.Forms.ComboBox();
+            this.ZombieNightSpeed_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_ZombieMoveNight = new System.Windows.Forms.ComboBox();
+            this.ZombieFeralSpeed_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_ZombieFeralMove = new System.Windows.Forms.ComboBox();
+            this.ServerMaxAllowedViewDistance_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_ServerMaxAllowedViewDistance = new System.Windows.Forms.TrackBar();
+            this.DropOnQuit_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_DropOnQuit = new System.Windows.Forms.ComboBox();
             this.XPMultiplier_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_XPMultiplier = new System.Windows.Forms.TrackBar();
             this.BlockDamageAI_GroupBox = new System.Windows.Forms.GroupBox();
@@ -186,12 +200,16 @@
             this.Player_Reserve_Text_Label = new System.Windows.Forms.Label();
             this.ConfigProperty_ServerReservedSlots = new System.Windows.Forms.TextBox();
             this.Player_Killing_Mode_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_PlayerKillingMode = new System.Windows.Forms.ComboBox();
+            this.DropOnDeath_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_DropOnDeath = new System.Windows.Forms.ComboBox();
             this.AirDropFrequency_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_AirDropFrequency = new System.Windows.Forms.TrackBar();
             this.Land_Claim_GroupBox = new System.Windows.Forms.GroupBox();
-            this.BlockDamageAIBM_GroupBox = new System.Windows.Forms.GroupBox();
-            this.ConfigProperty_BlockDamageAIBM = new System.Windows.Forms.TrackBar();
+            this.LandClaimCount_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_LandClaimCount = new System.Windows.Forms.NumericUpDown();
             this.LandClaimDecayMode_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_LandClaimDecayMode = new System.Windows.Forms.ComboBox();
             this.LandClaimDurabilityModifier_GroupBox = new System.Windows.Forms.GroupBox();
             this.Land_Claim_Durability_Offline_Label = new System.Windows.Forms.Label();
             this.Land_Claim_Durability_Online_Label = new System.Windows.Forms.Label();
@@ -210,9 +228,12 @@
             this.Max_Players_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_ServerMaxPlayerCount = new System.Windows.Forms.TrackBar();
             this.Game_Mode_Settings_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_AirDropMarker = new System.Windows.Forms.CheckBox();
             this.ConfigProperty_PersistentPlayerProfiles = new System.Windows.Forms.CheckBox();
             this.ConfigProperty_EnemyDifficulty = new System.Windows.Forms.CheckBox();
             this.ConfigProperty_BuildCreate = new System.Windows.Forms.CheckBox();
+            this.ZombieDaySpeed_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_ZombieMove = new System.Windows.Forms.ComboBox();
             this.DayLightLength_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_DayLightLength = new System.Windows.Forms.TrackBar();
             this.DayNightLength_GroupBox = new System.Windows.Forms.GroupBox();
@@ -220,10 +241,16 @@
             this.ConfigProperty_DayNightLength = new System.Windows.Forms.TrackBar();
             this.BlockDamagePlayer_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_BlockDamagePlayer = new System.Windows.Forms.TrackBar();
-            this.DropOnDeath_GroupBox = new System.Windows.Forms.GroupBox();
             this.GameDifficulty_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_GameDifficulty = new System.Windows.Forms.TrackBar();
             this.Server_Options_TabPage = new System.Windows.Forms.TabPage();
+            this.BloodMoon_GroupBox = new System.Windows.Forms.GroupBox();
+            this.BloodMoonWarning_Label = new System.Windows.Forms.Label();
+            this.ConfigProperty_BloodMoonWarning = new System.Windows.Forms.NumericUpDown();
+            this.ConfigProperty_BloodMoonRange = new System.Windows.Forms.NumericUpDown();
+            this.BloodMoonRange_Label = new System.Windows.Forms.Label();
+            this.BloodMoonFrequency_Label = new System.Windows.Forms.Label();
+            this.ConfigProperty_BloodMoonFrequency = new System.Windows.Forms.NumericUpDown();
             this.Server_Login_Confirmation_Text_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_ServerLoginConfirmationText = new System.Windows.Forms.RichTextBox();
             this.Server_Password_GroupBox = new System.Windows.Forms.GroupBox();
@@ -255,6 +282,12 @@
             this.ConfigProperty_EACEnabled = new System.Windows.Forms.CheckBox();
             this.Save_Logs_To_Files_CheckBox = new System.Windows.Forms.CheckBox();
             this.autobots = new System.Windows.Forms.GroupBox();
+            this.Player_Safe_Zone_Hours_Label = new System.Windows.Forms.Label();
+            this.Player_Safe_Zone_Level_Label = new System.Windows.Forms.Label();
+            this.ConfigProperty_PlayerSafeZoneHours = new System.Windows.Forms.TextBox();
+            this.ConfigProperty_PlayerSafeZoneLevel = new System.Windows.Forms.TextBox();
+            this.BedrollExpiryTime_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_BedrollExpiryTime = new System.Windows.Forms.TrackBar();
             this.ConfigProperty_EnemySpawnMode = new System.Windows.Forms.CheckBox();
             this.BedrollDeadZoneSize_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_BedrollDeadZoneSize = new System.Windows.Forms.TrackBar();
@@ -438,39 +471,6 @@
             this.externalCallFile = new System.Windows.Forms.OpenFileDialog();
             this.discord_b = new System.Windows.Forms.Button();
             this.GitHub_Repo_Button = new System.Windows.Forms.Button();
-            this.ConfigProperty_DropOnDeath = new System.Windows.Forms.ComboBox();
-            this.DropOnQuit_GroupBox = new System.Windows.Forms.GroupBox();
-            this.ConfigProperty_DropOnQuit = new System.Windows.Forms.ComboBox();
-            this.BedrollExpiryTime_GroupBox = new System.Windows.Forms.GroupBox();
-            this.ConfigProperty_BedrollExpiryTime = new System.Windows.Forms.TrackBar();
-            this.ServerMaxAllowedViewDistance_GroupBox = new System.Windows.Forms.GroupBox();
-            this.ConfigProperty_ServerMaxAllowedViewDistance = new System.Windows.Forms.TrackBar();
-            this.ZombieDaySpeed_GroupBox = new System.Windows.Forms.GroupBox();
-            this.ConfigProperty_ZombieMove = new System.Windows.Forms.ComboBox();
-            this.ZombieNightSpeed_GroupBox = new System.Windows.Forms.GroupBox();
-            this.ConfigProperty_ZombieMoveNight = new System.Windows.Forms.ComboBox();
-            this.ZombieBloodMoonSpeed_GroupBox = new System.Windows.Forms.GroupBox();
-            this.ConfigProperty_ZombieBMMove = new System.Windows.Forms.ComboBox();
-            this.ZombieFeralSpeed_GroupBox = new System.Windows.Forms.GroupBox();
-            this.ConfigProperty_ZombieFeralMove = new System.Windows.Forms.ComboBox();
-            this.BloodMoon_GroupBox = new System.Windows.Forms.GroupBox();
-            this.ConfigProperty_BloodMoonFrequency = new System.Windows.Forms.NumericUpDown();
-            this.BloodMoonFrequency_Label = new System.Windows.Forms.Label();
-            this.BloodMoonRange_Label = new System.Windows.Forms.Label();
-            this.ConfigProperty_BloodMoonRange = new System.Windows.Forms.NumericUpDown();
-            this.BloodMoonWarning_Label = new System.Windows.Forms.Label();
-            this.ConfigProperty_BloodMoonWarning = new System.Windows.Forms.NumericUpDown();
-            this.ConfigProperty_AirDropMarker = new System.Windows.Forms.CheckBox();
-            this.ConfigProperty_PlayerKillingMode = new System.Windows.Forms.ComboBox();
-            this.PartySharedKillRange_GroupBox = new System.Windows.Forms.GroupBox();
-            this.ConfigProperty_PartySharedKillRange = new System.Windows.Forms.TrackBar();
-            this.ConfigProperty_LandClaimDecayMode = new System.Windows.Forms.ComboBox();
-            this.LandClaimCount_GroupBox = new System.Windows.Forms.GroupBox();
-            this.ConfigProperty_LandClaimCount = new System.Windows.Forms.NumericUpDown();
-            this.Player_Safe_Zone_Hours_Label = new System.Windows.Forms.Label();
-            this.Player_Safe_Zone_Level_Label = new System.Windows.Forms.Label();
-            this.ConfigProperty_PlayerSafeZoneHours = new System.Windows.Forms.TextBox();
-            this.ConfigProperty_PlayerSafeZoneLevel = new System.Windows.Forms.TextBox();
             this.Settings_TabPage.SuspendLayout();
             this.Updates_GroupBox.SuspendLayout();
             this.exe_settings_g.SuspendLayout();
@@ -516,17 +516,28 @@
             this.GameSettings_TabPage.SuspendLayout();
             this.main_page_opts.SuspendLayout();
             this.Game_Options_TabPage.SuspendLayout();
+            this.BlockDamageAIBM_GroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BlockDamageAIBM)).BeginInit();
+            this.PartySharedKillRange_GroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_PartySharedKillRange)).BeginInit();
+            this.ZombieBloodMoonSpeed_GroupBox.SuspendLayout();
+            this.ZombieNightSpeed_GroupBox.SuspendLayout();
+            this.ZombieFeralSpeed_GroupBox.SuspendLayout();
+            this.ServerMaxAllowedViewDistance_GroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_ServerMaxAllowedViewDistance)).BeginInit();
+            this.DropOnQuit_GroupBox.SuspendLayout();
             this.XPMultiplier_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_XPMultiplier)).BeginInit();
             this.BlockDamageAI_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BlockDamageAI)).BeginInit();
             this.Server_Reserved_Slots_GroupBox.SuspendLayout();
             this.Player_Killing_Mode_GroupBox.SuspendLayout();
+            this.DropOnDeath_GroupBox.SuspendLayout();
             this.AirDropFrequency_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_AirDropFrequency)).BeginInit();
             this.Land_Claim_GroupBox.SuspendLayout();
-            this.BlockDamageAIBM_GroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BlockDamageAIBM)).BeginInit();
+            this.LandClaimCount_GroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_LandClaimCount)).BeginInit();
             this.LandClaimDecayMode_GroupBox.SuspendLayout();
             this.LandClaimDurabilityModifier_GroupBox.SuspendLayout();
             this.LandClaimSize_GroupBox.SuspendLayout();
@@ -539,16 +550,20 @@
             this.Max_Players_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_ServerMaxPlayerCount)).BeginInit();
             this.Game_Mode_Settings_GroupBox.SuspendLayout();
+            this.ZombieDaySpeed_GroupBox.SuspendLayout();
             this.DayLightLength_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_DayLightLength)).BeginInit();
             this.DayNightLength_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_DayNightLength)).BeginInit();
             this.BlockDamagePlayer_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BlockDamagePlayer)).BeginInit();
-            this.DropOnDeath_GroupBox.SuspendLayout();
             this.GameDifficulty_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_GameDifficulty)).BeginInit();
             this.Server_Options_TabPage.SuspendLayout();
+            this.BloodMoon_GroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BloodMoonWarning)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BloodMoonRange)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BloodMoonFrequency)).BeginInit();
             this.Server_Login_Confirmation_Text_GroupBox.SuspendLayout();
             this.Server_Password_GroupBox.SuspendLayout();
             this.Server_Name_GroupBox.SuspendLayout();
@@ -562,6 +577,8 @@
             this.ServerListAndPassword_GroupBox.SuspendLayout();
             this.Other_Game_Settings_GroupBox.SuspendLayout();
             this.autobots.SuspendLayout();
+            this.BedrollExpiryTime_GroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BedrollExpiryTime)).BeginInit();
             this.BedrollDeadZoneSize_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BedrollDeadZoneSize)).BeginInit();
             this.BloodMoonEnemyCount_GroupBox.SuspendLayout();
@@ -614,23 +631,6 @@
             this.Rewards_TabPage.SuspendLayout();
             this.deds_g.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_status)).BeginInit();
-            this.DropOnQuit_GroupBox.SuspendLayout();
-            this.BedrollExpiryTime_GroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BedrollExpiryTime)).BeginInit();
-            this.ServerMaxAllowedViewDistance_GroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_ServerMaxAllowedViewDistance)).BeginInit();
-            this.ZombieDaySpeed_GroupBox.SuspendLayout();
-            this.ZombieNightSpeed_GroupBox.SuspendLayout();
-            this.ZombieBloodMoonSpeed_GroupBox.SuspendLayout();
-            this.ZombieFeralSpeed_GroupBox.SuspendLayout();
-            this.BloodMoon_GroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BloodMoonFrequency)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BloodMoonRange)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BloodMoonWarning)).BeginInit();
-            this.PartySharedKillRange_GroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_PartySharedKillRange)).BeginInit();
-            this.LandClaimCount_GroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_LandClaimCount)).BeginInit();
             this.SuspendLayout();
             // 
             // status_updater
@@ -1622,7 +1622,7 @@
             this.cmd.AcceptsReturn = true;
             this.cmd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmd.Location = new System.Drawing.Point(6, 489);
+            this.cmd.Location = new System.Drawing.Point(6, 492);
             this.cmd.Name = "cmd";
             this.cmd.Size = new System.Drawing.Size(689, 20);
             this.cmd.TabIndex = 17;
@@ -1641,7 +1641,7 @@
             this.Console_RichTextBox.Name = "Console_RichTextBox";
             this.Console_RichTextBox.ReadOnly = true;
             this.Console_RichTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.Console_RichTextBox.Size = new System.Drawing.Size(686, 469);
+            this.Console_RichTextBox.Size = new System.Drawing.Size(686, 472);
             this.Console_RichTextBox.TabIndex = 15;
             this.Console_RichTextBox.Text = "";
             this.Console_RichTextBox.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.Console_LinkClicked);
@@ -1979,7 +1979,7 @@
             this.Console_Group.Controls.Add(this.cmd);
             this.Console_Group.Location = new System.Drawing.Point(3, 8);
             this.Console_Group.Name = "Console_Group";
-            this.Console_Group.Size = new System.Drawing.Size(698, 520);
+            this.Console_Group.Size = new System.Drawing.Size(698, 523);
             this.Console_Group.TabIndex = 18;
             this.Console_Group.TabStop = false;
             this.Console_Group.Text = "Console";
@@ -2533,6 +2533,192 @@
             this.Game_Options_TabPage.TabIndex = 2;
             this.Game_Options_TabPage.UseVisualStyleBackColor = true;
             // 
+            // BlockDamageAIBM_GroupBox
+            // 
+            this.BlockDamageAIBM_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.BlockDamageAIBM_GroupBox.Controls.Add(this.ConfigProperty_BlockDamageAIBM);
+            this.BlockDamageAIBM_GroupBox.Location = new System.Drawing.Point(708, 561);
+            this.BlockDamageAIBM_GroupBox.Name = "BlockDamageAIBM_GroupBox";
+            this.BlockDamageAIBM_GroupBox.Size = new System.Drawing.Size(179, 65);
+            this.BlockDamageAIBM_GroupBox.TabIndex = 53;
+            this.BlockDamageAIBM_GroupBox.TabStop = false;
+            this.BlockDamageAIBM_GroupBox.Text = "AI Block Damage (Blood Moon)";
+            // 
+            // ConfigProperty_BlockDamageAIBM
+            // 
+            this.ConfigProperty_BlockDamageAIBM.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ConfigProperty_BlockDamageAIBM.Location = new System.Drawing.Point(6, 17);
+            this.ConfigProperty_BlockDamageAIBM.Maximum = 1000;
+            this.ConfigProperty_BlockDamageAIBM.Minimum = 1;
+            this.ConfigProperty_BlockDamageAIBM.Name = "ConfigProperty_BlockDamageAIBM";
+            this.ConfigProperty_BlockDamageAIBM.Size = new System.Drawing.Size(167, 45);
+            this.ConfigProperty_BlockDamageAIBM.SmallChange = 10;
+            this.ConfigProperty_BlockDamageAIBM.TabIndex = 9;
+            this.ConfigProperty_BlockDamageAIBM.TickFrequency = 10;
+            this.toolTip.SetToolTip(this.ConfigProperty_BlockDamageAIBM, "How much damage do AIs during blood moons to blocks (percentage in whole numbers)" +
+        ".");
+            this.ConfigProperty_BlockDamageAIBM.Value = 100;
+            // 
+            // PartySharedKillRange_GroupBox
+            // 
+            this.PartySharedKillRange_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.PartySharedKillRange_GroupBox.Controls.Add(this.ConfigProperty_PartySharedKillRange);
+            this.PartySharedKillRange_GroupBox.Location = new System.Drawing.Point(708, 487);
+            this.PartySharedKillRange_GroupBox.Name = "PartySharedKillRange_GroupBox";
+            this.PartySharedKillRange_GroupBox.Size = new System.Drawing.Size(179, 68);
+            this.PartySharedKillRange_GroupBox.TabIndex = 51;
+            this.PartySharedKillRange_GroupBox.TabStop = false;
+            this.PartySharedKillRange_GroupBox.Text = "Party Shared XP Distance";
+            // 
+            // ConfigProperty_PartySharedKillRange
+            // 
+            this.ConfigProperty_PartySharedKillRange.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ConfigProperty_PartySharedKillRange.Location = new System.Drawing.Point(6, 19);
+            this.ConfigProperty_PartySharedKillRange.Maximum = 1000;
+            this.ConfigProperty_PartySharedKillRange.Minimum = 1;
+            this.ConfigProperty_PartySharedKillRange.Name = "ConfigProperty_PartySharedKillRange";
+            this.ConfigProperty_PartySharedKillRange.Size = new System.Drawing.Size(167, 45);
+            this.ConfigProperty_PartySharedKillRange.SmallChange = 10;
+            this.ConfigProperty_PartySharedKillRange.TabIndex = 10;
+            this.ConfigProperty_PartySharedKillRange.TickFrequency = 10;
+            this.toolTip.SetToolTip(this.ConfigProperty_PartySharedKillRange, "The distance you must be within to receive party shared kill xp and quest party k" +
+        "ill objective credit.");
+            this.ConfigProperty_PartySharedKillRange.Value = 100;
+            // 
+            // ZombieBloodMoonSpeed_GroupBox
+            // 
+            this.ZombieBloodMoonSpeed_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ZombieBloodMoonSpeed_GroupBox.Controls.Add(this.ConfigProperty_ZombieBMMove);
+            this.ZombieBloodMoonSpeed_GroupBox.Location = new System.Drawing.Point(708, 381);
+            this.ZombieBloodMoonSpeed_GroupBox.Name = "ZombieBloodMoonSpeed_GroupBox";
+            this.ZombieBloodMoonSpeed_GroupBox.Size = new System.Drawing.Size(179, 49);
+            this.ZombieBloodMoonSpeed_GroupBox.TabIndex = 46;
+            this.ZombieBloodMoonSpeed_GroupBox.TabStop = false;
+            this.ZombieBloodMoonSpeed_GroupBox.Text = "Zombie Blood Moon Speed";
+            // 
+            // ConfigProperty_ZombieBMMove
+            // 
+            this.ConfigProperty_ZombieBMMove.FormattingEnabled = true;
+            this.ConfigProperty_ZombieBMMove.Items.AddRange(new object[] {
+            "Walk",
+            "Jog",
+            "Run",
+            "Sprint",
+            "Nightmare"});
+            this.ConfigProperty_ZombieBMMove.Location = new System.Drawing.Point(9, 20);
+            this.ConfigProperty_ZombieBMMove.Name = "ConfigProperty_ZombieBMMove";
+            this.ConfigProperty_ZombieBMMove.Size = new System.Drawing.Size(162, 21);
+            this.ConfigProperty_ZombieBMMove.TabIndex = 0;
+            this.ConfigProperty_ZombieBMMove.Text = "Sprint";
+            this.toolTip.SetToolTip(this.ConfigProperty_ZombieBMMove, "Speed of a zombie on the blood moon.");
+            // 
+            // ZombieNightSpeed_GroupBox
+            // 
+            this.ZombieNightSpeed_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ZombieNightSpeed_GroupBox.Controls.Add(this.ConfigProperty_ZombieMoveNight);
+            this.ZombieNightSpeed_GroupBox.Location = new System.Drawing.Point(708, 272);
+            this.ZombieNightSpeed_GroupBox.Name = "ZombieNightSpeed_GroupBox";
+            this.ZombieNightSpeed_GroupBox.Size = new System.Drawing.Size(179, 49);
+            this.ZombieNightSpeed_GroupBox.TabIndex = 44;
+            this.ZombieNightSpeed_GroupBox.TabStop = false;
+            this.ZombieNightSpeed_GroupBox.Text = "Zombie Night Speed";
+            // 
+            // ConfigProperty_ZombieMoveNight
+            // 
+            this.ConfigProperty_ZombieMoveNight.FormattingEnabled = true;
+            this.ConfigProperty_ZombieMoveNight.Items.AddRange(new object[] {
+            "Walk",
+            "Jog",
+            "Run",
+            "Sprint",
+            "Nightmare"});
+            this.ConfigProperty_ZombieMoveNight.Location = new System.Drawing.Point(9, 20);
+            this.ConfigProperty_ZombieMoveNight.Name = "ConfigProperty_ZombieMoveNight";
+            this.ConfigProperty_ZombieMoveNight.Size = new System.Drawing.Size(162, 21);
+            this.ConfigProperty_ZombieMoveNight.TabIndex = 0;
+            this.ConfigProperty_ZombieMoveNight.Text = "Sprint";
+            this.toolTip.SetToolTip(this.ConfigProperty_ZombieMoveNight, "Speed of a regular zombie at night.");
+            // 
+            // ZombieFeralSpeed_GroupBox
+            // 
+            this.ZombieFeralSpeed_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ZombieFeralSpeed_GroupBox.Controls.Add(this.ConfigProperty_ZombieFeralMove);
+            this.ZombieFeralSpeed_GroupBox.Location = new System.Drawing.Point(708, 326);
+            this.ZombieFeralSpeed_GroupBox.Name = "ZombieFeralSpeed_GroupBox";
+            this.ZombieFeralSpeed_GroupBox.Size = new System.Drawing.Size(179, 49);
+            this.ZombieFeralSpeed_GroupBox.TabIndex = 45;
+            this.ZombieFeralSpeed_GroupBox.TabStop = false;
+            this.ZombieFeralSpeed_GroupBox.Text = "Zombie Feral Speed";
+            // 
+            // ConfigProperty_ZombieFeralMove
+            // 
+            this.ConfigProperty_ZombieFeralMove.FormattingEnabled = true;
+            this.ConfigProperty_ZombieFeralMove.Items.AddRange(new object[] {
+            "Walk",
+            "Job",
+            "Run",
+            "Sprint",
+            "Nightmare"});
+            this.ConfigProperty_ZombieFeralMove.Location = new System.Drawing.Point(9, 20);
+            this.ConfigProperty_ZombieFeralMove.Name = "ConfigProperty_ZombieFeralMove";
+            this.ConfigProperty_ZombieFeralMove.Size = new System.Drawing.Size(162, 21);
+            this.ConfigProperty_ZombieFeralMove.TabIndex = 0;
+            this.ConfigProperty_ZombieFeralMove.Text = "Sprint";
+            this.toolTip.SetToolTip(this.ConfigProperty_ZombieFeralMove, "Speed of a feral zombie.");
+            // 
+            // ServerMaxAllowedViewDistance_GroupBox
+            // 
+            this.ServerMaxAllowedViewDistance_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ServerMaxAllowedViewDistance_GroupBox.Controls.Add(this.ConfigProperty_ServerMaxAllowedViewDistance);
+            this.ServerMaxAllowedViewDistance_GroupBox.Location = new System.Drawing.Point(524, 217);
+            this.ServerMaxAllowedViewDistance_GroupBox.Name = "ServerMaxAllowedViewDistance_GroupBox";
+            this.ServerMaxAllowedViewDistance_GroupBox.Size = new System.Drawing.Size(179, 65);
+            this.ServerMaxAllowedViewDistance_GroupBox.TabIndex = 32;
+            this.ServerMaxAllowedViewDistance_GroupBox.TabStop = false;
+            this.ServerMaxAllowedViewDistance_GroupBox.Text = "Server Max Allowed View Distance";
+            // 
+            // ConfigProperty_ServerMaxAllowedViewDistance
+            // 
+            this.ConfigProperty_ServerMaxAllowedViewDistance.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ConfigProperty_ServerMaxAllowedViewDistance.Location = new System.Drawing.Point(6, 13);
+            this.ConfigProperty_ServerMaxAllowedViewDistance.Maximum = 12;
+            this.ConfigProperty_ServerMaxAllowedViewDistance.Minimum = 6;
+            this.ConfigProperty_ServerMaxAllowedViewDistance.Name = "ConfigProperty_ServerMaxAllowedViewDistance";
+            this.ConfigProperty_ServerMaxAllowedViewDistance.Size = new System.Drawing.Size(167, 45);
+            this.ConfigProperty_ServerMaxAllowedViewDistance.TabIndex = 9;
+            this.toolTip.SetToolTip(this.ConfigProperty_ServerMaxAllowedViewDistance, "Max viewdistance a client may request (6 - 12). \r\n\r\nHigh impact on memory usage a" +
+        "nd performance.");
+            this.ConfigProperty_ServerMaxAllowedViewDistance.Value = 12;
+            // 
+            // DropOnQuit_GroupBox
+            // 
+            this.DropOnQuit_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.DropOnQuit_GroupBox.Controls.Add(this.ConfigProperty_DropOnQuit);
+            this.DropOnQuit_GroupBox.Location = new System.Drawing.Point(361, 382);
+            this.DropOnQuit_GroupBox.Name = "DropOnQuit_GroupBox";
+            this.DropOnQuit_GroupBox.Size = new System.Drawing.Size(157, 48);
+            this.DropOnQuit_GroupBox.TabIndex = 53;
+            this.DropOnQuit_GroupBox.TabStop = false;
+            this.DropOnQuit_GroupBox.Text = "Drop On Death";
+            // 
+            // ConfigProperty_DropOnQuit
+            // 
+            this.ConfigProperty_DropOnQuit.FormattingEnabled = true;
+            this.ConfigProperty_DropOnQuit.Items.AddRange(new object[] {
+            "Nothing",
+            "Everything",
+            "Toolbelt Only",
+            "Backpack Only"});
+            this.ConfigProperty_DropOnQuit.Location = new System.Drawing.Point(9, 20);
+            this.ConfigProperty_DropOnQuit.Name = "ConfigProperty_DropOnQuit";
+            this.ConfigProperty_DropOnQuit.Size = new System.Drawing.Size(141, 21);
+            this.ConfigProperty_DropOnQuit.TabIndex = 0;
+            this.ConfigProperty_DropOnQuit.Text = "Nothing";
+            this.toolTip.SetToolTip(this.ConfigProperty_DropOnQuit, "What will get dropped on quit.");
+            // 
             // XPMultiplier_GroupBox
             // 
             this.XPMultiplier_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -2691,6 +2877,48 @@
             this.Player_Killing_Mode_GroupBox.TabStop = false;
             this.Player_Killing_Mode_GroupBox.Text = "Player Killing Mode";
             // 
+            // ConfigProperty_PlayerKillingMode
+            // 
+            this.ConfigProperty_PlayerKillingMode.FormattingEnabled = true;
+            this.ConfigProperty_PlayerKillingMode.Items.AddRange(new object[] {
+            "No Killing",
+            "Kill Allies Only",
+            "Kill Strangers Only",
+            "Kill Everyone"});
+            this.ConfigProperty_PlayerKillingMode.Location = new System.Drawing.Point(9, 19);
+            this.ConfigProperty_PlayerKillingMode.Name = "ConfigProperty_PlayerKillingMode";
+            this.ConfigProperty_PlayerKillingMode.Size = new System.Drawing.Size(162, 21);
+            this.ConfigProperty_PlayerKillingMode.TabIndex = 0;
+            this.ConfigProperty_PlayerKillingMode.Text = "Kill Everyone";
+            this.toolTip.SetToolTip(this.ConfigProperty_PlayerKillingMode, "Player Killing Settings");
+            // 
+            // DropOnDeath_GroupBox
+            // 
+            this.DropOnDeath_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.DropOnDeath_GroupBox.Controls.Add(this.ConfigProperty_DropOnDeath);
+            this.DropOnDeath_GroupBox.Location = new System.Drawing.Point(362, 436);
+            this.DropOnDeath_GroupBox.Name = "DropOnDeath_GroupBox";
+            this.DropOnDeath_GroupBox.Size = new System.Drawing.Size(156, 48);
+            this.DropOnDeath_GroupBox.TabIndex = 32;
+            this.DropOnDeath_GroupBox.TabStop = false;
+            this.DropOnDeath_GroupBox.Text = "Drop On Death";
+            // 
+            // ConfigProperty_DropOnDeath
+            // 
+            this.ConfigProperty_DropOnDeath.FormattingEnabled = true;
+            this.ConfigProperty_DropOnDeath.Items.AddRange(new object[] {
+            "Nothing",
+            "Everything",
+            "Toolbelt Only",
+            "Backpack Only",
+            "Delete All"});
+            this.ConfigProperty_DropOnDeath.Location = new System.Drawing.Point(9, 20);
+            this.ConfigProperty_DropOnDeath.Name = "ConfigProperty_DropOnDeath";
+            this.ConfigProperty_DropOnDeath.Size = new System.Drawing.Size(140, 21);
+            this.ConfigProperty_DropOnDeath.TabIndex = 0;
+            this.ConfigProperty_DropOnDeath.Text = "Everything";
+            this.toolTip.SetToolTip(this.ConfigProperty_DropOnDeath, "What will be dropped on death.");
+            // 
             // AirDropFrequency_GroupBox
             // 
             this.AirDropFrequency_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -2732,32 +2960,30 @@
             this.Land_Claim_GroupBox.TabStop = false;
             this.Land_Claim_GroupBox.Text = "Land Claims";
             // 
-            // BlockDamageAIBM_GroupBox
+            // LandClaimCount_GroupBox
             // 
-            this.BlockDamageAIBM_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.BlockDamageAIBM_GroupBox.Controls.Add(this.ConfigProperty_BlockDamageAIBM);
-            this.BlockDamageAIBM_GroupBox.Location = new System.Drawing.Point(708, 561);
-            this.BlockDamageAIBM_GroupBox.Name = "BlockDamageAIBM_GroupBox";
-            this.BlockDamageAIBM_GroupBox.Size = new System.Drawing.Size(179, 65);
-            this.BlockDamageAIBM_GroupBox.TabIndex = 53;
-            this.BlockDamageAIBM_GroupBox.TabStop = false;
-            this.BlockDamageAIBM_GroupBox.Text = "AI Block Damage (Blood Moon)";
-            // 
-            // ConfigProperty_BlockDamageAIBM
-            // 
-            this.ConfigProperty_BlockDamageAIBM.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.LandClaimCount_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.ConfigProperty_BlockDamageAIBM.Location = new System.Drawing.Point(6, 17);
-            this.ConfigProperty_BlockDamageAIBM.Maximum = 1000;
-            this.ConfigProperty_BlockDamageAIBM.Minimum = 1;
-            this.ConfigProperty_BlockDamageAIBM.Name = "ConfigProperty_BlockDamageAIBM";
-            this.ConfigProperty_BlockDamageAIBM.Size = new System.Drawing.Size(167, 45);
-            this.ConfigProperty_BlockDamageAIBM.SmallChange = 10;
-            this.ConfigProperty_BlockDamageAIBM.TabIndex = 9;
-            this.ConfigProperty_BlockDamageAIBM.TickFrequency = 10;
-            this.toolTip.SetToolTip(this.ConfigProperty_BlockDamageAIBM, "How much damage do AIs during blood moons to blocks (percentage in whole numbers)" +
-        ".");
-            this.ConfigProperty_BlockDamageAIBM.Value = 100;
+            this.LandClaimCount_GroupBox.Controls.Add(this.ConfigProperty_LandClaimCount);
+            this.LandClaimCount_GroupBox.Location = new System.Drawing.Point(9, 72);
+            this.LandClaimCount_GroupBox.Name = "LandClaimCount_GroupBox";
+            this.LandClaimCount_GroupBox.Size = new System.Drawing.Size(176, 51);
+            this.LandClaimCount_GroupBox.TabIndex = 4;
+            this.LandClaimCount_GroupBox.TabStop = false;
+            this.LandClaimCount_GroupBox.Text = "Land Claim Count";
+            // 
+            // ConfigProperty_LandClaimCount
+            // 
+            this.ConfigProperty_LandClaimCount.Location = new System.Drawing.Point(10, 20);
+            this.ConfigProperty_LandClaimCount.Name = "ConfigProperty_LandClaimCount";
+            this.ConfigProperty_LandClaimCount.Size = new System.Drawing.Size(120, 20);
+            this.ConfigProperty_LandClaimCount.TabIndex = 0;
+            this.toolTip.SetToolTip(this.ConfigProperty_LandClaimCount, "Maximum allowed land claims per player.");
+            this.ConfigProperty_LandClaimCount.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // LandClaimDecayMode_GroupBox
             // 
@@ -2770,6 +2996,21 @@
             this.LandClaimDecayMode_GroupBox.TabIndex = 3;
             this.LandClaimDecayMode_GroupBox.TabStop = false;
             this.LandClaimDecayMode_GroupBox.Text = "Land Claim Decay Mode";
+            // 
+            // ConfigProperty_LandClaimDecayMode
+            // 
+            this.ConfigProperty_LandClaimDecayMode.FormattingEnabled = true;
+            this.ConfigProperty_LandClaimDecayMode.Items.AddRange(new object[] {
+            "Linear",
+            "Exponential",
+            "Full Protection"});
+            this.ConfigProperty_LandClaimDecayMode.Location = new System.Drawing.Point(7, 19);
+            this.ConfigProperty_LandClaimDecayMode.Name = "ConfigProperty_LandClaimDecayMode";
+            this.ConfigProperty_LandClaimDecayMode.Size = new System.Drawing.Size(121, 21);
+            this.ConfigProperty_LandClaimDecayMode.TabIndex = 0;
+            this.ConfigProperty_LandClaimDecayMode.Text = "Linear";
+            this.toolTip.SetToolTip(this.ConfigProperty_LandClaimDecayMode, "Controls how offline players land claims decay. \r\n\r\nAll claims have full protecti" +
+        "on for the first 24hrs.");
             // 
             // LandClaimDurabilityModifier_GroupBox
             // 
@@ -2980,6 +3221,17 @@
             this.Game_Mode_Settings_GroupBox.TabStop = false;
             this.Game_Mode_Settings_GroupBox.Text = "Game Mode Settings";
             // 
+            // ConfigProperty_AirDropMarker
+            // 
+            this.ConfigProperty_AirDropMarker.AutoSize = true;
+            this.ConfigProperty_AirDropMarker.Location = new System.Drawing.Point(6, 86);
+            this.ConfigProperty_AirDropMarker.Name = "ConfigProperty_AirDropMarker";
+            this.ConfigProperty_AirDropMarker.Size = new System.Drawing.Size(135, 17);
+            this.ConfigProperty_AirDropMarker.TabIndex = 20;
+            this.ConfigProperty_AirDropMarker.Text = "Show Air Drop On Map";
+            this.toolTip.SetToolTip(this.ConfigProperty_AirDropMarker, "Sets if a marker is added to map/compass for air drops.");
+            this.ConfigProperty_AirDropMarker.UseVisualStyleBackColor = true;
+            // 
             // ConfigProperty_PersistentPlayerProfiles
             // 
             this.ConfigProperty_PersistentPlayerProfiles.AutoSize = true;
@@ -3016,6 +3268,33 @@
             this.toolTip.SetToolTip(this.ConfigProperty_BuildCreate, "Creative mode for everyone - on / off.\r\n");
             this.ConfigProperty_BuildCreate.UseVisualStyleBackColor = true;
             this.ConfigProperty_BuildCreate.CheckedChanged += new System.EventHandler(this.Cheatmode_CheckedChanged);
+            // 
+            // ZombieDaySpeed_GroupBox
+            // 
+            this.ZombieDaySpeed_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ZombieDaySpeed_GroupBox.Controls.Add(this.ConfigProperty_ZombieMove);
+            this.ZombieDaySpeed_GroupBox.Location = new System.Drawing.Point(708, 217);
+            this.ZombieDaySpeed_GroupBox.Name = "ZombieDaySpeed_GroupBox";
+            this.ZombieDaySpeed_GroupBox.Size = new System.Drawing.Size(179, 49);
+            this.ZombieDaySpeed_GroupBox.TabIndex = 43;
+            this.ZombieDaySpeed_GroupBox.TabStop = false;
+            this.ZombieDaySpeed_GroupBox.Text = "Zombie Day Speed";
+            // 
+            // ConfigProperty_ZombieMove
+            // 
+            this.ConfigProperty_ZombieMove.FormattingEnabled = true;
+            this.ConfigProperty_ZombieMove.Items.AddRange(new object[] {
+            "Walk",
+            "Job",
+            "Run",
+            "Sprint",
+            "Nightmare"});
+            this.ConfigProperty_ZombieMove.Location = new System.Drawing.Point(9, 20);
+            this.ConfigProperty_ZombieMove.Name = "ConfigProperty_ZombieMove";
+            this.ConfigProperty_ZombieMove.Size = new System.Drawing.Size(162, 21);
+            this.ConfigProperty_ZombieMove.TabIndex = 0;
+            this.ConfigProperty_ZombieMove.Text = "Walk";
+            this.toolTip.SetToolTip(this.ConfigProperty_ZombieMove, "Speed of a regular zombie.");
             // 
             // DayLightLength_GroupBox
             // 
@@ -3111,17 +3390,6 @@
             this.ConfigProperty_BlockDamagePlayer.Value = 100;
             this.ConfigProperty_BlockDamagePlayer.Scroll += new System.EventHandler(this.Bdm_Scroll);
             // 
-            // DropOnDeath_GroupBox
-            // 
-            this.DropOnDeath_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.DropOnDeath_GroupBox.Controls.Add(this.ConfigProperty_DropOnDeath);
-            this.DropOnDeath_GroupBox.Location = new System.Drawing.Point(362, 436);
-            this.DropOnDeath_GroupBox.Name = "DropOnDeath_GroupBox";
-            this.DropOnDeath_GroupBox.Size = new System.Drawing.Size(156, 48);
-            this.DropOnDeath_GroupBox.TabIndex = 32;
-            this.DropOnDeath_GroupBox.TabStop = false;
-            this.DropOnDeath_GroupBox.Text = "Drop On Death";
-            // 
             // GameDifficulty_GroupBox
             // 
             this.GameDifficulty_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -3168,6 +3436,91 @@
             this.Server_Options_TabPage.Size = new System.Drawing.Size(897, 630);
             this.Server_Options_TabPage.TabIndex = 1;
             this.Server_Options_TabPage.UseVisualStyleBackColor = true;
+            // 
+            // BloodMoon_GroupBox
+            // 
+            this.BloodMoon_GroupBox.Controls.Add(this.BloodMoonWarning_Label);
+            this.BloodMoon_GroupBox.Controls.Add(this.ConfigProperty_BloodMoonWarning);
+            this.BloodMoon_GroupBox.Controls.Add(this.ConfigProperty_BloodMoonRange);
+            this.BloodMoon_GroupBox.Controls.Add(this.BloodMoonRange_Label);
+            this.BloodMoon_GroupBox.Controls.Add(this.BloodMoonFrequency_Label);
+            this.BloodMoon_GroupBox.Controls.Add(this.ConfigProperty_BloodMoonFrequency);
+            this.BloodMoon_GroupBox.Location = new System.Drawing.Point(383, 524);
+            this.BloodMoon_GroupBox.Name = "BloodMoon_GroupBox";
+            this.BloodMoon_GroupBox.Size = new System.Drawing.Size(508, 98);
+            this.BloodMoon_GroupBox.TabIndex = 29;
+            this.BloodMoon_GroupBox.TabStop = false;
+            this.BloodMoon_GroupBox.Text = "Blood Moon Settings";
+            // 
+            // BloodMoonWarning_Label
+            // 
+            this.BloodMoonWarning_Label.AutoSize = true;
+            this.BloodMoonWarning_Label.Location = new System.Drawing.Point(272, 25);
+            this.BloodMoonWarning_Label.Name = "BloodMoonWarning_Label";
+            this.BloodMoonWarning_Label.Size = new System.Drawing.Size(107, 13);
+            this.BloodMoonWarning_Label.TabIndex = 16;
+            this.BloodMoonWarning_Label.Text = "Blood Moon Warning";
+            // 
+            // ConfigProperty_BloodMoonWarning
+            // 
+            this.ConfigProperty_BloodMoonWarning.Location = new System.Drawing.Point(382, 21);
+            this.ConfigProperty_BloodMoonWarning.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.ConfigProperty_BloodMoonWarning.Name = "ConfigProperty_BloodMoonWarning";
+            this.ConfigProperty_BloodMoonWarning.Size = new System.Drawing.Size(120, 20);
+            this.ConfigProperty_BloodMoonWarning.TabIndex = 15;
+            this.toolTip.SetToolTip(this.ConfigProperty_BloodMoonWarning, "The Hour number that the red day number begins on a blood moon day. Setting this " +
+        "to -1 makes the red never show.");
+            // 
+            // ConfigProperty_BloodMoonRange
+            // 
+            this.ConfigProperty_BloodMoonRange.Location = new System.Drawing.Point(122, 53);
+            this.ConfigProperty_BloodMoonRange.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.ConfigProperty_BloodMoonRange.Name = "ConfigProperty_BloodMoonRange";
+            this.ConfigProperty_BloodMoonRange.Size = new System.Drawing.Size(120, 20);
+            this.ConfigProperty_BloodMoonRange.TabIndex = 14;
+            this.toolTip.SetToolTip(this.ConfigProperty_BloodMoonRange, "How many days can the actual blood moon day randomly deviate from the above setti" +
+        "ng. Setting this to 0 makes blood moons happen exactly each Nth day as specified" +
+        " in BloodMoonFrequency.");
+            // 
+            // BloodMoonRange_Label
+            // 
+            this.BloodMoonRange_Label.AutoSize = true;
+            this.BloodMoonRange_Label.Location = new System.Drawing.Point(6, 57);
+            this.BloodMoonRange_Label.Name = "BloodMoonRange_Label";
+            this.BloodMoonRange_Label.Size = new System.Drawing.Size(112, 13);
+            this.BloodMoonRange_Label.TabIndex = 13;
+            this.BloodMoonRange_Label.Text = "Blood Moon Deviation";
+            // 
+            // BloodMoonFrequency_Label
+            // 
+            this.BloodMoonFrequency_Label.AutoSize = true;
+            this.BloodMoonFrequency_Label.Location = new System.Drawing.Point(7, 23);
+            this.BloodMoonFrequency_Label.Name = "BloodMoonFrequency_Label";
+            this.BloodMoonFrequency_Label.Size = new System.Drawing.Size(117, 13);
+            this.BloodMoonFrequency_Label.TabIndex = 12;
+            this.BloodMoonFrequency_Label.Text = "Blood Moon Frequency";
+            // 
+            // ConfigProperty_BloodMoonFrequency
+            // 
+            this.ConfigProperty_BloodMoonFrequency.Location = new System.Drawing.Point(128, 19);
+            this.ConfigProperty_BloodMoonFrequency.Maximum = new decimal(new int[] {
+            99999,
+            0,
+            0,
+            0});
+            this.ConfigProperty_BloodMoonFrequency.Name = "ConfigProperty_BloodMoonFrequency";
+            this.ConfigProperty_BloodMoonFrequency.Size = new System.Drawing.Size(120, 20);
+            this.ConfigProperty_BloodMoonFrequency.TabIndex = 11;
+            this.toolTip.SetToolTip(this.ConfigProperty_BloodMoonFrequency, "What frequency (in days) should a blood moon take place. Set to \"0\" for no blood " +
+        "moons.");
             // 
             // Server_Login_Confirmation_Text_GroupBox
             // 
@@ -3527,6 +3880,69 @@
             this.autobots.TabIndex = 38;
             this.autobots.TabStop = false;
             this.autobots.Text = "Spawn";
+            // 
+            // Player_Safe_Zone_Hours_Label
+            // 
+            this.Player_Safe_Zone_Hours_Label.AutoSize = true;
+            this.Player_Safe_Zone_Hours_Label.Location = new System.Drawing.Point(296, 49);
+            this.Player_Safe_Zone_Hours_Label.Name = "Player_Safe_Zone_Hours_Label";
+            this.Player_Safe_Zone_Hours_Label.Size = new System.Drawing.Size(120, 13);
+            this.Player_Safe_Zone_Hours_Label.TabIndex = 21;
+            this.Player_Safe_Zone_Hours_Label.Text = "Player Safe Zone Hours";
+            // 
+            // Player_Safe_Zone_Level_Label
+            // 
+            this.Player_Safe_Zone_Level_Label.AutoSize = true;
+            this.Player_Safe_Zone_Level_Label.Location = new System.Drawing.Point(296, 23);
+            this.Player_Safe_Zone_Level_Label.Name = "Player_Safe_Zone_Level_Label";
+            this.Player_Safe_Zone_Level_Label.Size = new System.Drawing.Size(118, 13);
+            this.Player_Safe_Zone_Level_Label.TabIndex = 20;
+            this.Player_Safe_Zone_Level_Label.Text = "Player Safe Zone Level";
+            // 
+            // ConfigProperty_PlayerSafeZoneHours
+            // 
+            this.ConfigProperty_PlayerSafeZoneHours.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ConfigProperty_PlayerSafeZoneHours.Location = new System.Drawing.Point(423, 46);
+            this.ConfigProperty_PlayerSafeZoneHours.Name = "ConfigProperty_PlayerSafeZoneHours";
+            this.ConfigProperty_PlayerSafeZoneHours.Size = new System.Drawing.Size(54, 20);
+            this.ConfigProperty_PlayerSafeZoneHours.TabIndex = 19;
+            this.ConfigProperty_PlayerSafeZoneHours.Text = "5";
+            this.toolTip.SetToolTip(this.ConfigProperty_PlayerSafeZoneHours, "Hours in world time this safe zone exists.");
+            // 
+            // ConfigProperty_PlayerSafeZoneLevel
+            // 
+            this.ConfigProperty_PlayerSafeZoneLevel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ConfigProperty_PlayerSafeZoneLevel.Location = new System.Drawing.Point(423, 20);
+            this.ConfigProperty_PlayerSafeZoneLevel.Name = "ConfigProperty_PlayerSafeZoneLevel";
+            this.ConfigProperty_PlayerSafeZoneLevel.Size = new System.Drawing.Size(54, 20);
+            this.ConfigProperty_PlayerSafeZoneLevel.TabIndex = 18;
+            this.ConfigProperty_PlayerSafeZoneLevel.Text = "5";
+            this.toolTip.SetToolTip(this.ConfigProperty_PlayerSafeZoneLevel, "If a player is less or equal this level he will create a safe zone (no enemies) w" +
+        "hen spawned.");
+            // 
+            // BedrollExpiryTime_GroupBox
+            // 
+            this.BedrollExpiryTime_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.BedrollExpiryTime_GroupBox.Controls.Add(this.ConfigProperty_BedrollExpiryTime);
+            this.BedrollExpiryTime_GroupBox.Location = new System.Drawing.Point(6, 77);
+            this.BedrollExpiryTime_GroupBox.Name = "BedrollExpiryTime_GroupBox";
+            this.BedrollExpiryTime_GroupBox.Size = new System.Drawing.Size(496, 63);
+            this.BedrollExpiryTime_GroupBox.TabIndex = 17;
+            this.BedrollExpiryTime_GroupBox.TabStop = false;
+            this.BedrollExpiryTime_GroupBox.Text = "Bedroll Offline Expiry ";
+            // 
+            // ConfigProperty_BedrollExpiryTime
+            // 
+            this.ConfigProperty_BedrollExpiryTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.ConfigProperty_BedrollExpiryTime.Location = new System.Drawing.Point(6, 13);
+            this.ConfigProperty_BedrollExpiryTime.Maximum = 150;
+            this.ConfigProperty_BedrollExpiryTime.Name = "ConfigProperty_BedrollExpiryTime";
+            this.ConfigProperty_BedrollExpiryTime.Size = new System.Drawing.Size(484, 45);
+            this.ConfigProperty_BedrollExpiryTime.TabIndex = 8;
+            this.toolTip.SetToolTip(this.ConfigProperty_BedrollExpiryTime, "Number of days a bedroll stays active after owner was last online.");
+            this.ConfigProperty_BedrollExpiryTime.Value = 15;
             // 
             // ConfigProperty_EnemySpawnMode
             // 
@@ -5639,422 +6055,6 @@
             this.GitHub_Repo_Button.UseVisualStyleBackColor = true;
             this.GitHub_Repo_Button.Click += new System.EventHandler(this.GitHub_Repo_Button_Click);
             // 
-            // ConfigProperty_DropOnDeath
-            // 
-            this.ConfigProperty_DropOnDeath.FormattingEnabled = true;
-            this.ConfigProperty_DropOnDeath.Items.AddRange(new object[] {
-            "Nothing",
-            "Everything",
-            "Toolbelt Only",
-            "Backpack Only",
-            "Delete All"});
-            this.ConfigProperty_DropOnDeath.Location = new System.Drawing.Point(9, 20);
-            this.ConfigProperty_DropOnDeath.Name = "ConfigProperty_DropOnDeath";
-            this.ConfigProperty_DropOnDeath.Size = new System.Drawing.Size(140, 21);
-            this.ConfigProperty_DropOnDeath.TabIndex = 0;
-            this.ConfigProperty_DropOnDeath.Text = "Everything";
-            this.toolTip.SetToolTip(this.ConfigProperty_DropOnDeath, "What will be dropped on death.");
-            // 
-            // DropOnQuit_GroupBox
-            // 
-            this.DropOnQuit_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.DropOnQuit_GroupBox.Controls.Add(this.ConfigProperty_DropOnQuit);
-            this.DropOnQuit_GroupBox.Location = new System.Drawing.Point(361, 382);
-            this.DropOnQuit_GroupBox.Name = "DropOnQuit_GroupBox";
-            this.DropOnQuit_GroupBox.Size = new System.Drawing.Size(157, 48);
-            this.DropOnQuit_GroupBox.TabIndex = 53;
-            this.DropOnQuit_GroupBox.TabStop = false;
-            this.DropOnQuit_GroupBox.Text = "Drop On Death";
-            // 
-            // ConfigProperty_DropOnQuit
-            // 
-            this.ConfigProperty_DropOnQuit.FormattingEnabled = true;
-            this.ConfigProperty_DropOnQuit.Items.AddRange(new object[] {
-            "Nothing",
-            "Everything",
-            "Toolbelt Only",
-            "Backpack Only"});
-            this.ConfigProperty_DropOnQuit.Location = new System.Drawing.Point(9, 20);
-            this.ConfigProperty_DropOnQuit.Name = "ConfigProperty_DropOnQuit";
-            this.ConfigProperty_DropOnQuit.Size = new System.Drawing.Size(141, 21);
-            this.ConfigProperty_DropOnQuit.TabIndex = 0;
-            this.ConfigProperty_DropOnQuit.Text = "Nothing";
-            this.toolTip.SetToolTip(this.ConfigProperty_DropOnQuit, "What will get dropped on quit.");
-            // 
-            // BedrollExpiryTime_GroupBox
-            // 
-            this.BedrollExpiryTime_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.BedrollExpiryTime_GroupBox.Controls.Add(this.ConfigProperty_BedrollExpiryTime);
-            this.BedrollExpiryTime_GroupBox.Location = new System.Drawing.Point(6, 77);
-            this.BedrollExpiryTime_GroupBox.Name = "BedrollExpiryTime_GroupBox";
-            this.BedrollExpiryTime_GroupBox.Size = new System.Drawing.Size(496, 63);
-            this.BedrollExpiryTime_GroupBox.TabIndex = 17;
-            this.BedrollExpiryTime_GroupBox.TabStop = false;
-            this.BedrollExpiryTime_GroupBox.Text = "Bedroll Offline Expiry ";
-            // 
-            // ConfigProperty_BedrollExpiryTime
-            // 
-            this.ConfigProperty_BedrollExpiryTime.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ConfigProperty_BedrollExpiryTime.Location = new System.Drawing.Point(6, 13);
-            this.ConfigProperty_BedrollExpiryTime.Maximum = 150;
-            this.ConfigProperty_BedrollExpiryTime.Name = "ConfigProperty_BedrollExpiryTime";
-            this.ConfigProperty_BedrollExpiryTime.Size = new System.Drawing.Size(484, 45);
-            this.ConfigProperty_BedrollExpiryTime.TabIndex = 8;
-            this.toolTip.SetToolTip(this.ConfigProperty_BedrollExpiryTime, "Number of days a bedroll stays active after owner was last online.");
-            this.ConfigProperty_BedrollExpiryTime.Value = 15;
-            // 
-            // ServerMaxAllowedViewDistance_GroupBox
-            // 
-            this.ServerMaxAllowedViewDistance_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ServerMaxAllowedViewDistance_GroupBox.Controls.Add(this.ConfigProperty_ServerMaxAllowedViewDistance);
-            this.ServerMaxAllowedViewDistance_GroupBox.Location = new System.Drawing.Point(524, 217);
-            this.ServerMaxAllowedViewDistance_GroupBox.Name = "ServerMaxAllowedViewDistance_GroupBox";
-            this.ServerMaxAllowedViewDistance_GroupBox.Size = new System.Drawing.Size(179, 65);
-            this.ServerMaxAllowedViewDistance_GroupBox.TabIndex = 32;
-            this.ServerMaxAllowedViewDistance_GroupBox.TabStop = false;
-            this.ServerMaxAllowedViewDistance_GroupBox.Text = "Server Max Allowed View Distance";
-            // 
-            // ConfigProperty_ServerMaxAllowedViewDistance
-            // 
-            this.ConfigProperty_ServerMaxAllowedViewDistance.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ConfigProperty_ServerMaxAllowedViewDistance.Location = new System.Drawing.Point(6, 13);
-            this.ConfigProperty_ServerMaxAllowedViewDistance.Maximum = 12;
-            this.ConfigProperty_ServerMaxAllowedViewDistance.Minimum = 6;
-            this.ConfigProperty_ServerMaxAllowedViewDistance.Name = "ConfigProperty_ServerMaxAllowedViewDistance";
-            this.ConfigProperty_ServerMaxAllowedViewDistance.Size = new System.Drawing.Size(167, 45);
-            this.ConfigProperty_ServerMaxAllowedViewDistance.TabIndex = 9;
-            this.toolTip.SetToolTip(this.ConfigProperty_ServerMaxAllowedViewDistance, "Max viewdistance a client may request (6 - 12). \r\n\r\nHigh impact on memory usage a" +
-        "nd performance.");
-            this.ConfigProperty_ServerMaxAllowedViewDistance.Value = 12;
-            // 
-            // ZombieDaySpeed_GroupBox
-            // 
-            this.ZombieDaySpeed_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ZombieDaySpeed_GroupBox.Controls.Add(this.ConfigProperty_ZombieMove);
-            this.ZombieDaySpeed_GroupBox.Location = new System.Drawing.Point(708, 217);
-            this.ZombieDaySpeed_GroupBox.Name = "ZombieDaySpeed_GroupBox";
-            this.ZombieDaySpeed_GroupBox.Size = new System.Drawing.Size(179, 49);
-            this.ZombieDaySpeed_GroupBox.TabIndex = 43;
-            this.ZombieDaySpeed_GroupBox.TabStop = false;
-            this.ZombieDaySpeed_GroupBox.Text = "Zombie Day Speed";
-            // 
-            // ConfigProperty_ZombieMove
-            // 
-            this.ConfigProperty_ZombieMove.FormattingEnabled = true;
-            this.ConfigProperty_ZombieMove.Items.AddRange(new object[] {
-            "Walk",
-            "Job",
-            "Run",
-            "Sprint",
-            "Nightmare"});
-            this.ConfigProperty_ZombieMove.Location = new System.Drawing.Point(9, 20);
-            this.ConfigProperty_ZombieMove.Name = "ConfigProperty_ZombieMove";
-            this.ConfigProperty_ZombieMove.Size = new System.Drawing.Size(162, 21);
-            this.ConfigProperty_ZombieMove.TabIndex = 0;
-            this.ConfigProperty_ZombieMove.Text = "Walk";
-            this.toolTip.SetToolTip(this.ConfigProperty_ZombieMove, "Speed of a regular zombie.");
-            // 
-            // ZombieNightSpeed_GroupBox
-            // 
-            this.ZombieNightSpeed_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ZombieNightSpeed_GroupBox.Controls.Add(this.ConfigProperty_ZombieMoveNight);
-            this.ZombieNightSpeed_GroupBox.Location = new System.Drawing.Point(708, 272);
-            this.ZombieNightSpeed_GroupBox.Name = "ZombieNightSpeed_GroupBox";
-            this.ZombieNightSpeed_GroupBox.Size = new System.Drawing.Size(179, 49);
-            this.ZombieNightSpeed_GroupBox.TabIndex = 44;
-            this.ZombieNightSpeed_GroupBox.TabStop = false;
-            this.ZombieNightSpeed_GroupBox.Text = "Zombie Night Speed";
-            // 
-            // ConfigProperty_ZombieMoveNight
-            // 
-            this.ConfigProperty_ZombieMoveNight.FormattingEnabled = true;
-            this.ConfigProperty_ZombieMoveNight.Items.AddRange(new object[] {
-            "Walk",
-            "Jog",
-            "Run",
-            "Sprint",
-            "Nightmare"});
-            this.ConfigProperty_ZombieMoveNight.Location = new System.Drawing.Point(9, 20);
-            this.ConfigProperty_ZombieMoveNight.Name = "ConfigProperty_ZombieMoveNight";
-            this.ConfigProperty_ZombieMoveNight.Size = new System.Drawing.Size(162, 21);
-            this.ConfigProperty_ZombieMoveNight.TabIndex = 0;
-            this.ConfigProperty_ZombieMoveNight.Text = "Sprint";
-            this.toolTip.SetToolTip(this.ConfigProperty_ZombieMoveNight, "Speed of a regular zombie at night.");
-            // 
-            // ZombieBloodMoonSpeed_GroupBox
-            // 
-            this.ZombieBloodMoonSpeed_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ZombieBloodMoonSpeed_GroupBox.Controls.Add(this.ConfigProperty_ZombieBMMove);
-            this.ZombieBloodMoonSpeed_GroupBox.Location = new System.Drawing.Point(708, 381);
-            this.ZombieBloodMoonSpeed_GroupBox.Name = "ZombieBloodMoonSpeed_GroupBox";
-            this.ZombieBloodMoonSpeed_GroupBox.Size = new System.Drawing.Size(179, 49);
-            this.ZombieBloodMoonSpeed_GroupBox.TabIndex = 46;
-            this.ZombieBloodMoonSpeed_GroupBox.TabStop = false;
-            this.ZombieBloodMoonSpeed_GroupBox.Text = "Zombie Blood Moon Speed";
-            // 
-            // ConfigProperty_ZombieBMMove
-            // 
-            this.ConfigProperty_ZombieBMMove.FormattingEnabled = true;
-            this.ConfigProperty_ZombieBMMove.Items.AddRange(new object[] {
-            "Walk",
-            "Jog",
-            "Run",
-            "Sprint",
-            "Nightmare"});
-            this.ConfigProperty_ZombieBMMove.Location = new System.Drawing.Point(9, 20);
-            this.ConfigProperty_ZombieBMMove.Name = "ConfigProperty_ZombieBMMove";
-            this.ConfigProperty_ZombieBMMove.Size = new System.Drawing.Size(162, 21);
-            this.ConfigProperty_ZombieBMMove.TabIndex = 0;
-            this.ConfigProperty_ZombieBMMove.Text = "Sprint";
-            this.toolTip.SetToolTip(this.ConfigProperty_ZombieBMMove, "Speed of a zombie on the blood moon.");
-            // 
-            // ZombieFeralSpeed_GroupBox
-            // 
-            this.ZombieFeralSpeed_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ZombieFeralSpeed_GroupBox.Controls.Add(this.ConfigProperty_ZombieFeralMove);
-            this.ZombieFeralSpeed_GroupBox.Location = new System.Drawing.Point(708, 326);
-            this.ZombieFeralSpeed_GroupBox.Name = "ZombieFeralSpeed_GroupBox";
-            this.ZombieFeralSpeed_GroupBox.Size = new System.Drawing.Size(179, 49);
-            this.ZombieFeralSpeed_GroupBox.TabIndex = 45;
-            this.ZombieFeralSpeed_GroupBox.TabStop = false;
-            this.ZombieFeralSpeed_GroupBox.Text = "Zombie Feral Speed";
-            // 
-            // ConfigProperty_ZombieFeralMove
-            // 
-            this.ConfigProperty_ZombieFeralMove.FormattingEnabled = true;
-            this.ConfigProperty_ZombieFeralMove.Items.AddRange(new object[] {
-            "Walk",
-            "Job",
-            "Run",
-            "Sprint",
-            "Nightmare"});
-            this.ConfigProperty_ZombieFeralMove.Location = new System.Drawing.Point(9, 20);
-            this.ConfigProperty_ZombieFeralMove.Name = "ConfigProperty_ZombieFeralMove";
-            this.ConfigProperty_ZombieFeralMove.Size = new System.Drawing.Size(162, 21);
-            this.ConfigProperty_ZombieFeralMove.TabIndex = 0;
-            this.ConfigProperty_ZombieFeralMove.Text = "Sprint";
-            this.toolTip.SetToolTip(this.ConfigProperty_ZombieFeralMove, "Speed of a feral zombie.");
-            // 
-            // BloodMoon_GroupBox
-            // 
-            this.BloodMoon_GroupBox.Controls.Add(this.BloodMoonWarning_Label);
-            this.BloodMoon_GroupBox.Controls.Add(this.ConfigProperty_BloodMoonWarning);
-            this.BloodMoon_GroupBox.Controls.Add(this.ConfigProperty_BloodMoonRange);
-            this.BloodMoon_GroupBox.Controls.Add(this.BloodMoonRange_Label);
-            this.BloodMoon_GroupBox.Controls.Add(this.BloodMoonFrequency_Label);
-            this.BloodMoon_GroupBox.Controls.Add(this.ConfigProperty_BloodMoonFrequency);
-            this.BloodMoon_GroupBox.Location = new System.Drawing.Point(383, 524);
-            this.BloodMoon_GroupBox.Name = "BloodMoon_GroupBox";
-            this.BloodMoon_GroupBox.Size = new System.Drawing.Size(508, 98);
-            this.BloodMoon_GroupBox.TabIndex = 29;
-            this.BloodMoon_GroupBox.TabStop = false;
-            this.BloodMoon_GroupBox.Text = "Blood Moon Settings";
-            // 
-            // ConfigProperty_BloodMoonFrequency
-            // 
-            this.ConfigProperty_BloodMoonFrequency.Location = new System.Drawing.Point(128, 19);
-            this.ConfigProperty_BloodMoonFrequency.Maximum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            this.ConfigProperty_BloodMoonFrequency.Name = "ConfigProperty_BloodMoonFrequency";
-            this.ConfigProperty_BloodMoonFrequency.Size = new System.Drawing.Size(120, 20);
-            this.ConfigProperty_BloodMoonFrequency.TabIndex = 11;
-            this.toolTip.SetToolTip(this.ConfigProperty_BloodMoonFrequency, "What frequency (in days) should a blood moon take place. Set to \"0\" for no blood " +
-        "moons.");
-            // 
-            // BloodMoonFrequency_Label
-            // 
-            this.BloodMoonFrequency_Label.AutoSize = true;
-            this.BloodMoonFrequency_Label.Location = new System.Drawing.Point(7, 23);
-            this.BloodMoonFrequency_Label.Name = "BloodMoonFrequency_Label";
-            this.BloodMoonFrequency_Label.Size = new System.Drawing.Size(117, 13);
-            this.BloodMoonFrequency_Label.TabIndex = 12;
-            this.BloodMoonFrequency_Label.Text = "Blood Moon Frequency";
-            // 
-            // BloodMoonRange_Label
-            // 
-            this.BloodMoonRange_Label.AutoSize = true;
-            this.BloodMoonRange_Label.Location = new System.Drawing.Point(6, 57);
-            this.BloodMoonRange_Label.Name = "BloodMoonRange_Label";
-            this.BloodMoonRange_Label.Size = new System.Drawing.Size(112, 13);
-            this.BloodMoonRange_Label.TabIndex = 13;
-            this.BloodMoonRange_Label.Text = "Blood Moon Deviation";
-            // 
-            // ConfigProperty_BloodMoonRange
-            // 
-            this.ConfigProperty_BloodMoonRange.Location = new System.Drawing.Point(122, 53);
-            this.ConfigProperty_BloodMoonRange.Maximum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            this.ConfigProperty_BloodMoonRange.Name = "ConfigProperty_BloodMoonRange";
-            this.ConfigProperty_BloodMoonRange.Size = new System.Drawing.Size(120, 20);
-            this.ConfigProperty_BloodMoonRange.TabIndex = 14;
-            this.toolTip.SetToolTip(this.ConfigProperty_BloodMoonRange, "How many days can the actual blood moon day randomly deviate from the above setti" +
-        "ng. Setting this to 0 makes blood moons happen exactly each Nth day as specified" +
-        " in BloodMoonFrequency.");
-            // 
-            // BloodMoonWarning_Label
-            // 
-            this.BloodMoonWarning_Label.AutoSize = true;
-            this.BloodMoonWarning_Label.Location = new System.Drawing.Point(272, 25);
-            this.BloodMoonWarning_Label.Name = "BloodMoonWarning_Label";
-            this.BloodMoonWarning_Label.Size = new System.Drawing.Size(107, 13);
-            this.BloodMoonWarning_Label.TabIndex = 16;
-            this.BloodMoonWarning_Label.Text = "Blood Moon Warning";
-            // 
-            // ConfigProperty_BloodMoonWarning
-            // 
-            this.ConfigProperty_BloodMoonWarning.Location = new System.Drawing.Point(382, 21);
-            this.ConfigProperty_BloodMoonWarning.Maximum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            this.ConfigProperty_BloodMoonWarning.Name = "ConfigProperty_BloodMoonWarning";
-            this.ConfigProperty_BloodMoonWarning.Size = new System.Drawing.Size(120, 20);
-            this.ConfigProperty_BloodMoonWarning.TabIndex = 15;
-            this.toolTip.SetToolTip(this.ConfigProperty_BloodMoonWarning, "The Hour number that the red day number begins on a blood moon day. Setting this " +
-        "to -1 makes the red never show.");
-            // 
-            // ConfigProperty_AirDropMarker
-            // 
-            this.ConfigProperty_AirDropMarker.AutoSize = true;
-            this.ConfigProperty_AirDropMarker.Location = new System.Drawing.Point(6, 86);
-            this.ConfigProperty_AirDropMarker.Name = "ConfigProperty_AirDropMarker";
-            this.ConfigProperty_AirDropMarker.Size = new System.Drawing.Size(135, 17);
-            this.ConfigProperty_AirDropMarker.TabIndex = 20;
-            this.ConfigProperty_AirDropMarker.Text = "Show Air Drop On Map";
-            this.toolTip.SetToolTip(this.ConfigProperty_AirDropMarker, "Sets if a marker is added to map/compass for air drops.");
-            this.ConfigProperty_AirDropMarker.UseVisualStyleBackColor = true;
-            // 
-            // ConfigProperty_PlayerKillingMode
-            // 
-            this.ConfigProperty_PlayerKillingMode.FormattingEnabled = true;
-            this.ConfigProperty_PlayerKillingMode.Items.AddRange(new object[] {
-            "No Killing",
-            "Kill Allies Only",
-            "Kill Strangers Only",
-            "Kill Everyone"});
-            this.ConfigProperty_PlayerKillingMode.Location = new System.Drawing.Point(9, 19);
-            this.ConfigProperty_PlayerKillingMode.Name = "ConfigProperty_PlayerKillingMode";
-            this.ConfigProperty_PlayerKillingMode.Size = new System.Drawing.Size(162, 21);
-            this.ConfigProperty_PlayerKillingMode.TabIndex = 0;
-            this.ConfigProperty_PlayerKillingMode.Text = "Kill Everyone";
-            this.toolTip.SetToolTip(this.ConfigProperty_PlayerKillingMode, "Player Killing Settings");
-            // 
-            // PartySharedKillRange_GroupBox
-            // 
-            this.PartySharedKillRange_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.PartySharedKillRange_GroupBox.Controls.Add(this.ConfigProperty_PartySharedKillRange);
-            this.PartySharedKillRange_GroupBox.Location = new System.Drawing.Point(708, 487);
-            this.PartySharedKillRange_GroupBox.Name = "PartySharedKillRange_GroupBox";
-            this.PartySharedKillRange_GroupBox.Size = new System.Drawing.Size(179, 68);
-            this.PartySharedKillRange_GroupBox.TabIndex = 51;
-            this.PartySharedKillRange_GroupBox.TabStop = false;
-            this.PartySharedKillRange_GroupBox.Text = "Party Shared XP Distance";
-            // 
-            // ConfigProperty_PartySharedKillRange
-            // 
-            this.ConfigProperty_PartySharedKillRange.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ConfigProperty_PartySharedKillRange.Location = new System.Drawing.Point(6, 19);
-            this.ConfigProperty_PartySharedKillRange.Maximum = 1000;
-            this.ConfigProperty_PartySharedKillRange.Minimum = 1;
-            this.ConfigProperty_PartySharedKillRange.Name = "ConfigProperty_PartySharedKillRange";
-            this.ConfigProperty_PartySharedKillRange.Size = new System.Drawing.Size(167, 45);
-            this.ConfigProperty_PartySharedKillRange.SmallChange = 10;
-            this.ConfigProperty_PartySharedKillRange.TabIndex = 10;
-            this.ConfigProperty_PartySharedKillRange.TickFrequency = 10;
-            this.toolTip.SetToolTip(this.ConfigProperty_PartySharedKillRange, "The distance you must be within to receive party shared kill xp and quest party k" +
-        "ill objective credit.");
-            this.ConfigProperty_PartySharedKillRange.Value = 100;
-            // 
-            // ConfigProperty_LandClaimDecayMode
-            // 
-            this.ConfigProperty_LandClaimDecayMode.FormattingEnabled = true;
-            this.ConfigProperty_LandClaimDecayMode.Items.AddRange(new object[] {
-            "Linear",
-            "Exponential",
-            "Full Protection"});
-            this.ConfigProperty_LandClaimDecayMode.Location = new System.Drawing.Point(7, 19);
-            this.ConfigProperty_LandClaimDecayMode.Name = "ConfigProperty_LandClaimDecayMode";
-            this.ConfigProperty_LandClaimDecayMode.Size = new System.Drawing.Size(121, 21);
-            this.ConfigProperty_LandClaimDecayMode.TabIndex = 0;
-            this.ConfigProperty_LandClaimDecayMode.Text = "Linear";
-            this.toolTip.SetToolTip(this.ConfigProperty_LandClaimDecayMode, "Controls how offline players land claims decay. \r\n\r\nAll claims have full protecti" +
-        "on for the first 24hrs.");
-            // 
-            // LandClaimCount_GroupBox
-            // 
-            this.LandClaimCount_GroupBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.LandClaimCount_GroupBox.Controls.Add(this.ConfigProperty_LandClaimCount);
-            this.LandClaimCount_GroupBox.Location = new System.Drawing.Point(9, 72);
-            this.LandClaimCount_GroupBox.Name = "LandClaimCount_GroupBox";
-            this.LandClaimCount_GroupBox.Size = new System.Drawing.Size(176, 51);
-            this.LandClaimCount_GroupBox.TabIndex = 4;
-            this.LandClaimCount_GroupBox.TabStop = false;
-            this.LandClaimCount_GroupBox.Text = "Land Claim Count";
-            // 
-            // ConfigProperty_LandClaimCount
-            // 
-            this.ConfigProperty_LandClaimCount.Location = new System.Drawing.Point(10, 20);
-            this.ConfigProperty_LandClaimCount.Name = "ConfigProperty_LandClaimCount";
-            this.ConfigProperty_LandClaimCount.Size = new System.Drawing.Size(120, 20);
-            this.ConfigProperty_LandClaimCount.TabIndex = 0;
-            this.toolTip.SetToolTip(this.ConfigProperty_LandClaimCount, "Maximum allowed land claims per player.");
-            this.ConfigProperty_LandClaimCount.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // Player_Safe_Zone_Hours_Label
-            // 
-            this.Player_Safe_Zone_Hours_Label.AutoSize = true;
-            this.Player_Safe_Zone_Hours_Label.Location = new System.Drawing.Point(296, 49);
-            this.Player_Safe_Zone_Hours_Label.Name = "Player_Safe_Zone_Hours_Label";
-            this.Player_Safe_Zone_Hours_Label.Size = new System.Drawing.Size(120, 13);
-            this.Player_Safe_Zone_Hours_Label.TabIndex = 21;
-            this.Player_Safe_Zone_Hours_Label.Text = "Player Safe Zone Hours";
-            // 
-            // Player_Safe_Zone_Level_Label
-            // 
-            this.Player_Safe_Zone_Level_Label.AutoSize = true;
-            this.Player_Safe_Zone_Level_Label.Location = new System.Drawing.Point(296, 23);
-            this.Player_Safe_Zone_Level_Label.Name = "Player_Safe_Zone_Level_Label";
-            this.Player_Safe_Zone_Level_Label.Size = new System.Drawing.Size(118, 13);
-            this.Player_Safe_Zone_Level_Label.TabIndex = 20;
-            this.Player_Safe_Zone_Level_Label.Text = "Player Safe Zone Level";
-            // 
-            // ConfigProperty_PlayerSafeZoneHours
-            // 
-            this.ConfigProperty_PlayerSafeZoneHours.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ConfigProperty_PlayerSafeZoneHours.Location = new System.Drawing.Point(423, 46);
-            this.ConfigProperty_PlayerSafeZoneHours.Name = "ConfigProperty_PlayerSafeZoneHours";
-            this.ConfigProperty_PlayerSafeZoneHours.Size = new System.Drawing.Size(54, 20);
-            this.ConfigProperty_PlayerSafeZoneHours.TabIndex = 19;
-            this.ConfigProperty_PlayerSafeZoneHours.Text = "5";
-            this.toolTip.SetToolTip(this.ConfigProperty_PlayerSafeZoneHours, "Hours in world time this safe zone exists.");
-            // 
-            // ConfigProperty_PlayerSafeZoneLevel
-            // 
-            this.ConfigProperty_PlayerSafeZoneLevel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.ConfigProperty_PlayerSafeZoneLevel.Location = new System.Drawing.Point(423, 20);
-            this.ConfigProperty_PlayerSafeZoneLevel.Name = "ConfigProperty_PlayerSafeZoneLevel";
-            this.ConfigProperty_PlayerSafeZoneLevel.Size = new System.Drawing.Size(54, 20);
-            this.ConfigProperty_PlayerSafeZoneLevel.TabIndex = 18;
-            this.ConfigProperty_PlayerSafeZoneLevel.Text = "5";
-            this.toolTip.SetToolTip(this.ConfigProperty_PlayerSafeZoneLevel, "If a player is less or equal this level he will create a safe zone (no enemies) w" +
-        "hen spawned.");
-            // 
             // Server_Panel_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -6147,6 +6147,19 @@
             this.GameSettings_TabPage.ResumeLayout(false);
             this.main_page_opts.ResumeLayout(false);
             this.Game_Options_TabPage.ResumeLayout(false);
+            this.BlockDamageAIBM_GroupBox.ResumeLayout(false);
+            this.BlockDamageAIBM_GroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BlockDamageAIBM)).EndInit();
+            this.PartySharedKillRange_GroupBox.ResumeLayout(false);
+            this.PartySharedKillRange_GroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_PartySharedKillRange)).EndInit();
+            this.ZombieBloodMoonSpeed_GroupBox.ResumeLayout(false);
+            this.ZombieNightSpeed_GroupBox.ResumeLayout(false);
+            this.ZombieFeralSpeed_GroupBox.ResumeLayout(false);
+            this.ServerMaxAllowedViewDistance_GroupBox.ResumeLayout(false);
+            this.ServerMaxAllowedViewDistance_GroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_ServerMaxAllowedViewDistance)).EndInit();
+            this.DropOnQuit_GroupBox.ResumeLayout(false);
             this.XPMultiplier_GroupBox.ResumeLayout(false);
             this.XPMultiplier_GroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_XPMultiplier)).EndInit();
@@ -6156,13 +6169,13 @@
             this.Server_Reserved_Slots_GroupBox.ResumeLayout(false);
             this.Server_Reserved_Slots_GroupBox.PerformLayout();
             this.Player_Killing_Mode_GroupBox.ResumeLayout(false);
+            this.DropOnDeath_GroupBox.ResumeLayout(false);
             this.AirDropFrequency_GroupBox.ResumeLayout(false);
             this.AirDropFrequency_GroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_AirDropFrequency)).EndInit();
             this.Land_Claim_GroupBox.ResumeLayout(false);
-            this.BlockDamageAIBM_GroupBox.ResumeLayout(false);
-            this.BlockDamageAIBM_GroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BlockDamageAIBM)).EndInit();
+            this.LandClaimCount_GroupBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_LandClaimCount)).EndInit();
             this.LandClaimDecayMode_GroupBox.ResumeLayout(false);
             this.LandClaimDurabilityModifier_GroupBox.ResumeLayout(false);
             this.LandClaimDurabilityModifier_GroupBox.PerformLayout();
@@ -6183,6 +6196,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_ServerMaxPlayerCount)).EndInit();
             this.Game_Mode_Settings_GroupBox.ResumeLayout(false);
             this.Game_Mode_Settings_GroupBox.PerformLayout();
+            this.ZombieDaySpeed_GroupBox.ResumeLayout(false);
             this.DayLightLength_GroupBox.ResumeLayout(false);
             this.DayLightLength_GroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_DayLightLength)).EndInit();
@@ -6192,11 +6206,15 @@
             this.BlockDamagePlayer_GroupBox.ResumeLayout(false);
             this.BlockDamagePlayer_GroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BlockDamagePlayer)).EndInit();
-            this.DropOnDeath_GroupBox.ResumeLayout(false);
             this.GameDifficulty_GroupBox.ResumeLayout(false);
             this.GameDifficulty_GroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_GameDifficulty)).EndInit();
             this.Server_Options_TabPage.ResumeLayout(false);
+            this.BloodMoon_GroupBox.ResumeLayout(false);
+            this.BloodMoon_GroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BloodMoonWarning)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BloodMoonRange)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BloodMoonFrequency)).EndInit();
             this.Server_Login_Confirmation_Text_GroupBox.ResumeLayout(false);
             this.Server_Password_GroupBox.ResumeLayout(false);
             this.Server_Password_GroupBox.PerformLayout();
@@ -6221,6 +6239,9 @@
             this.Other_Game_Settings_GroupBox.PerformLayout();
             this.autobots.ResumeLayout(false);
             this.autobots.PerformLayout();
+            this.BedrollExpiryTime_GroupBox.ResumeLayout(false);
+            this.BedrollExpiryTime_GroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BedrollExpiryTime)).EndInit();
             this.BedrollDeadZoneSize_GroupBox.ResumeLayout(false);
             this.BedrollDeadZoneSize_GroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BedrollDeadZoneSize)).EndInit();
@@ -6297,27 +6318,6 @@
             this.deds_g.ResumeLayout(false);
             this.deds_g.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_status)).EndInit();
-            this.DropOnQuit_GroupBox.ResumeLayout(false);
-            this.BedrollExpiryTime_GroupBox.ResumeLayout(false);
-            this.BedrollExpiryTime_GroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BedrollExpiryTime)).EndInit();
-            this.ServerMaxAllowedViewDistance_GroupBox.ResumeLayout(false);
-            this.ServerMaxAllowedViewDistance_GroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_ServerMaxAllowedViewDistance)).EndInit();
-            this.ZombieDaySpeed_GroupBox.ResumeLayout(false);
-            this.ZombieNightSpeed_GroupBox.ResumeLayout(false);
-            this.ZombieBloodMoonSpeed_GroupBox.ResumeLayout(false);
-            this.ZombieFeralSpeed_GroupBox.ResumeLayout(false);
-            this.BloodMoon_GroupBox.ResumeLayout(false);
-            this.BloodMoon_GroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BloodMoonFrequency)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BloodMoonRange)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BloodMoonWarning)).EndInit();
-            this.PartySharedKillRange_GroupBox.ResumeLayout(false);
-            this.PartySharedKillRange_GroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_PartySharedKillRange)).EndInit();
-            this.LandClaimCount_GroupBox.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_LandClaimCount)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
