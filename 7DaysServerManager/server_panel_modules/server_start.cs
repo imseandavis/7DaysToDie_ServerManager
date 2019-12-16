@@ -45,8 +45,7 @@ namespace _7DaysServerManager
 
             parametry = parametry + " -configfile=" + (string)Registry.GetValue(base_registry_key + profile_name, "configfile", null);
 
-            parametry = parametry + " -dedicated";
-
+            parametry += " -dedicated";
 
                 if (file_path == "" | !File.Exists(file_path + "\\" + exec_name))
                 {

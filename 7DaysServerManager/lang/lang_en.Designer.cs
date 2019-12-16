@@ -68,7 +68,79 @@ namespace _7DaysServerManager.lang {
                 return ResourceManager.GetString("_language_name", resourceCulture);
             }
         }
-        
+
+        #region Manage Server Tab Localized Strings
+
+        //PLACEHOLDER
+
+        #endregion
+
+
+        #region Manage Players Tab Localized Strings
+
+        //PLACEHOLDER
+
+        #endregion
+
+
+        #region Game Settings / Mods Tab Localized Strings
+
+        //PLACEHOLDER
+
+        #endregion
+
+
+        #region Messenging Tab Localized Strings
+
+        //PLACEHOLDER
+
+        #endregion
+
+
+        #region Global Banlist Tab Localized Strings
+
+        //PLACEHOLDER
+
+        #endregion
+
+
+        #region Web Server Tab Localized Strings
+
+        //PLACEHOLDER
+
+        #endregion
+
+
+        #region Server Tasks Tab Localized Strings
+
+        //PLACEHOLDER
+
+        #endregion
+
+
+        #region Backups Tab Localized Strings
+
+        //PLACEHOLDER
+
+        #endregion
+
+
+        #region Rewards Tab Localized Strings
+
+        //PLACEHOLDER
+
+        #endregion
+
+
+        #region Settings Tab Localized Strings
+
+        //PLACEHOLDER
+
+        #endregion
+
+
+        #region Localized Strings - All Field Translations Go Here
+
         /// <summary>
         ///   Looks up a localized string similar to pionner.
         /// </summary>
@@ -2015,7 +2087,7 @@ namespace _7DaysServerManager.lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Detect automatically.
+        ///   Looks up a localized string similar to Detect From Steam.
         /// </summary>
         public static string steamsearch {
             get {
@@ -2359,5 +2431,7 @@ namespace _7DaysServerManager.lang {
                 return ResourceManager.GetString("zombiespawn", resourceCulture);
             }
         }
+
+        #endregion
     }
 }

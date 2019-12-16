@@ -30,11 +30,12 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Server_Panel_Form));
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection6 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.CustomImageCollection customImageCollection6 = new Syncfusion.Windows.Forms.Tools.CustomImageCollection();
-            Syncfusion.Windows.Forms.Tools.ResetButton resetButton6 = new Syncfusion.Windows.Forms.Tools.ResetButton();
-            Syncfusion.Windows.Forms.Tools.DigitalClockRenderer digitalClockRenderer6 = new Syncfusion.Windows.Forms.Tools.DigitalClockRenderer();
-            Syncfusion.Windows.Forms.Tools.ClockRenderer clockRenderer6 = new Syncfusion.Windows.Forms.Tools.ClockRenderer();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection2 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.CustomImageCollection customImageCollection1 = new Syncfusion.Windows.Forms.Tools.CustomImageCollection();
+            Syncfusion.Windows.Forms.Tools.ResetButton resetButton1 = new Syncfusion.Windows.Forms.Tools.ResetButton();
+            Syncfusion.Windows.Forms.Tools.DigitalClockRenderer digitalClockRenderer1 = new Syncfusion.Windows.Forms.Tools.DigitalClockRenderer();
+            Syncfusion.Windows.Forms.Tools.ClockRenderer clockRenderer1 = new Syncfusion.Windows.Forms.Tools.ClockRenderer();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection1 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
             this.status_updater = new System.ComponentModel.BackgroundWorker();
             this.Select_Game_Directory = new System.Windows.Forms.FolderBrowserDialog();
             this.App_Icon = new System.Windows.Forms.NotifyIcon(this.components);
@@ -452,12 +453,7 @@
             this.radialGauge2 = new Syncfusion.Windows.Forms.Gauge.RadialGauge();
             this.dial_napnapcontrol = new Syncfusion.Windows.Forms.Tools.RadialMenu();
             this.radialMenuItem1 = new Syncfusion.Windows.Forms.Tools.RadialMenuItem();
-            this.radialMenuItem2 = new Syncfusion.Windows.Forms.Tools.RadialMenuItem();
-            this.radialMenuItem3 = new Syncfusion.Windows.Forms.Tools.RadialMenuItem();
-            this.radialMenuItem4 = new Syncfusion.Windows.Forms.Tools.RadialMenuItem();
             this.radialMenuSlider1 = new Syncfusion.Windows.Forms.Tools.RadialMenuSlider();
-            this.radialMenuSlider2 = new Syncfusion.Windows.Forms.Tools.RadialMenuSlider();
-            this.radialMenuSlider3 = new Syncfusion.Windows.Forms.Tools.RadialMenuSlider();
             this.radialMenuSlider4 = new Syncfusion.Windows.Forms.Tools.RadialMenuSlider();
             this.dateTimePickerAdv1 = new Syncfusion.Windows.Forms.Tools.DateTimePickerAdv();
             this.toggleButton1 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
@@ -496,6 +492,9 @@
             this.discord_b = new System.Windows.Forms.Button();
             this.GitHub_Repo_Button = new System.Windows.Forms.Button();
             this.colorPickerButton1 = new Syncfusion.Windows.Forms.ColorPickerButton();
+            this.toggleButton2 = new Syncfusion.Windows.Forms.Tools.ToggleButton();
+            this.radialMenuItem2 = new Syncfusion.Windows.Forms.Tools.RadialMenuItem();
+            this.radialMenuSlider2 = new Syncfusion.Windows.Forms.Tools.RadialMenuSlider();
             this.Settings_TabPage.SuspendLayout();
             this.Updates_GroupBox.SuspendLayout();
             this.exe_settings_g.SuspendLayout();
@@ -655,10 +654,10 @@
             this.Rewards_TabPage.SuspendLayout();
             this.deds_g.SuspendLayout();
             this.TestTab.SuspendLayout();
-            this.dial_napnapcontrol.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimePickerAdv1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.toggleButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_status)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toggleButton2)).BeginInit();
             this.SuspendLayout();
             // 
             // status_updater
@@ -1322,7 +1321,7 @@
             this.Auto_Detect_Game_File_Path_Button.Name = "Auto_Detect_Game_File_Path_Button";
             this.Auto_Detect_Game_File_Path_Button.Size = new System.Drawing.Size(207, 23);
             this.Auto_Detect_Game_File_Path_Button.TabIndex = 29;
-            this.Auto_Detect_Game_File_Path_Button.Text = "Auto Detect";
+            this.Auto_Detect_Game_File_Path_Button.Text = "Detect From Steam";
             this.Auto_Detect_Game_File_Path_Button.UseVisualStyleBackColor = true;
             this.Auto_Detect_Game_File_Path_Button.Click += new System.EventHandler(this.Steamsearch_Click);
             // 
@@ -1650,7 +1649,7 @@
             this.cmd.AcceptsReturn = true;
             this.cmd.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cmd.Location = new System.Drawing.Point(6, 504);
+            this.cmd.Location = new System.Drawing.Point(6, 510);
             this.cmd.Name = "cmd";
             this.cmd.Size = new System.Drawing.Size(689, 20);
             this.cmd.TabIndex = 17;
@@ -1669,7 +1668,7 @@
             this.Console_RichTextBox.Name = "Console_RichTextBox";
             this.Console_RichTextBox.ReadOnly = true;
             this.Console_RichTextBox.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical;
-            this.Console_RichTextBox.Size = new System.Drawing.Size(686, 484);
+            this.Console_RichTextBox.Size = new System.Drawing.Size(686, 490);
             this.Console_RichTextBox.TabIndex = 15;
             this.Console_RichTextBox.Text = "";
             this.Console_RichTextBox.LinkClicked += new System.Windows.Forms.LinkClickedEventHandler(this.Console_LinkClicked);
@@ -2008,7 +2007,7 @@
             this.Console_Group.Controls.Add(this.cmd);
             this.Console_Group.Location = new System.Drawing.Point(3, 8);
             this.Console_Group.Name = "Console_Group";
-            this.Console_Group.Size = new System.Drawing.Size(698, 535);
+            this.Console_Group.Size = new System.Drawing.Size(698, 541);
             this.Console_Group.TabIndex = 18;
             this.Console_Group.TabStop = false;
             this.Console_Group.Text = "Console";
@@ -3366,10 +3365,11 @@
             // 
             // DayNightLength_Realtime_Mode
             // 
+            this.DayNightLength_Realtime_Mode.Appearance = System.Windows.Forms.Appearance.Button;
             this.DayNightLength_Realtime_Mode.AutoSize = true;
             this.DayNightLength_Realtime_Mode.Location = new System.Drawing.Point(9, 65);
             this.DayNightLength_Realtime_Mode.Name = "DayNightLength_Realtime_Mode";
-            this.DayNightLength_Realtime_Mode.Size = new System.Drawing.Size(97, 17);
+            this.DayNightLength_Realtime_Mode.Size = new System.Drawing.Size(88, 23);
             this.DayNightLength_Realtime_Mode.TabIndex = 10;
             this.DayNightLength_Realtime_Mode.Text = "Realtime Mode";
             this.toolTip.SetToolTip(this.DayNightLength_Realtime_Mode, "In-game day will happen in realtime.\r\n");
@@ -3608,6 +3608,7 @@
             this.ConfigProperty_ServerName.Name = "ConfigProperty_ServerName";
             this.ConfigProperty_ServerName.Size = new System.Drawing.Size(357, 20);
             this.ConfigProperty_ServerName.TabIndex = 3;
+            this.ConfigProperty_ServerName.Text = "My Game Host";
             this.toolTip.SetToolTip(this.ConfigProperty_ServerName, "Whatever you want the name of the server to be.");
             this.ConfigProperty_ServerName.TextChanged += new System.EventHandler(this.ServerName_TextChanged);
             // 
@@ -3651,6 +3652,7 @@
             this.ConfigProperty_ServerDescription.Name = "ConfigProperty_ServerDescription";
             this.ConfigProperty_ServerDescription.Size = new System.Drawing.Size(354, 20);
             this.ConfigProperty_ServerDescription.TabIndex = 30;
+            this.ConfigProperty_ServerDescription.Text = "A 7 Days to Die server";
             this.toolTip.SetToolTip(this.ConfigProperty_ServerDescription, "Whatever you want the server description to be, will be shown in the server brows" +
         "er.");
             this.ConfigProperty_ServerDescription.TextChanged += new System.EventHandler(this.ServerDescription_TextChanged);
@@ -4159,6 +4161,7 @@
             this.ConfigProperty_ServerVisibility.Name = "ConfigProperty_ServerVisibility";
             this.ConfigProperty_ServerVisibility.Size = new System.Drawing.Size(201, 21);
             this.ConfigProperty_ServerVisibility.TabIndex = 0;
+            this.ConfigProperty_ServerVisibility.Text = "Public";
             this.toolTip.SetToolTip(this.ConfigProperty_ServerVisibility, resources.GetString("ConfigProperty_ServerVisibility.ToolTip"));
             // 
             // MaxUncoveredMapChunksPerPlayer_g
@@ -5824,6 +5827,7 @@
             // 
             // TestTab
             // 
+            this.TestTab.Controls.Add(this.toggleButton2);
             this.TestTab.Controls.Add(this.radialGauge1);
             this.TestTab.Controls.Add(this.radialGauge2);
             this.TestTab.Controls.Add(this.dial_napnapcontrol);
@@ -5891,14 +5895,6 @@
             // dial_napnapcontrol
             // 
             this.dial_napnapcontrol.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dial_napnapcontrol.Controls.Add(this.radialMenuItem1);
-            this.dial_napnapcontrol.Controls.Add(this.radialMenuItem2);
-            this.dial_napnapcontrol.Controls.Add(this.radialMenuItem3);
-            this.dial_napnapcontrol.Controls.Add(this.radialMenuItem4);
-            this.dial_napnapcontrol.Controls.Add(this.radialMenuSlider1);
-            this.dial_napnapcontrol.Controls.Add(this.radialMenuSlider2);
-            this.dial_napnapcontrol.Controls.Add(this.radialMenuSlider3);
-            this.dial_napnapcontrol.Controls.Add(this.radialMenuSlider4);
             this.dial_napnapcontrol.Cursor = System.Windows.Forms.Cursors.Default;
             this.dial_napnapcontrol.IgnoreMouseMessages = true;
             this.dial_napnapcontrol.ImageCollection.AddRange(new System.Drawing.Image[] {
@@ -5909,13 +5905,10 @@
             ((System.Drawing.Image)(resources.GetObject("dial_napnapcontrol.ImageCollection4")))});
             this.dial_napnapcontrol.ItemOnLoad = this.radialMenuItem1;
             this.dial_napnapcontrol.Items.Add(this.radialMenuItem1);
-            this.dial_napnapcontrol.Items.Add(this.radialMenuItem2);
-            this.dial_napnapcontrol.Items.Add(this.radialMenuItem3);
-            this.dial_napnapcontrol.Items.Add(this.radialMenuItem4);
             this.dial_napnapcontrol.Items.Add(this.radialMenuSlider1);
-            this.dial_napnapcontrol.Items.Add(this.radialMenuSlider2);
-            this.dial_napnapcontrol.Items.Add(this.radialMenuSlider3);
             this.dial_napnapcontrol.Items.Add(this.radialMenuSlider4);
+            this.dial_napnapcontrol.Items.Add(this.radialMenuItem2);
+            this.dial_napnapcontrol.Items.Add(this.radialMenuSlider2);
             this.dial_napnapcontrol.Location = new System.Drawing.Point(61, 214);
             this.dial_napnapcontrol.MaximumSize = new System.Drawing.Size(700, 700);
             this.dial_napnapcontrol.MenuIcon = global::_7DaysServerManager.Properties.Resources.dice;
@@ -5925,7 +5918,6 @@
             this.dial_napnapcontrol.Opacity = 50;
             this.dial_napnapcontrol.Size = new System.Drawing.Size(262, 262);
             this.dial_napnapcontrol.TabIndex = 36;
-            this.dial_napnapcontrol.Visible = false;
             // 
             // radialMenuItem1
             // 
@@ -5935,30 +5927,6 @@
             this.radialMenuItem1.TabIndex = 2;
             this.radialMenuItem1.Text = "radialMenuItem1";
             // 
-            // radialMenuItem2
-            // 
-            this.radialMenuItem2.Location = new System.Drawing.Point(0, 0);
-            this.radialMenuItem2.Name = "radialMenuItem2";
-            this.radialMenuItem2.Size = new System.Drawing.Size(0, 0);
-            this.radialMenuItem2.TabIndex = 2;
-            this.radialMenuItem2.Text = "radialMenuItem2";
-            // 
-            // radialMenuItem3
-            // 
-            this.radialMenuItem3.Location = new System.Drawing.Point(0, 0);
-            this.radialMenuItem3.Name = "radialMenuItem3";
-            this.radialMenuItem3.Size = new System.Drawing.Size(0, 0);
-            this.radialMenuItem3.TabIndex = 2;
-            this.radialMenuItem3.Text = "radialMenuItem3";
-            // 
-            // radialMenuItem4
-            // 
-            this.radialMenuItem4.Location = new System.Drawing.Point(0, 0);
-            this.radialMenuItem4.Name = "radialMenuItem4";
-            this.radialMenuItem4.Size = new System.Drawing.Size(0, 0);
-            this.radialMenuItem4.TabIndex = 2;
-            this.radialMenuItem4.Text = "radialMenuItem4";
-            // 
             // radialMenuSlider1
             // 
             this.radialMenuSlider1.Location = new System.Drawing.Point(0, 0);
@@ -5967,24 +5935,6 @@
             this.radialMenuSlider1.SliderValue = 0D;
             this.radialMenuSlider1.TabIndex = 2;
             this.radialMenuSlider1.Text = "radialMenuSlider1";
-            // 
-            // radialMenuSlider2
-            // 
-            this.radialMenuSlider2.Location = new System.Drawing.Point(0, 0);
-            this.radialMenuSlider2.Name = "radialMenuSlider2";
-            this.radialMenuSlider2.Size = new System.Drawing.Size(0, 0);
-            this.radialMenuSlider2.SliderValue = 0D;
-            this.radialMenuSlider2.TabIndex = 2;
-            this.radialMenuSlider2.Text = "radialMenuSlider2";
-            // 
-            // radialMenuSlider3
-            // 
-            this.radialMenuSlider3.Location = new System.Drawing.Point(0, 0);
-            this.radialMenuSlider3.Name = "radialMenuSlider3";
-            this.radialMenuSlider3.Size = new System.Drawing.Size(0, 0);
-            this.radialMenuSlider3.SliderValue = 0D;
-            this.radialMenuSlider3.TabIndex = 2;
-            this.radialMenuSlider3.Text = "radialMenuSlider3";
             // 
             // radialMenuSlider4
             // 
@@ -6018,9 +5968,9 @@
             this.toggleButton1.MinimumSize = new System.Drawing.Size(52, 20);
             this.toggleButton1.Name = "toggleButton1";
             this.toggleButton1.Size = new System.Drawing.Size(95, 20);
-            sliderCollection6.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            sliderCollection6.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
-            this.toggleButton1.Slider = sliderCollection6;
+            sliderCollection2.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            sliderCollection2.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
+            this.toggleButton1.Slider = sliderCollection2;
             this.toggleButton1.TabIndex = 42;
             this.toggleButton1.Text = "Test test";
             this.toggleButton1.ThemeName = "Default";
@@ -6057,11 +6007,11 @@
             // ratingControl1
             // 
             this.ratingControl1.ApplyGradientColors = false;
-            this.ratingControl1.Images = customImageCollection6;
+            this.ratingControl1.Images = customImageCollection1;
             this.ratingControl1.ItemsCount = 8;
             this.ratingControl1.Location = new System.Drawing.Point(366, 307);
             this.ratingControl1.Name = "ratingControl1";
-            this.ratingControl1.ResetButton = resetButton6;
+            this.ratingControl1.ResetButton = resetButton1;
             this.ratingControl1.Size = new System.Drawing.Size(245, 27);
             this.ratingControl1.TabIndex = 39;
             this.ratingControl1.Text = "ratingControl1";
@@ -6099,15 +6049,15 @@
             this.clock1.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.Rectangle;
             this.clock1.ClockType = Syncfusion.Windows.Forms.Tools.ClockTypes.Digital;
             this.clock1.CurrentDateTime = new System.DateTime(2019, 12, 11, 0, 19, 11, 694);
-            this.clock1.CustomTime = new System.DateTime(2019, 12, 11, 3, 16, 45, 880);
-            this.clock1.DigitalRenderer = digitalClockRenderer6;
+            this.clock1.CustomTime = new System.DateTime(2019, 12, 15, 3, 32, 46, 233);
+            this.clock1.DigitalRenderer = digitalClockRenderer1;
             this.clock1.DisplayDates = true;
             this.clock1.Location = new System.Drawing.Point(23, 8);
             this.clock1.MinimumSize = new System.Drawing.Size(75, 75);
             this.clock1.Name = "clock1";
             this.clock1.Now = new System.DateTime(((long)(0)));
             this.clock1.Remainder = new System.DateTime(2019, 12, 11, 0, 19, 11, 690);
-            this.clock1.Renderer = clockRenderer6;
+            this.clock1.Renderer = clockRenderer1;
             this.clock1.ShowClockFrame = false;
             this.clock1.ShowCustomTimeClock = false;
             this.clock1.ShowHourDesignator = false;
@@ -6390,6 +6340,35 @@
             this.colorPickerButton1.TabIndex = 21;
             this.colorPickerButton1.Text = "colorPickerButton1";
             // 
+            // toggleButton2
+            // 
+            this.toggleButton2.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.toggleButton2.ForeColor = System.Drawing.Color.Black;
+            this.toggleButton2.Location = new System.Drawing.Point(371, 85);
+            this.toggleButton2.MinimumSize = new System.Drawing.Size(52, 20);
+            this.toggleButton2.Name = "toggleButton2";
+            this.toggleButton2.Size = new System.Drawing.Size(90, 40);
+            this.toggleButton2.Slider = sliderCollection1;
+            this.toggleButton2.TabIndex = 46;
+            this.toggleButton2.Text = "toggleButton2";
+            // 
+            // radialMenuItem2
+            // 
+            this.radialMenuItem2.Location = new System.Drawing.Point(0, 0);
+            this.radialMenuItem2.Name = "radialMenuItem2";
+            this.radialMenuItem2.Size = new System.Drawing.Size(0, 0);
+            this.radialMenuItem2.TabIndex = 2;
+            this.radialMenuItem2.Text = "radialMenuItem2";
+            // 
+            // radialMenuSlider2
+            // 
+            this.radialMenuSlider2.Location = new System.Drawing.Point(0, 0);
+            this.radialMenuSlider2.Name = "radialMenuSlider2";
+            this.radialMenuSlider2.Size = new System.Drawing.Size(0, 0);
+            this.radialMenuSlider2.SliderValue = 0D;
+            this.radialMenuSlider2.TabIndex = 2;
+            this.radialMenuSlider2.Text = "radialMenuSlider2";
+            // 
             // Server_Panel_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -6652,11 +6631,10 @@
             this.deds_g.PerformLayout();
             this.TestTab.ResumeLayout(false);
             this.TestTab.PerformLayout();
-            this.dial_napnapcontrol.ResumeLayout(false);
-            this.dial_napnapcontrol.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dateTimePickerAdv1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.toggleButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.img_status)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toggleButton2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -7115,15 +7093,13 @@
         private Syncfusion.Windows.Forms.Gauge.DigitalGauge digitalGauge1;
         private Syncfusion.Windows.Forms.ColorPickerButton colorPickerButton1;
         private Syncfusion.Windows.Forms.Tools.RadialMenuItem radialMenuItem1;
-        private Syncfusion.Windows.Forms.Tools.RadialMenuItem radialMenuItem2;
-        private Syncfusion.Windows.Forms.Tools.RadialMenuItem radialMenuItem3;
-        private Syncfusion.Windows.Forms.Tools.RadialMenuItem radialMenuItem4;
         private Syncfusion.Windows.Forms.Gauge.RadialGauge radialGauge1;
         private Syncfusion.Windows.Forms.Gauge.RadialGauge radialGauge2;
         private Syncfusion.Windows.Forms.Tools.RadialMenuSlider radialMenuSlider1;
-        private Syncfusion.Windows.Forms.Tools.RadialMenuSlider radialMenuSlider2;
-        private Syncfusion.Windows.Forms.Tools.RadialMenuSlider radialMenuSlider3;
         private Syncfusion.Windows.Forms.Tools.RadialMenuSlider radialMenuSlider4;
         private Syncfusion.Windows.Forms.Tools.RadialMenu dial_napnapcontrol;
+        private Syncfusion.Windows.Forms.Tools.ToggleButton toggleButton2;
+        private Syncfusion.Windows.Forms.Tools.RadialMenuItem radialMenuItem2;
+        private Syncfusion.Windows.Forms.Tools.RadialMenuSlider radialMenuSlider2;
     }
 }

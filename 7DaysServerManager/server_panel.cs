@@ -30,11 +30,11 @@ namespace _7DaysServerManager
         // Version Variables
         public const string ver = "9.0";
         public const bool dev = false;
-        public const string game_ver = "Alpha 18.1";
+        public const string game_ver = "Alpha 18.2";
         public const string whatsnew = "Whats new since last STABLE build:\n-Fixed MySql Exporter\n-Added Drop nothing on death option\n-Few minor fixes";
 
         // Registry Variables
-        string base_registry_key = @"HKEY_CURRENT_USER\Software\pionner\7DSM\";
+        readonly string base_registry_key = @"HKEY_CURRENT_USER\Software\pionner\7DSM\";
 
         // Debug Settings
         bool debug_mode = false;
@@ -43,7 +43,6 @@ namespace _7DaysServerManager
         // Text Formatting Variables
         string console_pre = "\n";
         string chat_pre = "\n";
-
 
         public bool server_online = false;
         bool break_telnet = false;
@@ -110,7 +109,6 @@ namespace _7DaysServerManager
 
             InitializeComponent();
         }
-
 
         public void Echo(string text, int color, bool enter)
         {
@@ -1852,25 +1850,25 @@ namespace _7DaysServerManager
         {
             try
             {
-                string sciezka = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\Valve\Steam", "SteamPath", null);
-                sciezka = sciezka.Replace("/", "\\");
+                string steam_registry_path = (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\Valve\Steam", "SteamPath", null);
+                steam_registry_path = steam_registry_path.Replace("/", "\\");
 
-                sciezka += "\\steamapps\\common\\7 Days To Die";
+                steam_registry_path += "\\steamapps\\common\\7 Days To Die";
 
 
-                if (File.Exists(@sciezka + "\\" + exe_name.Text))
+                if (File.Exists(steam_registry_path + "\\" + exe_name.Text))
                 {
                     MessageBox.Show(LocalizedLanguage("steam_ok"), LocalizedLanguage("saved"));
-                    Registry.SetValue(base_registry_key + profile_name, "game_path", sciezka);
+                    Registry.SetValue(base_registry_key + profile_name, "game_path", steam_registry_path);
                     Game_File_Path_Label.Text = LocalizedLanguage("path") + (string)Registry.GetValue(base_registry_key + profile_name, "game_path", null);
                 }
                 else
                 {
-                    sciezka += " Dedicated Server";
-                    if (File.Exists(@sciezka + "\\7DaysToDieServer.exe"))
+                    steam_registry_path += " Dedicated Server";
+                    if (File.Exists(steam_registry_path + "\\7DaysToDieServer.exe"))
                     {
                         MessageBox.Show(LocalizedLanguage("steam_ok"), LocalizedLanguage("saved"));
-                        Registry.SetValue(base_registry_key + profile_name, "game_path", sciezka);
+                        Registry.SetValue(base_registry_key + profile_name, "game_path", steam_registry_path);
                         Game_File_Path_Label.Text = LocalizedLanguage("path") + (string)Registry.GetValue(base_registry_key + profile_name, "game_path", null);
                     }
                     else
