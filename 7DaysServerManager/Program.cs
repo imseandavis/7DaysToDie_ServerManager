@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using Syncfusion.Licensing;
 
 namespace _7DaysServerManager
 {
@@ -12,15 +13,18 @@ namespace _7DaysServerManager
         [STAThread]
         static void Main()
         {
+            // 7 Days To Die Project License for Sync Fusion
+            SyncfusionLicenseProvider.RegisterLicense("MTgzMTE3QDMxMzcyZTM0MmUzMGVGZVJaamNGcTJRU084dFVNY1ZMdHNFZldyKzNXQ1hHK2NmMWo4RkdlT0k9");
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            /*Application.Run(new profile_selector());*/
 
-            profile_selector ps = new profile_selector();
-            ps.ShowDialog();
+            //Init And Display The Profile Selector Screen
+            Profile_selector ProfileSelector = new Profile_selector();
+            ProfileSelector.ShowDialog();
+            
+            //Once The Profile Selection Has Completed, Startup the Server Manager
             Application.Run(new Server_Panel_Form());
-
-
         }
     }
 }

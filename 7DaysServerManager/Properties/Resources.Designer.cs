@@ -193,6 +193,16 @@ namespace _7DaysServerManager.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap premium {
+            get {
+                object obj = ResourceManager.GetObject("premium", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rate {
             get {
                 object obj = ResourceManager.GetObject("rate", resourceCulture);
@@ -216,6 +226,16 @@ namespace _7DaysServerManager.Properties {
         internal static System.Drawing.Bitmap shield {
             get {
                 object obj = ResourceManager.GetObject("shield", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap skull {
+            get {
+                object obj = ResourceManager.GetObject("skull", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

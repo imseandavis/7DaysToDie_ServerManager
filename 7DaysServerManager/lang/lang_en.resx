@@ -682,9 +682,9 @@ If you don't allow to collect data, You're only added to total 7DSM runs counter
     <value>English</value>
   </data>
   <data name="_translation_author" xml:space="preserve">
-    <value>pionner</value>
+    <value>Sean Davis</value>
   </data>
-  <data name="bdm_g" xml:space="preserve">
+  <data name="block_durability_modifier_group" xml:space="preserve">
     <value>Block durability modifier</value>
   </data>
   <data name="nightpercentage_g" xml:space="preserve">

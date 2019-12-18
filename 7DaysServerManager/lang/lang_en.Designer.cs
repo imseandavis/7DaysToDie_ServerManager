@@ -68,81 +68,9 @@ namespace _7DaysServerManager.lang {
                 return ResourceManager.GetString("_language_name", resourceCulture);
             }
         }
-
-        #region Manage Server Tab Localized Strings
-
-        //PLACEHOLDER
-
-        #endregion
-
-
-        #region Manage Players Tab Localized Strings
-
-        //PLACEHOLDER
-
-        #endregion
-
-
-        #region Game Settings / Mods Tab Localized Strings
-
-        //PLACEHOLDER
-
-        #endregion
-
-
-        #region Messenging Tab Localized Strings
-
-        //PLACEHOLDER
-
-        #endregion
-
-
-        #region Global Banlist Tab Localized Strings
-
-        //PLACEHOLDER
-
-        #endregion
-
-
-        #region Web Server Tab Localized Strings
-
-        //PLACEHOLDER
-
-        #endregion
-
-
-        #region Server Tasks Tab Localized Strings
-
-        //PLACEHOLDER
-
-        #endregion
-
-
-        #region Backups Tab Localized Strings
-
-        //PLACEHOLDER
-
-        #endregion
-
-
-        #region Rewards Tab Localized Strings
-
-        //PLACEHOLDER
-
-        #endregion
-
-
-        #region Settings Tab Localized Strings
-
-        //PLACEHOLDER
-
-        #endregion
-
-
-        #region Localized Strings - All Field Translations Go Here
-
+        
         /// <summary>
-        ///   Looks up a localized string similar to pionner.
+        ///   Looks up a localized string similar to Sean Davis.
         /// </summary>
         public static string _translation_author {
             get {
@@ -401,20 +329,20 @@ namespace _7DaysServerManager.lang {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Block durability modifier.
-        /// </summary>
-        public static string bdm_g {
-            get {
-                return ResourceManager.GetString("bdm_g", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Report bug.
         /// </summary>
         public static string blad {
             get {
                 return ResourceManager.GetString("blad", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Block durability modifier.
+        /// </summary>
+        public static string block_durability_modifier_group {
+            get {
+                return ResourceManager.GetString("block_durability_modifier_group", resourceCulture);
             }
         }
         
@@ -2431,7 +2359,5 @@ namespace _7DaysServerManager.lang {
                 return ResourceManager.GetString("zombiespawn", resourceCulture);
             }
         }
-
-        #endregion
     }
 }
