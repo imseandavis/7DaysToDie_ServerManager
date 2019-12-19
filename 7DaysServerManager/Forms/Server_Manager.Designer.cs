@@ -35,15 +35,6 @@
             Syncfusion.Windows.Forms.Gauge.Range range4 = new Syncfusion.Windows.Forms.Gauge.Range();
             Syncfusion.Windows.Forms.Gauge.Range range5 = new Syncfusion.Windows.Forms.Gauge.Range();
             Syncfusion.Windows.Forms.Gauge.Range range6 = new Syncfusion.Windows.Forms.Gauge.Range();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection7 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection7 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection7 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection8 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection8 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection8 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection9 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection9 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection9 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
             Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection10 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
             Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection10 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
             Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection10 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
@@ -53,6 +44,24 @@
             Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection12 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
             Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection12 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
             Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection12 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection13 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection13 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection13 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection14 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection14 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection14 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection15 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection15 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection15 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection16 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection16 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection16 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection17 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection17 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection17 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection18 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection18 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection18 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
             Syncfusion.Windows.Forms.Tools.CustomImageCollection customImageCollection2 = new Syncfusion.Windows.Forms.Tools.CustomImageCollection();
             Syncfusion.Windows.Forms.Tools.ResetButton resetButton2 = new Syncfusion.Windows.Forms.Tools.ResetButton();
             this.status_updater = new System.ComponentModel.BackgroundWorker();
@@ -196,41 +205,62 @@
             this.login_header = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.steamid_header = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.GameSettings_TabPage = new System.Windows.Forms.TabPage();
+            this.PlayerSafeZoneHours_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_PlayerSafeZoneHours = new System.Windows.Forms.TextBox();
+            this.BlockDamagePlayer_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_BlockDamagePlayer = new Syncfusion.Windows.Forms.Tools.TrackBarEx(25, 1000);
+            this.Telnet_GroupBox = new System.Windows.Forms.GroupBox();
+            this.Telnet_FailedLoginLimit_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_TelnetFailedLoginLimit = new System.Windows.Forms.TextBox();
+            this.Telnet_FailedLoginsBlocktime_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_TelnetFailedLoginsBlocktime = new System.Windows.Forms.TextBox();
+            this.Telnet_Port_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_TelnetPort = new System.Windows.Forms.TextBox();
+            this.Telnet_Password_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_TelnetPassword = new System.Windows.Forms.TextBox();
+            this.ConfigProperty_TelnetEnabled = new Syncfusion.Windows.Forms.Tools.ToggleButton();
+            this.GameWorldSettings_GroupBox = new System.Windows.Forms.GroupBox();
+            this.GameName_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_GameName = new System.Windows.Forms.ComboBox();
+            this.GameWorld_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_GameWorld = new System.Windows.Forms.ComboBox();
+            this.WorldGenSeed_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_WorldGenSeed = new System.Windows.Forms.TextBox();
+            this.WorldGenSize_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_WorldGenSize = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1024, 16384);
+            this.GameMode_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_GameMode = new System.Windows.Forms.ComboBox();
+            this.PlayerSafeZoneLevel_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_PlayerSafeZoneLevel = new System.Windows.Forms.TextBox();
+            this.ServerOptions_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_EnemySpawnMode = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.ConfigProperty_EACEnabled = new Syncfusion.Windows.Forms.Tools.ToggleButton();
-            this.ConfigProperty_AirDropMarker = new Syncfusion.Windows.Forms.Tools.ToggleButton();
-            this.LootRespawnDays_GroupBox = new System.Windows.Forms.GroupBox();
-            this.ConfigProperty_LootRespawnDays = new System.Windows.Forms.TrackBar();
-            this.ConfigProperty_PersistentPlayerProfiles = new Syncfusion.Windows.Forms.Tools.ToggleButton();
-            this.ConfigProperty_BuildCreate = new Syncfusion.Windows.Forms.Tools.ToggleButton();
-            this.ConfigProperty_EnemyDifficulty = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.ConfigProperty_TerminalWindowEnabled = new Syncfusion.Windows.Forms.Tools.ToggleButton();
+            this.ConfigProperty_AirDropMarker = new Syncfusion.Windows.Forms.Tools.ToggleButton();
+            this.ConfigProperty_EnemyDifficulty = new Syncfusion.Windows.Forms.Tools.ToggleButton();
+            this.ConfigProperty_BuildCreate = new Syncfusion.Windows.Forms.Tools.ToggleButton();
+            this.ConfigProperty_PersistentPlayerProfiles = new Syncfusion.Windows.Forms.Tools.ToggleButton();
+            this.LootRespawnDays_GroupBox = new System.Windows.Forms.GroupBox();
+            this.trackBarEx4 = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1, 1300);
+            this.ConfigProperty_LootRespawnDays = new System.Windows.Forms.TrackBar();
             this.ServerMaxWorldTransferSpeedKiBs_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1, 1300);
             this.Server_Visibility_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_ServerVisibility = new System.Windows.Forms.ComboBox();
             this.MaxUncoveredMapChunksPerPlayer_GroupBox = new System.Windows.Forms.GroupBox();
-            this.ConfigProperty_MaxUncoveredMapChunksPerPlayer = new System.Windows.Forms.TextBox();
+            this.ConfigProperty_MaxUncoveredMapChunksPerPlayer = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1, 1300);
             this.HideCommandExecutionLog_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_HideCommandExecutionLog = new System.Windows.Forms.ComboBox();
             this.ServerDisabledNetworkProtocols_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_ServerDisabledNetworkProtocols = new System.Windows.Forms.CheckedListBox();
-            this.Telnet_Settings_GroupBox = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.ConfigProperty_TelnetFailedLoginsBlocktime = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.ConfigProperty_TelnetFailedLoginLimit = new System.Windows.Forms.TextBox();
-            this.ConfigProperty_TelnetEnabled = new System.Windows.Forms.CheckBox();
-            this.telnet_port_l = new System.Windows.Forms.Label();
-            this.ConfigProperty_TelnetPort = new System.Windows.Forms.TextBox();
-            this.telnet_psw_l = new System.Windows.Forms.Label();
-            this.ConfigProperty_TelnetPassword = new System.Windows.Forms.TextBox();
             this.ServerPort_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_ServerPort = new System.Windows.Forms.NumericUpDown();
-            this.Admin_Control_Panel_GroupBox = new System.Windows.Forms.GroupBox();
-            this.cpl_port = new System.Windows.Forms.Label();
+            this.ControlPanel_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ControlPanel_Port_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_ControlPanelPort = new System.Windows.Forms.TextBox();
-            this.cpl_pass = new System.Windows.Forms.Label();
-            this.ConfigProperty_ControlPanelEnabled = new System.Windows.Forms.CheckBox();
+            this.ControlPanel_Password_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_ControlPanelPassword = new System.Windows.Forms.TextBox();
+            this.ConfigProperty_ControlPanelEnabled = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.BloodMoon_GroupBox = new System.Windows.Forms.GroupBox();
             this.BloodMoonWarning_Label = new System.Windows.Forms.Label();
             this.ConfigProperty_BloodMoonWarning = new System.Windows.Forms.NumericUpDown();
@@ -238,25 +268,13 @@
             this.BloodMoonRange_Label = new System.Windows.Forms.Label();
             this.BloodMoonFrequency_Label = new System.Windows.Forms.Label();
             this.ConfigProperty_BloodMoonFrequency = new System.Windows.Forms.NumericUpDown();
-            this.Game_World_Settings_GroupBox = new System.Windows.Forms.GroupBox();
-            this.ConfigProperty_GameMode = new System.Windows.Forms.ComboBox();
-            this.ConfigProperty_WorldGenSize = new System.Windows.Forms.TrackBar();
-            this.ConfigProperty_WorldGenSeed = new System.Windows.Forms.TextBox();
-            this.ConfigProperty_GameName = new System.Windows.Forms.ComboBox();
-            this.ConfigProperty_GameWorld = new System.Windows.Forms.ComboBox();
             this.autobots = new System.Windows.Forms.GroupBox();
-            this.Player_Safe_Zone_Hours_Label = new System.Windows.Forms.Label();
-            this.Player_Safe_Zone_Level_Label = new System.Windows.Forms.Label();
-            this.ConfigProperty_PlayerSafeZoneHours = new System.Windows.Forms.TextBox();
-            this.ConfigProperty_PlayerSafeZoneLevel = new System.Windows.Forms.TextBox();
             this.BedrollExpiryTime_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_BedrollExpiryTime = new System.Windows.Forms.TrackBar();
-            this.ConfigProperty_EnemySpawnMode = new System.Windows.Forms.CheckBox();
             this.BedrollDeadZoneSize_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_BedrollDeadZoneSize = new System.Windows.Forms.TrackBar();
             this.BloodMoonEnemyCount_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_BloodMoonEnemyCount = new System.Windows.Forms.TrackBar();
-            this.AirDropMarker = new System.Windows.Forms.CheckBox();
             this.MaxSpawnedAnimals_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_MaxSpawnedAnimals = new System.Windows.Forms.TrackBar();
             this.MaxSpawnedZombies_GroupBox = new System.Windows.Forms.GroupBox();
@@ -281,8 +299,9 @@
             this.ServerName_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_ServerName = new System.Windows.Forms.TextBox();
             this.BlockDamageAIBM_GroupBox = new System.Windows.Forms.GroupBox();
-            this.ConfigProperty_BlockDamageAIBM = new System.Windows.Forms.TrackBar();
+            this.ConfigProperty_BlockDamageAIBM = new Syncfusion.Windows.Forms.Tools.TrackBarEx(25, 1000);
             this.PartySharedKillRange_GroupBox = new System.Windows.Forms.GroupBox();
+            this.trackBarEx7 = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1, 1300);
             this.ConfigProperty_PartySharedKillRange = new System.Windows.Forms.TrackBar();
             this.ZombieBloodMoonSpeed_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_ZombieBMMove = new System.Windows.Forms.ComboBox();
@@ -291,14 +310,15 @@
             this.ZombieFeralSpeed_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_ZombieFeralMove = new System.Windows.Forms.ComboBox();
             this.ServerMaxAllowedViewDistance_GroupBox = new System.Windows.Forms.GroupBox();
+            this.trackBarEx3 = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1, 1300);
             this.ConfigProperty_ServerMaxAllowedViewDistance = new System.Windows.Forms.TrackBar();
             this.DropOnQuit_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_DropOnQuit = new System.Windows.Forms.ComboBox();
             this.XPMultiplier_GroupBox = new System.Windows.Forms.GroupBox();
-            this.ConfigProperty_XPMultiplier = new System.Windows.Forms.TrackBar();
+            this.ConfigProperty_XPMultiplier = new Syncfusion.Windows.Forms.Tools.TrackBarEx(25, 1000);
             this.BlockDamageAI_GroupBox = new System.Windows.Forms.GroupBox();
-            this.ConfigProperty_BlockDamageAI = new System.Windows.Forms.TrackBar();
-            this.Server_Reserved_Slots_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_BlockDamageAI = new Syncfusion.Windows.Forms.Tools.TrackBarEx(25, 1000);
+            this.ServerReservedSlots_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_ServerAdminSlotsPermission = new System.Windows.Forms.TextBox();
             this.Admin_Slot_Text_Label = new System.Windows.Forms.Label();
             this.Admin_Reserve_Text_Label = new System.Windows.Forms.Label();
@@ -312,6 +332,7 @@
             this.DropOnDeath_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_DropOnDeath = new System.Windows.Forms.ComboBox();
             this.AirDropFrequency_GroupBox = new System.Windows.Forms.GroupBox();
+            this.trackBarEx2 = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1, 1300);
             this.ConfigProperty_AirDropFrequency = new System.Windows.Forms.TrackBar();
             this.Land_Claim_GroupBox = new System.Windows.Forms.GroupBox();
             this.LandClaimCount_GroupBox = new System.Windows.Forms.GroupBox();
@@ -330,17 +351,16 @@
             this.LandClaimExpiryTime_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_LandClaimExpiryTime = new System.Windows.Forms.TextBox();
             this.LootAbundance_GroupBox = new System.Windows.Forms.GroupBox();
+            this.trackBarEx1 = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1, 1300);
             this.ConfigProperty_LootAbundance = new System.Windows.Forms.TrackBar();
-            this.Max_Players_GroupBox = new System.Windows.Forms.GroupBox();
-            this.ConfigProperty_ServerMaxPlayerCount = new System.Windows.Forms.TrackBar();
+            this.ServerMaxPlayerCount_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_ServerMaxPlayerCount = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1, 100);
             this.ZombieDaySpeed_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_ZombieMove = new System.Windows.Forms.ComboBox();
             this.DayLightLength_GroupBox = new System.Windows.Forms.GroupBox();
-            this.ConfigProperty_DayLightLength = new System.Windows.Forms.TrackBar();
+            this.ConfigProperty_DayLightLength = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1, 23);
             this.DayNightLength_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_DayNightLength = new Syncfusion.Windows.Forms.Tools.TrackBarEx(24, 1440);
-            this.BlockDamagePlayer_GroupBox = new System.Windows.Forms.GroupBox();
-            this.ConfigProperty_BlockDamagePlayer = new System.Windows.Forms.TrackBar();
             this.GameDifficulty_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_GameDifficulty = new Syncfusion.Windows.Forms.Tools.RatingControl();
             this.Messaging_TabPage = new System.Windows.Forms.TabPage();
@@ -493,10 +513,7 @@
             this.contact_b = new System.Windows.Forms.Button();
             this.forumklik = new System.Windows.Forms.Button();
             this.www7dsm = new System.Windows.Forms.Button();
-            this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs = new Syncfusion.Windows.Forms.Tools.TrackBarEx(128, 1300);
-            this.ServerOptions_GroupBox = new System.Windows.Forms.GroupBox();
-            this.trackBarEx1 = new Syncfusion.Windows.Forms.Tools.TrackBarEx(24, 1440);
-            this.trackBarEx2 = new Syncfusion.Windows.Forms.Tools.TrackBarEx(24, 1440);
+            this.NitroGEN_Map_Generator_Link = new System.Windows.Forms.LinkLabel();
             this.Settings_TabPage.SuspendLayout();
             this.Updates_GroupBox.SuspendLayout();
             this.exe_settings_g.SuspendLayout();
@@ -536,29 +553,46 @@
             this.Ban_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Ban_Slider_TrackBar)).BeginInit();
             this.GameSettings_TabPage.SuspendLayout();
+            this.PlayerSafeZoneHours_GroupBox.SuspendLayout();
+            this.BlockDamagePlayer_GroupBox.SuspendLayout();
+            this.Telnet_GroupBox.SuspendLayout();
+            this.Telnet_FailedLoginLimit_GroupBox.SuspendLayout();
+            this.Telnet_FailedLoginsBlocktime_GroupBox.SuspendLayout();
+            this.Telnet_Port_GroupBox.SuspendLayout();
+            this.Telnet_Password_GroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_TelnetEnabled)).BeginInit();
+            this.GameWorldSettings_GroupBox.SuspendLayout();
+            this.GameName_GroupBox.SuspendLayout();
+            this.GameWorld_GroupBox.SuspendLayout();
+            this.WorldGenSeed_GroupBox.SuspendLayout();
+            this.WorldGenSize_GroupBox.SuspendLayout();
+            this.GameMode_GroupBox.SuspendLayout();
+            this.PlayerSafeZoneLevel_GroupBox.SuspendLayout();
+            this.ServerOptions_GroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_EnemySpawnMode)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_EACEnabled)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_TerminalWindowEnabled)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_AirDropMarker)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_EnemyDifficulty)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BuildCreate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_PersistentPlayerProfiles)).BeginInit();
             this.LootRespawnDays_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_LootRespawnDays)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_PersistentPlayerProfiles)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BuildCreate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_EnemyDifficulty)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_TerminalWindowEnabled)).BeginInit();
             this.ServerMaxWorldTransferSpeedKiBs_GroupBox.SuspendLayout();
             this.Server_Visibility_GroupBox.SuspendLayout();
             this.MaxUncoveredMapChunksPerPlayer_GroupBox.SuspendLayout();
             this.HideCommandExecutionLog_GroupBox.SuspendLayout();
             this.ServerDisabledNetworkProtocols_GroupBox.SuspendLayout();
-            this.Telnet_Settings_GroupBox.SuspendLayout();
             this.ServerPort_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_ServerPort)).BeginInit();
-            this.Admin_Control_Panel_GroupBox.SuspendLayout();
+            this.ControlPanel_GroupBox.SuspendLayout();
+            this.ControlPanel_Port_GroupBox.SuspendLayout();
+            this.ControlPanel_Password_GroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_ControlPanelEnabled)).BeginInit();
             this.BloodMoon_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BloodMoonWarning)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BloodMoonRange)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BloodMoonFrequency)).BeginInit();
-            this.Game_World_Settings_GroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_WorldGenSize)).BeginInit();
             this.autobots.SuspendLayout();
             this.BedrollExpiryTime_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BedrollExpiryTime)).BeginInit();
@@ -579,7 +613,6 @@
             this.ServerDescription_GroupBox.SuspendLayout();
             this.ServerName_GroupBox.SuspendLayout();
             this.BlockDamageAIBM_GroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BlockDamageAIBM)).BeginInit();
             this.PartySharedKillRange_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_PartySharedKillRange)).BeginInit();
             this.ZombieBloodMoonSpeed_GroupBox.SuspendLayout();
@@ -589,10 +622,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_ServerMaxAllowedViewDistance)).BeginInit();
             this.DropOnQuit_GroupBox.SuspendLayout();
             this.XPMultiplier_GroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_XPMultiplier)).BeginInit();
             this.BlockDamageAI_GroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BlockDamageAI)).BeginInit();
-            this.Server_Reserved_Slots_GroupBox.SuspendLayout();
+            this.ServerReservedSlots_GroupBox.SuspendLayout();
             this.Player_Killing_Mode_GroupBox.SuspendLayout();
             this.DropOnDeath_GroupBox.SuspendLayout();
             this.AirDropFrequency_GroupBox.SuspendLayout();
@@ -607,14 +638,10 @@
             this.LandClaimExpiryTime_GroupBox.SuspendLayout();
             this.LootAbundance_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_LootAbundance)).BeginInit();
-            this.Max_Players_GroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_ServerMaxPlayerCount)).BeginInit();
+            this.ServerMaxPlayerCount_GroupBox.SuspendLayout();
             this.ZombieDaySpeed_GroupBox.SuspendLayout();
             this.DayLightLength_GroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_DayLightLength)).BeginInit();
             this.DayNightLength_GroupBox.SuspendLayout();
-            this.BlockDamagePlayer_GroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BlockDamagePlayer)).BeginInit();
             this.GameDifficulty_GroupBox.SuspendLayout();
             this.Messaging_TabPage.SuspendLayout();
             this.Server_Chat_Messages_GroupBox.SuspendLayout();
@@ -649,7 +676,6 @@
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_status)).BeginInit();
-            this.ServerOptions_GroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // status_updater
@@ -1521,7 +1547,7 @@
             this.Server_Clock.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.RoundedRectangle;
             this.Server_Clock.ClockType = Syncfusion.Windows.Forms.Tools.ClockTypes.Digital;
             this.Server_Clock.CurrentDateTime = new System.DateTime(2019, 12, 17, 0, 0, 0, 0);
-            this.Server_Clock.CustomTime = new System.DateTime(2019, 12, 17, 22, 11, 40, 233);
+            this.Server_Clock.CustomTime = new System.DateTime(2019, 12, 18, 23, 44, 55, 923);
             this.Server_Clock.DigitalRenderer = digitalClockRenderer2;
             this.Server_Clock.DisplayDates = true;
             resources.ApplyResources(this.Server_Clock, "Server_Clock");
@@ -2039,6 +2065,11 @@
             // GameSettings_TabPage
             // 
             this.GameSettings_TabPage.BackColor = System.Drawing.SystemColors.Control;
+            this.GameSettings_TabPage.Controls.Add(this.PlayerSafeZoneHours_GroupBox);
+            this.GameSettings_TabPage.Controls.Add(this.BlockDamagePlayer_GroupBox);
+            this.GameSettings_TabPage.Controls.Add(this.Telnet_GroupBox);
+            this.GameSettings_TabPage.Controls.Add(this.GameWorldSettings_GroupBox);
+            this.GameSettings_TabPage.Controls.Add(this.PlayerSafeZoneLevel_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.ServerOptions_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.LootRespawnDays_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.ServerMaxWorldTransferSpeedKiBs_GroupBox);
@@ -2046,11 +2077,9 @@
             this.GameSettings_TabPage.Controls.Add(this.MaxUncoveredMapChunksPerPlayer_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.HideCommandExecutionLog_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.ServerDisabledNetworkProtocols_GroupBox);
-            this.GameSettings_TabPage.Controls.Add(this.Telnet_Settings_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.ServerPort_GroupBox);
-            this.GameSettings_TabPage.Controls.Add(this.Admin_Control_Panel_GroupBox);
+            this.GameSettings_TabPage.Controls.Add(this.ControlPanel_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.BloodMoon_GroupBox);
-            this.GameSettings_TabPage.Controls.Add(this.Game_World_Settings_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.autobots);
             this.GameSettings_TabPage.Controls.Add(this.User_Data_Folder_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.Save_Game_Folder_GroupBox);
@@ -2069,85 +2098,489 @@
             this.GameSettings_TabPage.Controls.Add(this.DropOnQuit_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.XPMultiplier_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.BlockDamageAI_GroupBox);
-            this.GameSettings_TabPage.Controls.Add(this.Server_Reserved_Slots_GroupBox);
+            this.GameSettings_TabPage.Controls.Add(this.ServerReservedSlots_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.Player_Killing_Mode_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.DropOnDeath_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.AirDropFrequency_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.Land_Claim_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.LootAbundance_GroupBox);
-            this.GameSettings_TabPage.Controls.Add(this.Max_Players_GroupBox);
+            this.GameSettings_TabPage.Controls.Add(this.ServerMaxPlayerCount_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.ZombieDaySpeed_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.DayLightLength_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.DayNightLength_GroupBox);
-            this.GameSettings_TabPage.Controls.Add(this.BlockDamagePlayer_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.GameDifficulty_GroupBox);
             resources.ApplyResources(this.GameSettings_TabPage, "GameSettings_TabPage");
             this.GameSettings_TabPage.Name = "GameSettings_TabPage";
             // 
+            // PlayerSafeZoneHours_GroupBox
+            // 
+            this.PlayerSafeZoneHours_GroupBox.Controls.Add(this.ConfigProperty_PlayerSafeZoneHours);
+            resources.ApplyResources(this.PlayerSafeZoneHours_GroupBox, "PlayerSafeZoneHours_GroupBox");
+            this.PlayerSafeZoneHours_GroupBox.Name = "PlayerSafeZoneHours_GroupBox";
+            this.PlayerSafeZoneHours_GroupBox.TabStop = false;
+            // 
+            // ConfigProperty_PlayerSafeZoneHours
+            // 
+            resources.ApplyResources(this.ConfigProperty_PlayerSafeZoneHours, "ConfigProperty_PlayerSafeZoneHours");
+            this.ConfigProperty_PlayerSafeZoneHours.Name = "ConfigProperty_PlayerSafeZoneHours";
+            this.toolTip.SetToolTip(this.ConfigProperty_PlayerSafeZoneHours, resources.GetString("ConfigProperty_PlayerSafeZoneHours.ToolTip"));
+            this.ConfigProperty_PlayerSafeZoneHours.TextChanged += new System.EventHandler(this.ConfigProperty_PlayerSafeZoneHours_TextChanged);
+            // 
+            // BlockDamagePlayer_GroupBox
+            // 
+            resources.ApplyResources(this.BlockDamagePlayer_GroupBox, "BlockDamagePlayer_GroupBox");
+            this.BlockDamagePlayer_GroupBox.Controls.Add(this.ConfigProperty_BlockDamagePlayer);
+            this.BlockDamagePlayer_GroupBox.Name = "BlockDamagePlayer_GroupBox";
+            this.BlockDamagePlayer_GroupBox.TabStop = false;
+            // 
+            // ConfigProperty_BlockDamagePlayer
+            // 
+            this.ConfigProperty_BlockDamagePlayer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.ConfigProperty_BlockDamagePlayer.BeforeTouchSize = new System.Drawing.Size(363, 20);
+            resources.ApplyResources(this.ConfigProperty_BlockDamagePlayer, "ConfigProperty_BlockDamagePlayer");
+            this.ConfigProperty_BlockDamagePlayer.LargeChange = 100;
+            this.ConfigProperty_BlockDamagePlayer.Name = "ConfigProperty_BlockDamagePlayer";
+            this.ConfigProperty_BlockDamagePlayer.SliderSize = new System.Drawing.Size(4, 14);
+            this.ConfigProperty_BlockDamagePlayer.SmallChange = 25;
+            this.ConfigProperty_BlockDamagePlayer.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Colorful;
+            this.ConfigProperty_BlockDamagePlayer.ThemeName = "Office2016Colorful";
+            this.ConfigProperty_BlockDamagePlayer.TimerInterval = 100;
+            this.toolTip.SetToolTip(this.ConfigProperty_BlockDamagePlayer, resources.GetString("ConfigProperty_BlockDamagePlayer.ToolTip"));
+            this.ConfigProperty_BlockDamagePlayer.Value = 100;
+            this.ConfigProperty_BlockDamagePlayer.ValueChanged += new System.EventHandler(this.ConfigProperty_BlockDamagePlayer_ValueChanged);
+            // 
+            // Telnet_GroupBox
+            // 
+            resources.ApplyResources(this.Telnet_GroupBox, "Telnet_GroupBox");
+            this.Telnet_GroupBox.Controls.Add(this.Telnet_FailedLoginLimit_GroupBox);
+            this.Telnet_GroupBox.Controls.Add(this.Telnet_FailedLoginsBlocktime_GroupBox);
+            this.Telnet_GroupBox.Controls.Add(this.Telnet_Port_GroupBox);
+            this.Telnet_GroupBox.Controls.Add(this.Telnet_Password_GroupBox);
+            this.Telnet_GroupBox.Controls.Add(this.ConfigProperty_TelnetEnabled);
+            this.Telnet_GroupBox.Name = "Telnet_GroupBox";
+            this.Telnet_GroupBox.TabStop = false;
+            // 
+            // Telnet_FailedLoginLimit_GroupBox
+            // 
+            this.Telnet_FailedLoginLimit_GroupBox.Controls.Add(this.ConfigProperty_TelnetFailedLoginLimit);
+            resources.ApplyResources(this.Telnet_FailedLoginLimit_GroupBox, "Telnet_FailedLoginLimit_GroupBox");
+            this.Telnet_FailedLoginLimit_GroupBox.Name = "Telnet_FailedLoginLimit_GroupBox";
+            this.Telnet_FailedLoginLimit_GroupBox.TabStop = false;
+            // 
+            // ConfigProperty_TelnetFailedLoginLimit
+            // 
+            resources.ApplyResources(this.ConfigProperty_TelnetFailedLoginLimit, "ConfigProperty_TelnetFailedLoginLimit");
+            this.ConfigProperty_TelnetFailedLoginLimit.Name = "ConfigProperty_TelnetFailedLoginLimit";
+            this.toolTip.SetToolTip(this.ConfigProperty_TelnetFailedLoginLimit, resources.GetString("ConfigProperty_TelnetFailedLoginLimit.ToolTip"));
+            this.ConfigProperty_TelnetFailedLoginLimit.TextChanged += new System.EventHandler(this.ConfigProperty_TelnetFailedLoginLimit_TextChanged);
+            // 
+            // Telnet_FailedLoginsBlocktime_GroupBox
+            // 
+            this.Telnet_FailedLoginsBlocktime_GroupBox.Controls.Add(this.ConfigProperty_TelnetFailedLoginsBlocktime);
+            resources.ApplyResources(this.Telnet_FailedLoginsBlocktime_GroupBox, "Telnet_FailedLoginsBlocktime_GroupBox");
+            this.Telnet_FailedLoginsBlocktime_GroupBox.Name = "Telnet_FailedLoginsBlocktime_GroupBox";
+            this.Telnet_FailedLoginsBlocktime_GroupBox.TabStop = false;
+            // 
+            // ConfigProperty_TelnetFailedLoginsBlocktime
+            // 
+            resources.ApplyResources(this.ConfigProperty_TelnetFailedLoginsBlocktime, "ConfigProperty_TelnetFailedLoginsBlocktime");
+            this.ConfigProperty_TelnetFailedLoginsBlocktime.Name = "ConfigProperty_TelnetFailedLoginsBlocktime";
+            this.toolTip.SetToolTip(this.ConfigProperty_TelnetFailedLoginsBlocktime, resources.GetString("ConfigProperty_TelnetFailedLoginsBlocktime.ToolTip"));
+            this.ConfigProperty_TelnetFailedLoginsBlocktime.TextChanged += new System.EventHandler(this.ConfigProperty_TelnetFailedLoginsBlocktime_TextChanged);
+            // 
+            // Telnet_Port_GroupBox
+            // 
+            this.Telnet_Port_GroupBox.Controls.Add(this.ConfigProperty_TelnetPort);
+            resources.ApplyResources(this.Telnet_Port_GroupBox, "Telnet_Port_GroupBox");
+            this.Telnet_Port_GroupBox.Name = "Telnet_Port_GroupBox";
+            this.Telnet_Port_GroupBox.TabStop = false;
+            // 
+            // ConfigProperty_TelnetPort
+            // 
+            resources.ApplyResources(this.ConfigProperty_TelnetPort, "ConfigProperty_TelnetPort");
+            this.ConfigProperty_TelnetPort.Name = "ConfigProperty_TelnetPort";
+            this.toolTip.SetToolTip(this.ConfigProperty_TelnetPort, resources.GetString("ConfigProperty_TelnetPort.ToolTip"));
+            this.ConfigProperty_TelnetPort.TextChanged += new System.EventHandler(this.ConfigProperty_TelnetPort_TextChanged);
+            // 
+            // Telnet_Password_GroupBox
+            // 
+            this.Telnet_Password_GroupBox.Controls.Add(this.ConfigProperty_TelnetPassword);
+            resources.ApplyResources(this.Telnet_Password_GroupBox, "Telnet_Password_GroupBox");
+            this.Telnet_Password_GroupBox.Name = "Telnet_Password_GroupBox";
+            this.Telnet_Password_GroupBox.TabStop = false;
+            // 
+            // ConfigProperty_TelnetPassword
+            // 
+            resources.ApplyResources(this.ConfigProperty_TelnetPassword, "ConfigProperty_TelnetPassword");
+            this.ConfigProperty_TelnetPassword.Name = "ConfigProperty_TelnetPassword";
+            this.toolTip.SetToolTip(this.ConfigProperty_TelnetPassword, resources.GetString("ConfigProperty_TelnetPassword.ToolTip"));
+            this.ConfigProperty_TelnetPassword.TextChanged += new System.EventHandler(this.ConfigProperty_TelnetPassword_TextChanged);
+            // 
+            // ConfigProperty_TelnetEnabled
+            // 
+            activeStateCollection10.Text = "Enabled";
+            this.ConfigProperty_TelnetEnabled.ActiveState = activeStateCollection10;
+            resources.ApplyResources(this.ConfigProperty_TelnetEnabled, "ConfigProperty_TelnetEnabled");
+            this.ConfigProperty_TelnetEnabled.ForeColor = System.Drawing.Color.Black;
+            inactiveStateCollection10.Text = "Disabled";
+            this.ConfigProperty_TelnetEnabled.InactiveState = inactiveStateCollection10;
+            this.ConfigProperty_TelnetEnabled.Name = "ConfigProperty_TelnetEnabled";
+            sliderCollection10.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            sliderCollection10.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ConfigProperty_TelnetEnabled.Slider = sliderCollection10;
+            this.ConfigProperty_TelnetEnabled.ThemeName = "Default";
+            this.ConfigProperty_TelnetEnabled.ToggleState = Syncfusion.Windows.Forms.Tools.ToggleButtonState.Active;
+            this.toolTip.SetToolTip(this.ConfigProperty_TelnetEnabled, resources.GetString("ConfigProperty_TelnetEnabled.ToolTip"));
+            this.ConfigProperty_TelnetEnabled.ToggleStateChanged += new Syncfusion.Windows.Forms.Tools.ToggleStateChangedEventHandler(this.ConfigProperty_TelnetEnabled_ToggleStateChanged);
+            // 
+            // GameWorldSettings_GroupBox
+            // 
+            this.GameWorldSettings_GroupBox.Controls.Add(this.GameName_GroupBox);
+            this.GameWorldSettings_GroupBox.Controls.Add(this.GameWorld_GroupBox);
+            this.GameWorldSettings_GroupBox.Controls.Add(this.WorldGenSeed_GroupBox);
+            this.GameWorldSettings_GroupBox.Controls.Add(this.WorldGenSize_GroupBox);
+            this.GameWorldSettings_GroupBox.Controls.Add(this.GameMode_GroupBox);
+            resources.ApplyResources(this.GameWorldSettings_GroupBox, "GameWorldSettings_GroupBox");
+            this.GameWorldSettings_GroupBox.Name = "GameWorldSettings_GroupBox";
+            this.GameWorldSettings_GroupBox.TabStop = false;
+            // 
+            // GameName_GroupBox
+            // 
+            this.GameName_GroupBox.Controls.Add(this.ConfigProperty_GameName);
+            resources.ApplyResources(this.GameName_GroupBox, "GameName_GroupBox");
+            this.GameName_GroupBox.Name = "GameName_GroupBox";
+            this.GameName_GroupBox.TabStop = false;
+            // 
+            // ConfigProperty_GameName
+            // 
+            resources.ApplyResources(this.ConfigProperty_GameName, "ConfigProperty_GameName");
+            this.ConfigProperty_GameName.FormattingEnabled = true;
+            this.ConfigProperty_GameName.Name = "ConfigProperty_GameName";
+            this.toolTip.SetToolTip(this.ConfigProperty_GameName, resources.GetString("ConfigProperty_GameName.ToolTip"));
+            // 
+            // GameWorld_GroupBox
+            // 
+            this.GameWorld_GroupBox.Controls.Add(this.ConfigProperty_GameWorld);
+            resources.ApplyResources(this.GameWorld_GroupBox, "GameWorld_GroupBox");
+            this.GameWorld_GroupBox.Name = "GameWorld_GroupBox";
+            this.GameWorld_GroupBox.TabStop = false;
+            // 
+            // ConfigProperty_GameWorld
+            // 
+            this.ConfigProperty_GameWorld.DisplayMember = "a";
+            resources.ApplyResources(this.ConfigProperty_GameWorld, "ConfigProperty_GameWorld");
+            this.ConfigProperty_GameWorld.FormattingEnabled = true;
+            this.ConfigProperty_GameWorld.Items.AddRange(new object[] {
+            resources.GetString("ConfigProperty_GameWorld.Items"),
+            resources.GetString("ConfigProperty_GameWorld.Items1")});
+            this.ConfigProperty_GameWorld.Name = "ConfigProperty_GameWorld";
+            this.toolTip.SetToolTip(this.ConfigProperty_GameWorld, resources.GetString("ConfigProperty_GameWorld.ToolTip"));
+            this.ConfigProperty_GameWorld.SelectedValueChanged += new System.EventHandler(this.ConfigProperty_GameWorld_SelectedValueChanged);
+            // 
+            // WorldGenSeed_GroupBox
+            // 
+            this.WorldGenSeed_GroupBox.Controls.Add(this.ConfigProperty_WorldGenSeed);
+            resources.ApplyResources(this.WorldGenSeed_GroupBox, "WorldGenSeed_GroupBox");
+            this.WorldGenSeed_GroupBox.Name = "WorldGenSeed_GroupBox";
+            this.WorldGenSeed_GroupBox.TabStop = false;
+            // 
+            // ConfigProperty_WorldGenSeed
+            // 
+            resources.ApplyResources(this.ConfigProperty_WorldGenSeed, "ConfigProperty_WorldGenSeed");
+            this.ConfigProperty_WorldGenSeed.Name = "ConfigProperty_WorldGenSeed";
+            this.toolTip.SetToolTip(this.ConfigProperty_WorldGenSeed, resources.GetString("ConfigProperty_WorldGenSeed.ToolTip"));
+            this.ConfigProperty_WorldGenSeed.TextChanged += new System.EventHandler(this.ConfigProperty_WorldGenSeed_TextChanged);
+            // 
+            // WorldGenSize_GroupBox
+            // 
+            this.WorldGenSize_GroupBox.Controls.Add(this.ConfigProperty_WorldGenSize);
+            resources.ApplyResources(this.WorldGenSize_GroupBox, "WorldGenSize_GroupBox");
+            this.WorldGenSize_GroupBox.Name = "WorldGenSize_GroupBox";
+            this.WorldGenSize_GroupBox.TabStop = false;
+            // 
+            // ConfigProperty_WorldGenSize
+            // 
+            this.ConfigProperty_WorldGenSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.ConfigProperty_WorldGenSize.BeforeTouchSize = new System.Drawing.Size(194, 20);
+            resources.ApplyResources(this.ConfigProperty_WorldGenSize, "ConfigProperty_WorldGenSize");
+            this.ConfigProperty_WorldGenSize.LargeChange = 1024;
+            this.ConfigProperty_WorldGenSize.Name = "ConfigProperty_WorldGenSize";
+            this.ConfigProperty_WorldGenSize.SliderSize = new System.Drawing.Size(4, 14);
+            this.ConfigProperty_WorldGenSize.SmallChange = 1024;
+            this.ConfigProperty_WorldGenSize.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Colorful;
+            this.ConfigProperty_WorldGenSize.ThemeName = "Office2016Colorful";
+            this.ConfigProperty_WorldGenSize.TimerInterval = 100;
+            this.toolTip.SetToolTip(this.ConfigProperty_WorldGenSize, resources.GetString("ConfigProperty_WorldGenSize.ToolTip"));
+            this.ConfigProperty_WorldGenSize.Value = 4096;
+            this.ConfigProperty_WorldGenSize.ValueChanged += new System.EventHandler(this.ConfigProperty_WorldGenSize_ValueChanged);
+            // 
+            // GameMode_GroupBox
+            // 
+            this.GameMode_GroupBox.Controls.Add(this.ConfigProperty_GameMode);
+            resources.ApplyResources(this.GameMode_GroupBox, "GameMode_GroupBox");
+            this.GameMode_GroupBox.Name = "GameMode_GroupBox";
+            this.GameMode_GroupBox.TabStop = false;
+            // 
+            // ConfigProperty_GameMode
+            // 
+            resources.ApplyResources(this.ConfigProperty_GameMode, "ConfigProperty_GameMode");
+            this.ConfigProperty_GameMode.FormattingEnabled = true;
+            this.ConfigProperty_GameMode.Items.AddRange(new object[] {
+            resources.GetString("ConfigProperty_GameMode.Items")});
+            this.ConfigProperty_GameMode.Name = "ConfigProperty_GameMode";
+            this.toolTip.SetToolTip(this.ConfigProperty_GameMode, resources.GetString("ConfigProperty_GameMode.ToolTip"));
+            this.ConfigProperty_GameMode.SelectedValueChanged += new System.EventHandler(this.ConfigProperty_GameMode_SelectedValueChanged);
+            // 
+            // PlayerSafeZoneLevel_GroupBox
+            // 
+            this.PlayerSafeZoneLevel_GroupBox.Controls.Add(this.ConfigProperty_PlayerSafeZoneLevel);
+            resources.ApplyResources(this.PlayerSafeZoneLevel_GroupBox, "PlayerSafeZoneLevel_GroupBox");
+            this.PlayerSafeZoneLevel_GroupBox.Name = "PlayerSafeZoneLevel_GroupBox";
+            this.PlayerSafeZoneLevel_GroupBox.TabStop = false;
+            // 
+            // ConfigProperty_PlayerSafeZoneLevel
+            // 
+            resources.ApplyResources(this.ConfigProperty_PlayerSafeZoneLevel, "ConfigProperty_PlayerSafeZoneLevel");
+            this.ConfigProperty_PlayerSafeZoneLevel.Name = "ConfigProperty_PlayerSafeZoneLevel";
+            this.toolTip.SetToolTip(this.ConfigProperty_PlayerSafeZoneLevel, resources.GetString("ConfigProperty_PlayerSafeZoneLevel.ToolTip"));
+            this.ConfigProperty_PlayerSafeZoneLevel.TextChanged += new System.EventHandler(this.ConfigProperty_PlayerSafeZoneLevel_TextChanged);
+            // 
+            // ServerOptions_GroupBox
+            // 
+            this.ServerOptions_GroupBox.Controls.Add(this.ConfigProperty_EnemySpawnMode);
+            this.ServerOptions_GroupBox.Controls.Add(this.ConfigProperty_EACEnabled);
+            this.ServerOptions_GroupBox.Controls.Add(this.ConfigProperty_TerminalWindowEnabled);
+            this.ServerOptions_GroupBox.Controls.Add(this.ConfigProperty_AirDropMarker);
+            this.ServerOptions_GroupBox.Controls.Add(this.ConfigProperty_EnemyDifficulty);
+            this.ServerOptions_GroupBox.Controls.Add(this.ConfigProperty_BuildCreate);
+            this.ServerOptions_GroupBox.Controls.Add(this.ConfigProperty_PersistentPlayerProfiles);
+            resources.ApplyResources(this.ServerOptions_GroupBox, "ServerOptions_GroupBox");
+            this.ServerOptions_GroupBox.Name = "ServerOptions_GroupBox";
+            this.ServerOptions_GroupBox.TabStop = false;
+            // 
+            // ConfigProperty_EnemySpawnMode
+            // 
+            activeStateCollection11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            activeStateCollection11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            activeStateCollection11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            activeStateCollection11.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(103)))), ((int)(((byte)(176)))));
+            activeStateCollection11.Text = "Enable Enemy Spawning";
+            this.ConfigProperty_EnemySpawnMode.ActiveState = activeStateCollection11;
+            resources.ApplyResources(this.ConfigProperty_EnemySpawnMode, "ConfigProperty_EnemySpawnMode");
+            this.ConfigProperty_EnemySpawnMode.ForeColor = System.Drawing.Color.Black;
+            inactiveStateCollection11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            inactiveStateCollection11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            inactiveStateCollection11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            inactiveStateCollection11.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            inactiveStateCollection11.Text = "Disabled Enemy Spawning";
+            this.ConfigProperty_EnemySpawnMode.InactiveState = inactiveStateCollection11;
+            this.ConfigProperty_EnemySpawnMode.Name = "ConfigProperty_EnemySpawnMode";
+            sliderCollection11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            sliderCollection11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            sliderCollection11.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            sliderCollection11.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            sliderCollection11.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ConfigProperty_EnemySpawnMode.Slider = sliderCollection11;
+            this.ConfigProperty_EnemySpawnMode.ThemeName = "Office2016Black";
+            this.ConfigProperty_EnemySpawnMode.ToggleState = Syncfusion.Windows.Forms.Tools.ToggleButtonState.Active;
+            this.toolTip.SetToolTip(this.ConfigProperty_EnemySpawnMode, resources.GetString("ConfigProperty_EnemySpawnMode.ToolTip"));
+            this.ConfigProperty_EnemySpawnMode.VisualStyle = Syncfusion.Windows.Forms.Tools.ToggleButtonStyle.Office2016Black;
+            // 
             // ConfigProperty_EACEnabled
             // 
-            activeStateCollection7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
-            activeStateCollection7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
-            activeStateCollection7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            activeStateCollection7.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(103)))), ((int)(((byte)(176)))));
-            activeStateCollection7.Text = "Easy Anti-Cheat Enabled";
-            this.ConfigProperty_EACEnabled.ActiveState = activeStateCollection7;
+            activeStateCollection12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            activeStateCollection12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            activeStateCollection12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            activeStateCollection12.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(103)))), ((int)(((byte)(176)))));
+            activeStateCollection12.Text = "Easy Anti-Cheat Enabled";
+            this.ConfigProperty_EACEnabled.ActiveState = activeStateCollection12;
             resources.ApplyResources(this.ConfigProperty_EACEnabled, "ConfigProperty_EACEnabled");
             this.ConfigProperty_EACEnabled.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            inactiveStateCollection7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            inactiveStateCollection7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            inactiveStateCollection7.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            inactiveStateCollection7.Text = "Easy Anti-Cheat Disabled";
-            this.ConfigProperty_EACEnabled.InactiveState = inactiveStateCollection7;
+            inactiveStateCollection12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            inactiveStateCollection12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            inactiveStateCollection12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            inactiveStateCollection12.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            inactiveStateCollection12.Text = "Easy Anti-Cheat Disabled";
+            this.ConfigProperty_EACEnabled.InactiveState = inactiveStateCollection12;
             this.ConfigProperty_EACEnabled.Name = "ConfigProperty_EACEnabled";
-            sliderCollection7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            sliderCollection7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
-            sliderCollection7.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            sliderCollection7.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            sliderCollection7.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ConfigProperty_EACEnabled.Slider = sliderCollection7;
+            sliderCollection12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            sliderCollection12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            sliderCollection12.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            sliderCollection12.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            sliderCollection12.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ConfigProperty_EACEnabled.Slider = sliderCollection12;
             this.ConfigProperty_EACEnabled.ThemeName = "Office2016Black";
             this.ConfigProperty_EACEnabled.ToggleState = Syncfusion.Windows.Forms.Tools.ToggleButtonState.Active;
             this.toolTip.SetToolTip(this.ConfigProperty_EACEnabled, resources.GetString("ConfigProperty_EACEnabled.ToolTip"));
             this.ConfigProperty_EACEnabled.VisualStyle = Syncfusion.Windows.Forms.Tools.ToggleButtonStyle.Office2016Black;
             this.ConfigProperty_EACEnabled.ToggleStateChanged += new Syncfusion.Windows.Forms.Tools.ToggleStateChangedEventHandler(this.ConfigProperty_EACEnabled_ToggleStateChanged);
             // 
+            // ConfigProperty_TerminalWindowEnabled
+            // 
+            activeStateCollection13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            activeStateCollection13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            activeStateCollection13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            activeStateCollection13.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(103)))), ((int)(((byte)(176)))));
+            activeStateCollection13.Text = "Terminal Window Enabled";
+            this.ConfigProperty_TerminalWindowEnabled.ActiveState = activeStateCollection13;
+            resources.ApplyResources(this.ConfigProperty_TerminalWindowEnabled, "ConfigProperty_TerminalWindowEnabled");
+            this.ConfigProperty_TerminalWindowEnabled.ForeColor = System.Drawing.Color.Black;
+            inactiveStateCollection13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            inactiveStateCollection13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            inactiveStateCollection13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            inactiveStateCollection13.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            inactiveStateCollection13.Text = "Terminal Window Disabled";
+            this.ConfigProperty_TerminalWindowEnabled.InactiveState = inactiveStateCollection13;
+            this.ConfigProperty_TerminalWindowEnabled.Name = "ConfigProperty_TerminalWindowEnabled";
+            sliderCollection13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            sliderCollection13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            sliderCollection13.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            sliderCollection13.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            sliderCollection13.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ConfigProperty_TerminalWindowEnabled.Slider = sliderCollection13;
+            this.ConfigProperty_TerminalWindowEnabled.ThemeName = "Office2016Black";
+            this.ConfigProperty_TerminalWindowEnabled.ToggleState = Syncfusion.Windows.Forms.Tools.ToggleButtonState.Active;
+            this.toolTip.SetToolTip(this.ConfigProperty_TerminalWindowEnabled, resources.GetString("ConfigProperty_TerminalWindowEnabled.ToolTip"));
+            this.ConfigProperty_TerminalWindowEnabled.VisualStyle = Syncfusion.Windows.Forms.Tools.ToggleButtonStyle.Office2016Black;
+            this.ConfigProperty_TerminalWindowEnabled.ToggleStateChanged += new Syncfusion.Windows.Forms.Tools.ToggleStateChangedEventHandler(this.ConfigProperty_TerminalWindowEnabled_ToggleStateChanged);
+            // 
             // ConfigProperty_AirDropMarker
             // 
-            activeStateCollection8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
-            activeStateCollection8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
-            activeStateCollection8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            activeStateCollection8.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(103)))), ((int)(((byte)(176)))));
-            activeStateCollection8.Text = "Show Air Drops On Map";
-            this.ConfigProperty_AirDropMarker.ActiveState = activeStateCollection8;
+            activeStateCollection14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            activeStateCollection14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            activeStateCollection14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            activeStateCollection14.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(103)))), ((int)(((byte)(176)))));
+            activeStateCollection14.Text = "Show Air Drops On Map";
+            this.ConfigProperty_AirDropMarker.ActiveState = activeStateCollection14;
             resources.ApplyResources(this.ConfigProperty_AirDropMarker, "ConfigProperty_AirDropMarker");
             this.ConfigProperty_AirDropMarker.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            inactiveStateCollection8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            inactiveStateCollection8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            inactiveStateCollection8.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            inactiveStateCollection8.Text = "Hide Air Drops On Map";
-            this.ConfigProperty_AirDropMarker.InactiveState = inactiveStateCollection8;
+            inactiveStateCollection14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            inactiveStateCollection14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            inactiveStateCollection14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            inactiveStateCollection14.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            inactiveStateCollection14.Text = "Hide Air Drops On Map";
+            this.ConfigProperty_AirDropMarker.InactiveState = inactiveStateCollection14;
             this.ConfigProperty_AirDropMarker.Name = "ConfigProperty_AirDropMarker";
-            sliderCollection8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            sliderCollection8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
-            sliderCollection8.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            sliderCollection8.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            sliderCollection8.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ConfigProperty_AirDropMarker.Slider = sliderCollection8;
+            sliderCollection14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            sliderCollection14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            sliderCollection14.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            sliderCollection14.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            sliderCollection14.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ConfigProperty_AirDropMarker.Slider = sliderCollection14;
             this.ConfigProperty_AirDropMarker.ThemeName = "Office2016Black";
             this.ConfigProperty_AirDropMarker.ToggleState = Syncfusion.Windows.Forms.Tools.ToggleButtonState.Active;
             this.toolTip.SetToolTip(this.ConfigProperty_AirDropMarker, resources.GetString("ConfigProperty_AirDropMarker.ToolTip"));
             this.ConfigProperty_AirDropMarker.VisualStyle = Syncfusion.Windows.Forms.Tools.ToggleButtonStyle.Office2016Black;
             this.ConfigProperty_AirDropMarker.ToggleStateChanged += new Syncfusion.Windows.Forms.Tools.ToggleStateChangedEventHandler(this.ConfigProperty_AirDropMarker_ToggleStateChanged);
             // 
+            // ConfigProperty_EnemyDifficulty
+            // 
+            activeStateCollection15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            activeStateCollection15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            activeStateCollection15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            activeStateCollection15.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(103)))), ((int)(((byte)(176)))));
+            activeStateCollection15.Text = "Feral Zombies";
+            this.ConfigProperty_EnemyDifficulty.ActiveState = activeStateCollection15;
+            resources.ApplyResources(this.ConfigProperty_EnemyDifficulty, "ConfigProperty_EnemyDifficulty");
+            this.ConfigProperty_EnemyDifficulty.ForeColor = System.Drawing.Color.Black;
+            inactiveStateCollection15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            inactiveStateCollection15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            inactiveStateCollection15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            inactiveStateCollection15.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            inactiveStateCollection15.Text = "Normal Zombies";
+            this.ConfigProperty_EnemyDifficulty.InactiveState = inactiveStateCollection15;
+            this.ConfigProperty_EnemyDifficulty.Name = "ConfigProperty_EnemyDifficulty";
+            sliderCollection15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            sliderCollection15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            sliderCollection15.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            sliderCollection15.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            sliderCollection15.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ConfigProperty_EnemyDifficulty.Slider = sliderCollection15;
+            this.ConfigProperty_EnemyDifficulty.ThemeName = "Office2016Black";
+            this.ConfigProperty_EnemyDifficulty.ToggleState = Syncfusion.Windows.Forms.Tools.ToggleButtonState.Active;
+            this.toolTip.SetToolTip(this.ConfigProperty_EnemyDifficulty, resources.GetString("ConfigProperty_EnemyDifficulty.ToolTip"));
+            this.ConfigProperty_EnemyDifficulty.VisualStyle = Syncfusion.Windows.Forms.Tools.ToggleButtonStyle.Office2016Black;
+            this.ConfigProperty_EnemyDifficulty.ToggleStateChanged += new Syncfusion.Windows.Forms.Tools.ToggleStateChangedEventHandler(this.ConfigProperty_EnemyDifficulty_ToggleStateChanged);
+            // 
+            // ConfigProperty_BuildCreate
+            // 
+            activeStateCollection16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            activeStateCollection16.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            activeStateCollection16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            activeStateCollection16.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(103)))), ((int)(((byte)(176)))));
+            activeStateCollection16.Text = "Cheat Mode Enabled";
+            this.ConfigProperty_BuildCreate.ActiveState = activeStateCollection16;
+            resources.ApplyResources(this.ConfigProperty_BuildCreate, "ConfigProperty_BuildCreate");
+            this.ConfigProperty_BuildCreate.ForeColor = System.Drawing.Color.Black;
+            inactiveStateCollection16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            inactiveStateCollection16.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            inactiveStateCollection16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            inactiveStateCollection16.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            inactiveStateCollection16.Text = "Cheat Mode Disabled";
+            this.ConfigProperty_BuildCreate.InactiveState = inactiveStateCollection16;
+            this.ConfigProperty_BuildCreate.Name = "ConfigProperty_BuildCreate";
+            sliderCollection16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            sliderCollection16.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            sliderCollection16.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            sliderCollection16.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            sliderCollection16.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ConfigProperty_BuildCreate.Slider = sliderCollection16;
+            this.ConfigProperty_BuildCreate.ThemeName = "Office2016Black";
+            this.ConfigProperty_BuildCreate.ToggleState = Syncfusion.Windows.Forms.Tools.ToggleButtonState.Active;
+            this.toolTip.SetToolTip(this.ConfigProperty_BuildCreate, resources.GetString("ConfigProperty_BuildCreate.ToolTip"));
+            this.ConfigProperty_BuildCreate.VisualStyle = Syncfusion.Windows.Forms.Tools.ToggleButtonStyle.Office2016Black;
+            this.ConfigProperty_BuildCreate.ToggleStateChanged += new Syncfusion.Windows.Forms.Tools.ToggleStateChangedEventHandler(this.ConfigProperty_BuildCreate_ToggleStateChanged);
+            // 
+            // ConfigProperty_PersistentPlayerProfiles
+            // 
+            activeStateCollection17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            activeStateCollection17.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            activeStateCollection17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            activeStateCollection17.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(103)))), ((int)(((byte)(176)))));
+            activeStateCollection17.Text = "Persistant Profiles Enabled";
+            this.ConfigProperty_PersistentPlayerProfiles.ActiveState = activeStateCollection17;
+            resources.ApplyResources(this.ConfigProperty_PersistentPlayerProfiles, "ConfigProperty_PersistentPlayerProfiles");
+            this.ConfigProperty_PersistentPlayerProfiles.ForeColor = System.Drawing.Color.Black;
+            inactiveStateCollection17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
+            inactiveStateCollection17.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            inactiveStateCollection17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            inactiveStateCollection17.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            inactiveStateCollection17.Text = "Disabled Persistant Profiles";
+            this.ConfigProperty_PersistentPlayerProfiles.InactiveState = inactiveStateCollection17;
+            this.ConfigProperty_PersistentPlayerProfiles.Name = "ConfigProperty_PersistentPlayerProfiles";
+            sliderCollection17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            sliderCollection17.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            sliderCollection17.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            sliderCollection17.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            sliderCollection17.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ConfigProperty_PersistentPlayerProfiles.Slider = sliderCollection17;
+            this.ConfigProperty_PersistentPlayerProfiles.ThemeName = "Office2016Black";
+            this.toolTip.SetToolTip(this.ConfigProperty_PersistentPlayerProfiles, resources.GetString("ConfigProperty_PersistentPlayerProfiles.ToolTip"));
+            this.ConfigProperty_PersistentPlayerProfiles.VisualStyle = Syncfusion.Windows.Forms.Tools.ToggleButtonStyle.Office2016Black;
+            this.ConfigProperty_PersistentPlayerProfiles.ToggleStateChanged += new Syncfusion.Windows.Forms.Tools.ToggleStateChangedEventHandler(this.ConfigProperty_PersistentPlayerProfiles_ToggleStateChanged);
+            // 
             // LootRespawnDays_GroupBox
             // 
+            this.LootRespawnDays_GroupBox.Controls.Add(this.trackBarEx4);
             this.LootRespawnDays_GroupBox.Controls.Add(this.ConfigProperty_LootRespawnDays);
             resources.ApplyResources(this.LootRespawnDays_GroupBox, "LootRespawnDays_GroupBox");
             this.LootRespawnDays_GroupBox.Name = "LootRespawnDays_GroupBox";
             this.LootRespawnDays_GroupBox.TabStop = false;
+            // 
+            // trackBarEx4
+            // 
+            this.trackBarEx4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.trackBarEx4.BeforeTouchSize = new System.Drawing.Size(173, 20);
+            resources.ApplyResources(this.trackBarEx4, "trackBarEx4");
+            this.trackBarEx4.LargeChange = 128;
+            this.trackBarEx4.Name = "trackBarEx4";
+            this.trackBarEx4.SliderSize = new System.Drawing.Size(4, 14);
+            this.trackBarEx4.SmallChange = 64;
+            this.trackBarEx4.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Black;
+            this.trackBarEx4.ThemeName = "Office2016Black";
+            this.trackBarEx4.TimerInterval = 100;
+            this.toolTip.SetToolTip(this.trackBarEx4, resources.GetString("trackBarEx4.ToolTip"));
+            this.trackBarEx4.Value = 512;
             // 
             // ConfigProperty_LootRespawnDays
             // 
@@ -2157,122 +2590,6 @@
             this.ConfigProperty_LootRespawnDays.Name = "ConfigProperty_LootRespawnDays";
             this.ConfigProperty_LootRespawnDays.Value = 30;
             // 
-            // ConfigProperty_PersistentPlayerProfiles
-            // 
-            activeStateCollection9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
-            activeStateCollection9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
-            activeStateCollection9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            activeStateCollection9.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(103)))), ((int)(((byte)(176)))));
-            activeStateCollection9.Text = "Persistant Profiles Enabled";
-            this.ConfigProperty_PersistentPlayerProfiles.ActiveState = activeStateCollection9;
-            resources.ApplyResources(this.ConfigProperty_PersistentPlayerProfiles, "ConfigProperty_PersistentPlayerProfiles");
-            this.ConfigProperty_PersistentPlayerProfiles.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            inactiveStateCollection9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            inactiveStateCollection9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            inactiveStateCollection9.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            inactiveStateCollection9.Text = "Disabled Persistant Profiles";
-            this.ConfigProperty_PersistentPlayerProfiles.InactiveState = inactiveStateCollection9;
-            this.ConfigProperty_PersistentPlayerProfiles.Name = "ConfigProperty_PersistentPlayerProfiles";
-            sliderCollection9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            sliderCollection9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
-            sliderCollection9.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            sliderCollection9.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            sliderCollection9.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ConfigProperty_PersistentPlayerProfiles.Slider = sliderCollection9;
-            this.ConfigProperty_PersistentPlayerProfiles.ThemeName = "Office2016Black";
-            this.ConfigProperty_PersistentPlayerProfiles.ToggleState = Syncfusion.Windows.Forms.Tools.ToggleButtonState.Active;
-            this.toolTip.SetToolTip(this.ConfigProperty_PersistentPlayerProfiles, resources.GetString("ConfigProperty_PersistentPlayerProfiles.ToolTip"));
-            this.ConfigProperty_PersistentPlayerProfiles.VisualStyle = Syncfusion.Windows.Forms.Tools.ToggleButtonStyle.Office2016Black;
-            this.ConfigProperty_PersistentPlayerProfiles.ToggleStateChanged += new Syncfusion.Windows.Forms.Tools.ToggleStateChangedEventHandler(this.ConfigProperty_PersistentPlayerProfiles_ToggleStateChanged);
-            // 
-            // ConfigProperty_BuildCreate
-            // 
-            activeStateCollection10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
-            activeStateCollection10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
-            activeStateCollection10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            activeStateCollection10.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(103)))), ((int)(((byte)(176)))));
-            activeStateCollection10.Text = "Cheat Mode Enabled";
-            this.ConfigProperty_BuildCreate.ActiveState = activeStateCollection10;
-            resources.ApplyResources(this.ConfigProperty_BuildCreate, "ConfigProperty_BuildCreate");
-            this.ConfigProperty_BuildCreate.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            inactiveStateCollection10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            inactiveStateCollection10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            inactiveStateCollection10.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            inactiveStateCollection10.Text = "Cheat Mode Disabled";
-            this.ConfigProperty_BuildCreate.InactiveState = inactiveStateCollection10;
-            this.ConfigProperty_BuildCreate.Name = "ConfigProperty_BuildCreate";
-            sliderCollection10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            sliderCollection10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
-            sliderCollection10.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            sliderCollection10.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            sliderCollection10.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ConfigProperty_BuildCreate.Slider = sliderCollection10;
-            this.ConfigProperty_BuildCreate.ThemeName = "Office2016Black";
-            this.ConfigProperty_BuildCreate.ToggleState = Syncfusion.Windows.Forms.Tools.ToggleButtonState.Active;
-            this.toolTip.SetToolTip(this.ConfigProperty_BuildCreate, resources.GetString("ConfigProperty_BuildCreate.ToolTip"));
-            this.ConfigProperty_BuildCreate.VisualStyle = Syncfusion.Windows.Forms.Tools.ToggleButtonStyle.Office2016Black;
-            this.ConfigProperty_BuildCreate.ToggleStateChanged += new Syncfusion.Windows.Forms.Tools.ToggleStateChangedEventHandler(this.ConfigProperty_BuildCreate_ToggleStateChanged);
-            // 
-            // ConfigProperty_EnemyDifficulty
-            // 
-            activeStateCollection11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
-            activeStateCollection11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
-            activeStateCollection11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            activeStateCollection11.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(103)))), ((int)(((byte)(176)))));
-            activeStateCollection11.Text = "Feral Zombies";
-            this.ConfigProperty_EnemyDifficulty.ActiveState = activeStateCollection11;
-            resources.ApplyResources(this.ConfigProperty_EnemyDifficulty, "ConfigProperty_EnemyDifficulty");
-            this.ConfigProperty_EnemyDifficulty.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            inactiveStateCollection11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            inactiveStateCollection11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            inactiveStateCollection11.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            inactiveStateCollection11.Text = "Normal Zombies";
-            this.ConfigProperty_EnemyDifficulty.InactiveState = inactiveStateCollection11;
-            this.ConfigProperty_EnemyDifficulty.Name = "ConfigProperty_EnemyDifficulty";
-            sliderCollection11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            sliderCollection11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
-            sliderCollection11.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            sliderCollection11.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            sliderCollection11.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ConfigProperty_EnemyDifficulty.Slider = sliderCollection11;
-            this.ConfigProperty_EnemyDifficulty.ThemeName = "Office2016Black";
-            this.ConfigProperty_EnemyDifficulty.ToggleState = Syncfusion.Windows.Forms.Tools.ToggleButtonState.Active;
-            this.toolTip.SetToolTip(this.ConfigProperty_EnemyDifficulty, resources.GetString("ConfigProperty_EnemyDifficulty.ToolTip"));
-            this.ConfigProperty_EnemyDifficulty.VisualStyle = Syncfusion.Windows.Forms.Tools.ToggleButtonStyle.Office2016Black;
-            this.ConfigProperty_EnemyDifficulty.ToggleStateChanged += new Syncfusion.Windows.Forms.Tools.ToggleStateChangedEventHandler(this.ConfigProperty_EnemyDifficulty_ToggleStateChanged);
-            // 
-            // ConfigProperty_TerminalWindowEnabled
-            // 
-            activeStateCollection12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
-            activeStateCollection12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
-            activeStateCollection12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            activeStateCollection12.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(103)))), ((int)(((byte)(176)))));
-            activeStateCollection12.Text = "Terminal Window Enabled";
-            this.ConfigProperty_TerminalWindowEnabled.ActiveState = activeStateCollection12;
-            resources.ApplyResources(this.ConfigProperty_TerminalWindowEnabled, "ConfigProperty_TerminalWindowEnabled");
-            this.ConfigProperty_TerminalWindowEnabled.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            inactiveStateCollection12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            inactiveStateCollection12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            inactiveStateCollection12.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            inactiveStateCollection12.Text = "Terminal Window Disabled";
-            this.ConfigProperty_TerminalWindowEnabled.InactiveState = inactiveStateCollection12;
-            this.ConfigProperty_TerminalWindowEnabled.Name = "ConfigProperty_TerminalWindowEnabled";
-            sliderCollection12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            sliderCollection12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
-            sliderCollection12.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            sliderCollection12.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            sliderCollection12.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ConfigProperty_TerminalWindowEnabled.Slider = sliderCollection12;
-            this.ConfigProperty_TerminalWindowEnabled.ThemeName = "Office2016Black";
-            this.ConfigProperty_TerminalWindowEnabled.ToggleState = Syncfusion.Windows.Forms.Tools.ToggleButtonState.Active;
-            this.toolTip.SetToolTip(this.ConfigProperty_TerminalWindowEnabled, resources.GetString("ConfigProperty_TerminalWindowEnabled.ToolTip"));
-            this.ConfigProperty_TerminalWindowEnabled.VisualStyle = Syncfusion.Windows.Forms.Tools.ToggleButtonStyle.Office2016Black;
-            this.ConfigProperty_TerminalWindowEnabled.ToggleStateChanged += new Syncfusion.Windows.Forms.Tools.ToggleStateChangedEventHandler(this.ConfigProperty_TerminalWindowEnabled_ToggleStateChanged);
-            // 
             // ServerMaxWorldTransferSpeedKiBs_GroupBox
             // 
             resources.ApplyResources(this.ServerMaxWorldTransferSpeedKiBs_GroupBox, "ServerMaxWorldTransferSpeedKiBs_GroupBox");
@@ -2280,6 +2597,22 @@
             this.ServerMaxWorldTransferSpeedKiBs_GroupBox.Name = "ServerMaxWorldTransferSpeedKiBs_GroupBox";
             this.ServerMaxWorldTransferSpeedKiBs_GroupBox.TabStop = false;
             this.toolTip.SetToolTip(this.ServerMaxWorldTransferSpeedKiBs_GroupBox, resources.GetString("ServerMaxWorldTransferSpeedKiBs_GroupBox.ToolTip"));
+            // 
+            // ConfigProperty_ServerMaxWorldTransferSpeedKiBs
+            // 
+            this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.BeforeTouchSize = new System.Drawing.Size(359, 20);
+            resources.ApplyResources(this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs, "ConfigProperty_ServerMaxWorldTransferSpeedKiBs");
+            this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.LargeChange = 128;
+            this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.Name = "ConfigProperty_ServerMaxWorldTransferSpeedKiBs";
+            this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.SliderSize = new System.Drawing.Size(4, 14);
+            this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.SmallChange = 64;
+            this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Colorful;
+            this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.ThemeName = "Office2016Colorful";
+            this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.TimerInterval = 100;
+            this.toolTip.SetToolTip(this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs, resources.GetString("ConfigProperty_ServerMaxWorldTransferSpeedKiBs.ToolTip"));
+            this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.Value = 512;
+            this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.ValueChanged += new System.EventHandler(this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs_ValueChanged);
             // 
             // Server_Visibility_GroupBox
             // 
@@ -2309,9 +2642,19 @@
             // 
             // ConfigProperty_MaxUncoveredMapChunksPerPlayer
             // 
+            this.ConfigProperty_MaxUncoveredMapChunksPerPlayer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.ConfigProperty_MaxUncoveredMapChunksPerPlayer.BeforeTouchSize = new System.Drawing.Size(363, 20);
             resources.ApplyResources(this.ConfigProperty_MaxUncoveredMapChunksPerPlayer, "ConfigProperty_MaxUncoveredMapChunksPerPlayer");
+            this.ConfigProperty_MaxUncoveredMapChunksPerPlayer.LargeChange = 128;
             this.ConfigProperty_MaxUncoveredMapChunksPerPlayer.Name = "ConfigProperty_MaxUncoveredMapChunksPerPlayer";
+            this.ConfigProperty_MaxUncoveredMapChunksPerPlayer.SliderSize = new System.Drawing.Size(4, 14);
+            this.ConfigProperty_MaxUncoveredMapChunksPerPlayer.SmallChange = 100;
+            this.ConfigProperty_MaxUncoveredMapChunksPerPlayer.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Colorful;
+            this.ConfigProperty_MaxUncoveredMapChunksPerPlayer.ThemeName = "Office2016Colorful";
+            this.ConfigProperty_MaxUncoveredMapChunksPerPlayer.TimerInterval = 100;
             this.toolTip.SetToolTip(this.ConfigProperty_MaxUncoveredMapChunksPerPlayer, resources.GetString("ConfigProperty_MaxUncoveredMapChunksPerPlayer.ToolTip"));
+            this.ConfigProperty_MaxUncoveredMapChunksPerPlayer.Value = 512;
+            this.ConfigProperty_MaxUncoveredMapChunksPerPlayer.ValueChanged += new System.EventHandler(this.ConfigProperty_MaxUncoveredMapChunksPerPlayer_ValueChanged);
             // 
             // HideCommandExecutionLog_GroupBox
             // 
@@ -2331,6 +2674,7 @@
             resources.GetString("ConfigProperty_HideCommandExecutionLog.Items3")});
             this.ConfigProperty_HideCommandExecutionLog.Name = "ConfigProperty_HideCommandExecutionLog";
             this.toolTip.SetToolTip(this.ConfigProperty_HideCommandExecutionLog, resources.GetString("ConfigProperty_HideCommandExecutionLog.ToolTip"));
+            this.ConfigProperty_HideCommandExecutionLog.SelectedValueChanged += new System.EventHandler(this.ConfigProperty_HideCommandExecutionLog_SelectedValueChanged);
             // 
             // ServerDisabledNetworkProtocols_GroupBox
             // 
@@ -2349,74 +2693,6 @@
             this.ConfigProperty_ServerDisabledNetworkProtocols.Name = "ConfigProperty_ServerDisabledNetworkProtocols";
             this.toolTip.SetToolTip(this.ConfigProperty_ServerDisabledNetworkProtocols, resources.GetString("ConfigProperty_ServerDisabledNetworkProtocols.ToolTip"));
             this.ConfigProperty_ServerDisabledNetworkProtocols.SelectedValueChanged += new System.EventHandler(this.ConfigProperty_ServerDisabledNetworkProtocols_SelectedValueChanged);
-            // 
-            // Telnet_Settings_GroupBox
-            // 
-            resources.ApplyResources(this.Telnet_Settings_GroupBox, "Telnet_Settings_GroupBox");
-            this.Telnet_Settings_GroupBox.Controls.Add(this.label7);
-            this.Telnet_Settings_GroupBox.Controls.Add(this.ConfigProperty_TelnetFailedLoginsBlocktime);
-            this.Telnet_Settings_GroupBox.Controls.Add(this.label6);
-            this.Telnet_Settings_GroupBox.Controls.Add(this.ConfigProperty_TelnetFailedLoginLimit);
-            this.Telnet_Settings_GroupBox.Controls.Add(this.ConfigProperty_TelnetEnabled);
-            this.Telnet_Settings_GroupBox.Controls.Add(this.telnet_port_l);
-            this.Telnet_Settings_GroupBox.Controls.Add(this.ConfigProperty_TelnetPort);
-            this.Telnet_Settings_GroupBox.Controls.Add(this.telnet_psw_l);
-            this.Telnet_Settings_GroupBox.Controls.Add(this.ConfigProperty_TelnetPassword);
-            this.Telnet_Settings_GroupBox.Name = "Telnet_Settings_GroupBox";
-            this.Telnet_Settings_GroupBox.TabStop = false;
-            // 
-            // label7
-            // 
-            resources.ApplyResources(this.label7, "label7");
-            this.label7.Name = "label7";
-            // 
-            // ConfigProperty_TelnetFailedLoginsBlocktime
-            // 
-            resources.ApplyResources(this.ConfigProperty_TelnetFailedLoginsBlocktime, "ConfigProperty_TelnetFailedLoginsBlocktime");
-            this.ConfigProperty_TelnetFailedLoginsBlocktime.Name = "ConfigProperty_TelnetFailedLoginsBlocktime";
-            this.toolTip.SetToolTip(this.ConfigProperty_TelnetFailedLoginsBlocktime, resources.GetString("ConfigProperty_TelnetFailedLoginsBlocktime.ToolTip"));
-            // 
-            // label6
-            // 
-            resources.ApplyResources(this.label6, "label6");
-            this.label6.Name = "label6";
-            // 
-            // ConfigProperty_TelnetFailedLoginLimit
-            // 
-            resources.ApplyResources(this.ConfigProperty_TelnetFailedLoginLimit, "ConfigProperty_TelnetFailedLoginLimit");
-            this.ConfigProperty_TelnetFailedLoginLimit.Name = "ConfigProperty_TelnetFailedLoginLimit";
-            this.toolTip.SetToolTip(this.ConfigProperty_TelnetFailedLoginLimit, resources.GetString("ConfigProperty_TelnetFailedLoginLimit.ToolTip"));
-            // 
-            // ConfigProperty_TelnetEnabled
-            // 
-            resources.ApplyResources(this.ConfigProperty_TelnetEnabled, "ConfigProperty_TelnetEnabled");
-            this.ConfigProperty_TelnetEnabled.Checked = true;
-            this.ConfigProperty_TelnetEnabled.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ConfigProperty_TelnetEnabled.Name = "ConfigProperty_TelnetEnabled";
-            this.toolTip.SetToolTip(this.ConfigProperty_TelnetEnabled, resources.GetString("ConfigProperty_TelnetEnabled.ToolTip"));
-            this.ConfigProperty_TelnetEnabled.UseVisualStyleBackColor = true;
-            // 
-            // telnet_port_l
-            // 
-            resources.ApplyResources(this.telnet_port_l, "telnet_port_l");
-            this.telnet_port_l.Name = "telnet_port_l";
-            // 
-            // ConfigProperty_TelnetPort
-            // 
-            resources.ApplyResources(this.ConfigProperty_TelnetPort, "ConfigProperty_TelnetPort");
-            this.ConfigProperty_TelnetPort.Name = "ConfigProperty_TelnetPort";
-            this.toolTip.SetToolTip(this.ConfigProperty_TelnetPort, resources.GetString("ConfigProperty_TelnetPort.ToolTip"));
-            // 
-            // telnet_psw_l
-            // 
-            resources.ApplyResources(this.telnet_psw_l, "telnet_psw_l");
-            this.telnet_psw_l.Name = "telnet_psw_l";
-            // 
-            // ConfigProperty_TelnetPassword
-            // 
-            resources.ApplyResources(this.ConfigProperty_TelnetPassword, "ConfigProperty_TelnetPassword");
-            this.ConfigProperty_TelnetPassword.Name = "ConfigProperty_TelnetPassword";
-            this.toolTip.SetToolTip(this.ConfigProperty_TelnetPassword, resources.GetString("ConfigProperty_TelnetPassword.ToolTip"));
             // 
             // ServerPort_GroupBox
             // 
@@ -2447,45 +2723,58 @@
             0});
             this.ConfigProperty_ServerPort.ValueChanged += new System.EventHandler(this.ConfigProperty_ServerPort_ValueChanged);
             // 
-            // Admin_Control_Panel_GroupBox
+            // ControlPanel_GroupBox
             // 
-            resources.ApplyResources(this.Admin_Control_Panel_GroupBox, "Admin_Control_Panel_GroupBox");
-            this.Admin_Control_Panel_GroupBox.Controls.Add(this.cpl_port);
-            this.Admin_Control_Panel_GroupBox.Controls.Add(this.ConfigProperty_ControlPanelPort);
-            this.Admin_Control_Panel_GroupBox.Controls.Add(this.cpl_pass);
-            this.Admin_Control_Panel_GroupBox.Controls.Add(this.ConfigProperty_ControlPanelEnabled);
-            this.Admin_Control_Panel_GroupBox.Controls.Add(this.ConfigProperty_ControlPanelPassword);
-            this.Admin_Control_Panel_GroupBox.Name = "Admin_Control_Panel_GroupBox";
-            this.Admin_Control_Panel_GroupBox.TabStop = false;
+            resources.ApplyResources(this.ControlPanel_GroupBox, "ControlPanel_GroupBox");
+            this.ControlPanel_GroupBox.Controls.Add(this.ControlPanel_Port_GroupBox);
+            this.ControlPanel_GroupBox.Controls.Add(this.ControlPanel_Password_GroupBox);
+            this.ControlPanel_GroupBox.Controls.Add(this.ConfigProperty_ControlPanelEnabled);
+            this.ControlPanel_GroupBox.Name = "ControlPanel_GroupBox";
+            this.ControlPanel_GroupBox.TabStop = false;
             // 
-            // cpl_port
+            // ControlPanel_Port_GroupBox
             // 
-            resources.ApplyResources(this.cpl_port, "cpl_port");
-            this.cpl_port.Name = "cpl_port";
+            this.ControlPanel_Port_GroupBox.Controls.Add(this.ConfigProperty_ControlPanelPort);
+            resources.ApplyResources(this.ControlPanel_Port_GroupBox, "ControlPanel_Port_GroupBox");
+            this.ControlPanel_Port_GroupBox.Name = "ControlPanel_Port_GroupBox";
+            this.ControlPanel_Port_GroupBox.TabStop = false;
             // 
             // ConfigProperty_ControlPanelPort
             // 
             resources.ApplyResources(this.ConfigProperty_ControlPanelPort, "ConfigProperty_ControlPanelPort");
             this.ConfigProperty_ControlPanelPort.Name = "ConfigProperty_ControlPanelPort";
             this.toolTip.SetToolTip(this.ConfigProperty_ControlPanelPort, resources.GetString("ConfigProperty_ControlPanelPort.ToolTip"));
+            this.ConfigProperty_ControlPanelPort.TextChanged += new System.EventHandler(this.ConfigProperty_ControlPanelPort_TextChanged);
             // 
-            // cpl_pass
+            // ControlPanel_Password_GroupBox
             // 
-            resources.ApplyResources(this.cpl_pass, "cpl_pass");
-            this.cpl_pass.Name = "cpl_pass";
-            // 
-            // ConfigProperty_ControlPanelEnabled
-            // 
-            resources.ApplyResources(this.ConfigProperty_ControlPanelEnabled, "ConfigProperty_ControlPanelEnabled");
-            this.ConfigProperty_ControlPanelEnabled.Name = "ConfigProperty_ControlPanelEnabled";
-            this.toolTip.SetToolTip(this.ConfigProperty_ControlPanelEnabled, resources.GetString("ConfigProperty_ControlPanelEnabled.ToolTip"));
-            this.ConfigProperty_ControlPanelEnabled.UseVisualStyleBackColor = true;
+            this.ControlPanel_Password_GroupBox.Controls.Add(this.ConfigProperty_ControlPanelPassword);
+            resources.ApplyResources(this.ControlPanel_Password_GroupBox, "ControlPanel_Password_GroupBox");
+            this.ControlPanel_Password_GroupBox.Name = "ControlPanel_Password_GroupBox";
+            this.ControlPanel_Password_GroupBox.TabStop = false;
             // 
             // ConfigProperty_ControlPanelPassword
             // 
             resources.ApplyResources(this.ConfigProperty_ControlPanelPassword, "ConfigProperty_ControlPanelPassword");
             this.ConfigProperty_ControlPanelPassword.Name = "ConfigProperty_ControlPanelPassword";
             this.toolTip.SetToolTip(this.ConfigProperty_ControlPanelPassword, resources.GetString("ConfigProperty_ControlPanelPassword.ToolTip"));
+            this.ConfigProperty_ControlPanelPassword.TextChanged += new System.EventHandler(this.ConfigProperty_ControlPanelPassword_TextChanged);
+            // 
+            // ConfigProperty_ControlPanelEnabled
+            // 
+            activeStateCollection18.Text = "Enabled";
+            this.ConfigProperty_ControlPanelEnabled.ActiveState = activeStateCollection18;
+            resources.ApplyResources(this.ConfigProperty_ControlPanelEnabled, "ConfigProperty_ControlPanelEnabled");
+            this.ConfigProperty_ControlPanelEnabled.ForeColor = System.Drawing.Color.Black;
+            inactiveStateCollection18.Text = "Disabled";
+            this.ConfigProperty_ControlPanelEnabled.InactiveState = inactiveStateCollection18;
+            this.ConfigProperty_ControlPanelEnabled.Name = "ConfigProperty_ControlPanelEnabled";
+            sliderCollection18.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            sliderCollection18.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ConfigProperty_ControlPanelEnabled.Slider = sliderCollection18;
+            this.ConfigProperty_ControlPanelEnabled.ThemeName = "Default";
+            this.toolTip.SetToolTip(this.ConfigProperty_ControlPanelEnabled, resources.GetString("ConfigProperty_ControlPanelEnabled.ToolTip"));
+            this.ConfigProperty_ControlPanelEnabled.ToggleStateChanged += new Syncfusion.Windows.Forms.Tools.ToggleStateChangedEventHandler(this.ConfigProperty_ControlPanelEnabled_ToggleStateChanged);
             // 
             // BloodMoon_GroupBox
             // 
@@ -2547,98 +2836,16 @@
             this.ConfigProperty_BloodMoonFrequency.Name = "ConfigProperty_BloodMoonFrequency";
             this.toolTip.SetToolTip(this.ConfigProperty_BloodMoonFrequency, resources.GetString("ConfigProperty_BloodMoonFrequency.ToolTip"));
             // 
-            // Game_World_Settings_GroupBox
-            // 
-            this.Game_World_Settings_GroupBox.Controls.Add(this.ConfigProperty_GameMode);
-            this.Game_World_Settings_GroupBox.Controls.Add(this.ConfigProperty_WorldGenSize);
-            this.Game_World_Settings_GroupBox.Controls.Add(this.ConfigProperty_WorldGenSeed);
-            this.Game_World_Settings_GroupBox.Controls.Add(this.ConfigProperty_GameName);
-            this.Game_World_Settings_GroupBox.Controls.Add(this.ConfigProperty_GameWorld);
-            resources.ApplyResources(this.Game_World_Settings_GroupBox, "Game_World_Settings_GroupBox");
-            this.Game_World_Settings_GroupBox.Name = "Game_World_Settings_GroupBox";
-            this.Game_World_Settings_GroupBox.TabStop = false;
-            // 
-            // ConfigProperty_GameMode
-            // 
-            this.ConfigProperty_GameMode.DisplayMember = "a";
-            resources.ApplyResources(this.ConfigProperty_GameMode, "ConfigProperty_GameMode");
-            this.ConfigProperty_GameMode.FormattingEnabled = true;
-            this.ConfigProperty_GameMode.Items.AddRange(new object[] {
-            resources.GetString("ConfigProperty_GameMode.Items")});
-            this.ConfigProperty_GameMode.Name = "ConfigProperty_GameMode";
-            this.toolTip.SetToolTip(this.ConfigProperty_GameMode, resources.GetString("ConfigProperty_GameMode.ToolTip"));
-            // 
-            // ConfigProperty_WorldGenSize
-            // 
-            resources.ApplyResources(this.ConfigProperty_WorldGenSize, "ConfigProperty_WorldGenSize");
-            this.ConfigProperty_WorldGenSize.Maximum = 16384;
-            this.ConfigProperty_WorldGenSize.Minimum = 2048;
-            this.ConfigProperty_WorldGenSize.Name = "ConfigProperty_WorldGenSize";
-            this.toolTip.SetToolTip(this.ConfigProperty_WorldGenSize, resources.GetString("ConfigProperty_WorldGenSize.ToolTip"));
-            this.ConfigProperty_WorldGenSize.Value = 2048;
-            // 
-            // ConfigProperty_WorldGenSeed
-            // 
-            resources.ApplyResources(this.ConfigProperty_WorldGenSeed, "ConfigProperty_WorldGenSeed");
-            this.ConfigProperty_WorldGenSeed.Name = "ConfigProperty_WorldGenSeed";
-            this.toolTip.SetToolTip(this.ConfigProperty_WorldGenSeed, resources.GetString("ConfigProperty_WorldGenSeed.ToolTip"));
-            // 
-            // ConfigProperty_GameName
-            // 
-            this.ConfigProperty_GameName.FormattingEnabled = true;
-            resources.ApplyResources(this.ConfigProperty_GameName, "ConfigProperty_GameName");
-            this.ConfigProperty_GameName.Name = "ConfigProperty_GameName";
-            this.toolTip.SetToolTip(this.ConfigProperty_GameName, resources.GetString("ConfigProperty_GameName.ToolTip"));
-            // 
-            // ConfigProperty_GameWorld
-            // 
-            this.ConfigProperty_GameWorld.DisplayMember = "a";
-            this.ConfigProperty_GameWorld.FormattingEnabled = true;
-            this.ConfigProperty_GameWorld.Items.AddRange(new object[] {
-            resources.GetString("ConfigProperty_GameWorld.Items"),
-            resources.GetString("ConfigProperty_GameWorld.Items1")});
-            resources.ApplyResources(this.ConfigProperty_GameWorld, "ConfigProperty_GameWorld");
-            this.ConfigProperty_GameWorld.Name = "ConfigProperty_GameWorld";
-            this.toolTip.SetToolTip(this.ConfigProperty_GameWorld, resources.GetString("ConfigProperty_GameWorld.ToolTip"));
-            // 
             // autobots
             // 
             resources.ApplyResources(this.autobots, "autobots");
-            this.autobots.Controls.Add(this.Player_Safe_Zone_Hours_Label);
-            this.autobots.Controls.Add(this.Player_Safe_Zone_Level_Label);
-            this.autobots.Controls.Add(this.ConfigProperty_PlayerSafeZoneHours);
-            this.autobots.Controls.Add(this.ConfigProperty_PlayerSafeZoneLevel);
             this.autobots.Controls.Add(this.BedrollExpiryTime_GroupBox);
-            this.autobots.Controls.Add(this.ConfigProperty_EnemySpawnMode);
             this.autobots.Controls.Add(this.BedrollDeadZoneSize_GroupBox);
             this.autobots.Controls.Add(this.BloodMoonEnemyCount_GroupBox);
-            this.autobots.Controls.Add(this.AirDropMarker);
             this.autobots.Controls.Add(this.MaxSpawnedAnimals_GroupBox);
             this.autobots.Controls.Add(this.MaxSpawnedZombies_GroupBox);
             this.autobots.Name = "autobots";
             this.autobots.TabStop = false;
-            // 
-            // Player_Safe_Zone_Hours_Label
-            // 
-            resources.ApplyResources(this.Player_Safe_Zone_Hours_Label, "Player_Safe_Zone_Hours_Label");
-            this.Player_Safe_Zone_Hours_Label.Name = "Player_Safe_Zone_Hours_Label";
-            // 
-            // Player_Safe_Zone_Level_Label
-            // 
-            resources.ApplyResources(this.Player_Safe_Zone_Level_Label, "Player_Safe_Zone_Level_Label");
-            this.Player_Safe_Zone_Level_Label.Name = "Player_Safe_Zone_Level_Label";
-            // 
-            // ConfigProperty_PlayerSafeZoneHours
-            // 
-            resources.ApplyResources(this.ConfigProperty_PlayerSafeZoneHours, "ConfigProperty_PlayerSafeZoneHours");
-            this.ConfigProperty_PlayerSafeZoneHours.Name = "ConfigProperty_PlayerSafeZoneHours";
-            this.toolTip.SetToolTip(this.ConfigProperty_PlayerSafeZoneHours, resources.GetString("ConfigProperty_PlayerSafeZoneHours.ToolTip"));
-            // 
-            // ConfigProperty_PlayerSafeZoneLevel
-            // 
-            resources.ApplyResources(this.ConfigProperty_PlayerSafeZoneLevel, "ConfigProperty_PlayerSafeZoneLevel");
-            this.ConfigProperty_PlayerSafeZoneLevel.Name = "ConfigProperty_PlayerSafeZoneLevel";
-            this.toolTip.SetToolTip(this.ConfigProperty_PlayerSafeZoneLevel, resources.GetString("ConfigProperty_PlayerSafeZoneLevel.ToolTip"));
             // 
             // BedrollExpiryTime_GroupBox
             // 
@@ -2654,15 +2861,6 @@
             this.ConfigProperty_BedrollExpiryTime.Name = "ConfigProperty_BedrollExpiryTime";
             this.toolTip.SetToolTip(this.ConfigProperty_BedrollExpiryTime, resources.GetString("ConfigProperty_BedrollExpiryTime.ToolTip"));
             this.ConfigProperty_BedrollExpiryTime.Value = 15;
-            // 
-            // ConfigProperty_EnemySpawnMode
-            // 
-            resources.ApplyResources(this.ConfigProperty_EnemySpawnMode, "ConfigProperty_EnemySpawnMode");
-            this.ConfigProperty_EnemySpawnMode.Checked = true;
-            this.ConfigProperty_EnemySpawnMode.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ConfigProperty_EnemySpawnMode.Name = "ConfigProperty_EnemySpawnMode";
-            this.toolTip.SetToolTip(this.ConfigProperty_EnemySpawnMode, resources.GetString("ConfigProperty_EnemySpawnMode.ToolTip"));
-            this.ConfigProperty_EnemySpawnMode.UseVisualStyleBackColor = true;
             // 
             // BedrollDeadZoneSize_GroupBox
             // 
@@ -2693,14 +2891,6 @@
             this.ConfigProperty_BloodMoonEnemyCount.Name = "ConfigProperty_BloodMoonEnemyCount";
             this.toolTip.SetToolTip(this.ConfigProperty_BloodMoonEnemyCount, resources.GetString("ConfigProperty_BloodMoonEnemyCount.ToolTip"));
             this.ConfigProperty_BloodMoonEnemyCount.Value = 8;
-            // 
-            // AirDropMarker
-            // 
-            resources.ApplyResources(this.AirDropMarker, "AirDropMarker");
-            this.AirDropMarker.Checked = true;
-            this.AirDropMarker.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.AirDropMarker.Name = "AirDropMarker";
-            this.AirDropMarker.UseVisualStyleBackColor = true;
             // 
             // MaxSpawnedAnimals_GroupBox
             // 
@@ -2754,6 +2944,7 @@
             resources.ApplyResources(this.ConfigProperty_UserDataFolder, "ConfigProperty_UserDataFolder");
             this.ConfigProperty_UserDataFolder.Name = "ConfigProperty_UserDataFolder";
             this.toolTip.SetToolTip(this.ConfigProperty_UserDataFolder, resources.GetString("ConfigProperty_UserDataFolder.ToolTip"));
+            this.ConfigProperty_UserDataFolder.TextChanged += new System.EventHandler(this.ConfigProperty_UserDataFolder_TextChanged);
             // 
             // Save_Game_Folder_GroupBox
             // 
@@ -2767,6 +2958,7 @@
             resources.ApplyResources(this.ConfigProperty_SaveGameFolder, "ConfigProperty_SaveGameFolder");
             this.ConfigProperty_SaveGameFolder.Name = "ConfigProperty_SaveGameFolder";
             this.toolTip.SetToolTip(this.ConfigProperty_SaveGameFolder, resources.GetString("ConfigProperty_SaveGameFolder.ToolTip"));
+            this.ConfigProperty_SaveGameFolder.TextChanged += new System.EventHandler(this.ConfigProperty_SaveGameFolder_TextChanged);
             // 
             // Server_Admin_Config_File_GroupBox
             // 
@@ -2787,6 +2979,7 @@
             resources.ApplyResources(this.ConfigProperty_AdminFileName, "ConfigProperty_AdminFileName");
             this.ConfigProperty_AdminFileName.Name = "ConfigProperty_AdminFileName";
             this.toolTip.SetToolTip(this.ConfigProperty_AdminFileName, resources.GetString("ConfigProperty_AdminFileName.ToolTip"));
+            this.ConfigProperty_AdminFileName.TextChanged += new System.EventHandler(this.ConfigProperty_AdminFileName_TextChanged);
             // 
             // Server_Login_Confirmation_Text_GroupBox
             // 
@@ -2875,21 +3068,42 @@
             // 
             // ConfigProperty_BlockDamageAIBM
             // 
+            this.ConfigProperty_BlockDamageAIBM.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.ConfigProperty_BlockDamageAIBM.BeforeTouchSize = new System.Drawing.Size(363, 20);
             resources.ApplyResources(this.ConfigProperty_BlockDamageAIBM, "ConfigProperty_BlockDamageAIBM");
-            this.ConfigProperty_BlockDamageAIBM.Maximum = 1000;
-            this.ConfigProperty_BlockDamageAIBM.Minimum = 1;
+            this.ConfigProperty_BlockDamageAIBM.LargeChange = 100;
             this.ConfigProperty_BlockDamageAIBM.Name = "ConfigProperty_BlockDamageAIBM";
-            this.ConfigProperty_BlockDamageAIBM.SmallChange = 10;
-            this.ConfigProperty_BlockDamageAIBM.TickFrequency = 10;
+            this.ConfigProperty_BlockDamageAIBM.SliderSize = new System.Drawing.Size(4, 14);
+            this.ConfigProperty_BlockDamageAIBM.SmallChange = 25;
+            this.ConfigProperty_BlockDamageAIBM.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Colorful;
+            this.ConfigProperty_BlockDamageAIBM.ThemeName = "Office2016Colorful";
+            this.ConfigProperty_BlockDamageAIBM.TimerInterval = 100;
             this.toolTip.SetToolTip(this.ConfigProperty_BlockDamageAIBM, resources.GetString("ConfigProperty_BlockDamageAIBM.ToolTip"));
             this.ConfigProperty_BlockDamageAIBM.Value = 100;
+            this.ConfigProperty_BlockDamageAIBM.ValueChanged += new System.EventHandler(this.ConfigProperty_BlockDamageAIBM_ValueChanged);
             // 
             // PartySharedKillRange_GroupBox
             // 
             resources.ApplyResources(this.PartySharedKillRange_GroupBox, "PartySharedKillRange_GroupBox");
+            this.PartySharedKillRange_GroupBox.Controls.Add(this.trackBarEx7);
             this.PartySharedKillRange_GroupBox.Controls.Add(this.ConfigProperty_PartySharedKillRange);
             this.PartySharedKillRange_GroupBox.Name = "PartySharedKillRange_GroupBox";
             this.PartySharedKillRange_GroupBox.TabStop = false;
+            // 
+            // trackBarEx7
+            // 
+            this.trackBarEx7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.trackBarEx7.BeforeTouchSize = new System.Drawing.Size(173, 20);
+            resources.ApplyResources(this.trackBarEx7, "trackBarEx7");
+            this.trackBarEx7.LargeChange = 128;
+            this.trackBarEx7.Name = "trackBarEx7";
+            this.trackBarEx7.SliderSize = new System.Drawing.Size(4, 14);
+            this.trackBarEx7.SmallChange = 64;
+            this.trackBarEx7.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Black;
+            this.trackBarEx7.ThemeName = "Office2016Black";
+            this.trackBarEx7.TimerInterval = 100;
+            this.toolTip.SetToolTip(this.trackBarEx7, resources.GetString("trackBarEx7.ToolTip"));
+            this.trackBarEx7.Value = 512;
             // 
             // ConfigProperty_PartySharedKillRange
             // 
@@ -2965,9 +3179,25 @@
             // ServerMaxAllowedViewDistance_GroupBox
             // 
             resources.ApplyResources(this.ServerMaxAllowedViewDistance_GroupBox, "ServerMaxAllowedViewDistance_GroupBox");
+            this.ServerMaxAllowedViewDistance_GroupBox.Controls.Add(this.trackBarEx3);
             this.ServerMaxAllowedViewDistance_GroupBox.Controls.Add(this.ConfigProperty_ServerMaxAllowedViewDistance);
             this.ServerMaxAllowedViewDistance_GroupBox.Name = "ServerMaxAllowedViewDistance_GroupBox";
             this.ServerMaxAllowedViewDistance_GroupBox.TabStop = false;
+            // 
+            // trackBarEx3
+            // 
+            this.trackBarEx3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.trackBarEx3.BeforeTouchSize = new System.Drawing.Size(173, 20);
+            resources.ApplyResources(this.trackBarEx3, "trackBarEx3");
+            this.trackBarEx3.LargeChange = 128;
+            this.trackBarEx3.Name = "trackBarEx3";
+            this.trackBarEx3.SliderSize = new System.Drawing.Size(4, 14);
+            this.trackBarEx3.SmallChange = 64;
+            this.trackBarEx3.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Black;
+            this.trackBarEx3.ThemeName = "Office2016Black";
+            this.trackBarEx3.TimerInterval = 100;
+            this.toolTip.SetToolTip(this.trackBarEx3, resources.GetString("trackBarEx3.ToolTip"));
+            this.trackBarEx3.Value = 512;
             // 
             // ConfigProperty_ServerMaxAllowedViewDistance
             // 
@@ -3006,14 +3236,19 @@
             // 
             // ConfigProperty_XPMultiplier
             // 
+            this.ConfigProperty_XPMultiplier.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.ConfigProperty_XPMultiplier.BeforeTouchSize = new System.Drawing.Size(363, 20);
             resources.ApplyResources(this.ConfigProperty_XPMultiplier, "ConfigProperty_XPMultiplier");
-            this.ConfigProperty_XPMultiplier.Maximum = 1000;
-            this.ConfigProperty_XPMultiplier.Minimum = 1;
+            this.ConfigProperty_XPMultiplier.LargeChange = 100;
             this.ConfigProperty_XPMultiplier.Name = "ConfigProperty_XPMultiplier";
-            this.ConfigProperty_XPMultiplier.SmallChange = 10;
-            this.ConfigProperty_XPMultiplier.TickFrequency = 10;
+            this.ConfigProperty_XPMultiplier.SliderSize = new System.Drawing.Size(4, 14);
+            this.ConfigProperty_XPMultiplier.SmallChange = 25;
+            this.ConfigProperty_XPMultiplier.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Colorful;
+            this.ConfigProperty_XPMultiplier.ThemeName = "Office2016Colorful";
+            this.ConfigProperty_XPMultiplier.TimerInterval = 100;
             this.toolTip.SetToolTip(this.ConfigProperty_XPMultiplier, resources.GetString("ConfigProperty_XPMultiplier.ToolTip"));
             this.ConfigProperty_XPMultiplier.Value = 100;
+            this.ConfigProperty_XPMultiplier.ValueChanged += new System.EventHandler(this.ConfigProperty_XPMultiplier_ValueChanged);
             // 
             // BlockDamageAI_GroupBox
             // 
@@ -3024,34 +3259,40 @@
             // 
             // ConfigProperty_BlockDamageAI
             // 
+            this.ConfigProperty_BlockDamageAI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.ConfigProperty_BlockDamageAI.BeforeTouchSize = new System.Drawing.Size(363, 20);
             resources.ApplyResources(this.ConfigProperty_BlockDamageAI, "ConfigProperty_BlockDamageAI");
-            this.ConfigProperty_BlockDamageAI.Maximum = 1000;
-            this.ConfigProperty_BlockDamageAI.Minimum = 1;
+            this.ConfigProperty_BlockDamageAI.LargeChange = 100;
             this.ConfigProperty_BlockDamageAI.Name = "ConfigProperty_BlockDamageAI";
-            this.ConfigProperty_BlockDamageAI.SmallChange = 10;
-            this.ConfigProperty_BlockDamageAI.TickFrequency = 10;
+            this.ConfigProperty_BlockDamageAI.SliderSize = new System.Drawing.Size(4, 14);
+            this.ConfigProperty_BlockDamageAI.SmallChange = 25;
+            this.ConfigProperty_BlockDamageAI.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Colorful;
+            this.ConfigProperty_BlockDamageAI.ThemeName = "Office2016Colorful";
+            this.ConfigProperty_BlockDamageAI.TimerInterval = 100;
             this.toolTip.SetToolTip(this.ConfigProperty_BlockDamageAI, resources.GetString("ConfigProperty_BlockDamageAI.ToolTip"));
             this.ConfigProperty_BlockDamageAI.Value = 100;
+            this.ConfigProperty_BlockDamageAI.ValueChanged += new System.EventHandler(this.ConfigProperty_BlockDamageAI_ValueChanged);
             // 
-            // Server_Reserved_Slots_GroupBox
+            // ServerReservedSlots_GroupBox
             // 
-            resources.ApplyResources(this.Server_Reserved_Slots_GroupBox, "Server_Reserved_Slots_GroupBox");
-            this.Server_Reserved_Slots_GroupBox.Controls.Add(this.ConfigProperty_ServerAdminSlotsPermission);
-            this.Server_Reserved_Slots_GroupBox.Controls.Add(this.Admin_Slot_Text_Label);
-            this.Server_Reserved_Slots_GroupBox.Controls.Add(this.Admin_Reserve_Text_Label);
-            this.Server_Reserved_Slots_GroupBox.Controls.Add(this.ConfigProperty_ServerAdminSlots);
-            this.Server_Reserved_Slots_GroupBox.Controls.Add(this.ConfigProperty_ServerReservedSlotsPermission);
-            this.Server_Reserved_Slots_GroupBox.Controls.Add(this.Player_Slot_Text_Label);
-            this.Server_Reserved_Slots_GroupBox.Controls.Add(this.Player_Reserve_Text_Label);
-            this.Server_Reserved_Slots_GroupBox.Controls.Add(this.ConfigProperty_ServerReservedSlots);
-            this.Server_Reserved_Slots_GroupBox.Name = "Server_Reserved_Slots_GroupBox";
-            this.Server_Reserved_Slots_GroupBox.TabStop = false;
+            resources.ApplyResources(this.ServerReservedSlots_GroupBox, "ServerReservedSlots_GroupBox");
+            this.ServerReservedSlots_GroupBox.Controls.Add(this.ConfigProperty_ServerAdminSlotsPermission);
+            this.ServerReservedSlots_GroupBox.Controls.Add(this.Admin_Slot_Text_Label);
+            this.ServerReservedSlots_GroupBox.Controls.Add(this.Admin_Reserve_Text_Label);
+            this.ServerReservedSlots_GroupBox.Controls.Add(this.ConfigProperty_ServerAdminSlots);
+            this.ServerReservedSlots_GroupBox.Controls.Add(this.ConfigProperty_ServerReservedSlotsPermission);
+            this.ServerReservedSlots_GroupBox.Controls.Add(this.Player_Slot_Text_Label);
+            this.ServerReservedSlots_GroupBox.Controls.Add(this.Player_Reserve_Text_Label);
+            this.ServerReservedSlots_GroupBox.Controls.Add(this.ConfigProperty_ServerReservedSlots);
+            this.ServerReservedSlots_GroupBox.Name = "ServerReservedSlots_GroupBox";
+            this.ServerReservedSlots_GroupBox.TabStop = false;
             // 
             // ConfigProperty_ServerAdminSlotsPermission
             // 
             resources.ApplyResources(this.ConfigProperty_ServerAdminSlotsPermission, "ConfigProperty_ServerAdminSlotsPermission");
             this.ConfigProperty_ServerAdminSlotsPermission.Name = "ConfigProperty_ServerAdminSlotsPermission";
             this.toolTip.SetToolTip(this.ConfigProperty_ServerAdminSlotsPermission, resources.GetString("ConfigProperty_ServerAdminSlotsPermission.ToolTip"));
+            this.ConfigProperty_ServerAdminSlotsPermission.TextChanged += new System.EventHandler(this.ConfigProperty_ServerAdminSlotsPermission_TextChanged);
             // 
             // Admin_Slot_Text_Label
             // 
@@ -3068,12 +3309,14 @@
             resources.ApplyResources(this.ConfigProperty_ServerAdminSlots, "ConfigProperty_ServerAdminSlots");
             this.ConfigProperty_ServerAdminSlots.Name = "ConfigProperty_ServerAdminSlots";
             this.toolTip.SetToolTip(this.ConfigProperty_ServerAdminSlots, resources.GetString("ConfigProperty_ServerAdminSlots.ToolTip"));
+            this.ConfigProperty_ServerAdminSlots.TextChanged += new System.EventHandler(this.ConfigProperty_ServerAdminSlots_TextChanged);
             // 
             // ConfigProperty_ServerReservedSlotsPermission
             // 
             resources.ApplyResources(this.ConfigProperty_ServerReservedSlotsPermission, "ConfigProperty_ServerReservedSlotsPermission");
             this.ConfigProperty_ServerReservedSlotsPermission.Name = "ConfigProperty_ServerReservedSlotsPermission";
             this.toolTip.SetToolTip(this.ConfigProperty_ServerReservedSlotsPermission, resources.GetString("ConfigProperty_ServerReservedSlotsPermission.ToolTip"));
+            this.ConfigProperty_ServerReservedSlotsPermission.TextChanged += new System.EventHandler(this.ConfigProperty_ServerReservedSlotsPermission_TextChanged);
             // 
             // Player_Slot_Text_Label
             // 
@@ -3090,6 +3333,7 @@
             resources.ApplyResources(this.ConfigProperty_ServerReservedSlots, "ConfigProperty_ServerReservedSlots");
             this.ConfigProperty_ServerReservedSlots.Name = "ConfigProperty_ServerReservedSlots";
             this.toolTip.SetToolTip(this.ConfigProperty_ServerReservedSlots, resources.GetString("ConfigProperty_ServerReservedSlots.ToolTip"));
+            this.ConfigProperty_ServerReservedSlots.TextChanged += new System.EventHandler(this.ConfigProperty_ServerReservedSlots_TextChanged);
             // 
             // Player_Killing_Mode_GroupBox
             // 
@@ -3133,9 +3377,25 @@
             // AirDropFrequency_GroupBox
             // 
             resources.ApplyResources(this.AirDropFrequency_GroupBox, "AirDropFrequency_GroupBox");
+            this.AirDropFrequency_GroupBox.Controls.Add(this.trackBarEx2);
             this.AirDropFrequency_GroupBox.Controls.Add(this.ConfigProperty_AirDropFrequency);
             this.AirDropFrequency_GroupBox.Name = "AirDropFrequency_GroupBox";
             this.AirDropFrequency_GroupBox.TabStop = false;
+            // 
+            // trackBarEx2
+            // 
+            this.trackBarEx2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.trackBarEx2.BeforeTouchSize = new System.Drawing.Size(360, 20);
+            resources.ApplyResources(this.trackBarEx2, "trackBarEx2");
+            this.trackBarEx2.LargeChange = 128;
+            this.trackBarEx2.Name = "trackBarEx2";
+            this.trackBarEx2.SliderSize = new System.Drawing.Size(4, 14);
+            this.trackBarEx2.SmallChange = 64;
+            this.trackBarEx2.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Black;
+            this.trackBarEx2.ThemeName = "Office2016Black";
+            this.trackBarEx2.TimerInterval = 100;
+            this.toolTip.SetToolTip(this.trackBarEx2, resources.GetString("trackBarEx2.ToolTip"));
+            this.trackBarEx2.Value = 512;
             // 
             // ConfigProperty_AirDropFrequency
             // 
@@ -3267,9 +3527,25 @@
             // LootAbundance_GroupBox
             // 
             resources.ApplyResources(this.LootAbundance_GroupBox, "LootAbundance_GroupBox");
+            this.LootAbundance_GroupBox.Controls.Add(this.trackBarEx1);
             this.LootAbundance_GroupBox.Controls.Add(this.ConfigProperty_LootAbundance);
             this.LootAbundance_GroupBox.Name = "LootAbundance_GroupBox";
             this.LootAbundance_GroupBox.TabStop = false;
+            // 
+            // trackBarEx1
+            // 
+            this.trackBarEx1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.trackBarEx1.BeforeTouchSize = new System.Drawing.Size(360, 20);
+            resources.ApplyResources(this.trackBarEx1, "trackBarEx1");
+            this.trackBarEx1.LargeChange = 128;
+            this.trackBarEx1.Name = "trackBarEx1";
+            this.trackBarEx1.SliderSize = new System.Drawing.Size(4, 14);
+            this.trackBarEx1.SmallChange = 64;
+            this.trackBarEx1.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Black;
+            this.trackBarEx1.ThemeName = "Office2016Black";
+            this.trackBarEx1.TimerInterval = 100;
+            this.toolTip.SetToolTip(this.trackBarEx1, resources.GetString("trackBarEx1.ToolTip"));
+            this.trackBarEx1.Value = 512;
             // 
             // ConfigProperty_LootAbundance
             // 
@@ -3278,22 +3554,26 @@
             this.ConfigProperty_LootAbundance.Name = "ConfigProperty_LootAbundance";
             this.ConfigProperty_LootAbundance.Value = 100;
             // 
-            // Max_Players_GroupBox
+            // ServerMaxPlayerCount_GroupBox
             // 
-            resources.ApplyResources(this.Max_Players_GroupBox, "Max_Players_GroupBox");
-            this.Max_Players_GroupBox.Controls.Add(this.trackBarEx1);
-            this.Max_Players_GroupBox.Controls.Add(this.ConfigProperty_ServerMaxPlayerCount);
-            this.Max_Players_GroupBox.Name = "Max_Players_GroupBox";
-            this.Max_Players_GroupBox.TabStop = false;
+            resources.ApplyResources(this.ServerMaxPlayerCount_GroupBox, "ServerMaxPlayerCount_GroupBox");
+            this.ServerMaxPlayerCount_GroupBox.Controls.Add(this.ConfigProperty_ServerMaxPlayerCount);
+            this.ServerMaxPlayerCount_GroupBox.Name = "ServerMaxPlayerCount_GroupBox";
+            this.ServerMaxPlayerCount_GroupBox.TabStop = false;
             // 
             // ConfigProperty_ServerMaxPlayerCount
             // 
+            this.ConfigProperty_ServerMaxPlayerCount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.ConfigProperty_ServerMaxPlayerCount.BeforeTouchSize = new System.Drawing.Size(359, 20);
             resources.ApplyResources(this.ConfigProperty_ServerMaxPlayerCount, "ConfigProperty_ServerMaxPlayerCount");
-            this.ConfigProperty_ServerMaxPlayerCount.Maximum = 64;
-            this.ConfigProperty_ServerMaxPlayerCount.Minimum = 1;
             this.ConfigProperty_ServerMaxPlayerCount.Name = "ConfigProperty_ServerMaxPlayerCount";
+            this.ConfigProperty_ServerMaxPlayerCount.SliderSize = new System.Drawing.Size(4, 14);
+            this.ConfigProperty_ServerMaxPlayerCount.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Colorful;
+            this.ConfigProperty_ServerMaxPlayerCount.ThemeName = "Office2016Colorful";
+            this.ConfigProperty_ServerMaxPlayerCount.TimerInterval = 100;
             this.toolTip.SetToolTip(this.ConfigProperty_ServerMaxPlayerCount, resources.GetString("ConfigProperty_ServerMaxPlayerCount.ToolTip"));
             this.ConfigProperty_ServerMaxPlayerCount.Value = 8;
+            this.ConfigProperty_ServerMaxPlayerCount.ValueChanged += new System.EventHandler(this.ConfigProperty_ServerMaxPlayerCount_ValueChanged);
             // 
             // ZombieDaySpeed_GroupBox
             // 
@@ -3318,19 +3598,24 @@
             // DayLightLength_GroupBox
             // 
             resources.ApplyResources(this.DayLightLength_GroupBox, "DayLightLength_GroupBox");
-            this.DayLightLength_GroupBox.Controls.Add(this.trackBarEx2);
             this.DayLightLength_GroupBox.Controls.Add(this.ConfigProperty_DayLightLength);
             this.DayLightLength_GroupBox.Name = "DayLightLength_GroupBox";
             this.DayLightLength_GroupBox.TabStop = false;
             // 
             // ConfigProperty_DayLightLength
             // 
+            this.ConfigProperty_DayLightLength.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.ConfigProperty_DayLightLength.BeforeTouchSize = new System.Drawing.Size(359, 20);
             resources.ApplyResources(this.ConfigProperty_DayLightLength, "ConfigProperty_DayLightLength");
-            this.ConfigProperty_DayLightLength.Maximum = 24;
-            this.ConfigProperty_DayLightLength.Minimum = 1;
+            this.ConfigProperty_DayLightLength.LargeChange = 2;
             this.ConfigProperty_DayLightLength.Name = "ConfigProperty_DayLightLength";
+            this.ConfigProperty_DayLightLength.SliderSize = new System.Drawing.Size(4, 14);
+            this.ConfigProperty_DayLightLength.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Colorful;
+            this.ConfigProperty_DayLightLength.ThemeName = "Office2016Colorful";
+            this.ConfigProperty_DayLightLength.TimerInterval = 100;
             this.toolTip.SetToolTip(this.ConfigProperty_DayLightLength, resources.GetString("ConfigProperty_DayLightLength.ToolTip"));
             this.ConfigProperty_DayLightLength.Value = 18;
+            this.ConfigProperty_DayLightLength.ValueChanged += new System.EventHandler(this.ConfigProperty_DayLightLength_ValueChanged);
             // 
             // DayNightLength_GroupBox
             // 
@@ -3341,37 +3626,19 @@
             // 
             // ConfigProperty_DayNightLength
             // 
-            this.ConfigProperty_DayNightLength.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.ConfigProperty_DayNightLength.BeforeTouchSize = new System.Drawing.Size(332, 20);
+            this.ConfigProperty_DayNightLength.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.ConfigProperty_DayNightLength.BeforeTouchSize = new System.Drawing.Size(359, 20);
             resources.ApplyResources(this.ConfigProperty_DayNightLength, "ConfigProperty_DayNightLength");
             this.ConfigProperty_DayNightLength.LargeChange = 24;
             this.ConfigProperty_DayNightLength.Name = "ConfigProperty_DayNightLength";
             this.ConfigProperty_DayNightLength.SliderSize = new System.Drawing.Size(4, 14);
             this.ConfigProperty_DayNightLength.SmallChange = 24;
-            this.ConfigProperty_DayNightLength.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Black;
-            this.ConfigProperty_DayNightLength.ThemeName = "Office2016Black";
+            this.ConfigProperty_DayNightLength.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Colorful;
+            this.ConfigProperty_DayNightLength.ThemeName = "Office2016Colorful";
             this.ConfigProperty_DayNightLength.TimerInterval = 100;
             this.toolTip.SetToolTip(this.ConfigProperty_DayNightLength, resources.GetString("ConfigProperty_DayNightLength.ToolTip"));
             this.ConfigProperty_DayNightLength.Value = 24;
             this.ConfigProperty_DayNightLength.ValueChanged += new System.EventHandler(this.ConfigProperty_DayNightLength_ValueChanged);
-            // 
-            // BlockDamagePlayer_GroupBox
-            // 
-            resources.ApplyResources(this.BlockDamagePlayer_GroupBox, "BlockDamagePlayer_GroupBox");
-            this.BlockDamagePlayer_GroupBox.Controls.Add(this.ConfigProperty_BlockDamagePlayer);
-            this.BlockDamagePlayer_GroupBox.Name = "BlockDamagePlayer_GroupBox";
-            this.BlockDamagePlayer_GroupBox.TabStop = false;
-            // 
-            // ConfigProperty_BlockDamagePlayer
-            // 
-            resources.ApplyResources(this.ConfigProperty_BlockDamagePlayer, "ConfigProperty_BlockDamagePlayer");
-            this.ConfigProperty_BlockDamagePlayer.Maximum = 1000;
-            this.ConfigProperty_BlockDamagePlayer.Minimum = 1;
-            this.ConfigProperty_BlockDamagePlayer.Name = "ConfigProperty_BlockDamagePlayer";
-            this.ConfigProperty_BlockDamagePlayer.SmallChange = 10;
-            this.ConfigProperty_BlockDamagePlayer.TickFrequency = 10;
-            this.toolTip.SetToolTip(this.ConfigProperty_BlockDamagePlayer, resources.GetString("ConfigProperty_BlockDamagePlayer.ToolTip"));
-            this.ConfigProperty_BlockDamagePlayer.Value = 100;
             // 
             // GameDifficulty_GroupBox
             // 
@@ -3393,7 +3660,8 @@
             this.ConfigProperty_GameDifficulty.Name = "ConfigProperty_GameDifficulty";
             this.ConfigProperty_GameDifficulty.ResetButton = resetButton2;
             this.ConfigProperty_GameDifficulty.Shape = Syncfusion.Windows.Forms.Tools.Shapes.CustomImages;
-            this.ConfigProperty_GameDifficulty.Value = 1F;
+            this.toolTip.SetToolTip(this.ConfigProperty_GameDifficulty, resources.GetString("ConfigProperty_GameDifficulty.ToolTip"));
+            this.ConfigProperty_GameDifficulty.Value = 2F;
             this.ConfigProperty_GameDifficulty.ValueChanged += new Syncfusion.Windows.Forms.Tools.RatingValueChangedEventHandler(this.ConfigProperty_GameDifficulty_ValueChanged);
             // 
             // Messaging_TabPage
@@ -4509,69 +4777,19 @@
             this.www7dsm.UseVisualStyleBackColor = true;
             this.www7dsm.Click += new System.EventHandler(this.Button1_Click_3);
             // 
-            // ConfigProperty_ServerMaxWorldTransferSpeedKiBs
+            // NitroGEN_Map_Generator_Link
             // 
-            this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.BeforeTouchSize = new System.Drawing.Size(332, 20);
-            resources.ApplyResources(this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs, "ConfigProperty_ServerMaxWorldTransferSpeedKiBs");
-            this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.LargeChange = 128;
-            this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.Name = "ConfigProperty_ServerMaxWorldTransferSpeedKiBs";
-            this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.SliderSize = new System.Drawing.Size(4, 14);
-            this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.SmallChange = 64;
-            this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Black;
-            this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.ThemeName = "Office2016Black";
-            this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.TimerInterval = 100;
-            this.toolTip.SetToolTip(this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs, resources.GetString("ConfigProperty_ServerMaxWorldTransferSpeedKiBs.ToolTip"));
-            this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.Value = 512;
-            this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.ValueChanged += new System.EventHandler(this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs_ValueChanged);
-            // 
-            // ServerOptions_GroupBox
-            // 
-            this.ServerOptions_GroupBox.Controls.Add(this.ConfigProperty_EACEnabled);
-            this.ServerOptions_GroupBox.Controls.Add(this.ConfigProperty_TerminalWindowEnabled);
-            this.ServerOptions_GroupBox.Controls.Add(this.ConfigProperty_AirDropMarker);
-            this.ServerOptions_GroupBox.Controls.Add(this.ConfigProperty_EnemyDifficulty);
-            this.ServerOptions_GroupBox.Controls.Add(this.ConfigProperty_BuildCreate);
-            this.ServerOptions_GroupBox.Controls.Add(this.ConfigProperty_PersistentPlayerProfiles);
-            resources.ApplyResources(this.ServerOptions_GroupBox, "ServerOptions_GroupBox");
-            this.ServerOptions_GroupBox.Name = "ServerOptions_GroupBox";
-            this.ServerOptions_GroupBox.TabStop = false;
-            // 
-            // trackBarEx1
-            // 
-            this.trackBarEx1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.trackBarEx1.BeforeTouchSize = new System.Drawing.Size(332, 20);
-            resources.ApplyResources(this.trackBarEx1, "trackBarEx1");
-            this.trackBarEx1.LargeChange = 24;
-            this.trackBarEx1.Name = "trackBarEx1";
-            this.trackBarEx1.SliderSize = new System.Drawing.Size(4, 14);
-            this.trackBarEx1.SmallChange = 24;
-            this.trackBarEx1.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Black;
-            this.trackBarEx1.ThemeName = "Office2016Black";
-            this.trackBarEx1.TimerInterval = 100;
-            this.toolTip.SetToolTip(this.trackBarEx1, resources.GetString("trackBarEx1.ToolTip"));
-            this.trackBarEx1.Value = 24;
-            // 
-            // trackBarEx2
-            // 
-            this.trackBarEx2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.trackBarEx2.BeforeTouchSize = new System.Drawing.Size(332, 20);
-            resources.ApplyResources(this.trackBarEx2, "trackBarEx2");
-            this.trackBarEx2.LargeChange = 24;
-            this.trackBarEx2.Name = "trackBarEx2";
-            this.trackBarEx2.SliderSize = new System.Drawing.Size(4, 14);
-            this.trackBarEx2.SmallChange = 24;
-            this.trackBarEx2.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Black;
-            this.trackBarEx2.ThemeName = "Office2016Black";
-            this.trackBarEx2.TimerInterval = 100;
-            this.toolTip.SetToolTip(this.trackBarEx2, resources.GetString("trackBarEx2.ToolTip"));
-            this.trackBarEx2.Value = 24;
+            resources.ApplyResources(this.NitroGEN_Map_Generator_Link, "NitroGEN_Map_Generator_Link");
+            this.NitroGEN_Map_Generator_Link.Name = "NitroGEN_Map_Generator_Link";
+            this.NitroGEN_Map_Generator_Link.TabStop = true;
+            this.NitroGEN_Map_Generator_Link.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.NitroGEN_Map_Generator_Link_LinkClicked);
             // 
             // Server_Panel_Form
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.NitroGEN_Map_Generator_Link);
             this.Controls.Add(this.GitHub_Repo_Button);
             this.Controls.Add(this.discord_b);
             this.Controls.Add(this.dbg_btn_2);
@@ -4648,15 +4866,41 @@
             this.Ban_GroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Ban_Slider_TrackBar)).EndInit();
             this.GameSettings_TabPage.ResumeLayout(false);
+            this.PlayerSafeZoneHours_GroupBox.ResumeLayout(false);
+            this.PlayerSafeZoneHours_GroupBox.PerformLayout();
+            this.BlockDamagePlayer_GroupBox.ResumeLayout(false);
+            this.BlockDamagePlayer_GroupBox.PerformLayout();
+            this.Telnet_GroupBox.ResumeLayout(false);
+            this.Telnet_FailedLoginLimit_GroupBox.ResumeLayout(false);
+            this.Telnet_FailedLoginLimit_GroupBox.PerformLayout();
+            this.Telnet_FailedLoginsBlocktime_GroupBox.ResumeLayout(false);
+            this.Telnet_FailedLoginsBlocktime_GroupBox.PerformLayout();
+            this.Telnet_Port_GroupBox.ResumeLayout(false);
+            this.Telnet_Port_GroupBox.PerformLayout();
+            this.Telnet_Password_GroupBox.ResumeLayout(false);
+            this.Telnet_Password_GroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_TelnetEnabled)).EndInit();
+            this.GameWorldSettings_GroupBox.ResumeLayout(false);
+            this.GameName_GroupBox.ResumeLayout(false);
+            this.GameWorld_GroupBox.ResumeLayout(false);
+            this.WorldGenSeed_GroupBox.ResumeLayout(false);
+            this.WorldGenSeed_GroupBox.PerformLayout();
+            this.WorldGenSize_GroupBox.ResumeLayout(false);
+            this.WorldGenSize_GroupBox.PerformLayout();
+            this.GameMode_GroupBox.ResumeLayout(false);
+            this.PlayerSafeZoneLevel_GroupBox.ResumeLayout(false);
+            this.PlayerSafeZoneLevel_GroupBox.PerformLayout();
+            this.ServerOptions_GroupBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_EnemySpawnMode)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_EACEnabled)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_TerminalWindowEnabled)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_AirDropMarker)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_EnemyDifficulty)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BuildCreate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_PersistentPlayerProfiles)).EndInit();
             this.LootRespawnDays_GroupBox.ResumeLayout(false);
             this.LootRespawnDays_GroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_LootRespawnDays)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_PersistentPlayerProfiles)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BuildCreate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_EnemyDifficulty)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_TerminalWindowEnabled)).EndInit();
             this.ServerMaxWorldTransferSpeedKiBs_GroupBox.ResumeLayout(false);
             this.ServerMaxWorldTransferSpeedKiBs_GroupBox.PerformLayout();
             this.Server_Visibility_GroupBox.ResumeLayout(false);
@@ -4664,22 +4908,20 @@
             this.MaxUncoveredMapChunksPerPlayer_GroupBox.PerformLayout();
             this.HideCommandExecutionLog_GroupBox.ResumeLayout(false);
             this.ServerDisabledNetworkProtocols_GroupBox.ResumeLayout(false);
-            this.Telnet_Settings_GroupBox.ResumeLayout(false);
-            this.Telnet_Settings_GroupBox.PerformLayout();
             this.ServerPort_GroupBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_ServerPort)).EndInit();
-            this.Admin_Control_Panel_GroupBox.ResumeLayout(false);
-            this.Admin_Control_Panel_GroupBox.PerformLayout();
+            this.ControlPanel_GroupBox.ResumeLayout(false);
+            this.ControlPanel_Port_GroupBox.ResumeLayout(false);
+            this.ControlPanel_Port_GroupBox.PerformLayout();
+            this.ControlPanel_Password_GroupBox.ResumeLayout(false);
+            this.ControlPanel_Password_GroupBox.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_ControlPanelEnabled)).EndInit();
             this.BloodMoon_GroupBox.ResumeLayout(false);
             this.BloodMoon_GroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BloodMoonWarning)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BloodMoonRange)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BloodMoonFrequency)).EndInit();
-            this.Game_World_Settings_GroupBox.ResumeLayout(false);
-            this.Game_World_Settings_GroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_WorldGenSize)).EndInit();
             this.autobots.ResumeLayout(false);
-            this.autobots.PerformLayout();
             this.BedrollExpiryTime_GroupBox.ResumeLayout(false);
             this.BedrollExpiryTime_GroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BedrollExpiryTime)).EndInit();
@@ -4712,7 +4954,6 @@
             this.ServerName_GroupBox.PerformLayout();
             this.BlockDamageAIBM_GroupBox.ResumeLayout(false);
             this.BlockDamageAIBM_GroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BlockDamageAIBM)).EndInit();
             this.PartySharedKillRange_GroupBox.ResumeLayout(false);
             this.PartySharedKillRange_GroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_PartySharedKillRange)).EndInit();
@@ -4725,12 +4966,10 @@
             this.DropOnQuit_GroupBox.ResumeLayout(false);
             this.XPMultiplier_GroupBox.ResumeLayout(false);
             this.XPMultiplier_GroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_XPMultiplier)).EndInit();
             this.BlockDamageAI_GroupBox.ResumeLayout(false);
             this.BlockDamageAI_GroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BlockDamageAI)).EndInit();
-            this.Server_Reserved_Slots_GroupBox.ResumeLayout(false);
-            this.Server_Reserved_Slots_GroupBox.PerformLayout();
+            this.ServerReservedSlots_GroupBox.ResumeLayout(false);
+            this.ServerReservedSlots_GroupBox.PerformLayout();
             this.Player_Killing_Mode_GroupBox.ResumeLayout(false);
             this.DropOnDeath_GroupBox.ResumeLayout(false);
             this.AirDropFrequency_GroupBox.ResumeLayout(false);
@@ -4751,18 +4990,13 @@
             this.LootAbundance_GroupBox.ResumeLayout(false);
             this.LootAbundance_GroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_LootAbundance)).EndInit();
-            this.Max_Players_GroupBox.ResumeLayout(false);
-            this.Max_Players_GroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_ServerMaxPlayerCount)).EndInit();
+            this.ServerMaxPlayerCount_GroupBox.ResumeLayout(false);
+            this.ServerMaxPlayerCount_GroupBox.PerformLayout();
             this.ZombieDaySpeed_GroupBox.ResumeLayout(false);
             this.DayLightLength_GroupBox.ResumeLayout(false);
             this.DayLightLength_GroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_DayLightLength)).EndInit();
             this.DayNightLength_GroupBox.ResumeLayout(false);
             this.DayNightLength_GroupBox.PerformLayout();
-            this.BlockDamagePlayer_GroupBox.ResumeLayout(false);
-            this.BlockDamagePlayer_GroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BlockDamagePlayer)).EndInit();
             this.GameDifficulty_GroupBox.ResumeLayout(false);
             this.Messaging_TabPage.ResumeLayout(false);
             this.Server_Chat_Messages_GroupBox.ResumeLayout(false);
@@ -4812,7 +5046,6 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.img_status)).EndInit();
-            this.ServerOptions_GroupBox.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -5094,28 +5327,18 @@
         private System.Windows.Forms.GroupBox Server_Visibility_GroupBox;
         private System.Windows.Forms.ComboBox ConfigProperty_ServerVisibility;
         private System.Windows.Forms.GroupBox MaxUncoveredMapChunksPerPlayer_GroupBox;
-        private System.Windows.Forms.TextBox ConfigProperty_MaxUncoveredMapChunksPerPlayer;
         private System.Windows.Forms.GroupBox HideCommandExecutionLog_GroupBox;
         private System.Windows.Forms.ComboBox ConfigProperty_HideCommandExecutionLog;
         private System.Windows.Forms.GroupBox ServerDisabledNetworkProtocols_GroupBox;
         private System.Windows.Forms.CheckedListBox ConfigProperty_ServerDisabledNetworkProtocols;
-        private System.Windows.Forms.GroupBox Telnet_Settings_GroupBox;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox ConfigProperty_TelnetFailedLoginsBlocktime;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox ConfigProperty_TelnetFailedLoginLimit;
-        private System.Windows.Forms.CheckBox ConfigProperty_TelnetEnabled;
-        private System.Windows.Forms.Label telnet_port_l;
         private System.Windows.Forms.TextBox ConfigProperty_TelnetPort;
-        private System.Windows.Forms.Label telnet_psw_l;
         private System.Windows.Forms.TextBox ConfigProperty_TelnetPassword;
         private System.Windows.Forms.GroupBox ServerPort_GroupBox;
         private System.Windows.Forms.NumericUpDown ConfigProperty_ServerPort;
-        private System.Windows.Forms.GroupBox Admin_Control_Panel_GroupBox;
-        private System.Windows.Forms.Label cpl_port;
+        private System.Windows.Forms.GroupBox ControlPanel_GroupBox;
         private System.Windows.Forms.TextBox ConfigProperty_ControlPanelPort;
-        private System.Windows.Forms.Label cpl_pass;
-        private System.Windows.Forms.CheckBox ConfigProperty_ControlPanelEnabled;
         private System.Windows.Forms.TextBox ConfigProperty_ControlPanelPassword;
         private System.Windows.Forms.GroupBox BloodMoon_GroupBox;
         private System.Windows.Forms.Label BloodMoonWarning_Label;
@@ -5124,25 +5347,19 @@
         private System.Windows.Forms.Label BloodMoonRange_Label;
         private System.Windows.Forms.Label BloodMoonFrequency_Label;
         private System.Windows.Forms.NumericUpDown ConfigProperty_BloodMoonFrequency;
-        private System.Windows.Forms.GroupBox Game_World_Settings_GroupBox;
+        private System.Windows.Forms.GroupBox GameWorldSettings_GroupBox;
         private System.Windows.Forms.ComboBox ConfigProperty_GameMode;
-        private System.Windows.Forms.TrackBar ConfigProperty_WorldGenSize;
         private System.Windows.Forms.TextBox ConfigProperty_WorldGenSeed;
-        private System.Windows.Forms.ComboBox ConfigProperty_GameName;
         private System.Windows.Forms.ComboBox ConfigProperty_GameWorld;
         private System.Windows.Forms.GroupBox autobots;
-        private System.Windows.Forms.Label Player_Safe_Zone_Hours_Label;
-        private System.Windows.Forms.Label Player_Safe_Zone_Level_Label;
         private System.Windows.Forms.TextBox ConfigProperty_PlayerSafeZoneHours;
         private System.Windows.Forms.TextBox ConfigProperty_PlayerSafeZoneLevel;
         private System.Windows.Forms.GroupBox BedrollExpiryTime_GroupBox;
         private System.Windows.Forms.TrackBar ConfigProperty_BedrollExpiryTime;
-        private System.Windows.Forms.CheckBox ConfigProperty_EnemySpawnMode;
         private System.Windows.Forms.GroupBox BedrollDeadZoneSize_GroupBox;
         private System.Windows.Forms.TrackBar ConfigProperty_BedrollDeadZoneSize;
         private System.Windows.Forms.GroupBox BloodMoonEnemyCount_GroupBox;
         private System.Windows.Forms.TrackBar ConfigProperty_BloodMoonEnemyCount;
-        private System.Windows.Forms.CheckBox AirDropMarker;
         private System.Windows.Forms.GroupBox MaxSpawnedAnimals_GroupBox;
         private System.Windows.Forms.TrackBar ConfigProperty_MaxSpawnedAnimals;
         private System.Windows.Forms.GroupBox MaxSpawnedZombies_GroupBox;
@@ -5166,7 +5383,6 @@
         private System.Windows.Forms.GroupBox ServerName_GroupBox;
         private System.Windows.Forms.TextBox ConfigProperty_ServerName;
         private System.Windows.Forms.GroupBox BlockDamageAIBM_GroupBox;
-        private System.Windows.Forms.TrackBar ConfigProperty_BlockDamageAIBM;
         private System.Windows.Forms.GroupBox PartySharedKillRange_GroupBox;
         private System.Windows.Forms.TrackBar ConfigProperty_PartySharedKillRange;
         private System.Windows.Forms.GroupBox ZombieBloodMoonSpeed_GroupBox;
@@ -5180,10 +5396,8 @@
         private System.Windows.Forms.GroupBox DropOnQuit_GroupBox;
         private System.Windows.Forms.ComboBox ConfigProperty_DropOnQuit;
         private System.Windows.Forms.GroupBox XPMultiplier_GroupBox;
-        private System.Windows.Forms.TrackBar ConfigProperty_XPMultiplier;
         private System.Windows.Forms.GroupBox BlockDamageAI_GroupBox;
-        private System.Windows.Forms.TrackBar ConfigProperty_BlockDamageAI;
-        private System.Windows.Forms.GroupBox Server_Reserved_Slots_GroupBox;
+        private System.Windows.Forms.GroupBox ServerReservedSlots_GroupBox;
         private System.Windows.Forms.TextBox ConfigProperty_ServerAdminSlotsPermission;
         private System.Windows.Forms.Label Admin_Slot_Text_Label;
         private System.Windows.Forms.Label Admin_Reserve_Text_Label;
@@ -5218,15 +5432,12 @@
         private System.Windows.Forms.TrackBar ConfigProperty_LootRespawnDays;
         private System.Windows.Forms.GroupBox LootAbundance_GroupBox;
         private System.Windows.Forms.TrackBar ConfigProperty_LootAbundance;
-        private System.Windows.Forms.GroupBox Max_Players_GroupBox;
-        public System.Windows.Forms.TrackBar ConfigProperty_ServerMaxPlayerCount;
+        private System.Windows.Forms.GroupBox ServerMaxPlayerCount_GroupBox;
         private System.Windows.Forms.GroupBox ZombieDaySpeed_GroupBox;
         private System.Windows.Forms.ComboBox ConfigProperty_ZombieMove;
         private System.Windows.Forms.GroupBox DayLightLength_GroupBox;
-        private System.Windows.Forms.TrackBar ConfigProperty_DayLightLength;
         private System.Windows.Forms.GroupBox DayNightLength_GroupBox;
         private System.Windows.Forms.GroupBox BlockDamagePlayer_GroupBox;
-        private System.Windows.Forms.TrackBar ConfigProperty_BlockDamagePlayer;
         private System.Windows.Forms.GroupBox GameDifficulty_GroupBox;
         private System.Windows.Forms.TabPage Mods_TabPage;
         private System.Windows.Forms.Button button1;
@@ -5260,7 +5471,37 @@
         private System.Windows.Forms.Button button2;
         private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_ServerMaxWorldTransferSpeedKiBs;
         private System.Windows.Forms.GroupBox ServerOptions_GroupBox;
-        private Syncfusion.Windows.Forms.Tools.TrackBarEx trackBarEx1;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_ServerMaxPlayerCount;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_DayLightLength;
+        public Syncfusion.Windows.Forms.Tools.ToggleButton ConfigProperty_ControlPanelEnabled;
+        private System.Windows.Forms.GroupBox Telnet_GroupBox;
+        public Syncfusion.Windows.Forms.Tools.ToggleButton ConfigProperty_TelnetEnabled;
+        private System.Windows.Forms.GroupBox Telnet_FailedLoginLimit_GroupBox;
+        private System.Windows.Forms.GroupBox Telnet_FailedLoginsBlocktime_GroupBox;
+        private System.Windows.Forms.GroupBox Telnet_Port_GroupBox;
+        private System.Windows.Forms.GroupBox Telnet_Password_GroupBox;
+        private System.Windows.Forms.GroupBox ControlPanel_Port_GroupBox;
+        private System.Windows.Forms.GroupBox ControlPanel_Password_GroupBox;
+        public Syncfusion.Windows.Forms.Tools.ToggleButton ConfigProperty_EnemySpawnMode;
+        private System.Windows.Forms.GroupBox PlayerSafeZoneHours_GroupBox;
+        private System.Windows.Forms.GroupBox PlayerSafeZoneLevel_GroupBox;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx trackBarEx4;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_BlockDamageAIBM;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx trackBarEx7;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx trackBarEx3;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_XPMultiplier;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_BlockDamageAI;
         private Syncfusion.Windows.Forms.Tools.TrackBarEx trackBarEx2;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx trackBarEx1;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_BlockDamagePlayer;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_WorldGenSize;
+        private System.Windows.Forms.GroupBox GameMode_GroupBox;
+        private System.Windows.Forms.GroupBox WorldGenSeed_GroupBox;
+        private System.Windows.Forms.GroupBox WorldGenSize_GroupBox;
+        private System.Windows.Forms.GroupBox GameWorld_GroupBox;
+        private System.Windows.Forms.GroupBox GameName_GroupBox;
+        private System.Windows.Forms.ComboBox ConfigProperty_GameName;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_MaxUncoveredMapChunksPerPlayer;
+        private System.Windows.Forms.LinkLabel NitroGEN_Map_Generator_Link;
     }
 }

@@ -79,29 +79,31 @@ namespace _7DaysServerManager
             Echo("7DaysServerManager " + ver + " (Compiled " + Convert.ToString(AssemblyCreationDate.Value) + ")", 0, true);
             //echo("Compilation date: " + Convert.ToString(AssemblyCreationDate.Value), 0, true);
 
+            //TODO: FIGURE OUT WHAT THIS IS AND IF I STILL NEED
             // Update The Game Worlds Dropdown Box
-            try
-            {
-                // Clear All Items From Game Worlds Dropdown Box
-                ConfigProperty_GameWorld.Items.Clear();
+            //try
+            //{
+            //    // Clear All Items From Game Worlds Dropdown Box
+            //    ConfigProperty_GameWorld.Items.Clear();
 
-                // Grab All Maps From The World Directory
-                string[] all_maps = System.IO.Directory.GetDirectories((string)Registry.GetValue(base_registry_key + profile_name, "game_path", null) + "\\Data\\Worlds\\", "*", System.IO.SearchOption.TopDirectoryOnly);
+            //    // Grab All Maps From The World Directory
+            //    string[] all_maps = System.IO.Directory.GetDirectories((string)Registry.GetValue(base_registry_key + profile_name, "game_path", null) + "\\Data\\Worlds\\", "*", System.IO.SearchOption.TopDirectoryOnly);
 
-                //Populate The Game Worlds Dropdown Box
-                foreach (string each_save in all_maps)
-                {
-                    // All The Found World
-                    ConfigProperty_GameWorld.Items.Add(each_save.Replace((string)Registry.GetValue(base_registry_key + profile_name, "game_path", null) + "\\Data\\Worlds\\", ""));
-                }
-            }
-            catch
-            {
-                MessageBox.Show("Failed To Load Worlds From World Directory: " + ((string)Registry.GetValue(base_registry_key + profile_name, "game_path", null) + "\\Data\\Worlds\\", ""));
-                
-                // Only Add Default World
-                ConfigProperty_GameWorld.Text = "Navezgane";
-            };
+            //    //Populate The Game Worlds Dropdown Box
+            //    foreach (string each_save in all_maps)
+            //    {
+            //        // All The Found World
+            //        ConfigProperty_GameWorld.Items.Add(each_save.Replace((string)Registry.GetValue(base_registry_key + profile_name, "game_path", null) + "\\Data\\Worlds\\", ""));
+            //    }
+            //}
+            //catch
+            //{
+            //    MessageBox.Show("Failed To Load Worlds From World Directory: " + ((string)Registry.GetValue(base_registry_key + profile_name, "game_path", null) + "\\Data\\Worlds\\", ""));
+
+            //    // Only Add Default World
+            //    ConfigProperty_GameWorld.Items.Add("Navegane");
+            //    ConfigProperty_GameWorld.Items.Add(("RWG");
+            //};
 
             // Load Config File And Update The UI Values
             Import_Config();
@@ -493,7 +495,7 @@ namespace _7DaysServerManager
             dtds_possible.SelectedIndex = 0;
 
             
-            // Set App Settings Fields To Default Values
+            // Initialize App Fields To Default Values
             Server_Commands_Delay_GroupBox.Text = LocalizedLanguage("spam_time") + " [" + Server_Commands_Time_TrackBar.Value * 0.5 + " min.]";
             Server_Commands_List_RichTextBox.Text = (string)Registry.GetValue(base_registry_key + profile_name, "spam_list", null);
             SQL_Host_TextBox.Text = (string)Registry.GetValue(base_registry_key + profile_name, "sql_host", null);
@@ -505,9 +507,12 @@ namespace _7DaysServerManager
             Game_File_Path_Label.Text = "Game files path: " + (string)Registry.GetValue(base_registry_key + profile_name, "game_path", null);
             if (Game_File_Path_Label.Text == "Game files path: ")
                 Game_File_Path_Label.Text = "Game files path: ERROR-NONE";
-            Max_Players_GroupBox.Text = "Max Players" + " [" + Convert.ToString(ConfigProperty_ServerMaxPlayerCount.Value) + "]";
+            
+            // Set Group Box Descriptions To Initial Values Retrieved from Config File
             GameDifficulty_GroupBox.Text = "Game Difficulty" + " [" + Convert.ToString(ConfigProperty_GameDifficulty.Value) + "]";
             DayNightLength_GroupBox.Text = "Day Length" + " [" + Convert.ToString(ConfigProperty_DayNightLength.Value) + " min.]";
+            ServerMaxPlayerCount_GroupBox.Text = "Max Players: [" + Convert.ToString(ConfigProperty_ServerMaxPlayerCount.Value) + "]";
+            ServerMaxWorldTransferSpeedKiBs_GroupBox.Text = "Server Max World Transfer Speed" + " [" + Convert.ToInt32(ConfigProperty_ServerMaxWorldTransferSpeedKiBs.Value) + " KiB/s]";
 
             // Start Server Monitoring To Update The Dash Widgets
             Server_Monitoring();

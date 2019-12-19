@@ -20,7 +20,7 @@ namespace _7DaysServerManager
 
             // Game Settings Tab
             Player_Killing_Mode_GroupBox.Enabled = false;
-            AirDropMarker.Enabled = false;
+            ConfigProperty_AirDropMarker.Enabled = false;
             ConfigProperty_ServerMaxPlayerCount.Enabled = false;
             ConfigProperty_GameDifficulty.Enabled = false;
             ConfigProperty_ControlPanelEnabled.Enabled = false;
@@ -101,7 +101,7 @@ namespace _7DaysServerManager
 
             // Game Settings Tab
             Player_Killing_Mode_GroupBox.Enabled = true;
-            AirDropMarker.Enabled = true;
+            ConfigProperty_AirDropMarker.Enabled = true;
             ConfigProperty_ServerMaxPlayerCount.Enabled = true;
             ConfigProperty_GameDifficulty.Enabled = true;
             ConfigProperty_ControlPanelEnabled.Enabled = true;

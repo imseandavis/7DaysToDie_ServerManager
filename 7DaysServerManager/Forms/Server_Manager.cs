@@ -470,14 +470,6 @@ namespace _7DaysServerManager
             Prepare_app_after_start();
         }
 
-
-
-        private void TrackBar1_Scroll(object sender, EventArgs e)
-        {
-            Max_Players_GroupBox.Text = LocalizedLanguage("maxplgroup") + " [" + Convert.ToString(ConfigProperty_ServerMaxPlayerCount.Value) + "]";
-            Update_Config();
-        }
-
         private void Trudnosc_Scroll(object sender, EventArgs e)
         {
             GameDifficulty_GroupBox.Text = LocalizedLanguage("trudnoscgroup") + " [" + Convert.ToString(ConfigProperty_GameDifficulty.Value) + "]";
@@ -2539,46 +2531,6 @@ namespace _7DaysServerManager
             Echo("\n\n████████╗██╗  ██╗ █████╗ ███╗   ██╗██╗  ██╗    ██╗   ██╗ ██████╗ ██╗   ██╗   ██╗ \n╚══██╔══╝██║  ██║██╔══██╗████╗  ██║██║ ██╔╝    ╚██╗ ██╔╝██╔═══██╗██║   ██║██╗╚██╗\n   ██║   ███████║███████║██╔██╗ ██║█████╔╝      ╚████╔╝ ██║   ██║██║   ██║╚═╝ ██║\n   ██║   ██╔══██║██╔══██║██║╚██╗██║██╔═██╗       ╚██╔╝  ██║   ██║██║   ██║██╗ ██║\n   ██║   ██║  ██║██║  ██║██║ ╚████║██║  ██╗       ██║   ╚██████╔╝╚██████╔╝╚═╝██╔╝\n   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝       ╚═╝    ╚═════╝  ╚═════╝    ╚═╝ \n\n", 0, true);
         }
 
-        private void Dod_0_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void Dod_1_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void Dod_2_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void Dod_3_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void Doq_0_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void Doq_1_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void Doq_2_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void Doq_3_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
         private void Ctime_0_CheckedChanged(object sender, EventArgs e)
         {
             Update_Config();
@@ -2611,28 +2563,8 @@ namespace _7DaysServerManager
 
         private void Nightpercentage_Scroll(object sender, EventArgs e)
         {
-            Update_Config();
-
-            DayLightLength_GroupBox.Text = LocalizedLanguage("nightpercentage_g") + " [" + ConfigProperty_DayLightLength.Value + "h]";
-        }
-
-        private void Bdm_Scroll(object sender, EventArgs e)
-        {
-            Update_Config();
-
-            if (ConfigProperty_BlockDamagePlayer.Value == 0)
-                BlockDamagePlayer_GroupBox.Text = LocalizedLanguage("block_durability_modifier_group") + " [25%]";
-            else
-                BlockDamagePlayer_GroupBox.Text = LocalizedLanguage("block_durability_modifier_group") + " [" + ConfigProperty_BlockDamagePlayer.Value * 50 + "%]";
-        }
-
-        private void Telnet_psw_TextChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void Telnet_port_TextChanged(object sender, EventArgs e)
-        {
+            DayLightLength_GroupBox.Text = "Day Light Length [" + ConfigProperty_DayLightLength.Value + "h]";
+            
             Update_Config();
         }
 
@@ -4601,26 +4533,6 @@ namespace _7DaysServerManager
             Update_Config();
         }
 
-        private void ServerReservedSlots_TextChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void ServerAdminSlots_TextChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void ServerReservedSlotsPermission_TextChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void ServerAdminSlotsPermission_TextChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
         private void Excall_CheckedChanged(object sender, EventArgs e)
         {
             if (Use_External_Call_CheckBox.Checked)
@@ -4683,6 +4595,15 @@ namespace _7DaysServerManager
 
         }
 
+        private void Usecmd_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                cmd.Text += commandslist.SelectedItem.ToString();
+            }
+            catch { }
+        }
+
         private void GitHub_Repo_Button_Click(object sender, EventArgs e)
         {
             Process.Start("https://github.com/imseandavis/7DaysToDie_ServerManager");
@@ -4707,161 +4628,13 @@ namespace _7DaysServerManager
             // curl -X GET "https://api.nexusmods.com/v1/games/7DaysToDie/mods/22.json" -H "accept: application/json" -H "apikey: SmpkZWI2bmhWY3lQczVOUnZXT3EzTHR5Rmp6SmlHYmVnNkFxVTVoTjdHM1M0SUVHZ0NQSlQxNFdpa1FwWm5KMC0tZlFvTWlCMXo3YitFQndJZDhaTHgvUT09--c263c337518233d4b00051b7114989af6f837328"
         }
 
-        private void ServerDescription_TextChanged(object sender, EventArgs e)
+        private void NitroGEN_Map_Generator_Link_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Update_Config();
+            Process.Start("https://7daystodie.com/forums/showthread.php?114207-Tool-NITROGEN-a-random-world-generator-for-7DtD");
         }
 
-        private void ServerWebsiteURL_TextChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
 
-        private void ServerLoginConfirmationText_TextChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void ConfigProperty_TerminalWindowEnabled_ToggleStateChanged(object sender, Syncfusion.Windows.Forms.Tools.ToggleStateChangedEventArgs e)
-        {
-            if (ConfigProperty_TerminalWindowEnabled.ToggleState == ToggleButtonState.Active)
-                ConfigProperty_TerminalWindowEnabled.Text = "true";
-            else
-                ConfigProperty_TerminalWindowEnabled.Text = "false";
-
-            // Update The Config File With The New Value
-            Update_Config();
-        }
-
-        private void ConfigProperty_EnemyDifficulty_ToggleStateChanged(object sender, Syncfusion.Windows.Forms.Tools.ToggleStateChangedEventArgs e)
-        {
-            if (ConfigProperty_EnemyDifficulty.ToggleState == ToggleButtonState.Active)
-                ConfigProperty_EnemyDifficulty.Text = "1";
-            else
-                ConfigProperty_EnemyDifficulty.Text = "0";
-
-            // Update The Config File With The New Value
-            Update_Config();
-        }
-
-        private void ConfigProperty_BuildCreate_ToggleStateChanged(object sender, Syncfusion.Windows.Forms.Tools.ToggleStateChangedEventArgs e)
-        {
-            if (ConfigProperty_BuildCreate.ToggleState == ToggleButtonState.Active)
-                ConfigProperty_BuildCreate.Text = "true";
-            else
-                ConfigProperty_BuildCreate.Text = "false";
-
-            // Update The Config File With The New Value
-            Update_Config();
-        }
-
-        private void ConfigProperty_PersistentPlayerProfiles_ToggleStateChanged(object sender, ToggleStateChangedEventArgs e)
-        {
-            if (ConfigProperty_PersistentPlayerProfiles.ToggleState == ToggleButtonState.Active)
-                ConfigProperty_PersistentPlayerProfiles.Text = "true";
-            else
-                ConfigProperty_PersistentPlayerProfiles.Text = "false";
-
-            // Update The Config File With The New Value
-            Update_Config();
-        }
-
-        private void ConfigProperty_AirDropMarker_ToggleStateChanged(object sender, ToggleStateChangedEventArgs e)
-        {
-            if (ConfigProperty_AirDropMarker.ToggleState == ToggleButtonState.Active)
-                ConfigProperty_AirDropMarker.Text = "true";
-            else
-                ConfigProperty_AirDropMarker.Text = "false";
-
-            // Update The Config File With The New Value
-            Update_Config();
-        }
-
-        private void ConfigProperty_EACEnabled_ToggleStateChanged(object sender, ToggleStateChangedEventArgs e)
-        {
-            if (ConfigProperty_EACEnabled.ToggleState == ToggleButtonState.Active)
-                ConfigProperty_EACEnabled.Text = "true";
-            else
-                ConfigProperty_EACEnabled.Text = "false";
-            
-            // Update The Config File With The New Value
-            Update_Config();
-        }
-
-        private void ConfigProperty_GameDifficulty_ValueChanged(object sender, RatingValueChangedEventArgs args)
-        {
-            // Don't Allow Zero
-            if (ConfigProperty_GameDifficulty.Value == 0)
-                MessageBox.Show("You Cannot Set A Difficulty Value of 0!");
-                ConfigProperty_GameDifficulty.Value = 1;
-
-            // Update Text To Currently Set Value
-            GameDifficulty_GroupBox.Text = "Game Difficulty" + " [" + Convert.ToString(ConfigProperty_GameDifficulty.Value) + "]";
-
-            // Update The Config File With The New Value
-            Update_Config();
-        }
-
-        private void ConfigProperty_DayNightLength_ValueChanged(object sender, EventArgs e)
-        {
-            // Update The Group Box Text (Realtime Minutes Per Game Day)
-            if (ConfigProperty_DayNightLength.Value == 1440)
-            {
-                DayNightLength_GroupBox.Text = "Day Length: Realtime";
-                DialogResult Realtime_Response = MessageBox.Show("You Have Chosen Realtime Mode! If You Continue, The Server Time Will Be Set To Your Local Time And Game Time Will Pass In Realtime!", "Set Game Time To Relatime?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                if (Realtime_Response == DialogResult.Yes)
-                {
-                    try
-                    {
-                        // Calculate Realtime
-                        string realtime_time = Convert.ToString(((Convert.ToInt32((DateTime.Now.ToString("HH"))) * 1000) - 8000) + ((60 * Convert.ToInt32((DateTime.Now.ToString("mm"))) / 100)));
-                        
-                        // Execute Set Time Telnet Command
-                        telnet_queue.Enqueue("settime " + realtime_time);
-
-                        // Set Realtime Value To On
-                        Registry.SetValue(base_registry_key + profile_name, "realtime", "1");
-                    }
-                    catch
-                    {
-                        // Notify User Of Failure
-                        //TODO: SEND THIS AS AN ERROR REPORT
-                        MessageBox.Show("Unable To Set Realtime Mode!");
-
-                        // Decrement To Prevent Realtime
-                        ConfigProperty_DayNightLength.Value = -24;
-
-                        // Update GroupBox Text
-                        DayNightLength_GroupBox.Text = "Day Length: Each In Game Hour Equals " + Convert.ToInt32(ConfigProperty_DayNightLength.Value / 24) + " Real World Minutes";
-
-                        // Set Realtime Value To Off
-                        Registry.SetValue(base_registry_key + profile_name, "realtime", "0");
-                    }
-                }
-                else
-                {
-                    // Decrement To Prevent Realtime
-                    ConfigProperty_DayNightLength.Value = -24;
-                    
-                    // Update GroupBox Text
-                    DayNightLength_GroupBox.Text = "Day Length: Each In Game Hour Equals " + Convert.ToInt32(ConfigProperty_DayNightLength.Value / 24) + " Real World Minutes";
-
-                    // Set Realtime Value To Off
-                    Registry.SetValue(base_registry_key + profile_name, "realtime", "0");
-                }
-            }
-            else
-            {
-                // Update Groupbox Text
-                DayNightLength_GroupBox.Text = "Day Length: Each In Game Hour Equals " + Convert.ToInt32(ConfigProperty_DayNightLength.Value / 24) + " Real World Minutes";
-
-                // Set Realtime Value To On
-                Registry.SetValue(base_registry_key + profile_name, "realtime", "0");
-            }
-
-            // Update The Config File With The New Value
-            Update_Config();
-        }
+        #region Server Configuration File Settings OnChange Events
 
         private void ConfigProperty_ServerName_TextChanged(object sender, EventArgs e)
         {
@@ -4914,30 +4687,400 @@ namespace _7DaysServerManager
         private void ConfigProperty_ServerMaxWorldTransferSpeedKiBs_ValueChanged(object sender, EventArgs e)
         {
             // Update Text To Currently Set Value
-            ServerMaxWorldTransferSpeedKiBs_GroupBox.Text = "Server Max World Transfer Speed" + " [" + Convert.ToInt32(ConfigProperty_ServerMaxWorldTransferSpeedKiBs.Value) + " (KiB/s)]";
+            ServerMaxWorldTransferSpeedKiBs_GroupBox.Text = "Server Max World Transfer Speed" + " [" + Convert.ToInt32(ConfigProperty_ServerMaxWorldTransferSpeedKiBs.Value) + " KiB/s]";
 
             // Update The Config File With The New Value
             Update_Config();
         }
 
-        private void Usecmd_Click(object sender, EventArgs e)
+        private void ConfigProperty_ServerMaxPlayerCount_ValueChanged(object sender, EventArgs e)
         {
-            try
+            // Update Text To Currently Set Value
+            ServerMaxPlayerCount_GroupBox.Text = "Max Players: [" + Convert.ToString(ConfigProperty_ServerMaxPlayerCount.Value) + "]";
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_ServerReservedSlots_TextChanged(object sender, EventArgs e)
+        {
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_ServerReservedSlotsPermission_TextChanged(object sender, EventArgs e)
+        {
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_ServerAdminSlots_TextChanged(object sender, EventArgs e)
+        {
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_ServerAdminSlotsPermission_TextChanged(object sender, EventArgs e)
+        {
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_ControlPanelEnabled_ToggleStateChanged(object sender, ToggleStateChangedEventArgs e)
+        {
+            if (ConfigProperty_ControlPanelEnabled.ToggleState == ToggleButtonState.Active)
             {
-                cmd.Text += commandslist.SelectedItem.ToString();
+                ConfigProperty_ControlPanelEnabled.Text = "true";
+
+                // Unlock The Other Options So They Can Be Changed
+                ControlPanel_Port_GroupBox.Enabled = true;
+                ControlPanel_Password_GroupBox.Enabled = true;
             }
-            catch { }
-        }
+            else
+            {
+                ConfigProperty_ControlPanelEnabled.Text = "false";
 
-        private void MaxUncoveredMapChunksPerPlayer_TextChanged(object sender, EventArgs e)
-        {
+                //Lock The Other Options So They Can't Be Changed
+                ControlPanel_Port_GroupBox.Enabled = false;
+                ControlPanel_Password_GroupBox.Enabled = false;
+            }
+
+            // Update The Config File With The New Value
             Update_Config();
         }
 
-        private void EnemySpawnMode_CheckedChanged(object sender, EventArgs e)
+        private void ConfigProperty_ControlPanelPort_TextChanged(object sender, EventArgs e)
         {
+            // Update The Config File With The New Value
             Update_Config();
         }
+
+        private void ConfigProperty_ControlPanelPassword_TextChanged(object sender, EventArgs e)
+        {
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_TelnetEnabled_ToggleStateChanged(object sender, ToggleStateChangedEventArgs e)
+        {
+            if (ConfigProperty_TelnetEnabled.ToggleState == ToggleButtonState.Active)
+            {
+                ConfigProperty_TelnetEnabled.Text = "true";
+
+                // Unlock The Other Options So They Can Be Changed
+                Telnet_Port_GroupBox.Enabled = true;
+                Telnet_Password_GroupBox.Enabled = true;
+                Telnet_FailedLoginLimit_GroupBox.Enabled = true;
+                Telnet_FailedLoginsBlocktime_GroupBox.Enabled = true;
+            }
+            else
+            {
+                ConfigProperty_TelnetEnabled.Text = "false";
+
+                //Lock The Other Options So They Can't Be Changed
+                Telnet_Port_GroupBox.Enabled = false;
+                Telnet_Password_GroupBox.Enabled = false;
+                Telnet_FailedLoginLimit_GroupBox.Enabled = false;
+                Telnet_FailedLoginsBlocktime_GroupBox.Enabled = false;
+            }
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_TelnetPort_TextChanged(object sender, EventArgs e)
+        {
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_TelnetPassword_TextChanged(object sender, EventArgs e)
+        {
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_TelnetFailedLoginLimit_TextChanged(object sender, EventArgs e)
+        {
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+        
+        private void ConfigProperty_TelnetFailedLoginsBlocktime_TextChanged(object sender, EventArgs e)
+        {
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_TerminalWindowEnabled_ToggleStateChanged(object sender, Syncfusion.Windows.Forms.Tools.ToggleStateChangedEventArgs e)
+        {
+            if (ConfigProperty_TerminalWindowEnabled.ToggleState == ToggleButtonState.Active)
+                ConfigProperty_TerminalWindowEnabled.Text = "true";
+            else
+                ConfigProperty_TerminalWindowEnabled.Text = "false";
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_AdminFileName_TextChanged(object sender, EventArgs e)
+        {
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_UserDataFolder_TextChanged(object sender, EventArgs e)
+        {
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_SaveGameFolder_TextChanged(object sender, EventArgs e)
+        {
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_HideCommandExecutionLog_SelectedValueChanged(object sender, EventArgs e)
+        {
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_MaxUncoveredMapChunksPerPlayer_ValueChanged(object sender, EventArgs e)
+        {
+            // Update Text To Currently Set Value
+            MaxUncoveredMapChunksPerPlayer_GroupBox.Text = "Max Uncovered Map Chunks Per Player [" + ConfigProperty_MaxUncoveredMapChunksPerPlayer.Value + "]";
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_PersistentPlayerProfiles_ToggleStateChanged(object sender, ToggleStateChangedEventArgs e)
+        {
+            if (ConfigProperty_PersistentPlayerProfiles.ToggleState == ToggleButtonState.Active)
+                ConfigProperty_PersistentPlayerProfiles.Text = "true";
+            else
+                ConfigProperty_PersistentPlayerProfiles.Text = "false";
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_GameWorld_SelectedValueChanged(object sender, EventArgs e)
+        {
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_WorldGenSeed_TextChanged(object sender, EventArgs e)
+        {
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_WorldGenSize_ValueChanged(object sender, EventArgs e)
+        {
+            // Update Text To Currently Set Value
+            WorldGenSize_GroupBox.Text = "World Gen Size [" + ConfigProperty_WorldGenSize.Value + "]";
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_GameName_TextChanged(object sender, EventArgs e)
+        {
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_GameMode_SelectedValueChanged(object sender, EventArgs e)
+        {
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_GameDifficulty_ValueChanged(object sender, RatingValueChangedEventArgs args)
+        {
+            // Update Text To Currently Set Value
+            GameDifficulty_GroupBox.Text = "Game Difficulty" + " [" + Convert.ToString(ConfigProperty_GameDifficulty.Value) + "]";
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_BlockDamagePlayer_ValueChanged(object sender, EventArgs e)
+        {
+            // Update Text To Currently Set Value
+            BlockDamagePlayer_GroupBox.Text = "Player Block Damage [" + ConfigProperty_BlockDamagePlayer.Value + "%]";
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_BlockDamageAI_ValueChanged(object sender, EventArgs e)
+        {
+            // Update Text To Currently Set Value
+            BlockDamageAI_GroupBox.Text = "AI Block Damage [" + ConfigProperty_BlockDamageAI.Value + "%]";
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+        
+        private void ConfigProperty_BlockDamageAIBM_ValueChanged(object sender, EventArgs e)
+        {
+            // Update Text To Currently Set Value
+            BlockDamageAIBM_GroupBox.Text = "AI Block Damage During Blood Moon [" + ConfigProperty_BlockDamageAIBM.Value + "%]";
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_XPMultiplier_ValueChanged(object sender, EventArgs e)
+        {
+            // Update Text To Currently Set Value
+            XPMultiplier_GroupBox.Text = "XP Multiplier [" + ConfigProperty_XPMultiplier.Value + "%]";
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+        private void ConfigProperty_PlayerSafeZoneLevel_TextChanged(object sender, EventArgs e)
+        {
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+        private void ConfigProperty_PlayerSafeZoneHours_TextChanged(object sender, EventArgs e)
+        {
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+
+
+        private void ConfigProperty_EnemyDifficulty_ToggleStateChanged(object sender, Syncfusion.Windows.Forms.Tools.ToggleStateChangedEventArgs e)
+        {
+            if (ConfigProperty_EnemyDifficulty.ToggleState == ToggleButtonState.Active)
+                ConfigProperty_EnemyDifficulty.Text = "1";
+            else
+                ConfigProperty_EnemyDifficulty.Text = "0";
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_BuildCreate_ToggleStateChanged(object sender, Syncfusion.Windows.Forms.Tools.ToggleStateChangedEventArgs e)
+        {
+            if (ConfigProperty_BuildCreate.ToggleState == ToggleButtonState.Active)
+                ConfigProperty_BuildCreate.Text = "true";
+            else
+                ConfigProperty_BuildCreate.Text = "false";
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+
+
+        private void ConfigProperty_AirDropMarker_ToggleStateChanged(object sender, ToggleStateChangedEventArgs e)
+        {
+            if (ConfigProperty_AirDropMarker.ToggleState == ToggleButtonState.Active)
+                ConfigProperty_AirDropMarker.Text = "true";
+            else
+                ConfigProperty_AirDropMarker.Text = "false";
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+
+
+        private void ConfigProperty_DayLightLength_ValueChanged(object sender, EventArgs e)
+        {
+            // Update Text To Currently Set Value
+            DayLightLength_GroupBox.Text = "Day Light Length [" + ConfigProperty_DayLightLength.Value + "h]";
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+
+
+        private void ConfigProperty_EACEnabled_ToggleStateChanged(object sender, ToggleStateChangedEventArgs e)
+        {
+            if (ConfigProperty_EACEnabled.ToggleState == ToggleButtonState.Active)
+                ConfigProperty_EACEnabled.Text = "true";
+            else
+                ConfigProperty_EACEnabled.Text = "false";
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+
+
+        private void ConfigProperty_DayNightLength_ValueChanged(object sender, EventArgs e)
+        {
+            // Update The Group Box Text (Realtime Minutes Per Game Day)
+            if (ConfigProperty_DayNightLength.Value == 1440)
+            {
+                DayNightLength_GroupBox.Text = "Day Length: Realtime";
+                DialogResult Realtime_Response = MessageBox.Show("You Have Chosen Realtime Mode! If You Continue, The Server Time Will Be Set To Your Local Time And Game Time Will Pass In Realtime!", "Set Game Time To Relatime?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (Realtime_Response == DialogResult.Yes)
+                {
+                    try
+                    {
+                        // Calculate Realtime
+                        string realtime_time = Convert.ToString(((Convert.ToInt32((DateTime.Now.ToString("HH"))) * 1000) - 8000) + ((60 * Convert.ToInt32((DateTime.Now.ToString("mm"))) / 100)));
+
+                        // Execute Set Time Telnet Command
+                        telnet_queue.Enqueue("settime " + realtime_time);
+
+                        // Set Realtime Value To On
+                        Registry.SetValue(base_registry_key + profile_name, "realtime", "1");
+                    }
+                    catch
+                    {
+                        // Notify User Of Failure
+                        //TODO: SEND THIS AS AN ERROR REPORT
+                        MessageBox.Show("Unable To Set Realtime Mode!");
+
+                        // Decrement To Prevent Realtime
+                        ConfigProperty_DayNightLength.Value = -24;
+
+                        // Update GroupBox Text
+                        DayNightLength_GroupBox.Text = "Day Length: Each In Game Hour Equals " + Convert.ToInt32(ConfigProperty_DayNightLength.Value / 24) + " Real World Minutes";
+
+                        // Set Realtime Value To Off
+                        Registry.SetValue(base_registry_key + profile_name, "realtime", "0");
+                    }
+                }
+                else
+                {
+                    // Decrement To Prevent Realtime
+                    ConfigProperty_DayNightLength.Value = -24;
+
+                    // Update GroupBox Text
+                    DayNightLength_GroupBox.Text = "Day Length: Each In Game Hour Equals " + Convert.ToInt32(ConfigProperty_DayNightLength.Value / 24) + " Real World Minutes";
+
+                    // Set Realtime Value To Off
+                    Registry.SetValue(base_registry_key + profile_name, "realtime", "0");
+                }
+            }
+            else
+            {
+                // Update Groupbox Text
+                DayNightLength_GroupBox.Text = "Day Length: Each In Game Hour Equals " + Convert.ToInt32(ConfigProperty_DayNightLength.Value / 24) + " Real World Minutes";
+
+                // Set Realtime Value To On
+                Registry.SetValue(base_registry_key + profile_name, "realtime", "0");
+            }
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+
+        #endregion
 
     }
 

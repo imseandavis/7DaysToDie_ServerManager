@@ -21,7 +21,7 @@ namespace _7DaysServerManager
         {
 
             /// <summary>
-            /// !!! CRITICAL
+            /// !!! CRITICAL NOTE
             /// This Label Is Changed After The App Is Loaded, So That While The Server Config Is Being Loaded Into The UI For The First Time So We Don't Fire TextChanged Events For Each Field And Deadlock The Config.
             /// If You Make A Change To The Default Text, Make Sure To Update Below!! 
             /// <summary>
@@ -29,6 +29,8 @@ namespace _7DaysServerManager
             {
                 Echo_debug("---Updating & Saving Server Config---");
 
+
+                //TODO: MOVE THIS SOMEWHERE MORE APPROPRIATE
                 // Build ServerDisabledNetworkProtocols String Based On Selected Values
                 string ServerDisabledNetworkProtocolsList = string.Empty;
                 for (int SDNP_Item_Count = 0; SDNP_Item_Count < ConfigProperty_ServerDisabledNetworkProtocols.Items.Count; SDNP_Item_Count++)
@@ -38,64 +40,63 @@ namespace _7DaysServerManager
                         ServerDisabledNetworkProtocolsList += ConfigProperty_ServerDisabledNetworkProtocols.Items[SDNP_Item_Count] + ", ";
                     }
                 }
-                if(ServerDisabledNetworkProtocolsList.EndsWith(", "))
-                ServerDisabledNetworkProtocolsList = ServerDisabledNetworkProtocolsList.Substring(0, ServerDisabledNetworkProtocolsList.Length - 2);
+                if (ServerDisabledNetworkProtocolsList.EndsWith(", "))
+                    ServerDisabledNetworkProtocolsList = ServerDisabledNetworkProtocolsList.Substring(0, ServerDisabledNetworkProtocolsList.Length - 2);
+
+                
+                
+                
+                // Set Terminal Window Mode
+                //TODO: WRITE CODE TO RESOLVE TERMINAL WINDOW MODE
+                //if (ConfigProperty_HideCommandExecutionLog.Text == "Show Everything")
+                //    hce = "0";
+                //else if (ConfigProperty_HideCommandExecutionLog.Text == "Hide Only From Telnet / Control Panel")
+                //    hce = "1";
+                //else if (ConfigProperty_HideCommandExecutionLog.Text == "Hide From Telnet / Control Panel / Remote Game Clients")
+                //    hce = "2";
+                //else if (ConfigProperty_HideCommandExecutionLog.Text == "Hide Everything")
+                //    hce = "3";
+
+                // Set Config Property: LandClaimDecayMode
+                //TODO: WRITE CODE TO RESOLVE LAND CLAIM DECAY MODE
+                //if (ConfigProperty_LandClaimDecayMode.Text == "Linear")
+                //    lcdm = "0";
+                //else if (ConfigProperty_LandClaimDecayMode.Text == "Exponential")
+                //    lcdm = "1";
+                //else if (ConfigProperty_LandClaimDecayMode.Text == "Full Protection")
+                //    lcdm = "2";
+
+                // Resolve Config Property: BlockDamagePlayer
+                //TODO: WRITE CODE TO RESOLVE BLOCK DAMAGE PLAYER
+                //int bdm_t = 0;
+                //if (ConfigProperty_BlockDamagePlayer.Value == 0)
+                //    bdm_t = 25;
+                //else
+                //    bdm_t = ConfigProperty_BlockDamagePlayer.Value*50;
 
 
-
-                    // Set Terminal Window Mode
-                    //TODO: WRITE CODE TO RESOLVE TERMINAL WINDOW MODE
-                    //if (ConfigProperty_HideCommandExecutionLog.Text == "Show Everything")
-                    //    hce = "0";
-                    //else if (ConfigProperty_HideCommandExecutionLog.Text == "Hide Only From Telnet / Control Panel")
-                    //    hce = "1";
-                    //else if (ConfigProperty_HideCommandExecutionLog.Text == "Hide From Telnet / Control Panel / Remote Game Clients")
-                    //    hce = "2";
-                    //else if (ConfigProperty_HideCommandExecutionLog.Text == "Hide Everything")
-                    //    hce = "3";
-
-                    // Set Config Property: LandClaimDecayMode
-                    //TODO: WRITE CODE TO RESOLVE LAND CLAIM DECAY MODE
-                    //if (ConfigProperty_LandClaimDecayMode.Text == "Linear")
-                    //    lcdm = "0";
-                    //else if (ConfigProperty_LandClaimDecayMode.Text == "Exponential")
-                    //    lcdm = "1";
-                    //else if (ConfigProperty_LandClaimDecayMode.Text == "Full Protection")
-                    //    lcdm = "2";
-
-                    // Resolve Config Property: BlockDamagePlayer
-                    //TODO: WRITE CODE TO RESOLVE BLOCK DAMAGE PLAYER
-                    //int bdm_t = 0;
-                    //if (ConfigProperty_BlockDamagePlayer.Value == 0)
-                    //    bdm_t = 25;
-                    //else
-                    //    bdm_t = ConfigProperty_BlockDamagePlayer.Value*50;
-
-                    // Resolve Config Property: EnemyDifficulty
-                    //TODO: WRITE CODE TO RESOLVE ENEMY DIFFICULTY
-                    //if (ConfigProperty_EnemyDifficulty.Checked)
-                    //    feral_c = "1";
-
-                    // Resolve Config Property: SaveGamefolder
-                    // TODO: WRITE CODE TO RESOLVE SAVE GAME FOLDER
-                    //string savegamefolderproperty = "";
-                    //if (ConfigProperty_SaveGameFolder.Text != "")
-                    //{
-                    //    savegamefolderproperty = "  <property name=\"SaveGameFolder\"				value=\"" + ConfigProperty_SaveGameFolder.Text + "\"/>\r\n";
-                    //}
+                // Resolve Config Property: SaveGamefolder
+                // TODO: WRITE CODE TO RESOLVE SAVE GAME FOLDER
+                //string savegamefolderproperty = "";
+                //if (ConfigProperty_SaveGameFolder.Text != "")
+                //{
+                //    savegamefolderproperty = "  <property name=\"SaveGameFolder\"				value=\"" + ConfigProperty_SaveGameFolder.Text + "\"/>\r\n";
+                //}
 
 
-                    // Resolve Config Property: UserDataFolder
-                    // TODO: WRITE CODE TO RESOLVE USER DATA FOLDER
-                    //string userdatafolderproperty = "";
-                    //if (userdata.Text != "")
-                    //{
-                    //    userdatafolderproperty = "  <property name=\"SaveGameFolder\"				value=\"" + userdata.Text + "\"/>\r\n";
-                    //}
+                // Resolve Config Property: UserDataFolder
+                // TODO: WRITE CODE TO RESOLVE USER DATA FOLDER
+                //string userdatafolderproperty = "";
+                //if (userdata.Text != "")
+                //{
+                //    userdatafolderproperty = "  <property name=\"SaveGameFolder\"				value=\"" + userdata.Text + "\"/>\r\n";
+                //}
 
 
-                    // Alpha 18.x Configuration File - Leave Spacing Exactly As Is For Perfect Replication Of Config File
-                    string config = "<?xml version=\"1.0\"?>" +
+                #region Alpha 18.x Configuration File Template
+
+                // Alpha 18.x Configuration File - Leave Spacing Exactly As Is For Perfect Replication Of Config File
+                string config = "<?xml version=\"1.0\"?>" +
                         "\n<ServerSettings>\r\n  " +
                         "\t<!-- GENERAL SERVER SETTINGS -->" +
                         "\r\n\r\n\t<!-- Server representation -->" +
@@ -116,10 +117,10 @@ namespace _7DaysServerManager
                         "\r\n\t<property name=\"ServerAdminSlots\"                          value=\"" + ConfigProperty_ServerAdminSlots.Text + "\"/>" +
                         "\r\n\t<property name=\"ServerAdminSlotsPermission\"                value=\"" + ConfigProperty_ServerAdminSlotsPermission.Text + "\"/>" +
                         "\r\n\r\n\t<!-- Admin Interfaces -->" +
-                        "\r\n\t<property name=\"ControlPanelEnabled\"                       value=\"" + ConfigProperty_ControlPanelEnabled.Checked.ToString().ToLower() + "\"/>" +
+                        "\r\n\t<property name=\"ControlPanelEnabled\"                       value=\"" + ConfigProperty_ControlPanelEnabled.Text.ToLower() + "\"/>" +
                         "\r\n\t<property name=\"ControlPanelPort\"                          value=\"" + ConfigProperty_ControlPanelPort.Text + "\"/>" +
                         "\r\n\t<property name=\"ControlPanelPassword\"                      value=\"" + ConfigProperty_ControlPanelPassword.Text + "\"/>" +
-                        "\r\n\t<property name=\"TelnetEnabled\"                             value=\"" + ConfigProperty_TelnetEnabled.Checked.ToString().ToLower() + "\"/>" +
+                        "\r\n\t<property name=\"TelnetEnabled\"                             value=\"" + ConfigProperty_TelnetEnabled.Text.ToLower() + "\"/>" +
                         "\r\n\t<property name=\"TelnetPort\"                                value=\"" + ConfigProperty_TelnetPort.Text + "\"/>" +
                         "\r\n\t<property name=\"TelnetPassword\"                            value=\"" + ConfigProperty_TelnetPassword.Text + "\"/>" +
                         "\r\n\t<property name=\"TelnetFailedLoginLimit\"                    value=\"" + ConfigProperty_TelnetFailedLoginLimit.Text + "\"/>" +
@@ -131,22 +132,22 @@ namespace _7DaysServerManager
                         "\r\n\t<property name=\"SaveGameFolder\"                            value=\"" + ConfigProperty_SaveGameFolder.Text + "\"/>" +
                         "\r\n\r\n\t<!-- Other technical settings -->" +
                         "\r\n\t<property name=\"EACEnabled\"                                value=\"" + ConfigProperty_EACEnabled.Text.ToLower() + "\"/>" +
-                        "\r\n\t<property name=\"HideCommandExecutionLog\"                   value=\"" + ConfigProperty_HideCommandExecutionLog.Text + "\"/>" +
+                        "\r\n\t<property name=\"HideCommandExecutionLog\"                   value=\"" + ConfigProperty_HideCommandExecutionLog.SelectedIndex.ToString() + "\"/>" +
                         "\r\n\t<property name=\"MaxUncoveredMapChunksPerPlayer\"            value=\"" + ConfigProperty_MaxUncoveredMapChunksPerPlayer.Text + "\"/>" +
                         "\r\n\t<property name=\"PersistentPlayerProfiles\"                  value=\"" + ConfigProperty_PersistentPlayerProfiles.Text + "\"/>" +
                         "\r\n\r\n\t<!-- GAMEPLAY -->" +
                         "\r\n\r\n\t<!-- World -->" +
                         "\r\n\t<property name=\"GameWorld\"                                 value=\"" + ConfigProperty_GameWorld.Text + "\"/>" +
                         "\r\n\t<property name=\"WorldGenSeed\"                              value=\"" + ConfigProperty_WorldGenSeed.Text + "\"/>" +
-                        "\r\n\t<property name=\"WorldGenSize\"                              value=\"" + ConfigProperty_WorldGenSize.Text + "\"/>" +
+                        "\r\n\t<property name=\"WorldGenSize\"                              value=\"" + ConfigProperty_WorldGenSize.Value + "\"/>" +
                         "\r\n\t<property name=\"GameName\"                                  value=\"" + ConfigProperty_GameName.Text + "\"/>" +
                         "\r\n\t<property name=\"GameMode\"                                  value=\"" + ConfigProperty_GameMode.Text + "\"/>" +
                         "\r\n\r\n\t<!-- Difficulty -->" +
-                        "\r\n\t<property name=\"GameDifficulty\"                            value=\"" + ConfigProperty_GameDifficulty.Text + "\"/>" +
-                        "\r\n\t<property name=\"BlockDamagePlayer\"                         value=\"" + ConfigProperty_BlockDamagePlayer.Text + "\"/>" +
-                        "\r\n\t<property name=\"BlockDamageAI\"                             value=\"" + ConfigProperty_BlockDamageAI.Text + "\"/>" +
-                        "\r\n\t<property name=\"BlockDamageAIBM\"                           value=\"" + ConfigProperty_BlockDamageAIBM.Text + "\"/>" +
-                        "\r\n\t<property name=\"XPMultiplier\"                              value=\"" + ConfigProperty_XPMultiplier.Text + "\"/>" +
+                        "\r\n\t<property name=\"GameDifficulty\"                            value=\"" + ConfigProperty_GameDifficulty.Value + "\"/>" +
+                        "\r\n\t<property name=\"BlockDamagePlayer\"                         value=\"" + ConfigProperty_BlockDamagePlayer.Value + "\"/>" +
+                        "\r\n\t<property name=\"BlockDamageAI\"                             value=\"" + ConfigProperty_BlockDamageAI.Value + "\"/>" +
+                        "\r\n\t<property name=\"BlockDamageAIBM\"                           value=\"" + ConfigProperty_BlockDamageAIBM.Value + "\"/>" +
+                        "\r\n\t<property name=\"XPMultiplier\"                              value=\"" + ConfigProperty_XPMultiplier.Value + "\"/>" +
                         "\r\n\t<property name=\"PlayerSafeZoneLevel\"                       value=\"" + ConfigProperty_PlayerSafeZoneLevel.Text + "\"/>" +
                         "\r\n\t<property name=\"PlayerSafeZoneHours\"                       value=\"" + ConfigProperty_PlayerSafeZoneHours.Text + "\"/>" +
                         "\r\n\r\n\t<!--  -->" +
@@ -162,7 +163,7 @@ namespace _7DaysServerManager
                         "\r\n\t<property name=\"MaxSpawnedAnimals\"                         value=\"" + ConfigProperty_MaxSpawnedAnimals.Value + "\"/>" +
                         "\r\n\t<property name=\"ServerMaxAllowedViewDistance\"              value=\"" + ConfigProperty_ServerMaxAllowedViewDistance.Value + "\"/>" +
                         "\r\n\r\n\t<!-- Zombie Settings -->" +
-                        "\r\n\t<property name=\"EnemySpawnMode\"                            value=\"" + ConfigProperty_EnemySpawnMode.Checked.ToString().ToLower() + "\"/>" +
+                        "\r\n\t<property name=\"EnemySpawnMode\"                            value=\"" + ConfigProperty_EnemySpawnMode.Text.ToLower() + "\"/>" +
                         "\r\n\t<property name=\"EnemyDifficulty\"                           value=\"" + ConfigProperty_EnemyDifficulty.Text + "\"/>" +
                         "\r\n\t<property name=\"ZombieMove\"                                value=\"" + ConfigProperty_ZombieMove.Text + "\"/>" +
                         "\r\n\t<property name=\"ZombieMoveNight\"                           value=\"" + ConfigProperty_ZombieMoveNight.Text + "\"/>" +
@@ -189,6 +190,8 @@ namespace _7DaysServerManager
                         "\r\n\t<property name=\"LandClaimOnlineDurabilityModifier\"         value=\"" + ConfigProperty_LandClaimOnlineDurabilityModifier.Text + "\"/>" +
                         "\r\n\t<property name=\"LandClaimOfflineDurabilityModifier\"        value=\"" + ConfigProperty_LandClaimOfflineDurabilityModifier.Text + "\"/>\r\n" +
                     "\r\n</ServerSettings>";
+
+                #endregion
 
                 // Write The Server Config To File
                 try
@@ -239,32 +242,38 @@ namespace _7DaysServerManager
                             switch (Config_File_Property_Name)
                             {
                                 case "ServerName":
+                                    //Default: My Game Host
                                     ConfigProperty_ServerName.Text = Config_File_Property_Value;
                                     break;
                                 
                                 case "ServerDescription":
+                                    // Default: A 7 Days to Die server
                                     ConfigProperty_ServerDescription.Text = Config_File_Property_Value;
                                     break;
                                 
                                 case "ServerWebsiteURL":
+                                    // Default: (blank)
                                     ConfigProperty_ServerWebsiteURL.Text = Config_File_Property_Value;
                                     break;
 
                                 case "ServerPassword":
+                                    // Default: (blank)
                                     ConfigProperty_ServerPassword.Text = Config_File_Property_Value;
                                     break;
 
                                 case "ServerLoginConfirmationText":
+                                    // Default: (blank)
                                     ConfigProperty_ServerLoginConfirmationText.Text = Config_File_Property_Value;
                                     break;
 
                                 case "ServerPort":
+                                    //Default: 26900
                                     ConfigProperty_ServerPort.Text = Config_File_Property_Value;
                                     break;
 
                                 case "ServerVisibility":
-                                    // Default : 2
-                                    // 2= public, 1 = Only Shown To Friends, 0 = Not Listed.
+                                    // Default : 2 (Public)
+                                    // 2 = public, 1 = Only Shown To Friends, 0 = Not Listed.
                                     if (Config_File_Property_Value == "2")
                                         ConfigProperty_ServerVisibility.SelectedIndex = 2;
                                     else if (Config_File_Property_Value == "1")
@@ -274,6 +283,7 @@ namespace _7DaysServerManager
                                     break;
 
                                 case "ServerDisabledNetworkProtocols":
+                                    // Default: SteamNetworking                                    
                                     switch (Config_File_Property_Value)
                                     {
                                         case "LiteNetLib":
@@ -298,64 +308,85 @@ namespace _7DaysServerManager
                                 
                                 case "ServerMaxWorldTransferSpeedKiBs":
                                     // Default: 512
-                                    ConfigProperty_ServerMaxWorldTransferSpeedKiBs.Text = Config_File_Property_Value;
+                                    ConfigProperty_ServerMaxWorldTransferSpeedKiBs.Value = Convert.ToInt32(Config_File_Property_Value);
                                     break;
                                 
                                 case "ServerMaxPlayerCount":
-                                    ConfigProperty_ServerMaxPlayerCount.Text = Config_File_Property_Value;
+                                    // Default: 8
+                                    ConfigProperty_ServerMaxPlayerCount.Value = Convert.ToInt32(Config_File_Property_Value);
                                     break;
                                 
                                 case "ServerReservedSlots":
+                                    // Default: 0
                                     ConfigProperty_ServerReservedSlots.Text = Config_File_Property_Value;
                                     break;
                                 
                                 case "ServerReservedSlotsPermission":
+                                    // Default: 100
                                     ConfigProperty_ServerReservedSlotsPermission.Text = Config_File_Property_Value;
                                     break;
                                 
                                 case "ServerAdminSlots":
+                                    //Default: 0
                                     ConfigProperty_ServerAdminSlots.Text = Config_File_Property_Value;
                                     break;
 
                                 case "ServerAdminSlotsPermission":
+                                    //Default: 0
                                     ConfigProperty_ServerAdminSlotsPermission.Text = Config_File_Property_Value;
                                     break;
 
                                 case "ControlPanelEnabled":
+                                    // Default: false
                                     if (Config_File_Property_Value == "true")
-                                        ConfigProperty_ControlPanelEnabled.Checked = true;
+                                    {
+                                        ConfigProperty_ControlPanelEnabled.ToggleState = ToggleButtonState.Active;
+                                    }
                                     else
-                                        ConfigProperty_ControlPanelEnabled.Checked = false;
+                                    {
+                                        ConfigProperty_ControlPanelEnabled.ToggleState = ToggleButtonState.Inactive;
+                                    }
                                     break;
 
                                 case "ControlPanelPort":
+                                    // Default: 8080
                                     ConfigProperty_ControlPanelPort.Text = Config_File_Property_Value;
                                     break;
 
                                 case "ControlPanelPassword":
+                                    // Default: CHANGEME
                                     ConfigProperty_ControlPanelPassword.Text = Config_File_Property_Value;
                                     break;
 
                                 case "TelnetEnabled":
+                                    // Default: true
                                     if (Config_File_Property_Value == "true")
-                                        ConfigProperty_TelnetEnabled.Checked = true;
+                                    {
+                                        ConfigProperty_TelnetEnabled.ToggleState = ToggleButtonState.Active;
+                                    }
                                     else
-                                        ConfigProperty_TelnetEnabled.Checked = false;
+                                    {
+                                        ConfigProperty_TelnetEnabled.ToggleState = ToggleButtonState.Inactive;
+                                    }
                                     break;
 
                                 case "TelnetPort":
+                                    // Default: 8081
                                     ConfigProperty_TelnetPort.Text = Config_File_Property_Value;
                                     break;
 
                                 case "TelnetPassword":
+                                    // Default: (blank)
                                     ConfigProperty_TelnetPassword.Text = Config_File_Property_Value;
                                     break;
 
                                 case "TelnetFailedLoginLimit":
+                                    // Default: 10
                                     ConfigProperty_TelnetFailedLoginLimit.Text = Config_File_Property_Value;
                                     break;
 
                                 case "TelnetFailedLoginsBlocktime":
+                                    // Default: 10
                                     ConfigProperty_TelnetFailedLoginsBlocktime.Text = Config_File_Property_Value;
                                     break;
 
@@ -368,14 +399,17 @@ namespace _7DaysServerManager
                                     break;
 
                                case "AdminFileName":
+                                    // Default: serveradmin.xml
                                     ConfigProperty_AdminFileName.Text = Config_File_Property_Value;
                                     break;
 
                                 case "UserDataFolder":
+                                    // Default: (Disabled)
                                     ConfigProperty_UserDataFolder.Text = Config_File_Property_Value;
                                     break;
 
                                 case "SaveGameFolder":
+                                    // Default: (Disabled)
                                     ConfigProperty_SaveGameFolder.Text = Config_File_Property_Value;
                                     break;
 
@@ -388,10 +422,20 @@ namespace _7DaysServerManager
                                     break;
 
                                 case "HideCommandExecutionLog":
-                                    ConfigProperty_HideCommandExecutionLog.Text = Config_File_Property_Value;
+                                    // Default : 0
+                                    // 0 = Show Everything, 1 = Hide From Telnet / ControlPanel, 2 = Hide From Telnet / ControlPanel / Remote Game Clients, 3 = Hide Everything
+                                    if (Config_File_Property_Value == "3")
+                                        ConfigProperty_HideCommandExecutionLog.SelectedIndex = 3;
+                                    else if (Config_File_Property_Value == "2")
+                                        ConfigProperty_HideCommandExecutionLog.SelectedIndex = 2;
+                                    else if (Config_File_Property_Value == "1")
+                                        ConfigProperty_HideCommandExecutionLog.SelectedIndex = 1;
+                                    else if (Config_File_Property_Value == "0")
+                                        ConfigProperty_HideCommandExecutionLog.SelectedIndex = 0;
                                     break;
 
                                 case "MaxUncoveredMapChunksPerPlayer":
+                                    // Default: 131072
                                     ConfigProperty_MaxUncoveredMapChunksPerPlayer.Text = Config_File_Property_Value;
                                     break;
 
@@ -404,56 +448,89 @@ namespace _7DaysServerManager
                                     break;
 
                                 case "GameWorld":
-                                    ConfigProperty_GameWorld.SelectedText = Config_File_Property_Value;
+                                    // Default: Navezgane
+                                    if (Config_File_Property_Value == "Navezgane")
+                                        ConfigProperty_GameWorld.SelectedIndex = 1;
+                                    else
+                                        ConfigProperty_GameWorld.SelectedIndex = 0;
                                     break;
 
                                 case "WorldGenSeed":
+                                    // Default: asdf
                                     ConfigProperty_WorldGenSeed.Text = Config_File_Property_Value;
                                     break;
 
                                 case "WorldGenSize":
-                                    ConfigProperty_WorldGenSize.Text = Config_File_Property_Value;
+                                    // Default: 4096
+                                    ConfigProperty_WorldGenSize.Value = Convert.ToInt32(Config_File_Property_Value);
                                     break;
 
                                 case "GameName":
+                                    // Default: My Game
                                     ConfigProperty_GameName.SelectedText = Config_File_Property_Value;
                                     break;
 
                                 case "GameMode":
+                                    // Default: GameModeSurvival
                                     ConfigProperty_GameMode.SelectedText = Config_File_Property_Value;
                                     break;
 
                                 case "GameDifficulty":
+                                    // Default: 2
                                     ConfigProperty_GameDifficulty.Value = Convert.ToInt32(Config_File_Property_Value);
                                     break;
                                 
                                 case "BlockDamagePlayer":
+                                    // Default: 100
                                     ConfigProperty_BlockDamagePlayer.Value = Convert.ToInt32(Config_File_Property_Value);
 
                                     // Update Text To Currently Set Value
                                     if (ConfigProperty_BlockDamagePlayer.Value == 0)
-                                        BlockDamagePlayer_GroupBox.Text = "Block Durability Modifier " + " [25%]";
+                                        BlockDamagePlayer_GroupBox.Text = "Player Block Damage [25%]";
                                     else
-                                        BlockDamagePlayer_GroupBox.Text = "Block Durability Modifier " + " [" + Convert.ToInt32(ConfigProperty_BlockDamagePlayer.Value) * 50 + "%]";
+                                        BlockDamagePlayer_GroupBox.Text = "Player Block Damage [" + Convert.ToInt32(ConfigProperty_BlockDamagePlayer.Value) + "%]";
                                     break;
 
                                 case "BlockDamageAI":
+                                    // Default: 100
                                     ConfigProperty_BlockDamageAI.Value = Convert.ToInt32(Config_File_Property_Value);
+
+                                    // Update Text To Currently Set Value
+                                    if (ConfigProperty_BlockDamageAI.Value == 0)
+                                        BlockDamageAI_GroupBox.Text = "AI Block Damage [25%]";
+                                    else
+                                        BlockDamageAI_GroupBox.Text = "AI Block Damage [" + Convert.ToInt32(ConfigProperty_BlockDamageAI.Value) + "%]";
                                     break;
 
                                 case "BlockDamageAIBM":
+                                    // Default: 100
                                     ConfigProperty_BlockDamageAIBM.Value = Convert.ToInt32(Config_File_Property_Value);
+
+                                    // Update Text To Currently Set Value
+                                    if (ConfigProperty_BlockDamageAIBM.Value == 0)
+                                        BlockDamageAIBM_GroupBox.Text = "AI Block Damage During Blood Moon [25%]";
+                                    else
+                                        BlockDamageAIBM_GroupBox.Text = "AI Block Damage During Blood Moon [" + Convert.ToInt32(ConfigProperty_BlockDamageAIBM.Value) + "%]";
                                     break;
 
                                 case "XPMultiplier":
+                                    // Default: 100
                                     ConfigProperty_XPMultiplier.Value = Convert.ToInt32(Config_File_Property_Value);
+
+                                    // Update Text To Currently Set Value
+                                    if (ConfigProperty_XPMultiplier.Value == 0)
+                                        XPMultiplier_GroupBox.Text = "XP Multiplier [25%]";
+                                    else
+                                        XPMultiplier_GroupBox.Text = "XP Multiplier [" + Convert.ToInt32(ConfigProperty_XPMultiplier.Value) + "%]";
                                     break;
 
                                 case "PlayerSafeZoneLevel":
+                                    // Default: 5
                                     ConfigProperty_PlayerSafeZoneLevel.Text = Config_File_Property_Value;
                                     break;
                                 
                                 case "PlayerSafeZoneHours":
+                                    // Default: 5
                                     ConfigProperty_PlayerSafeZoneHours.Text = Config_File_Property_Value;
                                     break;
 
@@ -508,10 +585,11 @@ namespace _7DaysServerManager
                                     break;
 
                                 case "EnemySpawnMode":
+                                    // Default: true
                                     if (Config_File_Property_Value == "true")
-                                        ConfigProperty_EnemySpawnMode.Checked = true;
+                                        ConfigProperty_EnemySpawnMode.ToggleState = ToggleButtonState.Active;
                                     else
-                                        ConfigProperty_EnemySpawnMode.Checked = false;
+                                        ConfigProperty_EnemySpawnMode.ToggleState = ToggleButtonState.Inactive;
                                     break;
 
                                 case "EnemyDifficulty":

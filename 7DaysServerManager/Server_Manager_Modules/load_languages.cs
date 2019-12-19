@@ -20,10 +20,10 @@ namespace _7DaysServerManager
             blad.Text = LocalizedLanguage("blad");
             //ConfigProperty_BuildCreate.Text = LocalizedLanguage("cheatmode");
             Change_Game_File_Path_Button.Text = LocalizedLanguage("chpath");
-            cpl_pass.Text = LocalizedLanguage("cpl_pass");
-            cpl_port.Text = LocalizedLanguage("cpl_port");
-            ConfigProperty_ControlPanelEnabled.Text = LocalizedLanguage("ctrlp");
-            Admin_Control_Panel_GroupBox.Text = LocalizedLanguage("ctrlpanel");
+            //cpl_pass.Text = LocalizedLanguage("cpl_pass");
+            //cpl_port.Text = LocalizedLanguage("cpl_port");
+            //ConfigProperty_ControlPanelEnabled.Text = LocalizedLanguage("ctrlp");
+            ControlPanel_GroupBox.Text = LocalizedLanguage("ctrlpanel");
             dzien.Text = LocalizedLanguage("dzien") + " [1]";
 
             godzina.Text = LocalizedLanguage("godzina") + " [8:00]";
@@ -33,8 +33,8 @@ namespace _7DaysServerManager
             Console_Group.Text = LocalizedLanguage("kons_group");
             Server_Controls_Group.Text = LocalizedLanguage("kontrola");
 
-            Max_Players_GroupBox.Text = LocalizedLanguage("maxplgroup");
-            Game_World_Settings_GroupBox.Text = LocalizedLanguage("nazwamapa");
+            ServerMaxPlayerCount_GroupBox.Text = LocalizedLanguage("maxplgroup");
+            GameWorldSettings_GroupBox.Text = LocalizedLanguage("nazwamapa");
             ServerPort_GroupBox.Text = LocalizedLanguage("port_g");
             //Save_Logs_CheckBox.Text = LocalizedLanguage("save_logfiles");
 
@@ -101,10 +101,10 @@ namespace _7DaysServerManager
 
             Chat_GroupBox.Text = LocalizedLanguage("chat_g");
             
-            Telnet_Settings_GroupBox.Text = LocalizedLanguage("telnet_g");
+            //Telnet_Settings_GroupBox.Text = LocalizedLanguage("telnet_g");
             Server_Admin_Config_File_GroupBox.Text = LocalizedLanguage("filename_g");
-            telnet_port_l.Text = LocalizedLanguage("cpl_port");
-            telnet_psw_l.Text = LocalizedLanguage("cpl_pass");
+            //telnet_port_l.Text = LocalizedLanguage("cpl_port");
+            //telnet_psw_l.Text = LocalizedLanguage("cpl_pass");
 
             Server_Admin_Path_Selector_Button.Text = LocalizedLanguage("sa_edit");
             Browse_Game_File_Path_Button.Text = LocalizedLanguage("browse");
