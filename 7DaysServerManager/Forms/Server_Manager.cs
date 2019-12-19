@@ -673,20 +673,6 @@ namespace _7DaysServerManager
         }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         private void Telnet_connect_Click(object sender, EventArgs e)
         {
             int s = (((Game_Hour_TrackBar.Value * 1000) - 8000) + ((Game_Day_TrackBar.Value * 24000) - 24000) - 8000);
