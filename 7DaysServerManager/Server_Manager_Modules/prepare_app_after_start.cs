@@ -507,12 +507,21 @@ namespace _7DaysServerManager
             Game_File_Path_Label.Text = "Game files path: " + (string)Registry.GetValue(base_registry_key + profile_name, "game_path", null);
             if (Game_File_Path_Label.Text == "Game files path: ")
                 Game_File_Path_Label.Text = "Game files path: ERROR-NONE";
-            
+
             // Set Group Box Descriptions To Initial Values Retrieved from Config File
+            // TODO: NOT SURE I STILL NEED THIS NOW, DELETE AND TEST LATER
             GameDifficulty_GroupBox.Text = "Game Difficulty" + " [" + Convert.ToString(ConfigProperty_GameDifficulty.Value) + "]";
-            DayNightLength_GroupBox.Text = "Day Length" + " [" + Convert.ToString(ConfigProperty_DayNightLength.Value) + " min.]";
-            ServerMaxPlayerCount_GroupBox.Text = "Max Players: [" + Convert.ToString(ConfigProperty_ServerMaxPlayerCount.Value) + "]";
             ServerMaxWorldTransferSpeedKiBs_GroupBox.Text = "Server Max World Transfer Speed" + " [" + Convert.ToInt32(ConfigProperty_ServerMaxWorldTransferSpeedKiBs.Value) + " KiB/s]";
+            ServerMaxPlayerCount_GroupBox.Text = "Max Players [" + Convert.ToString(ConfigProperty_ServerMaxPlayerCount.Value) + "]";
+            DayNightLength_GroupBox.Text = "Each In Game Day Equals [" + Convert.ToInt32(ConfigProperty_DayNightLength.Value / 24) + "] Real World Minutes";
+            DayLightLength_GroupBox.Text = "Sun Shines For [" + ConfigProperty_DayLightLength.Value + "] Hours Each Game Day ";
+            BedrollDeadZoneSize_GroupBox.Text = "Enemies Spawn At Least [" + ConfigProperty_BedrollDeadZoneSize.Value + "] Blocks From Bedroll";
+            BedrollExpiryTime_GroupBox.Text = "Bedroll Lasts [" + ConfigProperty_BedrollExpiryTime.Value + "] Game Days Offline";
+            BloodMoonEnemyCount_GroupBox.Text = "Zombies Spawned Per Player During Blood Moon [" + ConfigProperty_BloodMoonEnemyCount.Value + "]";
+            BloodMoonWarning_GroupBox.Text = "Blood Moon Red Day Text Warning [" + Convert.ToString(ConfigProperty_BloodMoonWarning.Value) + "]";
+            BloodMoonRange_GroupBox.Text = "Blood Moon Deviation [" + Convert.ToString(ConfigProperty_BloodMoonRange.Value) + "]";
+            BloodMoonFrequency_GroupBox.Text = "Blood Moon Frequency [" + Convert.ToString(ConfigProperty_BloodMoonFrequency.Value) + "]";
+
 
             // Start Server Monitoring To Update The Dash Widgets
             Server_Monitoring();

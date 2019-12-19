@@ -97,4 +97,3 @@ C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerMana
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Release\7DaysServerManager.csproj.CopyComplete
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Release\7DaysServerManager.exe
 C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Release\7DaysServerManager.pdb
-C:\Users\imsea\Source\Repos\imseandavis\7DaysToDie_ServerManager\7DaysServerManager\obj\x86\Release\7DaysServerManager.csprojAssemblyReference.cache

@@ -79,7 +79,6 @@ namespace _7DaysServerManager
 
             ConfigProperty_PersistentPlayerProfiles.Enabled = false;
             ConfigProperty_UserDataFolder.Enabled = false;
-            ConfigProperty_MaxSpawnedZombies.Enabled = false;
             ConfigProperty_ServerDescription.Enabled = false;
             ConfigProperty_ServerWebsiteURL.Enabled = false;
 
@@ -159,7 +158,6 @@ namespace _7DaysServerManager
 
             ConfigProperty_PersistentPlayerProfiles.Enabled = true;
             ConfigProperty_UserDataFolder.Enabled = true;
-            ConfigProperty_MaxSpawnedZombies.Enabled = true;
             ConfigProperty_ServerDescription.Enabled = true;
             ConfigProperty_ServerWebsiteURL.Enabled = true;
 

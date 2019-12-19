@@ -152,12 +152,12 @@ namespace _7DaysServerManager
                         "\r\n\t<property name=\"PlayerSafeZoneHours\"                       value=\"" + ConfigProperty_PlayerSafeZoneHours.Text + "\"/>" +
                         "\r\n\r\n\t<!--  -->" +
                         "\r\n\t<property name=\"BuildCreate\"                               value=\"" + ConfigProperty_BuildCreate.Text.ToLower() + "\"/>" +
-                        "\r\n\t<property name=\"DayNightLength\"                            value=\"" + ConfigProperty_DayNightLength.Text + "\"/>" +
-                        "\r\n\t<property name=\"DayLightLength\"                            value=\"" + ConfigProperty_DayLightLength.Text + "\"/>" +
-                        "\r\n\t<property name=\"DropOnDeath\"                               value=\"" + ConfigProperty_DropOnDeath.Text + "\"/>" +
-                        "\r\n\t<property name=\"DropOnQuit\"                                value=\"" + ConfigProperty_DropOnQuit.Text + "\"/>" +
-                        "\r\n\t<property name=\"BedrollDeadZoneSize\"                       value=\"" + ConfigProperty_BedrollDeadZoneSize.Text + "\"/>" +
-                        "\r\n\t<property name=\"BedrollExpiryTime\"                         value=\"" + ConfigProperty_BedrollExpiryTime.Text + "\"/>" +
+                        "\r\n\t<property name=\"DayNightLength\"                            value=\"" + ConfigProperty_DayNightLength.Value + "\"/>" +
+                        "\r\n\t<property name=\"DayLightLength\"                            value=\"" + ConfigProperty_DayLightLength.Value + "\"/>" +
+                        "\r\n\t<property name=\"DropOnDeath\"                               value=\"" + ConfigProperty_DropOnDeath.SelectedIndex.ToString() + "\"/>" +
+                        "\r\n\t<property name=\"DropOnQuit\"                                value=\"" + ConfigProperty_DropOnQuit.SelectedIndex.ToString() + "\"/>" +
+                        "\r\n\t<property name=\"BedrollDeadZoneSize\"                       value=\"" + ConfigProperty_BedrollDeadZoneSize.Value + "\"/>" +
+                        "\r\n\t<property name=\"BedrollExpiryTime\"                         value=\"" + ConfigProperty_BedrollExpiryTime.Value + "\"/>" +
                         "\r\n\r\n\t<!-- Performance Related -->" +
                         "\r\n\t<property name=\"MaxSpawnedZombies\"                         value=\"" + ConfigProperty_MaxSpawnedZombies.Value + "\"/>" +
                         "\r\n\t<property name=\"MaxSpawnedAnimals\"                         value=\"" + ConfigProperty_MaxSpawnedAnimals.Value + "\"/>" +
@@ -165,13 +165,13 @@ namespace _7DaysServerManager
                         "\r\n\r\n\t<!-- Zombie Settings -->" +
                         "\r\n\t<property name=\"EnemySpawnMode\"                            value=\"" + ConfigProperty_EnemySpawnMode.Text.ToLower() + "\"/>" +
                         "\r\n\t<property name=\"EnemyDifficulty\"                           value=\"" + ConfigProperty_EnemyDifficulty.Text + "\"/>" +
-                        "\r\n\t<property name=\"ZombieMove\"                                value=\"" + ConfigProperty_ZombieMove.Text + "\"/>" +
-                        "\r\n\t<property name=\"ZombieMoveNight\"                           value=\"" + ConfigProperty_ZombieMoveNight.Text + "\"/>" +
-                        "\r\n\t<property name=\"ZombieFeralMove\"                           value=\"" + ConfigProperty_ZombieFeralMove.Text + "\"/>" +
-                        "\r\n\t<property name=\"ZombieBMMove\"                              value=\"" + ConfigProperty_ZombieBMMove.Text + "\"/>" +
-                        "\r\n\t<property name=\"BloodMoonFrequency\"                        value=\"" + ConfigProperty_BloodMoonFrequency.Text + "\"/>" +
-                        "\r\n\t<property name=\"BloodMoonRange\"                            value=\"" + ConfigProperty_BloodMoonRange.Text + "\"/>" +
-                        "\r\n\t<property name=\"BloodMoonWarning\"                          value=\"" + ConfigProperty_BloodMoonWarning.Text + "\"/>" +
+                        "\r\n\t<property name=\"ZombieMove\"                                value=\"" + ConfigProperty_ZombieMove.SelectedIndex.ToString() + "\"/>" +
+                        "\r\n\t<property name=\"ZombieMoveNight\"                           value=\"" + ConfigProperty_ZombieMoveNight.SelectedIndex.ToString() + "\"/>" +
+                        "\r\n\t<property name=\"ZombieFeralMove\"                           value=\"" + ConfigProperty_ZombieFeralMove.SelectedIndex.ToString() + "\"/>" +
+                        "\r\n\t<property name=\"ZombieBMMove\"                              value=\"" + ConfigProperty_ZombieBMMove.SelectedIndex.ToString() + "\"/>" +
+                        "\r\n\t<property name=\"BloodMoonFrequency\"                        value=\"" + ConfigProperty_BloodMoonFrequency.Value + "\"/>" +
+                        "\r\n\t<property name=\"BloodMoonRange\"                            value=\"" + ConfigProperty_BloodMoonRange.Value + "\"/>" +
+                        "\r\n\t<property name=\"BloodMoonWarning\"                          value=\"" + ConfigProperty_BloodMoonWarning.Value + "\"/>" +
                         "\r\n\t<property name=\"BloodMoonEnemyCount\"                       value=\"" + ConfigProperty_BloodMoonEnemyCount.Value + "\"/>" +
                         "\r\n\r\n\t<!-- Loot -->" +
                         "\r\n\t<property name=\"LootAbundance\"                             value=\"" + ConfigProperty_LootAbundance.Value + "\"/>" +
@@ -422,7 +422,7 @@ namespace _7DaysServerManager
                                     break;
 
                                 case "HideCommandExecutionLog":
-                                    // Default : 0
+                                    // Default: 0 (Show Everything)
                                     // 0 = Show Everything, 1 = Hide From Telnet / ControlPanel, 2 = Hide From Telnet / ControlPanel / Remote Game Clients, 3 = Hide Everything
                                     if (Config_File_Property_Value == "3")
                                         ConfigProperty_HideCommandExecutionLog.SelectedIndex = 3;
@@ -483,23 +483,11 @@ namespace _7DaysServerManager
                                 case "BlockDamagePlayer":
                                     // Default: 100
                                     ConfigProperty_BlockDamagePlayer.Value = Convert.ToInt32(Config_File_Property_Value);
-
-                                    // Update Text To Currently Set Value
-                                    if (ConfigProperty_BlockDamagePlayer.Value == 0)
-                                        BlockDamagePlayer_GroupBox.Text = "Player Block Damage [25%]";
-                                    else
-                                        BlockDamagePlayer_GroupBox.Text = "Player Block Damage [" + Convert.ToInt32(ConfigProperty_BlockDamagePlayer.Value) + "%]";
                                     break;
 
                                 case "BlockDamageAI":
                                     // Default: 100
                                     ConfigProperty_BlockDamageAI.Value = Convert.ToInt32(Config_File_Property_Value);
-
-                                    // Update Text To Currently Set Value
-                                    if (ConfigProperty_BlockDamageAI.Value == 0)
-                                        BlockDamageAI_GroupBox.Text = "AI Block Damage [25%]";
-                                    else
-                                        BlockDamageAI_GroupBox.Text = "AI Block Damage [" + Convert.ToInt32(ConfigProperty_BlockDamageAI.Value) + "%]";
                                     break;
 
                                 case "BlockDamageAIBM":
@@ -543,45 +531,75 @@ namespace _7DaysServerManager
                                     break;
 
                                 case "DayNightLength":
+                                    // Default: 60
                                     ConfigProperty_DayNightLength.Value = Convert.ToInt32(Config_File_Property_Value);
+
+                                    // Update Text To Currently Set Value
+                                    DayNightLength_GroupBox.Text = "Each In Game Day Equals [" + Convert.ToInt32(ConfigProperty_DayNightLength.Value) + "] Real World Minutes";
                                     break;
                                 
                                 case "DayLightLength":
+                                    // Default: 18
                                     ConfigProperty_DayLightLength.Value = Convert.ToInt32(Config_File_Property_Value);
 
                                     // Update Text To Currently Set Value
-                                    DayLightLength_GroupBox.Text = "Day Light Length " + " [" + Convert.ToInt32(ConfigProperty_DayLightLength.Value) + "h]";
+                                    DayLightLength_GroupBox.Text = "Sun Shines For [" + ConfigProperty_DayLightLength.Value + "] Hours Each Game Day ";
                                     break;
                                 
                                 case "DropOnDeath":
-                                    ConfigProperty_DropOnDeath.Text = Config_File_Property_Value;
+                                    // Default: 1 (Everything)
+                                    // 0 = Nothing, 1 = Everything, 2 = Toolbelt Only, 3 = Backpack Only, 4 = Delete All
+                                    if (Config_File_Property_Value == "4")
+                                        ConfigProperty_DropOnDeath.SelectedIndex = 4;
+                                    else if (Config_File_Property_Value == "3")
+                                        ConfigProperty_DropOnDeath.SelectedIndex = 3;
+                                    else if (Config_File_Property_Value == "2")
+                                        ConfigProperty_DropOnDeath.SelectedIndex = 2;
+                                    else if (Config_File_Property_Value == "1")
+                                        ConfigProperty_DropOnDeath.SelectedIndex = 1;
+                                    else if (Config_File_Property_Value == "0")
+                                        ConfigProperty_DropOnDeath.SelectedIndex = 0;
                                     break;
 
                                 case "DropOnQuit":
-                                    ConfigProperty_DropOnQuit.Text = Config_File_Property_Value;
+                                    // Default: 0 (Nothing)
+                                    // 0 = Nothing, 1 = Everything, 2 = Toolbelt Only, 3 = Backpack Only
+                                    if (Config_File_Property_Value == "3")
+                                        ConfigProperty_DropOnQuit.SelectedIndex = 3;
+                                    else if (Config_File_Property_Value == "2")
+                                        ConfigProperty_DropOnQuit.SelectedIndex = 2;
+                                    else if (Config_File_Property_Value == "1")
+                                        ConfigProperty_DropOnQuit.SelectedIndex = 1;
+                                    else if (Config_File_Property_Value == "0")
+                                        ConfigProperty_DropOnQuit.SelectedIndex = 0;
                                     break;
 
                                 case "BedrollDeadZoneSize":
+                                    // Default: 15
                                     ConfigProperty_BedrollDeadZoneSize.Value = Convert.ToInt32(Config_File_Property_Value);
-
-                                    // Update Text To Currently Set Value
-                                    BedrollDeadZoneSize_GroupBox.Text = "Minimum Enemy Spawn Distance From Bedroll [" + Convert.ToInt32(ConfigProperty_BedrollDeadZoneSize.Value) * 5 + " sec.]";
                                     break;
 
                                 case "BedrollExpiryTime":
-                                    ConfigProperty_BedrollExpiryTime.Text = Config_File_Property_Value;
+                                    // Default: 45
+                                    ConfigProperty_BedrollExpiryTime.Value = Convert.ToInt32(Config_File_Property_Value);
                                     break;
 
                                 case "MaxSpawnedZombies":
+                                    // Default: 60
                                     ConfigProperty_MaxSpawnedZombies.Value = Convert.ToInt32(Config_File_Property_Value);
                                     break;
 
                                 case "MaxSpawnedAnimals":
+                                    // Default: 50
                                     ConfigProperty_MaxSpawnedAnimals.Value = Convert.ToInt32(Config_File_Property_Value);
                                     break;
 
                                 case "ServerMaxAllowedViewDistance":
+                                    // Default: 12
                                     ConfigProperty_ServerMaxAllowedViewDistance.Value = Convert.ToInt32(Config_File_Property_Value);
+
+                                    // Update Text To Currently Set Value
+
                                     break;
 
                                 case "EnemySpawnMode":
@@ -594,8 +612,7 @@ namespace _7DaysServerManager
 
                                 case "EnemyDifficulty":
                                     // Default: 0
-                                    // 0 = Normal / Toggle Inactive
-                                    // 1 = Feral / Toggle Active 
+                                    // 0 = Normal / Toggle Inactive, 1 = Feral / Toggle Active 
                                     if (Config_File_Property_Value == "1")
                                         ConfigProperty_EnemyDifficulty.ToggleState = ToggleButtonState.Active;
                                     else
@@ -603,38 +620,83 @@ namespace _7DaysServerManager
                                     break;
 
                                 case "ZombieMove":
-                                    ConfigProperty_ZombieMove.Text = Config_File_Property_Value;
+                                    // Default: 0
+                                    // 0 = Walk, 1 = Jog, 2 = Run, 3 = Sprint, 4 = Nightmare)
+                                    if (Config_File_Property_Value == "4")
+                                        ConfigProperty_ZombieMove.SelectedIndex = 4;
+                                    else if (Config_File_Property_Value == "3")
+                                        ConfigProperty_ZombieMove.SelectedIndex = 3;
+                                    else if (Config_File_Property_Value == "2")
+                                        ConfigProperty_ZombieMove.SelectedIndex = 2;
+                                    else if (Config_File_Property_Value == "1")
+                                        ConfigProperty_ZombieMove.SelectedIndex = 1;
+                                    else if (Config_File_Property_Value == "0")
+                                        ConfigProperty_ZombieMove.SelectedIndex = 0;
                                     break;
 
                                 case "ZombieMoveNight":
-                                    ConfigProperty_ZombieMoveNight.Text = Config_File_Property_Value;
+                                    // Default: 3
+                                    // 0 = Walk, 1 = Jog, 2 = Run, 3 = Sprint, 4 = Nightmare)
+                                    if (Config_File_Property_Value == "4")
+                                        ConfigProperty_ZombieMoveNight.SelectedIndex = 4;
+                                    else if (Config_File_Property_Value == "3")
+                                        ConfigProperty_ZombieMoveNight.SelectedIndex = 3;
+                                    else if (Config_File_Property_Value == "2")
+                                        ConfigProperty_ZombieMoveNight.SelectedIndex = 2;
+                                    else if (Config_File_Property_Value == "1")
+                                        ConfigProperty_ZombieMoveNight.SelectedIndex = 1;
+                                    else if (Config_File_Property_Value == "0")
+                                        ConfigProperty_ZombieMoveNight.SelectedIndex = 0;
                                     break;
 
                                 case "ZombieFeralMove":
-                                    ConfigProperty_ZombieFeralMove.Text = Config_File_Property_Value;
+                                    // Default: 3
+                                    // 0 = Walk, 1 = Jog, 2 = Run, 3 = Sprint, 4 = Nightmare)
+                                    if (Config_File_Property_Value == "4")
+                                        ConfigProperty_ZombieFeralMove.SelectedIndex = 4;
+                                    else if (Config_File_Property_Value == "3")
+                                        ConfigProperty_ZombieFeralMove.SelectedIndex = 3;
+                                    else if (Config_File_Property_Value == "2")
+                                        ConfigProperty_ZombieFeralMove.SelectedIndex = 2;
+                                    else if (Config_File_Property_Value == "1")
+                                        ConfigProperty_ZombieFeralMove.SelectedIndex = 1;
+                                    else if (Config_File_Property_Value == "0")
+                                        ConfigProperty_ZombieFeralMove.SelectedIndex = 0;
                                     break;
 
                                 case "ZombieBMMove":
-                                    ConfigProperty_ZombieBMMove.SelectedText = Config_File_Property_Value;
+                                    // Default: 3
+                                    // 0 = Walk, 1 = Jog, 2 = Run, 3 = Sprint, 4 = Nightmare)
+                                    if (Config_File_Property_Value == "4")
+                                        ConfigProperty_ZombieBMMove.SelectedIndex = 4;
+                                    else if (Config_File_Property_Value == "3")
+                                        ConfigProperty_ZombieBMMove.SelectedIndex = 3;
+                                    else if (Config_File_Property_Value == "2")
+                                        ConfigProperty_ZombieBMMove.SelectedIndex = 2;
+                                    else if (Config_File_Property_Value == "1")
+                                        ConfigProperty_ZombieBMMove.SelectedIndex = 1;
+                                    else if (Config_File_Property_Value == "0")
+                                        ConfigProperty_ZombieBMMove.SelectedIndex = 0;
                                     break;
 
                                 case "BloodMoonFrequency":
+                                    // Default: 7
                                     ConfigProperty_BloodMoonFrequency.Value = Convert.ToInt32(Config_File_Property_Value);
                                     break;
 
                                 case "BloodMoonRange":
+                                    // Default: 0
                                     ConfigProperty_BloodMoonRange.Value = Convert.ToInt32(Config_File_Property_Value);
                                     break;
 
                                 case "BloodMoonWarning":
+                                    // Default: 8
                                     ConfigProperty_BloodMoonWarning.Value = Convert.ToInt32(Config_File_Property_Value);
                                     break;
 
                                 case "BloodMoonEnemyCount":
+                                    // Default: 8
                                     ConfigProperty_BloodMoonEnemyCount.Value = Convert.ToInt32(Config_File_Property_Value);
-
-                                    // Update Text To Currently Set Value
-                                    BloodMoonEnemyCount_GroupBox.Text = "Zombies Spawned For Every Player During The Blood Moon [" + Convert.ToInt32(ConfigProperty_BloodMoonEnemyCount.Value) * 5 + " sec.]";
                                     break;
 
                                 case "LootAbundance":

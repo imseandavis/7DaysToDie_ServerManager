@@ -15,7 +15,6 @@ namespace _7DaysServerManager
             //Server Management Tab
             About_Button.Text = LocalizedLanguage("about");
             Settings_Always_On_Top_CheckBox.Text = LocalizedLanguage("always_on_top");
-            autobots.Text = LocalizedLanguage("autobots");
             Ban_Hammer_Button.Text = LocalizedLanguage("ban");
             blad.Text = LocalizedLanguage("blad");
             //ConfigProperty_BuildCreate.Text = LocalizedLanguage("cheatmode");
@@ -97,7 +96,7 @@ namespace _7DaysServerManager
 
             Connect_Running_Server_Button.Text = LocalizedLanguage("reboot_con");
 
-            //ConfigProperty_EACEnabled_Old.Text = LocalizedLanguage("VACEnabled");
+            //ConfigProperty_EACEnabled.Text = LocalizedLanguage("VACEnabled");
 
             Chat_GroupBox.Text = LocalizedLanguage("chat_g");
             
@@ -126,8 +125,8 @@ namespace _7DaysServerManager
             else
                 AirDropFrequency_GroupBox.Text = LocalizedLanguage("AirDropFrequency") + " [" + LocalizedLanguage("disabled") + "]";
 
-            MaxSpawnedZombies_GroupBox.Text = LocalizedLanguage("MaxSpawnedZombies_g") + " [" + Convert.ToString(ConfigProperty_MaxSpawnedZombies.Value) + "]";
-            MaxSpawnedAnimals_GroupBox.Text = LocalizedLanguage("MaxSpawnedAnimals_g") + " [" + Convert.ToString(ConfigProperty_MaxSpawnedAnimals.Value) + "]";
+            MaxSpawnedZombies_GroupBox.Text = "[" + Convert.ToString(ConfigProperty_MaxSpawnedZombies.Value) + "] Zombies Spawned Per Player";
+            MaxSpawnedAnimals_GroupBox.Text = "[" + Convert.ToString(ConfigProperty_MaxSpawnedAnimals.Value) + "] Animals Spawned Per Player";
 
             Starting_Backup_Message_Label.Text = LocalizedLanguage("backup_msg_1_l");
             Backup_Completed_Message_Label.Text = LocalizedLanguage("backup_msg_2_l");

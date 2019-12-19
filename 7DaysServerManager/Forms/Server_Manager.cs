@@ -3008,18 +3008,6 @@ namespace _7DaysServerManager
             });
         }
 
-        private void MaxSpawnedZombies_Scroll(object sender, EventArgs e)
-        {
-            MaxSpawnedZombies_GroupBox.Text = LocalizedLanguage("MaxSpawnedZombies_g") + " [" + Convert.ToString(ConfigProperty_MaxSpawnedZombies.Value) + "]";
-            Update_Config();
-        }
-
-        private void VACEnabled_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-
         private void Chat_text_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)13)
@@ -3490,7 +3478,7 @@ namespace _7DaysServerManager
 
         private void MaxSpawnedAnimals_Scroll(object sender, EventArgs e)
         {
-            MaxSpawnedAnimals_GroupBox.Text = LocalizedLanguage("MaxSpawnedAnimals_g") + " [" + Convert.ToString(ConfigProperty_MaxSpawnedAnimals.Value) + "]";
+            MaxSpawnedAnimals_GroupBox.Text = "[" + Convert.ToString(ConfigProperty_MaxSpawnedAnimals.Value) + "] Animals Spawned Per Player";
             Update_Config();
         }
 
@@ -4506,19 +4494,6 @@ namespace _7DaysServerManager
                 Registry.SetValue(base_registry_key + profile_name, "hide_footer", "0");
         }
 
-        private void BloodMoonEnemyCount_Scroll(object sender, EventArgs e)
-        {
-            BloodMoonEnemyCount_GroupBox.Text = "Zombies spawned for every player during Blood Moon [" + Convert.ToString(ConfigProperty_BloodMoonEnemyCount.Value) + "]";
-            Update_Config();
-        }
-
-        private void BedrollDeadZoneSize_Scroll(object sender, EventArgs e)
-        {
-
-            BedrollDeadZoneSize_GroupBox.Text = "Minimum enemy spawn distance from bedroll [" + Convert.ToString(ConfigProperty_BedrollDeadZoneSize.Value) + "]";
-            Update_Config();
-        }
-
         private void Excall_CheckedChanged(object sender, EventArgs e)
         {
             if (Use_External_Call_CheckBox.Checked)
@@ -4682,7 +4657,7 @@ namespace _7DaysServerManager
         private void ConfigProperty_ServerMaxPlayerCount_ValueChanged(object sender, EventArgs e)
         {
             // Update Text To Currently Set Value
-            ServerMaxPlayerCount_GroupBox.Text = "Max Players: [" + Convert.ToString(ConfigProperty_ServerMaxPlayerCount.Value) + "]";
+            ServerMaxPlayerCount_GroupBox.Text = "Max Players [" + Convert.ToString(ConfigProperty_ServerMaxPlayerCount.Value) + "]";
 
             // Update The Config File With The New Value
             Update_Config();
@@ -4827,6 +4802,17 @@ namespace _7DaysServerManager
             Update_Config();
         }
 
+        private void ConfigProperty_EACEnabled_ToggleStateChanged(object sender, ToggleStateChangedEventArgs e)
+        {
+            if (ConfigProperty_EACEnabled.ToggleState == ToggleButtonState.Active)
+                ConfigProperty_EACEnabled.Text = "true";
+            else
+                ConfigProperty_EACEnabled.Text = "false";
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
         private void ConfigProperty_HideCommandExecutionLog_SelectedValueChanged(object sender, EventArgs e)
         {
             // Update The Config File With The New Value
@@ -4898,7 +4884,10 @@ namespace _7DaysServerManager
         private void ConfigProperty_BlockDamagePlayer_ValueChanged(object sender, EventArgs e)
         {
             // Update Text To Currently Set Value
-            BlockDamagePlayer_GroupBox.Text = "Player Block Damage [" + ConfigProperty_BlockDamagePlayer.Value + "%]";
+            if (ConfigProperty_BlockDamagePlayer.Value == 0)
+                BlockDamagePlayer_GroupBox.Text = "Player Block Damage [25%]";
+            else
+                BlockDamagePlayer_GroupBox.Text = "Player Block Damage [" + Convert.ToInt32(ConfigProperty_BlockDamagePlayer.Value) + "%]";
 
             // Update The Config File With The New Value
             Update_Config();
@@ -4907,7 +4896,10 @@ namespace _7DaysServerManager
         private void ConfigProperty_BlockDamageAI_ValueChanged(object sender, EventArgs e)
         {
             // Update Text To Currently Set Value
-            BlockDamageAI_GroupBox.Text = "AI Block Damage [" + ConfigProperty_BlockDamageAI.Value + "%]";
+            if (ConfigProperty_BlockDamageAI.Value == 0)
+                BlockDamageAI_GroupBox.Text = "AI Block Damage [25%]";
+            else
+                BlockDamageAI_GroupBox.Text = "AI Block Damage [" + Convert.ToInt32(ConfigProperty_BlockDamageAI.Value) + "%]";
 
             // Update The Config File With The New Value
             Update_Config();
@@ -4916,7 +4908,7 @@ namespace _7DaysServerManager
         private void ConfigProperty_BlockDamageAIBM_ValueChanged(object sender, EventArgs e)
         {
             // Update Text To Currently Set Value
-            BlockDamageAIBM_GroupBox.Text = "AI Block Damage During Blood Moon [" + ConfigProperty_BlockDamageAIBM.Value + "%]";
+            BlockDamageAIBM_GroupBox.Text = "AI Block Damage During Blood Moon: [" + ConfigProperty_BlockDamageAIBM.Value + "%]";
 
             // Update The Config File With The New Value
             Update_Config();
@@ -4925,31 +4917,20 @@ namespace _7DaysServerManager
         private void ConfigProperty_XPMultiplier_ValueChanged(object sender, EventArgs e)
         {
             // Update Text To Currently Set Value
-            XPMultiplier_GroupBox.Text = "XP Multiplier [" + ConfigProperty_XPMultiplier.Value + "%]";
+            XPMultiplier_GroupBox.Text = "XP Multiplier: [" + ConfigProperty_XPMultiplier.Value + "%]";
 
             // Update The Config File With The New Value
             Update_Config();
         }
+
         private void ConfigProperty_PlayerSafeZoneLevel_TextChanged(object sender, EventArgs e)
         {
             // Update The Config File With The New Value
             Update_Config();
         }
+
         private void ConfigProperty_PlayerSafeZoneHours_TextChanged(object sender, EventArgs e)
         {
-            // Update The Config File With The New Value
-            Update_Config();
-        }
-
-
-
-        private void ConfigProperty_EnemyDifficulty_ToggleStateChanged(object sender, Syncfusion.Windows.Forms.Tools.ToggleStateChangedEventArgs e)
-        {
-            if (ConfigProperty_EnemyDifficulty.ToggleState == ToggleButtonState.Active)
-                ConfigProperty_EnemyDifficulty.Text = "1";
-            else
-                ConfigProperty_EnemyDifficulty.Text = "0";
-
             // Update The Config File With The New Value
             Update_Config();
         }
@@ -4965,51 +4946,12 @@ namespace _7DaysServerManager
             Update_Config();
         }
 
-
-
-        private void ConfigProperty_AirDropMarker_ToggleStateChanged(object sender, ToggleStateChangedEventArgs e)
-        {
-            if (ConfigProperty_AirDropMarker.ToggleState == ToggleButtonState.Active)
-                ConfigProperty_AirDropMarker.Text = "true";
-            else
-                ConfigProperty_AirDropMarker.Text = "false";
-
-            // Update The Config File With The New Value
-            Update_Config();
-        }
-
-
-
-        private void ConfigProperty_DayLightLength_ValueChanged(object sender, EventArgs e)
-        {
-            // Update Text To Currently Set Value
-            DayLightLength_GroupBox.Text = "Day Light Length [" + ConfigProperty_DayLightLength.Value + "h]";
-
-            // Update The Config File With The New Value
-            Update_Config();
-        }
-
-
-
-        private void ConfigProperty_EACEnabled_ToggleStateChanged(object sender, ToggleStateChangedEventArgs e)
-        {
-            if (ConfigProperty_EACEnabled.ToggleState == ToggleButtonState.Active)
-                ConfigProperty_EACEnabled.Text = "true";
-            else
-                ConfigProperty_EACEnabled.Text = "false";
-
-            // Update The Config File With The New Value
-            Update_Config();
-        }
-
-
-
         private void ConfigProperty_DayNightLength_ValueChanged(object sender, EventArgs e)
         {
             // Update The Group Box Text (Realtime Minutes Per Game Day)
             if (ConfigProperty_DayNightLength.Value == 1440)
             {
-                DayNightLength_GroupBox.Text = "Day Length: Realtime";
+                DayNightLength_GroupBox.Text = "Each In Game Day Is [Realtime]";
                 DialogResult Realtime_Response = MessageBox.Show("You Have Chosen Realtime Mode! If You Continue, The Server Time Will Be Set To Your Local Time And Game Time Will Pass In Realtime!", "Set Game Time To Relatime?", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (Realtime_Response == DialogResult.Yes)
                 {
@@ -5034,7 +4976,7 @@ namespace _7DaysServerManager
                         ConfigProperty_DayNightLength.Value = -24;
 
                         // Update GroupBox Text
-                        DayNightLength_GroupBox.Text = "Day Length: Each In Game Hour Equals " + Convert.ToInt32(ConfigProperty_DayNightLength.Value / 24) + " Real World Minutes";
+                        DayNightLength_GroupBox.Text = "Each In Game Day Equals [" + Convert.ToInt32(ConfigProperty_DayNightLength.Value) + "] Real World Minutes";
 
                         // Set Realtime Value To Off
                         Registry.SetValue(base_registry_key + profile_name, "realtime", "0");
@@ -5046,7 +4988,7 @@ namespace _7DaysServerManager
                     ConfigProperty_DayNightLength.Value = -24;
 
                     // Update GroupBox Text
-                    DayNightLength_GroupBox.Text = "Day Length: Each In Game Hour Equals " + Convert.ToInt32(ConfigProperty_DayNightLength.Value / 24) + " Real World Minutes";
+                    DayNightLength_GroupBox.Text = "Each In Game Day Equals [" + Convert.ToInt32(ConfigProperty_DayNightLength.Value) + "] Real World Minutes";
 
                     // Set Realtime Value To Off
                     Registry.SetValue(base_registry_key + profile_name, "realtime", "0");
@@ -5055,7 +4997,7 @@ namespace _7DaysServerManager
             else
             {
                 // Update Groupbox Text
-                DayNightLength_GroupBox.Text = "Day Length: Each In Game Hour Equals " + Convert.ToInt32(ConfigProperty_DayNightLength.Value / 24) + " Real World Minutes";
+                DayNightLength_GroupBox.Text = "Each In Game Day Equals [" + Convert.ToInt32(ConfigProperty_DayNightLength.Value) + "] Real World Minutes";
 
                 // Set Realtime Value To On
                 Registry.SetValue(base_registry_key + profile_name, "realtime", "0");
@@ -5065,6 +5007,163 @@ namespace _7DaysServerManager
             Update_Config();
         }
 
+        private void ConfigProperty_DayLightLength_ValueChanged(object sender, EventArgs e)
+        {
+            // Update Text To Currently Set Value
+            DayLightLength_GroupBox.Text = "Sun Shines For [" + ConfigProperty_DayLightLength.Value + "] Hours Each Game Day ";
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_DropOnDeath_SelectedValueChanged(object sender, EventArgs e)
+        {
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_DropOnQuit_SelectedValueChanged(object sender, EventArgs e)
+        {
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_BedrollDeadZoneSize_ValueChanged(object sender, EventArgs e)
+        {
+            // Update Text To Currently Set Value
+            BedrollDeadZoneSize_GroupBox.Text = "Enemies Spawn At Least [" + ConfigProperty_BedrollDeadZoneSize.Value + "] Blocks From Bedroll";
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_BedrollExpiryTime_ValueChanged(object sender, EventArgs e)
+        {
+            // Update Text To Currently Set Value
+            BedrollExpiryTime_GroupBox.Text = "Bedroll Lasts [" + ConfigProperty_BedrollExpiryTime.Value + "] Game Days Offline";
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_MaxSpawnedZombies_ValueChanged(object sender, EventArgs e)
+        {
+            // Update Text To Currently Set Value
+            MaxSpawnedZombies_GroupBox.Text = "[" + Convert.ToString(ConfigProperty_MaxSpawnedZombies.Value) + "] Zombies Spawned Per Player";
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_MaxSpawnedAnimals_ValueChanged(object sender, EventArgs e)
+        {
+            // Update Text To Currently Set Value
+            MaxSpawnedAnimals_GroupBox.Text = "[" + Convert.ToString(ConfigProperty_MaxSpawnedAnimals.Value) + "] Animals Spawned Per Player";
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_ServerMaxAllowedViewDistance_ValueChanged(object sender, EventArgs e)
+        {
+            // Update Text To Currently Set Value
+            ServerMaxAllowedViewDistance_GroupBox.Text = "[" + Convert.ToString(ConfigProperty_ServerMaxAllowedViewDistance.Value) + "] Animals Spawned Per Player";
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_EnemySpawnMode_ToggleStateChanged(object sender, ToggleStateChangedEventArgs e)
+        {
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_EnemyDifficulty_ToggleStateChanged(object sender, Syncfusion.Windows.Forms.Tools.ToggleStateChangedEventArgs e)
+        {
+            if (ConfigProperty_EnemyDifficulty.ToggleState == ToggleButtonState.Active)
+                ConfigProperty_EnemyDifficulty.Text = "1";
+            else
+                ConfigProperty_EnemyDifficulty.Text = "0";
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_ZombieMove_SelectedValueChanged(object sender, EventArgs e)
+        {
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_ZombieMoveNight_SelectedValueChanged(object sender, EventArgs e)
+        {
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_ZombieFeralMove_SelectedValueChanged(object sender, EventArgs e)
+        {
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_ZombieBMMove_SelectedValueChanged(object sender, EventArgs e)
+        {
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_BloodMoonFrequency_ValueChanged(object sender, EventArgs e)
+        {
+            // Update Text To Currently Set Value
+            BloodMoonFrequency_GroupBox.Text = "Blood Moon Frequency [" + Convert.ToString(ConfigProperty_BloodMoonFrequency.Value) + "]";
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_BloodMoonRange_ValueChanged(object sender, EventArgs e)
+        {
+            // Update Text To Currently Set Value
+            BloodMoonRange_GroupBox.Text = "Blood Moon Deviation [" + Convert.ToString(ConfigProperty_BloodMoonRange.Value) + "]";
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_BloodMoonWarning_ValueChanged(object sender, EventArgs e)
+        {
+            // Update Text To Currently Set Value
+            BloodMoonWarning_GroupBox.Text = "Blood Moon Red Day Text Warning [" + Convert.ToString(ConfigProperty_BloodMoonWarning.Value) + "]";
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_BloodMoonEnemyCount_ValueChanged(object sender, EventArgs e)
+        {
+            // Update Text To Currently Set Value
+            BloodMoonEnemyCount_GroupBox.Text = "Zombies Spawned Per Player During Blood Moon [" + ConfigProperty_BloodMoonEnemyCount.Value + "]";
+            
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+
+
+
+
+        private void ConfigProperty_AirDropMarker_ToggleStateChanged(object sender, ToggleStateChangedEventArgs e)
+        {
+            if (ConfigProperty_AirDropMarker.ToggleState == ToggleButtonState.Active)
+                ConfigProperty_AirDropMarker.Text = "true";
+            else
+                ConfigProperty_AirDropMarker.Text = "false";
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
 
         #endregion
 

@@ -3637,7 +3637,7 @@ It's almost free, please check it out in "Settings" tab.</value>
     <value>Bottom, Left, Right</value>
   </data>
   <data name="cmd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 567</value>
+    <value>6, 576</value>
   </data>
   <data name="cmd.Size" type="System.Drawing.Size, System.Drawing">
     <value>1862, 20</value>
@@ -3670,7 +3670,7 @@ It's almost free, please check it out in "Settings" tab.</value>
     <value>ForcedVertical</value>
   </data>
   <data name="Console_RichTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1859, 547</value>
+    <value>1859, 556</value>
   </data>
   <data name="Console_RichTextBox.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -4492,7 +4492,7 @@ It's almost free, please check it out in "Settings" tab.</value>
     <value>3, 8</value>
   </data>
   <data name="Console_Group.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1871, 598</value>
+    <value>1871, 607</value>
   </data>
   <data name="Console_Group.TabIndex" type="System.Int32, mscorlib">
     <value>18</value>
@@ -5733,6 +5733,225 @@ It's almost free, please check it out in "Settings" tab.</value>
   <data name="&gt;&gt;ManagePlayers_TabPage.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="BloodMoonEnemyCount_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="ConfigProperty_BloodMoonEnemyCount.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="ConfigProperty_BloodMoonEnemyCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 16</value>
+  </data>
+  <data name="ConfigProperty_BloodMoonEnemyCount.Size" type="System.Drawing.Size, System.Drawing">
+    <value>303, 20</value>
+  </data>
+  <data name="ConfigProperty_BloodMoonEnemyCount.TabIndex" type="System.Int32, mscorlib">
+    <value>135</value>
+  </data>
+  <data name="ConfigProperty_BloodMoonEnemyCount.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="ConfigProperty_BloodMoonEnemyCount.ToolTip" xml:space="preserve">
+    <value>The number of zombies spawned during blood moons per player.</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_BloodMoonEnemyCount.Name" xml:space="preserve">
+    <value>ConfigProperty_BloodMoonEnemyCount</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_BloodMoonEnemyCount.Type" xml:space="preserve">
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_BloodMoonEnemyCount.Parent" xml:space="preserve">
+    <value>BloodMoonEnemyCount_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_BloodMoonEnemyCount.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BloodMoonEnemyCount_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>987, 413</value>
+  </data>
+  <data name="BloodMoonEnemyCount_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>309, 41</value>
+  </data>
+  <data name="BloodMoonEnemyCount_GroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="BloodMoonEnemyCount_GroupBox.Text" xml:space="preserve">
+    <value>Zombies Spawned Per Player During Blood Moon [8]</value>
+  </data>
+  <data name="&gt;&gt;BloodMoonEnemyCount_GroupBox.Name" xml:space="preserve">
+    <value>BloodMoonEnemyCount_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;BloodMoonEnemyCount_GroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BloodMoonEnemyCount_GroupBox.Parent" xml:space="preserve">
+    <value>GameSettings_TabPage</value>
+  </data>
+  <data name="&gt;&gt;BloodMoonEnemyCount_GroupBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ConfigProperty_BloodMoonRange.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="ConfigProperty_BloodMoonRange.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 16</value>
+  </data>
+  <data name="ConfigProperty_BloodMoonRange.Size" type="System.Drawing.Size, System.Drawing">
+    <value>303, 20</value>
+  </data>
+  <data name="ConfigProperty_BloodMoonRange.TabIndex" type="System.Int32, mscorlib">
+    <value>135</value>
+  </data>
+  <data name="ConfigProperty_BloodMoonRange.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ConfigProperty_BloodMoonRange.ToolTip" xml:space="preserve">
+    <value>How many days can the actual blood moon day randomly deviate from the above setting. Setting this to 0 makes blood moons happen exactly each Nth day as specified in BloodMoonFrequency.</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_BloodMoonRange.Name" xml:space="preserve">
+    <value>ConfigProperty_BloodMoonRange</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_BloodMoonRange.Type" xml:space="preserve">
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_BloodMoonRange.Parent" xml:space="preserve">
+    <value>BloodMoonRange_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_BloodMoonRange.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BloodMoonRange_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>987, 318</value>
+  </data>
+  <data name="BloodMoonRange_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>309, 42</value>
+  </data>
+  <data name="BloodMoonRange_GroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>127</value>
+  </data>
+  <data name="BloodMoonRange_GroupBox.Text" xml:space="preserve">
+    <value>Blood Moon Deviation [0] Days</value>
+  </data>
+  <data name="&gt;&gt;BloodMoonRange_GroupBox.Name" xml:space="preserve">
+    <value>BloodMoonRange_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;BloodMoonRange_GroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BloodMoonRange_GroupBox.Parent" xml:space="preserve">
+    <value>GameSettings_TabPage</value>
+  </data>
+  <data name="&gt;&gt;BloodMoonRange_GroupBox.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ConfigProperty_BloodMoonWarning.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="ConfigProperty_BloodMoonWarning.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 16</value>
+  </data>
+  <data name="ConfigProperty_BloodMoonWarning.Size" type="System.Drawing.Size, System.Drawing">
+    <value>303, 20</value>
+  </data>
+  <data name="ConfigProperty_BloodMoonWarning.TabIndex" type="System.Int32, mscorlib">
+    <value>135</value>
+  </data>
+  <data name="ConfigProperty_BloodMoonWarning.Text" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="ConfigProperty_BloodMoonWarning.ToolTip" xml:space="preserve">
+    <value>The Hour number that the red day number begins on a blood moon day. Setting this to -1 makes the red never show.</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_BloodMoonWarning.Name" xml:space="preserve">
+    <value>ConfigProperty_BloodMoonWarning</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_BloodMoonWarning.Type" xml:space="preserve">
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_BloodMoonWarning.Parent" xml:space="preserve">
+    <value>BloodMoonWarning_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_BloodMoonWarning.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BloodMoonWarning_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>987, 366</value>
+  </data>
+  <data name="BloodMoonWarning_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>309, 41</value>
+  </data>
+  <data name="BloodMoonWarning_GroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>127</value>
+  </data>
+  <data name="BloodMoonWarning_GroupBox.Text" xml:space="preserve">
+    <value>Blood Moon Red Day Text Warning [8] </value>
+  </data>
+  <data name="&gt;&gt;BloodMoonWarning_GroupBox.Name" xml:space="preserve">
+    <value>BloodMoonWarning_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;BloodMoonWarning_GroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BloodMoonWarning_GroupBox.Parent" xml:space="preserve">
+    <value>GameSettings_TabPage</value>
+  </data>
+  <data name="&gt;&gt;BloodMoonWarning_GroupBox.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="ConfigProperty_BloodMoonFrequency.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="ConfigProperty_BloodMoonFrequency.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 16</value>
+  </data>
+  <data name="ConfigProperty_BloodMoonFrequency.Size" type="System.Drawing.Size, System.Drawing">
+    <value>303, 20</value>
+  </data>
+  <data name="ConfigProperty_BloodMoonFrequency.TabIndex" type="System.Int32, mscorlib">
+    <value>135</value>
+  </data>
+  <data name="ConfigProperty_BloodMoonFrequency.Text" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="ConfigProperty_BloodMoonFrequency.ToolTip" xml:space="preserve">
+    <value>What frequency (in days) should a blood moon take place. Set to "0" for no blood moons.</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_BloodMoonFrequency.Name" xml:space="preserve">
+    <value>ConfigProperty_BloodMoonFrequency</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_BloodMoonFrequency.Type" xml:space="preserve">
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_BloodMoonFrequency.Parent" xml:space="preserve">
+    <value>BloodMoonFrequency_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_BloodMoonFrequency.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BloodMoonFrequency_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>987, 270</value>
+  </data>
+  <data name="BloodMoonFrequency_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>309, 42</value>
+  </data>
+  <data name="BloodMoonFrequency_GroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>126</value>
+  </data>
+  <data name="BloodMoonFrequency_GroupBox.Text" xml:space="preserve">
+    <value>Blood Moon Frequency</value>
+  </data>
+  <data name="&gt;&gt;BloodMoonFrequency_GroupBox.Name" xml:space="preserve">
+    <value>BloodMoonFrequency_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;BloodMoonFrequency_GroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BloodMoonFrequency_GroupBox.Parent" xml:space="preserve">
+    <value>GameSettings_TabPage</value>
+  </data>
+  <data name="&gt;&gt;BloodMoonFrequency_GroupBox.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="ConfigProperty_PlayerSafeZoneHours.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -5785,7 +6004,128 @@ It's almost free, please check it out in "Settings" tab.</value>
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;PlayerSafeZoneHours_GroupBox.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="MaxSpawnedAnimals_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="ConfigProperty_MaxSpawnedAnimals.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="ConfigProperty_MaxSpawnedAnimals.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 16</value>
+  </data>
+  <data name="ConfigProperty_MaxSpawnedAnimals.Size" type="System.Drawing.Size, System.Drawing">
+    <value>363, 20</value>
+  </data>
+  <data name="ConfigProperty_MaxSpawnedAnimals.TabIndex" type="System.Int32, mscorlib">
+    <value>130</value>
+  </data>
+  <data name="ConfigProperty_MaxSpawnedAnimals.Text" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="ConfigProperty_MaxSpawnedAnimals.ToolTip" xml:space="preserve">
+    <value>If your server has a large number of players you can increase this limit to add more wildlife.</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_MaxSpawnedAnimals.Name" xml:space="preserve">
+    <value>ConfigProperty_MaxSpawnedAnimals</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_MaxSpawnedAnimals.Type" xml:space="preserve">
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_MaxSpawnedAnimals.Parent" xml:space="preserve">
+    <value>MaxSpawnedAnimals_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_MaxSpawnedAnimals.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="MaxSpawnedAnimals_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>389, 478</value>
+  </data>
+  <data name="MaxSpawnedAnimals_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>369, 40</value>
+  </data>
+  <data name="MaxSpawnedAnimals_GroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="MaxSpawnedAnimals_GroupBox.Text" xml:space="preserve">
+    <value>[50] Animals Spawned Per Player</value>
+  </data>
+  <data name="MaxSpawnedAnimals_GroupBox.ToolTip" xml:space="preserve">
+    <value>If your server has a large number of players you can increase this limit to add more wildlife. 
+
+Animals don't consume as much CPU as zombies. 
+
+NOTE: That this doesn't cause more animals to spawn arbitrarily: The biome spawning system only spawns a certain number of animals in a given area, but if you have lots of players that are all spread out then you may be hitting the limit and can increase it.</value>
+  </data>
+  <data name="&gt;&gt;MaxSpawnedAnimals_GroupBox.Name" xml:space="preserve">
+    <value>MaxSpawnedAnimals_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;MaxSpawnedAnimals_GroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MaxSpawnedAnimals_GroupBox.Parent" xml:space="preserve">
+    <value>GameSettings_TabPage</value>
+  </data>
+  <data name="&gt;&gt;MaxSpawnedAnimals_GroupBox.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="MaxSpawnedZombies_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="ConfigProperty_MaxSpawnedZombies.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="ConfigProperty_MaxSpawnedZombies.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 16</value>
+  </data>
+  <data name="ConfigProperty_MaxSpawnedZombies.Size" type="System.Drawing.Size, System.Drawing">
+    <value>363, 20</value>
+  </data>
+  <data name="ConfigProperty_MaxSpawnedZombies.TabIndex" type="System.Int32, mscorlib">
+    <value>129</value>
+  </data>
+  <data name="ConfigProperty_MaxSpawnedZombies.Text" xml:space="preserve">
+    <value>60</value>
+  </data>
+  <data name="ConfigProperty_MaxSpawnedZombies.ToolTip" xml:space="preserve">
+    <value>Making this number too large (more than about 80) may cause servers to run at poor framerates which will effect lag and play quality for clients.</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_MaxSpawnedZombies.Name" xml:space="preserve">
+    <value>ConfigProperty_MaxSpawnedZombies</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_MaxSpawnedZombies.Type" xml:space="preserve">
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_MaxSpawnedZombies.Parent" xml:space="preserve">
+    <value>MaxSpawnedZombies_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_MaxSpawnedZombies.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="MaxSpawnedZombies_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>389, 431</value>
+  </data>
+  <data name="MaxSpawnedZombies_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>369, 41</value>
+  </data>
+  <data name="MaxSpawnedZombies_GroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="MaxSpawnedZombies_GroupBox.Text" xml:space="preserve">
+    <value>[60] Zombies Spawned Per Player</value>
+  </data>
+  <data name="&gt;&gt;MaxSpawnedZombies_GroupBox.Name" xml:space="preserve">
+    <value>MaxSpawnedZombies_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;MaxSpawnedZombies_GroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MaxSpawnedZombies_GroupBox.Parent" xml:space="preserve">
+    <value>GameSettings_TabPage</value>
+  </data>
+  <data name="&gt;&gt;MaxSpawnedZombies_GroupBox.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <data name="BlockDamagePlayer_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -5842,7 +6182,7 @@ It's almost free, please check it out in "Settings" tab.</value>
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;BlockDamagePlayer_GroupBox.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>7</value>
   </data>
   <data name="Telnet_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -6087,7 +6427,7 @@ If no password is set the server will only listen on the local loopback interfac
     <value>4</value>
   </data>
   <data name="Telnet_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1324, 305</value>
+    <value>987, 79</value>
   </data>
   <data name="Telnet_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>369, 114</value>
@@ -6108,7 +6448,7 @@ If no password is set the server will only listen on the local loopback interfac
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;Telnet_GroupBox.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>8</value>
   </data>
   <data name="ConfigProperty_GameName.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -6393,7 +6733,7 @@ If a world with the resulting name already exists it will simply load it.</value
     <value>4</value>
   </data>
   <data name="GameWorldSettings_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1105, 23</value>
+    <value>768, 58</value>
   </data>
   <data name="GameWorldSettings_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>213, 255</value>
@@ -6414,7 +6754,58 @@ If a world with the resulting name already exists it will simply load it.</value
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;GameWorldSettings_GroupBox.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>9</value>
+  </data>
+  <data name="ConfigProperty_BedrollExpiryTime.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="ConfigProperty_BedrollExpiryTime.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 16</value>
+  </data>
+  <data name="ConfigProperty_BedrollExpiryTime.Size" type="System.Drawing.Size, System.Drawing">
+    <value>363, 20</value>
+  </data>
+  <data name="ConfigProperty_BedrollExpiryTime.TabIndex" type="System.Int32, mscorlib">
+    <value>134</value>
+  </data>
+  <data name="ConfigProperty_BedrollExpiryTime.ToolTip" xml:space="preserve">
+    <value>Number of days a bedroll stays active after owner was last online.</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_BedrollExpiryTime.Name" xml:space="preserve">
+    <value>ConfigProperty_BedrollExpiryTime</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_BedrollExpiryTime.Type" xml:space="preserve">
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_BedrollExpiryTime.Parent" xml:space="preserve">
+    <value>BedrollExpiryTime_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_BedrollExpiryTime.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BedrollExpiryTime_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>389, 384</value>
+  </data>
+  <data name="BedrollExpiryTime_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>369, 41</value>
+  </data>
+  <data name="BedrollExpiryTime_GroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="BedrollExpiryTime_GroupBox.Text" xml:space="preserve">
+    <value>Bedroll Lasts [45] Game Days Offline</value>
+  </data>
+  <data name="&gt;&gt;BedrollExpiryTime_GroupBox.Name" xml:space="preserve">
+    <value>BedrollExpiryTime_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;BedrollExpiryTime_GroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BedrollExpiryTime_GroupBox.Parent" xml:space="preserve">
+    <value>GameSettings_TabPage</value>
+  </data>
+  <data name="&gt;&gt;BedrollExpiryTime_GroupBox.ZOrder" xml:space="preserve">
+    <value>10</value>
   </data>
   <data name="ConfigProperty_PlayerSafeZoneLevel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -6468,7 +6859,7 @@ If a world with the resulting name already exists it will simply load it.</value
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;PlayerSafeZoneLevel_GroupBox.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>11</value>
   </data>
   <data name="ConfigProperty_EnemySpawnMode.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Top</value>
@@ -6636,7 +7027,7 @@ If a world with the resulting name already exists it will simply load it.</value
     <value>0</value>
   </data>
   <data name="ConfigProperty_EnemyDifficulty.ToolTip" xml:space="preserve">
-    <value>Are Zombies Feral? </value>
+    <value>Are Zombies Normal Or Feral? </value>
   </data>
   <data name="&gt;&gt;ConfigProperty_EnemyDifficulty.Name" xml:space="preserve">
     <value>ConfigProperty_EnemyDifficulty</value>
@@ -6744,7 +7135,64 @@ If a world with the resulting name already exists it will simply load it.</value
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;ServerOptions_GroupBox.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>12</value>
+  </data>
+  <data name="BedrollDeadZoneSize_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="ConfigProperty_BedrollDeadZoneSize.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="ConfigProperty_BedrollDeadZoneSize.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 16</value>
+  </data>
+  <data name="ConfigProperty_BedrollDeadZoneSize.Size" type="System.Drawing.Size, System.Drawing">
+    <value>363, 20</value>
+  </data>
+  <data name="ConfigProperty_BedrollDeadZoneSize.TabIndex" type="System.Int32, mscorlib">
+    <value>134</value>
+  </data>
+  <data name="ConfigProperty_BedrollDeadZoneSize.Text" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="ConfigProperty_BedrollDeadZoneSize.ToolTip" xml:space="preserve">
+    <value>Real world minutes per in-game day: 60 minutes.</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_BedrollDeadZoneSize.Name" xml:space="preserve">
+    <value>ConfigProperty_BedrollDeadZoneSize</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_BedrollDeadZoneSize.Type" xml:space="preserve">
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_BedrollDeadZoneSize.Parent" xml:space="preserve">
+    <value>BedrollDeadZoneSize_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;ConfigProperty_BedrollDeadZoneSize.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BedrollDeadZoneSize_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>389, 337</value>
+  </data>
+  <data name="BedrollDeadZoneSize_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>369, 41</value>
+  </data>
+  <data name="BedrollDeadZoneSize_GroupBox.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="BedrollDeadZoneSize_GroupBox.Text" xml:space="preserve">
+    <value>Enemies Spawn At Least [15] Blocks From Bedroll</value>
+  </data>
+  <data name="&gt;&gt;BedrollDeadZoneSize_GroupBox.Name" xml:space="preserve">
+    <value>BedrollDeadZoneSize_GroupBox</value>
+  </data>
+  <data name="&gt;&gt;BedrollDeadZoneSize_GroupBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BedrollDeadZoneSize_GroupBox.Parent" xml:space="preserve">
+    <value>GameSettings_TabPage</value>
+  </data>
+  <data name="&gt;&gt;BedrollDeadZoneSize_GroupBox.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
   <data name="trackBarEx4.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
@@ -6825,7 +7273,7 @@ If a world with the resulting name already exists it will simply load it.</value
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;LootRespawnDays_GroupBox.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>14</value>
   </data>
   <data name="ServerMaxWorldTransferSpeedKiBs_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -6837,7 +7285,7 @@ If a world with the resulting name already exists it will simply load it.</value
     <value>3, 16</value>
   </data>
   <data name="ConfigProperty_ServerMaxWorldTransferSpeedKiBs.Size" type="System.Drawing.Size, System.Drawing">
-    <value>359, 20</value>
+    <value>363, 20</value>
   </data>
   <data name="ConfigProperty_ServerMaxWorldTransferSpeedKiBs.TabIndex" type="System.Int32, mscorlib">
     <value>127</value>
@@ -6861,10 +7309,10 @@ If a world with the resulting name already exists it will simply load it.</value
     <value>0</value>
   </data>
   <data name="ServerMaxWorldTransferSpeedKiBs_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1324, 37</value>
+    <value>389, 570</value>
   </data>
   <data name="ServerMaxWorldTransferSpeedKiBs_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>365, 44</value>
+    <value>369, 44</value>
   </data>
   <data name="ServerMaxWorldTransferSpeedKiBs_GroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>118</value>
@@ -6886,7 +7334,7 @@ If a world with the resulting name already exists it will simply load it.</value
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;ServerMaxWorldTransferSpeedKiBs_GroupBox.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>15</value>
   </data>
   <data name="ConfigProperty_ServerVisibility.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -6951,7 +7399,7 @@ As you are never friend of a dedicated server setting this to "Only Show To Frie
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;Server_Visibility_GroupBox.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>16</value>
   </data>
   <data name="MaxUncoveredMapChunksPerPlayer_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -7008,7 +7456,7 @@ As you are never friend of a dedicated server setting this to "Only Show To Frie
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;MaxUncoveredMapChunksPerPlayer_GroupBox.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>17</value>
   </data>
   <data name="HideCommandExecutionLog_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -7077,7 +7525,7 @@ As you are never friend of a dedicated server setting this to "Only Show To Frie
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;HideCommandExecutionLog_GroupBox.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>18</value>
   </data>
   <data name="ServerDisabledNetworkProtocols_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -7137,7 +7585,7 @@ As you are never friend of a dedicated server setting this to "Only Show To Frie
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;ServerDisabledNetworkProtocols_GroupBox.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>19</value>
   </data>
   <data name="ConfigProperty_ServerPort.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -7188,7 +7636,7 @@ As you are never friend of a dedicated server setting this to "Only Show To Frie
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;ServerPort_GroupBox.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>20</value>
   </data>
   <data name="ControlPanel_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -7332,7 +7780,7 @@ As you are never friend of a dedicated server setting this to "Only Show To Frie
     <value>2</value>
   </data>
   <data name="ControlPanel_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1324, 425</value>
+    <value>987, 11</value>
   </data>
   <data name="ControlPanel_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>369, 62</value>
@@ -7353,634 +7801,7 @@ As you are never friend of a dedicated server setting this to "Only Show To Frie
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;ControlPanel_GroupBox.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="BloodMoonWarning_Label.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="BloodMoonWarning_Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="BloodMoonWarning_Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>11, 95</value>
-  </data>
-  <data name="BloodMoonWarning_Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>107, 13</value>
-  </data>
-  <data name="BloodMoonWarning_Label.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="BloodMoonWarning_Label.Text" xml:space="preserve">
-    <value>Blood Moon Warning</value>
-  </data>
-  <data name="&gt;&gt;BloodMoonWarning_Label.Name" xml:space="preserve">
-    <value>BloodMoonWarning_Label</value>
-  </data>
-  <data name="&gt;&gt;BloodMoonWarning_Label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BloodMoonWarning_Label.Parent" xml:space="preserve">
-    <value>BloodMoon_GroupBox</value>
-  </data>
-  <data name="&gt;&gt;BloodMoonWarning_Label.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="ConfigProperty_BloodMoonWarning.Location" type="System.Drawing.Point, System.Drawing">
-    <value>121, 91</value>
-  </data>
-  <data name="ConfigProperty_BloodMoonWarning.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 20</value>
-  </data>
-  <data name="ConfigProperty_BloodMoonWarning.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="ConfigProperty_BloodMoonWarning.ToolTip" xml:space="preserve">
-    <value>The Hour number that the red day number begins on a blood moon day. Setting this to -1 makes the red never show.</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_BloodMoonWarning.Name" xml:space="preserve">
-    <value>ConfigProperty_BloodMoonWarning</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_BloodMoonWarning.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_BloodMoonWarning.Parent" xml:space="preserve">
-    <value>BloodMoon_GroupBox</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_BloodMoonWarning.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="ConfigProperty_BloodMoonRange.Location" type="System.Drawing.Point, System.Drawing">
-    <value>122, 53</value>
-  </data>
-  <data name="ConfigProperty_BloodMoonRange.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 20</value>
-  </data>
-  <data name="ConfigProperty_BloodMoonRange.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="ConfigProperty_BloodMoonRange.ToolTip" xml:space="preserve">
-    <value>How many days can the actual blood moon day randomly deviate from the above setting. Setting this to 0 makes blood moons happen exactly each Nth day as specified in BloodMoonFrequency.</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_BloodMoonRange.Name" xml:space="preserve">
-    <value>ConfigProperty_BloodMoonRange</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_BloodMoonRange.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_BloodMoonRange.Parent" xml:space="preserve">
-    <value>BloodMoon_GroupBox</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_BloodMoonRange.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="BloodMoonRange_Label.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="BloodMoonRange_Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="BloodMoonRange_Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 57</value>
-  </data>
-  <data name="BloodMoonRange_Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>112, 13</value>
-  </data>
-  <data name="BloodMoonRange_Label.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="BloodMoonRange_Label.Text" xml:space="preserve">
-    <value>Blood Moon Deviation</value>
-  </data>
-  <data name="&gt;&gt;BloodMoonRange_Label.Name" xml:space="preserve">
-    <value>BloodMoonRange_Label</value>
-  </data>
-  <data name="&gt;&gt;BloodMoonRange_Label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BloodMoonRange_Label.Parent" xml:space="preserve">
-    <value>BloodMoon_GroupBox</value>
-  </data>
-  <data name="&gt;&gt;BloodMoonRange_Label.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="BloodMoonFrequency_Label.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="BloodMoonFrequency_Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="BloodMoonFrequency_Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>7, 23</value>
-  </data>
-  <data name="BloodMoonFrequency_Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>117, 13</value>
-  </data>
-  <data name="BloodMoonFrequency_Label.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="BloodMoonFrequency_Label.Text" xml:space="preserve">
-    <value>Blood Moon Frequency</value>
-  </data>
-  <data name="&gt;&gt;BloodMoonFrequency_Label.Name" xml:space="preserve">
-    <value>BloodMoonFrequency_Label</value>
-  </data>
-  <data name="&gt;&gt;BloodMoonFrequency_Label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BloodMoonFrequency_Label.Parent" xml:space="preserve">
-    <value>BloodMoon_GroupBox</value>
-  </data>
-  <data name="&gt;&gt;BloodMoonFrequency_Label.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="ConfigProperty_BloodMoonFrequency.Location" type="System.Drawing.Point, System.Drawing">
-    <value>128, 19</value>
-  </data>
-  <data name="ConfigProperty_BloodMoonFrequency.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 20</value>
-  </data>
-  <data name="ConfigProperty_BloodMoonFrequency.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="ConfigProperty_BloodMoonFrequency.ToolTip" xml:space="preserve">
-    <value>What frequency (in days) should a blood moon take place. Set to "0" for no blood moons.</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_BloodMoonFrequency.Name" xml:space="preserve">
-    <value>ConfigProperty_BloodMoonFrequency</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_BloodMoonFrequency.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_BloodMoonFrequency.Parent" xml:space="preserve">
-    <value>BloodMoon_GroupBox</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_BloodMoonFrequency.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="BloodMoon_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1242, 509</value>
-  </data>
-  <data name="BloodMoon_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>265, 127</value>
-  </data>
-  <data name="BloodMoon_GroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>108</value>
-  </data>
-  <data name="BloodMoon_GroupBox.Text" xml:space="preserve">
-    <value>Blood Moon Settings</value>
-  </data>
-  <data name="&gt;&gt;BloodMoon_GroupBox.Name" xml:space="preserve">
-    <value>BloodMoon_GroupBox</value>
-  </data>
-  <data name="&gt;&gt;BloodMoon_GroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BloodMoon_GroupBox.Parent" xml:space="preserve">
-    <value>GameSettings_TabPage</value>
-  </data>
-  <data name="&gt;&gt;BloodMoon_GroupBox.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="autobots.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="trackBarEx10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 412</value>
-  </data>
-  <data name="trackBarEx10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>496, 20</value>
-  </data>
-  <data name="trackBarEx10.TabIndex" type="System.Int32, mscorlib">
-    <value>22</value>
-  </data>
-  <data name="trackBarEx10.Text" xml:space="preserve">
-    <value>trackBarEx10</value>
-  </data>
-  <data name="&gt;&gt;trackBarEx10.Name" xml:space="preserve">
-    <value>trackBarEx10</value>
-  </data>
-  <data name="&gt;&gt;trackBarEx10.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
-  </data>
-  <data name="&gt;&gt;trackBarEx10.Parent" xml:space="preserve">
-    <value>autobots</value>
-  </data>
-  <data name="&gt;&gt;trackBarEx10.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="trackBarEx9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 327</value>
-  </data>
-  <data name="trackBarEx9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>496, 20</value>
-  </data>
-  <data name="trackBarEx9.TabIndex" type="System.Int32, mscorlib">
     <value>21</value>
-  </data>
-  <data name="trackBarEx9.Text" xml:space="preserve">
-    <value>trackBarEx9</value>
-  </data>
-  <data name="&gt;&gt;trackBarEx9.Name" xml:space="preserve">
-    <value>trackBarEx9</value>
-  </data>
-  <data name="&gt;&gt;trackBarEx9.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
-  </data>
-  <data name="&gt;&gt;trackBarEx9.Parent" xml:space="preserve">
-    <value>autobots</value>
-  </data>
-  <data name="&gt;&gt;trackBarEx9.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="trackBarEx8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 246</value>
-  </data>
-  <data name="trackBarEx8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>496, 20</value>
-  </data>
-  <data name="trackBarEx8.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="trackBarEx8.Text" xml:space="preserve">
-    <value>trackBarEx8</value>
-  </data>
-  <data name="&gt;&gt;trackBarEx8.Name" xml:space="preserve">
-    <value>trackBarEx8</value>
-  </data>
-  <data name="&gt;&gt;trackBarEx8.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
-  </data>
-  <data name="&gt;&gt;trackBarEx8.Parent" xml:space="preserve">
-    <value>autobots</value>
-  </data>
-  <data name="&gt;&gt;trackBarEx8.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="trackBarEx6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 162</value>
-  </data>
-  <data name="trackBarEx6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>496, 20</value>
-  </data>
-  <data name="trackBarEx6.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="trackBarEx6.Text" xml:space="preserve">
-    <value>trackBarEx6</value>
-  </data>
-  <data name="&gt;&gt;trackBarEx6.Name" xml:space="preserve">
-    <value>trackBarEx6</value>
-  </data>
-  <data name="&gt;&gt;trackBarEx6.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
-  </data>
-  <data name="&gt;&gt;trackBarEx6.Parent" xml:space="preserve">
-    <value>autobots</value>
-  </data>
-  <data name="&gt;&gt;trackBarEx6.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="trackBarEx5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 76</value>
-  </data>
-  <data name="trackBarEx5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>496, 20</value>
-  </data>
-  <data name="trackBarEx5.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="trackBarEx5.Text" xml:space="preserve">
-    <value>trackBarEx5</value>
-  </data>
-  <data name="&gt;&gt;trackBarEx5.Name" xml:space="preserve">
-    <value>trackBarEx5</value>
-  </data>
-  <data name="&gt;&gt;trackBarEx5.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
-  </data>
-  <data name="&gt;&gt;trackBarEx5.Parent" xml:space="preserve">
-    <value>autobots</value>
-  </data>
-  <data name="&gt;&gt;trackBarEx5.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="ConfigProperty_BedrollExpiryTime.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="ConfigProperty_BedrollExpiryTime.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="ConfigProperty_BedrollExpiryTime.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 16</value>
-  </data>
-  <data name="ConfigProperty_BedrollExpiryTime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>490, 44</value>
-  </data>
-  <data name="ConfigProperty_BedrollExpiryTime.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="ConfigProperty_BedrollExpiryTime.ToolTip" xml:space="preserve">
-    <value>Number of days a bedroll stays active after owner was last online.</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_BedrollExpiryTime.Name" xml:space="preserve">
-    <value>ConfigProperty_BedrollExpiryTime</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_BedrollExpiryTime.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_BedrollExpiryTime.Parent" xml:space="preserve">
-    <value>BedrollExpiryTime_GroupBox</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_BedrollExpiryTime.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="BedrollExpiryTime_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 14</value>
-  </data>
-  <data name="BedrollExpiryTime_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>496, 63</value>
-  </data>
-  <data name="BedrollExpiryTime_GroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="BedrollExpiryTime_GroupBox.Text" xml:space="preserve">
-    <value>Bedroll Offline Expiry </value>
-  </data>
-  <data name="&gt;&gt;BedrollExpiryTime_GroupBox.Name" xml:space="preserve">
-    <value>BedrollExpiryTime_GroupBox</value>
-  </data>
-  <data name="&gt;&gt;BedrollExpiryTime_GroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BedrollExpiryTime_GroupBox.Parent" xml:space="preserve">
-    <value>autobots</value>
-  </data>
-  <data name="&gt;&gt;BedrollExpiryTime_GroupBox.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="BedrollDeadZoneSize_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="ConfigProperty_BedrollDeadZoneSize.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="ConfigProperty_BedrollDeadZoneSize.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="ConfigProperty_BedrollDeadZoneSize.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 16</value>
-  </data>
-  <data name="ConfigProperty_BedrollDeadZoneSize.Size" type="System.Drawing.Size, System.Drawing">
-    <value>490, 44</value>
-  </data>
-  <data name="ConfigProperty_BedrollDeadZoneSize.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="ConfigProperty_BedrollDeadZoneSize.ToolTip" xml:space="preserve">
-    <value>Size (box "radius", so a box with 2 times the given value for each side's length) of bedroll deadzone.
-No zombies will spawn inside this area, and any cleared sleeper volumes that touch a bedroll deadzone will not spawn after they've been cleared.</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_BedrollDeadZoneSize.Name" xml:space="preserve">
-    <value>ConfigProperty_BedrollDeadZoneSize</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_BedrollDeadZoneSize.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_BedrollDeadZoneSize.Parent" xml:space="preserve">
-    <value>BedrollDeadZoneSize_GroupBox</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_BedrollDeadZoneSize.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="BedrollDeadZoneSize_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 348</value>
-  </data>
-  <data name="BedrollDeadZoneSize_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>496, 63</value>
-  </data>
-  <data name="BedrollDeadZoneSize_GroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="BedrollDeadZoneSize_GroupBox.Text" xml:space="preserve">
-    <value>Minimum Enemy Spawn Block Distance From Bedroll</value>
-  </data>
-  <data name="&gt;&gt;BedrollDeadZoneSize_GroupBox.Name" xml:space="preserve">
-    <value>BedrollDeadZoneSize_GroupBox</value>
-  </data>
-  <data name="&gt;&gt;BedrollDeadZoneSize_GroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BedrollDeadZoneSize_GroupBox.Parent" xml:space="preserve">
-    <value>autobots</value>
-  </data>
-  <data name="&gt;&gt;BedrollDeadZoneSize_GroupBox.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="BloodMoonEnemyCount_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="ConfigProperty_BloodMoonEnemyCount.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="ConfigProperty_BloodMoonEnemyCount.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="ConfigProperty_BloodMoonEnemyCount.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 16</value>
-  </data>
-  <data name="ConfigProperty_BloodMoonEnemyCount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>490, 45</value>
-  </data>
-  <data name="ConfigProperty_BloodMoonEnemyCount.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="ConfigProperty_BloodMoonEnemyCount.ToolTip" xml:space="preserve">
-    <value>The number of zombies spawned during blood moons per player.</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_BloodMoonEnemyCount.Name" xml:space="preserve">
-    <value>ConfigProperty_BloodMoonEnemyCount</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_BloodMoonEnemyCount.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_BloodMoonEnemyCount.Parent" xml:space="preserve">
-    <value>BloodMoonEnemyCount_GroupBox</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_BloodMoonEnemyCount.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="BloodMoonEnemyCount_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 267</value>
-  </data>
-  <data name="BloodMoonEnemyCount_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>496, 64</value>
-  </data>
-  <data name="BloodMoonEnemyCount_GroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="BloodMoonEnemyCount_GroupBox.Text" xml:space="preserve">
-    <value>Zombies Spawned For Every Player During Blood Moon</value>
-  </data>
-  <data name="&gt;&gt;BloodMoonEnemyCount_GroupBox.Name" xml:space="preserve">
-    <value>BloodMoonEnemyCount_GroupBox</value>
-  </data>
-  <data name="&gt;&gt;BloodMoonEnemyCount_GroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BloodMoonEnemyCount_GroupBox.Parent" xml:space="preserve">
-    <value>autobots</value>
-  </data>
-  <data name="&gt;&gt;BloodMoonEnemyCount_GroupBox.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="MaxSpawnedAnimals_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="ConfigProperty_MaxSpawnedAnimals.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="ConfigProperty_MaxSpawnedAnimals.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="ConfigProperty_MaxSpawnedAnimals.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 16</value>
-  </data>
-  <data name="ConfigProperty_MaxSpawnedAnimals.Size" type="System.Drawing.Size, System.Drawing">
-    <value>490, 45</value>
-  </data>
-  <data name="ConfigProperty_MaxSpawnedAnimals.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="ConfigProperty_MaxSpawnedAnimals.ToolTip" xml:space="preserve">
-    <value>If your server has a large number of players you can increase this limit to add more wildlife.
-
-Animals don't consume as much CPU as zombies.
-
-NOTE: That this doesn't cause more animals to spawn arbitrarily: The biome spawning system only spawns a certain number of animals in a given area, but if you have lots of players that are all spread out then you may be hitting the limit and can increase it.</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_MaxSpawnedAnimals.Name" xml:space="preserve">
-    <value>ConfigProperty_MaxSpawnedAnimals</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_MaxSpawnedAnimals.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_MaxSpawnedAnimals.Parent" xml:space="preserve">
-    <value>MaxSpawnedAnimals_GroupBox</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_MaxSpawnedAnimals.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="MaxSpawnedAnimals_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 183</value>
-  </data>
-  <data name="MaxSpawnedAnimals_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>496, 64</value>
-  </data>
-  <data name="MaxSpawnedAnimals_GroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="MaxSpawnedAnimals_GroupBox.Text" xml:space="preserve">
-    <value>Max Spawned Animals</value>
-  </data>
-  <data name="MaxSpawnedAnimals_GroupBox.ToolTip" xml:space="preserve">
-    <value>If your server has a large number of players you can increase this limit to add more wildlife. 
-
-Animals don't consume as much CPU as zombies. 
-
-NOTE: That this doesn't cause more animals to spawn arbitrarily: The biome spawning system only spawns a certain number of animals in a given area, but if you have lots of players that are all spread out then you may be hitting the limit and can increase it.</value>
-  </data>
-  <data name="&gt;&gt;MaxSpawnedAnimals_GroupBox.Name" xml:space="preserve">
-    <value>MaxSpawnedAnimals_GroupBox</value>
-  </data>
-  <data name="&gt;&gt;MaxSpawnedAnimals_GroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MaxSpawnedAnimals_GroupBox.Parent" xml:space="preserve">
-    <value>autobots</value>
-  </data>
-  <data name="&gt;&gt;MaxSpawnedAnimals_GroupBox.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="MaxSpawnedZombies_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="ConfigProperty_MaxSpawnedZombies.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="ConfigProperty_MaxSpawnedZombies.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="ConfigProperty_MaxSpawnedZombies.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 16</value>
-  </data>
-  <data name="ConfigProperty_MaxSpawnedZombies.Size" type="System.Drawing.Size, System.Drawing">
-    <value>490, 45</value>
-  </data>
-  <data name="ConfigProperty_MaxSpawnedZombies.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="ConfigProperty_MaxSpawnedZombies.ToolTip" xml:space="preserve">
-    <value>Making this number too large (more than about 80) may cause servers to run at poor framerates which will effect lag and play quality for clients.</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_MaxSpawnedZombies.Name" xml:space="preserve">
-    <value>ConfigProperty_MaxSpawnedZombies</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_MaxSpawnedZombies.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_MaxSpawnedZombies.Parent" xml:space="preserve">
-    <value>MaxSpawnedZombies_GroupBox</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_MaxSpawnedZombies.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="MaxSpawnedZombies_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 97</value>
-  </data>
-  <data name="MaxSpawnedZombies_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>496, 64</value>
-  </data>
-  <data name="MaxSpawnedZombies_GroupBox.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="MaxSpawnedZombies_GroupBox.Text" xml:space="preserve">
-    <value>Max Spawned Zombies</value>
-  </data>
-  <data name="&gt;&gt;MaxSpawnedZombies_GroupBox.Name" xml:space="preserve">
-    <value>MaxSpawnedZombies_GroupBox</value>
-  </data>
-  <data name="&gt;&gt;MaxSpawnedZombies_GroupBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;MaxSpawnedZombies_GroupBox.Parent" xml:space="preserve">
-    <value>autobots</value>
-  </data>
-  <data name="&gt;&gt;MaxSpawnedZombies_GroupBox.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="autobots.Location" type="System.Drawing.Point, System.Drawing">
-    <value>395, 243</value>
-  </data>
-  <data name="autobots.Size" type="System.Drawing.Size, System.Drawing">
-    <value>508, 438</value>
-  </data>
-  <data name="autobots.TabIndex" type="System.Int32, mscorlib">
-    <value>109</value>
-  </data>
-  <data name="autobots.Text" xml:space="preserve">
-    <value>Spawn</value>
-  </data>
-  <data name="&gt;&gt;autobots.Name" xml:space="preserve">
-    <value>autobots</value>
-  </data>
-  <data name="&gt;&gt;autobots.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;autobots.Parent" xml:space="preserve">
-    <value>GameSettings_TabPage</value>
-  </data>
-  <data name="&gt;&gt;autobots.ZOrder" xml:space="preserve">
-    <value>15</value>
   </data>
   <data name="configfile_e.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -8040,7 +7861,7 @@ NOTE: That this doesn't cause more animals to spawn arbitrarily: The biome spawn
     <value>1</value>
   </data>
   <data name="User_Data_Folder_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1699, 499</value>
+    <value>954, 562</value>
   </data>
   <data name="User_Data_Folder_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>183, 48</value>
@@ -8061,7 +7882,7 @@ NOTE: That this doesn't cause more animals to spawn arbitrarily: The biome spawn
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;User_Data_Folder_GroupBox.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>22</value>
   </data>
   <data name="ConfigProperty_SaveGameFolder.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -8091,7 +7912,7 @@ NOTE: That this doesn't cause more animals to spawn arbitrarily: The biome spawn
     <value>0</value>
   </data>
   <data name="Save_Game_Folder_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1513, 548</value>
+    <value>768, 611</value>
   </data>
   <data name="Save_Game_Folder_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>369, 48</value>
@@ -8112,7 +7933,7 @@ NOTE: That this doesn't cause more animals to spawn arbitrarily: The biome spawn
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;Save_Game_Folder_GroupBox.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>23</value>
   </data>
   <data name="Server_Admin_Path_Selector_Button.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -8177,7 +7998,7 @@ Path relative to the SaveGameFolder.</value>
     <value>1</value>
   </data>
   <data name="Server_Admin_Config_File_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1513, 499</value>
+    <value>768, 562</value>
   </data>
   <data name="Server_Admin_Config_File_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 48</value>
@@ -8198,7 +8019,7 @@ Path relative to the SaveGameFolder.</value>
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;Server_Admin_Config_File_GroupBox.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>24</value>
   </data>
   <data name="ConfigProperty_ServerLoginConfirmationText.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -8257,7 +8078,7 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;Server_Login_Confirmation_Text_GroupBox.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>25</value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
     <value>306, 14</value>
@@ -8332,7 +8153,7 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;ServerPassword_GroupBox.ZOrder" xml:space="preserve">
-    <value>20</value>
+    <value>26</value>
   </data>
   <data name="ConfigProperty_ServerWebsiteURL.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -8383,7 +8204,7 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;ServerWebsiteURL_GroupBox.ZOrder" xml:space="preserve">
-    <value>21</value>
+    <value>27</value>
   </data>
   <data name="ConfigProperty_ServerDescription.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -8437,7 +8258,7 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;ServerDescription_GroupBox.ZOrder" xml:space="preserve">
-    <value>22</value>
+    <value>28</value>
   </data>
   <data name="ConfigProperty_ServerName.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -8491,7 +8312,7 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;ServerName_GroupBox.ZOrder" xml:space="preserve">
-    <value>23</value>
+    <value>29</value>
   </data>
   <data name="BlockDamageAIBM_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -8536,7 +8357,7 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
     <value>97</value>
   </data>
   <data name="BlockDamageAIBM_GroupBox.Text" xml:space="preserve">
-    <value>AI Block Damage During Blood Moon [%100]</value>
+    <value>AI Block Damage During Blood Moon [100%]</value>
   </data>
   <data name="&gt;&gt;BlockDamageAIBM_GroupBox.Name" xml:space="preserve">
     <value>BlockDamageAIBM_GroupBox</value>
@@ -8548,7 +8369,7 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;BlockDamageAIBM_GroupBox.ZOrder" xml:space="preserve">
-    <value>24</value>
+    <value>30</value>
   </data>
   <data name="PartySharedKillRange_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -8614,7 +8435,7 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
     <value>1</value>
   </data>
   <data name="PartySharedKillRange_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1700, 270</value>
+    <value>1898, 270</value>
   </data>
   <data name="PartySharedKillRange_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>179, 78</value>
@@ -8635,7 +8456,7 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;PartySharedKillRange_GroupBox.ZOrder" xml:space="preserve">
-    <value>25</value>
+    <value>31</value>
   </data>
   <data name="ZombieBloodMoonSpeed_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -8683,7 +8504,7 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
     <value>0</value>
   </data>
   <data name="ZombieBloodMoonSpeed_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1890, 534</value>
+    <value>768, 484</value>
   </data>
   <data name="ZombieBloodMoonSpeed_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>179, 49</value>
@@ -8704,7 +8525,7 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;ZombieBloodMoonSpeed_GroupBox.ZOrder" xml:space="preserve">
-    <value>26</value>
+    <value>32</value>
   </data>
   <data name="ZombieNightSpeed_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -8752,7 +8573,7 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
     <value>0</value>
   </data>
   <data name="ZombieNightSpeed_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1890, 425</value>
+    <value>768, 374</value>
   </data>
   <data name="ZombieNightSpeed_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>179, 49</value>
@@ -8773,7 +8594,7 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;ZombieNightSpeed_GroupBox.ZOrder" xml:space="preserve">
-    <value>27</value>
+    <value>33</value>
   </data>
   <data name="ZombieFeralSpeed_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -8821,7 +8642,7 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
     <value>0</value>
   </data>
   <data name="ZombieFeralSpeed_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1890, 479</value>
+    <value>768, 429</value>
   </data>
   <data name="ZombieFeralSpeed_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>179, 49</value>
@@ -8842,84 +8663,52 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;ZombieFeralSpeed_GroupBox.ZOrder" xml:space="preserve">
-    <value>28</value>
+    <value>34</value>
   </data>
   <data name="ServerMaxAllowedViewDistance_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="trackBarEx3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="trackBarEx3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 51</value>
-  </data>
-  <data name="trackBarEx3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 20</value>
-  </data>
-  <data name="trackBarEx3.TabIndex" type="System.Int32, mscorlib">
-    <value>129</value>
-  </data>
-  <data name="trackBarEx3.Text" xml:space="preserve">
-    <value>Stuff</value>
-  </data>
-  <data name="trackBarEx3.ToolTip" xml:space="preserve">
-    <value>Real world minutes per in-game day: 60 minutes.</value>
-  </data>
-  <data name="&gt;&gt;trackBarEx3.Name" xml:space="preserve">
-    <value>trackBarEx3</value>
-  </data>
-  <data name="&gt;&gt;trackBarEx3.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
-  </data>
-  <data name="&gt;&gt;trackBarEx3.Parent" xml:space="preserve">
-    <value>ServerMaxAllowedViewDistance_GroupBox</value>
-  </data>
-  <data name="&gt;&gt;trackBarEx3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="ConfigProperty_ServerMaxAllowedViewDistance.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="ConfigProperty_ServerMaxAllowedViewDistance.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+  <data name="ConfigProperty_ServerMaxAllowedViewDistance.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="ConfigProperty_ServerMaxAllowedViewDistance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 13</value>
+    <value>3, 16</value>
   </data>
   <data name="ConfigProperty_ServerMaxAllowedViewDistance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 45</value>
+    <value>363, 20</value>
   </data>
   <data name="ConfigProperty_ServerMaxAllowedViewDistance.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+    <value>129</value>
+  </data>
+  <data name="ConfigProperty_ServerMaxAllowedViewDistance.Text" xml:space="preserve">
+    <value>12</value>
   </data>
   <data name="ConfigProperty_ServerMaxAllowedViewDistance.ToolTip" xml:space="preserve">
-    <value>Max viewdistance a client may request (6 - 12). 
-
-High impact on memory usage and performance.</value>
+    <value>Max viewdistance a client may request. </value>
   </data>
   <data name="&gt;&gt;ConfigProperty_ServerMaxAllowedViewDistance.Name" xml:space="preserve">
     <value>ConfigProperty_ServerMaxAllowedViewDistance</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_ServerMaxAllowedViewDistance.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_ServerMaxAllowedViewDistance.Parent" xml:space="preserve">
     <value>ServerMaxAllowedViewDistance_GroupBox</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_ServerMaxAllowedViewDistance.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="ServerMaxAllowedViewDistance_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1706, 171</value>
+    <value>389, 524</value>
   </data>
   <data name="ServerMaxAllowedViewDistance_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 74</value>
+    <value>369, 40</value>
   </data>
   <data name="ServerMaxAllowedViewDistance_GroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>76</value>
   </data>
   <data name="ServerMaxAllowedViewDistance_GroupBox.Text" xml:space="preserve">
-    <value>Server Max Allowed View Distance</value>
+    <value>Server Max Allowed View Distance [12]</value>
   </data>
   <data name="&gt;&gt;ServerMaxAllowedViewDistance_GroupBox.Name" xml:space="preserve">
     <value>ServerMaxAllowedViewDistance_GroupBox</value>
@@ -8931,10 +8720,13 @@ High impact on memory usage and performance.</value>
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;ServerMaxAllowedViewDistance_GroupBox.ZOrder" xml:space="preserve">
-    <value>29</value>
+    <value>35</value>
   </data>
   <data name="DropOnQuit_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
+  </data>
+  <data name="ConfigProperty_DropOnQuit.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="ConfigProperty_DropOnQuit.Items" xml:space="preserve">
     <value>Nothing</value>
@@ -8949,10 +8741,10 @@ High impact on memory usage and performance.</value>
     <value>Backpack Only</value>
   </data>
   <data name="ConfigProperty_DropOnQuit.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 20</value>
+    <value>3, 16</value>
   </data>
   <data name="ConfigProperty_DropOnQuit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>141, 21</value>
+    <value>132, 21</value>
   </data>
   <data name="ConfigProperty_DropOnQuit.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -8976,10 +8768,10 @@ High impact on memory usage and performance.</value>
     <value>0</value>
   </data>
   <data name="DropOnQuit_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1701, 356</value>
+    <value>673, 8</value>
   </data>
   <data name="DropOnQuit_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 48</value>
+    <value>138, 41</value>
   </data>
   <data name="DropOnQuit_GroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>96</value>
@@ -8997,7 +8789,7 @@ High impact on memory usage and performance.</value>
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;DropOnQuit_GroupBox.ZOrder" xml:space="preserve">
-    <value>30</value>
+    <value>36</value>
   </data>
   <data name="XPMultiplier_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -9054,7 +8846,7 @@ High impact on memory usage and performance.</value>
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;XPMultiplier_GroupBox.ZOrder" xml:space="preserve">
-    <value>31</value>
+    <value>37</value>
   </data>
   <data name="BlockDamageAI_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -9111,7 +8903,7 @@ High impact on memory usage and performance.</value>
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;BlockDamageAI_GroupBox.ZOrder" xml:space="preserve">
-    <value>32</value>
+    <value>38</value>
   </data>
   <data name="ServerReservedSlots_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -9345,7 +9137,7 @@ High impact on memory usage and performance.</value>
     <value>7</value>
   </data>
   <data name="ServerReservedSlots_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1324, 232</value>
+    <value>987, 199</value>
   </data>
   <data name="ServerReservedSlots_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>365, 65</value>
@@ -9366,7 +9158,7 @@ High impact on memory usage and performance.</value>
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;ServerReservedSlots_GroupBox.ZOrder" xml:space="preserve">
-    <value>33</value>
+    <value>39</value>
   </data>
   <data name="Player_Killing_Mode_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -9432,10 +9224,13 @@ High impact on memory usage and performance.</value>
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;Player_Killing_Mode_GroupBox.ZOrder" xml:space="preserve">
-    <value>34</value>
+    <value>40</value>
   </data>
   <data name="DropOnDeath_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
+  </data>
+  <data name="ConfigProperty_DropOnDeath.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
   </data>
   <data name="ConfigProperty_DropOnDeath.Items" xml:space="preserve">
     <value>Nothing</value>
@@ -9453,10 +9248,10 @@ High impact on memory usage and performance.</value>
     <value>Delete All</value>
   </data>
   <data name="ConfigProperty_DropOnDeath.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 20</value>
+    <value>3, 16</value>
   </data>
   <data name="ConfigProperty_DropOnDeath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>140, 21</value>
+    <value>132, 21</value>
   </data>
   <data name="ConfigProperty_DropOnDeath.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -9480,10 +9275,10 @@ High impact on memory usage and performance.</value>
     <value>0</value>
   </data>
   <data name="DropOnDeath_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1700, 405</value>
+    <value>817, 11</value>
   </data>
   <data name="DropOnDeath_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 48</value>
+    <value>138, 41</value>
   </data>
   <data name="DropOnDeath_GroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>77</value>
@@ -9501,7 +9296,7 @@ High impact on memory usage and performance.</value>
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;DropOnDeath_GroupBox.ZOrder" xml:space="preserve">
-    <value>35</value>
+    <value>41</value>
   </data>
   <data name="AirDropFrequency_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -9588,7 +9383,7 @@ High impact on memory usage and performance.</value>
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;AirDropFrequency_GroupBox.ZOrder" xml:space="preserve">
-    <value>36</value>
+    <value>42</value>
   </data>
   <data name="Land_Claim_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -10018,7 +9813,7 @@ All claims have full protection for the first 24hrs.</value>
     <value>5</value>
   </data>
   <data name="Land_Claim_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>978, 284</value>
+    <value>1733, 372</value>
   </data>
   <data name="Land_Claim_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>338, 209</value>
@@ -10039,7 +9834,7 @@ All claims have full protection for the first 24hrs.</value>
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;Land_Claim_GroupBox.ZOrder" xml:space="preserve">
-    <value>37</value>
+    <value>43</value>
   </data>
   <data name="LootAbundance_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -10123,7 +9918,7 @@ All claims have full protection for the first 24hrs.</value>
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;LootAbundance_GroupBox.ZOrder" xml:space="preserve">
-    <value>38</value>
+    <value>44</value>
   </data>
   <data name="ServerMaxPlayerCount_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -10135,7 +9930,7 @@ All claims have full protection for the first 24hrs.</value>
     <value>3, 16</value>
   </data>
   <data name="ConfigProperty_ServerMaxPlayerCount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>359, 20</value>
+    <value>363, 20</value>
   </data>
   <data name="ConfigProperty_ServerMaxPlayerCount.TabIndex" type="System.Int32, mscorlib">
     <value>127</value>
@@ -10156,16 +9951,16 @@ All claims have full protection for the first 24hrs.</value>
     <value>0</value>
   </data>
   <data name="ServerMaxPlayerCount_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1324, 136</value>
+    <value>389, 620</value>
   </data>
   <data name="ServerMaxPlayerCount_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>365, 42</value>
+    <value>369, 42</value>
   </data>
   <data name="ServerMaxPlayerCount_GroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>87</value>
   </data>
   <data name="ServerMaxPlayerCount_GroupBox.Text" xml:space="preserve">
-    <value>Max Players</value>
+    <value>Max Players [8]</value>
   </data>
   <data name="&gt;&gt;ServerMaxPlayerCount_GroupBox.Name" xml:space="preserve">
     <value>ServerMaxPlayerCount_GroupBox</value>
@@ -10177,7 +9972,7 @@ All claims have full protection for the first 24hrs.</value>
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;ServerMaxPlayerCount_GroupBox.ZOrder" xml:space="preserve">
-    <value>39</value>
+    <value>45</value>
   </data>
   <data name="ZombieDaySpeed_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -10225,7 +10020,7 @@ All claims have full protection for the first 24hrs.</value>
     <value>0</value>
   </data>
   <data name="ZombieDaySpeed_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1890, 370</value>
+    <value>768, 319</value>
   </data>
   <data name="ZombieDaySpeed_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>179, 49</value>
@@ -10246,7 +10041,7 @@ All claims have full protection for the first 24hrs.</value>
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;ZombieDaySpeed_GroupBox.ZOrder" xml:space="preserve">
-    <value>40</value>
+    <value>46</value>
   </data>
   <data name="DayLightLength_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -10258,13 +10053,13 @@ All claims have full protection for the first 24hrs.</value>
     <value>3, 16</value>
   </data>
   <data name="ConfigProperty_DayLightLength.Size" type="System.Drawing.Size, System.Drawing">
-    <value>359, 20</value>
+    <value>363, 20</value>
   </data>
   <data name="ConfigProperty_DayLightLength.TabIndex" type="System.Int32, mscorlib">
     <value>128</value>
   </data>
   <data name="ConfigProperty_DayLightLength.Text" xml:space="preserve">
-    <value>Stuff</value>
+    <value>18</value>
   </data>
   <data name="ConfigProperty_DayLightLength.ToolTip" xml:space="preserve">
     <value>In-game hours the sun shines per day.</value>
@@ -10282,16 +10077,16 @@ All claims have full protection for the first 24hrs.</value>
     <value>0</value>
   </data>
   <data name="DayLightLength_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1324, 184</value>
+    <value>389, 290</value>
   </data>
   <data name="DayLightLength_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>365, 42</value>
+    <value>369, 41</value>
   </data>
   <data name="DayLightLength_GroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>83</value>
   </data>
   <data name="DayLightLength_GroupBox.Text" xml:space="preserve">
-    <value>Sunshine Hours</value>
+    <value>Sun Shines For [18] Hours Each Game Day</value>
   </data>
   <data name="&gt;&gt;DayLightLength_GroupBox.Name" xml:space="preserve">
     <value>DayLightLength_GroupBox</value>
@@ -10303,7 +10098,7 @@ All claims have full protection for the first 24hrs.</value>
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;DayLightLength_GroupBox.ZOrder" xml:space="preserve">
-    <value>41</value>
+    <value>47</value>
   </data>
   <data name="DayNightLength_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -10315,13 +10110,10 @@ All claims have full protection for the first 24hrs.</value>
     <value>3, 16</value>
   </data>
   <data name="ConfigProperty_DayNightLength.Size" type="System.Drawing.Size, System.Drawing">
-    <value>359, 20</value>
+    <value>363, 20</value>
   </data>
   <data name="ConfigProperty_DayNightLength.TabIndex" type="System.Int32, mscorlib">
     <value>126</value>
-  </data>
-  <data name="ConfigProperty_DayNightLength.Text" xml:space="preserve">
-    <value>Stuff</value>
   </data>
   <data name="ConfigProperty_DayNightLength.ToolTip" xml:space="preserve">
     <value>Real world minutes per in-game day: 60 minutes.</value>
@@ -10339,16 +10131,16 @@ All claims have full protection for the first 24hrs.</value>
     <value>0</value>
   </data>
   <data name="DayNightLength_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1324, 87</value>
+    <value>389, 243</value>
   </data>
   <data name="DayNightLength_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>365, 43</value>
+    <value>369, 40</value>
   </data>
   <data name="DayNightLength_GroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>80</value>
   </data>
   <data name="DayNightLength_GroupBox.Text" xml:space="preserve">
-    <value>Day Length</value>
+    <value>Each In Game Day Equals [60] Real World Minutes</value>
   </data>
   <data name="&gt;&gt;DayNightLength_GroupBox.Name" xml:space="preserve">
     <value>DayNightLength_GroupBox</value>
@@ -10360,7 +10152,7 @@ All claims have full protection for the first 24hrs.</value>
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;DayNightLength_GroupBox.ZOrder" xml:space="preserve">
-    <value>42</value>
+    <value>48</value>
   </data>
   <data name="GameDifficulty_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -10402,7 +10194,7 @@ All claims have full protection for the first 24hrs.</value>
     <value>75</value>
   </data>
   <data name="GameDifficulty_GroupBox.Text" xml:space="preserve">
-    <value>Game Difficulty</value>
+    <value>Game Difficulty [2]</value>
   </data>
   <data name="&gt;&gt;GameDifficulty_GroupBox.Name" xml:space="preserve">
     <value>GameDifficulty_GroupBox</value>
@@ -10414,7 +10206,7 @@ All claims have full protection for the first 24hrs.</value>
     <value>GameSettings_TabPage</value>
   </data>
   <data name="&gt;&gt;GameDifficulty_GroupBox.ZOrder" xml:space="preserve">
-    <value>43</value>
+    <value>49</value>
   </data>
   <data name="GameSettings_TabPage.Location" type="System.Drawing.Point, System.Drawing">
     <value>47, 4</value>
@@ -16238,7 +16030,7 @@ Blue- server is running on dedicated files</value>
     <value>True</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>51</value>
+    <value>25</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>96, 96</value>

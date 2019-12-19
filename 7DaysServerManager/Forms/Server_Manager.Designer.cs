@@ -35,6 +35,12 @@
             Syncfusion.Windows.Forms.Gauge.Range range1 = new Syncfusion.Windows.Forms.Gauge.Range();
             Syncfusion.Windows.Forms.Gauge.Range range2 = new Syncfusion.Windows.Forms.Gauge.Range();
             Syncfusion.Windows.Forms.Gauge.Range range3 = new Syncfusion.Windows.Forms.Gauge.Range();
+            Syncfusion.Windows.Forms.Gauge.Range range4 = new Syncfusion.Windows.Forms.Gauge.Range();
+            Syncfusion.Windows.Forms.Gauge.Range range5 = new Syncfusion.Windows.Forms.Gauge.Range();
+            Syncfusion.Windows.Forms.Gauge.Range range6 = new Syncfusion.Windows.Forms.Gauge.Range();
+            Syncfusion.Windows.Forms.Gauge.Range range7 = new Syncfusion.Windows.Forms.Gauge.Range();
+            Syncfusion.Windows.Forms.Gauge.Range range8 = new Syncfusion.Windows.Forms.Gauge.Range();
+            Syncfusion.Windows.Forms.Gauge.Range range9 = new Syncfusion.Windows.Forms.Gauge.Range();
             Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection1 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
             Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection1 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
             Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection1 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
@@ -205,8 +211,20 @@
             this.login_header = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.steamid_header = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.GameSettings_TabPage = new System.Windows.Forms.TabPage();
+            this.BloodMoonEnemyCount_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_BloodMoonEnemyCount = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1, 75);
+            this.BloodMoonRange_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_BloodMoonRange = new Syncfusion.Windows.Forms.Tools.TrackBarEx(0, 365);
+            this.BloodMoonWarning_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_BloodMoonWarning = new Syncfusion.Windows.Forms.Tools.TrackBarEx(-1, 23);
+            this.BloodMoonFrequency_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_BloodMoonFrequency = new Syncfusion.Windows.Forms.Tools.TrackBarEx(0, 365);
             this.PlayerSafeZoneHours_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_PlayerSafeZoneHours = new System.Windows.Forms.TextBox();
+            this.MaxSpawnedAnimals_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_MaxSpawnedAnimals = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1, 75);
+            this.MaxSpawnedZombies_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_MaxSpawnedZombies = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1, 75);
             this.BlockDamagePlayer_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_BlockDamagePlayer = new Syncfusion.Windows.Forms.Tools.TrackBarEx(25, 1000);
             this.Telnet_GroupBox = new System.Windows.Forms.GroupBox();
@@ -230,6 +248,8 @@
             this.ConfigProperty_WorldGenSize = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1024, 16384);
             this.GameMode_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_GameMode = new System.Windows.Forms.ComboBox();
+            this.BedrollExpiryTime_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_BedrollExpiryTime = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1, 365);
             this.PlayerSafeZoneLevel_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_PlayerSafeZoneLevel = new System.Windows.Forms.TextBox();
             this.ServerOptions_GroupBox = new System.Windows.Forms.GroupBox();
@@ -240,6 +260,8 @@
             this.ConfigProperty_EnemyDifficulty = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.ConfigProperty_BuildCreate = new Syncfusion.Windows.Forms.Tools.ToggleButton();
             this.ConfigProperty_PersistentPlayerProfiles = new Syncfusion.Windows.Forms.Tools.ToggleButton();
+            this.BedrollDeadZoneSize_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_BedrollDeadZoneSize = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1, 500);
             this.LootRespawnDays_GroupBox = new System.Windows.Forms.GroupBox();
             this.trackBarEx4 = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1, 1300);
             this.ConfigProperty_LootRespawnDays = new System.Windows.Forms.TrackBar();
@@ -261,24 +283,6 @@
             this.ControlPanel_Password_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_ControlPanelPassword = new System.Windows.Forms.TextBox();
             this.ConfigProperty_ControlPanelEnabled = new Syncfusion.Windows.Forms.Tools.ToggleButton();
-            this.BloodMoon_GroupBox = new System.Windows.Forms.GroupBox();
-            this.BloodMoonWarning_Label = new System.Windows.Forms.Label();
-            this.ConfigProperty_BloodMoonWarning = new System.Windows.Forms.NumericUpDown();
-            this.ConfigProperty_BloodMoonRange = new System.Windows.Forms.NumericUpDown();
-            this.BloodMoonRange_Label = new System.Windows.Forms.Label();
-            this.BloodMoonFrequency_Label = new System.Windows.Forms.Label();
-            this.ConfigProperty_BloodMoonFrequency = new System.Windows.Forms.NumericUpDown();
-            this.autobots = new System.Windows.Forms.GroupBox();
-            this.BedrollExpiryTime_GroupBox = new System.Windows.Forms.GroupBox();
-            this.ConfigProperty_BedrollExpiryTime = new System.Windows.Forms.TrackBar();
-            this.BedrollDeadZoneSize_GroupBox = new System.Windows.Forms.GroupBox();
-            this.ConfigProperty_BedrollDeadZoneSize = new System.Windows.Forms.TrackBar();
-            this.BloodMoonEnemyCount_GroupBox = new System.Windows.Forms.GroupBox();
-            this.ConfigProperty_BloodMoonEnemyCount = new System.Windows.Forms.TrackBar();
-            this.MaxSpawnedAnimals_GroupBox = new System.Windows.Forms.GroupBox();
-            this.ConfigProperty_MaxSpawnedAnimals = new System.Windows.Forms.TrackBar();
-            this.MaxSpawnedZombies_GroupBox = new System.Windows.Forms.GroupBox();
-            this.ConfigProperty_MaxSpawnedZombies = new System.Windows.Forms.TrackBar();
             this.User_Data_Folder_GroupBox = new System.Windows.Forms.GroupBox();
             this.configfile_e = new System.Windows.Forms.Button();
             this.ConfigProperty_UserDataFolder = new System.Windows.Forms.TextBox();
@@ -310,8 +314,7 @@
             this.ZombieFeralSpeed_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_ZombieFeralMove = new System.Windows.Forms.ComboBox();
             this.ServerMaxAllowedViewDistance_GroupBox = new System.Windows.Forms.GroupBox();
-            this.trackBarEx3 = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1, 1300);
-            this.ConfigProperty_ServerMaxAllowedViewDistance = new System.Windows.Forms.TrackBar();
+            this.ConfigProperty_ServerMaxAllowedViewDistance = new Syncfusion.Windows.Forms.Tools.TrackBarEx(6, 12);
             this.DropOnQuit_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_DropOnQuit = new System.Windows.Forms.ComboBox();
             this.XPMultiplier_GroupBox = new System.Windows.Forms.GroupBox();
@@ -514,11 +517,6 @@
             this.forumklik = new System.Windows.Forms.Button();
             this.www7dsm = new System.Windows.Forms.Button();
             this.NitroGEN_Map_Generator_Link = new System.Windows.Forms.LinkLabel();
-            this.trackBarEx5 = new Syncfusion.Windows.Forms.Tools.TrackBarEx(0, 10);
-            this.trackBarEx6 = new Syncfusion.Windows.Forms.Tools.TrackBarEx(0, 10);
-            this.trackBarEx8 = new Syncfusion.Windows.Forms.Tools.TrackBarEx(0, 10);
-            this.trackBarEx9 = new Syncfusion.Windows.Forms.Tools.TrackBarEx(0, 10);
-            this.trackBarEx10 = new Syncfusion.Windows.Forms.Tools.TrackBarEx(0, 10);
             this.Settings_TabPage.SuspendLayout();
             this.Updates_GroupBox.SuspendLayout();
             this.exe_settings_g.SuspendLayout();
@@ -558,7 +556,13 @@
             this.Ban_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Ban_Slider_TrackBar)).BeginInit();
             this.GameSettings_TabPage.SuspendLayout();
+            this.BloodMoonEnemyCount_GroupBox.SuspendLayout();
+            this.BloodMoonRange_GroupBox.SuspendLayout();
+            this.BloodMoonWarning_GroupBox.SuspendLayout();
+            this.BloodMoonFrequency_GroupBox.SuspendLayout();
             this.PlayerSafeZoneHours_GroupBox.SuspendLayout();
+            this.MaxSpawnedAnimals_GroupBox.SuspendLayout();
+            this.MaxSpawnedZombies_GroupBox.SuspendLayout();
             this.BlockDamagePlayer_GroupBox.SuspendLayout();
             this.Telnet_GroupBox.SuspendLayout();
             this.Telnet_FailedLoginLimit_GroupBox.SuspendLayout();
@@ -572,6 +576,7 @@
             this.WorldGenSeed_GroupBox.SuspendLayout();
             this.WorldGenSize_GroupBox.SuspendLayout();
             this.GameMode_GroupBox.SuspendLayout();
+            this.BedrollExpiryTime_GroupBox.SuspendLayout();
             this.PlayerSafeZoneLevel_GroupBox.SuspendLayout();
             this.ServerOptions_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_EnemySpawnMode)).BeginInit();
@@ -581,6 +586,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_EnemyDifficulty)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BuildCreate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_PersistentPlayerProfiles)).BeginInit();
+            this.BedrollDeadZoneSize_GroupBox.SuspendLayout();
             this.LootRespawnDays_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_LootRespawnDays)).BeginInit();
             this.ServerMaxWorldTransferSpeedKiBs_GroupBox.SuspendLayout();
@@ -594,21 +600,6 @@
             this.ControlPanel_Port_GroupBox.SuspendLayout();
             this.ControlPanel_Password_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_ControlPanelEnabled)).BeginInit();
-            this.BloodMoon_GroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BloodMoonWarning)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BloodMoonRange)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BloodMoonFrequency)).BeginInit();
-            this.autobots.SuspendLayout();
-            this.BedrollExpiryTime_GroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BedrollExpiryTime)).BeginInit();
-            this.BedrollDeadZoneSize_GroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BedrollDeadZoneSize)).BeginInit();
-            this.BloodMoonEnemyCount_GroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BloodMoonEnemyCount)).BeginInit();
-            this.MaxSpawnedAnimals_GroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_MaxSpawnedAnimals)).BeginInit();
-            this.MaxSpawnedZombies_GroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_MaxSpawnedZombies)).BeginInit();
             this.User_Data_Folder_GroupBox.SuspendLayout();
             this.Save_Game_Folder_GroupBox.SuspendLayout();
             this.Server_Admin_Config_File_GroupBox.SuspendLayout();
@@ -624,7 +615,6 @@
             this.ZombieNightSpeed_GroupBox.SuspendLayout();
             this.ZombieFeralSpeed_GroupBox.SuspendLayout();
             this.ServerMaxAllowedViewDistance_GroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_ServerMaxAllowedViewDistance)).BeginInit();
             this.DropOnQuit_GroupBox.SuspendLayout();
             this.XPMultiplier_GroupBox.SuspendLayout();
             this.BlockDamageAI_GroupBox.SuspendLayout();
@@ -1552,7 +1542,7 @@
             this.Server_Clock.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.RoundedRectangle;
             this.Server_Clock.ClockType = Syncfusion.Windows.Forms.Tools.ClockTypes.Digital;
             this.Server_Clock.CurrentDateTime = new System.DateTime(2019, 12, 17, 0, 0, 0, 0);
-            this.Server_Clock.CustomTime = new System.DateTime(2019, 12, 18, 23, 55, 36, 806);
+            this.Server_Clock.CustomTime = new System.DateTime(2019, 12, 19, 18, 55, 3, 863);
             this.Server_Clock.DigitalRenderer = digitalClockRenderer1;
             this.Server_Clock.DisplayDates = true;
             resources.ApplyResources(this.Server_Clock, "Server_Clock");
@@ -1603,7 +1593,7 @@
             range2.EndValue = 90F;
             range2.Height = 5;
             range2.InRange = false;
-            range2.Name = "Mid";
+            range2.Name = "Medium";
             range2.RangePlacement = Syncfusion.Windows.Forms.Gauge.TickPlacement.Inside;
             range2.StartValue = 61F;
             range3.Color = System.Drawing.Color.Red;
@@ -1648,6 +1638,30 @@
             this.CPU_Gauge.NeedleColor = System.Drawing.Color.White;
             this.CPU_Gauge.OuterFrameGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(35)))), ((int)(((byte)(36)))));
             this.CPU_Gauge.OuterFrameGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(49)))), ((int)(((byte)(50)))));
+            range4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            range4.EndValue = 60F;
+            range4.Height = 5;
+            range4.InRange = false;
+            range4.Name = "Low";
+            range4.RangePlacement = Syncfusion.Windows.Forms.Gauge.TickPlacement.Inside;
+            range4.StartValue = 0F;
+            range5.Color = System.Drawing.Color.Yellow;
+            range5.EndValue = 90F;
+            range5.Height = 5;
+            range5.InRange = false;
+            range5.Name = "Medium";
+            range5.RangePlacement = Syncfusion.Windows.Forms.Gauge.TickPlacement.Inside;
+            range5.StartValue = 61F;
+            range6.Color = System.Drawing.Color.Red;
+            range6.EndValue = 100F;
+            range6.Height = 5;
+            range6.InRange = false;
+            range6.Name = "High";
+            range6.RangePlacement = Syncfusion.Windows.Forms.Gauge.TickPlacement.Inside;
+            range6.StartValue = 91F;
+            this.CPU_Gauge.Ranges.Add(range4);
+            this.CPU_Gauge.Ranges.Add(range5);
+            this.CPU_Gauge.Ranges.Add(range6);
             this.CPU_Gauge.ScaleLabelColor = System.Drawing.Color.White;
             this.CPU_Gauge.ShowTicks = true;
             this.CPU_Gauge.StartAngle = 180;
@@ -1680,6 +1694,30 @@
             this.RAM_Gauge.NeedleColor = System.Drawing.Color.White;
             this.RAM_Gauge.OuterFrameGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(35)))), ((int)(((byte)(36)))));
             this.RAM_Gauge.OuterFrameGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(49)))), ((int)(((byte)(50)))));
+            range7.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            range7.EndValue = 60F;
+            range7.Height = 5;
+            range7.InRange = false;
+            range7.Name = "Low";
+            range7.RangePlacement = Syncfusion.Windows.Forms.Gauge.TickPlacement.Inside;
+            range7.StartValue = 0F;
+            range8.Color = System.Drawing.Color.Yellow;
+            range8.EndValue = 90F;
+            range8.Height = 5;
+            range8.InRange = false;
+            range8.Name = "Medium";
+            range8.RangePlacement = Syncfusion.Windows.Forms.Gauge.TickPlacement.Inside;
+            range8.StartValue = 61F;
+            range9.Color = System.Drawing.Color.Red;
+            range9.EndValue = 100F;
+            range9.Height = 5;
+            range9.InRange = false;
+            range9.Name = "High";
+            range9.RangePlacement = Syncfusion.Windows.Forms.Gauge.TickPlacement.Inside;
+            range9.StartValue = 91F;
+            this.RAM_Gauge.Ranges.Add(range7);
+            this.RAM_Gauge.Ranges.Add(range8);
+            this.RAM_Gauge.Ranges.Add(range9);
             this.RAM_Gauge.ScaleLabelColor = System.Drawing.Color.White;
             this.RAM_Gauge.ShowTicks = true;
             this.RAM_Gauge.StartAngle = 180;
@@ -2070,12 +2108,20 @@
             // GameSettings_TabPage
             // 
             this.GameSettings_TabPage.BackColor = System.Drawing.SystemColors.Control;
+            this.GameSettings_TabPage.Controls.Add(this.BloodMoonEnemyCount_GroupBox);
+            this.GameSettings_TabPage.Controls.Add(this.BloodMoonRange_GroupBox);
+            this.GameSettings_TabPage.Controls.Add(this.BloodMoonWarning_GroupBox);
+            this.GameSettings_TabPage.Controls.Add(this.BloodMoonFrequency_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.PlayerSafeZoneHours_GroupBox);
+            this.GameSettings_TabPage.Controls.Add(this.MaxSpawnedAnimals_GroupBox);
+            this.GameSettings_TabPage.Controls.Add(this.MaxSpawnedZombies_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.BlockDamagePlayer_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.Telnet_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.GameWorldSettings_GroupBox);
+            this.GameSettings_TabPage.Controls.Add(this.BedrollExpiryTime_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.PlayerSafeZoneLevel_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.ServerOptions_GroupBox);
+            this.GameSettings_TabPage.Controls.Add(this.BedrollDeadZoneSize_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.LootRespawnDays_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.ServerMaxWorldTransferSpeedKiBs_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.Server_Visibility_GroupBox);
@@ -2084,8 +2130,6 @@
             this.GameSettings_TabPage.Controls.Add(this.ServerDisabledNetworkProtocols_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.ServerPort_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.ControlPanel_GroupBox);
-            this.GameSettings_TabPage.Controls.Add(this.BloodMoon_GroupBox);
-            this.GameSettings_TabPage.Controls.Add(this.autobots);
             this.GameSettings_TabPage.Controls.Add(this.User_Data_Folder_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.Save_Game_Folder_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.Server_Admin_Config_File_GroupBox);
@@ -2117,6 +2161,93 @@
             resources.ApplyResources(this.GameSettings_TabPage, "GameSettings_TabPage");
             this.GameSettings_TabPage.Name = "GameSettings_TabPage";
             // 
+            // BloodMoonEnemyCount_GroupBox
+            // 
+            resources.ApplyResources(this.BloodMoonEnemyCount_GroupBox, "BloodMoonEnemyCount_GroupBox");
+            this.BloodMoonEnemyCount_GroupBox.Controls.Add(this.ConfigProperty_BloodMoonEnemyCount);
+            this.BloodMoonEnemyCount_GroupBox.Name = "BloodMoonEnemyCount_GroupBox";
+            this.BloodMoonEnemyCount_GroupBox.TabStop = false;
+            // 
+            // ConfigProperty_BloodMoonEnemyCount
+            // 
+            this.ConfigProperty_BloodMoonEnemyCount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.ConfigProperty_BloodMoonEnemyCount.BeforeTouchSize = new System.Drawing.Size(303, 20);
+            resources.ApplyResources(this.ConfigProperty_BloodMoonEnemyCount, "ConfigProperty_BloodMoonEnemyCount");
+            this.ConfigProperty_BloodMoonEnemyCount.Name = "ConfigProperty_BloodMoonEnemyCount";
+            this.ConfigProperty_BloodMoonEnemyCount.SliderSize = new System.Drawing.Size(4, 14);
+            this.ConfigProperty_BloodMoonEnemyCount.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Colorful;
+            this.ConfigProperty_BloodMoonEnemyCount.ThemeName = "Office2016Colorful";
+            this.ConfigProperty_BloodMoonEnemyCount.TimerInterval = 100;
+            this.toolTip.SetToolTip(this.ConfigProperty_BloodMoonEnemyCount, resources.GetString("ConfigProperty_BloodMoonEnemyCount.ToolTip"));
+            this.ConfigProperty_BloodMoonEnemyCount.Value = 8;
+            this.ConfigProperty_BloodMoonEnemyCount.ValueChanged += new System.EventHandler(this.ConfigProperty_BloodMoonEnemyCount_ValueChanged);
+            // 
+            // BloodMoonRange_GroupBox
+            // 
+            this.BloodMoonRange_GroupBox.Controls.Add(this.ConfigProperty_BloodMoonRange);
+            resources.ApplyResources(this.BloodMoonRange_GroupBox, "BloodMoonRange_GroupBox");
+            this.BloodMoonRange_GroupBox.Name = "BloodMoonRange_GroupBox";
+            this.BloodMoonRange_GroupBox.TabStop = false;
+            // 
+            // ConfigProperty_BloodMoonRange
+            // 
+            this.ConfigProperty_BloodMoonRange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.ConfigProperty_BloodMoonRange.BeforeTouchSize = new System.Drawing.Size(303, 20);
+            resources.ApplyResources(this.ConfigProperty_BloodMoonRange, "ConfigProperty_BloodMoonRange");
+            this.ConfigProperty_BloodMoonRange.LargeChange = 7;
+            this.ConfigProperty_BloodMoonRange.Name = "ConfigProperty_BloodMoonRange";
+            this.ConfigProperty_BloodMoonRange.SliderSize = new System.Drawing.Size(4, 14);
+            this.ConfigProperty_BloodMoonRange.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Colorful;
+            this.ConfigProperty_BloodMoonRange.ThemeName = "Office2016Colorful";
+            this.ConfigProperty_BloodMoonRange.TimerInterval = 100;
+            this.toolTip.SetToolTip(this.ConfigProperty_BloodMoonRange, resources.GetString("ConfigProperty_BloodMoonRange.ToolTip"));
+            this.ConfigProperty_BloodMoonRange.Value = 0;
+            this.ConfigProperty_BloodMoonRange.ValueChanged += new System.EventHandler(this.ConfigProperty_BloodMoonRange_ValueChanged);
+            // 
+            // BloodMoonWarning_GroupBox
+            // 
+            this.BloodMoonWarning_GroupBox.Controls.Add(this.ConfigProperty_BloodMoonWarning);
+            resources.ApplyResources(this.BloodMoonWarning_GroupBox, "BloodMoonWarning_GroupBox");
+            this.BloodMoonWarning_GroupBox.Name = "BloodMoonWarning_GroupBox";
+            this.BloodMoonWarning_GroupBox.TabStop = false;
+            // 
+            // ConfigProperty_BloodMoonWarning
+            // 
+            this.ConfigProperty_BloodMoonWarning.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.ConfigProperty_BloodMoonWarning.BeforeTouchSize = new System.Drawing.Size(303, 20);
+            resources.ApplyResources(this.ConfigProperty_BloodMoonWarning, "ConfigProperty_BloodMoonWarning");
+            this.ConfigProperty_BloodMoonWarning.LargeChange = 2;
+            this.ConfigProperty_BloodMoonWarning.Name = "ConfigProperty_BloodMoonWarning";
+            this.ConfigProperty_BloodMoonWarning.SliderSize = new System.Drawing.Size(4, 14);
+            this.ConfigProperty_BloodMoonWarning.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Colorful;
+            this.ConfigProperty_BloodMoonWarning.ThemeName = "Office2016Colorful";
+            this.ConfigProperty_BloodMoonWarning.TimerInterval = 100;
+            this.toolTip.SetToolTip(this.ConfigProperty_BloodMoonWarning, resources.GetString("ConfigProperty_BloodMoonWarning.ToolTip"));
+            this.ConfigProperty_BloodMoonWarning.Value = 8;
+            this.ConfigProperty_BloodMoonWarning.ValueChanged += new System.EventHandler(this.ConfigProperty_BloodMoonWarning_ValueChanged);
+            // 
+            // BloodMoonFrequency_GroupBox
+            // 
+            this.BloodMoonFrequency_GroupBox.Controls.Add(this.ConfigProperty_BloodMoonFrequency);
+            resources.ApplyResources(this.BloodMoonFrequency_GroupBox, "BloodMoonFrequency_GroupBox");
+            this.BloodMoonFrequency_GroupBox.Name = "BloodMoonFrequency_GroupBox";
+            this.BloodMoonFrequency_GroupBox.TabStop = false;
+            // 
+            // ConfigProperty_BloodMoonFrequency
+            // 
+            this.ConfigProperty_BloodMoonFrequency.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.ConfigProperty_BloodMoonFrequency.BeforeTouchSize = new System.Drawing.Size(303, 20);
+            resources.ApplyResources(this.ConfigProperty_BloodMoonFrequency, "ConfigProperty_BloodMoonFrequency");
+            this.ConfigProperty_BloodMoonFrequency.LargeChange = 7;
+            this.ConfigProperty_BloodMoonFrequency.Name = "ConfigProperty_BloodMoonFrequency";
+            this.ConfigProperty_BloodMoonFrequency.SliderSize = new System.Drawing.Size(4, 14);
+            this.ConfigProperty_BloodMoonFrequency.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Colorful;
+            this.ConfigProperty_BloodMoonFrequency.ThemeName = "Office2016Colorful";
+            this.ConfigProperty_BloodMoonFrequency.TimerInterval = 100;
+            this.toolTip.SetToolTip(this.ConfigProperty_BloodMoonFrequency, resources.GetString("ConfigProperty_BloodMoonFrequency.ToolTip"));
+            this.ConfigProperty_BloodMoonFrequency.Value = 7;
+            this.ConfigProperty_BloodMoonFrequency.ValueChanged += new System.EventHandler(this.ConfigProperty_BloodMoonFrequency_ValueChanged);
+            // 
             // PlayerSafeZoneHours_GroupBox
             // 
             this.PlayerSafeZoneHours_GroupBox.Controls.Add(this.ConfigProperty_PlayerSafeZoneHours);
@@ -2130,6 +2261,51 @@
             this.ConfigProperty_PlayerSafeZoneHours.Name = "ConfigProperty_PlayerSafeZoneHours";
             this.toolTip.SetToolTip(this.ConfigProperty_PlayerSafeZoneHours, resources.GetString("ConfigProperty_PlayerSafeZoneHours.ToolTip"));
             this.ConfigProperty_PlayerSafeZoneHours.TextChanged += new System.EventHandler(this.ConfigProperty_PlayerSafeZoneHours_TextChanged);
+            // 
+            // MaxSpawnedAnimals_GroupBox
+            // 
+            resources.ApplyResources(this.MaxSpawnedAnimals_GroupBox, "MaxSpawnedAnimals_GroupBox");
+            this.MaxSpawnedAnimals_GroupBox.Controls.Add(this.ConfigProperty_MaxSpawnedAnimals);
+            this.MaxSpawnedAnimals_GroupBox.Name = "MaxSpawnedAnimals_GroupBox";
+            this.MaxSpawnedAnimals_GroupBox.TabStop = false;
+            this.toolTip.SetToolTip(this.MaxSpawnedAnimals_GroupBox, resources.GetString("MaxSpawnedAnimals_GroupBox.ToolTip"));
+            // 
+            // ConfigProperty_MaxSpawnedAnimals
+            // 
+            this.ConfigProperty_MaxSpawnedAnimals.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.ConfigProperty_MaxSpawnedAnimals.BeforeTouchSize = new System.Drawing.Size(363, 20);
+            resources.ApplyResources(this.ConfigProperty_MaxSpawnedAnimals, "ConfigProperty_MaxSpawnedAnimals");
+            this.ConfigProperty_MaxSpawnedAnimals.Name = "ConfigProperty_MaxSpawnedAnimals";
+            this.ConfigProperty_MaxSpawnedAnimals.SliderSize = new System.Drawing.Size(4, 14);
+            this.ConfigProperty_MaxSpawnedAnimals.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Colorful;
+            this.ConfigProperty_MaxSpawnedAnimals.ThemeName = "Office2016Colorful";
+            this.ConfigProperty_MaxSpawnedAnimals.TimerInterval = 100;
+            this.toolTip.SetToolTip(this.ConfigProperty_MaxSpawnedAnimals, resources.GetString("ConfigProperty_MaxSpawnedAnimals.ToolTip"));
+            this.ConfigProperty_MaxSpawnedAnimals.Value = 50;
+            this.ConfigProperty_MaxSpawnedAnimals.ValueChanged += new System.EventHandler(this.ConfigProperty_MaxSpawnedAnimals_ValueChanged);
+            // 
+            // MaxSpawnedZombies_GroupBox
+            // 
+            resources.ApplyResources(this.MaxSpawnedZombies_GroupBox, "MaxSpawnedZombies_GroupBox");
+            this.MaxSpawnedZombies_GroupBox.Controls.Add(this.ConfigProperty_MaxSpawnedZombies);
+            this.MaxSpawnedZombies_GroupBox.Name = "MaxSpawnedZombies_GroupBox";
+            this.MaxSpawnedZombies_GroupBox.TabStop = false;
+            // 
+            // ConfigProperty_MaxSpawnedZombies
+            // 
+            this.ConfigProperty_MaxSpawnedZombies.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.ConfigProperty_MaxSpawnedZombies.BeforeTouchSize = new System.Drawing.Size(363, 20);
+            resources.ApplyResources(this.ConfigProperty_MaxSpawnedZombies, "ConfigProperty_MaxSpawnedZombies");
+            this.ConfigProperty_MaxSpawnedZombies.LargeChange = 128;
+            this.ConfigProperty_MaxSpawnedZombies.Name = "ConfigProperty_MaxSpawnedZombies";
+            this.ConfigProperty_MaxSpawnedZombies.SliderSize = new System.Drawing.Size(4, 14);
+            this.ConfigProperty_MaxSpawnedZombies.SmallChange = 5;
+            this.ConfigProperty_MaxSpawnedZombies.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Colorful;
+            this.ConfigProperty_MaxSpawnedZombies.ThemeName = "Office2016Colorful";
+            this.ConfigProperty_MaxSpawnedZombies.TimerInterval = 100;
+            this.toolTip.SetToolTip(this.ConfigProperty_MaxSpawnedZombies, resources.GetString("ConfigProperty_MaxSpawnedZombies.ToolTip"));
+            this.ConfigProperty_MaxSpawnedZombies.Value = 60;
+            this.ConfigProperty_MaxSpawnedZombies.ValueChanged += new System.EventHandler(this.ConfigProperty_MaxSpawnedZombies_ValueChanged);
             // 
             // BlockDamagePlayer_GroupBox
             // 
@@ -2336,6 +2512,28 @@
             this.toolTip.SetToolTip(this.ConfigProperty_GameMode, resources.GetString("ConfigProperty_GameMode.ToolTip"));
             this.ConfigProperty_GameMode.SelectedValueChanged += new System.EventHandler(this.ConfigProperty_GameMode_SelectedValueChanged);
             // 
+            // BedrollExpiryTime_GroupBox
+            // 
+            this.BedrollExpiryTime_GroupBox.Controls.Add(this.ConfigProperty_BedrollExpiryTime);
+            resources.ApplyResources(this.BedrollExpiryTime_GroupBox, "BedrollExpiryTime_GroupBox");
+            this.BedrollExpiryTime_GroupBox.Name = "BedrollExpiryTime_GroupBox";
+            this.BedrollExpiryTime_GroupBox.TabStop = false;
+            // 
+            // ConfigProperty_BedrollExpiryTime
+            // 
+            this.ConfigProperty_BedrollExpiryTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.ConfigProperty_BedrollExpiryTime.BeforeTouchSize = new System.Drawing.Size(363, 20);
+            resources.ApplyResources(this.ConfigProperty_BedrollExpiryTime, "ConfigProperty_BedrollExpiryTime");
+            this.ConfigProperty_BedrollExpiryTime.LargeChange = 7;
+            this.ConfigProperty_BedrollExpiryTime.Name = "ConfigProperty_BedrollExpiryTime";
+            this.ConfigProperty_BedrollExpiryTime.SliderSize = new System.Drawing.Size(4, 14);
+            this.ConfigProperty_BedrollExpiryTime.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Colorful;
+            this.ConfigProperty_BedrollExpiryTime.ThemeName = "Office2016Colorful";
+            this.ConfigProperty_BedrollExpiryTime.TimerInterval = 100;
+            this.toolTip.SetToolTip(this.ConfigProperty_BedrollExpiryTime, resources.GetString("ConfigProperty_BedrollExpiryTime.ToolTip"));
+            this.ConfigProperty_BedrollExpiryTime.Value = 45;
+            this.ConfigProperty_BedrollExpiryTime.ValueChanged += new System.EventHandler(this.ConfigProperty_BedrollExpiryTime_ValueChanged);
+            // 
             // PlayerSafeZoneLevel_GroupBox
             // 
             this.PlayerSafeZoneLevel_GroupBox.Controls.Add(this.ConfigProperty_PlayerSafeZoneLevel);
@@ -2390,6 +2588,7 @@
             this.ConfigProperty_EnemySpawnMode.ToggleState = Syncfusion.Windows.Forms.Tools.ToggleButtonState.Active;
             this.toolTip.SetToolTip(this.ConfigProperty_EnemySpawnMode, resources.GetString("ConfigProperty_EnemySpawnMode.ToolTip"));
             this.ConfigProperty_EnemySpawnMode.VisualStyle = Syncfusion.Windows.Forms.Tools.ToggleButtonStyle.Office2016Black;
+            this.ConfigProperty_EnemySpawnMode.ToggleStateChanged += new Syncfusion.Windows.Forms.Tools.ToggleStateChangedEventHandler(this.ConfigProperty_EnemySpawnMode_ToggleStateChanged);
             // 
             // ConfigProperty_EACEnabled
             // 
@@ -2475,7 +2674,6 @@
             this.ConfigProperty_AirDropMarker.ThemeName = "Office2016Black";
             this.toolTip.SetToolTip(this.ConfigProperty_AirDropMarker, resources.GetString("ConfigProperty_AirDropMarker.ToolTip"));
             this.ConfigProperty_AirDropMarker.VisualStyle = Syncfusion.Windows.Forms.Tools.ToggleButtonStyle.Office2016Black;
-            this.ConfigProperty_AirDropMarker.ToggleStateChanged += new Syncfusion.Windows.Forms.Tools.ToggleStateChangedEventHandler(this.ConfigProperty_AirDropMarker_ToggleStateChanged);
             // 
             // ConfigProperty_EnemyDifficulty
             // 
@@ -2487,22 +2685,22 @@
             this.ConfigProperty_EnemyDifficulty.ActiveState = activeStateCollection6;
             resources.ApplyResources(this.ConfigProperty_EnemyDifficulty, "ConfigProperty_EnemyDifficulty");
             this.ConfigProperty_EnemyDifficulty.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(37)))));
-            inactiveStateCollection6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            inactiveStateCollection6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            inactiveStateCollection6.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            inactiveStateCollection6.BackColor = System.Drawing.Color.White;
+            inactiveStateCollection6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            inactiveStateCollection6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            inactiveStateCollection6.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             inactiveStateCollection6.Text = "Normal Zombies";
             this.ConfigProperty_EnemyDifficulty.InactiveState = inactiveStateCollection6;
             this.ConfigProperty_EnemyDifficulty.Name = "ConfigProperty_EnemyDifficulty";
             sliderCollection6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             sliderCollection6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
             sliderCollection6.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            sliderCollection6.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            sliderCollection6.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            sliderCollection6.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            sliderCollection6.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
             this.ConfigProperty_EnemyDifficulty.Slider = sliderCollection6;
-            this.ConfigProperty_EnemyDifficulty.ThemeName = "Office2016Black";
+            this.ConfigProperty_EnemyDifficulty.ThemeName = "Office2016Colorful";
             this.toolTip.SetToolTip(this.ConfigProperty_EnemyDifficulty, resources.GetString("ConfigProperty_EnemyDifficulty.ToolTip"));
-            this.ConfigProperty_EnemyDifficulty.VisualStyle = Syncfusion.Windows.Forms.Tools.ToggleButtonStyle.Office2016Black;
+            this.ConfigProperty_EnemyDifficulty.VisualStyle = Syncfusion.Windows.Forms.Tools.ToggleButtonStyle.Office2016Colorful;
             this.ConfigProperty_EnemyDifficulty.ToggleStateChanged += new Syncfusion.Windows.Forms.Tools.ToggleStateChangedEventHandler(this.ConfigProperty_EnemyDifficulty_ToggleStateChanged);
             // 
             // ConfigProperty_BuildCreate
@@ -2561,6 +2759,28 @@
             this.ConfigProperty_PersistentPlayerProfiles.VisualStyle = Syncfusion.Windows.Forms.Tools.ToggleButtonStyle.Office2016Black;
             this.ConfigProperty_PersistentPlayerProfiles.ToggleStateChanged += new Syncfusion.Windows.Forms.Tools.ToggleStateChangedEventHandler(this.ConfigProperty_PersistentPlayerProfiles_ToggleStateChanged);
             // 
+            // BedrollDeadZoneSize_GroupBox
+            // 
+            resources.ApplyResources(this.BedrollDeadZoneSize_GroupBox, "BedrollDeadZoneSize_GroupBox");
+            this.BedrollDeadZoneSize_GroupBox.Controls.Add(this.ConfigProperty_BedrollDeadZoneSize);
+            this.BedrollDeadZoneSize_GroupBox.Name = "BedrollDeadZoneSize_GroupBox";
+            this.BedrollDeadZoneSize_GroupBox.TabStop = false;
+            // 
+            // ConfigProperty_BedrollDeadZoneSize
+            // 
+            this.ConfigProperty_BedrollDeadZoneSize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.ConfigProperty_BedrollDeadZoneSize.BeforeTouchSize = new System.Drawing.Size(363, 20);
+            resources.ApplyResources(this.ConfigProperty_BedrollDeadZoneSize, "ConfigProperty_BedrollDeadZoneSize");
+            this.ConfigProperty_BedrollDeadZoneSize.LargeChange = 10;
+            this.ConfigProperty_BedrollDeadZoneSize.Name = "ConfigProperty_BedrollDeadZoneSize";
+            this.ConfigProperty_BedrollDeadZoneSize.SliderSize = new System.Drawing.Size(4, 14);
+            this.ConfigProperty_BedrollDeadZoneSize.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Colorful;
+            this.ConfigProperty_BedrollDeadZoneSize.ThemeName = "Office2016Colorful";
+            this.ConfigProperty_BedrollDeadZoneSize.TimerInterval = 100;
+            this.toolTip.SetToolTip(this.ConfigProperty_BedrollDeadZoneSize, resources.GetString("ConfigProperty_BedrollDeadZoneSize.ToolTip"));
+            this.ConfigProperty_BedrollDeadZoneSize.Value = 15;
+            this.ConfigProperty_BedrollDeadZoneSize.ValueChanged += new System.EventHandler(this.ConfigProperty_BedrollDeadZoneSize_ValueChanged);
+            // 
             // LootRespawnDays_GroupBox
             // 
             this.LootRespawnDays_GroupBox.Controls.Add(this.trackBarEx4);
@@ -2603,7 +2823,7 @@
             // ConfigProperty_ServerMaxWorldTransferSpeedKiBs
             // 
             this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.BeforeTouchSize = new System.Drawing.Size(359, 20);
+            this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.BeforeTouchSize = new System.Drawing.Size(363, 20);
             resources.ApplyResources(this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs, "ConfigProperty_ServerMaxWorldTransferSpeedKiBs");
             this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.LargeChange = 128;
             this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.Name = "ConfigProperty_ServerMaxWorldTransferSpeedKiBs";
@@ -2777,160 +2997,6 @@
             this.ConfigProperty_ControlPanelEnabled.ThemeName = "Default";
             this.toolTip.SetToolTip(this.ConfigProperty_ControlPanelEnabled, resources.GetString("ConfigProperty_ControlPanelEnabled.ToolTip"));
             this.ConfigProperty_ControlPanelEnabled.ToggleStateChanged += new Syncfusion.Windows.Forms.Tools.ToggleStateChangedEventHandler(this.ConfigProperty_ControlPanelEnabled_ToggleStateChanged);
-            // 
-            // BloodMoon_GroupBox
-            // 
-            this.BloodMoon_GroupBox.Controls.Add(this.BloodMoonWarning_Label);
-            this.BloodMoon_GroupBox.Controls.Add(this.ConfigProperty_BloodMoonWarning);
-            this.BloodMoon_GroupBox.Controls.Add(this.ConfigProperty_BloodMoonRange);
-            this.BloodMoon_GroupBox.Controls.Add(this.BloodMoonRange_Label);
-            this.BloodMoon_GroupBox.Controls.Add(this.BloodMoonFrequency_Label);
-            this.BloodMoon_GroupBox.Controls.Add(this.ConfigProperty_BloodMoonFrequency);
-            resources.ApplyResources(this.BloodMoon_GroupBox, "BloodMoon_GroupBox");
-            this.BloodMoon_GroupBox.Name = "BloodMoon_GroupBox";
-            this.BloodMoon_GroupBox.TabStop = false;
-            // 
-            // BloodMoonWarning_Label
-            // 
-            resources.ApplyResources(this.BloodMoonWarning_Label, "BloodMoonWarning_Label");
-            this.BloodMoonWarning_Label.Name = "BloodMoonWarning_Label";
-            // 
-            // ConfigProperty_BloodMoonWarning
-            // 
-            resources.ApplyResources(this.ConfigProperty_BloodMoonWarning, "ConfigProperty_BloodMoonWarning");
-            this.ConfigProperty_BloodMoonWarning.Maximum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            this.ConfigProperty_BloodMoonWarning.Name = "ConfigProperty_BloodMoonWarning";
-            this.toolTip.SetToolTip(this.ConfigProperty_BloodMoonWarning, resources.GetString("ConfigProperty_BloodMoonWarning.ToolTip"));
-            // 
-            // ConfigProperty_BloodMoonRange
-            // 
-            resources.ApplyResources(this.ConfigProperty_BloodMoonRange, "ConfigProperty_BloodMoonRange");
-            this.ConfigProperty_BloodMoonRange.Maximum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            this.ConfigProperty_BloodMoonRange.Name = "ConfigProperty_BloodMoonRange";
-            this.toolTip.SetToolTip(this.ConfigProperty_BloodMoonRange, resources.GetString("ConfigProperty_BloodMoonRange.ToolTip"));
-            // 
-            // BloodMoonRange_Label
-            // 
-            resources.ApplyResources(this.BloodMoonRange_Label, "BloodMoonRange_Label");
-            this.BloodMoonRange_Label.Name = "BloodMoonRange_Label";
-            // 
-            // BloodMoonFrequency_Label
-            // 
-            resources.ApplyResources(this.BloodMoonFrequency_Label, "BloodMoonFrequency_Label");
-            this.BloodMoonFrequency_Label.Name = "BloodMoonFrequency_Label";
-            // 
-            // ConfigProperty_BloodMoonFrequency
-            // 
-            resources.ApplyResources(this.ConfigProperty_BloodMoonFrequency, "ConfigProperty_BloodMoonFrequency");
-            this.ConfigProperty_BloodMoonFrequency.Maximum = new decimal(new int[] {
-            99999,
-            0,
-            0,
-            0});
-            this.ConfigProperty_BloodMoonFrequency.Name = "ConfigProperty_BloodMoonFrequency";
-            this.toolTip.SetToolTip(this.ConfigProperty_BloodMoonFrequency, resources.GetString("ConfigProperty_BloodMoonFrequency.ToolTip"));
-            // 
-            // autobots
-            // 
-            resources.ApplyResources(this.autobots, "autobots");
-            this.autobots.Controls.Add(this.trackBarEx10);
-            this.autobots.Controls.Add(this.trackBarEx9);
-            this.autobots.Controls.Add(this.trackBarEx8);
-            this.autobots.Controls.Add(this.trackBarEx6);
-            this.autobots.Controls.Add(this.trackBarEx5);
-            this.autobots.Controls.Add(this.BedrollExpiryTime_GroupBox);
-            this.autobots.Controls.Add(this.BedrollDeadZoneSize_GroupBox);
-            this.autobots.Controls.Add(this.BloodMoonEnemyCount_GroupBox);
-            this.autobots.Controls.Add(this.MaxSpawnedAnimals_GroupBox);
-            this.autobots.Controls.Add(this.MaxSpawnedZombies_GroupBox);
-            this.autobots.Name = "autobots";
-            this.autobots.TabStop = false;
-            // 
-            // BedrollExpiryTime_GroupBox
-            // 
-            this.BedrollExpiryTime_GroupBox.Controls.Add(this.ConfigProperty_BedrollExpiryTime);
-            resources.ApplyResources(this.BedrollExpiryTime_GroupBox, "BedrollExpiryTime_GroupBox");
-            this.BedrollExpiryTime_GroupBox.Name = "BedrollExpiryTime_GroupBox";
-            this.BedrollExpiryTime_GroupBox.TabStop = false;
-            // 
-            // ConfigProperty_BedrollExpiryTime
-            // 
-            resources.ApplyResources(this.ConfigProperty_BedrollExpiryTime, "ConfigProperty_BedrollExpiryTime");
-            this.ConfigProperty_BedrollExpiryTime.Maximum = 150;
-            this.ConfigProperty_BedrollExpiryTime.Name = "ConfigProperty_BedrollExpiryTime";
-            this.toolTip.SetToolTip(this.ConfigProperty_BedrollExpiryTime, resources.GetString("ConfigProperty_BedrollExpiryTime.ToolTip"));
-            this.ConfigProperty_BedrollExpiryTime.Value = 15;
-            // 
-            // BedrollDeadZoneSize_GroupBox
-            // 
-            resources.ApplyResources(this.BedrollDeadZoneSize_GroupBox, "BedrollDeadZoneSize_GroupBox");
-            this.BedrollDeadZoneSize_GroupBox.Controls.Add(this.ConfigProperty_BedrollDeadZoneSize);
-            this.BedrollDeadZoneSize_GroupBox.Name = "BedrollDeadZoneSize_GroupBox";
-            this.BedrollDeadZoneSize_GroupBox.TabStop = false;
-            // 
-            // ConfigProperty_BedrollDeadZoneSize
-            // 
-            resources.ApplyResources(this.ConfigProperty_BedrollDeadZoneSize, "ConfigProperty_BedrollDeadZoneSize");
-            this.ConfigProperty_BedrollDeadZoneSize.Maximum = 150;
-            this.ConfigProperty_BedrollDeadZoneSize.Name = "ConfigProperty_BedrollDeadZoneSize";
-            this.toolTip.SetToolTip(this.ConfigProperty_BedrollDeadZoneSize, resources.GetString("ConfigProperty_BedrollDeadZoneSize.ToolTip"));
-            this.ConfigProperty_BedrollDeadZoneSize.Value = 15;
-            // 
-            // BloodMoonEnemyCount_GroupBox
-            // 
-            resources.ApplyResources(this.BloodMoonEnemyCount_GroupBox, "BloodMoonEnemyCount_GroupBox");
-            this.BloodMoonEnemyCount_GroupBox.Controls.Add(this.ConfigProperty_BloodMoonEnemyCount);
-            this.BloodMoonEnemyCount_GroupBox.Name = "BloodMoonEnemyCount_GroupBox";
-            this.BloodMoonEnemyCount_GroupBox.TabStop = false;
-            // 
-            // ConfigProperty_BloodMoonEnemyCount
-            // 
-            resources.ApplyResources(this.ConfigProperty_BloodMoonEnemyCount, "ConfigProperty_BloodMoonEnemyCount");
-            this.ConfigProperty_BloodMoonEnemyCount.Maximum = 50;
-            this.ConfigProperty_BloodMoonEnemyCount.Name = "ConfigProperty_BloodMoonEnemyCount";
-            this.toolTip.SetToolTip(this.ConfigProperty_BloodMoonEnemyCount, resources.GetString("ConfigProperty_BloodMoonEnemyCount.ToolTip"));
-            this.ConfigProperty_BloodMoonEnemyCount.Value = 8;
-            // 
-            // MaxSpawnedAnimals_GroupBox
-            // 
-            resources.ApplyResources(this.MaxSpawnedAnimals_GroupBox, "MaxSpawnedAnimals_GroupBox");
-            this.MaxSpawnedAnimals_GroupBox.Controls.Add(this.ConfigProperty_MaxSpawnedAnimals);
-            this.MaxSpawnedAnimals_GroupBox.Name = "MaxSpawnedAnimals_GroupBox";
-            this.MaxSpawnedAnimals_GroupBox.TabStop = false;
-            this.toolTip.SetToolTip(this.MaxSpawnedAnimals_GroupBox, resources.GetString("MaxSpawnedAnimals_GroupBox.ToolTip"));
-            // 
-            // ConfigProperty_MaxSpawnedAnimals
-            // 
-            resources.ApplyResources(this.ConfigProperty_MaxSpawnedAnimals, "ConfigProperty_MaxSpawnedAnimals");
-            this.ConfigProperty_MaxSpawnedAnimals.Maximum = 240;
-            this.ConfigProperty_MaxSpawnedAnimals.Minimum = 1;
-            this.ConfigProperty_MaxSpawnedAnimals.Name = "ConfigProperty_MaxSpawnedAnimals";
-            this.toolTip.SetToolTip(this.ConfigProperty_MaxSpawnedAnimals, resources.GetString("ConfigProperty_MaxSpawnedAnimals.ToolTip"));
-            this.ConfigProperty_MaxSpawnedAnimals.Value = 50;
-            // 
-            // MaxSpawnedZombies_GroupBox
-            // 
-            resources.ApplyResources(this.MaxSpawnedZombies_GroupBox, "MaxSpawnedZombies_GroupBox");
-            this.MaxSpawnedZombies_GroupBox.Controls.Add(this.ConfigProperty_MaxSpawnedZombies);
-            this.MaxSpawnedZombies_GroupBox.Name = "MaxSpawnedZombies_GroupBox";
-            this.MaxSpawnedZombies_GroupBox.TabStop = false;
-            // 
-            // ConfigProperty_MaxSpawnedZombies
-            // 
-            resources.ApplyResources(this.ConfigProperty_MaxSpawnedZombies, "ConfigProperty_MaxSpawnedZombies");
-            this.ConfigProperty_MaxSpawnedZombies.Maximum = 240;
-            this.ConfigProperty_MaxSpawnedZombies.Minimum = 1;
-            this.ConfigProperty_MaxSpawnedZombies.Name = "ConfigProperty_MaxSpawnedZombies";
-            this.toolTip.SetToolTip(this.ConfigProperty_MaxSpawnedZombies, resources.GetString("ConfigProperty_MaxSpawnedZombies.ToolTip"));
-            this.ConfigProperty_MaxSpawnedZombies.Value = 60;
             // 
             // User_Data_Folder_GroupBox
             // 
@@ -3142,6 +3208,7 @@
             resources.ApplyResources(this.ConfigProperty_ZombieBMMove, "ConfigProperty_ZombieBMMove");
             this.ConfigProperty_ZombieBMMove.Name = "ConfigProperty_ZombieBMMove";
             this.toolTip.SetToolTip(this.ConfigProperty_ZombieBMMove, resources.GetString("ConfigProperty_ZombieBMMove.ToolTip"));
+            this.ConfigProperty_ZombieBMMove.SelectedValueChanged += new System.EventHandler(this.ConfigProperty_ZombieBMMove_SelectedValueChanged);
             // 
             // ZombieNightSpeed_GroupBox
             // 
@@ -3162,6 +3229,7 @@
             resources.ApplyResources(this.ConfigProperty_ZombieMoveNight, "ConfigProperty_ZombieMoveNight");
             this.ConfigProperty_ZombieMoveNight.Name = "ConfigProperty_ZombieMoveNight";
             this.toolTip.SetToolTip(this.ConfigProperty_ZombieMoveNight, resources.GetString("ConfigProperty_ZombieMoveNight.ToolTip"));
+            this.ConfigProperty_ZombieMoveNight.SelectedValueChanged += new System.EventHandler(this.ConfigProperty_ZombieMoveNight_SelectedValueChanged);
             // 
             // ZombieFeralSpeed_GroupBox
             // 
@@ -3182,38 +3250,29 @@
             resources.ApplyResources(this.ConfigProperty_ZombieFeralMove, "ConfigProperty_ZombieFeralMove");
             this.ConfigProperty_ZombieFeralMove.Name = "ConfigProperty_ZombieFeralMove";
             this.toolTip.SetToolTip(this.ConfigProperty_ZombieFeralMove, resources.GetString("ConfigProperty_ZombieFeralMove.ToolTip"));
+            this.ConfigProperty_ZombieFeralMove.SelectedValueChanged += new System.EventHandler(this.ConfigProperty_ZombieFeralMove_SelectedValueChanged);
             // 
             // ServerMaxAllowedViewDistance_GroupBox
             // 
             resources.ApplyResources(this.ServerMaxAllowedViewDistance_GroupBox, "ServerMaxAllowedViewDistance_GroupBox");
-            this.ServerMaxAllowedViewDistance_GroupBox.Controls.Add(this.trackBarEx3);
             this.ServerMaxAllowedViewDistance_GroupBox.Controls.Add(this.ConfigProperty_ServerMaxAllowedViewDistance);
             this.ServerMaxAllowedViewDistance_GroupBox.Name = "ServerMaxAllowedViewDistance_GroupBox";
             this.ServerMaxAllowedViewDistance_GroupBox.TabStop = false;
             // 
-            // trackBarEx3
-            // 
-            this.trackBarEx3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.trackBarEx3.BeforeTouchSize = new System.Drawing.Size(173, 20);
-            resources.ApplyResources(this.trackBarEx3, "trackBarEx3");
-            this.trackBarEx3.LargeChange = 128;
-            this.trackBarEx3.Name = "trackBarEx3";
-            this.trackBarEx3.SliderSize = new System.Drawing.Size(4, 14);
-            this.trackBarEx3.SmallChange = 64;
-            this.trackBarEx3.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Black;
-            this.trackBarEx3.ThemeName = "Office2016Black";
-            this.trackBarEx3.TimerInterval = 100;
-            this.toolTip.SetToolTip(this.trackBarEx3, resources.GetString("trackBarEx3.ToolTip"));
-            this.trackBarEx3.Value = 512;
-            // 
             // ConfigProperty_ServerMaxAllowedViewDistance
             // 
+            this.ConfigProperty_ServerMaxAllowedViewDistance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.ConfigProperty_ServerMaxAllowedViewDistance.BeforeTouchSize = new System.Drawing.Size(363, 20);
             resources.ApplyResources(this.ConfigProperty_ServerMaxAllowedViewDistance, "ConfigProperty_ServerMaxAllowedViewDistance");
-            this.ConfigProperty_ServerMaxAllowedViewDistance.Maximum = 12;
-            this.ConfigProperty_ServerMaxAllowedViewDistance.Minimum = 6;
+            this.ConfigProperty_ServerMaxAllowedViewDistance.LargeChange = 1;
             this.ConfigProperty_ServerMaxAllowedViewDistance.Name = "ConfigProperty_ServerMaxAllowedViewDistance";
+            this.ConfigProperty_ServerMaxAllowedViewDistance.SliderSize = new System.Drawing.Size(4, 14);
+            this.ConfigProperty_ServerMaxAllowedViewDistance.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Colorful;
+            this.ConfigProperty_ServerMaxAllowedViewDistance.ThemeName = "Office2016Colorful";
+            this.ConfigProperty_ServerMaxAllowedViewDistance.TimerInterval = 100;
             this.toolTip.SetToolTip(this.ConfigProperty_ServerMaxAllowedViewDistance, resources.GetString("ConfigProperty_ServerMaxAllowedViewDistance.ToolTip"));
             this.ConfigProperty_ServerMaxAllowedViewDistance.Value = 12;
+            this.ConfigProperty_ServerMaxAllowedViewDistance.ValueChanged += new System.EventHandler(this.ConfigProperty_ServerMaxAllowedViewDistance_ValueChanged);
             // 
             // DropOnQuit_GroupBox
             // 
@@ -3224,15 +3283,16 @@
             // 
             // ConfigProperty_DropOnQuit
             // 
+            resources.ApplyResources(this.ConfigProperty_DropOnQuit, "ConfigProperty_DropOnQuit");
             this.ConfigProperty_DropOnQuit.FormattingEnabled = true;
             this.ConfigProperty_DropOnQuit.Items.AddRange(new object[] {
             resources.GetString("ConfigProperty_DropOnQuit.Items"),
             resources.GetString("ConfigProperty_DropOnQuit.Items1"),
             resources.GetString("ConfigProperty_DropOnQuit.Items2"),
             resources.GetString("ConfigProperty_DropOnQuit.Items3")});
-            resources.ApplyResources(this.ConfigProperty_DropOnQuit, "ConfigProperty_DropOnQuit");
             this.ConfigProperty_DropOnQuit.Name = "ConfigProperty_DropOnQuit";
             this.toolTip.SetToolTip(this.ConfigProperty_DropOnQuit, resources.GetString("ConfigProperty_DropOnQuit.ToolTip"));
+            this.ConfigProperty_DropOnQuit.SelectedValueChanged += new System.EventHandler(this.ConfigProperty_DropOnQuit_SelectedValueChanged);
             // 
             // XPMultiplier_GroupBox
             // 
@@ -3370,6 +3430,7 @@
             // 
             // ConfigProperty_DropOnDeath
             // 
+            resources.ApplyResources(this.ConfigProperty_DropOnDeath, "ConfigProperty_DropOnDeath");
             this.ConfigProperty_DropOnDeath.FormattingEnabled = true;
             this.ConfigProperty_DropOnDeath.Items.AddRange(new object[] {
             resources.GetString("ConfigProperty_DropOnDeath.Items"),
@@ -3377,9 +3438,9 @@
             resources.GetString("ConfigProperty_DropOnDeath.Items2"),
             resources.GetString("ConfigProperty_DropOnDeath.Items3"),
             resources.GetString("ConfigProperty_DropOnDeath.Items4")});
-            resources.ApplyResources(this.ConfigProperty_DropOnDeath, "ConfigProperty_DropOnDeath");
             this.ConfigProperty_DropOnDeath.Name = "ConfigProperty_DropOnDeath";
             this.toolTip.SetToolTip(this.ConfigProperty_DropOnDeath, resources.GetString("ConfigProperty_DropOnDeath.ToolTip"));
+            this.ConfigProperty_DropOnDeath.SelectedValueChanged += new System.EventHandler(this.ConfigProperty_DropOnDeath_SelectedValueChanged);
             // 
             // AirDropFrequency_GroupBox
             // 
@@ -3571,7 +3632,7 @@
             // ConfigProperty_ServerMaxPlayerCount
             // 
             this.ConfigProperty_ServerMaxPlayerCount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.ConfigProperty_ServerMaxPlayerCount.BeforeTouchSize = new System.Drawing.Size(359, 20);
+            this.ConfigProperty_ServerMaxPlayerCount.BeforeTouchSize = new System.Drawing.Size(363, 20);
             resources.ApplyResources(this.ConfigProperty_ServerMaxPlayerCount, "ConfigProperty_ServerMaxPlayerCount");
             this.ConfigProperty_ServerMaxPlayerCount.Name = "ConfigProperty_ServerMaxPlayerCount";
             this.ConfigProperty_ServerMaxPlayerCount.SliderSize = new System.Drawing.Size(4, 14);
@@ -3601,6 +3662,7 @@
             resources.ApplyResources(this.ConfigProperty_ZombieMove, "ConfigProperty_ZombieMove");
             this.ConfigProperty_ZombieMove.Name = "ConfigProperty_ZombieMove";
             this.toolTip.SetToolTip(this.ConfigProperty_ZombieMove, resources.GetString("ConfigProperty_ZombieMove.ToolTip"));
+            this.ConfigProperty_ZombieMove.SelectedValueChanged += new System.EventHandler(this.ConfigProperty_ZombieMove_SelectedValueChanged);
             // 
             // DayLightLength_GroupBox
             // 
@@ -3612,7 +3674,7 @@
             // ConfigProperty_DayLightLength
             // 
             this.ConfigProperty_DayLightLength.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.ConfigProperty_DayLightLength.BeforeTouchSize = new System.Drawing.Size(359, 20);
+            this.ConfigProperty_DayLightLength.BeforeTouchSize = new System.Drawing.Size(363, 20);
             resources.ApplyResources(this.ConfigProperty_DayLightLength, "ConfigProperty_DayLightLength");
             this.ConfigProperty_DayLightLength.LargeChange = 2;
             this.ConfigProperty_DayLightLength.Name = "ConfigProperty_DayLightLength";
@@ -3634,17 +3696,17 @@
             // ConfigProperty_DayNightLength
             // 
             this.ConfigProperty_DayNightLength.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.ConfigProperty_DayNightLength.BeforeTouchSize = new System.Drawing.Size(359, 20);
+            this.ConfigProperty_DayNightLength.BeforeTouchSize = new System.Drawing.Size(363, 20);
             resources.ApplyResources(this.ConfigProperty_DayNightLength, "ConfigProperty_DayNightLength");
-            this.ConfigProperty_DayNightLength.LargeChange = 24;
+            this.ConfigProperty_DayNightLength.LargeChange = 60;
             this.ConfigProperty_DayNightLength.Name = "ConfigProperty_DayNightLength";
             this.ConfigProperty_DayNightLength.SliderSize = new System.Drawing.Size(4, 14);
-            this.ConfigProperty_DayNightLength.SmallChange = 24;
+            this.ConfigProperty_DayNightLength.SmallChange = 12;
             this.ConfigProperty_DayNightLength.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Colorful;
             this.ConfigProperty_DayNightLength.ThemeName = "Office2016Colorful";
             this.ConfigProperty_DayNightLength.TimerInterval = 100;
             this.toolTip.SetToolTip(this.ConfigProperty_DayNightLength, resources.GetString("ConfigProperty_DayNightLength.ToolTip"));
-            this.ConfigProperty_DayNightLength.Value = 24;
+            this.ConfigProperty_DayNightLength.Value = 60;
             this.ConfigProperty_DayNightLength.ValueChanged += new System.EventHandler(this.ConfigProperty_DayNightLength_ValueChanged);
             // 
             // GameDifficulty_GroupBox
@@ -4791,51 +4853,6 @@
             this.NitroGEN_Map_Generator_Link.TabStop = true;
             this.NitroGEN_Map_Generator_Link.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.NitroGEN_Map_Generator_Link_LinkClicked);
             // 
-            // trackBarEx5
-            // 
-            this.trackBarEx5.BackColor = System.Drawing.Color.Transparent;
-            this.trackBarEx5.BeforeTouchSize = new System.Drawing.Size(496, 20);
-            resources.ApplyResources(this.trackBarEx5, "trackBarEx5");
-            this.trackBarEx5.Name = "trackBarEx5";
-            this.trackBarEx5.TimerInterval = 100;
-            this.trackBarEx5.Value = 5;
-            // 
-            // trackBarEx6
-            // 
-            this.trackBarEx6.BackColor = System.Drawing.Color.Transparent;
-            this.trackBarEx6.BeforeTouchSize = new System.Drawing.Size(496, 20);
-            resources.ApplyResources(this.trackBarEx6, "trackBarEx6");
-            this.trackBarEx6.Name = "trackBarEx6";
-            this.trackBarEx6.TimerInterval = 100;
-            this.trackBarEx6.Value = 5;
-            // 
-            // trackBarEx8
-            // 
-            this.trackBarEx8.BackColor = System.Drawing.Color.Transparent;
-            this.trackBarEx8.BeforeTouchSize = new System.Drawing.Size(496, 20);
-            resources.ApplyResources(this.trackBarEx8, "trackBarEx8");
-            this.trackBarEx8.Name = "trackBarEx8";
-            this.trackBarEx8.TimerInterval = 100;
-            this.trackBarEx8.Value = 5;
-            // 
-            // trackBarEx9
-            // 
-            this.trackBarEx9.BackColor = System.Drawing.Color.Transparent;
-            this.trackBarEx9.BeforeTouchSize = new System.Drawing.Size(496, 20);
-            resources.ApplyResources(this.trackBarEx9, "trackBarEx9");
-            this.trackBarEx9.Name = "trackBarEx9";
-            this.trackBarEx9.TimerInterval = 100;
-            this.trackBarEx9.Value = 5;
-            // 
-            // trackBarEx10
-            // 
-            this.trackBarEx10.BackColor = System.Drawing.Color.Transparent;
-            this.trackBarEx10.BeforeTouchSize = new System.Drawing.Size(496, 20);
-            resources.ApplyResources(this.trackBarEx10, "trackBarEx10");
-            this.trackBarEx10.Name = "trackBarEx10";
-            this.trackBarEx10.TimerInterval = 100;
-            this.trackBarEx10.Value = 5;
-            // 
             // Server_Panel_Form
             // 
             resources.ApplyResources(this, "$this");
@@ -4918,8 +4935,20 @@
             this.Ban_GroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Ban_Slider_TrackBar)).EndInit();
             this.GameSettings_TabPage.ResumeLayout(false);
+            this.BloodMoonEnemyCount_GroupBox.ResumeLayout(false);
+            this.BloodMoonEnemyCount_GroupBox.PerformLayout();
+            this.BloodMoonRange_GroupBox.ResumeLayout(false);
+            this.BloodMoonRange_GroupBox.PerformLayout();
+            this.BloodMoonWarning_GroupBox.ResumeLayout(false);
+            this.BloodMoonWarning_GroupBox.PerformLayout();
+            this.BloodMoonFrequency_GroupBox.ResumeLayout(false);
+            this.BloodMoonFrequency_GroupBox.PerformLayout();
             this.PlayerSafeZoneHours_GroupBox.ResumeLayout(false);
             this.PlayerSafeZoneHours_GroupBox.PerformLayout();
+            this.MaxSpawnedAnimals_GroupBox.ResumeLayout(false);
+            this.MaxSpawnedAnimals_GroupBox.PerformLayout();
+            this.MaxSpawnedZombies_GroupBox.ResumeLayout(false);
+            this.MaxSpawnedZombies_GroupBox.PerformLayout();
             this.BlockDamagePlayer_GroupBox.ResumeLayout(false);
             this.BlockDamagePlayer_GroupBox.PerformLayout();
             this.Telnet_GroupBox.ResumeLayout(false);
@@ -4940,6 +4969,8 @@
             this.WorldGenSize_GroupBox.ResumeLayout(false);
             this.WorldGenSize_GroupBox.PerformLayout();
             this.GameMode_GroupBox.ResumeLayout(false);
+            this.BedrollExpiryTime_GroupBox.ResumeLayout(false);
+            this.BedrollExpiryTime_GroupBox.PerformLayout();
             this.PlayerSafeZoneLevel_GroupBox.ResumeLayout(false);
             this.PlayerSafeZoneLevel_GroupBox.PerformLayout();
             this.ServerOptions_GroupBox.ResumeLayout(false);
@@ -4950,6 +4981,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_EnemyDifficulty)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BuildCreate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_PersistentPlayerProfiles)).EndInit();
+            this.BedrollDeadZoneSize_GroupBox.ResumeLayout(false);
+            this.BedrollDeadZoneSize_GroupBox.PerformLayout();
             this.LootRespawnDays_GroupBox.ResumeLayout(false);
             this.LootRespawnDays_GroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_LootRespawnDays)).EndInit();
@@ -4968,28 +5001,6 @@
             this.ControlPanel_Password_GroupBox.ResumeLayout(false);
             this.ControlPanel_Password_GroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_ControlPanelEnabled)).EndInit();
-            this.BloodMoon_GroupBox.ResumeLayout(false);
-            this.BloodMoon_GroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BloodMoonWarning)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BloodMoonRange)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BloodMoonFrequency)).EndInit();
-            this.autobots.ResumeLayout(false);
-            this.autobots.PerformLayout();
-            this.BedrollExpiryTime_GroupBox.ResumeLayout(false);
-            this.BedrollExpiryTime_GroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BedrollExpiryTime)).EndInit();
-            this.BedrollDeadZoneSize_GroupBox.ResumeLayout(false);
-            this.BedrollDeadZoneSize_GroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BedrollDeadZoneSize)).EndInit();
-            this.BloodMoonEnemyCount_GroupBox.ResumeLayout(false);
-            this.BloodMoonEnemyCount_GroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_BloodMoonEnemyCount)).EndInit();
-            this.MaxSpawnedAnimals_GroupBox.ResumeLayout(false);
-            this.MaxSpawnedAnimals_GroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_MaxSpawnedAnimals)).EndInit();
-            this.MaxSpawnedZombies_GroupBox.ResumeLayout(false);
-            this.MaxSpawnedZombies_GroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_MaxSpawnedZombies)).EndInit();
             this.User_Data_Folder_GroupBox.ResumeLayout(false);
             this.User_Data_Folder_GroupBox.PerformLayout();
             this.Save_Game_Folder_GroupBox.ResumeLayout(false);
@@ -5015,7 +5026,6 @@
             this.ZombieFeralSpeed_GroupBox.ResumeLayout(false);
             this.ServerMaxAllowedViewDistance_GroupBox.ResumeLayout(false);
             this.ServerMaxAllowedViewDistance_GroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_ServerMaxAllowedViewDistance)).EndInit();
             this.DropOnQuit_GroupBox.ResumeLayout(false);
             this.XPMultiplier_GroupBox.ResumeLayout(false);
             this.XPMultiplier_GroupBox.PerformLayout();
@@ -5393,30 +5403,17 @@
         private System.Windows.Forms.GroupBox ControlPanel_GroupBox;
         private System.Windows.Forms.TextBox ConfigProperty_ControlPanelPort;
         private System.Windows.Forms.TextBox ConfigProperty_ControlPanelPassword;
-        private System.Windows.Forms.GroupBox BloodMoon_GroupBox;
-        private System.Windows.Forms.Label BloodMoonWarning_Label;
-        private System.Windows.Forms.NumericUpDown ConfigProperty_BloodMoonWarning;
-        private System.Windows.Forms.NumericUpDown ConfigProperty_BloodMoonRange;
-        private System.Windows.Forms.Label BloodMoonRange_Label;
-        private System.Windows.Forms.Label BloodMoonFrequency_Label;
-        private System.Windows.Forms.NumericUpDown ConfigProperty_BloodMoonFrequency;
         private System.Windows.Forms.GroupBox GameWorldSettings_GroupBox;
         private System.Windows.Forms.ComboBox ConfigProperty_GameMode;
         private System.Windows.Forms.TextBox ConfigProperty_WorldGenSeed;
         private System.Windows.Forms.ComboBox ConfigProperty_GameWorld;
-        private System.Windows.Forms.GroupBox autobots;
         private System.Windows.Forms.TextBox ConfigProperty_PlayerSafeZoneHours;
         private System.Windows.Forms.TextBox ConfigProperty_PlayerSafeZoneLevel;
         private System.Windows.Forms.GroupBox BedrollExpiryTime_GroupBox;
-        private System.Windows.Forms.TrackBar ConfigProperty_BedrollExpiryTime;
         private System.Windows.Forms.GroupBox BedrollDeadZoneSize_GroupBox;
-        private System.Windows.Forms.TrackBar ConfigProperty_BedrollDeadZoneSize;
         private System.Windows.Forms.GroupBox BloodMoonEnemyCount_GroupBox;
-        private System.Windows.Forms.TrackBar ConfigProperty_BloodMoonEnemyCount;
         private System.Windows.Forms.GroupBox MaxSpawnedAnimals_GroupBox;
-        private System.Windows.Forms.TrackBar ConfigProperty_MaxSpawnedAnimals;
         private System.Windows.Forms.GroupBox MaxSpawnedZombies_GroupBox;
-        private System.Windows.Forms.TrackBar ConfigProperty_MaxSpawnedZombies;
         private System.Windows.Forms.GroupBox User_Data_Folder_GroupBox;
         private System.Windows.Forms.Button configfile_e;
         private System.Windows.Forms.TextBox ConfigProperty_UserDataFolder;
@@ -5445,7 +5442,6 @@
         private System.Windows.Forms.GroupBox ZombieFeralSpeed_GroupBox;
         private System.Windows.Forms.ComboBox ConfigProperty_ZombieFeralMove;
         private System.Windows.Forms.GroupBox ServerMaxAllowedViewDistance_GroupBox;
-        private System.Windows.Forms.TrackBar ConfigProperty_ServerMaxAllowedViewDistance;
         private System.Windows.Forms.GroupBox DropOnQuit_GroupBox;
         private System.Windows.Forms.ComboBox ConfigProperty_DropOnQuit;
         private System.Windows.Forms.GroupBox XPMultiplier_GroupBox;
@@ -5541,7 +5537,7 @@
         private Syncfusion.Windows.Forms.Tools.TrackBarEx trackBarEx4;
         private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_BlockDamageAIBM;
         private Syncfusion.Windows.Forms.Tools.TrackBarEx trackBarEx7;
-        private Syncfusion.Windows.Forms.Tools.TrackBarEx trackBarEx3;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_ServerMaxAllowedViewDistance;
         private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_XPMultiplier;
         private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_BlockDamageAI;
         private Syncfusion.Windows.Forms.Tools.TrackBarEx trackBarEx2;
@@ -5556,10 +5552,16 @@
         private System.Windows.Forms.ComboBox ConfigProperty_GameName;
         private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_MaxUncoveredMapChunksPerPlayer;
         private System.Windows.Forms.LinkLabel NitroGEN_Map_Generator_Link;
-        private Syncfusion.Windows.Forms.Tools.TrackBarEx trackBarEx10;
-        private Syncfusion.Windows.Forms.Tools.TrackBarEx trackBarEx9;
-        private Syncfusion.Windows.Forms.Tools.TrackBarEx trackBarEx8;
-        private Syncfusion.Windows.Forms.Tools.TrackBarEx trackBarEx6;
-        private Syncfusion.Windows.Forms.Tools.TrackBarEx trackBarEx5;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_BedrollDeadZoneSize;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_BedrollExpiryTime;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_MaxSpawnedZombies;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_MaxSpawnedAnimals;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_BloodMoonEnemyCount;
+        private System.Windows.Forms.GroupBox BloodMoonRange_GroupBox;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_BloodMoonRange;
+        private System.Windows.Forms.GroupBox BloodMoonWarning_GroupBox;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_BloodMoonWarning;
+        private System.Windows.Forms.GroupBox BloodMoonFrequency_GroupBox;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_BloodMoonFrequency;
     }
 }
