@@ -23,12 +23,11 @@ namespace _7DaysServerManager
             /// <summary>
             /// !!! CRITICAL NOTE
             /// This Label Is Changed After The App Is Loaded, So That While The Server Config Is Being Loaded Into The UI For The First Time So We Don't Fire TextChanged Events For Each Field And Deadlock The Config.
-            /// If You Make A Change To The Default Text, Make Sure To Update Below!! 
+            /// If You Make A Change To The Default Text On The Public_IP_Address_Label, Make Sure To Update Below Or Deadlock Will Occur!! 
             /// <summary>
             if (Public_IP_Address_Label.Text != "Getting Public IP...")
             {
                 Echo_debug("---Updating & Saving Server Config---");
-
 
                 //TODO: MOVE THIS SOMEWHERE MORE APPROPRIATE
                 // Build ServerDisabledNetworkProtocols String Based On Selected Values
@@ -44,37 +43,6 @@ namespace _7DaysServerManager
                     ServerDisabledNetworkProtocolsList = ServerDisabledNetworkProtocolsList.Substring(0, ServerDisabledNetworkProtocolsList.Length - 2);
 
                 
-                
-                
-                // Set Terminal Window Mode
-                //TODO: WRITE CODE TO RESOLVE TERMINAL WINDOW MODE
-                //if (ConfigProperty_HideCommandExecutionLog.Text == "Show Everything")
-                //    hce = "0";
-                //else if (ConfigProperty_HideCommandExecutionLog.Text == "Hide Only From Telnet / Control Panel")
-                //    hce = "1";
-                //else if (ConfigProperty_HideCommandExecutionLog.Text == "Hide From Telnet / Control Panel / Remote Game Clients")
-                //    hce = "2";
-                //else if (ConfigProperty_HideCommandExecutionLog.Text == "Hide Everything")
-                //    hce = "3";
-
-                // Set Config Property: LandClaimDecayMode
-                //TODO: WRITE CODE TO RESOLVE LAND CLAIM DECAY MODE
-                //if (ConfigProperty_LandClaimDecayMode.Text == "Linear")
-                //    lcdm = "0";
-                //else if (ConfigProperty_LandClaimDecayMode.Text == "Exponential")
-                //    lcdm = "1";
-                //else if (ConfigProperty_LandClaimDecayMode.Text == "Full Protection")
-                //    lcdm = "2";
-
-                // Resolve Config Property: BlockDamagePlayer
-                //TODO: WRITE CODE TO RESOLVE BLOCK DAMAGE PLAYER
-                //int bdm_t = 0;
-                //if (ConfigProperty_BlockDamagePlayer.Value == 0)
-                //    bdm_t = 25;
-                //else
-                //    bdm_t = ConfigProperty_BlockDamagePlayer.Value*50;
-
-
                 // Resolve Config Property: SaveGamefolder
                 // TODO: WRITE CODE TO RESOLVE SAVE GAME FOLDER
                 //string savegamefolderproperty = "";
@@ -82,7 +50,6 @@ namespace _7DaysServerManager
                 //{
                 //    savegamefolderproperty = "  <property name=\"SaveGameFolder\"				value=\"" + ConfigProperty_SaveGameFolder.Text + "\"/>\r\n";
                 //}
-
 
                 // Resolve Config Property: UserDataFolder
                 // TODO: WRITE CODE TO RESOLVE USER DATA FOLDER
@@ -93,9 +60,9 @@ namespace _7DaysServerManager
                 //}
 
 
-                #region Alpha 18.x Configuration File Template
+                #region Alpha 18.3 Configuration File Template
 
-                // Alpha 18.x Configuration File - Leave Spacing Exactly As Is For Perfect Replication Of Config File
+                // Alpha 18.x Configuration File - Leave Spacing Exactly As Is For Perfect Replication Of Config File (Minus Comments)
                 string config = "<?xml version=\"1.0\"?>" +
                         "\n<ServerSettings>\r\n  " +
                         "\t<!-- GENERAL SERVER SETTINGS -->" +
@@ -700,18 +667,24 @@ namespace _7DaysServerManager
                                     break;
 
                                 case "LootAbundance":
+                                    // Default: 100
                                     ConfigProperty_LootAbundance.Value = Convert.ToInt32(Config_File_Property_Value);
-                                    LootAbundance_GroupBox.Text = "Loot Abundance " + " [" + Convert.ToInt32(ConfigProperty_LootAbundance.Value) + "%]";
+
+                                    // Update Text To Currently Set Value
+                                    if (ConfigProperty_LootAbundance.Value == 0)
+                                        LootAbundance_GroupBox.Text = "Loot Abundance [25%]";
+                                    else
+                                        LootAbundance_GroupBox.Text = "Loot Abundance [" + Convert.ToInt32(ConfigProperty_LootAbundance.Value) + "%]";
                                     break;
 
                                 case "LootRespawnDays":
-                                    ConfigProperty_LootRespawnDays.Value = Convert.ToInt32(Config_File_Property_Value);
+                                    ConfigProperty_LootRespawnDays_Old.Value = Convert.ToInt32(Config_File_Property_Value);
 
                                     // Update Text To Currently Set Value
                                     if (ConfigProperty_LootRespawnDays.Value == -1)
                                         LootRespawnDays_GroupBox.Text = "Loot Respawn Time" + " [ Disabled ]";
                                     else
-                                        LootRespawnDays_GroupBox.Text = "Loot Respawn Time" + " [" + Convert.ToInt32(ConfigProperty_LootRespawnDays.Value) + "]";
+                                        LootRespawnDays_GroupBox.Text = "Loot Respawn Time" + " [" + Convert.ToInt32(ConfigProperty_LootRespawnDays_Old.Value) + "]";
                                     break;
 
                                 case "AirDropFrequency":

@@ -18,6 +18,8 @@ using System.Text.RegularExpressions;
 using System.Net;
 using System.Linq;
 using Syncfusion.Windows.Forms.Tools;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace _7DaysServerManager
 {
@@ -2517,61 +2519,61 @@ namespace _7DaysServerManager
             Echo("\n\n████████╗██╗  ██╗ █████╗ ███╗   ██╗██╗  ██╗    ██╗   ██╗ ██████╗ ██╗   ██╗   ██╗ \n╚══██╔══╝██║  ██║██╔══██╗████╗  ██║██║ ██╔╝    ╚██╗ ██╔╝██╔═══██╗██║   ██║██╗╚██╗\n   ██║   ███████║███████║██╔██╗ ██║█████╔╝      ╚████╔╝ ██║   ██║██║   ██║╚═╝ ██║\n   ██║   ██╔══██║██╔══██║██║╚██╗██║██╔═██╗       ╚██╔╝  ██║   ██║██║   ██║██╗ ██║\n   ██║   ██║  ██║██║  ██║██║ ╚████║██║  ██╗       ██║   ╚██████╔╝╚██████╔╝╚═╝██╔╝\n   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝       ╚═╝    ╚═════╝  ╚═════╝    ╚═╝ \n\n", 0, true);
         }
 
-        private void Ctime_0_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
+        //private void Ctime_0_CheckedChanged(object sender, EventArgs e)
+        //{
+        //    Update_Config();
+        //}
 
-        private void Ctime_1_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
+        //private void Ctime_1_CheckedChanged(object sender, EventArgs e)
+        //{
+        //    Update_Config();
+        //}
 
-        private void Ctime_2_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
+        //private void Ctime_2_CheckedChanged(object sender, EventArgs e)
+        //{
+        //    Update_Config();
+        //}
 
-        private void Ltime_0_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
+        //private void Ltime_0_CheckedChanged(object sender, EventArgs e)
+        //{
+        //    Update_Config();
+        //}
 
-        private void Ltime_1_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
+        //private void Ltime_1_CheckedChanged(object sender, EventArgs e)
+        //{
+        //    Update_Config();
+        //}
 
-        private void Ltime_2_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
+        //private void Ltime_2_CheckedChanged(object sender, EventArgs e)
+        //{
+        //    Update_Config();
+        //}
 
-        private void Nightpercentage_Scroll(object sender, EventArgs e)
-        {
-            DayLightLength_GroupBox.Text = "Day Light Length [" + ConfigProperty_DayLightLength.Value + "h]";
+        //private void Nightpercentage_Scroll(object sender, EventArgs e)
+        //{
+        //    DayLightLength_GroupBox.Text = "Day Light Length [" + ConfigProperty_DayLightLength.Value + "h]";
             
-            Update_Config();
-        }
+        //    Update_Config();
+        //}
 
-        private void AdminFileName_TextChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
+        //private void AdminFileName_TextChanged(object sender, EventArgs e)
+        //{
+        //    Update_Config();
+        //}
 
-        private void LootAbundance_Scroll(object sender, EventArgs e)
-        {
-            LootAbundance_GroupBox.Text = LocalizedLanguage("LootAbundance_g") + " [" + ConfigProperty_LootAbundance.Value + "%]";
-            Update_Config();
-        }
+        //private void LootAbundance_Scroll(object sender, EventArgs e)
+        //{
+        //    LootAbundance_GroupBox.Text = LocalizedLanguage("LootAbundance_g") + " [" + ConfigProperty_LootAbundance_Old.Value + "%]";
+        //    Update_Config();
+        //}
 
         private void LootRespawnDays_Scroll(object sender, EventArgs e)
         {
 
-            if (ConfigProperty_LootRespawnDays.Value == -1)
+            if (ConfigProperty_LootRespawnDays_Old.Value == -1)
                 LootRespawnDays_GroupBox.Text = LocalizedLanguage("LootRespawnDays_g") + " [" + LocalizedLanguage("disabled") + "]";
             else
-                LootRespawnDays_GroupBox.Text = LocalizedLanguage("LootRespawnDays_g") + " [" + ConfigProperty_LootRespawnDays.Value + "]";
+                LootRespawnDays_GroupBox.Text = LocalizedLanguage("LootRespawnDays_g") + " [" + ConfigProperty_LootRespawnDays_Old.Value + "]";
             Update_Config();
         }
 
@@ -2958,8 +2960,8 @@ namespace _7DaysServerManager
         private void AirDropFrequency_Scroll(object sender, EventArgs e)
         {
             // Determine If Disabled Or Set To Specific Amount of Hours
-            if (ConfigProperty_AirDropFrequency.Value != 0)
-                AirDropFrequency_GroupBox.Text = LocalizedLanguage("AirDropFrequency") + " [" + Convert.ToString(ConfigProperty_AirDropFrequency.Value) + " h.]";
+            if (ConfigProperty_AirDropFrequency_Old.Value != 0)
+                AirDropFrequency_GroupBox.Text = LocalizedLanguage("AirDropFrequency") + " [" + Convert.ToString(ConfigProperty_AirDropFrequency_Old.Value) + " h.]";
             else
                 AirDropFrequency_GroupBox.Text = LocalizedLanguage("AirDropFrequency") + " [" + LocalizedLanguage("disabled") + "]";
 
@@ -4570,8 +4572,21 @@ namespace _7DaysServerManager
             Process.Start("https://github.com/imseandavis/7DaysToDie_ServerManager");
         }
 
+        private JArray GetRESTData(string uri)
+        {
+            var webRequest = (HttpWebRequest)WebRequest.Create(uri);
+            webRequest.Headers.Add("apikey", "SmpkZWI2bmhWY3lQczVOUnZXT3EzTHR5Rmp6SmlHYmVnNkFxVTVoTjdHM1M0SUVHZ0NQSlQxNFdpa1FwWm5KMC0tZlFvTWlCMXo3YitFQndJZDhaTHgvUT09--c263c337518233d4b00051b7114989af6f837328");
+            webRequest.ContentType = "application/json";
+            var webResponse = (HttpWebResponse)webRequest.GetResponse();
+            var reader = new StreamReader(webResponse.GetResponseStream());
+            string s = reader.ReadToEnd();
+            return JsonConvert.DeserializeObject<JArray>(s);
+        }
+
         private void Retrieve_Mods_From_Nexus_Button_Click(object sender, EventArgs e)
         {
+            Mods_DataGridView.DataSource = GetRESTData("https://api.nexusmods.com/v1/games/7DaysToDie/mods/updated.json?period=1m");
+            
             // SWAGGER API REF: https://app.swaggerhub.com/apis-docs/NexusMods/nexus-mods_public_api_params_in_form_data/1.0#/
 
             // Pull Latest Updated Mods For The Last 30 Days From Nexus
@@ -5149,6 +5164,21 @@ namespace _7DaysServerManager
             // Update The Config File With The New Value
             Update_Config();
         }
+
+        private void ConfigProperty_LootAbundance_ValueChanged(object sender, EventArgs e)
+        {
+            // Update Text To Currently Set Value
+            LootAbundance_GroupBox.Text = "Loot Abundance [" + Convert.ToString(ConfigProperty_LootAbundance.Value) + "%]";
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+
+
+
+
+
 
 
 

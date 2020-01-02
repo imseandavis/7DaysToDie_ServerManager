@@ -263,11 +263,11 @@
             this.BedrollDeadZoneSize_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_BedrollDeadZoneSize = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1, 500);
             this.LootRespawnDays_GroupBox = new System.Windows.Forms.GroupBox();
-            this.trackBarEx4 = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1, 1300);
-            this.ConfigProperty_LootRespawnDays = new System.Windows.Forms.TrackBar();
+            this.ConfigProperty_LootRespawnDays = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1, 1300);
+            this.ConfigProperty_LootRespawnDays_Old = new System.Windows.Forms.TrackBar();
             this.ServerMaxWorldTransferSpeedKiBs_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1, 1300);
-            this.Server_Visibility_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ServerVisibility_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_ServerVisibility = new System.Windows.Forms.ComboBox();
             this.MaxUncoveredMapChunksPerPlayer_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_MaxUncoveredMapChunksPerPlayer = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1, 1300);
@@ -291,7 +291,7 @@
             this.Server_Admin_Config_File_GroupBox = new System.Windows.Forms.GroupBox();
             this.Server_Admin_Path_Selector_Button = new System.Windows.Forms.Button();
             this.ConfigProperty_AdminFileName = new System.Windows.Forms.TextBox();
-            this.Server_Login_Confirmation_Text_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ServerLoginConfirmationText_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_ServerLoginConfirmationText = new System.Windows.Forms.RichTextBox();
             this.ServerPassword_GroupBox = new System.Windows.Forms.GroupBox();
             this.button2 = new System.Windows.Forms.Button();
@@ -335,9 +335,9 @@
             this.DropOnDeath_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_DropOnDeath = new System.Windows.Forms.ComboBox();
             this.AirDropFrequency_GroupBox = new System.Windows.Forms.GroupBox();
-            this.trackBarEx2 = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1, 1300);
-            this.ConfigProperty_AirDropFrequency = new System.Windows.Forms.TrackBar();
-            this.Land_Claim_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_AirDropFrequency = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1, 1300);
+            this.ConfigProperty_AirDropFrequency_Old = new System.Windows.Forms.TrackBar();
+            this.LandClaimSettings_GroupBox = new System.Windows.Forms.GroupBox();
             this.LandClaimCount_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_LandClaimCount = new System.Windows.Forms.NumericUpDown();
             this.LandClaimDecayMode_GroupBox = new System.Windows.Forms.GroupBox();
@@ -354,8 +354,8 @@
             this.LandClaimExpiryTime_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_LandClaimExpiryTime = new System.Windows.Forms.TextBox();
             this.LootAbundance_GroupBox = new System.Windows.Forms.GroupBox();
-            this.trackBarEx1 = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1, 1300);
-            this.ConfigProperty_LootAbundance = new System.Windows.Forms.TrackBar();
+            this.ConfigProperty_LootAbundance = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1, 1300);
+            this.ConfigProperty_LootAbundance_Old = new System.Windows.Forms.TrackBar();
             this.ServerMaxPlayerCount_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_ServerMaxPlayerCount = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1, 100);
             this.ZombieDaySpeed_GroupBox = new System.Windows.Forms.GroupBox();
@@ -468,10 +468,6 @@
             this.dtds_enable = new System.Windows.Forms.CheckBox();
             this.dtds_visit = new System.Windows.Forms.Button();
             this.Mods_TabPage = new System.Windows.Forms.TabPage();
-            this.Zombie_Speed_Menu = new Syncfusion.Windows.Forms.Tools.RadialMenu();
-            this.ZombieMove_Menu_Item = new Syncfusion.Windows.Forms.Tools.RadialMenuSlider();
-            this.ZombieMoveNight_Menu_Item = new Syncfusion.Windows.Forms.Tools.RadialMenuSlider();
-            this.ZombieFeralMove_Menu_Item = new Syncfusion.Windows.Forms.Tools.RadialMenuItem();
             this.radialMenuItem5 = new Syncfusion.Windows.Forms.Tools.RadialMenuItem();
             this.radialMenuItem4 = new Syncfusion.Windows.Forms.Tools.RadialMenuItem();
             this.radialMenuItem3 = new Syncfusion.Windows.Forms.Tools.RadialMenuItem();
@@ -517,6 +513,12 @@
             this.forumklik = new System.Windows.Forms.Button();
             this.www7dsm = new System.Windows.Forms.Button();
             this.NitroGEN_Map_Generator_Link = new System.Windows.Forms.LinkLabel();
+            this.Mods_DataGridView = new System.Windows.Forms.DataGridView();
+            this.Mod_Status = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Mod_Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Mod_Version = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Mod_Author = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ZombieSpeedSettings_GroupBox = new System.Windows.Forms.GroupBox();
             this.Settings_TabPage.SuspendLayout();
             this.Updates_GroupBox.SuspendLayout();
             this.exe_settings_g.SuspendLayout();
@@ -588,9 +590,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_PersistentPlayerProfiles)).BeginInit();
             this.BedrollDeadZoneSize_GroupBox.SuspendLayout();
             this.LootRespawnDays_GroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_LootRespawnDays)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_LootRespawnDays_Old)).BeginInit();
             this.ServerMaxWorldTransferSpeedKiBs_GroupBox.SuspendLayout();
-            this.Server_Visibility_GroupBox.SuspendLayout();
+            this.ServerVisibility_GroupBox.SuspendLayout();
             this.MaxUncoveredMapChunksPerPlayer_GroupBox.SuspendLayout();
             this.HideCommandExecutionLog_GroupBox.SuspendLayout();
             this.ServerDisabledNetworkProtocols_GroupBox.SuspendLayout();
@@ -603,7 +605,7 @@
             this.User_Data_Folder_GroupBox.SuspendLayout();
             this.Save_Game_Folder_GroupBox.SuspendLayout();
             this.Server_Admin_Config_File_GroupBox.SuspendLayout();
-            this.Server_Login_Confirmation_Text_GroupBox.SuspendLayout();
+            this.ServerLoginConfirmationText_GroupBox.SuspendLayout();
             this.ServerPassword_GroupBox.SuspendLayout();
             this.ServerWebsiteURL_GroupBox.SuspendLayout();
             this.ServerDescription_GroupBox.SuspendLayout();
@@ -622,8 +624,8 @@
             this.Player_Killing_Mode_GroupBox.SuspendLayout();
             this.DropOnDeath_GroupBox.SuspendLayout();
             this.AirDropFrequency_GroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_AirDropFrequency)).BeginInit();
-            this.Land_Claim_GroupBox.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_AirDropFrequency_Old)).BeginInit();
+            this.LandClaimSettings_GroupBox.SuspendLayout();
             this.LandClaimCount_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_LandClaimCount)).BeginInit();
             this.LandClaimDecayMode_GroupBox.SuspendLayout();
@@ -632,7 +634,7 @@
             this.LandClaimDeadZone_GroupBox.SuspendLayout();
             this.LandClaimExpiryTime_GroupBox.SuspendLayout();
             this.LootAbundance_GroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_LootAbundance)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_LootAbundance_Old)).BeginInit();
             this.ServerMaxPlayerCount_GroupBox.SuspendLayout();
             this.ZombieDaySpeed_GroupBox.SuspendLayout();
             this.DayLightLength_GroupBox.SuspendLayout();
@@ -667,10 +669,11 @@
             this.Rewards_TabPage.SuspendLayout();
             this.deds_g.SuspendLayout();
             this.Mods_TabPage.SuspendLayout();
-            this.Zombie_Speed_Menu.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_status)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Mods_DataGridView)).BeginInit();
+            this.ZombieSpeedSettings_GroupBox.SuspendLayout();
             this.SuspendLayout();
             // 
             // status_updater
@@ -1542,7 +1545,7 @@
             this.Server_Clock.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.RoundedRectangle;
             this.Server_Clock.ClockType = Syncfusion.Windows.Forms.Tools.ClockTypes.Digital;
             this.Server_Clock.CurrentDateTime = new System.DateTime(2019, 12, 17, 0, 0, 0, 0);
-            this.Server_Clock.CustomTime = new System.DateTime(2019, 12, 19, 18, 55, 3, 863);
+            this.Server_Clock.CustomTime = new System.DateTime(2019, 12, 19, 18, 59, 10, 144);
             this.Server_Clock.DigitalRenderer = digitalClockRenderer1;
             this.Server_Clock.DisplayDates = true;
             resources.ApplyResources(this.Server_Clock, "Server_Clock");
@@ -2108,6 +2111,7 @@
             // GameSettings_TabPage
             // 
             this.GameSettings_TabPage.BackColor = System.Drawing.SystemColors.Control;
+            this.GameSettings_TabPage.Controls.Add(this.ZombieSpeedSettings_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.BloodMoonEnemyCount_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.BloodMoonRange_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.BloodMoonWarning_GroupBox);
@@ -2124,7 +2128,7 @@
             this.GameSettings_TabPage.Controls.Add(this.BedrollDeadZoneSize_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.LootRespawnDays_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.ServerMaxWorldTransferSpeedKiBs_GroupBox);
-            this.GameSettings_TabPage.Controls.Add(this.Server_Visibility_GroupBox);
+            this.GameSettings_TabPage.Controls.Add(this.ServerVisibility_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.MaxUncoveredMapChunksPerPlayer_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.HideCommandExecutionLog_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.ServerDisabledNetworkProtocols_GroupBox);
@@ -2133,16 +2137,13 @@
             this.GameSettings_TabPage.Controls.Add(this.User_Data_Folder_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.Save_Game_Folder_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.Server_Admin_Config_File_GroupBox);
-            this.GameSettings_TabPage.Controls.Add(this.Server_Login_Confirmation_Text_GroupBox);
+            this.GameSettings_TabPage.Controls.Add(this.ServerLoginConfirmationText_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.ServerPassword_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.ServerWebsiteURL_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.ServerDescription_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.ServerName_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.BlockDamageAIBM_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.PartySharedKillRange_GroupBox);
-            this.GameSettings_TabPage.Controls.Add(this.ZombieBloodMoonSpeed_GroupBox);
-            this.GameSettings_TabPage.Controls.Add(this.ZombieNightSpeed_GroupBox);
-            this.GameSettings_TabPage.Controls.Add(this.ZombieFeralSpeed_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.ServerMaxAllowedViewDistance_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.DropOnQuit_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.XPMultiplier_GroupBox);
@@ -2151,10 +2152,9 @@
             this.GameSettings_TabPage.Controls.Add(this.Player_Killing_Mode_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.DropOnDeath_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.AirDropFrequency_GroupBox);
-            this.GameSettings_TabPage.Controls.Add(this.Land_Claim_GroupBox);
+            this.GameSettings_TabPage.Controls.Add(this.LandClaimSettings_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.LootAbundance_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.ServerMaxPlayerCount_GroupBox);
-            this.GameSettings_TabPage.Controls.Add(this.ZombieDaySpeed_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.DayLightLength_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.DayNightLength_GroupBox);
             this.GameSettings_TabPage.Controls.Add(this.GameDifficulty_GroupBox);
@@ -2783,34 +2783,33 @@
             // 
             // LootRespawnDays_GroupBox
             // 
-            this.LootRespawnDays_GroupBox.Controls.Add(this.trackBarEx4);
             this.LootRespawnDays_GroupBox.Controls.Add(this.ConfigProperty_LootRespawnDays);
+            this.LootRespawnDays_GroupBox.Controls.Add(this.ConfigProperty_LootRespawnDays_Old);
             resources.ApplyResources(this.LootRespawnDays_GroupBox, "LootRespawnDays_GroupBox");
             this.LootRespawnDays_GroupBox.Name = "LootRespawnDays_GroupBox";
             this.LootRespawnDays_GroupBox.TabStop = false;
             // 
-            // trackBarEx4
-            // 
-            this.trackBarEx4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.trackBarEx4.BeforeTouchSize = new System.Drawing.Size(173, 20);
-            resources.ApplyResources(this.trackBarEx4, "trackBarEx4");
-            this.trackBarEx4.LargeChange = 128;
-            this.trackBarEx4.Name = "trackBarEx4";
-            this.trackBarEx4.SliderSize = new System.Drawing.Size(4, 14);
-            this.trackBarEx4.SmallChange = 64;
-            this.trackBarEx4.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Black;
-            this.trackBarEx4.ThemeName = "Office2016Black";
-            this.trackBarEx4.TimerInterval = 100;
-            this.toolTip.SetToolTip(this.trackBarEx4, resources.GetString("trackBarEx4.ToolTip"));
-            this.trackBarEx4.Value = 512;
-            // 
             // ConfigProperty_LootRespawnDays
             // 
+            this.ConfigProperty_LootRespawnDays.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.ConfigProperty_LootRespawnDays.BeforeTouchSize = new System.Drawing.Size(173, 20);
             resources.ApplyResources(this.ConfigProperty_LootRespawnDays, "ConfigProperty_LootRespawnDays");
-            this.ConfigProperty_LootRespawnDays.Maximum = 90;
-            this.ConfigProperty_LootRespawnDays.Minimum = -1;
+            this.ConfigProperty_LootRespawnDays.LargeChange = 128;
             this.ConfigProperty_LootRespawnDays.Name = "ConfigProperty_LootRespawnDays";
-            this.ConfigProperty_LootRespawnDays.Value = 30;
+            this.ConfigProperty_LootRespawnDays.SliderSize = new System.Drawing.Size(4, 14);
+            this.ConfigProperty_LootRespawnDays.SmallChange = 64;
+            this.ConfigProperty_LootRespawnDays.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Black;
+            this.ConfigProperty_LootRespawnDays.ThemeName = "Office2016Black";
+            this.ConfigProperty_LootRespawnDays.TimerInterval = 100;
+            this.ConfigProperty_LootRespawnDays.Value = 512;
+            // 
+            // ConfigProperty_LootRespawnDays_Old
+            // 
+            resources.ApplyResources(this.ConfigProperty_LootRespawnDays_Old, "ConfigProperty_LootRespawnDays_Old");
+            this.ConfigProperty_LootRespawnDays_Old.Maximum = 90;
+            this.ConfigProperty_LootRespawnDays_Old.Minimum = -1;
+            this.ConfigProperty_LootRespawnDays_Old.Name = "ConfigProperty_LootRespawnDays_Old";
+            this.ConfigProperty_LootRespawnDays_Old.Value = 30;
             // 
             // ServerMaxWorldTransferSpeedKiBs_GroupBox
             // 
@@ -2836,12 +2835,12 @@
             this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.Value = 512;
             this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs.ValueChanged += new System.EventHandler(this.ConfigProperty_ServerMaxWorldTransferSpeedKiBs_ValueChanged);
             // 
-            // Server_Visibility_GroupBox
+            // ServerVisibility_GroupBox
             // 
-            this.Server_Visibility_GroupBox.Controls.Add(this.ConfigProperty_ServerVisibility);
-            resources.ApplyResources(this.Server_Visibility_GroupBox, "Server_Visibility_GroupBox");
-            this.Server_Visibility_GroupBox.Name = "Server_Visibility_GroupBox";
-            this.Server_Visibility_GroupBox.TabStop = false;
+            this.ServerVisibility_GroupBox.Controls.Add(this.ConfigProperty_ServerVisibility);
+            resources.ApplyResources(this.ServerVisibility_GroupBox, "ServerVisibility_GroupBox");
+            this.ServerVisibility_GroupBox.Name = "ServerVisibility_GroupBox";
+            this.ServerVisibility_GroupBox.TabStop = false;
             // 
             // ConfigProperty_ServerVisibility
             // 
@@ -3054,12 +3053,12 @@
             this.toolTip.SetToolTip(this.ConfigProperty_AdminFileName, resources.GetString("ConfigProperty_AdminFileName.ToolTip"));
             this.ConfigProperty_AdminFileName.TextChanged += new System.EventHandler(this.ConfigProperty_AdminFileName_TextChanged);
             // 
-            // Server_Login_Confirmation_Text_GroupBox
+            // ServerLoginConfirmationText_GroupBox
             // 
-            this.Server_Login_Confirmation_Text_GroupBox.Controls.Add(this.ConfigProperty_ServerLoginConfirmationText);
-            resources.ApplyResources(this.Server_Login_Confirmation_Text_GroupBox, "Server_Login_Confirmation_Text_GroupBox");
-            this.Server_Login_Confirmation_Text_GroupBox.Name = "Server_Login_Confirmation_Text_GroupBox";
-            this.Server_Login_Confirmation_Text_GroupBox.TabStop = false;
+            this.ServerLoginConfirmationText_GroupBox.Controls.Add(this.ConfigProperty_ServerLoginConfirmationText);
+            resources.ApplyResources(this.ServerLoginConfirmationText_GroupBox, "ServerLoginConfirmationText_GroupBox");
+            this.ServerLoginConfirmationText_GroupBox.Name = "ServerLoginConfirmationText_GroupBox";
+            this.ServerLoginConfirmationText_GroupBox.TabStop = false;
             // 
             // ConfigProperty_ServerLoginConfirmationText
             // 
@@ -3166,7 +3165,7 @@
             // trackBarEx7
             // 
             this.trackBarEx7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.trackBarEx7.BeforeTouchSize = new System.Drawing.Size(173, 20);
+            this.trackBarEx7.BeforeTouchSize = new System.Drawing.Size(329, 20);
             resources.ApplyResources(this.trackBarEx7, "trackBarEx7");
             this.trackBarEx7.LargeChange = 128;
             this.trackBarEx7.Name = "trackBarEx7";
@@ -3191,8 +3190,8 @@
             // 
             // ZombieBloodMoonSpeed_GroupBox
             // 
-            resources.ApplyResources(this.ZombieBloodMoonSpeed_GroupBox, "ZombieBloodMoonSpeed_GroupBox");
             this.ZombieBloodMoonSpeed_GroupBox.Controls.Add(this.ConfigProperty_ZombieBMMove);
+            resources.ApplyResources(this.ZombieBloodMoonSpeed_GroupBox, "ZombieBloodMoonSpeed_GroupBox");
             this.ZombieBloodMoonSpeed_GroupBox.Name = "ZombieBloodMoonSpeed_GroupBox";
             this.ZombieBloodMoonSpeed_GroupBox.TabStop = false;
             // 
@@ -3212,8 +3211,8 @@
             // 
             // ZombieNightSpeed_GroupBox
             // 
-            resources.ApplyResources(this.ZombieNightSpeed_GroupBox, "ZombieNightSpeed_GroupBox");
             this.ZombieNightSpeed_GroupBox.Controls.Add(this.ConfigProperty_ZombieMoveNight);
+            resources.ApplyResources(this.ZombieNightSpeed_GroupBox, "ZombieNightSpeed_GroupBox");
             this.ZombieNightSpeed_GroupBox.Name = "ZombieNightSpeed_GroupBox";
             this.ZombieNightSpeed_GroupBox.TabStop = false;
             // 
@@ -3233,8 +3232,8 @@
             // 
             // ZombieFeralSpeed_GroupBox
             // 
-            resources.ApplyResources(this.ZombieFeralSpeed_GroupBox, "ZombieFeralSpeed_GroupBox");
             this.ZombieFeralSpeed_GroupBox.Controls.Add(this.ConfigProperty_ZombieFeralMove);
+            resources.ApplyResources(this.ZombieFeralSpeed_GroupBox, "ZombieFeralSpeed_GroupBox");
             this.ZombieFeralSpeed_GroupBox.Name = "ZombieFeralSpeed_GroupBox";
             this.ZombieFeralSpeed_GroupBox.TabStop = false;
             // 
@@ -3445,45 +3444,45 @@
             // AirDropFrequency_GroupBox
             // 
             resources.ApplyResources(this.AirDropFrequency_GroupBox, "AirDropFrequency_GroupBox");
-            this.AirDropFrequency_GroupBox.Controls.Add(this.trackBarEx2);
             this.AirDropFrequency_GroupBox.Controls.Add(this.ConfigProperty_AirDropFrequency);
+            this.AirDropFrequency_GroupBox.Controls.Add(this.ConfigProperty_AirDropFrequency_Old);
             this.AirDropFrequency_GroupBox.Name = "AirDropFrequency_GroupBox";
             this.AirDropFrequency_GroupBox.TabStop = false;
             // 
-            // trackBarEx2
-            // 
-            this.trackBarEx2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.trackBarEx2.BeforeTouchSize = new System.Drawing.Size(360, 20);
-            resources.ApplyResources(this.trackBarEx2, "trackBarEx2");
-            this.trackBarEx2.LargeChange = 128;
-            this.trackBarEx2.Name = "trackBarEx2";
-            this.trackBarEx2.SliderSize = new System.Drawing.Size(4, 14);
-            this.trackBarEx2.SmallChange = 64;
-            this.trackBarEx2.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Black;
-            this.trackBarEx2.ThemeName = "Office2016Black";
-            this.trackBarEx2.TimerInterval = 100;
-            this.toolTip.SetToolTip(this.trackBarEx2, resources.GetString("trackBarEx2.ToolTip"));
-            this.trackBarEx2.Value = 512;
-            // 
             // ConfigProperty_AirDropFrequency
             // 
+            this.ConfigProperty_AirDropFrequency.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
+            this.ConfigProperty_AirDropFrequency.BeforeTouchSize = new System.Drawing.Size(360, 20);
             resources.ApplyResources(this.ConfigProperty_AirDropFrequency, "ConfigProperty_AirDropFrequency");
-            this.ConfigProperty_AirDropFrequency.Maximum = 168;
+            this.ConfigProperty_AirDropFrequency.LargeChange = 128;
             this.ConfigProperty_AirDropFrequency.Name = "ConfigProperty_AirDropFrequency";
+            this.ConfigProperty_AirDropFrequency.SliderSize = new System.Drawing.Size(4, 14);
+            this.ConfigProperty_AirDropFrequency.SmallChange = 64;
+            this.ConfigProperty_AirDropFrequency.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Black;
+            this.ConfigProperty_AirDropFrequency.ThemeName = "Office2016Black";
+            this.ConfigProperty_AirDropFrequency.TimerInterval = 100;
             this.toolTip.SetToolTip(this.ConfigProperty_AirDropFrequency, resources.GetString("ConfigProperty_AirDropFrequency.ToolTip"));
-            this.ConfigProperty_AirDropFrequency.Value = 72;
+            this.ConfigProperty_AirDropFrequency.Value = 512;
             // 
-            // Land_Claim_GroupBox
+            // ConfigProperty_AirDropFrequency_Old
             // 
-            resources.ApplyResources(this.Land_Claim_GroupBox, "Land_Claim_GroupBox");
-            this.Land_Claim_GroupBox.Controls.Add(this.LandClaimCount_GroupBox);
-            this.Land_Claim_GroupBox.Controls.Add(this.LandClaimDecayMode_GroupBox);
-            this.Land_Claim_GroupBox.Controls.Add(this.LandClaimDurabilityModifier_GroupBox);
-            this.Land_Claim_GroupBox.Controls.Add(this.LandClaimSize_GroupBox);
-            this.Land_Claim_GroupBox.Controls.Add(this.LandClaimDeadZone_GroupBox);
-            this.Land_Claim_GroupBox.Controls.Add(this.LandClaimExpiryTime_GroupBox);
-            this.Land_Claim_GroupBox.Name = "Land_Claim_GroupBox";
-            this.Land_Claim_GroupBox.TabStop = false;
+            resources.ApplyResources(this.ConfigProperty_AirDropFrequency_Old, "ConfigProperty_AirDropFrequency_Old");
+            this.ConfigProperty_AirDropFrequency_Old.Maximum = 168;
+            this.ConfigProperty_AirDropFrequency_Old.Name = "ConfigProperty_AirDropFrequency_Old";
+            this.toolTip.SetToolTip(this.ConfigProperty_AirDropFrequency_Old, resources.GetString("ConfigProperty_AirDropFrequency_Old.ToolTip"));
+            this.ConfigProperty_AirDropFrequency_Old.Value = 72;
+            // 
+            // LandClaimSettings_GroupBox
+            // 
+            resources.ApplyResources(this.LandClaimSettings_GroupBox, "LandClaimSettings_GroupBox");
+            this.LandClaimSettings_GroupBox.Controls.Add(this.LandClaimCount_GroupBox);
+            this.LandClaimSettings_GroupBox.Controls.Add(this.LandClaimDecayMode_GroupBox);
+            this.LandClaimSettings_GroupBox.Controls.Add(this.LandClaimDurabilityModifier_GroupBox);
+            this.LandClaimSettings_GroupBox.Controls.Add(this.LandClaimSize_GroupBox);
+            this.LandClaimSettings_GroupBox.Controls.Add(this.LandClaimDeadZone_GroupBox);
+            this.LandClaimSettings_GroupBox.Controls.Add(this.LandClaimExpiryTime_GroupBox);
+            this.LandClaimSettings_GroupBox.Name = "LandClaimSettings_GroupBox";
+            this.LandClaimSettings_GroupBox.TabStop = false;
             // 
             // LandClaimCount_GroupBox
             // 
@@ -3595,32 +3594,30 @@
             // LootAbundance_GroupBox
             // 
             resources.ApplyResources(this.LootAbundance_GroupBox, "LootAbundance_GroupBox");
-            this.LootAbundance_GroupBox.Controls.Add(this.trackBarEx1);
             this.LootAbundance_GroupBox.Controls.Add(this.ConfigProperty_LootAbundance);
+            this.LootAbundance_GroupBox.Controls.Add(this.ConfigProperty_LootAbundance_Old);
             this.LootAbundance_GroupBox.Name = "LootAbundance_GroupBox";
             this.LootAbundance_GroupBox.TabStop = false;
             // 
-            // trackBarEx1
-            // 
-            this.trackBarEx1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.trackBarEx1.BeforeTouchSize = new System.Drawing.Size(360, 20);
-            resources.ApplyResources(this.trackBarEx1, "trackBarEx1");
-            this.trackBarEx1.LargeChange = 128;
-            this.trackBarEx1.Name = "trackBarEx1";
-            this.trackBarEx1.SliderSize = new System.Drawing.Size(4, 14);
-            this.trackBarEx1.SmallChange = 64;
-            this.trackBarEx1.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Black;
-            this.trackBarEx1.ThemeName = "Office2016Black";
-            this.trackBarEx1.TimerInterval = 100;
-            this.toolTip.SetToolTip(this.trackBarEx1, resources.GetString("trackBarEx1.ToolTip"));
-            this.trackBarEx1.Value = 512;
-            // 
             // ConfigProperty_LootAbundance
             // 
+            this.ConfigProperty_LootAbundance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.ConfigProperty_LootAbundance.BeforeTouchSize = new System.Drawing.Size(360, 20);
             resources.ApplyResources(this.ConfigProperty_LootAbundance, "ConfigProperty_LootAbundance");
-            this.ConfigProperty_LootAbundance.Maximum = 200;
             this.ConfigProperty_LootAbundance.Name = "ConfigProperty_LootAbundance";
+            this.ConfigProperty_LootAbundance.SliderSize = new System.Drawing.Size(4, 14);
+            this.ConfigProperty_LootAbundance.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Colorful;
+            this.ConfigProperty_LootAbundance.ThemeName = "Office2016Colorful";
+            this.ConfigProperty_LootAbundance.TimerInterval = 100;
             this.ConfigProperty_LootAbundance.Value = 100;
+            this.ConfigProperty_LootAbundance.ValueChanged += new System.EventHandler(this.ConfigProperty_LootAbundance_ValueChanged);
+            // 
+            // ConfigProperty_LootAbundance_Old
+            // 
+            resources.ApplyResources(this.ConfigProperty_LootAbundance_Old, "ConfigProperty_LootAbundance_Old");
+            this.ConfigProperty_LootAbundance_Old.Maximum = 200;
+            this.ConfigProperty_LootAbundance_Old.Name = "ConfigProperty_LootAbundance_Old";
+            this.ConfigProperty_LootAbundance_Old.Value = 100;
             // 
             // ServerMaxPlayerCount_GroupBox
             // 
@@ -3645,8 +3642,8 @@
             // 
             // ZombieDaySpeed_GroupBox
             // 
-            resources.ApplyResources(this.ZombieDaySpeed_GroupBox, "ZombieDaySpeed_GroupBox");
             this.ZombieDaySpeed_GroupBox.Controls.Add(this.ConfigProperty_ZombieMove);
+            resources.ApplyResources(this.ZombieDaySpeed_GroupBox, "ZombieDaySpeed_GroupBox");
             this.ZombieDaySpeed_GroupBox.Name = "ZombieDaySpeed_GroupBox";
             this.ZombieDaySpeed_GroupBox.TabStop = false;
             // 
@@ -4481,7 +4478,7 @@
             // 
             // Mods_TabPage
             // 
-            this.Mods_TabPage.Controls.Add(this.Zombie_Speed_Menu);
+            this.Mods_TabPage.Controls.Add(this.Mods_DataGridView);
             this.Mods_TabPage.Controls.Add(this.button1);
             this.Mods_TabPage.Controls.Add(this.groupBox2);
             this.Mods_TabPage.Controls.Add(this.groupBox1);
@@ -4490,52 +4487,6 @@
             resources.ApplyResources(this.Mods_TabPage, "Mods_TabPage");
             this.Mods_TabPage.Name = "Mods_TabPage";
             this.Mods_TabPage.UseVisualStyleBackColor = true;
-            // 
-            // Zombie_Speed_Menu
-            // 
-            this.Zombie_Speed_Menu.Controls.Add(this.ZombieMove_Menu_Item);
-            this.Zombie_Speed_Menu.Controls.Add(this.ZombieMoveNight_Menu_Item);
-            this.Zombie_Speed_Menu.Controls.Add(this.ZombieFeralMove_Menu_Item);
-            this.Zombie_Speed_Menu.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Zombie_Speed_Menu.ImageCollection.AddRange(new System.Drawing.Image[] {
-            ((System.Drawing.Image)(resources.GetObject("Zombie_Speed_Menu.ImageCollection"))),
-            ((System.Drawing.Image)(resources.GetObject("Zombie_Speed_Menu.ImageCollection1"))),
-            ((System.Drawing.Image)(resources.GetObject("Zombie_Speed_Menu.ImageCollection2")))});
-            this.Zombie_Speed_Menu.ItemOnLoad = this.ZombieFeralMove_Menu_Item;
-            this.Zombie_Speed_Menu.Items.Add(this.ZombieMove_Menu_Item);
-            this.Zombie_Speed_Menu.Items.Add(this.ZombieMoveNight_Menu_Item);
-            this.Zombie_Speed_Menu.Items.Add(this.ZombieFeralMove_Menu_Item);
-            resources.ApplyResources(this.Zombie_Speed_Menu, "Zombie_Speed_Menu");
-            this.Zombie_Speed_Menu.MenuVisibility = true;
-            this.Zombie_Speed_Menu.Name = "Zombie_Speed_Menu";
-            this.Zombie_Speed_Menu.WedgeCount = 3;
-            // 
-            // ZombieMove_Menu_Item
-            // 
-            this.ZombieMove_Menu_Item.ImageIndex = 100;
-            this.ZombieMove_Menu_Item.Index = 100;
-            resources.ApplyResources(this.ZombieMove_Menu_Item, "ZombieMove_Menu_Item");
-            this.ZombieMove_Menu_Item.Name = "ZombieMove_Menu_Item";
-            this.ZombieMove_Menu_Item.SliderValue = 0D;
-            // 
-            // ZombieMoveNight_Menu_Item
-            // 
-            resources.ApplyResources(this.ZombieMoveNight_Menu_Item, "ZombieMoveNight_Menu_Item");
-            this.ZombieMoveNight_Menu_Item.Name = "ZombieMoveNight_Menu_Item";
-            this.ZombieMoveNight_Menu_Item.SliderValue = 4D;
-            // 
-            // ZombieFeralMove_Menu_Item
-            // 
-            this.ZombieFeralMove_Menu_Item.BackColor = System.Drawing.Color.Gray;
-            this.ZombieFeralMove_Menu_Item.Checked = true;
-            this.ZombieFeralMove_Menu_Item.CheckMode = Syncfusion.Windows.Forms.Tools.CheckMode.Option;
-            this.ZombieFeralMove_Menu_Item.Items.Add(this.radialMenuItem5);
-            this.ZombieFeralMove_Menu_Item.Items.Add(this.radialMenuItem4);
-            this.ZombieFeralMove_Menu_Item.Items.Add(this.radialMenuItem3);
-            this.ZombieFeralMove_Menu_Item.Items.Add(this.radialMenuItem2);
-            this.ZombieFeralMove_Menu_Item.Items.Add(this.radialMenuItem1);
-            resources.ApplyResources(this.ZombieFeralMove_Menu_Item, "ZombieFeralMove_Menu_Item");
-            this.ZombieFeralMove_Menu_Item.Name = "ZombieFeralMove_Menu_Item";
             // 
             // radialMenuItem5
             // 
@@ -4853,6 +4804,62 @@
             this.NitroGEN_Map_Generator_Link.TabStop = true;
             this.NitroGEN_Map_Generator_Link.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.NitroGEN_Map_Generator_Link_LinkClicked);
             // 
+            // Mods_DataGridView
+            // 
+            this.Mods_DataGridView.AllowUserToAddRows = false;
+            this.Mods_DataGridView.AllowUserToDeleteRows = false;
+            this.Mods_DataGridView.AllowUserToResizeColumns = false;
+            this.Mods_DataGridView.AllowUserToResizeRows = false;
+            this.Mods_DataGridView.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Mods_DataGridView.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
+            this.Mods_DataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Sunken;
+            this.Mods_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Mods_DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Mod_Status,
+            this.Mod_Name,
+            this.Mod_Version,
+            this.Mod_Author});
+            resources.ApplyResources(this.Mods_DataGridView, "Mods_DataGridView");
+            this.Mods_DataGridView.MultiSelect = false;
+            this.Mods_DataGridView.Name = "Mods_DataGridView";
+            this.Mods_DataGridView.ReadOnly = true;
+            // 
+            // Mod_Status
+            // 
+            resources.ApplyResources(this.Mod_Status, "Mod_Status");
+            this.Mod_Status.Name = "Mod_Status";
+            this.Mod_Status.ReadOnly = true;
+            this.Mod_Status.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Mod_Status.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // Mod_Name
+            // 
+            resources.ApplyResources(this.Mod_Name, "Mod_Name");
+            this.Mod_Name.Name = "Mod_Name";
+            this.Mod_Name.ReadOnly = true;
+            // 
+            // Mod_Version
+            // 
+            resources.ApplyResources(this.Mod_Version, "Mod_Version");
+            this.Mod_Version.Name = "Mod_Version";
+            this.Mod_Version.ReadOnly = true;
+            // 
+            // Mod_Author
+            // 
+            resources.ApplyResources(this.Mod_Author, "Mod_Author");
+            this.Mod_Author.Name = "Mod_Author";
+            this.Mod_Author.ReadOnly = true;
+            // 
+            // ZombieSpeedSettings_GroupBox
+            // 
+            this.ZombieSpeedSettings_GroupBox.Controls.Add(this.ZombieDaySpeed_GroupBox);
+            this.ZombieSpeedSettings_GroupBox.Controls.Add(this.ZombieFeralSpeed_GroupBox);
+            this.ZombieSpeedSettings_GroupBox.Controls.Add(this.ZombieNightSpeed_GroupBox);
+            this.ZombieSpeedSettings_GroupBox.Controls.Add(this.ZombieBloodMoonSpeed_GroupBox);
+            resources.ApplyResources(this.ZombieSpeedSettings_GroupBox, "ZombieSpeedSettings_GroupBox");
+            this.ZombieSpeedSettings_GroupBox.Name = "ZombieSpeedSettings_GroupBox";
+            this.ZombieSpeedSettings_GroupBox.TabStop = false;
+            // 
             // Server_Panel_Form
             // 
             resources.ApplyResources(this, "$this");
@@ -4985,10 +4992,10 @@
             this.BedrollDeadZoneSize_GroupBox.PerformLayout();
             this.LootRespawnDays_GroupBox.ResumeLayout(false);
             this.LootRespawnDays_GroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_LootRespawnDays)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_LootRespawnDays_Old)).EndInit();
             this.ServerMaxWorldTransferSpeedKiBs_GroupBox.ResumeLayout(false);
             this.ServerMaxWorldTransferSpeedKiBs_GroupBox.PerformLayout();
-            this.Server_Visibility_GroupBox.ResumeLayout(false);
+            this.ServerVisibility_GroupBox.ResumeLayout(false);
             this.MaxUncoveredMapChunksPerPlayer_GroupBox.ResumeLayout(false);
             this.MaxUncoveredMapChunksPerPlayer_GroupBox.PerformLayout();
             this.HideCommandExecutionLog_GroupBox.ResumeLayout(false);
@@ -5007,7 +5014,7 @@
             this.Save_Game_Folder_GroupBox.PerformLayout();
             this.Server_Admin_Config_File_GroupBox.ResumeLayout(false);
             this.Server_Admin_Config_File_GroupBox.PerformLayout();
-            this.Server_Login_Confirmation_Text_GroupBox.ResumeLayout(false);
+            this.ServerLoginConfirmationText_GroupBox.ResumeLayout(false);
             this.ServerPassword_GroupBox.ResumeLayout(false);
             this.ServerPassword_GroupBox.PerformLayout();
             this.ServerWebsiteURL_GroupBox.ResumeLayout(false);
@@ -5037,8 +5044,8 @@
             this.DropOnDeath_GroupBox.ResumeLayout(false);
             this.AirDropFrequency_GroupBox.ResumeLayout(false);
             this.AirDropFrequency_GroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_AirDropFrequency)).EndInit();
-            this.Land_Claim_GroupBox.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_AirDropFrequency_Old)).EndInit();
+            this.LandClaimSettings_GroupBox.ResumeLayout(false);
             this.LandClaimCount_GroupBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_LandClaimCount)).EndInit();
             this.LandClaimDecayMode_GroupBox.ResumeLayout(false);
@@ -5052,7 +5059,7 @@
             this.LandClaimExpiryTime_GroupBox.PerformLayout();
             this.LootAbundance_GroupBox.ResumeLayout(false);
             this.LootAbundance_GroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_LootAbundance)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_LootAbundance_Old)).EndInit();
             this.ServerMaxPlayerCount_GroupBox.ResumeLayout(false);
             this.ServerMaxPlayerCount_GroupBox.PerformLayout();
             this.ZombieDaySpeed_GroupBox.ResumeLayout(false);
@@ -5103,12 +5110,12 @@
             this.deds_g.ResumeLayout(false);
             this.deds_g.PerformLayout();
             this.Mods_TabPage.ResumeLayout(false);
-            this.Zombie_Speed_Menu.ResumeLayout(false);
-            this.Zombie_Speed_Menu.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.img_status)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Mods_DataGridView)).EndInit();
+            this.ZombieSpeedSettings_GroupBox.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -5387,7 +5394,7 @@
         private System.Windows.Forms.ComboBox Select_Language;
         private Syncfusion.Windows.Forms.Tools.Clock Server_Clock;
         private System.Windows.Forms.GroupBox ServerMaxWorldTransferSpeedKiBs_GroupBox;
-        private System.Windows.Forms.GroupBox Server_Visibility_GroupBox;
+        private System.Windows.Forms.GroupBox ServerVisibility_GroupBox;
         private System.Windows.Forms.ComboBox ConfigProperty_ServerVisibility;
         private System.Windows.Forms.GroupBox MaxUncoveredMapChunksPerPlayer_GroupBox;
         private System.Windows.Forms.GroupBox HideCommandExecutionLog_GroupBox;
@@ -5422,7 +5429,7 @@
         private System.Windows.Forms.GroupBox Server_Admin_Config_File_GroupBox;
         private System.Windows.Forms.Button Server_Admin_Path_Selector_Button;
         private System.Windows.Forms.TextBox ConfigProperty_AdminFileName;
-        private System.Windows.Forms.GroupBox Server_Login_Confirmation_Text_GroupBox;
+        private System.Windows.Forms.GroupBox ServerLoginConfirmationText_GroupBox;
         private System.Windows.Forms.RichTextBox ConfigProperty_ServerLoginConfirmationText;
         private System.Windows.Forms.GroupBox ServerPassword_GroupBox;
         private System.Windows.Forms.TextBox ConfigProperty_ServerPassword;
@@ -5460,8 +5467,8 @@
         private System.Windows.Forms.GroupBox DropOnDeath_GroupBox;
         private System.Windows.Forms.ComboBox ConfigProperty_DropOnDeath;
         private System.Windows.Forms.GroupBox AirDropFrequency_GroupBox;
-        private System.Windows.Forms.TrackBar ConfigProperty_AirDropFrequency;
-        private System.Windows.Forms.GroupBox Land_Claim_GroupBox;
+        private System.Windows.Forms.TrackBar ConfigProperty_AirDropFrequency_Old;
+        private System.Windows.Forms.GroupBox LandClaimSettings_GroupBox;
         private System.Windows.Forms.GroupBox LandClaimCount_GroupBox;
         private System.Windows.Forms.NumericUpDown ConfigProperty_LandClaimCount;
         private System.Windows.Forms.GroupBox LandClaimDecayMode_GroupBox;
@@ -5478,9 +5485,9 @@
         private System.Windows.Forms.GroupBox LandClaimExpiryTime_GroupBox;
         private System.Windows.Forms.TextBox ConfigProperty_LandClaimExpiryTime;
         private System.Windows.Forms.GroupBox LootRespawnDays_GroupBox;
-        private System.Windows.Forms.TrackBar ConfigProperty_LootRespawnDays;
+        private System.Windows.Forms.TrackBar ConfigProperty_LootRespawnDays_Old;
         private System.Windows.Forms.GroupBox LootAbundance_GroupBox;
-        private System.Windows.Forms.TrackBar ConfigProperty_LootAbundance;
+        private System.Windows.Forms.TrackBar ConfigProperty_LootAbundance_Old;
         private System.Windows.Forms.GroupBox ServerMaxPlayerCount_GroupBox;
         private System.Windows.Forms.GroupBox ZombieDaySpeed_GroupBox;
         private System.Windows.Forms.ComboBox ConfigProperty_ZombieMove;
@@ -5504,10 +5511,6 @@
         public Syncfusion.Windows.Forms.Tools.ToggleButton ConfigProperty_AirDropMarker;
         public Syncfusion.Windows.Forms.Tools.ToggleButton ConfigProperty_PersistentPlayerProfiles;
         public Syncfusion.Windows.Forms.Tools.ToggleButton ConfigProperty_BuildCreate;
-        private Syncfusion.Windows.Forms.Tools.RadialMenu Zombie_Speed_Menu;
-        private Syncfusion.Windows.Forms.Tools.RadialMenuSlider ZombieMove_Menu_Item;
-        private Syncfusion.Windows.Forms.Tools.RadialMenuSlider ZombieMoveNight_Menu_Item;
-        private Syncfusion.Windows.Forms.Tools.RadialMenuItem ZombieFeralMove_Menu_Item;
         private Syncfusion.Windows.Forms.Tools.RadialMenuItem radialMenuItem5;
         private Syncfusion.Windows.Forms.Tools.RadialMenuItem radialMenuItem4;
         private Syncfusion.Windows.Forms.Tools.RadialMenuItem radialMenuItem3;
@@ -5534,14 +5537,14 @@
         public Syncfusion.Windows.Forms.Tools.ToggleButton ConfigProperty_EnemySpawnMode;
         private System.Windows.Forms.GroupBox PlayerSafeZoneHours_GroupBox;
         private System.Windows.Forms.GroupBox PlayerSafeZoneLevel_GroupBox;
-        private Syncfusion.Windows.Forms.Tools.TrackBarEx trackBarEx4;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_LootRespawnDays;
         private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_BlockDamageAIBM;
         private Syncfusion.Windows.Forms.Tools.TrackBarEx trackBarEx7;
         private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_ServerMaxAllowedViewDistance;
         private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_XPMultiplier;
         private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_BlockDamageAI;
-        private Syncfusion.Windows.Forms.Tools.TrackBarEx trackBarEx2;
-        private Syncfusion.Windows.Forms.Tools.TrackBarEx trackBarEx1;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_AirDropFrequency;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_LootAbundance;
         private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_BlockDamagePlayer;
         private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_WorldGenSize;
         private System.Windows.Forms.GroupBox GameMode_GroupBox;
@@ -5563,5 +5566,11 @@
         private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_BloodMoonWarning;
         private System.Windows.Forms.GroupBox BloodMoonFrequency_GroupBox;
         private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_BloodMoonFrequency;
+        private System.Windows.Forms.DataGridView Mods_DataGridView;
+        private System.Windows.Forms.DataGridViewComboBoxColumn Mod_Status;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Mod_Name;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Mod_Version;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Mod_Author;
+        private System.Windows.Forms.GroupBox ZombieSpeedSettings_GroupBox;
     }
 }

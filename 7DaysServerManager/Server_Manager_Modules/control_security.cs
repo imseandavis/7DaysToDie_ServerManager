@@ -19,24 +19,73 @@ namespace _7DaysServerManager
             Shutdown_Server_Button.Enabled = true;
 
             // Game Settings Tab
-            Player_Killing_Mode_GroupBox.Enabled = false;
-            ConfigProperty_AirDropMarker.Enabled = false;
-            ConfigProperty_ServerMaxPlayerCount.Enabled = false;
-            ConfigProperty_GameDifficulty.Enabled = false;
-            ConfigProperty_ControlPanelEnabled.Enabled = false;
-            ConfigProperty_ControlPanelPassword.Enabled = false;
-            ConfigProperty_ControlPanelPort.Enabled = false;
-            ConfigProperty_ZombieMove.Enabled = false;
-            ConfigProperty_ZombieMoveNight.Enabled = false;
-            ConfigProperty_ZombieFeralMove.Enabled = false;
-            ConfigProperty_ZombieBMMove.Enabled = false;
-            ConfigProperty_GameName.Enabled = false;
-            ConfigProperty_GameWorld.Enabled = false;
-            ConfigProperty_ServerPort.Enabled = false;
+            ServerName_GroupBox.Enabled = false;
+            ServerDescription_GroupBox.Enabled = false;
+            ServerWebsiteURL_GroupBox.Enabled = false;
+            ServerPassword_GroupBox.Enabled = false;
+            ServerLoginConfirmationText_GroupBox.Enabled = false;
+
+            ServerPort_GroupBox.Enabled = false;
+            ServerVisibility_GroupBox.Enabled = false;
+            ServerDisabledNetworkProtocols_GroupBox.Enabled = false;
+            ServerMaxWorldTransferSpeedKiBs_GroupBox.Enabled = false;
+
+            ServerMaxPlayerCount_GroupBox.Enabled = false;
+            ServerReservedSlots_GroupBox.Enabled = false;
+
+            ControlPanel_GroupBox.Enabled = false;
+            Telnet_GroupBox.Enabled = false;
+            ConfigProperty_TerminalWindowEnabled.Enabled = false;
+
+            Server_Admin_Config_File_GroupBox.Enabled = false;
+            User_Data_Folder_GroupBox.Enabled = false;
+            Save_Game_Folder_GroupBox.Enabled = false;
+
+            ConfigProperty_EACEnabled.Enabled = false;
+            HideCommandExecutionLog_GroupBox.Enabled = false;
+            MaxUncoveredMapChunksPerPlayer_GroupBox.Enabled = false;
+            ConfigProperty_PersistentPlayerProfiles.Enabled = false;
+
+            GameWorldSettings_GroupBox.Enabled = false;
+
+            GameDifficulty_GroupBox.Enabled = false;
+            BlockDamagePlayer_GroupBox.Enabled = false;
+            BlockDamageAI_GroupBox.Enabled = false;
+            BlockDamageAIBM_GroupBox.Enabled = false;
+            XPMultiplier_GroupBox.Enabled = false;
+            PlayerSafeZoneLevel_GroupBox.Enabled = false;
+            PlayerSafeZoneHours_GroupBox.Enabled = false;
 
             ConfigProperty_BuildCreate.Enabled = false;
-            ConfigProperty_ServerPort.Enabled = false;
-            ConfigProperty_ServerName.Enabled = false;
+            DayLightLength_GroupBox.Enabled = false;
+            DayNightLength_GroupBox.Enabled = false;
+            DropOnDeath_GroupBox.Enabled = false;
+            DropOnQuit_GroupBox.Enabled = false;
+            BedrollDeadZoneSize_GroupBox.Enabled = false;
+            BedrollExpiryTime_GroupBox.Enabled = false;
+
+            MaxSpawnedZombies_GroupBox.Enabled = false;            
+            MaxSpawnedAnimals_GroupBox.Enabled = false;
+            ServerMaxAllowedViewDistance_GroupBox.Enabled = false;
+
+            ConfigProperty_EnemySpawnMode.Enabled = false;
+            ConfigProperty_EnemyDifficulty.Enabled = false;
+            ZombieSpeedSettings_GroupBox.Enabled = false;
+            BloodMoonFrequency_GroupBox.Enabled = false;
+            BloodMoonRange_GroupBox.Enabled = false;
+            BloodMoonWarning_GroupBox.Enabled = false;
+            BloodMoonEnemyCount_GroupBox.Enabled = false;
+
+            LootAbundance_GroupBox.Enabled = false;
+            LootRespawnDays_GroupBox.Enabled = false;
+            AirDropFrequency_GroupBox.Enabled = false;
+            ConfigProperty_AirDropMarker.Enabled = false;
+
+            PartySharedKillRange_GroupBox.Enabled = false;
+            Player_Killing_Mode_GroupBox.Enabled = false;
+
+            LandClaimSettings_GroupBox.Enabled = false;
+
 
             // SQL Tab
             SQL_Enabled_CheckBox.Enabled = false;
@@ -51,43 +100,17 @@ namespace _7DaysServerManager
                 backup_time.Enabled = false;
             auto_backup_check.Enabled = false;
 
-            ConfigProperty_DropOnDeath.Enabled = false;
-            ConfigProperty_DropOnQuit.Enabled = false;
-            ConfigProperty_EnemySpawnMode.Enabled = false;
-            ConfigProperty_DayLightLength.Enabled = false;
-            ConfigProperty_BlockDamagePlayer.Enabled = false;
+           
 
-            ConfigProperty_AdminFileName.Enabled = false;
-            ConfigProperty_TelnetPort.Enabled = false;
-            ConfigProperty_TelnetPassword.Enabled = false;
-            ConfigProperty_LootAbundance.Enabled = false;
-            ConfigProperty_LootRespawnDays.Enabled = false;
-
-            Land_Claim_GroupBox.Enabled = false;
+            LandClaimSettings_GroupBox.Enabled = false;
             ConfigProperty_LandClaimDecayMode.Enabled = false;
-            Land_Claim_GroupBox.Enabled = false;
+            LandClaimSettings_GroupBox.Enabled = false;
             Land_Claim_Durability_Online_Label.Enabled = false;
             Land_Claim_Durability_Offline_Label.Enabled = false;
-            ConfigProperty_LandClaimDeadZone.Enabled = false;
-            ConfigProperty_LandClaimSize.Enabled = false;
-            ConfigProperty_LandClaimExpiryTime.Enabled = false;
-            ConfigProperty_EnemyDifficulty.Enabled = false;
-            ConfigProperty_AirDropFrequency.Enabled = false;
-            ConfigProperty_EACEnabled.Enabled = false;
-            ConfigProperty_MaxSpawnedZombies.Enabled = false;
-            ConfigProperty_SaveGameFolder.Enabled = false;
-
-            ConfigProperty_PersistentPlayerProfiles.Enabled = false;
-            ConfigProperty_UserDataFolder.Enabled = false;
-            ConfigProperty_ServerDescription.Enabled = false;
-            ConfigProperty_ServerWebsiteURL.Enabled = false;
+            
 
             Auto_Restarts_GroupBox.Enabled = false;
             Whitelist_GroupBox.Enabled = false;
-            ConfigProperty_PlayerSafeZoneLevel.Enabled = false;
-            ConfigProperty_PlayerSafeZoneHours.Enabled = false;
-            ConfigProperty_MaxSpawnedAnimals.Enabled = false;
-
         }
 
         public void Unlock_Panel_Controls()
@@ -96,26 +119,75 @@ namespace _7DaysServerManager
 
             // Server Management Tab
             Start_Server_Button.Enabled = true;
-            Shutdown_Server_Button.Enabled = false;
+            Shutdown_Server_Button.Enabled = true;
 
             // Game Settings Tab
-            Player_Killing_Mode_GroupBox.Enabled = true;
-            ConfigProperty_AirDropMarker.Enabled = true;
-            ConfigProperty_ServerMaxPlayerCount.Enabled = true;
-            ConfigProperty_GameDifficulty.Enabled = true;
-            ConfigProperty_ControlPanelEnabled.Enabled = true;
-            ConfigProperty_ControlPanelPassword.Enabled = true;
-            ConfigProperty_ControlPanelPort.Enabled = true;
-            ConfigProperty_ZombieMove.Enabled = true;
-            ConfigProperty_ZombieMoveNight.Enabled = true;
-            ConfigProperty_ZombieFeralMove.Enabled = true;
-            ConfigProperty_ZombieBMMove.Enabled = true;
-            ConfigProperty_GameName.Enabled = true;
-            ConfigProperty_GameWorld.Enabled = true;
-            ConfigProperty_ServerPort.Enabled = true;
+            ServerName_GroupBox.Enabled = true;
+            ServerDescription_GroupBox.Enabled = true;
+            ServerWebsiteURL_GroupBox.Enabled = true;
+            ServerPassword_GroupBox.Enabled = true;
+            ServerLoginConfirmationText_GroupBox.Enabled = true;
+
+            ServerPort_GroupBox.Enabled = true;
+            ServerVisibility_GroupBox.Enabled = true;
+            ServerDisabledNetworkProtocols_GroupBox.Enabled = true;
+            ServerMaxWorldTransferSpeedKiBs_GroupBox.Enabled = true;
+
+            ServerMaxPlayerCount_GroupBox.Enabled = true;
+            ServerReservedSlots_GroupBox.Enabled = true;
+
+            ControlPanel_GroupBox.Enabled = true;
+            Telnet_GroupBox.Enabled = true;
+            ConfigProperty_TerminalWindowEnabled.Enabled = true;
+
+            Server_Admin_Config_File_GroupBox.Enabled = true;
+            User_Data_Folder_GroupBox.Enabled = true;
+            Save_Game_Folder_GroupBox.Enabled = true;
+
+            ConfigProperty_EACEnabled.Enabled = true;
+            HideCommandExecutionLog_GroupBox.Enabled = true;
+            MaxUncoveredMapChunksPerPlayer_GroupBox.Enabled = true;
+            ConfigProperty_PersistentPlayerProfiles.Enabled = true;
+
+            GameWorldSettings_GroupBox.Enabled = true;
+
+            GameDifficulty_GroupBox.Enabled = true;
+            BlockDamagePlayer_GroupBox.Enabled = true;
+            BlockDamageAI_GroupBox.Enabled = true;
+            BlockDamageAIBM_GroupBox.Enabled = true;
+            XPMultiplier_GroupBox.Enabled = true;
+            PlayerSafeZoneLevel_GroupBox.Enabled = true;
+            PlayerSafeZoneHours_GroupBox.Enabled = true;
+
             ConfigProperty_BuildCreate.Enabled = true;
-            ConfigProperty_ServerPort.Enabled = true;
-            ConfigProperty_ServerName.Enabled = true;
+            DayLightLength_GroupBox.Enabled = true;
+            DayNightLength_GroupBox.Enabled = true;
+            DropOnDeath_GroupBox.Enabled = true;
+            DropOnQuit_GroupBox.Enabled = true;
+            BedrollDeadZoneSize_GroupBox.Enabled = true;
+            BedrollExpiryTime_GroupBox.Enabled = true;
+
+            MaxSpawnedZombies_GroupBox.Enabled = true;
+            MaxSpawnedAnimals_GroupBox.Enabled = true;
+            ServerMaxAllowedViewDistance_GroupBox.Enabled = true;
+
+            ConfigProperty_EnemySpawnMode.Enabled = true;
+            ConfigProperty_EnemyDifficulty.Enabled = true;
+            ZombieSpeedSettings_GroupBox.Enabled = true;
+            BloodMoonFrequency_GroupBox.Enabled = true;
+            BloodMoonRange_GroupBox.Enabled = true;
+            BloodMoonWarning_GroupBox.Enabled = true;
+            BloodMoonEnemyCount_GroupBox.Enabled = true;
+
+            LootAbundance_GroupBox.Enabled = true;
+            LootRespawnDays_GroupBox.Enabled = true;
+            AirDropFrequency_GroupBox.Enabled = true;
+            ConfigProperty_AirDropMarker.Enabled = true;
+
+            PartySharedKillRange_GroupBox.Enabled = true;
+            Player_Killing_Mode_GroupBox.Enabled = true;
+
+            LandClaimSettings_GroupBox.Enabled = true;
 
             // SQL Tab
             SQL_Enabled_CheckBox.Enabled = true;
@@ -130,42 +202,8 @@ namespace _7DaysServerManager
                 backup_time.Enabled = true;
             auto_backup_check.Enabled = true;
 
-            ConfigProperty_DropOnDeath.Enabled = true;
-            ConfigProperty_DropOnQuit.Enabled = true;
-            ConfigProperty_EnemySpawnMode.Enabled = true;
-            ConfigProperty_DayLightLength.Enabled = true;
-            ConfigProperty_BlockDamagePlayer.Enabled = true;
-
-            ConfigProperty_AdminFileName.Enabled = true;
-            ConfigProperty_TelnetPort.Enabled = true;
-            ConfigProperty_TelnetPassword.Enabled = true;
-            ConfigProperty_LootAbundance.Enabled = true;
-            ConfigProperty_LootRespawnDays.Enabled = true;
-
-            Land_Claim_GroupBox.Enabled = true;
-            ConfigProperty_LandClaimDecayMode.Enabled = true;
-            Land_Claim_GroupBox.Enabled = true;
-            Land_Claim_Durability_Online_Label.Enabled = true;
-            Land_Claim_Durability_Offline_Label.Enabled = true;
-            ConfigProperty_LandClaimDeadZone.Enabled = true;
-            ConfigProperty_LandClaimSize.Enabled = true;
-            ConfigProperty_LandClaimExpiryTime.Enabled = true;
-            ConfigProperty_EnemyDifficulty.Enabled = true;
-            ConfigProperty_AirDropFrequency.Enabled = true;
-            ConfigProperty_EACEnabled.Enabled = true;
-            ConfigProperty_MaxSpawnedZombies.Enabled = true;
-            ConfigProperty_SaveGameFolder.Enabled = true;
-
-            ConfigProperty_PersistentPlayerProfiles.Enabled = true;
-            ConfigProperty_UserDataFolder.Enabled = true;
-            ConfigProperty_ServerDescription.Enabled = true;
-            ConfigProperty_ServerWebsiteURL.Enabled = true;
-
             Auto_Restarts_GroupBox.Enabled = true;
             Whitelist_GroupBox.Enabled = true;
-            ConfigProperty_PlayerSafeZoneLevel.Enabled = true;
-            ConfigProperty_PlayerSafeZoneHours.Enabled = true;
-            ConfigProperty_MaxSpawnedAnimals.Enabled = true;
 
         }
     }

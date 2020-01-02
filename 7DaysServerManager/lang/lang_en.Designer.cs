@@ -1144,11 +1144,11 @@ namespace _7DaysServerManager.lang {
         /// <summary>
         ///   Looks up a localized string similar to Instant.
         /// </summary>
-        public static string ltime_0 {
-            get {
-                return ResourceManager.GetString("ltime_0", resourceCulture);
-            }
-        }
+        //public static string ltime_0 {
+        //    get {
+        //        return ResourceManager.GetString("ltime_0", resourceCulture);
+        //    }
+        //}
         
         /// <summary>
         ///   Looks up a localized string similar to Normal.

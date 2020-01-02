@@ -76,7 +76,7 @@ namespace _7DaysServerManager
             ConfigProperty_EnemyDifficulty.Text = LocalizedLanguage("feral");
 
 
-            Land_Claim_GroupBox.Text = LocalizedLanguage("LandClaim");
+            LandClaimSettings_GroupBox.Text = LocalizedLanguage("LandClaim");
             LandClaimDecayMode_GroupBox.Text = LocalizedLanguage("LandClaimDecayMode_g");
             LandClaimDurabilityModifier_GroupBox.Text = LocalizedLanguage("LandClaim_g");
             Land_Claim_Durability_Online_Label.Text = LocalizedLanguage("online");
@@ -120,8 +120,8 @@ namespace _7DaysServerManager
             Save_Game_Folder_GroupBox.Text = LocalizedLanguage("save_g");
             Server_Commands_Say_Switch_CheckBox.Text = LocalizedLanguage("spam_is_spam");
 
-            if (ConfigProperty_AirDropFrequency.Value != 0)
-                AirDropFrequency_GroupBox.Text = LocalizedLanguage("AirDropFrequency") + " [" + Convert.ToString(ConfigProperty_AirDropFrequency.Value) + " h.]";
+            if (ConfigProperty_AirDropFrequency_Old.Value != 0)
+                AirDropFrequency_GroupBox.Text = LocalizedLanguage("AirDropFrequency") + " [" + Convert.ToString(ConfigProperty_AirDropFrequency_Old.Value) + " h.]";
             else
                 AirDropFrequency_GroupBox.Text = LocalizedLanguage("AirDropFrequency") + " [" + LocalizedLanguage("disabled") + "]";
 
