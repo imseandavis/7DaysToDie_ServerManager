@@ -6209,6 +6209,13 @@
             <param name="detailsViewFactor">The value that is used to calculate the scroll position in DetailsView of list view.</param>
             <returns>Return the scroll value of the list view.</returns>
         </member>
+        <member name="M:Syncfusion.WinForms.Controls.SfScrollFrame.OnStyleChanged(System.Object,Syncfusion.Styles.StyleChangedEventArgs)">
+            <summary>
+            Occurs when style is changed.
+            </summary>
+            <param name="sender">The changed style object.</param>
+            <param name="e">The <see cref="T:Syncfusion.Styles.StyleChangedEventArgs"/> that contains the event data.</param>
+        </member>
         <member name="E:Syncfusion.WinForms.Controls.SfScrollFrame.ThemeChanged">
             <summary>
             Occurs when theme name of the <see cref="T:Syncfusion.WinForms.Controls.SfScrollFrame"/> has changed.

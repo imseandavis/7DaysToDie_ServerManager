@@ -120,10 +120,10 @@ namespace _7DaysServerManager
             Save_Game_Folder_GroupBox.Text = LocalizedLanguage("save_g");
             Server_Commands_Say_Switch_CheckBox.Text = LocalizedLanguage("spam_is_spam");
 
-            if (ConfigProperty_AirDropFrequency_Old.Value != 0)
-                AirDropFrequency_GroupBox.Text = LocalizedLanguage("AirDropFrequency") + " [" + Convert.ToString(ConfigProperty_AirDropFrequency_Old.Value) + " h.]";
-            else
-                AirDropFrequency_GroupBox.Text = LocalizedLanguage("AirDropFrequency") + " [" + LocalizedLanguage("disabled") + "]";
+            //if (ConfigProperty_AirDropFrequency.Value != 0)
+            //    AirDropFrequency_GroupBox.Text = LocalizedLanguage("AirDropFrequency") + " [" + Convert.ToString(ConfigProperty_AirDropFrequency.Value) + " h.]";
+            //else
+            //    AirDropFrequency_GroupBox.Text = LocalizedLanguage("AirDropFrequency") + " [" + LocalizedLanguage("disabled") + "]";
 
             MaxSpawnedZombies_GroupBox.Text = "[" + Convert.ToString(ConfigProperty_MaxSpawnedZombies.Value) + "] Zombies Spawned Per Player";
             MaxSpawnedAnimals_GroupBox.Text = "[" + Convert.ToString(ConfigProperty_MaxSpawnedAnimals.Value) + "] Animals Spawned Per Player";

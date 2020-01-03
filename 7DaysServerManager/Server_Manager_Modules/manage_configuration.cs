@@ -460,23 +460,11 @@ namespace _7DaysServerManager
                                 case "BlockDamageAIBM":
                                     // Default: 100
                                     ConfigProperty_BlockDamageAIBM.Value = Convert.ToInt32(Config_File_Property_Value);
-
-                                    // Update Text To Currently Set Value
-                                    if (ConfigProperty_BlockDamageAIBM.Value == 0)
-                                        BlockDamageAIBM_GroupBox.Text = "AI Block Damage During Blood Moon [25%]";
-                                    else
-                                        BlockDamageAIBM_GroupBox.Text = "AI Block Damage During Blood Moon [" + Convert.ToInt32(ConfigProperty_BlockDamageAIBM.Value) + "%]";
                                     break;
 
                                 case "XPMultiplier":
                                     // Default: 100
                                     ConfigProperty_XPMultiplier.Value = Convert.ToInt32(Config_File_Property_Value);
-
-                                    // Update Text To Currently Set Value
-                                    if (ConfigProperty_XPMultiplier.Value == 0)
-                                        XPMultiplier_GroupBox.Text = "XP Multiplier [25%]";
-                                    else
-                                        XPMultiplier_GroupBox.Text = "XP Multiplier [" + Convert.ToInt32(ConfigProperty_XPMultiplier.Value) + "%]";
                                     break;
 
                                 case "PlayerSafeZoneLevel":
@@ -500,17 +488,11 @@ namespace _7DaysServerManager
                                 case "DayNightLength":
                                     // Default: 60
                                     ConfigProperty_DayNightLength.Value = Convert.ToInt32(Config_File_Property_Value);
-
-                                    // Update Text To Currently Set Value
-                                    DayNightLength_GroupBox.Text = "Each In Game Day Equals [" + Convert.ToInt32(ConfigProperty_DayNightLength.Value) + "] Real World Minutes";
                                     break;
                                 
                                 case "DayLightLength":
                                     // Default: 18
                                     ConfigProperty_DayLightLength.Value = Convert.ToInt32(Config_File_Property_Value);
-
-                                    // Update Text To Currently Set Value
-                                    DayLightLength_GroupBox.Text = "Sun Shines For [" + ConfigProperty_DayLightLength.Value + "] Hours Each Game Day ";
                                     break;
                                 
                                 case "DropOnDeath":
@@ -669,22 +651,11 @@ namespace _7DaysServerManager
                                 case "LootAbundance":
                                     // Default: 100
                                     ConfigProperty_LootAbundance.Value = Convert.ToInt32(Config_File_Property_Value);
-
-                                    // Update Text To Currently Set Value
-                                    if (ConfigProperty_LootAbundance.Value == 0)
-                                        LootAbundance_GroupBox.Text = "Loot Abundance [25%]";
-                                    else
-                                        LootAbundance_GroupBox.Text = "Loot Abundance [" + Convert.ToInt32(ConfigProperty_LootAbundance.Value) + "%]";
                                     break;
 
                                 case "LootRespawnDays":
-                                    ConfigProperty_LootRespawnDays_Old.Value = Convert.ToInt32(Config_File_Property_Value);
-
-                                    // Update Text To Currently Set Value
-                                    if (ConfigProperty_LootRespawnDays.Value == -1)
-                                        LootRespawnDays_GroupBox.Text = "Loot Respawn Time" + " [ Disabled ]";
-                                    else
-                                        LootRespawnDays_GroupBox.Text = "Loot Respawn Time" + " [" + Convert.ToInt32(ConfigProperty_LootRespawnDays_Old.Value) + "]";
+                                    // Default: 30
+                                    ConfigProperty_LootRespawnDays.Value = Convert.ToInt32(Config_File_Property_Value);
                                     break;
 
                                 case "AirDropFrequency":

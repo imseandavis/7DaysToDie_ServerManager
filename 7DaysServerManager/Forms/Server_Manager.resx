@@ -117,6 +117,552 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="overviewSplitter.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="overviewSplitter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 0</value>
+  </data>
+  <data name="overviewSplitter.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
+    <value>Horizontal</value>
+  </data>
+  <data name="News_Group.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Right</value>
+  </data>
+  <data name="News_Feed_RichTextBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="News_Feed_RichTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 16</value>
+  </data>
+  <data name="News_Feed_RichTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>346, 141</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="News_Feed_RichTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="News_Feed_RichTextBox.Text" xml:space="preserve">
+    <value>Downloading news...</value>
+  </data>
+  <data name="&gt;&gt;News_Feed_RichTextBox.Name" xml:space="preserve">
+    <value>News_Feed_RichTextBox</value>
+  </data>
+  <data name="&gt;&gt;News_Feed_RichTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;News_Feed_RichTextBox.Parent" xml:space="preserve">
+    <value>News_Group</value>
+  </data>
+  <data name="&gt;&gt;News_Feed_RichTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="News_Group.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1123, 8</value>
+  </data>
+  <data name="News_Group.Size" type="System.Drawing.Size, System.Drawing">
+    <value>352, 160</value>
+  </data>
+  <data name="News_Group.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="News_Group.Text" xml:space="preserve">
+    <value>News</value>
+  </data>
+  <data name="&gt;&gt;News_Group.Name" xml:space="preserve">
+    <value>News_Group</value>
+  </data>
+  <data name="&gt;&gt;News_Group.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;News_Group.Parent" xml:space="preserve">
+    <value>overviewSplitter.Panel1</value>
+  </data>
+  <data name="&gt;&gt;News_Group.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Server_Status_Group.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="Server_Clock.Location" type="System.Drawing.Point, System.Drawing">
+    <value>885, 7</value>
+  </data>
+  <data name="Server_Clock.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>75, 75</value>
+  </data>
+  <data name="Server_Clock.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 150</value>
+  </data>
+  <data name="Server_Clock.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="Server_Clock.Text" xml:space="preserve">
+    <value>Server Clock</value>
+  </data>
+  <data name="&gt;&gt;Server_Clock.Name" xml:space="preserve">
+    <value>Server_Clock</value>
+  </data>
+  <data name="&gt;&gt;Server_Clock.Type" xml:space="preserve">
+    <value>Syncfusion.Windows.Forms.Tools.Clock, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+  </data>
+  <data name="&gt;&gt;Server_Clock.Parent" xml:space="preserve">
+    <value>Server_Status_Group</value>
+  </data>
+  <data name="&gt;&gt;Server_Clock.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="DISK_Gauge.Location" type="System.Drawing.Point, System.Drawing">
+    <value>656, 0</value>
+  </data>
+  <data name="DISK_Gauge.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>130, 52</value>
+  </data>
+  <data name="DISK_Gauge.Size" type="System.Drawing.Size, System.Drawing">
+    <value>230, 152</value>
+  </data>
+  <data name="DISK_Gauge.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;DISK_Gauge.Name" xml:space="preserve">
+    <value>DISK_Gauge</value>
+  </data>
+  <data name="&gt;&gt;DISK_Gauge.Type" xml:space="preserve">
+    <value>Syncfusion.Windows.Forms.Gauge.RadialGauge, Syncfusion.Gauge.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+  </data>
+  <data name="&gt;&gt;DISK_Gauge.Parent" xml:space="preserve">
+    <value>Server_Status_Group</value>
+  </data>
+  <data name="&gt;&gt;DISK_Gauge.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="CPU_Gauge.Location" type="System.Drawing.Point, System.Drawing">
+    <value>207, -3</value>
+  </data>
+  <data name="CPU_Gauge.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>130, 52</value>
+  </data>
+  <data name="CPU_Gauge.Size" type="System.Drawing.Size, System.Drawing">
+    <value>234, 156</value>
+  </data>
+  <data name="CPU_Gauge.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="&gt;&gt;CPU_Gauge.Name" xml:space="preserve">
+    <value>CPU_Gauge</value>
+  </data>
+  <data name="&gt;&gt;CPU_Gauge.Type" xml:space="preserve">
+    <value>Syncfusion.Windows.Forms.Gauge.RadialGauge, Syncfusion.Gauge.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+  </data>
+  <data name="&gt;&gt;CPU_Gauge.Parent" xml:space="preserve">
+    <value>Server_Status_Group</value>
+  </data>
+  <data name="&gt;&gt;CPU_Gauge.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="RAM_Gauge.Location" type="System.Drawing.Point, System.Drawing">
+    <value>433, -2</value>
+  </data>
+  <data name="RAM_Gauge.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>130, 52</value>
+  </data>
+  <data name="RAM_Gauge.Size" type="System.Drawing.Size, System.Drawing">
+    <value>231, 154</value>
+  </data>
+  <data name="RAM_Gauge.TabIndex" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="&gt;&gt;RAM_Gauge.Name" xml:space="preserve">
+    <value>RAM_Gauge</value>
+  </data>
+  <data name="&gt;&gt;RAM_Gauge.Type" xml:space="preserve">
+    <value>Syncfusion.Windows.Forms.Gauge.RadialGauge, Syncfusion.Gauge.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+  </data>
+  <data name="&gt;&gt;RAM_Gauge.Parent" xml:space="preserve">
+    <value>Server_Status_Group</value>
+  </data>
+  <data name="&gt;&gt;RAM_Gauge.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Private_IP_Address_Label.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="Private_IP_Address_Label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Private_IP_Address_Label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="Private_IP_Address_Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Private_IP_Address_Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 80</value>
+  </data>
+  <data name="Private_IP_Address_Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 13</value>
+  </data>
+  <data name="Private_IP_Address_Label.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="Private_IP_Address_Label.Text" xml:space="preserve">
+    <value>Getting Private IP...</value>
+  </data>
+  <data name="Private_IP_Address_Label.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;Private_IP_Address_Label.Name" xml:space="preserve">
+    <value>Private_IP_Address_Label</value>
+  </data>
+  <data name="&gt;&gt;Private_IP_Address_Label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Private_IP_Address_Label.Parent" xml:space="preserve">
+    <value>Server_Status_Group</value>
+  </data>
+  <data name="&gt;&gt;Private_IP_Address_Label.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="OS_Architecture_Label.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="OS_Architecture_Label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OS_Architecture_Label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="OS_Architecture_Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="OS_Architecture_Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 140</value>
+  </data>
+  <data name="OS_Architecture_Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 13</value>
+  </data>
+  <data name="OS_Architecture_Label.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="OS_Architecture_Label.Text" xml:space="preserve">
+    <value>OS Architecture</value>
+  </data>
+  <data name="&gt;&gt;OS_Architecture_Label.Name" xml:space="preserve">
+    <value>OS_Architecture_Label</value>
+  </data>
+  <data name="&gt;&gt;OS_Architecture_Label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OS_Architecture_Label.Parent" xml:space="preserve">
+    <value>Server_Status_Group</value>
+  </data>
+  <data name="&gt;&gt;OS_Architecture_Label.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="telnetstatus.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="telnetstatus.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="telnetstatus.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="telnetstatus.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 38</value>
+  </data>
+  <data name="telnetstatus.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 13</value>
+  </data>
+  <data name="telnetstatus.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="telnetstatus.Text" xml:space="preserve">
+    <value>telnetstatus</value>
+  </data>
+  <data name="&gt;&gt;telnetstatus.Name" xml:space="preserve">
+    <value>telnetstatus</value>
+  </data>
+  <data name="&gt;&gt;telnetstatus.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;telnetstatus.Parent" xml:space="preserve">
+    <value>Server_Status_Group</value>
+  </data>
+  <data name="&gt;&gt;telnetstatus.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="OS_Version_Label.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="OS_Version_Label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="OS_Version_Label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="OS_Version_Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="OS_Version_Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 120</value>
+  </data>
+  <data name="OS_Version_Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>60, 13</value>
+  </data>
+  <data name="OS_Version_Label.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="OS_Version_Label.Text" xml:space="preserve">
+    <value>OS Version</value>
+  </data>
+  <data name="&gt;&gt;OS_Version_Label.Name" xml:space="preserve">
+    <value>OS_Version_Label</value>
+  </data>
+  <data name="&gt;&gt;OS_Version_Label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OS_Version_Label.Parent" xml:space="preserve">
+    <value>Server_Status_Group</value>
+  </data>
+  <data name="&gt;&gt;OS_Version_Label.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="status.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="status.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="status.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="status.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 18</value>
+  </data>
+  <data name="status.Size" type="System.Drawing.Size, System.Drawing">
+    <value>35, 13</value>
+  </data>
+  <data name="status.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="status.Text" xml:space="preserve">
+    <value>status</value>
+  </data>
+  <data name="&gt;&gt;status.Name" xml:space="preserve">
+    <value>status</value>
+  </data>
+  <data name="&gt;&gt;status.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;status.Parent" xml:space="preserve">
+    <value>Server_Status_Group</value>
+  </data>
+  <data name="&gt;&gt;status.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="Public_IP_Address_Label.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left</value>
+  </data>
+  <data name="Public_IP_Address_Label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Public_IP_Address_Label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="Public_IP_Address_Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Public_IP_Address_Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 100</value>
+  </data>
+  <data name="Public_IP_Address_Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 13</value>
+  </data>
+  <data name="Public_IP_Address_Label.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="Public_IP_Address_Label.Text" xml:space="preserve">
+    <value>Getting Public IP...</value>
+  </data>
+  <data name="Public_IP_Address_Label.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;Public_IP_Address_Label.Name" xml:space="preserve">
+    <value>Public_IP_Address_Label</value>
+  </data>
+  <data name="&gt;&gt;Public_IP_Address_Label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Public_IP_Address_Label.Parent" xml:space="preserve">
+    <value>Server_Status_Group</value>
+  </data>
+  <data name="&gt;&gt;Public_IP_Address_Label.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="Server_Status_Group.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 8</value>
+  </data>
+  <data name="Server_Status_Group.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1117, 160</value>
+  </data>
+  <data name="Server_Status_Group.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="Server_Status_Group.Text" xml:space="preserve">
+    <value>Server status</value>
+  </data>
+  <data name="&gt;&gt;Server_Status_Group.Name" xml:space="preserve">
+    <value>Server_Status_Group</value>
+  </data>
+  <data name="&gt;&gt;Server_Status_Group.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Server_Status_Group.Parent" xml:space="preserve">
+    <value>overviewSplitter.Panel1</value>
+  </data>
+  <data name="&gt;&gt;Server_Status_Group.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;overviewSplitter.Panel1.Name" xml:space="preserve">
+    <value>overviewSplitter.Panel1</value>
+  </data>
+  <data name="&gt;&gt;overviewSplitter.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;overviewSplitter.Panel1.Parent" xml:space="preserve">
+    <value>overviewSplitter</value>
+  </data>
+  <data name="&gt;&gt;overviewSplitter.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="overviewSplitter.Panel1MinSize" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="Console_Group.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="Console_RichTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="Console_RichTextBox.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Courier New, 8.25pt</value>
+  </data>
+  <data name="Console_RichTextBox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 19</value>
+  </data>
+  <data name="Console_RichTextBox.ScrollBars" type="System.Windows.Forms.RichTextBoxScrollBars, System.Windows.Forms">
+    <value>ForcedVertical</value>
+  </data>
+  <data name="Console_RichTextBox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1457, 568</value>
+  </data>
+  <data name="Console_RichTextBox.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="Console_RichTextBox.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;Console_RichTextBox.Name" xml:space="preserve">
+    <value>Console_RichTextBox</value>
+  </data>
+  <data name="&gt;&gt;Console_RichTextBox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Console_RichTextBox.Parent" xml:space="preserve">
+    <value>Console_Group</value>
+  </data>
+  <data name="&gt;&gt;Console_RichTextBox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cmd.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Left, Right</value>
+  </data>
+  <data name="cmd.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 588</value>
+  </data>
+  <data name="cmd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1460, 20</value>
+  </data>
+  <data name="cmd.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;cmd.Name" xml:space="preserve">
+    <value>cmd</value>
+  </data>
+  <data name="&gt;&gt;cmd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cmd.Parent" xml:space="preserve">
+    <value>Console_Group</value>
+  </data>
+  <data name="&gt;&gt;cmd.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Console_Group.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 8</value>
+  </data>
+  <data name="Console_Group.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1469, 619</value>
+  </data>
+  <data name="Console_Group.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="Console_Group.Text" xml:space="preserve">
+    <value>Console</value>
+  </data>
+  <data name="&gt;&gt;Console_Group.Name" xml:space="preserve">
+    <value>Console_Group</value>
+  </data>
+  <data name="&gt;&gt;Console_Group.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Console_Group.Parent" xml:space="preserve">
+    <value>overviewSplitter.Panel2</value>
+  </data>
+  <data name="&gt;&gt;Console_Group.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;overviewSplitter.Panel2.Name" xml:space="preserve">
+    <value>overviewSplitter.Panel2</value>
+  </data>
+  <data name="&gt;&gt;overviewSplitter.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;overviewSplitter.Panel2.Parent" xml:space="preserve">
+    <value>overviewSplitter</value>
+  </data>
+  <data name="&gt;&gt;overviewSplitter.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="overviewSplitter.Panel2MinSize" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="overviewSplitter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1478, 657</value>
+  </data>
+  <data name="overviewSplitter.SplitterDistance" type="System.Int32, mscorlib">
+    <value>171</value>
+  </data>
+  <data name="overviewSplitter.SplitterWidth" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="overviewSplitter.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;overviewSplitter.Name" xml:space="preserve">
+    <value>overviewSplitter</value>
+  </data>
+  <data name="&gt;&gt;overviewSplitter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;overviewSplitter.Parent" xml:space="preserve">
+    <value>ManageServer_TabPage</value>
+  </data>
+  <data name="&gt;&gt;overviewSplitter.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <metadata name="status_updater.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1123, 17</value>
   </metadata>
@@ -129,7 +675,6 @@
   <metadata name="App_Icon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>1398, 17</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="App_Icon.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAgIAAAAEAIAAoCAEAFgAAACgAAACAAAAAAAEAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -1265,49 +1810,8 @@
   <data name="App_Icon.Text" xml:space="preserve">
     <value>7 Days Server Manager</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="App_Icon.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Public_IP_Address_Label.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="Public_IP_Address_Label.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="Public_IP_Address_Label.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="Public_IP_Address_Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Public_IP_Address_Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 100</value>
-  </data>
-  <data name="Public_IP_Address_Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 13</value>
-  </data>
-  <data name="Public_IP_Address_Label.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="Public_IP_Address_Label.Text" xml:space="preserve">
-    <value>Getting Public IP...</value>
-  </data>
-  <data name="Public_IP_Address_Label.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;Public_IP_Address_Label.Name" xml:space="preserve">
-    <value>Public_IP_Address_Label</value>
-  </data>
-  <data name="&gt;&gt;Public_IP_Address_Label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Public_IP_Address_Label.Parent" xml:space="preserve">
-    <value>Server_Status_Group</value>
-  </data>
-  <data name="&gt;&gt;Public_IP_Address_Label.ZOrder" xml:space="preserve">
-    <value>9</value>
   </data>
   <data name="Updates_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -3633,63 +4137,6 @@ It's almost free, please check it out in "Settings" tab.</value>
   <data name="&gt;&gt;Game_Time_Controls_GroupBox.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="cmd.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="cmd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 579</value>
-  </data>
-  <data name="cmd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1862, 20</value>
-  </data>
-  <data name="cmd.TabIndex" type="System.Int32, mscorlib">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;cmd.Name" xml:space="preserve">
-    <value>cmd</value>
-  </data>
-  <data name="&gt;&gt;cmd.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cmd.Parent" xml:space="preserve">
-    <value>Console_Group</value>
-  </data>
-  <data name="&gt;&gt;cmd.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="Console_RichTextBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="Console_RichTextBox.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Courier New, 8.25pt</value>
-  </data>
-  <data name="Console_RichTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 19</value>
-  </data>
-  <data name="Console_RichTextBox.ScrollBars" type="System.Windows.Forms.RichTextBoxScrollBars, System.Windows.Forms">
-    <value>ForcedVertical</value>
-  </data>
-  <data name="Console_RichTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1859, 559</value>
-  </data>
-  <data name="Console_RichTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
-  </data>
-  <data name="Console_RichTextBox.Text" xml:space="preserve">
-    <value />
-  </data>
-  <data name="&gt;&gt;Console_RichTextBox.Name" xml:space="preserve">
-    <value>Console_RichTextBox</value>
-  </data>
-  <data name="&gt;&gt;Console_RichTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Console_RichTextBox.Parent" xml:space="preserve">
-    <value>Console_Group</value>
-  </data>
-  <data name="&gt;&gt;Console_RichTextBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="startbar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Left, Right</value>
   </data>
@@ -3700,7 +4147,7 @@ It's almost free, please check it out in "Settings" tab.</value>
     <value>3, 663</value>
   </data>
   <data name="startbar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>2075, 18</value>
+    <value>1673, 18</value>
   </data>
   <data name="startbar.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -4081,7 +4528,7 @@ It's almost free, please check it out in "Settings" tab.</value>
     <value>NoControl</value>
   </data>
   <data name="zoomup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2057, 13</value>
+    <value>1655, 13</value>
   </data>
   <data name="zoomup.Size" type="System.Drawing.Size, System.Drawing">
     <value>22, 22</value>
@@ -4103,453 +4550,6 @@ It's almost free, please check it out in "Settings" tab.</value>
   </data>
   <data name="&gt;&gt;zoomup.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="overviewSplitter.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="overviewSplitter.Location" type="System.Drawing.Point, System.Drawing">
-    <value>177, 0</value>
-  </data>
-  <data name="overviewSplitter.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="News_Group.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Right</value>
-  </data>
-  <data name="News_Feed_RichTextBox.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="News_Feed_RichTextBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 16</value>
-  </data>
-  <data name="News_Feed_RichTextBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>346, 141</value>
-  </data>
-  <data name="News_Feed_RichTextBox.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="News_Feed_RichTextBox.Text" xml:space="preserve">
-    <value>Downloading news...</value>
-  </data>
-  <data name="&gt;&gt;News_Feed_RichTextBox.Name" xml:space="preserve">
-    <value>News_Feed_RichTextBox</value>
-  </data>
-  <data name="&gt;&gt;News_Feed_RichTextBox.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;News_Feed_RichTextBox.Parent" xml:space="preserve">
-    <value>News_Group</value>
-  </data>
-  <data name="&gt;&gt;News_Feed_RichTextBox.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="News_Group.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1525, 8</value>
-  </data>
-  <data name="News_Group.Size" type="System.Drawing.Size, System.Drawing">
-    <value>352, 160</value>
-  </data>
-  <data name="News_Group.TabIndex" type="System.Int32, mscorlib">
-    <value>19</value>
-  </data>
-  <data name="News_Group.Text" xml:space="preserve">
-    <value>News</value>
-  </data>
-  <data name="&gt;&gt;News_Group.Name" xml:space="preserve">
-    <value>News_Group</value>
-  </data>
-  <data name="&gt;&gt;News_Group.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;News_Group.Parent" xml:space="preserve">
-    <value>overviewSplitter.Panel1</value>
-  </data>
-  <data name="&gt;&gt;News_Group.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Server_Status_Group.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="Server_Clock.Location" type="System.Drawing.Point, System.Drawing">
-    <value>961, 7</value>
-  </data>
-  <data name="Server_Clock.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>75, 75</value>
-  </data>
-  <data name="Server_Clock.Size" type="System.Drawing.Size, System.Drawing">
-    <value>300, 150</value>
-  </data>
-  <data name="Server_Clock.TabIndex" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="Server_Clock.Text" xml:space="preserve">
-    <value>Server Clock</value>
-  </data>
-  <data name="&gt;&gt;Server_Clock.Name" xml:space="preserve">
-    <value>Server_Clock</value>
-  </data>
-  <data name="&gt;&gt;Server_Clock.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.Clock, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
-  </data>
-  <data name="&gt;&gt;Server_Clock.Parent" xml:space="preserve">
-    <value>Server_Status_Group</value>
-  </data>
-  <data name="&gt;&gt;Server_Clock.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="DISK_Gauge.Location" type="System.Drawing.Point, System.Drawing">
-    <value>715, 0</value>
-  </data>
-  <data name="DISK_Gauge.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>130, 52</value>
-  </data>
-  <data name="DISK_Gauge.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 160</value>
-  </data>
-  <data name="DISK_Gauge.TabIndex" type="System.Int32, mscorlib">
-    <value>50</value>
-  </data>
-  <data name="&gt;&gt;DISK_Gauge.Name" xml:space="preserve">
-    <value>DISK_Gauge</value>
-  </data>
-  <data name="&gt;&gt;DISK_Gauge.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Gauge.RadialGauge, Syncfusion.Gauge.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
-  </data>
-  <data name="&gt;&gt;DISK_Gauge.Parent" xml:space="preserve">
-    <value>Server_Status_Group</value>
-  </data>
-  <data name="&gt;&gt;DISK_Gauge.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="CPU_Gauge.Location" type="System.Drawing.Point, System.Drawing">
-    <value>217, -3</value>
-  </data>
-  <data name="CPU_Gauge.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>130, 52</value>
-  </data>
-  <data name="CPU_Gauge.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 160</value>
-  </data>
-  <data name="CPU_Gauge.TabIndex" type="System.Int32, mscorlib">
-    <value>49</value>
-  </data>
-  <data name="&gt;&gt;CPU_Gauge.Name" xml:space="preserve">
-    <value>CPU_Gauge</value>
-  </data>
-  <data name="&gt;&gt;CPU_Gauge.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Gauge.RadialGauge, Syncfusion.Gauge.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
-  </data>
-  <data name="&gt;&gt;CPU_Gauge.Parent" xml:space="preserve">
-    <value>Server_Status_Group</value>
-  </data>
-  <data name="&gt;&gt;CPU_Gauge.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="RAM_Gauge.Location" type="System.Drawing.Point, System.Drawing">
-    <value>469, -3</value>
-  </data>
-  <data name="RAM_Gauge.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>130, 52</value>
-  </data>
-  <data name="RAM_Gauge.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 160</value>
-  </data>
-  <data name="RAM_Gauge.TabIndex" type="System.Int32, mscorlib">
-    <value>48</value>
-  </data>
-  <data name="&gt;&gt;RAM_Gauge.Name" xml:space="preserve">
-    <value>RAM_Gauge</value>
-  </data>
-  <data name="&gt;&gt;RAM_Gauge.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Gauge.RadialGauge, Syncfusion.Gauge.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
-  </data>
-  <data name="&gt;&gt;RAM_Gauge.Parent" xml:space="preserve">
-    <value>Server_Status_Group</value>
-  </data>
-  <data name="&gt;&gt;RAM_Gauge.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="Private_IP_Address_Label.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="Private_IP_Address_Label.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="Private_IP_Address_Label.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="Private_IP_Address_Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Private_IP_Address_Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 80</value>
-  </data>
-  <data name="Private_IP_Address_Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 13</value>
-  </data>
-  <data name="Private_IP_Address_Label.TabIndex" type="System.Int32, mscorlib">
-    <value>24</value>
-  </data>
-  <data name="Private_IP_Address_Label.Text" xml:space="preserve">
-    <value>Getting Private IP...</value>
-  </data>
-  <data name="Private_IP_Address_Label.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="&gt;&gt;Private_IP_Address_Label.Name" xml:space="preserve">
-    <value>Private_IP_Address_Label</value>
-  </data>
-  <data name="&gt;&gt;Private_IP_Address_Label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Private_IP_Address_Label.Parent" xml:space="preserve">
-    <value>Server_Status_Group</value>
-  </data>
-  <data name="&gt;&gt;Private_IP_Address_Label.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="OS_Architecture_Label.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="OS_Architecture_Label.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="OS_Architecture_Label.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="OS_Architecture_Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="OS_Architecture_Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 140</value>
-  </data>
-  <data name="OS_Architecture_Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 13</value>
-  </data>
-  <data name="OS_Architecture_Label.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="OS_Architecture_Label.Text" xml:space="preserve">
-    <value>OS Architecture</value>
-  </data>
-  <data name="&gt;&gt;OS_Architecture_Label.Name" xml:space="preserve">
-    <value>OS_Architecture_Label</value>
-  </data>
-  <data name="&gt;&gt;OS_Architecture_Label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;OS_Architecture_Label.Parent" xml:space="preserve">
-    <value>Server_Status_Group</value>
-  </data>
-  <data name="&gt;&gt;OS_Architecture_Label.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="telnetstatus.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="telnetstatus.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="telnetstatus.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="telnetstatus.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 38</value>
-  </data>
-  <data name="telnetstatus.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 13</value>
-  </data>
-  <data name="telnetstatus.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="telnetstatus.Text" xml:space="preserve">
-    <value>telnetstatus</value>
-  </data>
-  <data name="&gt;&gt;telnetstatus.Name" xml:space="preserve">
-    <value>telnetstatus</value>
-  </data>
-  <data name="&gt;&gt;telnetstatus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;telnetstatus.Parent" xml:space="preserve">
-    <value>Server_Status_Group</value>
-  </data>
-  <data name="&gt;&gt;telnetstatus.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="OS_Version_Label.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="OS_Version_Label.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="OS_Version_Label.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="OS_Version_Label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="OS_Version_Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 120</value>
-  </data>
-  <data name="OS_Version_Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 13</value>
-  </data>
-  <data name="OS_Version_Label.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="OS_Version_Label.Text" xml:space="preserve">
-    <value>OS Version</value>
-  </data>
-  <data name="&gt;&gt;OS_Version_Label.Name" xml:space="preserve">
-    <value>OS_Version_Label</value>
-  </data>
-  <data name="&gt;&gt;OS_Version_Label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;OS_Version_Label.Parent" xml:space="preserve">
-    <value>Server_Status_Group</value>
-  </data>
-  <data name="&gt;&gt;OS_Version_Label.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="status.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="status.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 8.25pt</value>
-  </data>
-  <data name="status.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="status.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 18</value>
-  </data>
-  <data name="status.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 13</value>
-  </data>
-  <data name="status.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="status.Text" xml:space="preserve">
-    <value>status</value>
-  </data>
-  <data name="&gt;&gt;status.Name" xml:space="preserve">
-    <value>status</value>
-  </data>
-  <data name="&gt;&gt;status.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;status.Parent" xml:space="preserve">
-    <value>Server_Status_Group</value>
-  </data>
-  <data name="&gt;&gt;status.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="Server_Status_Group.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 8</value>
-  </data>
-  <data name="Server_Status_Group.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1519, 160</value>
-  </data>
-  <data name="Server_Status_Group.TabIndex" type="System.Int32, mscorlib">
-    <value>20</value>
-  </data>
-  <data name="Server_Status_Group.Text" xml:space="preserve">
-    <value>Server status</value>
-  </data>
-  <data name="&gt;&gt;Server_Status_Group.Name" xml:space="preserve">
-    <value>Server_Status_Group</value>
-  </data>
-  <data name="&gt;&gt;Server_Status_Group.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Server_Status_Group.Parent" xml:space="preserve">
-    <value>overviewSplitter.Panel1</value>
-  </data>
-  <data name="&gt;&gt;Server_Status_Group.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;overviewSplitter.Panel1.Name" xml:space="preserve">
-    <value>overviewSplitter.Panel1</value>
-  </data>
-  <data name="&gt;&gt;overviewSplitter.Panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;overviewSplitter.Panel1.Parent" xml:space="preserve">
-    <value>overviewSplitter</value>
-  </data>
-  <data name="&gt;&gt;overviewSplitter.Panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="overviewSplitter.Panel1MinSize" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="Console_Group.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="Console_Group.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 8</value>
-  </data>
-  <data name="Console_Group.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1871, 610</value>
-  </data>
-  <data name="Console_Group.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
-  </data>
-  <data name="Console_Group.Text" xml:space="preserve">
-    <value>Console</value>
-  </data>
-  <data name="&gt;&gt;Console_Group.Name" xml:space="preserve">
-    <value>Console_Group</value>
-  </data>
-  <data name="&gt;&gt;Console_Group.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Console_Group.Parent" xml:space="preserve">
-    <value>overviewSplitter.Panel2</value>
-  </data>
-  <data name="&gt;&gt;Console_Group.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;overviewSplitter.Panel2.Name" xml:space="preserve">
-    <value>overviewSplitter.Panel2</value>
-  </data>
-  <data name="&gt;&gt;overviewSplitter.Panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;overviewSplitter.Panel2.Parent" xml:space="preserve">
-    <value>overviewSplitter</value>
-  </data>
-  <data name="&gt;&gt;overviewSplitter.Panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="overviewSplitter.Panel2MinSize" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="overviewSplitter.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1880, 657</value>
-  </data>
-  <data name="overviewSplitter.SplitterDistance" type="System.Int32, mscorlib">
-    <value>171</value>
-  </data>
-  <data name="overviewSplitter.SplitterWidth" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="overviewSplitter.TabIndex" type="System.Int32, mscorlib">
-    <value>21</value>
-  </data>
-  <data name="&gt;&gt;overviewSplitter.Name" xml:space="preserve">
-    <value>overviewSplitter</value>
-  </data>
-  <data name="&gt;&gt;overviewSplitter.Type" xml:space="preserve">
-    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;overviewSplitter.Parent" xml:space="preserve">
-    <value>ManageServer_TabPage</value>
-  </data>
-  <data name="&gt;&gt;overviewSplitter.ZOrder" xml:space="preserve">
-    <value>2</value>
   </data>
   <data name="Auto_Command_Timer.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -5146,7 +5146,7 @@ It's almost free, please check it out in "Settings" tab.</value>
     <value>47, 4</value>
   </data>
   <data name="ManageServer_TabPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>2081, 684</value>
+    <value>1679, 684</value>
   </data>
   <data name="ManageServer_TabPage.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -6021,9 +6021,6 @@ It's almost free, please check it out in "Settings" tab.</value>
   <data name="&gt;&gt;ZombieSpeedSettings_GroupBox.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="BloodMoonEnemyCount_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
   <data name="ConfigProperty_BloodMoonEnemyCount.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -6046,7 +6043,7 @@ It's almost free, please check it out in "Settings" tab.</value>
     <value>ConfigProperty_BloodMoonEnemyCount</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_BloodMoonEnemyCount.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_BloodMoonEnemyCount.Parent" xml:space="preserve">
     <value>BloodMoonEnemyCount_GroupBox</value>
@@ -6100,7 +6097,7 @@ It's almost free, please check it out in "Settings" tab.</value>
     <value>ConfigProperty_BloodMoonRange</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_BloodMoonRange.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_BloodMoonRange.Parent" xml:space="preserve">
     <value>BloodMoonRange_GroupBox</value>
@@ -6154,7 +6151,7 @@ It's almost free, please check it out in "Settings" tab.</value>
     <value>ConfigProperty_BloodMoonWarning</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_BloodMoonWarning.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_BloodMoonWarning.Parent" xml:space="preserve">
     <value>BloodMoonWarning_GroupBox</value>
@@ -6208,7 +6205,7 @@ It's almost free, please check it out in "Settings" tab.</value>
     <value>ConfigProperty_BloodMoonFrequency</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_BloodMoonFrequency.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_BloodMoonFrequency.Parent" xml:space="preserve">
     <value>BloodMoonFrequency_GroupBox</value>
@@ -6294,9 +6291,6 @@ It's almost free, please check it out in "Settings" tab.</value>
   <data name="&gt;&gt;PlayerSafeZoneHours_GroupBox.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="MaxSpawnedAnimals_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
   <data name="ConfigProperty_MaxSpawnedAnimals.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -6319,7 +6313,7 @@ It's almost free, please check it out in "Settings" tab.</value>
     <value>ConfigProperty_MaxSpawnedAnimals</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_MaxSpawnedAnimals.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_MaxSpawnedAnimals.Parent" xml:space="preserve">
     <value>MaxSpawnedAnimals_GroupBox</value>
@@ -6358,9 +6352,6 @@ NOTE: That this doesn't cause more animals to spawn arbitrarily: The biome spawn
   <data name="&gt;&gt;MaxSpawnedAnimals_GroupBox.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="MaxSpawnedZombies_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
   <data name="ConfigProperty_MaxSpawnedZombies.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -6383,7 +6374,7 @@ NOTE: That this doesn't cause more animals to spawn arbitrarily: The biome spawn
     <value>ConfigProperty_MaxSpawnedZombies</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_MaxSpawnedZombies.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_MaxSpawnedZombies.Parent" xml:space="preserve">
     <value>MaxSpawnedZombies_GroupBox</value>
@@ -6415,9 +6406,6 @@ NOTE: That this doesn't cause more animals to spawn arbitrarily: The biome spawn
   <data name="&gt;&gt;MaxSpawnedZombies_GroupBox.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="BlockDamagePlayer_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
   <data name="ConfigProperty_BlockDamagePlayer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -6440,7 +6428,7 @@ NOTE: That this doesn't cause more animals to spawn arbitrarily: The biome spawn
     <value>ConfigProperty_BlockDamagePlayer</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_BlockDamagePlayer.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_BlockDamagePlayer.Parent" xml:space="preserve">
     <value>BlockDamagePlayer_GroupBox</value>
@@ -6471,9 +6459,6 @@ NOTE: That this doesn't cause more animals to spawn arbitrarily: The biome spawn
   </data>
   <data name="&gt;&gt;BlockDamagePlayer_GroupBox.ZOrder" xml:space="preserve">
     <value>8</value>
-  </data>
-  <data name="Telnet_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
   </data>
   <data name="ConfigProperty_TelnetFailedLoginLimit.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 19</value>
@@ -6706,7 +6691,7 @@ If no password is set the server will only listen on the local loopback interfac
     <value>ConfigProperty_TelnetEnabled</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_TelnetEnabled.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.ToggleButton, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.ToggleButton, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_TelnetEnabled.Parent" xml:space="preserve">
     <value>Telnet_GroupBox</value>
@@ -6928,7 +6913,7 @@ If a world with the resulting name already exists it will simply load it.</value
     <value>ConfigProperty_WorldGenSize</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_WorldGenSize.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_WorldGenSize.Parent" xml:space="preserve">
     <value>WorldGenSize_GroupBox</value>
@@ -7063,7 +7048,7 @@ If a world with the resulting name already exists it will simply load it.</value
     <value>ConfigProperty_BedrollExpiryTime</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_BedrollExpiryTime.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_BedrollExpiryTime.Parent" xml:space="preserve">
     <value>BedrollExpiryTime_GroupBox</value>
@@ -7177,7 +7162,7 @@ If a world with the resulting name already exists it will simply load it.</value
     <value>ConfigProperty_EnemySpawnMode</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_EnemySpawnMode.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.ToggleButton, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.ToggleButton, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_EnemySpawnMode.Parent" xml:space="preserve">
     <value>ServerOptions_GroupBox</value>
@@ -7213,7 +7198,7 @@ If a world with the resulting name already exists it will simply load it.</value
     <value>ConfigProperty_EACEnabled</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_EACEnabled.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.ToggleButton, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.ToggleButton, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_EACEnabled.Parent" xml:space="preserve">
     <value>ServerOptions_GroupBox</value>
@@ -7249,7 +7234,7 @@ If a world with the resulting name already exists it will simply load it.</value
     <value>ConfigProperty_TerminalWindowEnabled</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_TerminalWindowEnabled.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.ToggleButton, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.ToggleButton, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_TerminalWindowEnabled.Parent" xml:space="preserve">
     <value>ServerOptions_GroupBox</value>
@@ -7285,7 +7270,7 @@ If a world with the resulting name already exists it will simply load it.</value
     <value>ConfigProperty_AirDropMarker</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_AirDropMarker.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.ToggleButton, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.ToggleButton, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_AirDropMarker.Parent" xml:space="preserve">
     <value>ServerOptions_GroupBox</value>
@@ -7321,7 +7306,7 @@ If a world with the resulting name already exists it will simply load it.</value
     <value>ConfigProperty_EnemyDifficulty</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_EnemyDifficulty.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.ToggleButton, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.ToggleButton, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_EnemyDifficulty.Parent" xml:space="preserve">
     <value>ServerOptions_GroupBox</value>
@@ -7357,7 +7342,7 @@ If a world with the resulting name already exists it will simply load it.</value
     <value>ConfigProperty_BuildCreate</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_BuildCreate.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.ToggleButton, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.ToggleButton, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_BuildCreate.Parent" xml:space="preserve">
     <value>ServerOptions_GroupBox</value>
@@ -7393,7 +7378,7 @@ If a world with the resulting name already exists it will simply load it.</value
     <value>ConfigProperty_PersistentPlayerProfiles</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_PersistentPlayerProfiles.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.ToggleButton, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.ToggleButton, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_PersistentPlayerProfiles.Parent" xml:space="preserve">
     <value>ServerOptions_GroupBox</value>
@@ -7425,9 +7410,6 @@ If a world with the resulting name already exists it will simply load it.</value
   <data name="&gt;&gt;ServerOptions_GroupBox.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
-  <data name="BedrollDeadZoneSize_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
   <data name="ConfigProperty_BedrollDeadZoneSize.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -7450,7 +7432,7 @@ If a world with the resulting name already exists it will simply load it.</value
     <value>ConfigProperty_BedrollDeadZoneSize</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_BedrollDeadZoneSize.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_BedrollDeadZoneSize.Parent" xml:space="preserve">
     <value>BedrollDeadZoneSize_GroupBox</value>
@@ -7483,25 +7465,22 @@ If a world with the resulting name already exists it will simply load it.</value
     <value>14</value>
   </data>
   <data name="ConfigProperty_LootRespawnDays.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
+    <value>Top</value>
   </data>
   <data name="ConfigProperty_LootRespawnDays.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 52</value>
+    <value>3, 16</value>
   </data>
   <data name="ConfigProperty_LootRespawnDays.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 20</value>
+    <value>303, 20</value>
   </data>
   <data name="ConfigProperty_LootRespawnDays.TabIndex" type="System.Int32, mscorlib">
     <value>130</value>
-  </data>
-  <data name="ConfigProperty_LootRespawnDays.Text" xml:space="preserve">
-    <value>Stuff</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_LootRespawnDays.Name" xml:space="preserve">
     <value>ConfigProperty_LootRespawnDays</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_LootRespawnDays.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_LootRespawnDays.Parent" xml:space="preserve">
     <value>LootRespawnDays_GroupBox</value>
@@ -7509,38 +7488,11 @@ If a world with the resulting name already exists it will simply load it.</value
   <data name="&gt;&gt;ConfigProperty_LootRespawnDays.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="ConfigProperty_LootRespawnDays_Old.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="ConfigProperty_LootRespawnDays_Old.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="ConfigProperty_LootRespawnDays_Old.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 16</value>
-  </data>
-  <data name="ConfigProperty_LootRespawnDays_Old.Size" type="System.Drawing.Size, System.Drawing">
-    <value>173, 56</value>
-  </data>
-  <data name="ConfigProperty_LootRespawnDays_Old.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_LootRespawnDays_Old.Name" xml:space="preserve">
-    <value>ConfigProperty_LootRespawnDays_Old</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_LootRespawnDays_Old.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_LootRespawnDays_Old.Parent" xml:space="preserve">
-    <value>LootRespawnDays_GroupBox</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_LootRespawnDays_Old.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="LootRespawnDays_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1397, 204</value>
+    <value>987, 508</value>
   </data>
   <data name="LootRespawnDays_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>179, 75</value>
+    <value>309, 42</value>
   </data>
   <data name="LootRespawnDays_GroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>91</value>
@@ -7559,9 +7511,6 @@ If a world with the resulting name already exists it will simply load it.</value
   </data>
   <data name="&gt;&gt;LootRespawnDays_GroupBox.ZOrder" xml:space="preserve">
     <value>15</value>
-  </data>
-  <data name="ServerMaxWorldTransferSpeedKiBs_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
   </data>
   <data name="ConfigProperty_ServerMaxWorldTransferSpeedKiBs.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -7585,7 +7534,7 @@ If a world with the resulting name already exists it will simply load it.</value
     <value>ConfigProperty_ServerMaxWorldTransferSpeedKiBs</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_ServerMaxWorldTransferSpeedKiBs.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_ServerMaxWorldTransferSpeedKiBs.Parent" xml:space="preserve">
     <value>ServerMaxWorldTransferSpeedKiBs_GroupBox</value>
@@ -7686,9 +7635,6 @@ As you are never friend of a dedicated server setting this to "Only Show To Frie
   <data name="&gt;&gt;ServerVisibility_GroupBox.ZOrder" xml:space="preserve">
     <value>17</value>
   </data>
-  <data name="MaxUncoveredMapChunksPerPlayer_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
   <data name="ConfigProperty_MaxUncoveredMapChunksPerPlayer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -7711,7 +7657,7 @@ As you are never friend of a dedicated server setting this to "Only Show To Frie
     <value>ConfigProperty_MaxUncoveredMapChunksPerPlayer</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_MaxUncoveredMapChunksPerPlayer.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_MaxUncoveredMapChunksPerPlayer.Parent" xml:space="preserve">
     <value>MaxUncoveredMapChunksPerPlayer_GroupBox</value>
@@ -7742,9 +7688,6 @@ As you are never friend of a dedicated server setting this to "Only Show To Frie
   </data>
   <data name="&gt;&gt;MaxUncoveredMapChunksPerPlayer_GroupBox.ZOrder" xml:space="preserve">
     <value>18</value>
-  </data>
-  <data name="HideCommandExecutionLog_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
   </data>
   <data name="ConfigProperty_HideCommandExecutionLog.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -7811,9 +7754,6 @@ As you are never friend of a dedicated server setting this to "Only Show To Frie
   </data>
   <data name="&gt;&gt;HideCommandExecutionLog_GroupBox.ZOrder" xml:space="preserve">
     <value>19</value>
-  </data>
-  <data name="ServerDisabledNetworkProtocols_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
   </data>
   <data name="ConfigProperty_ServerDisabledNetworkProtocols.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -7922,9 +7862,6 @@ As you are never friend of a dedicated server setting this to "Only Show To Frie
   </data>
   <data name="&gt;&gt;ServerPort_GroupBox.ZOrder" xml:space="preserve">
     <value>21</value>
-  </data>
-  <data name="ControlPanel_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
   </data>
   <data name="ConfigProperty_ControlPanelPort.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 15</value>
@@ -8056,7 +7993,7 @@ As you are never friend of a dedicated server setting this to "Only Show To Frie
     <value>ConfigProperty_ControlPanelEnabled</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_ControlPanelEnabled.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.ToggleButton, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.ToggleButton, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_ControlPanelEnabled.Parent" xml:space="preserve">
     <value>ControlPanel_GroupBox</value>
@@ -8146,7 +8083,7 @@ As you are never friend of a dedicated server setting this to "Only Show To Frie
     <value>1</value>
   </data>
   <data name="User_Data_Folder_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>954, 562</value>
+    <value>1143, 611</value>
   </data>
   <data name="User_Data_Folder_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>183, 48</value>
@@ -8599,9 +8536,6 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
   <data name="&gt;&gt;ServerName_GroupBox.ZOrder" xml:space="preserve">
     <value>30</value>
   </data>
-  <data name="BlockDamageAIBM_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
   <data name="ConfigProperty_BlockDamageAIBM.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -8624,7 +8558,7 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
     <value>ConfigProperty_BlockDamageAIBM</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_BlockDamageAIBM.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_BlockDamageAIBM.Parent" xml:space="preserve">
     <value>BlockDamageAIBM_GroupBox</value>
@@ -8656,9 +8590,6 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
   <data name="&gt;&gt;BlockDamageAIBM_GroupBox.ZOrder" xml:space="preserve">
     <value>31</value>
   </data>
-  <data name="PartySharedKillRange_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
   <data name="trackBarEx7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Bottom</value>
   </data>
@@ -8666,7 +8597,7 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
     <value>3, 55</value>
   </data>
   <data name="trackBarEx7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>329, 20</value>
+    <value>332, 20</value>
   </data>
   <data name="trackBarEx7.TabIndex" type="System.Int32, mscorlib">
     <value>133</value>
@@ -8681,7 +8612,7 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
     <value>trackBarEx7</value>
   </data>
   <data name="&gt;&gt;trackBarEx7.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;trackBarEx7.Parent" xml:space="preserve">
     <value>PartySharedKillRange_GroupBox</value>
@@ -8699,7 +8630,7 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
     <value>6, 19</value>
   </data>
   <data name="ConfigProperty_PartySharedKillRange.Size" type="System.Drawing.Size, System.Drawing">
-    <value>323, 45</value>
+    <value>326, 45</value>
   </data>
   <data name="ConfigProperty_PartySharedKillRange.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -8720,10 +8651,10 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
     <value>1</value>
   </data>
   <data name="PartySharedKillRange_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1736, 8</value>
+    <value>1332, 308</value>
   </data>
   <data name="PartySharedKillRange_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>335, 78</value>
+    <value>338, 78</value>
   </data>
   <data name="PartySharedKillRange_GroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>94</value>
@@ -8742,9 +8673,6 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
   </data>
   <data name="&gt;&gt;PartySharedKillRange_GroupBox.ZOrder" xml:space="preserve">
     <value>32</value>
-  </data>
-  <data name="ServerMaxAllowedViewDistance_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
   </data>
   <data name="ConfigProperty_ServerMaxAllowedViewDistance.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -8768,7 +8696,7 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
     <value>ConfigProperty_ServerMaxAllowedViewDistance</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_ServerMaxAllowedViewDistance.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_ServerMaxAllowedViewDistance.Parent" xml:space="preserve">
     <value>ServerMaxAllowedViewDistance_GroupBox</value>
@@ -8799,9 +8727,6 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
   </data>
   <data name="&gt;&gt;ServerMaxAllowedViewDistance_GroupBox.ZOrder" xml:space="preserve">
     <value>33</value>
-  </data>
-  <data name="DropOnQuit_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
   </data>
   <data name="ConfigProperty_DropOnQuit.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -8869,9 +8794,6 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
   <data name="&gt;&gt;DropOnQuit_GroupBox.ZOrder" xml:space="preserve">
     <value>34</value>
   </data>
-  <data name="XPMultiplier_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
   <data name="ConfigProperty_XPMultiplier.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -8894,7 +8816,7 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
     <value>ConfigProperty_XPMultiplier</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_XPMultiplier.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_XPMultiplier.Parent" xml:space="preserve">
     <value>XPMultiplier_GroupBox</value>
@@ -8926,9 +8848,6 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
   <data name="&gt;&gt;XPMultiplier_GroupBox.ZOrder" xml:space="preserve">
     <value>35</value>
   </data>
-  <data name="BlockDamageAI_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
   <data name="ConfigProperty_BlockDamageAI.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -8951,7 +8870,7 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
     <value>ConfigProperty_BlockDamageAI</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_BlockDamageAI.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_BlockDamageAI.Parent" xml:space="preserve">
     <value>BlockDamageAI_GroupBox</value>
@@ -8982,9 +8901,6 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
   </data>
   <data name="&gt;&gt;BlockDamageAI_GroupBox.ZOrder" xml:space="preserve">
     <value>36</value>
-  </data>
-  <data name="ServerReservedSlots_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
   </data>
   <data name="ConfigProperty_ServerAdminSlotsPermission.Location" type="System.Drawing.Point, System.Drawing">
     <value>285, 38</value>
@@ -9238,9 +9154,6 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
   <data name="&gt;&gt;ServerReservedSlots_GroupBox.ZOrder" xml:space="preserve">
     <value>37</value>
   </data>
-  <data name="Player_Killing_Mode_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
   <data name="ConfigProperty_PlayerKillingMode.Items" xml:space="preserve">
     <value>No Killing</value>
   </data>
@@ -9281,7 +9194,7 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
     <value>0</value>
   </data>
   <data name="Player_Killing_Mode_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1892, 91</value>
+    <value>1414, 400</value>
   </data>
   <data name="Player_Killing_Mode_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>179, 47</value>
@@ -9303,9 +9216,6 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
   </data>
   <data name="&gt;&gt;Player_Killing_Mode_GroupBox.ZOrder" xml:space="preserve">
     <value>38</value>
-  </data>
-  <data name="DropOnDeath_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
   </data>
   <data name="ConfigProperty_DropOnDeath.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -9376,32 +9286,29 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
   <data name="&gt;&gt;DropOnDeath_GroupBox.ZOrder" xml:space="preserve">
     <value>39</value>
   </data>
-  <data name="AirDropFrequency_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
   <data name="ConfigProperty_AirDropFrequency.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
+    <value>Top</value>
   </data>
   <data name="ConfigProperty_AirDropFrequency.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 50</value>
+    <value>3, 16</value>
   </data>
   <data name="ConfigProperty_AirDropFrequency.Size" type="System.Drawing.Size, System.Drawing">
-    <value>360, 20</value>
+    <value>303, 20</value>
   </data>
   <data name="ConfigProperty_AirDropFrequency.TabIndex" type="System.Int32, mscorlib">
     <value>128</value>
   </data>
   <data name="ConfigProperty_AirDropFrequency.Text" xml:space="preserve">
-    <value>Stuff</value>
+    <value>AirDrop Will Occur Every 72 Hours</value>
   </data>
   <data name="ConfigProperty_AirDropFrequency.ToolTip" xml:space="preserve">
-    <value>How often airdrop occur in game-hours, 0 == never</value>
+    <value>How often airdrop will occur in game-hours, 0 == never</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_AirDropFrequency.Name" xml:space="preserve">
     <value>ConfigProperty_AirDropFrequency</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_AirDropFrequency.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_AirDropFrequency.Parent" xml:space="preserve">
     <value>AirDropFrequency_GroupBox</value>
@@ -9409,41 +9316,11 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
   <data name="&gt;&gt;ConfigProperty_AirDropFrequency.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="ConfigProperty_AirDropFrequency_Old.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
-  <data name="ConfigProperty_AirDropFrequency_Old.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="ConfigProperty_AirDropFrequency_Old.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 14</value>
-  </data>
-  <data name="ConfigProperty_AirDropFrequency_Old.Size" type="System.Drawing.Size, System.Drawing">
-    <value>354, 45</value>
-  </data>
-  <data name="ConfigProperty_AirDropFrequency_Old.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="ConfigProperty_AirDropFrequency_Old.ToolTip" xml:space="preserve">
-    <value>How often airdrop occur in game-hours, 0 == never</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_AirDropFrequency_Old.Name" xml:space="preserve">
-    <value>ConfigProperty_AirDropFrequency_Old</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_AirDropFrequency_Old.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_AirDropFrequency_Old.Parent" xml:space="preserve">
-    <value>AirDropFrequency_GroupBox</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_AirDropFrequency_Old.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="AirDropFrequency_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1397, 293</value>
+    <value>987, 556</value>
   </data>
   <data name="AirDropFrequency_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>366, 73</value>
+    <value>309, 42</value>
   </data>
   <data name="AirDropFrequency_GroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>92</value>
@@ -9462,9 +9339,6 @@ For more complex changes to this window you can change the "serverjoinrulesdialo
   </data>
   <data name="&gt;&gt;AirDropFrequency_GroupBox.ZOrder" xml:space="preserve">
     <value>40</value>
-  </data>
-  <data name="LandClaimSettings_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
   </data>
   <data name="LandClaimCount_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Left, Right</value>
@@ -9891,7 +9765,7 @@ All claims have full protection for the first 24hrs.</value>
     <value>5</value>
   </data>
   <data name="LandClaimSettings_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1736, 463</value>
+    <value>1332, 453</value>
   </data>
   <data name="LandClaimSettings_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
     <value>338, 209</value>
@@ -9914,17 +9788,14 @@ All claims have full protection for the first 24hrs.</value>
   <data name="&gt;&gt;LandClaimSettings_GroupBox.ZOrder" xml:space="preserve">
     <value>41</value>
   </data>
-  <data name="LootAbundance_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
   <data name="ConfigProperty_LootAbundance.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
+    <value>Top</value>
   </data>
   <data name="ConfigProperty_LootAbundance.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 51</value>
+    <value>3, 16</value>
   </data>
   <data name="ConfigProperty_LootAbundance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>360, 20</value>
+    <value>303, 20</value>
   </data>
   <data name="ConfigProperty_LootAbundance.TabIndex" type="System.Int32, mscorlib">
     <value>128</value>
@@ -9936,7 +9807,7 @@ All claims have full protection for the first 24hrs.</value>
     <value>ConfigProperty_LootAbundance</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_LootAbundance.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_LootAbundance.Parent" xml:space="preserve">
     <value>LootAbundance_GroupBox</value>
@@ -9944,38 +9815,11 @@ All claims have full protection for the first 24hrs.</value>
   <data name="&gt;&gt;ConfigProperty_LootAbundance.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="ConfigProperty_LootAbundance_Old.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="ConfigProperty_LootAbundance_Old.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="ConfigProperty_LootAbundance_Old.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 16</value>
-  </data>
-  <data name="ConfigProperty_LootAbundance_Old.Size" type="System.Drawing.Size, System.Drawing">
-    <value>360, 55</value>
-  </data>
-  <data name="ConfigProperty_LootAbundance_Old.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_LootAbundance_Old.Name" xml:space="preserve">
-    <value>ConfigProperty_LootAbundance_Old</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_LootAbundance_Old.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TrackBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_LootAbundance_Old.Parent" xml:space="preserve">
-    <value>LootAbundance_GroupBox</value>
-  </data>
-  <data name="&gt;&gt;ConfigProperty_LootAbundance_Old.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="LootAbundance_GroupBox.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1397, 113</value>
+    <value>987, 460</value>
   </data>
   <data name="LootAbundance_GroupBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>366, 74</value>
+    <value>309, 42</value>
   </data>
   <data name="LootAbundance_GroupBox.TabIndex" type="System.Int32, mscorlib">
     <value>89</value>
@@ -9994,9 +9838,6 @@ All claims have full protection for the first 24hrs.</value>
   </data>
   <data name="&gt;&gt;LootAbundance_GroupBox.ZOrder" xml:space="preserve">
     <value>42</value>
-  </data>
-  <data name="ServerMaxPlayerCount_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
   </data>
   <data name="ConfigProperty_ServerMaxPlayerCount.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -10017,7 +9858,7 @@ All claims have full protection for the first 24hrs.</value>
     <value>ConfigProperty_ServerMaxPlayerCount</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_ServerMaxPlayerCount.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_ServerMaxPlayerCount.Parent" xml:space="preserve">
     <value>ServerMaxPlayerCount_GroupBox</value>
@@ -10049,9 +9890,6 @@ All claims have full protection for the first 24hrs.</value>
   <data name="&gt;&gt;ServerMaxPlayerCount_GroupBox.ZOrder" xml:space="preserve">
     <value>43</value>
   </data>
-  <data name="DayLightLength_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
   <data name="ConfigProperty_DayLightLength.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -10074,7 +9912,7 @@ All claims have full protection for the first 24hrs.</value>
     <value>ConfigProperty_DayLightLength</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_DayLightLength.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_DayLightLength.Parent" xml:space="preserve">
     <value>DayLightLength_GroupBox</value>
@@ -10106,9 +9944,6 @@ All claims have full protection for the first 24hrs.</value>
   <data name="&gt;&gt;DayLightLength_GroupBox.ZOrder" xml:space="preserve">
     <value>44</value>
   </data>
-  <data name="DayNightLength_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Left, Right</value>
-  </data>
   <data name="ConfigProperty_DayNightLength.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -10128,7 +9963,7 @@ All claims have full protection for the first 24hrs.</value>
     <value>ConfigProperty_DayNightLength</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_DayNightLength.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.TrackBarEx, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_DayNightLength.Parent" xml:space="preserve">
     <value>DayNightLength_GroupBox</value>
@@ -10160,9 +9995,6 @@ All claims have full protection for the first 24hrs.</value>
   <data name="&gt;&gt;DayNightLength_GroupBox.ZOrder" xml:space="preserve">
     <value>45</value>
   </data>
-  <data name="GameDifficulty_GroupBox.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
   <data name="ConfigProperty_GameDifficulty.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
@@ -10182,7 +10014,7 @@ All claims have full protection for the first 24hrs.</value>
     <value>ConfigProperty_GameDifficulty</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_GameDifficulty.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.RatingControl, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.RatingControl, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="&gt;&gt;ConfigProperty_GameDifficulty.Parent" xml:space="preserve">
     <value>GameDifficulty_GroupBox</value>
@@ -10218,7 +10050,7 @@ All claims have full protection for the first 24hrs.</value>
     <value>47, 4</value>
   </data>
   <data name="GameSettings_TabPage.Size" type="System.Drawing.Size, System.Drawing">
-    <value>2081, 684</value>
+    <value>1679, 684</value>
   </data>
   <data name="GameSettings_TabPage.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -14317,7 +14149,7 @@ It's almost free, please check it out in "Settings" tab.</value>
     <value>True</value>
   </data>
   <data name="tabControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>2132, 692</value>
+    <value>1730, 692</value>
   </data>
   <data name="tabControl.TabIndex" type="System.Int32, mscorlib">
     <value>22</value>
@@ -14350,7 +14182,7 @@ It's almost free, please check it out in "Settings" tab.</value>
     <value>radialMenuItem5</value>
   </data>
   <data name="&gt;&gt;radialMenuItem5.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.RadialMenuItem, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.RadialMenuItem, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="radialMenuItem4.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -14368,7 +14200,7 @@ It's almost free, please check it out in "Settings" tab.</value>
     <value>radialMenuItem4</value>
   </data>
   <data name="&gt;&gt;radialMenuItem4.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.RadialMenuItem, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.RadialMenuItem, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="radialMenuItem3.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -14386,7 +14218,7 @@ It's almost free, please check it out in "Settings" tab.</value>
     <value>radialMenuItem3</value>
   </data>
   <data name="&gt;&gt;radialMenuItem3.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.RadialMenuItem, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.RadialMenuItem, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="radialMenuItem2.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -14404,7 +14236,7 @@ It's almost free, please check it out in "Settings" tab.</value>
     <value>radialMenuItem2</value>
   </data>
   <data name="&gt;&gt;radialMenuItem2.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.RadialMenuItem, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.RadialMenuItem, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <data name="radialMenuItem1.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -14416,13 +14248,13 @@ It's almost free, please check it out in "Settings" tab.</value>
     <value>2</value>
   </data>
   <data name="radialMenuItem1.Text" xml:space="preserve">
-    <value>Walk</value>
+    <value>Walk123</value>
   </data>
   <data name="&gt;&gt;radialMenuItem1.Name" xml:space="preserve">
     <value>radialMenuItem1</value>
   </data>
   <data name="&gt;&gt;radialMenuItem1.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.Tools.RadialMenuItem, Syncfusion.Tools.Windows, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.Tools.RadialMenuItem, Syncfusion.Tools.Windows, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
   <metadata name="server_startup_tasks.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -14591,9 +14423,6 @@ Blue- server is running on dedicated files</value>
   <data name="&gt;&gt;img_status.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <metadata name="autoupdate_whitelist.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>2208, 17</value>
-  </metadata>
   <data name="don_l.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
@@ -14607,7 +14436,7 @@ Blue- server is running on dedicated files</value>
     <value>NoControl</value>
   </data>
   <data name="don_l.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2018, 697</value>
+    <value>1616, 697</value>
   </data>
   <data name="don_l.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 13</value>
@@ -14630,12 +14459,6 @@ Blue- server is running on dedicated files</value>
   <data name="&gt;&gt;don_l.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <metadata name="check_updates.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>2373, 17</value>
-  </metadata>
-  <metadata name="prepare_app_after_draw.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>2504, 17</value>
-  </metadata>
   <data name="dbg_btn.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
@@ -14643,7 +14466,7 @@ Blue- server is running on dedicated files</value>
     <value>NoControl</value>
   </data>
   <data name="dbg_btn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1557, 697</value>
+    <value>1155, 697</value>
   </data>
   <data name="dbg_btn.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 43</value>
@@ -14676,7 +14499,7 @@ Blue- server is running on dedicated files</value>
     <value>NoControl</value>
   </data>
   <data name="dbg_btn_2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1647, 697</value>
+    <value>1245, 697</value>
   </data>
   <data name="dbg_btn_2.Size" type="System.Drawing.Size, System.Drawing">
     <value>84, 43</value>
@@ -14702,12 +14525,6 @@ Blue- server is running on dedicated files</value>
   <data name="&gt;&gt;dbg_btn_2.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <metadata name="externalCallFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>2686, 17</value>
-  </metadata>
-  <data name="externalCallFile.Title" xml:space="preserve">
-    <value>External call</value>
-  </data>
   <data name="colorPickerButton1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -14727,11 +14544,8 @@ Blue- server is running on dedicated files</value>
     <value>colorPickerButton1</value>
   </data>
   <data name="&gt;&gt;colorPickerButton1.Type" xml:space="preserve">
-    <value>Syncfusion.Windows.Forms.ColorPickerButton, Syncfusion.Shared.Base, Version=17.3460.0.14, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
+    <value>Syncfusion.Windows.Forms.ColorPickerButton, Syncfusion.Shared.Base, Version=17.4460.0.40, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89</value>
   </data>
-  <metadata name="ServerStatsTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1255, 17</value>
-  </metadata>
   <data name="GitHub_Repo_Button.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Bottom, Right</value>
   </data>
@@ -14766,7 +14580,7 @@ Blue- server is running on dedicated files</value>
     <value>NoControl</value>
   </data>
   <data name="GitHub_Repo_Button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1910, 698</value>
+    <value>1508, 698</value>
   </data>
   <data name="GitHub_Repo_Button.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -14820,7 +14634,7 @@ Blue- server is running on dedicated files</value>
     <value>NoControl</value>
   </data>
   <data name="discord_b.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1777, 698</value>
+    <value>1375, 698</value>
   </data>
   <data name="discord_b.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -14898,7 +14712,7 @@ Blue- server is running on dedicated files</value>
     <value>NoControl</value>
   </data>
   <data name="help_b.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1822, 698</value>
+    <value>1420, 698</value>
   </data>
   <data name="help_b.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -14967,7 +14781,7 @@ Blue- server is running on dedicated files</value>
     <value>NoControl</value>
   </data>
   <data name="contact_b.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1867, 698</value>
+    <value>1465, 698</value>
   </data>
   <data name="contact_b.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -15033,7 +14847,7 @@ Blue- server is running on dedicated files</value>
     <value>NoControl</value>
   </data>
   <data name="forumklik.Location" type="System.Drawing.Point, System.Drawing">
-    <value>2013, 710</value>
+    <value>1611, 710</value>
   </data>
   <data name="forumklik.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -15097,7 +14911,7 @@ Blue- server is running on dedicated files</value>
     <value>NoControl</value>
   </data>
   <data name="www7dsm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1953, 698</value>
+    <value>1551, 698</value>
   </data>
   <data name="www7dsm.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
@@ -15150,6 +14964,24 @@ Blue- server is running on dedicated files</value>
   <data name="&gt;&gt;NitroGEN_Map_Generator_Link.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="autoupdate_whitelist.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>2208, 17</value>
+  </metadata>
+  <metadata name="check_updates.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>2373, 17</value>
+  </metadata>
+  <metadata name="prepare_app_after_draw.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>2504, 17</value>
+  </metadata>
+  <metadata name="externalCallFile.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>2686, 17</value>
+  </metadata>
+  <data name="externalCallFile.Title" xml:space="preserve">
+    <value>External call</value>
+  </data>
+  <metadata name="ServerStatsTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>1255, 17</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -15160,7 +14992,7 @@ Blue- server is running on dedicated files</value>
     <value>96, 96</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>2134, 747</value>
+    <value>1732, 747</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -16345,6 +16177,30 @@ Blue- server is running on dedicated files</value>
   <data name="&gt;&gt;steamid_header.Type" xml:space="preserve">
     <value>System.Windows.Forms.ColumnHeader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;Mod_Status.Name" xml:space="preserve">
+    <value>Mod_Status</value>
+  </data>
+  <data name="&gt;&gt;Mod_Status.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Mod_Name.Name" xml:space="preserve">
+    <value>Mod_Name</value>
+  </data>
+  <data name="&gt;&gt;Mod_Name.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Mod_Version.Name" xml:space="preserve">
+    <value>Mod_Version</value>
+  </data>
+  <data name="&gt;&gt;Mod_Version.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Mod_Author.Name" xml:space="preserve">
+    <value>Mod_Author</value>
+  </data>
+  <data name="&gt;&gt;Mod_Author.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;Header_Icons.Name" xml:space="preserve">
     <value>Header_Icons</value>
   </data>
@@ -16452,30 +16308,6 @@ Blue- server is running on dedicated files</value>
   </data>
   <data name="&gt;&gt;ServerStatsTimer.Type" xml:space="preserve">
     <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Mod_Status.Name" xml:space="preserve">
-    <value>Mod_Status</value>
-  </data>
-  <data name="&gt;&gt;Mod_Status.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Mod_Name.Name" xml:space="preserve">
-    <value>Mod_Name</value>
-  </data>
-  <data name="&gt;&gt;Mod_Name.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Mod_Version.Name" xml:space="preserve">
-    <value>Mod_Version</value>
-  </data>
-  <data name="&gt;&gt;Mod_Version.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Mod_Author.Name" xml:space="preserve">
-    <value>Mod_Author</value>
-  </data>
-  <data name="&gt;&gt;Mod_Author.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Server_Panel_Form</value>

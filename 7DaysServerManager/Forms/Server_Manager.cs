@@ -2513,69 +2513,25 @@ namespace _7DaysServerManager
                 Registry.SetValue(base_registry_key + profile_name, "backup_chat", "0");
         }
 
-        private void Forumklik_Click(object sender, EventArgs e)
+        private void Donate_Click(object sender, EventArgs e)
         {
+            //Updated To Latest Paypal Button Code - 1-2-2020
             Process.Start("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=Y6XKJPQ4YB5Y8");
-            Echo("\n\n████████╗██╗  ██╗ █████╗ ███╗   ██╗██╗  ██╗    ██╗   ██╗ ██████╗ ██╗   ██╗   ██╗ \n╚══██╔══╝██║  ██║██╔══██╗████╗  ██║██║ ██╔╝    ╚██╗ ██╔╝██╔═══██╗██║   ██║██╗╚██╗\n   ██║   ███████║███████║██╔██╗ ██║█████╔╝      ╚████╔╝ ██║   ██║██║   ██║╚═╝ ██║\n   ██║   ██╔══██║██╔══██║██║╚██╗██║██╔═██╗       ╚██╔╝  ██║   ██║██║   ██║██╗ ██║\n   ██║   ██║  ██║██║  ██║██║ ╚████║██║  ██╗       ██║   ╚██████╔╝╚██████╔╝╚═╝██╔╝\n   ╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝       ╚═╝    ╚═════╝  ╚═════╝    ╚═╝ \n\n", 0, true);
+
+            // Print Thank You for Donating Message In Console :)
+            Echo(Figgle.FiggleFonts.Big.Render("Thanks For Donating!"), 0, true);
         }
+          
 
-        //private void Ctime_0_CheckedChanged(object sender, EventArgs e)
+        //private void LootRespawnDays_Scroll(object sender, EventArgs e)
         //{
-        //    Update_Config();
+
+            //if (ConfigProperty_LootRespawnDays.Value == -1)
+            //    LootRespawnDays_GroupBox.Text = LocalizedLanguage("LootRespawnDays_g") + " [" + LocalizedLanguage("disabled") + "]";
+            //else
+            //    LootRespawnDays_GroupBox.Text = LocalizedLanguage("LootRespawnDays_g") + " [" + ConfigProperty_LootRespawnDays_Old.Value + "]";
+            //Update_Config();
         //}
-
-        //private void Ctime_1_CheckedChanged(object sender, EventArgs e)
-        //{
-        //    Update_Config();
-        //}
-
-        //private void Ctime_2_CheckedChanged(object sender, EventArgs e)
-        //{
-        //    Update_Config();
-        //}
-
-        //private void Ltime_0_CheckedChanged(object sender, EventArgs e)
-        //{
-        //    Update_Config();
-        //}
-
-        //private void Ltime_1_CheckedChanged(object sender, EventArgs e)
-        //{
-        //    Update_Config();
-        //}
-
-        //private void Ltime_2_CheckedChanged(object sender, EventArgs e)
-        //{
-        //    Update_Config();
-        //}
-
-        //private void Nightpercentage_Scroll(object sender, EventArgs e)
-        //{
-        //    DayLightLength_GroupBox.Text = "Day Light Length [" + ConfigProperty_DayLightLength.Value + "h]";
-            
-        //    Update_Config();
-        //}
-
-        //private void AdminFileName_TextChanged(object sender, EventArgs e)
-        //{
-        //    Update_Config();
-        //}
-
-        //private void LootAbundance_Scroll(object sender, EventArgs e)
-        //{
-        //    LootAbundance_GroupBox.Text = LocalizedLanguage("LootAbundance_g") + " [" + ConfigProperty_LootAbundance_Old.Value + "%]";
-        //    Update_Config();
-        //}
-
-        private void LootRespawnDays_Scroll(object sender, EventArgs e)
-        {
-
-            if (ConfigProperty_LootRespawnDays_Old.Value == -1)
-                LootRespawnDays_GroupBox.Text = LocalizedLanguage("LootRespawnDays_g") + " [" + LocalizedLanguage("disabled") + "]";
-            else
-                LootRespawnDays_GroupBox.Text = LocalizedLanguage("LootRespawnDays_g") + " [" + ConfigProperty_LootRespawnDays_Old.Value + "]";
-            Update_Config();
-        }
 
         private void Browse_Click(object sender, EventArgs e)
         {
@@ -2957,17 +2913,17 @@ namespace _7DaysServerManager
         }
 
         // Update Text On Air Drop Frequency Control When Slider Value Changes
-        private void AirDropFrequency_Scroll(object sender, EventArgs e)
-        {
+        //private void AirDropFrequency_Scroll(object sender, EventArgs e)
+        //{
             // Determine If Disabled Or Set To Specific Amount of Hours
-            if (ConfigProperty_AirDropFrequency_Old.Value != 0)
-                AirDropFrequency_GroupBox.Text = LocalizedLanguage("AirDropFrequency") + " [" + Convert.ToString(ConfigProperty_AirDropFrequency_Old.Value) + " h.]";
-            else
-                AirDropFrequency_GroupBox.Text = LocalizedLanguage("AirDropFrequency") + " [" + LocalizedLanguage("disabled") + "]";
+            //if (ConfigProperty_AirDropFrequency_Old.Value != 0)
+            //    AirDropFrequency_GroupBox.Text = LocalizedLanguage("AirDropFrequency") + " [" + Convert.ToString(ConfigProperty_AirDropFrequency_Old.Value) + " h.]";
+            //else
+            //    AirDropFrequency_GroupBox.Text = LocalizedLanguage("AirDropFrequency") + " [" + LocalizedLanguage("disabled") + "]";
 
             // Update The Config
-            Update_Config();
-        }
+            //Update_Config();
+        //}
 
         private void Console_LinkClicked(object sender, LinkClickedEventArgs e)
         {
@@ -3020,10 +2976,14 @@ namespace _7DaysServerManager
             }
         }
 
+        #region 7DSM Site Links (OnClick)
+
         private void How_to_commands_Click(object sender, EventArgs e)
         {
-            Process.Start("https://7dsm.smartmoose.org/index.php?id=custom-commands-internal-interpreter");
+            Process.Start("http://7dsm.seanasaservice.com/custom-commands-internal-interpreter.html");
         }
+
+        # endregion
 
         private void Backup_msg_1_TextChanged(object sender, EventArgs e)
         {
@@ -3461,27 +3421,6 @@ namespace _7DaysServerManager
             Echo(LocalizedLanguage("server_closed"), 1, true);
 
             just_killin = false;
-        }
-
-        private void Like_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://www.facebook.com/official7dsm");
-        }
-
-        private void PlayerSafeZoneLevel_TextChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void PlayerSafeZoneHours_TextChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void MaxSpawnedAnimals_Scroll(object sender, EventArgs e)
-        {
-            MaxSpawnedAnimals_GroupBox.Text = "[" + Convert.ToString(ConfigProperty_MaxSpawnedAnimals.Value) + "] Animals Spawned Per Player";
-            Update_Config();
         }
 
         private void Kill_Player_Click(object sender, EventArgs e)
@@ -4531,7 +4470,7 @@ namespace _7DaysServerManager
 
         private void How_to_commands2_Click(object sender, EventArgs e)
         {
-            Process.Start("https://7dsm.smartmoose.org/index.php?id=custom-commands-external-call");
+            Process.Start("http://7dsm.seanasaservice.com/custom-commands.html");
         }
 
         private void Zoomup_Click(object sender, EventArgs e)
@@ -4543,9 +4482,9 @@ namespace _7DaysServerManager
                 zoomup.Text = "▲";
         }
 
-        private void Discord_b_Click(object sender, EventArgs e)
+        private void Discord_Click(object sender, EventArgs e)
         {
-            Process.Start("https://discord.gg/yr54RS"); // 7DSM Discord Channel, I Might Be There, I Might Not
+            Process.Start("https://discord.gg/KneMGU"); // 7DSM User Discord Channel
         }
 
         private void Newsbox_LinkClicked(object sender, LinkClickedEventArgs e)
@@ -4923,7 +4862,10 @@ namespace _7DaysServerManager
         private void ConfigProperty_BlockDamageAIBM_ValueChanged(object sender, EventArgs e)
         {
             // Update Text To Currently Set Value
-            BlockDamageAIBM_GroupBox.Text = "AI Block Damage During Blood Moon: [" + ConfigProperty_BlockDamageAIBM.Value + "%]";
+            if (ConfigProperty_BlockDamageAIBM.Value == 0)
+                BlockDamageAIBM_GroupBox.Text = "AI Block Damage During Blood Moon [25%]";
+            else
+                BlockDamageAIBM_GroupBox.Text = "AI Block Damage During Blood Moon [" + Convert.ToInt32(ConfigProperty_BlockDamageAIBM.Value) + "%]";
 
             // Update The Config File With The New Value
             Update_Config();
@@ -4932,7 +4874,10 @@ namespace _7DaysServerManager
         private void ConfigProperty_XPMultiplier_ValueChanged(object sender, EventArgs e)
         {
             // Update Text To Currently Set Value
-            XPMultiplier_GroupBox.Text = "XP Multiplier: [" + ConfigProperty_XPMultiplier.Value + "%]";
+            if (ConfigProperty_XPMultiplier.Value == 0)
+                XPMultiplier_GroupBox.Text = "XP Multiplier [25%]";
+            else
+                XPMultiplier_GroupBox.Text = "XP Multiplier [" + Convert.ToInt32(ConfigProperty_XPMultiplier.Value) + "%]";
 
             // Update The Config File With The New Value
             Update_Config();
@@ -5168,21 +5113,48 @@ namespace _7DaysServerManager
         private void ConfigProperty_LootAbundance_ValueChanged(object sender, EventArgs e)
         {
             // Update Text To Currently Set Value
-            LootAbundance_GroupBox.Text = "Loot Abundance [" + Convert.ToString(ConfigProperty_LootAbundance.Value) + "%]";
+            if (ConfigProperty_LootAbundance.Value == 0)
+                LootAbundance_GroupBox.Text = "Loot Abundance [25%]";
+            else
+                LootAbundance_GroupBox.Text = "Loot Abundance [" + Convert.ToInt32(ConfigProperty_LootAbundance.Value) + "%]";
 
             // Update The Config File With The New Value
             Update_Config();
         }
 
+        private void ConfigProperty_LootRespawnDays_ValueChanged(object sender, EventArgs e)
+        {
+            // Update Text To Currently Set Value
+            if (ConfigProperty_LootRespawnDays.Value == -1)
+            {
+                LootRespawnDays_GroupBox.Text = "Loot Respawn Time [ Disabled ]";
+            }
+            else if (ConfigProperty_LootRespawnDays.Value == 0)
+            {
+                // Set The Minimum Ammount
+                ConfigProperty_LootRespawnDays.Value = 1;
+
+                // Update Text To Currently Set Value
+                LootRespawnDays_GroupBox.Text = "Loot Respawns Every [" + Convert.ToInt32(ConfigProperty_LootRespawnDays.Value) + " days]";
+            }
+            else
+            {
+                // Update Text To Currently Set Value
+                LootRespawnDays_GroupBox.Text = "Loot Respawns Every [" + Convert.ToInt32(ConfigProperty_LootRespawnDays.Value) + " days]";
+            }
+
+            // Update The Config File With The New Value
+            Update_Config();
+        }
+
+        private void ConfigProperty_AirDropFrequency_ValueChanged(object sender, EventArgs e)
+        {
+            //TODO - NEEDS GROUP BOX TEXT UPDATE CODE
 
 
-
-
-
-
-
-
-
+            // Update The Config File With The New Value
+            Update_Config();
+        }
 
         private void ConfigProperty_AirDropMarker_ToggleStateChanged(object sender, ToggleStateChangedEventArgs e)
         {
