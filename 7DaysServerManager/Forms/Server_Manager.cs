@@ -26,13 +26,13 @@ namespace _7DaysServerManager
     public partial class Server_Panel_Form : Form
     {
         //Build Lists and Queues
-        List<string> players_ids = new List<string>();
+        //List<string> players_ids = new List<string>();
         Queue<string> telnet_queue = new Queue<string>();
 
         // Version Variables
-        public const string ver = "9.1";
+        public const string ver = "9.2";
         public const bool dev = false;
-        public const string game_ver = "Alpha 18.2";
+        public const string game_ver = "Alpha 18.3";
         public const string whatsnew = "Whats new since last STABLE build:\n-Updated To Work With v18.x\n-Added New Visual CPU/RAM/Toggles\n-Over 381 Other Fixes";
 
         // Registry Variables
@@ -52,8 +52,7 @@ namespace _7DaysServerManager
         bool webserver_running = false;
 
         string file_path, telnet_NOW = "null", reply_telnet, reply_lp="";
-        bool translation_error = false;
-        string translation_error_c = "";
+        readonly string translation_error_c = "";
 
         string all_exes = "init-0-Server"; //Performance Custom Commands
 
@@ -273,7 +272,7 @@ namespace _7DaysServerManager
             {
                 status.Invoke((MethodInvoker)delegate
                 {
-                    status.Text = LocalizedLanguage("status_working");
+                    status.Text = "Server: ONLINE";
 
 
                     if (tc != null && tc.IsConnected)
@@ -301,7 +300,7 @@ namespace _7DaysServerManager
                     status.Invoke((MethodInvoker)delegate
                     {
                         Connect_Running_Server_Button.Enabled = false;
-                        status.Text = LocalizedLanguage("status_not");
+                        status.Text = "Server: OFFLINE";
                         Unlock_Panel_Controls();
                         img_status.Image = Properties.Resources.status_stopped;
 
@@ -309,7 +308,7 @@ namespace _7DaysServerManager
                         {
                             Thread.Sleep(500);
                             //restart crasha
-                            Echo(LocalizedLanguage("crash"), 2, true);
+                            Echo("Server crashed... Restarting...", 2, true);
 
                             Thread.Sleep(5000);
 
@@ -326,7 +325,7 @@ namespace _7DaysServerManager
             // Retrieve Server Info
             status.Invoke((MethodInvoker)delegate
             {
-                status.Text = LocalizedLanguage("status_not");
+                status.Text = "Server: OFFLINE";
                 OS_Version_Label.Text = "OS: "+Convert.ToString(System.Environment.OSVersion);
 
                 if (Environment.Is64BitOperatingSystem)
@@ -377,73 +376,6 @@ namespace _7DaysServerManager
 
         }
 
-        // Language Localization
-        public string LocalizedLanguage(string text)
-        {
-            // Init Variables
-            string LocalizedText = "";
-            bool LocalizedTextFound = false;
-
-            // Init Langauage Reader
-            try
-            {
-                XmlReader xmlReader = XmlReader.Create("lang.xml");
-                while (xmlReader.Read())
-                {
-                    if ((xmlReader.NodeType == XmlNodeType.Element) && (xmlReader.Name == "property"))
-                    {
-                        if (xmlReader.HasAttributes)
-                        {
-                            if (xmlReader.GetAttribute("name") == text)
-                            {
-                                LocalizedText = xmlReader.GetAttribute("text");
-                                LocalizedTextFound = true;
-                                break;
-                            }
-                        }
-                    }
-                }
-
-                // If The Localized Text Doesn't Exist
-                if (!LocalizedTextFound)
-                {
-                    // Check To See If The Lang File Exists
-                    if (File.Exists("lang.xml"))
-                    {
-                        // Theres A Translation Error
-                        translation_error = true;
-                        if (!translation_error_c.Contains(text))
-                            translation_error_c = translation_error_c + "Missing label: " + text + "\n";
-                        //echo("Missing label in lang.xml: "+text+". Check for lang.xml updates!", 3, true);
-                    }
-
-                    // Set The Language For This Instance
-                    ResourceManager rm = new ResourceManager("_7DaysServerManager.lang.lang_en", this.GetType().Assembly);
-                    LocalizedText = rm.GetString(text);
-                }
-
-                // Close Reader
-                xmlReader.Close();
-
-            }
-            catch (Exception e)
-            {
-                if (File.Exists("lang.xml"))
-                {
-                    translation_error = true;
-                    if (!translation_error_c.Contains(text))
-                        translation_error_c = translation_error_c + "Wrong character: " + text + "Details here:\n" + e + "\n";
-                    //echo("Corrupted language file!\nWrong character found or missing label: " + text + "\nSee exception for more infos.\n\nException:\n" + e, 3, true);  
-                }
-
-                ResourceManager rm = new ResourceManager("_7DaysServerManager.lang.lang_en", this.GetType().Assembly);
-                LocalizedText = rm.GetString(text);
-            }
-
-            return LocalizedText;
-
-        }
-
         private void Server_panel_Load(object sender, EventArgs e)
         {
             //tabControl.TabPages.Remove(WebServer); //!!
@@ -470,23 +402,6 @@ namespace _7DaysServerManager
             string profile_registry_key = @"HKEY_CURRENT_USER\Software\7DSM\" + profile_name;
 
             Prepare_app_after_start();
-        }
-
-        private void Trudnosc_Scroll(object sender, EventArgs e)
-        {
-            GameDifficulty_GroupBox.Text = LocalizedLanguage("trudnoscgroup") + " [" + Convert.ToString(ConfigProperty_GameDifficulty.Value) + "]";
-            Update_Config();
-        }
-
-        private void Port_TextChanged(object sender, EventArgs e)
-        {
-
-            Update_Config();
-        }
-
-        private void Nazwa_TextChanged(object sender, EventArgs e)
-        {
-            Update_Config();
         }
 
         private void Telnet_Click(object sender, EventArgs e)
@@ -517,18 +432,18 @@ namespace _7DaysServerManager
 
             if (server_online == true && Settings_Clean_Exit_CheckBox.Checked)
             {
-                Echo(LocalizedLanguage("wn_cl"), 2, false);
-                DialogResult dialogResult = MessageBox.Show(LocalizedLanguage("sure_close"), LocalizedLanguage("wn_cl"), MessageBoxButtons.YesNo);
+                Echo("Close window request", 2, false);
+                DialogResult dialogResult = MessageBox.Show("Are you sure you want to turn the server off?", "Close window request", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
                     Stop_Click(null, null);
-                    Echo("\n" + LocalizedLanguage("potw"), 1, true);
+                    Echo("\n" + "CONFIRMED", 1, true);
                     System.Threading.Thread.Sleep(3000);
                 }
                 else
                 {
                     e.Cancel = true;
-                    Echo("\n" + LocalizedLanguage("anul"), 1, true);
+                    Echo("\n" + "CANCELLED", 1, true);
                 }
             }
             try
@@ -683,12 +598,12 @@ namespace _7DaysServerManager
 
         private void Dzien_bar_Scroll(object sender, EventArgs e)
         {
-            dzien.Text = LocalizedLanguage("dzien") + " [" + Convert.ToString(Game_Day_TrackBar.Value) + "]";
+            dzien.Text = "Day [" + Convert.ToString(Game_Day_TrackBar.Value) + "]";
         }
 
         private void Godzina_bar_Scroll(object sender, EventArgs e)
         {
-            godzina.Text = LocalizedLanguage("godzina") + " [" + Convert.ToString(Game_Hour_TrackBar.Value) + ":00]";
+            godzina.Text = "Hour [" + Convert.ToString(Game_Hour_TrackBar.Value) + ":00]";
         }
 
         private void Server_panel_Resize(object sender, EventArgs e)
@@ -697,7 +612,7 @@ namespace _7DaysServerManager
             {
                 App_Icon.Visible = true;
                 this.Visible = false;
-                App_Icon.ShowBalloonTip(15000, LocalizedLanguage("imhere"), LocalizedLanguage("restore"), ToolTipIcon.Info);
+                App_Icon.ShowBalloonTip(15000, "I'm here!", "Click here to restore manager.", ToolTipIcon.Info);
             }
 
         }
@@ -719,21 +634,21 @@ namespace _7DaysServerManager
 
                 if (File.Exists(@sciezka_plikow))
                 {
-                    MessageBox.Show(LocalizedLanguage("dir_ok"), LocalizedLanguage("saved"));
+                    MessageBox.Show("Dir seems to be all right. Saved", "Saved");
                     Registry.SetValue(base_registry_key + profile_name, "game_path", Select_Game_Directory.SelectedPath);
                     Registry.SetValue(base_registry_key + profile_name, "server_type", "client");
 
                 }
                 else if (File.Exists(@sciezka_plikow_server))
                 {
-                    MessageBox.Show(LocalizedLanguage("dir_ok"), LocalizedLanguage("saved"));
+                    MessageBox.Show("Dir seems to be all right. Saved", "Saved");
                     Registry.SetValue(base_registry_key + profile_name, "game_path", Select_Game_Directory.SelectedPath);
                     Registry.SetValue(base_registry_key + profile_name, "server_type", "server");
 
                 }
                 else
                 {
-                    MessageBox.Show(LocalizedLanguage("game_not_found_2"), LocalizedLanguage("error"));
+                    MessageBox.Show("Game files not found.", "Error");
                 }
 
             }
@@ -750,7 +665,7 @@ namespace _7DaysServerManager
             }
             catch
             {
-                MessageBox.Show(LocalizedLanguage("select_player"));
+                MessageBox.Show("Select player from list.");
             }
 
         }
@@ -759,7 +674,7 @@ namespace _7DaysServerManager
         {
 
             Echo_debug("---killing 7daystodie.exe---");
-            DialogResult dialogResult = MessageBox.Show(LocalizedLanguage("kill_click"), LocalizedLanguage("warning"), MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("Are you sure? This may corrupt your save file!", "Warning", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
 
@@ -769,12 +684,12 @@ namespace _7DaysServerManager
                 }
                 catch (Exception eksepszyn)
                 {
-                    Error_Reporter err_rep = new Error_Reporter(LocalizedLanguage("kill_workers_err") + "\n" + Convert.ToString(eksepszyn));
+                    Error_Reporter err_rep = new Error_Reporter("Workers closing error. It shouldn't be a problem, but if something in not ok try restarting 7DSM." + "\n" + Convert.ToString(eksepszyn));
                     err_rep.Show();
                 }
 
 
-                Echo(LocalizedLanguage("killing_proc"), 0, false);
+                Echo("Killing proccess...", 0, false);
 
                 //telnet_cmd("shutdown", false, false);
 
@@ -792,7 +707,7 @@ namespace _7DaysServerManager
 
                 server_online = false;
                 Echo("OK", 1, true);
-                Echo(LocalizedLanguage("proc_killed"), 0, true);
+                Echo("Proccess killed", 0, true);
             }
         }
 
@@ -960,7 +875,7 @@ namespace _7DaysServerManager
             try
             {
                 telnet_queue.Enqueue("kick " + Convert.ToString(Online_Player_List.SelectedItems[0].Text) + " " + Kick_Reason_ComboBox.Text);
-                MessageBox.Show(Convert.ToString(Online_Player_List.SelectedItems[0].Text) + LocalizedLanguage("kick_ok"), LocalizedLanguage("kick"));
+                MessageBox.Show(Convert.ToString(Online_Player_List.SelectedItems[0].Text) + " has been kicked.", "KICK");
 
                 int liczba = 0; string cur_pl = "";
                 startbar.Invoke((MethodInvoker)delegate
@@ -991,7 +906,7 @@ namespace _7DaysServerManager
             }
             catch
             {
-                MessageBox.Show(LocalizedLanguage("select_player"));
+                MessageBox.Show("Select player from list.");
             }
         }
 
@@ -1009,7 +924,7 @@ namespace _7DaysServerManager
                     user = Convert.ToString(Online_Player_List.SelectedItems[0].Text);
 
 
-                DialogResult dialogResult = MessageBox.Show(LocalizedLanguage("ban_sure") + user + "?\n", LocalizedLanguage("warning"), MessageBoxButtons.YesNo);
+                DialogResult dialogResult = MessageBox.Show("Are you sure you want to ban " + user + "?\n", "Warning", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
                     string czas;
@@ -1043,21 +958,21 @@ namespace _7DaysServerManager
                         }
 
                         telnet_queue.Enqueue("ban add " + user + " " + Ban_Slider_TrackBar.Value + " " + czas);
-                        MessageBox.Show(user + LocalizedLanguage("banned"), LocalizedLanguage("ban"));
+                        MessageBox.Show(user + " is banned now.", "BAN");
                     }
                     else
                     {
-                        MessageBox.Show(LocalizedLanguage("sel_ban_time"), LocalizedLanguage("warning"));
+                        MessageBox.Show("Select ban time", "Warning");
                     }
                 }
                 else
                 {
-                    MessageBox.Show(LocalizedLanguage("canceled"), LocalizedLanguage("ban"));
+                    MessageBox.Show("Canceled", "BAN");
                 }
             }
             catch
             {
-                MessageBox.Show(LocalizedLanguage("select_player"));
+                MessageBox.Show("Select player from list.");
             }
         }
 
@@ -1197,7 +1112,7 @@ namespace _7DaysServerManager
 
             if (tc == null)
             {
-                MessageBox.Show(LocalizedLanguage("sth_went_terribly_wrong"), LocalizedLanguage("warning"));
+                MessageBox.Show("Something went terribly wrong. Restart server.", "Warning");
                 e.Cancel = true;
                 return;
             }
@@ -1256,7 +1171,7 @@ namespace _7DaysServerManager
                 if (!just_killin)
                     if (!tc.IsConnected)
                     {
-                        Echo(LocalizedLanguage("telnet_broken"), 2, true);
+                        Echo("Server broke telnet connection!", 2, true);
                         try
                         {
                             reboot_telnet.RunWorkerAsync();
@@ -1789,31 +1704,31 @@ namespace _7DaysServerManager
 
                 if (File.Exists(steam_registry_path + "\\" + exe_name.Text))
                 {
-                    MessageBox.Show(LocalizedLanguage("steam_ok"), LocalizedLanguage("saved"));
+                    MessageBox.Show("Found steam game files. Should work:)", "Saved");
                     Registry.SetValue(base_registry_key + profile_name, "game_path", steam_registry_path);
-                    Game_File_Path_Label.Text = LocalizedLanguage("path") + (string)Registry.GetValue(base_registry_key + profile_name, "game_path", null);
+                    Game_File_Path_Label.Text = "Game files path: " + (string)Registry.GetValue(base_registry_key + profile_name, "game_path", null);
                 }
                 else
                 {
                     steam_registry_path += " Dedicated Server";
                     if (File.Exists(steam_registry_path + "\\7DaysToDieServer.exe"))
                     {
-                        MessageBox.Show(LocalizedLanguage("steam_ok"), LocalizedLanguage("saved"));
+                        MessageBox.Show("Found steam game files. Should work:)", "Saved");
                         Registry.SetValue(base_registry_key + profile_name, "game_path", steam_registry_path);
-                        Game_File_Path_Label.Text = LocalizedLanguage("path") + (string)Registry.GetValue(base_registry_key + profile_name, "game_path", null);
+                        Game_File_Path_Label.Text = "Game files path: " + (string)Registry.GetValue(base_registry_key + profile_name, "game_path", null);
                     }
                     else
                     {
 
-                        MessageBox.Show(LocalizedLanguage("steam_no_game"), LocalizedLanguage("error"));
-                        Echo(LocalizedLanguage("steam_no_game"), 3, true);
+                        MessageBox.Show("Didn't found game on Steam. You have to download the game via Steam.", "Error");
+                        Echo("Didn't found game on Steam. You have to download the game via Steam.", 3, true);
                     }
                 }
 
             }
             catch
             {
-                MessageBox.Show(LocalizedLanguage("steam_no_steam"), LocalizedLanguage("error"));
+                MessageBox.Show("Steam not found. Set path manually", "Error");
             }
         }
 
@@ -2041,7 +1956,7 @@ namespace _7DaysServerManager
 
                 if (reply_lp == "error")
                 {
-                    Echo(LocalizedLanguage("ref_err"), 3, true);
+                    Echo("Cannot download playerlist.", 3, true);
                 }
                 else
                 {
@@ -2329,7 +2244,7 @@ namespace _7DaysServerManager
                 min_s = Convert.ToString(min);
             }
 
-            auto_backup_group.Text = LocalizedLanguage("backup_time") + " [" + hrs_s + ":" + min_s + " h.]";
+            auto_backup_group.Text = "Next backup in: [" + hrs_s + ":" + min_s + " h.]";
             Registry.SetValue(base_registry_key + profile_name, "backup_time", backup_time.Value);
         }
 
@@ -2367,7 +2282,7 @@ namespace _7DaysServerManager
             }
 
             /*backup*/
-            Echo(LocalizedLanguage("chat_backup_1"), 1, true);
+            Echo("[Backup system]Creating backup...", 1, true);
             if (pokazuj_chat)
                 telnet_queue.Enqueue("say \"" + (string)Registry.GetValue(base_registry_key + profile_name, "backup_msg_1", null) + "\"");
 
@@ -2420,7 +2335,7 @@ namespace _7DaysServerManager
             }
 
             /*/backup*/
-            Echo(LocalizedLanguage("chat_backup_2"), 1, true);
+            Echo("[Backup system]Backup created.", 1, true);
             if (pokazuj_chat)
                 telnet_queue.Enqueue("say \"" + (string)Registry.GetValue(base_registry_key + profile_name, "backup_msg_2", null) + "\"");
 
@@ -2724,7 +2639,7 @@ namespace _7DaysServerManager
                     Start_Server_Button.Enabled = false;
                 });
 
-                Echo(LocalizedLanguage("start_in"), 1, false);
+                Echo("Start in: ", 1, false);
 
                 for (int lol = 10; lol > 0; lol--)
                 {
@@ -2773,7 +2688,7 @@ namespace _7DaysServerManager
                 min_s = Convert.ToString(min);
             }
 
-            Auto_Restarts_GroupBox.Text = LocalizedLanguage("reset_g") + " [" + hrs_s + ":" + min_s + " h.]";
+            Auto_Restarts_GroupBox.Text = "Auto restarts [" + hrs_s + ":" + min_s + " h.]";
             Registry.SetValue(base_registry_key + profile_name, "reset_time", Auto_Restart_Time_TrackBar.Value);
         }
 
@@ -2944,7 +2859,7 @@ namespace _7DaysServerManager
 
         private void Reboot_telnet_DoWork(object sender, DoWorkEventArgs e)
         {
-            Echo(LocalizedLanguage("rees"), 2, true);
+            Echo("Reestablishing connection to 7DTD server...", 2, true);
             break_telnet = true;
             server_online = true; //so that they can connect without firing up with 7dsm
             try
@@ -3361,11 +3276,11 @@ namespace _7DaysServerManager
 
             Console_RichTextBox.Invoke((MethodInvoker)delegate
             {
-                Shutdown_Server_Button.Text = LocalizedLanguage("wait");
+                Shutdown_Server_Button.Text = "Wait...";
                 Shutdown_Server_Button.Enabled = false;
             });
 
-            Echo(LocalizedLanguage("closing"), 2, true);
+            Echo("Closing server...", 2, true);
 
             telnet_queue.Enqueue("shutdown");
 
@@ -3379,8 +3294,8 @@ namespace _7DaysServerManager
 
             if (reply_telnet == "error")
             {
-                Echo(LocalizedLanguage("error"), 3, true);
-                Echo(LocalizedLanguage("killing_proc"), 0, false);
+                Echo("Error", 3, true);
+                Echo("Killing proccess...", 0, false);
 
                 foreach (Process myProc in Process.GetProcesses())
                 {
@@ -3413,12 +3328,12 @@ namespace _7DaysServerManager
                 Unlock_Panel_Controls();
                 this.ControlBox = true;
                 Start_Server_Button.Enabled = true;
-                Shutdown_Server_Button.Text = LocalizedLanguage("close");
+                Shutdown_Server_Button.Text = "Close server";
             });
 
 
             //echo("OK", 1, true);
-            Echo(LocalizedLanguage("server_closed"), 1, true);
+            Echo("Server closed", 1, true);
 
             just_killin = false;
         }
@@ -3431,7 +3346,7 @@ namespace _7DaysServerManager
             }
             catch
             {
-                MessageBox.Show(LocalizedLanguage("select_player"));
+                MessageBox.Show("Select player from list.");
             }
         }
 
@@ -3443,7 +3358,7 @@ namespace _7DaysServerManager
             }
             catch
             {
-                MessageBox.Show(LocalizedLanguage("select_player"));
+                MessageBox.Show("Select player from list.");
             }
         }
 
@@ -3455,7 +3370,7 @@ namespace _7DaysServerManager
             }
             catch
             {
-                MessageBox.Show(LocalizedLanguage("select_player"));
+                MessageBox.Show("Select player from list.");
             }
         }
 
@@ -3611,7 +3526,7 @@ namespace _7DaysServerManager
 
         private void Check_updates_DoWork(object sender, DoWorkEventArgs e)
         {
-            string update_avaible = "0";
+            string update_available = "0";
             WebClient client;
 
             bool dl_dev = false;
@@ -3625,14 +3540,14 @@ namespace _7DaysServerManager
             try
             {
                 if (dl_dev)
-                    update_avaible = client.DownloadString("https://7dsm.smartmoose.org/system/updates-dev/" + ver + ".txt");
+                    update_available = client.DownloadString("https://7dsm.smartmoose.org/system/updates-dev/" + ver + ".txt");
                 else
-                    update_avaible = client.DownloadString("https://7dsm.smartmoose.org/system/updates/" + ver + ".txt");
+                    update_available = client.DownloadString("https://7dsm.smartmoose.org/system/updates/" + ver + ".txt");
             }
             catch
             {
-                update_avaible = "err";
-                Echo(LocalizedLanguage("upd_err"), 3, true);
+                update_available = "err";
+                Echo("Error during connecting to update server: the server is down, your connection to the internet is down or you're using unregistered build (server doesn't know your version of 7DSM, so it can't tell you if there are updates for it).", 3, true);
 
                 if (updater_invoked_manually)
                 {
@@ -3640,10 +3555,10 @@ namespace _7DaysServerManager
                 }
             }
 
-            if (update_avaible == "1")
+            if (update_available == "1")
             {
-                Echo(LocalizedLanguage("upd_ava"), 2, true);
-                DialogResult dialogResult = MessageBox.Show(LocalizedLanguage("upd_ava_2"), LocalizedLanguage("update"), MessageBoxButtons.YesNo);
+                Echo("Update available!", 2, true);
+                DialogResult dialogResult = MessageBox.Show("Update available! Download now?", "Update", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
                     Console_RichTextBox.Invoke((MethodInvoker)delegate
@@ -3654,7 +3569,7 @@ namespace _7DaysServerManager
                 }
 
             }
-            else if (update_avaible != "err")
+            else if (update_available != "err")
             {
                 Echo("You have the latest version of 7DSM.", 1, true);
 
@@ -3668,8 +3583,8 @@ namespace _7DaysServerManager
             {
                 try
                 {
-                    string[] news = client.DownloadString("https://7dsm.smartmoose.org/system/news.php").Split(';');
-                    //echo(news[1], Convert.ToInt32(news[0]), true);
+                    //Retrieve The News                    
+                    string[] news = client.DownloadString("http://7dsm.seanasaservice.com/news.php").Split(';');
                     Echo_news(news[1], Convert.ToInt32(news[0]));
                 }
                 catch { }
@@ -4155,7 +4070,7 @@ namespace _7DaysServerManager
 
         private void Force_upd_Click(object sender, EventArgs e)
         {
-            DialogResult dialogResult = MessageBox.Show("Are you sure?", LocalizedLanguage("update"), MessageBoxButtons.YesNo);
+            DialogResult dialogResult = MessageBox.Show("Are you sure?", "Update", MessageBoxButtons.YesNo);
             if (dialogResult == DialogResult.Yes)
             {
                 Console_RichTextBox.Invoke((MethodInvoker)delegate
@@ -4196,7 +4111,7 @@ namespace _7DaysServerManager
         {
             Registry.SetValue(base_registry_key, "dev", Convert.ToString(Update_Channel_ComboBox.SelectedIndex));
 
-            MessageBox.Show("7DSM will now download latest version from selected update channel.", LocalizedLanguage("update"));
+            MessageBox.Show("7DSM will now download latest version from selected update channel.", "Update");
 
             Console_RichTextBox.Invoke((MethodInvoker)delegate
             {
@@ -5120,6 +5035,15 @@ namespace _7DaysServerManager
 
             // Update The Config File With The New Value
             Update_Config();
+        }
+
+        private void SelectInstance_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Save The Current Server Instance Settings
+            Save_Server_Instance();
+
+            // Load The Settings For The Newly Selected Server Instance
+            Load_Server_Instance();
         }
 
         private void ConfigProperty_LootRespawnDays_ValueChanged(object sender, EventArgs e)

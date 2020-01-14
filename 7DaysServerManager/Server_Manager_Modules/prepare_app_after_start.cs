@@ -14,7 +14,7 @@ namespace _7DaysServerManager
     public partial class Server_Panel_Form : Form
     {
 
-        public string[] GetPrefixes(Boolean all_of_them)
+        public string[] GetPrefixes(bool all_of_them)
         {
             List<string> pref = new List<string>
             {
@@ -48,36 +48,27 @@ namespace _7DaysServerManager
         private void Prepare_app_after_start()
         {
 
+            // Init Server Log
             main_log_stream = new FileStream("server.log", FileMode.Append, FileAccess.Write);
             main_log = new StreamWriter(main_log_stream, Encoding.UTF8);
 
+            // Initi Chat Log
             chat_log_stream = new FileStream("chat.log", FileMode.Append, FileAccess.Write);
             chat_log = new StreamWriter(chat_log_stream, Encoding.UTF8);
 
-            /*
-            if (dev)
-            {
-                Registry.SetValue(@"HKEY_CURRENT_USER\Software\7DSM", "dev", "1");
-                updates_channel.SelectedIndex = 1;
-            }
-            else
-            {
-                Registry.SetValue(@"HKEY_CURRENT_USER\Software\7DSM", "dev", "0");
-                updates_channel.SelectedIndex = 0;
-            }
-            */
-
+            // Log Init And Current Debug Mode
             Echo_debug("7DaysServerManager ver: " + ver + " game ver: " + game_ver + "\nDEBUG MODE");
 
+            // Process Telemetry
             if ((string)Registry.GetValue(base_registry_key + profile_name, "anon_data", null) == "0")
             {
                 Settings_Allow_Anon_Data_CheckBox.Checked = false;
             }
 
-            //echo(" ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄   ▄▄▄▄▄▄▄▄▄▄▄  ▄▄       ▄▄ \n▐░░░░░░░░░░░▌▐░░░░░░░░░░▌ ▐░░░░░░░░░░░▌▐░░▌     ▐░░▌\n ▀▀▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀▀▀ ▐░▌░▌   ▐░▐░▌\n         ▐░▌ ▐░▌       ▐░▌▐░▌          ▐░▌▐░▌ ▐░▌▐░▌\n        ▐░▌  ▐░▌       ▐░▌▐░█▄▄▄▄▄▄▄▄▄ ▐░▌ ▐░▐░▌ ▐░▌\n       ▐░▌   ▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░▌  ▐░▌  ▐░▌\n      ▐░▌    ▐░▌       ▐░▌ ▀▀▀▀▀▀▀▀▀█░▌▐░▌   ▀   ▐░▌\n     ▐░▌     ▐░▌       ▐░▌          ▐░▌▐░▌       ▐░▌\n    ▐░▌      ▐░█▄▄▄▄▄▄▄█░▌ ▄▄▄▄▄▄▄▄▄█░▌▐░▌       ▐░▌\n   ▐░▌       ▐░░░░░░░░░░▌ ▐░░░░░░░░░░░▌▐░▌       ▐░▌\n    ▀         ▀▀▀▀▀▀▀▀▀▀   ▀▀▀▀▀▀▀▀▀▀▀  ▀         ▀", 0, true);
+            Echo(" ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄   ▄▄▄▄▄▄▄▄▄▄▄  ▄▄       ▄▄ \n▐░░░░░░░░░░░▌▐░░░░░░░░░░▌ ▐░░░░░░░░░░░▌▐░░▌     ▐░░▌\n ▀▀▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀█░▌▐░█▀▀▀▀▀▀▀▀▀ ▐░▌░▌   ▐░▐░▌\n         ▐░▌ ▐░▌       ▐░▌▐░▌          ▐░▌▐░▌ ▐░▌▐░▌\n        ▐░▌  ▐░▌       ▐░▌▐░█▄▄▄▄▄▄▄▄▄ ▐░▌ ▐░▐░▌ ▐░▌\n       ▐░▌   ▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░▌  ▐░▌  ▐░▌\n      ▐░▌    ▐░▌       ▐░▌ ▀▀▀▀▀▀▀▀▀█░▌▐░▌   ▀   ▐░▌\n     ▐░▌     ▐░▌       ▐░▌          ▐░▌▐░▌       ▐░▌\n    ▐░▌      ▐░█▄▄▄▄▄▄▄█░▌ ▄▄▄▄▄▄▄▄▄█░▌▐░▌       ▐░▌\n   ▐░▌       ▐░░░░░░░░░░▌ ▐░░░░░░░░░░░▌▐░▌       ▐░▌\n    ▀         ▀▀▀▀▀▀▀▀▀▀   ▀▀▀▀▀▀▀▀▀▀▀  ▀         ▀", 0, true);
 
             Echo("7DaysServerManager " + ver + " (Compiled " + Convert.ToString(AssemblyCreationDate.Value) + ")", 0, true);
-            //echo("Compilation date: " + Convert.ToString(AssemblyCreationDate.Value), 0, true);
+            Echo("Compilation date: " + Convert.ToString(AssemblyCreationDate.Value), 0, true);
 
             //TODO: FIGURE OUT WHAT THIS IS AND IF I STILL NEED
             // Update The Game Worlds Dropdown Box
@@ -137,7 +128,8 @@ namespace _7DaysServerManager
                 catch { }
             }
 
-            /*string update_avaible = "0";
+            // SERVER UPDATE ROUTINE - UPDATE THIS TO A NEW WEBAPI CALL OR OneClick Updater
+            /*string update_available = "0";
             System.Net.WebClient client;
 
             client = new System.Net.WebClient();
@@ -496,7 +488,7 @@ namespace _7DaysServerManager
 
             
             // Initialize App Fields To Default Values
-            Server_Commands_Delay_GroupBox.Text = LocalizedLanguage("spam_time") + " [" + Server_Commands_Time_TrackBar.Value * 0.5 + " min.]";
+            Server_Commands_Delay_GroupBox.Text = "Delay between commands [" + Server_Commands_Time_TrackBar.Value * 0.5 + " min.]";
             Server_Commands_List_RichTextBox.Text = (string)Registry.GetValue(base_registry_key + profile_name, "spam_list", null);
             SQL_Host_TextBox.Text = (string)Registry.GetValue(base_registry_key + profile_name, "sql_host", null);
             SQL_Username_TextBox.Text = (string)Registry.GetValue(base_registry_key + profile_name, "sql_username", null);
@@ -510,60 +502,36 @@ namespace _7DaysServerManager
 
             // Set Group Box Descriptions To Initial Values Retrieved from Config File
             // TODO: NOT SURE I STILL NEED THIS NOW, DELETE AND TEST LATER
-            GameDifficulty_GroupBox.Text = "Game Difficulty" + " [" + Convert.ToString(ConfigProperty_GameDifficulty.Value) + "]";
-            ServerMaxWorldTransferSpeedKiBs_GroupBox.Text = "Server Max World Transfer Speed" + " [" + Convert.ToInt32(ConfigProperty_ServerMaxWorldTransferSpeedKiBs.Value) + " KiB/s]";
-            ServerMaxPlayerCount_GroupBox.Text = "Max Players [" + Convert.ToString(ConfigProperty_ServerMaxPlayerCount.Value) + "]";
-            DayNightLength_GroupBox.Text = "Each In Game Day Equals [" + Convert.ToInt32(ConfigProperty_DayNightLength.Value / 24) + "] Real World Minutes";
-            DayLightLength_GroupBox.Text = "Sun Shines For [" + ConfigProperty_DayLightLength.Value + "] Hours Each Game Day ";
-            BedrollDeadZoneSize_GroupBox.Text = "Enemies Spawn At Least [" + ConfigProperty_BedrollDeadZoneSize.Value + "] Blocks From Bedroll";
-            BedrollExpiryTime_GroupBox.Text = "Bedroll Lasts [" + ConfigProperty_BedrollExpiryTime.Value + "] Game Days Offline";
-            BloodMoonEnemyCount_GroupBox.Text = "Zombies Spawned Per Player During Blood Moon [" + ConfigProperty_BloodMoonEnemyCount.Value + "]";
-            BloodMoonWarning_GroupBox.Text = "Blood Moon Red Day Text Warning [" + Convert.ToString(ConfigProperty_BloodMoonWarning.Value) + "]";
-            BloodMoonRange_GroupBox.Text = "Blood Moon Deviation [" + Convert.ToString(ConfigProperty_BloodMoonRange.Value) + "]";
-            BloodMoonFrequency_GroupBox.Text = "Blood Moon Frequency [" + Convert.ToString(ConfigProperty_BloodMoonFrequency.Value) + "]";
+            //GameDifficulty_GroupBox.Text = "Game Difficulty" + " [" + Convert.ToString(ConfigProperty_GameDifficulty.Value) + "]";
+            //ServerMaxWorldTransferSpeedKiBs_GroupBox.Text = "Server Max World Transfer Speed" + " [" + Convert.ToInt32(ConfigProperty_ServerMaxWorldTransferSpeedKiBs.Value) + " KiB/s]";
+            //ServerMaxPlayerCount_GroupBox.Text = "Max Players [" + Convert.ToString(ConfigProperty_ServerMaxPlayerCount.Value) + "]";
+            //DayNightLength_GroupBox.Text = "Each In Game Day Equals [" + Convert.ToInt32(ConfigProperty_DayNightLength.Value / 24) + "] Real World Minutes";
+            //DayLightLength_GroupBox.Text = "Sun Shines For [" + ConfigProperty_DayLightLength.Value + "] Hours Each Game Day ";
+            //BedrollDeadZoneSize_GroupBox.Text = "Enemies Spawn At Least [" + ConfigProperty_BedrollDeadZoneSize.Value + "] Blocks From Bedroll";
+            //BedrollExpiryTime_GroupBox.Text = "Bedroll Lasts [" + ConfigProperty_BedrollExpiryTime.Value + "] Game Days Offline";
+            //BloodMoonEnemyCount_GroupBox.Text = "Zombies Spawned Per Player During Blood Moon [" + ConfigProperty_BloodMoonEnemyCount.Value + "]";
+            //BloodMoonWarning_GroupBox.Text = "Blood Moon Red Day Text Warning [" + Convert.ToString(ConfigProperty_BloodMoonWarning.Value) + "]";
+            //BloodMoonRange_GroupBox.Text = "Blood Moon Deviation [" + Convert.ToString(ConfigProperty_BloodMoonRange.Value) + "]";
+            //BloodMoonFrequency_GroupBox.Text = "Blood Moon Frequency [" + Convert.ToString(ConfigProperty_BloodMoonFrequency.Value) + "]";
 
 
             // Start Server Monitoring To Update The Dash Widgets
             Server_Monitoring();
 
-            /*try
-            {
-                string[] news = client.DownloadString("https://7dsm.smartmoose.org/system/news.php").Split(';');
-                echo(news[1], Convert.ToInt32(news[0]), true);
-            }
-            catch { }*/
-
+            // Check To See If Premium License
+            // TODO: CHECK API, DONT RELY ON LOCAL REGISTRY VALUE FOR LICENSE
             if ((string)Registry.GetValue(base_registry_key, "tmp_prem", null) == "1")
             {
                 Echo_debug("local premium valid, unlocking");
                 Unlock_Premium();
             }
 
-
-
-
-
-
-
-
-
             Download_maps(ConfigProperty_GameWorld.Text);
-
-
-
-
-
 
             if ((string)Registry.GetValue(base_registry_key + profile_name, "exe_name", null) == null || (string)Registry.GetValue(base_registry_key + profile_name, "exe_name", null) == "")
                 exe_name.Text = "7DaysToDie.exe";
             else
                 exe_name.Text = (string)Registry.GetValue(base_registry_key + profile_name, "exe_name", null);
-
-
-
-
-
-
 
             /*if ((string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\7DSM", "show_hello_msg", null) != "0")
             {
@@ -572,57 +540,46 @@ namespace _7DaysServerManager
             }*/
 
             if ((string)Registry.GetValue(base_registry_key + profile_name, "backup_msg_1", null) == null || (string)Registry.GetValue(base_registry_key + profile_name, "backup_msg_1", null) == "")
-                Starting_Backup_Message_TextBox.Text = LocalizedLanguage("chat_backup_1");
+                Starting_Backup_Message_TextBox.Text = "[Backup system]Creating backup...";
             else
                 Starting_Backup_Message_TextBox.Text = (string)Registry.GetValue(base_registry_key + profile_name, "backup_msg_1", null);
 
 
             if ((string)Registry.GetValue(base_registry_key + profile_name, "backup_msg_2", null) == null || (string)Registry.GetValue(base_registry_key + profile_name, "backup_msg_2", null) == "")
-                Backup_Completed_Message_TextBox.Text = LocalizedLanguage("chat_backup_2");
+                Backup_Completed_Message_TextBox.Text = "[Backup system]Backup created.";
             else
                 Backup_Completed_Message_TextBox.Text = (string)Registry.GetValue(base_registry_key + profile_name, "backup_msg_2", null);
 
 
             if ((string)Registry.GetValue(base_registry_key + profile_name, "reboot_time", null) == null || (string)Registry.GetValue(base_registry_key + profile_name, "reboot_time", null) == "")
-                reboot_time.Text = LocalizedLanguage("reset_time_left");
+                reboot_time.Text = "Server will restart in %d minutes.";
             else
                 reboot_time.Text = (string)Registry.GetValue(base_registry_key + profile_name, "reboot_time", null);
 
             if ((string)Registry.GetValue(base_registry_key + profile_name, "reboot", null) == null || (string)Registry.GetValue(base_registry_key + profile_name, "reboot", null) == "")
-                reboot.Text = LocalizedLanguage("rebooting");
+                reboot.Text = "Server is restarting NOW.";
             else
                 reboot.Text = (string)Registry.GetValue(base_registry_key + profile_name, "reboot", null);
 
-
             if ((string)Registry.GetValue(base_registry_key + profile_name, "cmd_not_yet", null) == null || (string)Registry.GetValue(base_registry_key + profile_name, "cmd_not_yet", null) == "")
-                cmd_not_yet.Text = LocalizedLanguage("cmd_not_yet");
+                cmd_not_yet.Text = "You must wait %d minutes before using this command again.";
             else
                 cmd_not_yet.Text = (string)Registry.GetValue(base_registry_key + profile_name, "cmd_not_yet", null);
-
-
-
 
             if ((string)Registry.GetValue(base_registry_key + profile_name, "configfile", null) == null || (string)Registry.GetValue(base_registry_key + profile_name, "configfile", null) == "")
                 ConfigProperty_UserDataFolder.Text = "serverconfig.xml";
             else
                 ConfigProperty_UserDataFolder.Text = (string)Registry.GetValue(base_registry_key + profile_name, "configfile", null);
 
-
-
             if ((string)Registry.GetValue(base_registry_key + profile_name, "cc", null) == null)
                 Custom_Commands_RichTextBox.Text = "whoami:say \"You are %player%\":0\nrules:say \"No cheating!\":0\nkit:spawnentity %player% 32;say \"Here you are\":3600\nhelp:say \"Available commands are whoami, kit and rules\":0";
             else
                 Custom_Commands_RichTextBox.Text = (string)Registry.GetValue(base_registry_key + profile_name, "cc", null);
 
-
-
-
-
             if ((string)Registry.GetValue(base_registry_key + profile_name, "www_main_content", null) != null)
             {
                 www_main_content.Text = (string)Registry.GetValue(base_registry_key + profile_name, "www_main_content", null);
             }
-
 
             if ((string)Registry.GetValue(base_registry_key + profile_name, "rules_content", null) != null)
             {
@@ -634,12 +591,10 @@ namespace _7DaysServerManager
                 forum_url.Text = (string)Registry.GetValue(base_registry_key + profile_name, "forum_url", null);
             }
 
-
             if ((string)Registry.GetValue(base_registry_key + profile_name, "backup_location", null) == null)
                 backup_location.Text = AppDomain.CurrentDomain.BaseDirectory + "backups";
             else
                 backup_location.Text = (string)Registry.GetValue(base_registry_key + profile_name, "backup_location", null);
-
 
             if ((string)Registry.GetValue(base_registry_key + profile_name, "enable_cc", null) == "1")
             {
@@ -650,20 +605,16 @@ namespace _7DaysServerManager
 
             Refresh_backups_list();
 
-
-            if (translation_error)
-            {
-                Echo("There are problems with language file.", 3, true);
-                Echo("If You're author of translation type \"local transerr\" otherwise look for updated lang.xml file.", 2, true);
-            }
+            //if (translation_error)
+            //{
+            //    Echo("There are problems with language file.", 3, true);
+            //    Echo("If You're author of translation type \"local transerr\" otherwise look for updated lang.xml file.", 2, true);
+            //}
 
             if (Start_With_7DSM_CheckBox.Checked)
                 Run_Server();
 
-
             file_log = debug_log.Checked;
-
-
 
             try
             {
@@ -687,11 +638,8 @@ namespace _7DaysServerManager
             catch { }
 
 
-
             if(enable_website.Checked || android_allow.Checked)
                 StartWebServer();
-
-
 
             Echo_debug("->prepare_app_after_start finished task!");
 
@@ -702,11 +650,6 @@ namespace _7DaysServerManager
             throw new NotImplementedException();
         }
 
-
-
-
-
-
         // Fire Up the 7 Days to Die Server Manager Webserver
         public void StartWebServer()
         {
@@ -716,14 +659,13 @@ namespace _7DaysServerManager
             else
                 webserver_running = true;
 
-
-
             Echo_debug("*STARTWEBSERVER*");
 
             string[] prefixes = GetPrefixes(false);
 
             //string[] prefixes = new string[] { "http://+:80/" };
 
+            // Android Access Key
             string aak = "";
             try
             {
@@ -765,8 +707,6 @@ namespace _7DaysServerManager
             }
         }
 
-
-
         void Fix_WebServer()
         {
             string[] prefixes = GetPrefixes(true);
@@ -791,7 +731,6 @@ namespace _7DaysServerManager
 
             String all_comds = "";
 
-
             string comd = "netsh http delete urlacl url={prefix}";
 
             foreach (string s in prefixes)
@@ -808,14 +747,12 @@ namespace _7DaysServerManager
                 Echo_debug(comd.Replace("{prefix}", s).Replace("{aak}", aak) + "\n");
             }
 
-
             DialogResult dialogResult = MessageBox.Show("7DSM does not have proper permissions to run WebServer that is needed for integrated website engine or Android widget.\n" +
             "You will be asked to grant 7DSM administrative rights.\n" +
             "Please click \"Yes\" in the Windows UAC window.\n" +
             "This is one-time operation.\n\n" +
             "Do you want to see details before executing?"
             , "IMPORTANT!", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-
 
             string obrobiony = all_comds.Replace("\n", " & ");
             obrobiony = obrobiony.Remove(obrobiony.Length - 2);
@@ -824,11 +761,8 @@ namespace _7DaysServerManager
             obrobiony += " & netsh advfirewall firewall add rule name=\"Open Port 80 (7DSM WebServer)\" dir=in action=allow protocol=TCP localport=80";
             obrobiony += " & netsh advfirewall firewall add rule name=\"Open Port 17011 (7DSM Widget Server)\" dir=in action=allow protocol=TCP localport=17011";
 
-
             if (dialogResult == DialogResult.Yes)
                 MessageBox.Show("Following commands will be executed on administrative rights:\n\n" + obrobiony);
-
-
 
             Echo_debug(obrobiony);
 
@@ -850,7 +784,6 @@ namespace _7DaysServerManager
             MessageBox.Show("Please RESTART 7DSM to make it work:)");
 
         }
-
 
         void Cancel_WebServer()
         {
@@ -920,10 +853,6 @@ namespace _7DaysServerManager
             }
 
         }
-
-
-
-
 
     }
 }

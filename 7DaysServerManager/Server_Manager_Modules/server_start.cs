@@ -49,9 +49,9 @@ namespace _7DaysServerManager
 
                 if (file_path == "" | !File.Exists(file_path + "\\" + exec_name))
                 {
-                    Echo(LocalizedLanguage("error"), 3, true);
-                    Echo(LocalizedLanguage("game_not_found_cons"), 3, true);
-                    MessageBox.Show(LocalizedLanguage("game_not_found"), LocalizedLanguage("error"));
+                    Echo("Error", 3, true);
+                    Echo("7DaysToDie.exe not found!", 3, true);
+                    MessageBox.Show("Game files not found.", "Error");
 
                     if (Select_Game_Directory.ShowDialog() == DialogResult.OK)
                     {
@@ -60,22 +60,22 @@ namespace _7DaysServerManager
 
                         if (File.Exists(file_path + "\\" + exe_name.Text))
                         {
-                            MessageBox.Show(LocalizedLanguage("dir_ok"), LocalizedLanguage("saved"));
-                            Echo(LocalizedLanguage("dir_ok"), 0, true);
+                            MessageBox.Show("Dir seems to be all right. Saved", "Saved");
+                            Echo("Dir seems to be all right. Saved", 0, true);
                             Registry.SetValue(base_registry_key + profile_name, "game_path", file_path);
                             Registry.SetValue(base_registry_key + profile_name, "server_type", "client");
                         }
                         else if (File.Exists(file_path + "\\7daystodieserver.exe"))
                         {
-                            MessageBox.Show(LocalizedLanguage("dir_ok"), LocalizedLanguage("saved"));
-                            Echo(LocalizedLanguage("dir_ok"), 0, true);
+                            MessageBox.Show("Dir seems to be all right. Saved", "Saved");
+                            Echo("Dir seems to be all right. Saved", 0, true);
                             Registry.SetValue(base_registry_key + profile_name, "game_path", file_path);
                             Registry.SetValue(base_registry_key + profile_name, "server_type", "server");
                         }
                         else
                         {
-                            MessageBox.Show(LocalizedLanguage("game_not_found_2"), LocalizedLanguage("error"));
-                            Echo(LocalizedLanguage("game_not_found_2"), 3, true);
+                            MessageBox.Show("Game files not found.", "Error");
+                            Echo("Game files not found.", 3, true);
                         }
                     }
                 }
@@ -93,7 +93,7 @@ namespace _7DaysServerManager
                     server_online = true;
 
                     //echo("OK", 1, true);
-                    Echo(LocalizedLanguage("run_from") + file_path, 0, true);
+                    Echo("Server running from path: " + file_path, 0, true);
 
                     try
                     {

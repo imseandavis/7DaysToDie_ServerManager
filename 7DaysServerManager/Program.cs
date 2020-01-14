@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Windows.Forms;
 using Syncfusion.Licensing;
 
@@ -16,6 +15,7 @@ namespace _7DaysServerManager
             // 7 Days To Die Project License for Sync Fusion
             SyncfusionLicenseProvider.RegisterLicense("MTgzMTE3QDMxMzcyZTM0MmUzMGVGZVJaamNGcTJRU084dFVNY1ZMdHNFZldyKzNXQ1hHK2NmMWo4RkdlT0k9");
 
+            // Enable WinForm Visual Styles
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 

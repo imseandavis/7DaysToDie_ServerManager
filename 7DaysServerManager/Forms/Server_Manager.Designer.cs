@@ -30,46 +30,46 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Server_Panel_Form));
-            Syncfusion.Windows.Forms.Tools.DigitalClockRenderer digitalClockRenderer1 = new Syncfusion.Windows.Forms.Tools.DigitalClockRenderer();
-            Syncfusion.Windows.Forms.Tools.ClockRenderer clockRenderer1 = new Syncfusion.Windows.Forms.Tools.ClockRenderer();
-            Syncfusion.Windows.Forms.Gauge.Range range1 = new Syncfusion.Windows.Forms.Gauge.Range();
-            Syncfusion.Windows.Forms.Gauge.Range range2 = new Syncfusion.Windows.Forms.Gauge.Range();
-            Syncfusion.Windows.Forms.Gauge.Range range3 = new Syncfusion.Windows.Forms.Gauge.Range();
-            Syncfusion.Windows.Forms.Gauge.Range range4 = new Syncfusion.Windows.Forms.Gauge.Range();
-            Syncfusion.Windows.Forms.Gauge.Range range5 = new Syncfusion.Windows.Forms.Gauge.Range();
-            Syncfusion.Windows.Forms.Gauge.Range range6 = new Syncfusion.Windows.Forms.Gauge.Range();
-            Syncfusion.Windows.Forms.Gauge.Range range7 = new Syncfusion.Windows.Forms.Gauge.Range();
-            Syncfusion.Windows.Forms.Gauge.Range range8 = new Syncfusion.Windows.Forms.Gauge.Range();
-            Syncfusion.Windows.Forms.Gauge.Range range9 = new Syncfusion.Windows.Forms.Gauge.Range();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection1 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection1 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection1 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection2 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection2 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection2 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection3 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection3 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection3 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection4 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection4 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection4 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection5 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection5 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection5 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection6 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection6 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection6 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection7 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection7 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection7 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection8 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection8 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection8 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection9 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection9 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
-            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection9 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
-            Syncfusion.Windows.Forms.Tools.CustomImageCollection customImageCollection1 = new Syncfusion.Windows.Forms.Tools.CustomImageCollection();
-            Syncfusion.Windows.Forms.Tools.ResetButton resetButton1 = new Syncfusion.Windows.Forms.Tools.ResetButton();
+            Syncfusion.Windows.Forms.Tools.DigitalClockRenderer digitalClockRenderer2 = new Syncfusion.Windows.Forms.Tools.DigitalClockRenderer();
+            Syncfusion.Windows.Forms.Tools.ClockRenderer clockRenderer2 = new Syncfusion.Windows.Forms.Tools.ClockRenderer();
+            Syncfusion.Windows.Forms.Gauge.Range range10 = new Syncfusion.Windows.Forms.Gauge.Range();
+            Syncfusion.Windows.Forms.Gauge.Range range11 = new Syncfusion.Windows.Forms.Gauge.Range();
+            Syncfusion.Windows.Forms.Gauge.Range range12 = new Syncfusion.Windows.Forms.Gauge.Range();
+            Syncfusion.Windows.Forms.Gauge.Range range13 = new Syncfusion.Windows.Forms.Gauge.Range();
+            Syncfusion.Windows.Forms.Gauge.Range range14 = new Syncfusion.Windows.Forms.Gauge.Range();
+            Syncfusion.Windows.Forms.Gauge.Range range15 = new Syncfusion.Windows.Forms.Gauge.Range();
+            Syncfusion.Windows.Forms.Gauge.Range range16 = new Syncfusion.Windows.Forms.Gauge.Range();
+            Syncfusion.Windows.Forms.Gauge.Range range17 = new Syncfusion.Windows.Forms.Gauge.Range();
+            Syncfusion.Windows.Forms.Gauge.Range range18 = new Syncfusion.Windows.Forms.Gauge.Range();
+            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection10 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection10 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection10 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection11 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection11 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection11 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection12 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection12 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection12 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection13 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection13 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection13 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection14 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection14 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection14 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection15 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection15 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection15 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection16 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection16 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection16 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection17 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection17 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection17 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.ActiveStateCollection activeStateCollection18 = new Syncfusion.Windows.Forms.Tools.ActiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.InactiveStateCollection inactiveStateCollection18 = new Syncfusion.Windows.Forms.Tools.InactiveStateCollection();
+            Syncfusion.Windows.Forms.Tools.SliderCollection sliderCollection18 = new Syncfusion.Windows.Forms.Tools.SliderCollection();
+            Syncfusion.Windows.Forms.Tools.CustomImageCollection customImageCollection2 = new Syncfusion.Windows.Forms.Tools.CustomImageCollection();
+            Syncfusion.Windows.Forms.Tools.ResetButton resetButton2 = new Syncfusion.Windows.Forms.Tools.ResetButton();
             this.overviewSplitter = new System.Windows.Forms.SplitContainer();
             this.News_Group = new System.Windows.Forms.GroupBox();
             this.News_Feed_RichTextBox = new System.Windows.Forms.RichTextBox();
@@ -516,6 +516,10 @@
             this.prepare_app_after_draw = new System.ComponentModel.BackgroundWorker();
             this.externalCallFile = new System.Windows.Forms.OpenFileDialog();
             this.ServerStatsTimer = new System.Windows.Forms.Timer(this.components);
+            this.contextMenuStripEx1 = new Syncfusion.Windows.Forms.Tools.ContextMenuStripEx();
+            this.hiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.byToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.SelectInstance_ComboBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.overviewSplitter)).BeginInit();
             this.overviewSplitter.Panel1.SuspendLayout();
             this.overviewSplitter.Panel2.SuspendLayout();
@@ -668,6 +672,7 @@
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.img_status)).BeginInit();
+            this.contextMenuStripEx1.SuspendLayout();
             this.SuspendLayout();
             // 
             // overviewSplitter
@@ -727,15 +732,15 @@
             this.Server_Clock.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.RoundedRectangle;
             this.Server_Clock.ClockType = Syncfusion.Windows.Forms.Tools.ClockTypes.Digital;
             this.Server_Clock.CurrentDateTime = new System.DateTime(2019, 12, 17, 0, 0, 0, 0);
-            this.Server_Clock.CustomTime = new System.DateTime(2020, 1, 2, 20, 53, 58, 156);
-            this.Server_Clock.DigitalRenderer = digitalClockRenderer1;
+            this.Server_Clock.CustomTime = new System.DateTime(2020, 1, 8, 19, 3, 43, 999);
+            this.Server_Clock.DigitalRenderer = digitalClockRenderer2;
             this.Server_Clock.DisplayDates = true;
             resources.ApplyResources(this.Server_Clock, "Server_Clock");
             this.Server_Clock.MinuteColor = System.Drawing.Color.FromArgb(((int)(((byte)(95)))), ((int)(((byte)(111)))), ((int)(((byte)(119)))));
             this.Server_Clock.Name = "Server_Clock";
             this.Server_Clock.Now = new System.DateTime(2019, 12, 17, 18, 23, 22, 0);
             this.Server_Clock.Remainder = new System.DateTime(2019, 12, 17, 0, 0, 0, 0);
-            this.Server_Clock.Renderer = clockRenderer1;
+            this.Server_Clock.Renderer = clockRenderer2;
             this.Server_Clock.ShowBorder = false;
             this.Server_Clock.ShowClockFrame = false;
             this.Server_Clock.ShowCustomTimeClock = false;
@@ -767,30 +772,30 @@
             this.DISK_Gauge.NeedleColor = System.Drawing.Color.White;
             this.DISK_Gauge.OuterFrameGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(35)))), ((int)(((byte)(36)))));
             this.DISK_Gauge.OuterFrameGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(49)))), ((int)(((byte)(50)))));
-            range1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
-            range1.EndValue = 60F;
-            range1.Height = 5;
-            range1.InRange = false;
-            range1.Name = "Low";
-            range1.RangePlacement = Syncfusion.Windows.Forms.Gauge.TickPlacement.Inside;
-            range1.StartValue = 0F;
-            range2.Color = System.Drawing.Color.Yellow;
-            range2.EndValue = 90F;
-            range2.Height = 5;
-            range2.InRange = false;
-            range2.Name = "Medium";
-            range2.RangePlacement = Syncfusion.Windows.Forms.Gauge.TickPlacement.Inside;
-            range2.StartValue = 61F;
-            range3.Color = System.Drawing.Color.Red;
-            range3.EndValue = 100F;
-            range3.Height = 5;
-            range3.InRange = false;
-            range3.Name = "High";
-            range3.RangePlacement = Syncfusion.Windows.Forms.Gauge.TickPlacement.Inside;
-            range3.StartValue = 91F;
-            this.DISK_Gauge.Ranges.Add(range1);
-            this.DISK_Gauge.Ranges.Add(range2);
-            this.DISK_Gauge.Ranges.Add(range3);
+            range10.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            range10.EndValue = 60F;
+            range10.Height = 5;
+            range10.InRange = false;
+            range10.Name = "Low";
+            range10.RangePlacement = Syncfusion.Windows.Forms.Gauge.TickPlacement.Inside;
+            range10.StartValue = 0F;
+            range11.Color = System.Drawing.Color.Yellow;
+            range11.EndValue = 90F;
+            range11.Height = 5;
+            range11.InRange = false;
+            range11.Name = "Medium";
+            range11.RangePlacement = Syncfusion.Windows.Forms.Gauge.TickPlacement.Inside;
+            range11.StartValue = 61F;
+            range12.Color = System.Drawing.Color.Red;
+            range12.EndValue = 100F;
+            range12.Height = 5;
+            range12.InRange = false;
+            range12.Name = "High";
+            range12.RangePlacement = Syncfusion.Windows.Forms.Gauge.TickPlacement.Inside;
+            range12.StartValue = 91F;
+            this.DISK_Gauge.Ranges.Add(range10);
+            this.DISK_Gauge.Ranges.Add(range11);
+            this.DISK_Gauge.Ranges.Add(range12);
             this.DISK_Gauge.ScaleLabelColor = System.Drawing.Color.White;
             this.DISK_Gauge.ShowTicks = true;
             this.DISK_Gauge.StartAngle = 180;
@@ -823,30 +828,30 @@
             this.CPU_Gauge.NeedleColor = System.Drawing.Color.White;
             this.CPU_Gauge.OuterFrameGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(35)))), ((int)(((byte)(36)))));
             this.CPU_Gauge.OuterFrameGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(49)))), ((int)(((byte)(50)))));
-            range4.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
-            range4.EndValue = 60F;
-            range4.Height = 5;
-            range4.InRange = false;
-            range4.Name = "Low";
-            range4.RangePlacement = Syncfusion.Windows.Forms.Gauge.TickPlacement.Inside;
-            range4.StartValue = 0F;
-            range5.Color = System.Drawing.Color.Yellow;
-            range5.EndValue = 90F;
-            range5.Height = 5;
-            range5.InRange = false;
-            range5.Name = "Medium";
-            range5.RangePlacement = Syncfusion.Windows.Forms.Gauge.TickPlacement.Inside;
-            range5.StartValue = 61F;
-            range6.Color = System.Drawing.Color.Red;
-            range6.EndValue = 100F;
-            range6.Height = 5;
-            range6.InRange = false;
-            range6.Name = "High";
-            range6.RangePlacement = Syncfusion.Windows.Forms.Gauge.TickPlacement.Inside;
-            range6.StartValue = 91F;
-            this.CPU_Gauge.Ranges.Add(range4);
-            this.CPU_Gauge.Ranges.Add(range5);
-            this.CPU_Gauge.Ranges.Add(range6);
+            range13.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            range13.EndValue = 60F;
+            range13.Height = 5;
+            range13.InRange = false;
+            range13.Name = "Low";
+            range13.RangePlacement = Syncfusion.Windows.Forms.Gauge.TickPlacement.Inside;
+            range13.StartValue = 0F;
+            range14.Color = System.Drawing.Color.Yellow;
+            range14.EndValue = 90F;
+            range14.Height = 5;
+            range14.InRange = false;
+            range14.Name = "Medium";
+            range14.RangePlacement = Syncfusion.Windows.Forms.Gauge.TickPlacement.Inside;
+            range14.StartValue = 61F;
+            range15.Color = System.Drawing.Color.Red;
+            range15.EndValue = 100F;
+            range15.Height = 5;
+            range15.InRange = false;
+            range15.Name = "High";
+            range15.RangePlacement = Syncfusion.Windows.Forms.Gauge.TickPlacement.Inside;
+            range15.StartValue = 91F;
+            this.CPU_Gauge.Ranges.Add(range13);
+            this.CPU_Gauge.Ranges.Add(range14);
+            this.CPU_Gauge.Ranges.Add(range15);
             this.CPU_Gauge.ScaleLabelColor = System.Drawing.Color.White;
             this.CPU_Gauge.ShowTicks = true;
             this.CPU_Gauge.StartAngle = 180;
@@ -879,30 +884,30 @@
             this.RAM_Gauge.NeedleColor = System.Drawing.Color.White;
             this.RAM_Gauge.OuterFrameGradientEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(35)))), ((int)(((byte)(36)))));
             this.RAM_Gauge.OuterFrameGradientStartColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(49)))), ((int)(((byte)(50)))));
-            range7.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
-            range7.EndValue = 60F;
-            range7.Height = 5;
-            range7.InRange = false;
-            range7.Name = "Low";
-            range7.RangePlacement = Syncfusion.Windows.Forms.Gauge.TickPlacement.Inside;
-            range7.StartValue = 0F;
-            range8.Color = System.Drawing.Color.Yellow;
-            range8.EndValue = 90F;
-            range8.Height = 5;
-            range8.InRange = false;
-            range8.Name = "Medium";
-            range8.RangePlacement = Syncfusion.Windows.Forms.Gauge.TickPlacement.Inside;
-            range8.StartValue = 61F;
-            range9.Color = System.Drawing.Color.Red;
-            range9.EndValue = 100F;
-            range9.Height = 5;
-            range9.InRange = false;
-            range9.Name = "High";
-            range9.RangePlacement = Syncfusion.Windows.Forms.Gauge.TickPlacement.Inside;
-            range9.StartValue = 91F;
-            this.RAM_Gauge.Ranges.Add(range7);
-            this.RAM_Gauge.Ranges.Add(range8);
-            this.RAM_Gauge.Ranges.Add(range9);
+            range16.Color = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(255)))), ((int)(((byte)(0)))));
+            range16.EndValue = 60F;
+            range16.Height = 5;
+            range16.InRange = false;
+            range16.Name = "Low";
+            range16.RangePlacement = Syncfusion.Windows.Forms.Gauge.TickPlacement.Inside;
+            range16.StartValue = 0F;
+            range17.Color = System.Drawing.Color.Yellow;
+            range17.EndValue = 90F;
+            range17.Height = 5;
+            range17.InRange = false;
+            range17.Name = "Medium";
+            range17.RangePlacement = Syncfusion.Windows.Forms.Gauge.TickPlacement.Inside;
+            range17.StartValue = 61F;
+            range18.Color = System.Drawing.Color.Red;
+            range18.EndValue = 100F;
+            range18.Height = 5;
+            range18.InRange = false;
+            range18.Name = "High";
+            range18.RangePlacement = Syncfusion.Windows.Forms.Gauge.TickPlacement.Inside;
+            range18.StartValue = 91F;
+            this.RAM_Gauge.Ranges.Add(range16);
+            this.RAM_Gauge.Ranges.Add(range17);
+            this.RAM_Gauge.Ranges.Add(range18);
             this.RAM_Gauge.ScaleLabelColor = System.Drawing.Color.White;
             this.RAM_Gauge.ShowTicks = true;
             this.RAM_Gauge.StartAngle = 180;
@@ -2487,16 +2492,16 @@
             // 
             // ConfigProperty_TelnetEnabled
             // 
-            activeStateCollection1.Text = "Enabled";
-            this.ConfigProperty_TelnetEnabled.ActiveState = activeStateCollection1;
+            activeStateCollection10.Text = "Enabled";
+            this.ConfigProperty_TelnetEnabled.ActiveState = activeStateCollection10;
             resources.ApplyResources(this.ConfigProperty_TelnetEnabled, "ConfigProperty_TelnetEnabled");
             this.ConfigProperty_TelnetEnabled.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection1.Text = "Disabled";
-            this.ConfigProperty_TelnetEnabled.InactiveState = inactiveStateCollection1;
+            inactiveStateCollection10.Text = "Disabled";
+            this.ConfigProperty_TelnetEnabled.InactiveState = inactiveStateCollection10;
             this.ConfigProperty_TelnetEnabled.Name = "ConfigProperty_TelnetEnabled";
-            sliderCollection1.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            sliderCollection1.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ConfigProperty_TelnetEnabled.Slider = sliderCollection1;
+            sliderCollection10.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            sliderCollection10.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ConfigProperty_TelnetEnabled.Slider = sliderCollection10;
             this.ConfigProperty_TelnetEnabled.ThemeName = "Default";
             this.ConfigProperty_TelnetEnabled.ToggleState = Syncfusion.Windows.Forms.Tools.ToggleButtonState.Active;
             this.toolTip.SetToolTip(this.ConfigProperty_TelnetEnabled, resources.GetString("ConfigProperty_TelnetEnabled.ToolTip"));
@@ -2651,27 +2656,27 @@
             // 
             // ConfigProperty_EnemySpawnMode
             // 
-            activeStateCollection2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
-            activeStateCollection2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
-            activeStateCollection2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            activeStateCollection2.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(103)))), ((int)(((byte)(176)))));
-            activeStateCollection2.Text = "Enable Enemy Spawning";
-            this.ConfigProperty_EnemySpawnMode.ActiveState = activeStateCollection2;
+            activeStateCollection11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            activeStateCollection11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            activeStateCollection11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            activeStateCollection11.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(103)))), ((int)(((byte)(176)))));
+            activeStateCollection11.Text = "Enable Enemy Spawning";
+            this.ConfigProperty_EnemySpawnMode.ActiveState = activeStateCollection11;
             resources.ApplyResources(this.ConfigProperty_EnemySpawnMode, "ConfigProperty_EnemySpawnMode");
             this.ConfigProperty_EnemySpawnMode.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection2.BackColor = System.Drawing.Color.White;
-            inactiveStateCollection2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            inactiveStateCollection2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            inactiveStateCollection2.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            inactiveStateCollection2.Text = "Disabled Enemy Spawning";
-            this.ConfigProperty_EnemySpawnMode.InactiveState = inactiveStateCollection2;
+            inactiveStateCollection11.BackColor = System.Drawing.Color.White;
+            inactiveStateCollection11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            inactiveStateCollection11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            inactiveStateCollection11.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            inactiveStateCollection11.Text = "Disabled Enemy Spawning";
+            this.ConfigProperty_EnemySpawnMode.InactiveState = inactiveStateCollection11;
             this.ConfigProperty_EnemySpawnMode.Name = "ConfigProperty_EnemySpawnMode";
-            sliderCollection2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            sliderCollection2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
-            sliderCollection2.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            sliderCollection2.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            sliderCollection2.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
-            this.ConfigProperty_EnemySpawnMode.Slider = sliderCollection2;
+            sliderCollection11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            sliderCollection11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            sliderCollection11.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            sliderCollection11.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            sliderCollection11.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
+            this.ConfigProperty_EnemySpawnMode.Slider = sliderCollection11;
             this.ConfigProperty_EnemySpawnMode.ThemeName = "Office2016Colorful";
             this.ConfigProperty_EnemySpawnMode.ToggleState = Syncfusion.Windows.Forms.Tools.ToggleButtonState.Active;
             this.toolTip.SetToolTip(this.ConfigProperty_EnemySpawnMode, resources.GetString("ConfigProperty_EnemySpawnMode.ToolTip"));
@@ -2680,27 +2685,27 @@
             // 
             // ConfigProperty_EACEnabled
             // 
-            activeStateCollection3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
-            activeStateCollection3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
-            activeStateCollection3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            activeStateCollection3.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(103)))), ((int)(((byte)(176)))));
-            activeStateCollection3.Text = "Easy Anti-Cheat Enabled";
-            this.ConfigProperty_EACEnabled.ActiveState = activeStateCollection3;
+            activeStateCollection12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            activeStateCollection12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            activeStateCollection12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            activeStateCollection12.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(103)))), ((int)(((byte)(176)))));
+            activeStateCollection12.Text = "Easy Anti-Cheat Enabled";
+            this.ConfigProperty_EACEnabled.ActiveState = activeStateCollection12;
             resources.ApplyResources(this.ConfigProperty_EACEnabled, "ConfigProperty_EACEnabled");
             this.ConfigProperty_EACEnabled.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection3.BackColor = System.Drawing.Color.White;
-            inactiveStateCollection3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            inactiveStateCollection3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            inactiveStateCollection3.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            inactiveStateCollection3.Text = "Easy Anti-Cheat Disabled";
-            this.ConfigProperty_EACEnabled.InactiveState = inactiveStateCollection3;
+            inactiveStateCollection12.BackColor = System.Drawing.Color.White;
+            inactiveStateCollection12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            inactiveStateCollection12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            inactiveStateCollection12.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            inactiveStateCollection12.Text = "Easy Anti-Cheat Disabled";
+            this.ConfigProperty_EACEnabled.InactiveState = inactiveStateCollection12;
             this.ConfigProperty_EACEnabled.Name = "ConfigProperty_EACEnabled";
-            sliderCollection3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            sliderCollection3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
-            sliderCollection3.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            sliderCollection3.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            sliderCollection3.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
-            this.ConfigProperty_EACEnabled.Slider = sliderCollection3;
+            sliderCollection12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            sliderCollection12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            sliderCollection12.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            sliderCollection12.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            sliderCollection12.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
+            this.ConfigProperty_EACEnabled.Slider = sliderCollection12;
             this.ConfigProperty_EACEnabled.ThemeName = "Office2016Colorful";
             this.ConfigProperty_EACEnabled.ToggleState = Syncfusion.Windows.Forms.Tools.ToggleButtonState.Active;
             this.toolTip.SetToolTip(this.ConfigProperty_EACEnabled, resources.GetString("ConfigProperty_EACEnabled.ToolTip"));
@@ -2709,27 +2714,27 @@
             // 
             // ConfigProperty_TerminalWindowEnabled
             // 
-            activeStateCollection4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
-            activeStateCollection4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
-            activeStateCollection4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            activeStateCollection4.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(103)))), ((int)(((byte)(176)))));
-            activeStateCollection4.Text = "Terminal Window Enabled";
-            this.ConfigProperty_TerminalWindowEnabled.ActiveState = activeStateCollection4;
+            activeStateCollection13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            activeStateCollection13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            activeStateCollection13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            activeStateCollection13.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(103)))), ((int)(((byte)(176)))));
+            activeStateCollection13.Text = "Terminal Window Enabled";
+            this.ConfigProperty_TerminalWindowEnabled.ActiveState = activeStateCollection13;
             resources.ApplyResources(this.ConfigProperty_TerminalWindowEnabled, "ConfigProperty_TerminalWindowEnabled");
             this.ConfigProperty_TerminalWindowEnabled.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection4.BackColor = System.Drawing.Color.White;
-            inactiveStateCollection4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            inactiveStateCollection4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            inactiveStateCollection4.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            inactiveStateCollection4.Text = "Terminal Window Disabled";
-            this.ConfigProperty_TerminalWindowEnabled.InactiveState = inactiveStateCollection4;
+            inactiveStateCollection13.BackColor = System.Drawing.Color.White;
+            inactiveStateCollection13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            inactiveStateCollection13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            inactiveStateCollection13.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            inactiveStateCollection13.Text = "Terminal Window Disabled";
+            this.ConfigProperty_TerminalWindowEnabled.InactiveState = inactiveStateCollection13;
             this.ConfigProperty_TerminalWindowEnabled.Name = "ConfigProperty_TerminalWindowEnabled";
-            sliderCollection4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            sliderCollection4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
-            sliderCollection4.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            sliderCollection4.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            sliderCollection4.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
-            this.ConfigProperty_TerminalWindowEnabled.Slider = sliderCollection4;
+            sliderCollection13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            sliderCollection13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            sliderCollection13.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            sliderCollection13.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            sliderCollection13.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
+            this.ConfigProperty_TerminalWindowEnabled.Slider = sliderCollection13;
             this.ConfigProperty_TerminalWindowEnabled.ThemeName = "Office2016Colorful";
             this.ConfigProperty_TerminalWindowEnabled.ToggleState = Syncfusion.Windows.Forms.Tools.ToggleButtonState.Active;
             this.toolTip.SetToolTip(this.ConfigProperty_TerminalWindowEnabled, resources.GetString("ConfigProperty_TerminalWindowEnabled.ToolTip"));
@@ -2738,27 +2743,27 @@
             // 
             // ConfigProperty_AirDropMarker
             // 
-            activeStateCollection5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
-            activeStateCollection5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
-            activeStateCollection5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            activeStateCollection5.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(103)))), ((int)(((byte)(176)))));
-            activeStateCollection5.Text = "Show Air Drops On Map";
-            this.ConfigProperty_AirDropMarker.ActiveState = activeStateCollection5;
+            activeStateCollection14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            activeStateCollection14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            activeStateCollection14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            activeStateCollection14.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(103)))), ((int)(((byte)(176)))));
+            activeStateCollection14.Text = "Show Air Drops On Map";
+            this.ConfigProperty_AirDropMarker.ActiveState = activeStateCollection14;
             resources.ApplyResources(this.ConfigProperty_AirDropMarker, "ConfigProperty_AirDropMarker");
             this.ConfigProperty_AirDropMarker.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection5.BackColor = System.Drawing.Color.White;
-            inactiveStateCollection5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            inactiveStateCollection5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            inactiveStateCollection5.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            inactiveStateCollection5.Text = "Hide Air Drops On Map";
-            this.ConfigProperty_AirDropMarker.InactiveState = inactiveStateCollection5;
+            inactiveStateCollection14.BackColor = System.Drawing.Color.White;
+            inactiveStateCollection14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            inactiveStateCollection14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            inactiveStateCollection14.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            inactiveStateCollection14.Text = "Hide Air Drops On Map";
+            this.ConfigProperty_AirDropMarker.InactiveState = inactiveStateCollection14;
             this.ConfigProperty_AirDropMarker.Name = "ConfigProperty_AirDropMarker";
-            sliderCollection5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            sliderCollection5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
-            sliderCollection5.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            sliderCollection5.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            sliderCollection5.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
-            this.ConfigProperty_AirDropMarker.Slider = sliderCollection5;
+            sliderCollection14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            sliderCollection14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            sliderCollection14.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            sliderCollection14.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            sliderCollection14.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
+            this.ConfigProperty_AirDropMarker.Slider = sliderCollection14;
             this.ConfigProperty_AirDropMarker.ThemeName = "Office2016Colorful";
             this.toolTip.SetToolTip(this.ConfigProperty_AirDropMarker, resources.GetString("ConfigProperty_AirDropMarker.ToolTip"));
             this.ConfigProperty_AirDropMarker.VisualStyle = Syncfusion.Windows.Forms.Tools.ToggleButtonStyle.Office2016Colorful;
@@ -2766,27 +2771,27 @@
             // 
             // ConfigProperty_EnemyDifficulty
             // 
-            activeStateCollection6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
-            activeStateCollection6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
-            activeStateCollection6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            activeStateCollection6.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(103)))), ((int)(((byte)(176)))));
-            activeStateCollection6.Text = "Feral Zombies";
-            this.ConfigProperty_EnemyDifficulty.ActiveState = activeStateCollection6;
+            activeStateCollection15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            activeStateCollection15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            activeStateCollection15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            activeStateCollection15.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(103)))), ((int)(((byte)(176)))));
+            activeStateCollection15.Text = "Feral Zombies";
+            this.ConfigProperty_EnemyDifficulty.ActiveState = activeStateCollection15;
             resources.ApplyResources(this.ConfigProperty_EnemyDifficulty, "ConfigProperty_EnemyDifficulty");
             this.ConfigProperty_EnemyDifficulty.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection6.BackColor = System.Drawing.Color.White;
-            inactiveStateCollection6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            inactiveStateCollection6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            inactiveStateCollection6.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            inactiveStateCollection6.Text = "Normal Zombies";
-            this.ConfigProperty_EnemyDifficulty.InactiveState = inactiveStateCollection6;
+            inactiveStateCollection15.BackColor = System.Drawing.Color.White;
+            inactiveStateCollection15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            inactiveStateCollection15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            inactiveStateCollection15.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            inactiveStateCollection15.Text = "Normal Zombies";
+            this.ConfigProperty_EnemyDifficulty.InactiveState = inactiveStateCollection15;
             this.ConfigProperty_EnemyDifficulty.Name = "ConfigProperty_EnemyDifficulty";
-            sliderCollection6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            sliderCollection6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
-            sliderCollection6.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            sliderCollection6.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            sliderCollection6.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
-            this.ConfigProperty_EnemyDifficulty.Slider = sliderCollection6;
+            sliderCollection15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            sliderCollection15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            sliderCollection15.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            sliderCollection15.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            sliderCollection15.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
+            this.ConfigProperty_EnemyDifficulty.Slider = sliderCollection15;
             this.ConfigProperty_EnemyDifficulty.ThemeName = "Office2016Colorful";
             this.toolTip.SetToolTip(this.ConfigProperty_EnemyDifficulty, resources.GetString("ConfigProperty_EnemyDifficulty.ToolTip"));
             this.ConfigProperty_EnemyDifficulty.VisualStyle = Syncfusion.Windows.Forms.Tools.ToggleButtonStyle.Office2016Colorful;
@@ -2794,27 +2799,27 @@
             // 
             // ConfigProperty_BuildCreate
             // 
-            activeStateCollection7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
-            activeStateCollection7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
-            activeStateCollection7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            activeStateCollection7.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(103)))), ((int)(((byte)(176)))));
-            activeStateCollection7.Text = "Cheat Mode Enabled";
-            this.ConfigProperty_BuildCreate.ActiveState = activeStateCollection7;
+            activeStateCollection16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            activeStateCollection16.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            activeStateCollection16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            activeStateCollection16.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(103)))), ((int)(((byte)(176)))));
+            activeStateCollection16.Text = "Cheat Mode Enabled";
+            this.ConfigProperty_BuildCreate.ActiveState = activeStateCollection16;
             resources.ApplyResources(this.ConfigProperty_BuildCreate, "ConfigProperty_BuildCreate");
             this.ConfigProperty_BuildCreate.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection7.BackColor = System.Drawing.Color.White;
-            inactiveStateCollection7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            inactiveStateCollection7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            inactiveStateCollection7.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            inactiveStateCollection7.Text = "Cheat Mode Disabled";
-            this.ConfigProperty_BuildCreate.InactiveState = inactiveStateCollection7;
+            inactiveStateCollection16.BackColor = System.Drawing.Color.White;
+            inactiveStateCollection16.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            inactiveStateCollection16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            inactiveStateCollection16.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            inactiveStateCollection16.Text = "Cheat Mode Disabled";
+            this.ConfigProperty_BuildCreate.InactiveState = inactiveStateCollection16;
             this.ConfigProperty_BuildCreate.Name = "ConfigProperty_BuildCreate";
-            sliderCollection7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            sliderCollection7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
-            sliderCollection7.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            sliderCollection7.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            sliderCollection7.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
-            this.ConfigProperty_BuildCreate.Slider = sliderCollection7;
+            sliderCollection16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            sliderCollection16.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            sliderCollection16.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            sliderCollection16.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            sliderCollection16.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
+            this.ConfigProperty_BuildCreate.Slider = sliderCollection16;
             this.ConfigProperty_BuildCreate.ThemeName = "Office2016Colorful";
             this.toolTip.SetToolTip(this.ConfigProperty_BuildCreate, resources.GetString("ConfigProperty_BuildCreate.ToolTip"));
             this.ConfigProperty_BuildCreate.VisualStyle = Syncfusion.Windows.Forms.Tools.ToggleButtonStyle.Office2016Colorful;
@@ -2822,27 +2827,27 @@
             // 
             // ConfigProperty_PersistentPlayerProfiles
             // 
-            activeStateCollection8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
-            activeStateCollection8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
-            activeStateCollection8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            activeStateCollection8.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(103)))), ((int)(((byte)(176)))));
-            activeStateCollection8.Text = "Persistant Profiles Enabled";
-            this.ConfigProperty_PersistentPlayerProfiles.ActiveState = activeStateCollection8;
+            activeStateCollection17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            activeStateCollection17.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(115)))), ((int)(((byte)(199)))));
+            activeStateCollection17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            activeStateCollection17.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(103)))), ((int)(((byte)(176)))));
+            activeStateCollection17.Text = "Persistant Profiles Enabled";
+            this.ConfigProperty_PersistentPlayerProfiles.ActiveState = activeStateCollection17;
             resources.ApplyResources(this.ConfigProperty_PersistentPlayerProfiles, "ConfigProperty_PersistentPlayerProfiles");
             this.ConfigProperty_PersistentPlayerProfiles.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection8.BackColor = System.Drawing.Color.White;
-            inactiveStateCollection8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            inactiveStateCollection8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            inactiveStateCollection8.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            inactiveStateCollection8.Text = "Disabled Persistant Profiles";
-            this.ConfigProperty_PersistentPlayerProfiles.InactiveState = inactiveStateCollection8;
+            inactiveStateCollection17.BackColor = System.Drawing.Color.White;
+            inactiveStateCollection17.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            inactiveStateCollection17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(80)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
+            inactiveStateCollection17.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            inactiveStateCollection17.Text = "Disabled Persistant Profiles";
+            this.ConfigProperty_PersistentPlayerProfiles.InactiveState = inactiveStateCollection17;
             this.ConfigProperty_PersistentPlayerProfiles.Name = "ConfigProperty_PersistentPlayerProfiles";
-            sliderCollection8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            sliderCollection8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
-            sliderCollection8.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            sliderCollection8.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            sliderCollection8.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
-            this.ConfigProperty_PersistentPlayerProfiles.Slider = sliderCollection8;
+            sliderCollection17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            sliderCollection17.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(171)))), ((int)(((byte)(171)))), ((int)(((byte)(171)))));
+            sliderCollection17.HoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            sliderCollection17.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            sliderCollection17.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
+            this.ConfigProperty_PersistentPlayerProfiles.Slider = sliderCollection17;
             this.ConfigProperty_PersistentPlayerProfiles.ThemeName = "Office2016Colorful";
             this.toolTip.SetToolTip(this.ConfigProperty_PersistentPlayerProfiles, resources.GetString("ConfigProperty_PersistentPlayerProfiles.ToolTip"));
             this.ConfigProperty_PersistentPlayerProfiles.VisualStyle = Syncfusion.Windows.Forms.Tools.ToggleButtonStyle.Office2016Colorful;
@@ -3062,16 +3067,16 @@
             // 
             // ConfigProperty_ControlPanelEnabled
             // 
-            activeStateCollection9.Text = "Enabled";
-            this.ConfigProperty_ControlPanelEnabled.ActiveState = activeStateCollection9;
+            activeStateCollection18.Text = "Enabled";
+            this.ConfigProperty_ControlPanelEnabled.ActiveState = activeStateCollection18;
             resources.ApplyResources(this.ConfigProperty_ControlPanelEnabled, "ConfigProperty_ControlPanelEnabled");
             this.ConfigProperty_ControlPanelEnabled.ForeColor = System.Drawing.Color.Black;
-            inactiveStateCollection9.Text = "Disabled";
-            this.ConfigProperty_ControlPanelEnabled.InactiveState = inactiveStateCollection9;
+            inactiveStateCollection18.Text = "Disabled";
+            this.ConfigProperty_ControlPanelEnabled.InactiveState = inactiveStateCollection18;
             this.ConfigProperty_ControlPanelEnabled.Name = "ConfigProperty_ControlPanelEnabled";
-            sliderCollection9.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
-            sliderCollection9.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.ConfigProperty_ControlPanelEnabled.Slider = sliderCollection9;
+            sliderCollection18.InactiveBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(102)))), ((int)(((byte)(102)))));
+            sliderCollection18.InactiveHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.ConfigProperty_ControlPanelEnabled.Slider = sliderCollection18;
             this.ConfigProperty_ControlPanelEnabled.ThemeName = "Default";
             this.toolTip.SetToolTip(this.ConfigProperty_ControlPanelEnabled, resources.GetString("ConfigProperty_ControlPanelEnabled.ToolTip"));
             this.ConfigProperty_ControlPanelEnabled.ToggleStateChanged += new Syncfusion.Windows.Forms.Tools.ToggleStateChangedEventHandler(this.ConfigProperty_ControlPanelEnabled_ToggleStateChanged);
@@ -3694,15 +3699,15 @@
             // ConfigProperty_GameDifficulty
             // 
             resources.ApplyResources(this.ConfigProperty_GameDifficulty, "ConfigProperty_GameDifficulty");
-            customImageCollection1.NormalImage = global::_7DaysServerManager.Properties.Resources.skull;
-            this.ConfigProperty_GameDifficulty.Images = customImageCollection1;
+            customImageCollection2.NormalImage = global::_7DaysServerManager.Properties.Resources.skull;
+            this.ConfigProperty_GameDifficulty.Images = customImageCollection2;
             this.ConfigProperty_GameDifficulty.ItemHighlightColor = System.Drawing.Color.Red;
             this.ConfigProperty_GameDifficulty.ItemHighlightEndColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.ConfigProperty_GameDifficulty.ItemHighlightStartColor = System.Drawing.Color.Red;
             this.ConfigProperty_GameDifficulty.ItemSelectionColor = System.Drawing.Color.Red;
             this.ConfigProperty_GameDifficulty.ItemSelectionStartColor = System.Drawing.Color.Red;
             this.ConfigProperty_GameDifficulty.Name = "ConfigProperty_GameDifficulty";
-            this.ConfigProperty_GameDifficulty.ResetButton = resetButton1;
+            this.ConfigProperty_GameDifficulty.ResetButton = resetButton2;
             this.ConfigProperty_GameDifficulty.Shape = Syncfusion.Windows.Forms.Tools.Shapes.CustomImages;
             this.toolTip.SetToolTip(this.ConfigProperty_GameDifficulty, resources.GetString("ConfigProperty_GameDifficulty.ToolTip"));
             this.ConfigProperty_GameDifficulty.Value = 2F;
@@ -4616,9 +4621,28 @@
             // 
             // Header_Icons
             // 
-            this.Header_Icons.ColorDepth = System.Windows.Forms.ColorDepth.Depth32Bit;
-            resources.ApplyResources(this.Header_Icons, "Header_Icons");
+            this.Header_Icons.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("Header_Icons.ImageStream")));
             this.Header_Icons.TransparentColor = System.Drawing.Color.Transparent;
+            this.Header_Icons.Images.SetKeyName(0, "7dsm.png");
+            this.Header_Icons.Images.SetKeyName(1, "1387680791_Send.png");
+            this.Header_Icons.Images.SetKeyName(2, "backup.png");
+            this.Header_Icons.Images.SetKeyName(3, "database.png");
+            this.Header_Icons.Images.SetKeyName(4, "dbi.png");
+            this.Header_Icons.Images.SetKeyName(5, "Dice.png");
+            this.Header_Icons.Images.SetKeyName(6, "edit.png");
+            this.Header_Icons.Images.SetKeyName(7, "globe.png");
+            this.Header_Icons.Images.SetKeyName(8, "help.png");
+            this.Header_Icons.Images.SetKeyName(9, "Home.png");
+            this.Header_Icons.Images.SetKeyName(10, "math.png");
+            this.Header_Icons.Images.SetKeyName(11, "net.png");
+            this.Header_Icons.Images.SetKeyName(12, "rate.png");
+            this.Header_Icons.Images.SetKeyName(13, "sch_tasks.png");
+            this.Header_Icons.Images.SetKeyName(14, "shield.png");
+            this.Header_Icons.Images.SetKeyName(15, "tools_preferences.png");
+            this.Header_Icons.Images.SetKeyName(16, "treasure.png");
+            this.Header_Icons.Images.SetKeyName(17, "usa.png");
+            this.Header_Icons.Images.SetKeyName(18, "website_b.png");
+            this.Header_Icons.Images.SetKeyName(19, "www.png");
             // 
             // radialMenuItem5
             // 
@@ -4828,11 +4852,45 @@
             // 
             resources.ApplyResources(this.externalCallFile, "externalCallFile");
             // 
+            // contextMenuStripEx1
+            // 
+            this.contextMenuStripEx1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.hiToolStripMenuItem});
+            this.contextMenuStripEx1.MetroColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(236)))), ((int)(((byte)(249)))));
+            this.contextMenuStripEx1.Name = "contextMenuStripEx1";
+            resources.ApplyResources(this.contextMenuStripEx1, "contextMenuStripEx1");
+            this.contextMenuStripEx1.Style = Syncfusion.Windows.Forms.Tools.ContextMenuStripEx.ContextMenuStyle.Default;
+            // 
+            // hiToolStripMenuItem
+            // 
+            this.hiToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.byToolStripMenuItem});
+            this.hiToolStripMenuItem.Name = "hiToolStripMenuItem";
+            resources.ApplyResources(this.hiToolStripMenuItem, "hiToolStripMenuItem");
+            // 
+            // byToolStripMenuItem
+            // 
+            this.byToolStripMenuItem.Name = "byToolStripMenuItem";
+            resources.ApplyResources(this.byToolStripMenuItem, "byToolStripMenuItem");
+            // 
+            // SelectInstance_ComboBox
+            // 
+            this.SelectInstance_ComboBox.FormattingEnabled = true;
+            this.SelectInstance_ComboBox.Items.AddRange(new object[] {
+            resources.GetString("SelectInstance_ComboBox.Items"),
+            resources.GetString("SelectInstance_ComboBox.Items1"),
+            resources.GetString("SelectInstance_ComboBox.Items2"),
+            resources.GetString("SelectInstance_ComboBox.Items3")});
+            resources.ApplyResources(this.SelectInstance_ComboBox, "SelectInstance_ComboBox");
+            this.SelectInstance_ComboBox.Name = "SelectInstance_ComboBox";
+            this.SelectInstance_ComboBox.SelectedIndexChanged += new System.EventHandler(this.SelectInstance_SelectedIndexChanged);
+            // 
             // Server_Panel_Form
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.SystemColors.Control;
+            this.Controls.Add(this.SelectInstance_ComboBox);
             this.Controls.Add(this.NitroGEN_Map_Generator_Link);
             this.Controls.Add(this.GitHub_Repo_Button);
             this.Controls.Add(this.discord_b);
@@ -5081,6 +5139,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.img_status)).EndInit();
+            this.contextMenuStripEx1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -5534,5 +5593,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Mod_Version;
         private System.Windows.Forms.DataGridViewTextBoxColumn Mod_Author;
         private System.Windows.Forms.GroupBox ZombieSpeedSettings_GroupBox;
+        private Syncfusion.Windows.Forms.Tools.ContextMenuStripEx contextMenuStripEx1;
+        private System.Windows.Forms.ToolStripMenuItem hiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem byToolStripMenuItem;
+        private System.Windows.Forms.ComboBox SelectInstance_ComboBox;
     }
 }
