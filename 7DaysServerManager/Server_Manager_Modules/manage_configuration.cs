@@ -146,7 +146,7 @@ namespace _7DaysServerManager
                         "\r\n\t<property name=\"AirDropFrequency\"                          value=\"" + ConfigProperty_AirDropFrequency.Value + "\"/>" +
                         "\r\n\t<property name=\"AirDropMarker\"                             value=\"" + ConfigProperty_AirDropMarker.Text + "\"/>" +
                         "\r\n\r\n\t<!-- Multiplayer -->" +
-                        "\r\n\t<property name=\"PartySharedKillRange\"                      value=\"" + ConfigProperty_PartySharedKillRange.Text + "\"/>" +
+                        "\r\n\t<property name=\"PartySharedKillRange\"                      value=\"" + ConfigProperty_PartySharedKillRange.Value + "\"/>" +
                         "\r\n\t<property name=\"PlayerKillingMode\"                         value=\"" + ConfigProperty_PlayerKillingMode.Text + "\"/>" +
                         "\r\n\r\n\t<!-- Land Claim Options -->" +
                         "\r\n\t<property name=\"LandClaimCount\"                            value=\"" + ConfigProperty_LandClaimCount.Value + "\"/>" +
@@ -156,6 +156,7 @@ namespace _7DaysServerManager
                         "\r\n\t<property name=\"LandClaimDecayMode\"                        value=\"" + ConfigProperty_LandClaimDecayMode.Text + "\"/>" +
                         "\r\n\t<property name=\"LandClaimOnlineDurabilityModifier\"         value=\"" + ConfigProperty_LandClaimOnlineDurabilityModifier.Text + "\"/>" +
                         "\r\n\t<property name=\"LandClaimOfflineDurabilityModifier\"        value=\"" + ConfigProperty_LandClaimOfflineDurabilityModifier.Text + "\"/>\r\n" +
+                        "\r\n\t<property name=\"LandClaimOfflineDelay\"        value=\"" + ConfigProperty_LandClaimOfflineDelay.Text + "\"/>\r\n" +
                     "\r\n</ServerSettings>";
 
                 #endregion

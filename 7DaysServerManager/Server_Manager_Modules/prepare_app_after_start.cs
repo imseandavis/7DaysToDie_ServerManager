@@ -52,11 +52,11 @@ namespace _7DaysServerManager
             main_log_stream = new FileStream("server.log", FileMode.Append, FileAccess.Write);
             main_log = new StreamWriter(main_log_stream, Encoding.UTF8);
 
-            // Initi Chat Log
+            // Init Chat Log
             chat_log_stream = new FileStream("chat.log", FileMode.Append, FileAccess.Write);
             chat_log = new StreamWriter(chat_log_stream, Encoding.UTF8);
 
-            // Log Init And Current Debug Mode
+            // Init Debug Mode
             Echo_debug("7DaysServerManager ver: " + ver + " game ver: " + game_ver + "\nDEBUG MODE");
 
             // Process Telemetry
@@ -95,6 +95,10 @@ namespace _7DaysServerManager
             //    ConfigProperty_GameWorld.Items.Add("Navegane");
             //    ConfigProperty_GameWorld.Items.Add(("RWG");
             //};
+
+            // Enumerate All Profiles In The Registry and Update The Instance Selection Box And Set The Profile To Currently Selected
+            //SelectInstance_ComboBox.Items.Add(profile_name);
+            // TODO: ENUM REG PROFILES
 
             // Load Config File And Update The UI Values
             Import_Config();

@@ -131,6 +131,7 @@ namespace _7DaysServerManager
                 DialogResult dialogResult = MessageBox.Show("I found configuration from older versions of 7DSM.\nDo You want to import it to 7DSM?\nIf you do, it will be inaccessible from older versions of 7DSM.\nIf you don't, I'll ask you next time.", "Import", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
+                    //Create New Key And Store Old 7DSM Configuration                    
                     foreach (String value in values)
                     {
                         string val = Convert.ToString(Registry.GetValue(@"HKEY_CURRENT_USER\Software\7DaysServerManager", value, null));
@@ -138,14 +139,15 @@ namespace _7DaysServerManager
                     }
 
                     Registry.CurrentUser.DeleteSubKeyTree(@"Software\7DaysServerManager");
-
                     Registry.SetValue(@"HKEY_CURRENT_USER\Software\7DSM", "last_profile", "Old 7DSM configuration");
 
                     MessageBox.Show("Profile created from imported configuration is named \"Old 7DSM configuration\".");
                 }
                 
             }
-            catch { }
+            catch {
+                MessageBox.Show("Couldn't Find the Registry Key For 7DSM!");
+            }
         }
 
         private void Profile_selector_Load(object sender, EventArgs e)

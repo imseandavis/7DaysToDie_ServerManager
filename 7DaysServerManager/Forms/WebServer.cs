@@ -79,9 +79,6 @@ namespace _7DaysServerManager
 
         private string GenerateContent(string page)
         {
-            
-
-
             string rstr="";
 
             if (page.Contains("widget") && (string)Registry.GetValue(@"HKEY_CURRENT_USER\Software\7DSM\" + profile_name, "android_allow", null)=="1")

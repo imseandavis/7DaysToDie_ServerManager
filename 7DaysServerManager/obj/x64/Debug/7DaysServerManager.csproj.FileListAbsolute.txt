@@ -176,5 +176,5 @@ C:\Users\imsea\Source\Repos\7DaysToDie_ServerManager\7DaysServerManager\bin\x64\
 C:\Users\imsea\Source\Repos\7DaysToDie_ServerManager\7DaysServerManager\bin\x64\Debug\7DaysServerManager.exe
 C:\Users\imsea\Source\Repos\7DaysToDie_ServerManager\7DaysServerManager\bin\x64\Debug\7DaysServerManager.pdb
 C:\Users\imsea\Source\Repos\7DaysToDie_ServerManager\7DaysServerManager\bin\x64\Debug\en-US\7DaysServerManager.resources.dll
-C:\Users\imsea\Source\Repos\7DaysToDie_ServerManager\7DaysServerManager\obj\x64\Debug\7DaysServerManager.csprojAssemblyReference.cache
 C:\Users\imsea\Source\Repos\7DaysToDie_ServerManager\7DaysServerManager\obj\x64\Debug\7DaysServerManager.csproj.CopyComplete
+C:\Users\imsea\Source\Repos\7DaysToDie_ServerManager\7DaysServerManager\obj\x64\Debug\7DaysServerManager.csproj.CoreCompileInputs.cache

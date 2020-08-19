@@ -161,7 +161,7 @@
             this.Game_Day_TrackBar = new System.Windows.Forms.TrackBar();
             this.Game_Hour_TrackBar = new System.Windows.Forms.TrackBar();
             this.startbar = new System.Windows.Forms.ProgressBar();
-            this.tabControl = new System.Windows.Forms.TabControl();
+            this.Master_TabControl = new System.Windows.Forms.TabControl();
             this.ManageServer_TabPage = new System.Windows.Forms.TabPage();
             this.CommandsGroup = new System.Windows.Forms.GroupBox();
             this.usecmd = new System.Windows.Forms.Button();
@@ -313,8 +313,7 @@
             this.BlockDamageAIBM_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_BlockDamageAIBM = new Syncfusion.Windows.Forms.Tools.TrackBarEx(25, 1000);
             this.PartySharedKillRange_GroupBox = new System.Windows.Forms.GroupBox();
-            this.trackBarEx7 = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1, 1300);
-            this.ConfigProperty_PartySharedKillRange = new System.Windows.Forms.TrackBar();
+            this.ConfigProperty_PartySharedKillRange = new Syncfusion.Windows.Forms.Tools.TrackBarEx(1, 1000);
             this.ServerMaxAllowedViewDistance_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_ServerMaxAllowedViewDistance = new Syncfusion.Windows.Forms.Tools.TrackBarEx(6, 12);
             this.DropOnQuit_GroupBox = new System.Windows.Forms.GroupBox();
@@ -339,6 +338,8 @@
             this.AirDropFrequency_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_AirDropFrequency = new Syncfusion.Windows.Forms.Tools.TrackBarEx(0, 720);
             this.LandClaimSettings_GroupBox = new System.Windows.Forms.GroupBox();
+            this.LandClaimOfflineDelay_GroupBox = new System.Windows.Forms.GroupBox();
+            this.ConfigProperty_LandClaimOfflineDelay = new System.Windows.Forms.TextBox();
             this.LandClaimCount_GroupBox = new System.Windows.Forms.GroupBox();
             this.ConfigProperty_LandClaimCount = new System.Windows.Forms.NumericUpDown();
             this.LandClaimDecayMode_GroupBox = new System.Windows.Forms.GroupBox();
@@ -501,15 +502,13 @@
             this.toolTip = new System.Windows.Forms.ToolTip(this.components);
             this.img_status = new System.Windows.Forms.PictureBox();
             this.don_l = new System.Windows.Forms.Label();
-            this.dbg_btn = new System.Windows.Forms.Button();
-            this.dbg_btn_2 = new System.Windows.Forms.Button();
             this.colorPickerButton1 = new Syncfusion.Windows.Forms.ColorPickerButton();
-            this.GitHub_Repo_Button = new System.Windows.Forms.Button();
-            this.discord_b = new System.Windows.Forms.Button();
-            this.help_b = new System.Windows.Forms.Button();
-            this.contact_b = new System.Windows.Forms.Button();
+            this.GitHub_Button = new System.Windows.Forms.Button();
+            this.Discord_Button = new System.Windows.Forms.Button();
+            this.Help_Button = new System.Windows.Forms.Button();
+            this.Contact_Button = new System.Windows.Forms.Button();
             this.forumklik = new System.Windows.Forms.Button();
-            this.www7dsm = new System.Windows.Forms.Button();
+            this.Website_Button = new System.Windows.Forms.Button();
             this.NitroGEN_Map_Generator_Link = new System.Windows.Forms.LinkLabel();
             this.autoupdate_whitelist = new System.ComponentModel.BackgroundWorker();
             this.check_updates = new System.ComponentModel.BackgroundWorker();
@@ -547,7 +546,7 @@
             this.Game_Time_Controls_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Game_Day_TrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Game_Hour_TrackBar)).BeginInit();
-            this.tabControl.SuspendLayout();
+            this.Master_TabControl.SuspendLayout();
             this.ManageServer_TabPage.SuspendLayout();
             this.CommandsGroup.SuspendLayout();
             this.Timers_Group.SuspendLayout();
@@ -617,7 +616,6 @@
             this.ServerName_GroupBox.SuspendLayout();
             this.BlockDamageAIBM_GroupBox.SuspendLayout();
             this.PartySharedKillRange_GroupBox.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_PartySharedKillRange)).BeginInit();
             this.ServerMaxAllowedViewDistance_GroupBox.SuspendLayout();
             this.DropOnQuit_GroupBox.SuspendLayout();
             this.XPMultiplier_GroupBox.SuspendLayout();
@@ -627,6 +625,7 @@
             this.DropOnDeath_GroupBox.SuspendLayout();
             this.AirDropFrequency_GroupBox.SuspendLayout();
             this.LandClaimSettings_GroupBox.SuspendLayout();
+            this.LandClaimOfflineDelay_GroupBox.SuspendLayout();
             this.LandClaimCount_GroupBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_LandClaimCount)).BeginInit();
             this.LandClaimDecayMode_GroupBox.SuspendLayout();
@@ -732,7 +731,7 @@
             this.Server_Clock.ClockShape = Syncfusion.Windows.Forms.Tools.ClockShapes.RoundedRectangle;
             this.Server_Clock.ClockType = Syncfusion.Windows.Forms.Tools.ClockTypes.Digital;
             this.Server_Clock.CurrentDateTime = new System.DateTime(2019, 12, 17, 0, 0, 0, 0);
-            this.Server_Clock.CustomTime = new System.DateTime(2020, 1, 8, 19, 3, 43, 999);
+            this.Server_Clock.CustomTime = new System.DateTime(2020, 1, 26, 12, 40, 1, 503);
             this.Server_Clock.DigitalRenderer = digitalClockRenderer2;
             this.Server_Clock.DisplayDates = true;
             resources.ApplyResources(this.Server_Clock, "Server_Clock");
@@ -1621,24 +1620,24 @@
             this.startbar.Maximum = 3500;
             this.startbar.Name = "startbar";
             // 
-            // tabControl
+            // Master_TabControl
             // 
-            resources.ApplyResources(this.tabControl, "tabControl");
-            this.tabControl.Controls.Add(this.ManageServer_TabPage);
-            this.tabControl.Controls.Add(this.ManagePlayers_TabPage);
-            this.tabControl.Controls.Add(this.GameSettings_TabPage);
-            this.tabControl.Controls.Add(this.Messaging_TabPage);
-            this.tabControl.Controls.Add(this.GlobalBanList_TabPage);
-            this.tabControl.Controls.Add(this.WebServer_TabPage);
-            this.tabControl.Controls.Add(this.ServerTasks_TabPage);
-            this.tabControl.Controls.Add(this.Backups_TabPage);
-            this.tabControl.Controls.Add(this.Rewards_TabPage);
-            this.tabControl.Controls.Add(this.Settings_TabPage);
-            this.tabControl.Controls.Add(this.Mods_TabPage);
-            this.tabControl.ImageList = this.Header_Icons;
-            this.tabControl.Multiline = true;
-            this.tabControl.Name = "tabControl";
-            this.tabControl.SelectedIndex = 0;
+            resources.ApplyResources(this.Master_TabControl, "Master_TabControl");
+            this.Master_TabControl.Controls.Add(this.ManageServer_TabPage);
+            this.Master_TabControl.Controls.Add(this.ManagePlayers_TabPage);
+            this.Master_TabControl.Controls.Add(this.GameSettings_TabPage);
+            this.Master_TabControl.Controls.Add(this.Messaging_TabPage);
+            this.Master_TabControl.Controls.Add(this.GlobalBanList_TabPage);
+            this.Master_TabControl.Controls.Add(this.WebServer_TabPage);
+            this.Master_TabControl.Controls.Add(this.ServerTasks_TabPage);
+            this.Master_TabControl.Controls.Add(this.Backups_TabPage);
+            this.Master_TabControl.Controls.Add(this.Rewards_TabPage);
+            this.Master_TabControl.Controls.Add(this.Settings_TabPage);
+            this.Master_TabControl.Controls.Add(this.Mods_TabPage);
+            this.Master_TabControl.ImageList = this.Header_Icons;
+            this.Master_TabControl.Multiline = true;
+            this.Master_TabControl.Name = "Master_TabControl";
+            this.Master_TabControl.SelectedIndex = 0;
             // 
             // ManageServer_TabPage
             // 
@@ -3240,35 +3239,23 @@
             // 
             // PartySharedKillRange_GroupBox
             // 
-            this.PartySharedKillRange_GroupBox.Controls.Add(this.trackBarEx7);
             this.PartySharedKillRange_GroupBox.Controls.Add(this.ConfigProperty_PartySharedKillRange);
             resources.ApplyResources(this.PartySharedKillRange_GroupBox, "PartySharedKillRange_GroupBox");
             this.PartySharedKillRange_GroupBox.Name = "PartySharedKillRange_GroupBox";
             this.PartySharedKillRange_GroupBox.TabStop = false;
             // 
-            // trackBarEx7
-            // 
-            this.trackBarEx7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(45)))));
-            this.trackBarEx7.BeforeTouchSize = new System.Drawing.Size(332, 20);
-            resources.ApplyResources(this.trackBarEx7, "trackBarEx7");
-            this.trackBarEx7.LargeChange = 128;
-            this.trackBarEx7.Name = "trackBarEx7";
-            this.trackBarEx7.SliderSize = new System.Drawing.Size(4, 14);
-            this.trackBarEx7.SmallChange = 64;
-            this.trackBarEx7.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Black;
-            this.trackBarEx7.ThemeName = "Office2016Black";
-            this.trackBarEx7.TimerInterval = 100;
-            this.toolTip.SetToolTip(this.trackBarEx7, resources.GetString("trackBarEx7.ToolTip"));
-            this.trackBarEx7.Value = 512;
-            // 
             // ConfigProperty_PartySharedKillRange
             // 
+            this.ConfigProperty_PartySharedKillRange.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
+            this.ConfigProperty_PartySharedKillRange.BeforeTouchSize = new System.Drawing.Size(332, 20);
             resources.ApplyResources(this.ConfigProperty_PartySharedKillRange, "ConfigProperty_PartySharedKillRange");
-            this.ConfigProperty_PartySharedKillRange.Maximum = 1000;
-            this.ConfigProperty_PartySharedKillRange.Minimum = 1;
+            this.ConfigProperty_PartySharedKillRange.LargeChange = 10;
             this.ConfigProperty_PartySharedKillRange.Name = "ConfigProperty_PartySharedKillRange";
-            this.ConfigProperty_PartySharedKillRange.SmallChange = 10;
-            this.ConfigProperty_PartySharedKillRange.TickFrequency = 10;
+            this.ConfigProperty_PartySharedKillRange.SliderSize = new System.Drawing.Size(4, 14);
+            this.ConfigProperty_PartySharedKillRange.SmallChange = 64;
+            this.ConfigProperty_PartySharedKillRange.Style = Syncfusion.Windows.Forms.Tools.TrackBarEx.Theme.Office2016Colorful;
+            this.ConfigProperty_PartySharedKillRange.ThemeName = "Office2016Colorful";
+            this.ConfigProperty_PartySharedKillRange.TimerInterval = 100;
             this.toolTip.SetToolTip(this.ConfigProperty_PartySharedKillRange, resources.GetString("ConfigProperty_PartySharedKillRange.ToolTip"));
             this.ConfigProperty_PartySharedKillRange.Value = 100;
             // 
@@ -3486,6 +3473,7 @@
             // 
             // LandClaimSettings_GroupBox
             // 
+            this.LandClaimSettings_GroupBox.Controls.Add(this.LandClaimOfflineDelay_GroupBox);
             this.LandClaimSettings_GroupBox.Controls.Add(this.LandClaimCount_GroupBox);
             this.LandClaimSettings_GroupBox.Controls.Add(this.LandClaimDecayMode_GroupBox);
             this.LandClaimSettings_GroupBox.Controls.Add(this.LandClaimDurabilityModifier_GroupBox);
@@ -3495,6 +3483,20 @@
             resources.ApplyResources(this.LandClaimSettings_GroupBox, "LandClaimSettings_GroupBox");
             this.LandClaimSettings_GroupBox.Name = "LandClaimSettings_GroupBox";
             this.LandClaimSettings_GroupBox.TabStop = false;
+            // 
+            // LandClaimOfflineDelay_GroupBox
+            // 
+            resources.ApplyResources(this.LandClaimOfflineDelay_GroupBox, "LandClaimOfflineDelay_GroupBox");
+            this.LandClaimOfflineDelay_GroupBox.Controls.Add(this.ConfigProperty_LandClaimOfflineDelay);
+            this.LandClaimOfflineDelay_GroupBox.Name = "LandClaimOfflineDelay_GroupBox";
+            this.LandClaimOfflineDelay_GroupBox.TabStop = false;
+            // 
+            // ConfigProperty_LandClaimOfflineDelay
+            // 
+            resources.ApplyResources(this.ConfigProperty_LandClaimOfflineDelay, "ConfigProperty_LandClaimOfflineDelay");
+            this.ConfigProperty_LandClaimOfflineDelay.Name = "ConfigProperty_LandClaimOfflineDelay";
+            this.toolTip.SetToolTip(this.ConfigProperty_LandClaimOfflineDelay, resources.GetString("ConfigProperty_LandClaimOfflineDelay.ToolTip"));
+            this.ConfigProperty_LandClaimOfflineDelay.TextChanged += new System.EventHandler(this.ConfigProperty_LandClaimOfflineDelay_TextChanged);
             // 
             // LandClaimCount_GroupBox
             // 
@@ -4747,65 +4749,51 @@
             resources.ApplyResources(this.don_l, "don_l");
             this.don_l.Name = "don_l";
             // 
-            // dbg_btn
-            // 
-            resources.ApplyResources(this.dbg_btn, "dbg_btn");
-            this.dbg_btn.Name = "dbg_btn";
-            this.dbg_btn.UseVisualStyleBackColor = true;
-            this.dbg_btn.Click += new System.EventHandler(this.Dbg_btn_Click);
-            // 
-            // dbg_btn_2
-            // 
-            resources.ApplyResources(this.dbg_btn_2, "dbg_btn_2");
-            this.dbg_btn_2.Name = "dbg_btn_2";
-            this.dbg_btn_2.UseVisualStyleBackColor = true;
-            this.dbg_btn_2.Click += new System.EventHandler(this.Dbg_btn_2_Click);
-            // 
             // colorPickerButton1
             // 
             this.colorPickerButton1.BeforeTouchSize = new System.Drawing.Size(195, 23);
             resources.ApplyResources(this.colorPickerButton1, "colorPickerButton1");
             this.colorPickerButton1.Name = "colorPickerButton1";
             // 
-            // GitHub_Repo_Button
+            // GitHub_Button
             // 
-            resources.ApplyResources(this.GitHub_Repo_Button, "GitHub_Repo_Button");
-            this.GitHub_Repo_Button.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.GitHub_Repo_Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.GitHub_Repo_Button.FlatAppearance.BorderSize = 0;
-            this.GitHub_Repo_Button.Name = "GitHub_Repo_Button";
-            this.GitHub_Repo_Button.UseVisualStyleBackColor = true;
-            this.GitHub_Repo_Button.Click += new System.EventHandler(this.GitHub_Repo_Button_Click);
+            resources.ApplyResources(this.GitHub_Button, "GitHub_Button");
+            this.GitHub_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.GitHub_Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.GitHub_Button.FlatAppearance.BorderSize = 0;
+            this.GitHub_Button.Name = "GitHub_Button";
+            this.GitHub_Button.UseVisualStyleBackColor = true;
+            this.GitHub_Button.Click += new System.EventHandler(this.GitHub_Button_Click);
             // 
-            // discord_b
+            // Discord_Button
             // 
-            resources.ApplyResources(this.discord_b, "discord_b");
-            this.discord_b.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.discord_b.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.discord_b.FlatAppearance.BorderSize = 0;
-            this.discord_b.Name = "discord_b";
-            this.discord_b.UseVisualStyleBackColor = true;
-            this.discord_b.Click += new System.EventHandler(this.Discord_Click);
+            resources.ApplyResources(this.Discord_Button, "Discord_Button");
+            this.Discord_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Discord_Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Discord_Button.FlatAppearance.BorderSize = 0;
+            this.Discord_Button.Name = "Discord_Button";
+            this.Discord_Button.UseVisualStyleBackColor = true;
+            this.Discord_Button.Click += new System.EventHandler(this.Discord_Button_Click);
             // 
-            // help_b
+            // Help_Button
             // 
-            resources.ApplyResources(this.help_b, "help_b");
-            this.help_b.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.help_b.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.help_b.FlatAppearance.BorderSize = 0;
-            this.help_b.Name = "help_b";
-            this.help_b.UseVisualStyleBackColor = true;
-            this.help_b.Click += new System.EventHandler(this.Help_b_Click);
+            resources.ApplyResources(this.Help_Button, "Help_Button");
+            this.Help_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Help_Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Help_Button.FlatAppearance.BorderSize = 0;
+            this.Help_Button.Name = "Help_Button";
+            this.Help_Button.UseVisualStyleBackColor = true;
+            this.Help_Button.Click += new System.EventHandler(this.Help_Button_Click);
             // 
-            // contact_b
+            // Contact_Button
             // 
-            resources.ApplyResources(this.contact_b, "contact_b");
-            this.contact_b.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.contact_b.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.contact_b.FlatAppearance.BorderSize = 0;
-            this.contact_b.Name = "contact_b";
-            this.contact_b.UseVisualStyleBackColor = true;
-            this.contact_b.Click += new System.EventHandler(this.Contact_b_Click);
+            resources.ApplyResources(this.Contact_Button, "Contact_Button");
+            this.Contact_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Contact_Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Contact_Button.FlatAppearance.BorderSize = 0;
+            this.Contact_Button.Name = "Contact_Button";
+            this.Contact_Button.UseVisualStyleBackColor = true;
+            this.Contact_Button.Click += new System.EventHandler(this.Contact_b_Click);
             // 
             // forumklik
             // 
@@ -4817,15 +4805,15 @@
             this.forumklik.UseVisualStyleBackColor = true;
             this.forumklik.Click += new System.EventHandler(this.Donate_Click);
             // 
-            // www7dsm
+            // Website_Button
             // 
-            resources.ApplyResources(this.www7dsm, "www7dsm");
-            this.www7dsm.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.www7dsm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.www7dsm.FlatAppearance.BorderSize = 0;
-            this.www7dsm.Name = "www7dsm";
-            this.www7dsm.UseVisualStyleBackColor = true;
-            this.www7dsm.Click += new System.EventHandler(this.Button1_Click_3);
+            resources.ApplyResources(this.Website_Button, "Website_Button");
+            this.Website_Button.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Website_Button.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Website_Button.FlatAppearance.BorderSize = 0;
+            this.Website_Button.Name = "Website_Button";
+            this.Website_Button.UseVisualStyleBackColor = true;
+            this.Website_Button.Click += new System.EventHandler(this.Website_Button_Click);
             // 
             // NitroGEN_Map_Generator_Link
             // 
@@ -4860,6 +4848,7 @@
             this.contextMenuStripEx1.Name = "contextMenuStripEx1";
             resources.ApplyResources(this.contextMenuStripEx1, "contextMenuStripEx1");
             this.contextMenuStripEx1.Style = Syncfusion.Windows.Forms.Tools.ContextMenuStripEx.ContextMenuStyle.Default;
+            this.contextMenuStripEx1.ThemeName = "Default";
             // 
             // hiToolStripMenuItem
             // 
@@ -4892,16 +4881,14 @@
             this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.SelectInstance_ComboBox);
             this.Controls.Add(this.NitroGEN_Map_Generator_Link);
-            this.Controls.Add(this.GitHub_Repo_Button);
-            this.Controls.Add(this.discord_b);
-            this.Controls.Add(this.dbg_btn_2);
-            this.Controls.Add(this.help_b);
-            this.Controls.Add(this.contact_b);
-            this.Controls.Add(this.dbg_btn);
+            this.Controls.Add(this.GitHub_Button);
+            this.Controls.Add(this.Discord_Button);
+            this.Controls.Add(this.Help_Button);
+            this.Controls.Add(this.Contact_Button);
             this.Controls.Add(this.forumklik);
             this.Controls.Add(this.don_l);
-            this.Controls.Add(this.www7dsm);
-            this.Controls.Add(this.tabControl);
+            this.Controls.Add(this.Website_Button);
+            this.Controls.Add(this.Master_TabControl);
             this.Controls.Add(this.img_status);
             this.Name = "Server_Panel_Form";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Server_Panel_FormClosing);
@@ -4951,7 +4938,7 @@
             this.Game_Time_Controls_GroupBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Game_Day_TrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Game_Hour_TrackBar)).EndInit();
-            this.tabControl.ResumeLayout(false);
+            this.Master_TabControl.ResumeLayout(false);
             this.ManageServer_TabPage.ResumeLayout(false);
             this.CommandsGroup.ResumeLayout(false);
             this.Timers_Group.ResumeLayout(false);
@@ -5057,7 +5044,6 @@
             this.BlockDamageAIBM_GroupBox.PerformLayout();
             this.PartySharedKillRange_GroupBox.ResumeLayout(false);
             this.PartySharedKillRange_GroupBox.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_PartySharedKillRange)).EndInit();
             this.ServerMaxAllowedViewDistance_GroupBox.ResumeLayout(false);
             this.ServerMaxAllowedViewDistance_GroupBox.PerformLayout();
             this.DropOnQuit_GroupBox.ResumeLayout(false);
@@ -5072,6 +5058,8 @@
             this.AirDropFrequency_GroupBox.ResumeLayout(false);
             this.AirDropFrequency_GroupBox.PerformLayout();
             this.LandClaimSettings_GroupBox.ResumeLayout(false);
+            this.LandClaimOfflineDelay_GroupBox.ResumeLayout(false);
+            this.LandClaimOfflineDelay_GroupBox.PerformLayout();
             this.LandClaimCount_GroupBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ConfigProperty_LandClaimCount)).EndInit();
             this.LandClaimDecayMode_GroupBox.ResumeLayout(false);
@@ -5169,7 +5157,7 @@
         private System.Windows.Forms.Button Set_Game_Time_Button;
         private System.Windows.Forms.TextBox cmd;
         private System.Windows.Forms.RichTextBox Console_RichTextBox;
-        private System.Windows.Forms.TabControl tabControl;
+        private System.Windows.Forms.TabControl Master_TabControl;
         private System.ComponentModel.BackgroundWorker server_startup_tasks;
         private System.Windows.Forms.ImageList Header_Icons;
         private System.Windows.Forms.TabPage ManagePlayers_TabPage;
@@ -5277,7 +5265,7 @@
         private System.Windows.Forms.Button Starve_Player_Button;
         private System.Windows.Forms.Button Kill_Player_Button;
         private System.Windows.Forms.CheckBox debug_log;
-        private System.Windows.Forms.Button www7dsm;
+        private System.Windows.Forms.Button Website_Button;
         private System.Windows.Forms.GroupBox Whitelist_GroupBox;
         private System.Windows.Forms.Label Auto_Update_Whitelist_Text_Label;
         private System.Windows.Forms.TextBox Update_Whitelist_Interval_TextBox;
@@ -5324,8 +5312,7 @@
         private System.Windows.Forms.Button dtds_rem;
         private System.Windows.Forms.Label dtds_info2;
         private System.Windows.Forms.TextBox dtds_auth;
-        private System.Windows.Forms.Button dbg_btn;
-        private System.Windows.Forms.Button contact_b;
+        private System.Windows.Forms.Button Contact_Button;
         private System.Windows.Forms.GroupBox restore_backup_g;
         private System.Windows.Forms.Button backup_refresh;
         private System.Windows.Forms.Button restore_now;
@@ -5336,7 +5323,7 @@
         private System.Windows.Forms.CheckBox dtds_show;
         private System.Windows.Forms.TextBox exe_name;
         private System.Windows.Forms.Label exe_name_l;
-        private System.Windows.Forms.Button help_b;
+        private System.Windows.Forms.Button Help_Button;
         private System.Windows.Forms.ListView All_Players_List;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
@@ -5360,7 +5347,6 @@
         private System.Windows.Forms.RadioButton glob_1;
         private System.Windows.Forms.PictureBox banlist_logo;
         private System.Windows.Forms.Button check_bans;
-        private System.Windows.Forms.Button dbg_btn_2;
         public System.Windows.Forms.ListView Online_Player_List;
         private System.Windows.Forms.TabPage WebServer_TabPage;
         private System.Windows.Forms.GroupBox android_g;
@@ -5403,13 +5389,13 @@
         private System.Windows.Forms.Label OS_Version_Label;
         private System.Windows.Forms.Label telnetstatus;
         private System.Windows.Forms.Label OS_Architecture_Label;
-        private System.Windows.Forms.Button discord_b;
+        private System.Windows.Forms.Button Discord_Button;
         private System.Windows.Forms.ListBox commandslist;
         private System.Windows.Forms.GroupBox CommandsGroup;
         private System.Windows.Forms.Button usecmd;
         private System.Windows.Forms.PictureBox SQL_Host_Info_PictureBox;
         private System.Windows.Forms.Label Private_IP_Address_Label;
-        private System.Windows.Forms.Button GitHub_Repo_Button;
+        private System.Windows.Forms.Button GitHub_Button;
         private Syncfusion.Windows.Forms.ColorPickerButton colorPickerButton1;
         private Syncfusion.Windows.Forms.Gauge.RadialGauge CPU_Gauge;
         private Syncfusion.Windows.Forms.Gauge.RadialGauge RAM_Gauge;
@@ -5465,7 +5451,6 @@
         private System.Windows.Forms.TextBox ConfigProperty_ServerName;
         private System.Windows.Forms.GroupBox BlockDamageAIBM_GroupBox;
         private System.Windows.Forms.GroupBox PartySharedKillRange_GroupBox;
-        private System.Windows.Forms.TrackBar ConfigProperty_PartySharedKillRange;
         private System.Windows.Forms.GroupBox ZombieBloodMoonSpeed_GroupBox;
         private System.Windows.Forms.ComboBox ConfigProperty_ZombieBMMove;
         private System.Windows.Forms.GroupBox ZombieNightSpeed_GroupBox;
@@ -5560,7 +5545,7 @@
         private System.Windows.Forms.GroupBox PlayerSafeZoneLevel_GroupBox;
         private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_LootRespawnDays;
         private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_BlockDamageAIBM;
-        private Syncfusion.Windows.Forms.Tools.TrackBarEx trackBarEx7;
+        private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_PartySharedKillRange;
         private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_ServerMaxAllowedViewDistance;
         private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_XPMultiplier;
         private Syncfusion.Windows.Forms.Tools.TrackBarEx ConfigProperty_BlockDamageAI;
@@ -5597,5 +5582,7 @@
         private System.Windows.Forms.ToolStripMenuItem hiToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem byToolStripMenuItem;
         private System.Windows.Forms.ComboBox SelectInstance_ComboBox;
+        private System.Windows.Forms.GroupBox LandClaimOfflineDelay_GroupBox;
+        private System.Windows.Forms.TextBox ConfigProperty_LandClaimOfflineDelay;
     }
 }

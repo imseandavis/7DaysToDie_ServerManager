@@ -3,15 +3,12 @@ using System.IO;
 using System.Diagnostics;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Text;
 using System.Windows.Forms;
 using System.Reflection;
 using System.Threading;
 using Microsoft.Win32;
 using System.Xml;
-using System.Resources;
 using MySql.Data.MySqlClient;
 using Ionic.Zip;
 using System.Text.RegularExpressions;
@@ -27,13 +24,13 @@ namespace _7DaysServerManager
     {
         //Build Lists and Queues
         //List<string> players_ids = new List<string>();
-        Queue<string> telnet_queue = new Queue<string>();
+        readonly Queue<string> telnet_queue = new Queue<string>();
 
         // Version Variables
-        public const string ver = "9.2";
+        public const string ver = "19.1";
         public const bool dev = false;
-        public const string game_ver = "Alpha 18.3";
-        public const string whatsnew = "Whats new since last STABLE build:\n-Updated To Work With v18.x\n-Added New Visual CPU/RAM/Toggles\n-Over 381 Other Fixes";
+        public const string game_ver = "Alpha 19.31";
+        public const string whatsnew = "Whats new since last STABLE build:\n-Updated To Work With v19.1\n-Added New Visual CPU/RAM/Toggles\n-417 Other Fixes";
 
         // Registry Variables
         readonly string base_registry_key = @"HKEY_CURRENT_USER\Software\7DSM\";
@@ -74,12 +71,10 @@ namespace _7DaysServerManager
 
         FileStream chat_log_stream;
         StreamWriter chat_log;
-
-
-        List<string> allowed_players = new List<string>();
+        
+        readonly List<string> allowed_players = new List<string>();
 
         TelnetConnection tc = null;
-
 
         internal static class AssemblyCreationDate
         {
@@ -260,7 +255,6 @@ namespace _7DaysServerManager
         {
             Run_Server();
         }
-
 
         private void IsProcessRunning(string sProcessName)
         {
@@ -569,8 +563,6 @@ namespace _7DaysServerManager
                             Echo("Command not found. Type \"local help\".", 2, true);
                         cmd.Text = "";
 
-
-
                     }
                 }
                 else
@@ -579,16 +571,11 @@ namespace _7DaysServerManager
                     cmd.Text = "";
                 }
 
-
-
-
                 e.Handled = true;
 
             }
 
-
         }
-
 
         private void Telnet_connect_Click(object sender, EventArgs e)
         {
@@ -976,11 +963,6 @@ namespace _7DaysServerManager
             }
         }
 
-        private void Spawn_delay_Scroll(object sender, EventArgs e)
-        {
-
-        }
-
         private void Taskman_worker_DoWork(object sender, DoWorkEventArgs e)
         {
             while (true)
@@ -993,7 +975,6 @@ namespace _7DaysServerManager
                         taskman.Items.Add("status_updater");
                     });
                 }
-
 
                 if (server_startup_tasks.IsBusy)
                 {
@@ -1044,8 +1025,6 @@ namespace _7DaysServerManager
                     });
                 }
 
-
-
                 if (auto_reset.IsBusy)
                 {
                     startbar.Invoke((MethodInvoker)delegate
@@ -1089,9 +1068,6 @@ namespace _7DaysServerManager
                 telnet_port = Convert.ToInt32(ConfigProperty_TelnetPort.Text);
             });
 
-            /*string telnet_host = "towel.blinkenlights.nl";
-            int telnet_port = 23;*/
-
             Echo_debug("---starting telnet_connection---");
 
             string reply = "";
@@ -1104,7 +1080,6 @@ namespace _7DaysServerManager
             }
             catch
             {
-                //echo("Server refused connection... Trying again in 30s.\n(If this is the first start, it might take few minutes to render the level, keep calm.)", 2, true);
                 Echo("Server is not ready yet... Trying again in 30s.\n(If this is the first start, it might take few minutes to render the level, keep calm.)", 2, true);
                 Thread.Sleep(30000);
                 goto Recon; //don't kill me
@@ -1117,7 +1092,7 @@ namespace _7DaysServerManager
                 return;
             }
 
-            //Login
+            // Telnet Login
             Thread.Sleep(2 * 1000);
 
             startbar.Invoke((MethodInvoker)delegate
@@ -1128,6 +1103,7 @@ namespace _7DaysServerManager
             tc.WriteLine(telnet_NOW);
             reply = tc.Read();
 
+            // Verify Telnet Login            
             try
             {
                 if (reply.Contains("incorrect"))
@@ -1152,7 +1128,7 @@ namespace _7DaysServerManager
 
             break_telnet = false;
 
-            int cntr = 100; //I will send a telnet request every few cycles to maintain the connection
+            int cntr = 100; // Send a telnet request every few cycles to maintain the connection
 
             while (server_online && !break_telnet || just_killin)
             {
@@ -1610,86 +1586,16 @@ namespace _7DaysServerManager
             }
         }
 
-        private void CheckBox1_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void Ctrlp_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void Ctrlppass_TextChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void Port_panel_TextChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void Zombiespawn_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void ServerIsPublic_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void ServerPassword_TextChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
         private void Mapa_SelectedIndexChanged(object sender, EventArgs e)
         {
             Update_Config();
             Download_maps(ConfigProperty_GameWorld.Text);
         }
 
-        private void Showonmap_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void Friendlyfire_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void Rebuildmap_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void Cheatmode_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
         private void Blad_Click(object sender, EventArgs e)
         {
             Error_Reporter err_rep = new Error_Reporter("Report by user");
             err_rep.Show();
-        }
-
-        private void Zombie_normal_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void Zombie_run_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void Zombie_never_run_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
         }
 
         private void Steamsearch_Click(object sender, EventArgs e)
@@ -2147,7 +2053,6 @@ namespace _7DaysServerManager
 
         }
 
-
         private void Sql_enabled_CheckedChanged(object sender, EventArgs e)
         {
             if (SQL_Enabled_CheckBox.Checked)
@@ -2196,11 +2101,6 @@ namespace _7DaysServerManager
             {
                 Registry.SetValue(base_registry_key + profile_name, "sql_updates_time", Convert.ToInt32(SQL_Update_Time_TextBox.Text));
             }
-        }
-
-        private void ServerName_TextChanged(object sender, EventArgs e)
-        {
-            Update_Config();
         }
 
         private void Auto_backup_check_CheckedChanged(object sender, EventArgs e)
@@ -2437,17 +2337,6 @@ namespace _7DaysServerManager
             Echo(Figgle.FiggleFonts.Big.Render("Thanks For Donating!"), 0, true);
         }
           
-
-        //private void LootRespawnDays_Scroll(object sender, EventArgs e)
-        //{
-
-            //if (ConfigProperty_LootRespawnDays.Value == -1)
-            //    LootRespawnDays_GroupBox.Text = LocalizedLanguage("LootRespawnDays_g") + " [" + LocalizedLanguage("disabled") + "]";
-            //else
-            //    LootRespawnDays_GroupBox.Text = LocalizedLanguage("LootRespawnDays_g") + " [" + ConfigProperty_LootRespawnDays_Old.Value + "]";
-            //Update_Config();
-        //}
-
         private void Browse_Click(object sender, EventArgs e)
         {
             Process prc = new Process();
@@ -2493,46 +2382,6 @@ namespace _7DaysServerManager
         //    }
         //    Update_Config();
         //}
-
-        private void Linear_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void Exponential_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void Full_prot_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void LandClaimOnlineDurabilityModifier_TextChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void LandClaimOfflineDurabilityModifier_TextChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void LandClaimDeadZone_TextChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void LandClaimSize_TextChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
-        private void LandClaimExpiryTime_TextChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
 
         private void Auto_reset_DoWork(object sender, DoWorkEventArgs e)
         {
@@ -2716,11 +2565,6 @@ namespace _7DaysServerManager
                 Registry.SetValue(base_registry_key + profile_name, "reset_chat", "0");
         }
 
-        private void Save_TextChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
         private void Spam_is_spam_CheckedChanged(object sender, EventArgs e)
         {
             if (Server_Commands_Say_Switch_CheckBox.Checked)
@@ -2845,11 +2689,6 @@ namespace _7DaysServerManager
             Process.Start(e.LinkText);
         }
 
-        private void Feral_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
         private void Reboot_con_Click(object sender, EventArgs e)
         {
             reboot_telnet.RunWorkerAsync();
@@ -2957,11 +2796,6 @@ namespace _7DaysServerManager
                     cmds_num = Custom_Commands_RichTextBox.Lines.Length;
                     dtds = dtds_enable.Checked;
                 });
-
-
-
-
-
 
                 if (wiad.Contains("/reward") && dtds)
                 {
@@ -3249,11 +3083,6 @@ namespace _7DaysServerManager
             Registry.SetValue(base_registry_key + profile_name, "cc", Custom_Commands_RichTextBox.Text);
         }
 
-        private void PersistentPlayerProfiles_CheckedChanged(object sender, EventArgs e)
-        {
-            Update_Config();
-        }
-
         private void Skip_profiles_CheckedChanged(object sender, EventArgs e)
         {
             if (Settings_Skip_Profiles_CheckBox.Checked)
@@ -3261,7 +3090,6 @@ namespace _7DaysServerManager
             else
                 Registry.SetValue(base_registry_key, "skip_profiles", "0");
         }
-
 
         private void Stop_Click(object sender, EventArgs e)
         {
@@ -3388,11 +3216,6 @@ namespace _7DaysServerManager
             }
 
             file_log = debug_log.Checked;
-        }
-
-        private void Button1_Click_3(object sender, EventArgs e)
-        {
-            Process.Start("https://7dsm.smartmoose.org");
         }
 
         private void Wl_chk_CheckedChanged(object sender, EventArgs e)
@@ -3650,9 +3473,6 @@ namespace _7DaysServerManager
                 Support_Code_TextBox.PasswordChar = '*';
         }
 
-
-
-
         public void IsPremium()
         {
             Echo_debug("Checking Premium Status With Server");
@@ -3702,11 +3522,11 @@ namespace _7DaysServerManager
                     // Reset Icon Locations
                     if (!icons_moved)
                     {
-                        GitHub_Repo_Button.Location = new Point(GitHub_Repo_Button.Location.X + 123, GitHub_Repo_Button.Location.Y);
-                        www7dsm.Location = new Point(www7dsm.Location.X + 123, www7dsm.Location.Y);
-                        contact_b.Location = new Point(contact_b.Location.X + 123, contact_b.Location.Y);
-                        help_b.Location = new Point(help_b.Location.X + 123, help_b.Location.Y);
-                        discord_b.Location = new Point(discord_b.Location.X + 123, discord_b.Location.Y);
+                        GitHub_Button.Location = new Point(GitHub_Button.Location.X + 123, GitHub_Button.Location.Y);
+                        Website_Button.Location = new Point(Website_Button.Location.X + 123, Website_Button.Location.Y);
+                        Contact_Button.Location = new Point(Contact_Button.Location.X + 123, Contact_Button.Location.Y);
+                        Help_Button.Location = new Point(Help_Button.Location.X + 123, Help_Button.Location.Y);
+                        Discord_Button.Location = new Point(Discord_Button.Location.X + 123, Discord_Button.Location.Y);
                         icons_moved = true;
                     }
                 }
@@ -3747,11 +3567,11 @@ namespace _7DaysServerManager
 
                     if (icons_moved)
                     {
-                        GitHub_Repo_Button.Location = new Point(GitHub_Repo_Button.Location.X - 123, GitHub_Repo_Button.Location.Y);
-                        www7dsm.Location = new Point(www7dsm.Location.X - 123, www7dsm.Location.Y);
-                        contact_b.Location = new Point(contact_b.Location.X - 123, contact_b.Location.Y);
-                        help_b.Location = new Point(help_b.Location.X - 123, help_b.Location.Y);
-                        discord_b.Location = new Point(discord_b.Location.X - 123, discord_b.Location.Y);
+                        GitHub_Button.Location = new Point(GitHub_Button.Location.X - 123, GitHub_Button.Location.Y);
+                        Website_Button.Location = new Point(Website_Button.Location.X - 123, Website_Button.Location.Y);
+                        Contact_Button.Location = new Point(Contact_Button.Location.X - 123, Contact_Button.Location.Y);
+                        Help_Button.Location = new Point(Help_Button.Location.X - 123, Help_Button.Location.Y);
+                        Discord_Button.Location = new Point(Discord_Button.Location.X - 123, Discord_Button.Location.Y);
                         icons_moved = false;
                     }
                 }
@@ -3787,11 +3607,11 @@ namespace _7DaysServerManager
                     // Reset Icon Locations
                     if (!icons_moved)
                     {
-                        GitHub_Repo_Button.Location = new Point(GitHub_Repo_Button.Location.X + 123, GitHub_Repo_Button.Location.Y);
-                        www7dsm.Location = new Point(www7dsm.Location.X + 123, www7dsm.Location.Y);
-                        contact_b.Location = new Point(contact_b.Location.X + 123, contact_b.Location.Y);
-                        help_b.Location = new Point(help_b.Location.X + 123, help_b.Location.Y);
-                        discord_b.Location = new Point(discord_b.Location.X + 123, discord_b.Location.Y);
+                        GitHub_Button.Location = new Point(GitHub_Button.Location.X + 123, GitHub_Button.Location.Y);
+                        Website_Button.Location = new Point(Website_Button.Location.X + 123, Website_Button.Location.Y);
+                        Contact_Button.Location = new Point(Contact_Button.Location.X + 123, Contact_Button.Location.Y);
+                        Help_Button.Location = new Point(Help_Button.Location.X + 123, Help_Button.Location.Y);
+                        Discord_Button.Location = new Point(Discord_Button.Location.X + 123, Discord_Button.Location.Y);
                         icons_moved = true;
                     }
                 }
@@ -3805,11 +3625,11 @@ namespace _7DaysServerManager
                     // Reset Icon Locations
                     if (icons_moved)
                     {
-                        GitHub_Repo_Button.Location = new Point(GitHub_Repo_Button.Location.X - 123, GitHub_Repo_Button.Location.Y);
-                        www7dsm.Location = new Point(www7dsm.Location.X - 123, www7dsm.Location.Y);
-                        contact_b.Location = new Point(contact_b.Location.X - 123, contact_b.Location.Y);
-                        help_b.Location = new Point(help_b.Location.X - 123, help_b.Location.Y);
-                        discord_b.Location = new Point(discord_b.Location.X - 123, discord_b.Location.Y);
+                        GitHub_Button.Location = new Point(GitHub_Button.Location.X - 123, GitHub_Button.Location.Y);
+                        Website_Button.Location = new Point(Website_Button.Location.X - 123, Website_Button.Location.Y);
+                        Contact_Button.Location = new Point(Contact_Button.Location.X - 123, Contact_Button.Location.Y);
+                        Help_Button.Location = new Point(Help_Button.Location.X - 123, Help_Button.Location.Y);
+                        Discord_Button.Location = new Point(Discord_Button.Location.X - 123, Discord_Button.Location.Y);
                         icons_moved = false;
                     }
                 }
@@ -3827,7 +3647,6 @@ namespace _7DaysServerManager
         {
             Registry.SetValue(base_registry_key + profile_name, "rem_old_backups_count", rem_old_backups_count.Text);
         }
-
 
         private void Dtds_visit_Click(object sender, EventArgs e)
         {
@@ -3886,20 +3705,6 @@ namespace _7DaysServerManager
             Error_Reporter rr = new Error_Reporter(rep);
             rr.Show();
         }
-
-        private void Dbg_btn_Click(object sender, EventArgs e)
-        {
-            //ws.Run();
-            RunWebServer();
-
-        }
-
-        private void Contact_b_Click(object sender, EventArgs e)
-        {
-            Contact c = new Contact();
-            c.Show();
-        }
-
 
         public void Refresh_backups_list()
         {
@@ -4053,11 +3858,6 @@ namespace _7DaysServerManager
             }
         }
 
-        private void Help_b_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://7dsm.smartmoose.org/index.php?id=help");
-        }
-
         private void Chk_upd_Click(object sender, EventArgs e)
         {
             updater_invoked_manually = true;
@@ -4135,22 +3935,24 @@ namespace _7DaysServerManager
                 return;
 
 
-            string nazwa_w = null;
+            string serverConfigFile = null;
 
+            // Check Registry To Retrieve The Config File Path and Name
             if (File.Exists((string)Registry.GetValue(base_registry_key + profile_name, "game_path", null) + "\\" + ConfigProperty_AdminFileName.Text))
-                nazwa_w = (string)Registry.GetValue(base_registry_key + profile_name, "game_path", null) + "\\" + ConfigProperty_AdminFileName.Text;
+                serverConfigFile = (string)Registry.GetValue(base_registry_key + profile_name, "game_path", null) + "\\" + ConfigProperty_AdminFileName.Text;
             else if (File.Exists(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\7DaysToDie\\Saves\\" + ConfigProperty_AdminFileName.Text))
-                nazwa_w = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\7DaysToDie\\Saves\\" + ConfigProperty_AdminFileName.Text;
+                serverConfigFile = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + "\\7DaysToDie\\Saves\\" + ConfigProperty_AdminFileName.Text;
 
-
-            if (nazwa_w == null)
+            // If No File Is Found, Fail Server Config Reader
+            if (serverConfigFile == null)
             {
                 Echo("Can not establish serveradmin.xml reader. Banned users list won't be shared with other servers even if you enable it in options. Try moving serveradmin.xml to default location with default name.", 2, true);
                 return;
             }
 
 
-            List<string> wyslani = new List<string>();
+            //Check The Player Name Against The Cached Ban List
+            List<string> isSent = new List<string>();
             string line;
             if (File.Exists("7dsm_global_banlist.txt"))
             {
@@ -4159,7 +3961,7 @@ namespace _7DaysServerManager
                 while ((line = file.ReadLine()) != null)
                 {
                     if (!line.Contains("<!--"))
-                        wyslani.Add(line);
+                        isSent.Add(line);
                 }
                 file.Close();
 
@@ -4171,9 +3973,10 @@ namespace _7DaysServerManager
                 file.Close();
             }
 
+            
             try
             {
-                XmlReader xmlReader = XmlReader.Create(nazwa_w);
+                XmlReader xmlReader = XmlReader.Create(serverConfigFile);
                 while (xmlReader.Read())
                 {
                     if ((xmlReader.NodeType == XmlNodeType.Element) && (xmlReader.Name == "blacklisted"))
@@ -4182,7 +3985,7 @@ namespace _7DaysServerManager
                         {
                             string steamID = xmlReader.GetAttribute("steamID");
 
-                            if (!wyslani.Contains(steamID))
+                            if (!isSent.Contains(steamID))
                             {
                                 Echo_debug("GLOBAL BAN REPORT: " + steamID);
 
@@ -4212,7 +4015,6 @@ namespace _7DaysServerManager
             }
             catch { }
 
-
         }
 
 
@@ -4241,12 +4043,6 @@ namespace _7DaysServerManager
         private void Check_bans_Click(object sender, EventArgs e)
         {
             Process.Start("https://7dsm.smartmoose.org/ban");
-        }
-
-        private void Dbg_btn_2_Click(object sender, EventArgs e)
-        {
-            //ws.Stop();
-
         }
 
         private void Android_allow_CheckedChanged(object sender, EventArgs e)
@@ -4368,7 +4164,7 @@ namespace _7DaysServerManager
 
         private void Select_dir_HelpRequest(object sender, EventArgs e)
         {
-
+            // This Is Fired When The Select Game Directory Button Is Clicked.
         }
 
         private void Excall_file_Click(object sender, EventArgs e)
@@ -4397,11 +4193,6 @@ namespace _7DaysServerManager
                 zoomup.Text = "▲";
         }
 
-        private void Discord_Click(object sender, EventArgs e)
-        {
-            Process.Start("https://discord.gg/KneMGU"); // 7DSM User Discord Channel
-        }
-
         private void Newsbox_LinkClicked(object sender, LinkClickedEventArgs e)
         {
             Process.Start(e.LinkText);
@@ -4421,10 +4212,39 @@ namespace _7DaysServerManager
             catch { }
         }
 
-        private void GitHub_Repo_Button_Click(object sender, EventArgs e)
+        #region Manage Server Tab Functions
+
+        #endregion
+
+        #region Bottom Bar Link Handlers
+
+        private void Discord_Button_Click(object sender, EventArgs e)
         {
-            Process.Start("https://github.com/imseandavis/7DaysToDie_ServerManager");
+            Process.Start("https://discord.gg/fke5HmN"); // Open Invite To 7DSM User Discord Channel Ran By Andrew
         }
+
+        private void Help_Button_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://7dsm.seanasaservice.com/help.php");  // Open 7DSM Help Site
+        }
+
+        private void Contact_b_Click(object sender, EventArgs e)
+        {
+            Contact ContactDialog = new Contact();
+            ContactDialog.Show();
+        }
+        private void GitHub_Button_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://github.com/imseandavis/7DaysToDie_ServerManager");  // Open GitHub Repo For Server Manager
+        }
+
+        private void Website_Button_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://7dsm.seanasaservice.com"); // Open 7DSM Website
+        }
+
+        #endregion
+
 
         private JArray GetRESTData(string uri)
         {
@@ -5037,15 +4857,6 @@ namespace _7DaysServerManager
             Update_Config();
         }
 
-        private void SelectInstance_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            // Save The Current Server Instance Settings
-            Save_Server_Instance();
-
-            // Load The Settings For The Newly Selected Server Instance
-            Load_Server_Instance();
-        }
-
         private void ConfigProperty_LootRespawnDays_ValueChanged(object sender, EventArgs e)
         {
             // Update Text To Currently Set Value
@@ -5075,7 +4886,6 @@ namespace _7DaysServerManager
         {
             //TODO - NEEDS GROUP BOX TEXT UPDATE CODE
 
-
             // Update The Config File With The New Value
             Update_Config();
         }
@@ -5089,6 +4899,40 @@ namespace _7DaysServerManager
 
             // Update The Config File With The New Value
             Update_Config();
+        }
+
+        private void ConfigProperty_PartySharedKillRange_ValueChanged(object sender, EventArgs e)
+        {
+            // UPDATE WITH TEXT UPDATE CODE
+            Update_Config();
+        }
+
+        private void ConfigProperty_LandClaimOfflineDelay_TextChanged(object sender, EventArgs e)
+        {
+            //UPDATE WITH TEXT UPDATE CODE
+            Update_Config();
+        }
+
+        #endregion
+
+
+        #region Server Instance Changer Events
+
+        private void SelectInstance_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //ws.Stop();
+            //StopWebServer();
+            
+            //ws.Run();
+            //RunWebServer();
+
+            // Save The Current Server Instance Settings
+            Save_Server_Instance();
+
+            // Load The Settings For The Newly Selected Server Instance
+            Load_Server_Instance();
+
+
         }
 
         #endregion

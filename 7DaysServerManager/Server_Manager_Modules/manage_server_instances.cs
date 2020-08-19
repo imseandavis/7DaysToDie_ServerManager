@@ -17,6 +17,8 @@ namespace _7DaysServerManager
             /// <summary>
 
             // TODO: Write All Instance Settings To Profile In Registry
+
+            // MAKE SURE CHANGES WERE SAVED TO CONFIG FILE AND PROMPT IF NOT - SHOULDNT BE AN ISSUE AS THE CHANGES TO THE CONFIG SHOULD BE AUTOMATIC ANY TIME A CHANGE IS MADE.
             
         }
 
@@ -31,6 +33,10 @@ namespace _7DaysServerManager
             /// <summary>
 
             // TODO: Load Up New Server Instance from Profile In Registry
+
+            //ENUM ALL SERVER PROFILES IN REGISTRY IN CASE A NEW ONE HAS BEEN ADDED.
+
+            // RETRIEVE CONFIG FILE VALUES FOR CURRENT SERVER INSTANCE
 
         }
 
